@@ -11,9 +11,9 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<SessionHub />} />
-          <Route path="/phrase/:phraseId" element={<PhraseDetail />} />
+          <Route path="/phase/:phraseId" element={<PhraseDetail />} />
           <Route
-            path="/phrase/:phraseId/session/:id"
+            path="/phase/:phraseId/session/:id"
             element={<SessionDetail />}
           />
           <Route path="*" element={<NotFound />} />

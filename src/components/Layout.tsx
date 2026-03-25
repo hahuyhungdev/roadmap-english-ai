@@ -4,7 +4,7 @@ import { BookOpen } from "lucide-react";
 export default function Layout() {
   const location = useLocation();
   const isHome = location.pathname === "/";
-  const isPhrasePage = location.pathname.startsWith("/phrase/");
+  const isPhrasePage = location.pathname.startsWith("/phase/");
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">

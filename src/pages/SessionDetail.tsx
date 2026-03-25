@@ -11,10 +11,10 @@ export default function SessionDetail() {
   const { phraseId, id } = useParams<{ phraseId: string; id: string }>();
   const navigate = useNavigate();
   const session = getSession(id ?? "");
-  const phrase = getPhraseGroup(phraseId ?? "");
+  const phase = getPhraseGroup(phraseId ?? "");
   const { isCompleted, toggleCompleted } = useProgressStore();
 
-  if (!session || !phrase) {
+  if (!session || !phase) {
     return (
       <div className="text-center py-20 text-gray-400">
         Session not found.{" "}
@@ -26,18 +26,18 @@ export default function SessionDetail() {
   }
 
   const completed = isCompleted(session.id);
-  const idx = phrase.sessions.findIndex((s) => s.id === session.id);
-  const prev = idx > 0 ? phrase.sessions[idx - 1] : undefined;
-  const next = idx >= 0 ? phrase.sessions[idx + 1] : undefined;
+  const idx = phase.sessions.findIndex((s) => s.id === session.id);
+  const prev = idx > 0 ? phase.sessions[idx - 1] : undefined;
+  const next = idx >= 0 ? phase.sessions[idx + 1] : undefined;
 
   return (
     <div className="max-w-3xl mx-auto">
       <div className="flex items-center justify-between mb-6">
         <Link
-          to={`/phrase/${phrase.id}`}
+          to={`/phase/${phase.id}`}
           className="flex items-center gap-1 text-sm text-gray-400 hover:text-indigo-600 transition-colors"
         >
-          <ChevronLeft size={16} /> {phrase.title}
+          <ChevronLeft size={16} /> {phase.title}
         </Link>
         <button
           onClick={() => toggleCompleted(session.id)}
@@ -113,7 +113,7 @@ export default function SessionDetail() {
       <div className="mt-8 flex items-center justify-between gap-4 pb-6">
         {prev ? (
           <button
-            onClick={() => navigate(`/phrase/${phrase.id}/session/${prev.id}`)}
+            onClick={() => navigate(`/phase/${phase.id}/session/${prev.id}`)}
             className="flex items-center gap-2 text-sm text-gray-500 hover:text-indigo-600 px-3 py-2 rounded-lg border border-gray-200 hover:border-indigo-200 bg-white transition-colors"
           >
             <ChevronLeft size={15} /> {prev.meta.title}
@@ -123,7 +123,7 @@ export default function SessionDetail() {
         )}
         {next ? (
           <button
-            onClick={() => navigate(`/phrase/${phrase.id}/session/${next.id}`)}
+            onClick={() => navigate(`/phase/${phase.id}/session/${next.id}`)}
             className="flex items-center gap-2 text-sm text-gray-500 hover:text-indigo-600 px-3 py-2 rounded-lg border border-gray-200 hover:border-indigo-200 bg-white transition-colors"
           >
             {next.meta.title} <ChevronRight size={15} />

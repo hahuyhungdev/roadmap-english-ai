@@ -13,7 +13,10 @@ const files = import.meta.glob("../content/*.md", {
   eager: true,
 }) as Record<string, string>;
 
-function parseFrontmatter(raw: string): { meta: Partial<SessionMeta>; body: string } {
+function parseFrontmatter(raw: string): {
+  meta: Partial<SessionMeta>;
+  body: string;
+} {
   const fmMatch = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
   if (!fmMatch) return { meta: {}, body: raw };
 
@@ -24,7 +27,7 @@ function parseFrontmatter(raw: string): { meta: Partial<SessionMeta>; body: stri
   const scalarKeys: (keyof SessionMeta)[] = [
     "title",
     "topic",
-    "phrase",
+    "phase",
     "sessionNumber",
     "date",
     "level",
@@ -54,7 +57,10 @@ function parseFrontmatter(raw: string): { meta: Partial<SessionMeta>; body: stri
         .map((s) => s.trim())
         .filter(Boolean);
     } else {
-      meta.tags = rawTags.split(",").map((s) => s.trim()).filter(Boolean);
+      meta.tags = rawTags
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
     }
   }
 
@@ -68,7 +74,7 @@ function buildSession(id: string, raw: string): Session {
     sessionNumber: typeof fm.sessionNumber === "number" ? fm.sessionNumber : 0,
     title: fm.title ?? id,
     topic: fm.topic ?? fm.title ?? id,
-    phrase: fm.phrase ?? fm.topic ?? fm.title ?? id,
+    phase: fm.phase ?? fm.topic ?? fm.title ?? id,
     date: fm.date,
     level: fm.level,
     description: fm.description,
@@ -106,16 +112,18 @@ export function loadPhraseGroups(): PhraseGroup[] {
   const byPhrase = new Map<string, Session[]>();
 
   for (const session of sessions) {
-    const phrase = session.meta.phrase ?? session.meta.topic;
-    if (!byPhrase.has(phrase)) byPhrase.set(phrase, []);
-    byPhrase.get(phrase)!.push(session);
+    const phase = session.meta.phase ?? session.meta.topic;
+    if (!byPhrase.has(phase)) byPhrase.set(phase, []);
+    byPhrase.get(phase)!.push(session);
   }
 
   return Array.from(byPhrase.entries())
     .map(([title, phraseSessions]) => ({
       id: slugifyPhrase(title),
       title,
-      sessions: phraseSessions.sort((a, b) => a.meta.sessionNumber - b.meta.sessionNumber),
+      sessions: phraseSessions.sort(
+        (a, b) => a.meta.sessionNumber - b.meta.sessionNumber,
+      ),
     }))
     .sort((a, b) => a.title.localeCompare(b.title));
 }

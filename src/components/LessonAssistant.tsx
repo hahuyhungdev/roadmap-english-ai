@@ -1,5 +1,5 @@
 import { Loader2, Send, Sparkles, X } from "lucide-react";
-import { useState, type FormEvent } from "react";
+import { useState, useRef, type FormEvent, type KeyboardEvent } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { AiChatMessage, AiResponse } from "../types/ai";
@@ -17,10 +17,12 @@ export default function LessonAssistant({
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
-  async function onSubmit(e: FormEvent) {
-    e.preventDefault();
+  async function onSubmit(e?: FormEvent) {
+    if (e && typeof (e as FormEvent).preventDefault === "function") {
+      (e as FormEvent).preventDefault();
+    }
     const question = input.trim();
     if (!question || loading) return;
 
@@ -74,25 +76,48 @@ export default function LessonAssistant({
     }
   }
 
-  return (
-    <section className="fixed bottom-6 right-6 w-96 max-h-150 bg-white border border-gray-200 rounded-2xl p-4 shadow-2xl flex flex-col z-50">
-      <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-2">
-          <Sparkles size={16} className="text-indigo-500" />
-          <h2 className="text-sm font-semibold text-gray-900">
-            AI Lesson Assistant
-          </h2>
-        </div>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="text-gray-400 hover:text-gray-600 p-0.5"
-        >
-          <X size={16} />
-        </button>
-      </div>
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
 
-      {isOpen && (
-        <>
+  function adjustTextareaHeight() {
+    const ta = textareaRef.current;
+    if (!ta) return;
+    ta.style.height = "auto";
+    ta.style.height = `${Math.min(300, ta.scrollHeight)}px`;
+  }
+
+  function handleKeyDown(e: KeyboardEvent<HTMLTextAreaElement>) {
+    const isEnter = e.key === "Enter";
+    const isModifier = e.ctrlKey || e.metaKey;
+    if (!isEnter) return;
+
+    // Send on Enter (no shift) or on Ctrl/Cmd+Enter
+    if ((!e.shiftKey && !isModifier) || isModifier) {
+      e.preventDefault();
+      void onSubmit();
+    }
+    // Shift+Enter => default inserts newline
+  }
+
+  return (
+    <>
+      {isOpen ? (
+        <section className="fixed bottom-6 right-6 w-96 h-150 bg-white border border-gray-200 rounded-2xl p-4 shadow-2xl flex flex-col z-50">
+          <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-2">
+              <Sparkles size={16} className="text-indigo-500" />
+              <h2 className="text-sm font-semibold text-gray-900">
+                AI Lesson Assistant
+              </h2>
+            </div>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-gray-400 hover:text-gray-600 p-0.5"
+              aria-label="Close assistant"
+            >
+              <X size={16} />
+            </button>
+          </div>
+
           <div className="space-y-3 overflow-y-auto flex-1 mb-3 pr-2">
             {messages.length === 0 && (
               <p className="text-xs text-gray-500">
@@ -111,17 +136,7 @@ export default function LessonAssistant({
                 }
               >
                 {m.role === "assistant" ? (
-                  <div
-                    className="prose prose-sm prose-gray max-w-none
-                    prose-p:my-1 prose-p:text-gray-800
-                    prose-headings:my-1 prose-headings:font-semibold
-                    prose-h1:text-sm prose-h2:text-sm prose-h3:text-sm
-                    prose-li:my-0 prose-li:text-gray-800
-                    prose-a:text-indigo-600 prose-a:font-medium
-                    prose-strong:font-semibold prose-strong:text-gray-900
-                    prose-code:text-indigo-600 prose-code:bg-indigo-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-xs
-                    prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:text-xs prose-pre:p-2 prose-pre:rounded-lg"
-                  >
+                  <div className="prose prose-sm prose-gray max-w-none prose-p:my-1 prose-p:text-gray-800 prose-headings:my-1 prose-headings:font-semibold prose-h1:text-sm prose-h2:text-sm prose-h3:text-sm prose-li:my-0 prose-li:text-gray-800 prose-a:text-indigo-600 prose-a:font-medium prose-strong:font-semibold prose-strong:text-gray-900 prose-code:text-indigo-600 prose-code:bg-indigo-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-xs prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:text-xs prose-pre:p-2 prose-pre:rounded-lg">
                     <ReactMarkdown remarkPlugins={[remarkGfm]}>
                       {m.content}
                     </ReactMarkdown>
@@ -142,11 +157,18 @@ export default function LessonAssistant({
           {error && <p className="text-xs text-red-500 mb-2">{error}</p>}
 
           <form onSubmit={onSubmit} className="flex items-center gap-2 mt-auto">
-            <input
+            <textarea
+              ref={textareaRef}
               value={input}
-              onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about this lesson..."
-              className="flex-1 border border-gray-200 rounded-xl px-2 py-1.5 text-xs outline-none focus:border-indigo-300"
+              onChange={(e) => {
+                setInput(e.target.value);
+                adjustTextareaHeight();
+              }}
+              onKeyDown={handleKeyDown}
+              onInput={adjustTextareaHeight}
+              placeholder="Ask about this lesson... (Shift+Enter for newline)"
+              rows={1}
+              className="flex-1 border border-gray-200 rounded-xl px-2 py-1.5 text-xs outline-none focus:border-indigo-300 resize-none overflow-auto max-h-72"
             />
             <button
               type="submit"
@@ -156,8 +178,17 @@ export default function LessonAssistant({
               <Send size={12} />
             </button>
           </form>
-        </>
+        </section>
+      ) : (
+        <button
+          onClick={() => setIsOpen(true)}
+          className="fixed bottom-6 right-6 w-12 h-12 bg-white border border-gray-200 rounded-full p-1 shadow-lg flex items-center justify-center z-50 text-indigo-500"
+          aria-label="Open assistant"
+          title="Open AI assistant"
+        >
+          <Sparkles size={18} />
+        </button>
       )}
-    </section>
+    </>
   );
 }

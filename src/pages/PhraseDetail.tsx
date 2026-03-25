@@ -6,14 +6,14 @@ import { useProgressStore } from "../store/useProgressStore";
 
 export default function PhraseDetail() {
   const { phraseId } = useParams<{ phraseId: string }>();
-  const phrase = getPhraseGroup(phraseId ?? "");
+  const phase = getPhraseGroup(phraseId ?? "");
   const navigate = useNavigate();
   const { completedSessions, toggleCompleted } = useProgressStore();
 
-  if (!phrase) {
+  if (!phase) {
     return (
       <div className="text-center py-20 text-gray-400">
-        Phase not found. {" "}
+        Phase not found.{" "}
         <Link to="/" className="text-indigo-500 underline">
           Back
         </Link>
@@ -21,8 +21,10 @@ export default function PhraseDetail() {
     );
   }
 
-  const total = phrase.sessions.length;
-  const done = phrase.sessions.filter((s) => completedSessions.includes(s.id)).length;
+  const total = phase.sessions.length;
+  const done = phase.sessions.filter((s) =>
+    completedSessions.includes(s.id),
+  ).length;
   const pct = total === 0 ? 0 : Math.round((done / total) * 100);
 
   return (
@@ -37,8 +39,10 @@ export default function PhraseDetail() {
       </div>
 
       <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">{phrase.title}</h1>
-        <p className="text-gray-500 text-sm mt-1">Learn lessons inside this phase</p>
+        <h1 className="text-2xl font-bold text-gray-900">{phase.title}</h1>
+        <p className="text-gray-500 text-sm mt-1">
+          Learn lessons inside this phase
+        </p>
       </div>
 
       <div className="bg-white border border-gray-200 rounded-xl p-4 mb-6 flex items-center gap-4">
@@ -56,11 +60,13 @@ export default function PhraseDetail() {
             />
           </div>
         </div>
-        <div className="text-2xl font-bold text-indigo-600 w-14 text-right">{pct}%</div>
+        <div className="text-2xl font-bold text-indigo-600 w-14 text-right">
+          {pct}%
+        </div>
       </div>
 
       <div className="space-y-2">
-        {phrase.sessions.map((session) => {
+        {phase.sessions.map((session) => {
           const completed = completedSessions.includes(session.id);
 
           return (
@@ -68,16 +74,20 @@ export default function PhraseDetail() {
               key={session.id}
               role="button"
               tabIndex={0}
-              onClick={() => navigate(`/phrase/${phrase.id}/session/${session.id}`)}
+              onClick={() =>
+                navigate(`/phase/${phase.id}/session/${session.id}`)
+              }
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
-                  navigate(`/phrase/${phrase.id}/session/${session.id}`);
+                  navigate(`/phase/${phase.id}/session/${session.id}`);
                 }
               }}
               className={clsx(
                 "bg-white border rounded-xl px-4 py-3.5 flex items-center gap-3 transition-colors cursor-pointer",
-                completed ? "border-indigo-200 bg-indigo-50/40" : "border-gray-200 hover:border-indigo-200",
+                completed
+                  ? "border-indigo-200 bg-indigo-50/40"
+                  : "border-gray-200 hover:border-indigo-200",
               )}
             >
               <button
@@ -86,9 +96,15 @@ export default function PhraseDetail() {
                   toggleCompleted(session.id);
                 }}
                 className="shrink-0 text-gray-300 hover:text-indigo-500 transition-colors"
-                aria-label={completed ? "Mark as not completed" : "Mark as completed"}
+                aria-label={
+                  completed ? "Mark as not completed" : "Mark as completed"
+                }
               >
-                {completed ? <CheckCircle2 size={20} className="text-indigo-500" /> : <Circle size={20} />}
+                {completed ? (
+                  <CheckCircle2 size={20} className="text-indigo-500" />
+                ) : (
+                  <Circle size={20} />
+                )}
               </button>
 
               <span className="shrink-0 text-xs font-mono text-gray-400 w-7">
@@ -105,12 +121,14 @@ export default function PhraseDetail() {
                   {session.meta.title}
                 </span>
                 {session.meta.description && (
-                  <span className="text-xs text-gray-400 line-clamp-2">{session.meta.description}</span>
+                  <span className="text-xs text-gray-400 line-clamp-2">
+                    {session.meta.description}
+                  </span>
                 )}
               </div>
 
               <Link
-                to={`/phrase/${phrase.id}/session/${session.id}`}
+                to={`/phase/${phase.id}/session/${session.id}`}
                 onClick={(e) => e.stopPropagation()}
                 className="shrink-0 text-gray-300 hover:text-indigo-500 transition-colors"
                 aria-label={`Open ${session.meta.title}`}
