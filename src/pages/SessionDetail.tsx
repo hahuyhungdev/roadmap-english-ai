@@ -5,6 +5,7 @@ import { CheckCircle2, Circle, ChevronLeft, ChevronRight } from "lucide-react";
 import clsx from "clsx";
 import { getPhraseGroup, getSession } from "../lib/sessions";
 import { useProgressStore } from "../store/useProgressStore";
+import LessonAssistant from "../components/LessonAssistant";
 
 export default function SessionDetail() {
   const { phraseId, id } = useParams<{ phraseId: string; id: string }>();
@@ -54,11 +55,16 @@ export default function SessionDetail() {
 
       <div className="mb-6">
         <p className="text-xs text-indigo-500 font-semibold uppercase tracking-wide mb-1">
-          Lesson {String(session.meta.sessionNumber).padStart(2, "0")} &middot; {session.meta.topic}
+          Lesson {String(session.meta.sessionNumber).padStart(2, "0")} &middot;{" "}
+          {session.meta.topic}
         </p>
-        <h1 className="text-2xl font-bold text-gray-900">{session.meta.title}</h1>
+        <h1 className="text-2xl font-bold text-gray-900">
+          {session.meta.title}
+        </h1>
         {session.meta.description && (
-          <p className="text-sm text-gray-500 mt-2">{session.meta.description}</p>
+          <p className="text-sm text-gray-500 mt-2">
+            {session.meta.description}
+          </p>
         )}
         <div className="flex flex-wrap items-center gap-2 mt-2">
           {session.meta.level && (
@@ -94,8 +100,15 @@ export default function SessionDetail() {
         prose-blockquote:rounded-r-lg prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:not-italic prose-blockquote:text-gray-700
         prose-table:text-sm prose-th:text-gray-700 prose-td:text-gray-700"
       >
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{session.content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {session.content}
+        </ReactMarkdown>
       </article>
+
+      <LessonAssistant
+        lessonTitle={session.meta.title}
+        lessonContent={session.content}
+      />
 
       <div className="mt-8 flex items-center justify-between gap-4">
         {prev ? (
