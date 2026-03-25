@@ -1,124 +1,124 @@
 ---
 sessionNumber: 17
-title: Work Culture (Combined)
-topic: Company Culture & Team Environment
+title: Society & Tech Impact
+topic: Technology's Effect on Society
 phase: PHASE 3 — Discussion & Impact Mastery
 level: B1+ / B2
-description: Describe the work culture in your company or ideal work culture, including values, team dynamics, leadership style, and how it affects your motivation and performance.
+description: Discuss how technology (especially AI, apps, and digital platforms) affects society, daily life, jobs, privacy, and the environment — with balanced opinions.
 ---
 
-# BUỔI 17: Work Culture (Combined)
+# BUỔI 17: Society & Tech Impact
 
 **Level:** B1+ / B2  
-**Focus:** Discuss company culture, team atmosphere, values, leadership, and how the work environment influences your motivation and job satisfaction.
+**Focus:** Share thoughtful, balanced opinions on the positive and negative impacts of technology on society, jobs, privacy, and the future.
 
 ## 1) Vocabulary (Expanded & Sophisticated for B2)
 
-- **work culture** (n) – the shared values, beliefs, and behaviors in a company
-  - A positive work culture is very important for long-term happiness.
+- **societal impact** (n) – how technology affects society as a whole
+  - The societal impact of AI is both exciting and concerning.
 
-- **team dynamic** (n) – the way team members interact and work together
-  - We have a very supportive team dynamic with lots of collaboration.
+- **digital transformation** (n) – major change caused by technology
+  - We are living through rapid digital transformation in every industry.
 
-- **company value** (n) – the core principles a company believes in
-  - One of our company values is continuous learning and innovation.
+- **job displacement** (n) – loss of jobs due to automation
+  - AI may cause job displacement in some routine tasks.
 
-- **leadership style** (n) – the way managers lead their teams
-  - I appreciate a leadership style that encourages autonomy and trust.
+- **privacy concern** (n) – worry about personal data being misused
+  - Privacy concerns are growing with the rise of data collection.
 
-- **psychological safety** (n) – feeling safe to take risks and speak up
-  - Psychological safety is essential for creative problem-solving.
+- **digital divide** (n) – gap between people who have and don’t have access to technology
+  - The digital divide still exists between different countries and social groups.
 
-- **inclusivity** (n) – making everyone feel welcome and valued
-  - Our team puts strong emphasis on inclusivity and diversity.
+- **ethical dilemma** (n) – difficult moral choice
+  - AI development often involves complex ethical dilemmas.
 
-- **work environment** (n) – the overall atmosphere at work
-  - I thrive in a collaborative and open work environment.
+- **connectivity** (n) – being connected to the internet and others
+  - Increased connectivity has both positive and negative effects.
 
-- **motivation** (n) – the drive to do good work
-  - A good work culture significantly increases my daily motivation.
+- **addiction** (n) – excessive use that becomes harmful
+  - Social media addiction is a growing problem among young people.
 
-- **feedback culture** (n) – regular and constructive giving/receiving of feedback
-  - We have a healthy feedback culture in our team.
+- **sustainability** (n) – ability to continue without harming the environment
+  - Tech companies need to focus more on environmental sustainability.
 
-- **work-life integration** (n) – blending work and personal life in a healthy way
-  - Our company supports healthy work-life integration.
+- **human-centered design** (n) – design that puts people’s needs first
+  - We should always prioritize human-centered design in technology.
 
 ## 2) Collocations, Chunking & Advanced Phrases
 
 ### Strong Collocations
 
-- foster a positive work culture
-- promote psychological safety
-- encourage open communication
-- build strong team dynamics
-- value work-life balance
-- support professional growth
-- create an inclusive environment
-- maintain high team morale
-- promote transparency
-- nurture talent
+- have a profound impact
+- raise ethical concerns
+- widen the digital divide
+- promote digital inclusion
+- address privacy issues
+- drive social change
+- create new opportunities
+- mitigate negative effects
+- balance innovation with responsibility
+- shape the future of society
 
 ### Useful Chunking & Sentence Starters (B2)
 
-- The work culture in my company is…
-- What I like most about our culture is…
-- One area that could be improved is…
-- In my ideal work culture…
-- A strong work culture should…
-- This kind of environment helps me…
-- From my experience…
-- Overall, I feel…
+- On the positive side…
+- However, there are also concerns that…
+- In my opinion…
+- While technology brings many benefits…
+- One major challenge we face is…
+- To solve this problem, we need to…
+- Looking at the bigger picture…
+- I believe the key is to…
 
 ### Advanced Phrasal Verbs
 
-- **speak up** → In our team, everyone feels safe to speak up.
-- **look after** → The company really looks after its employees’ well-being.
-- **bring out** → Good leadership brings out the best in people.
-- **fit in** → I feel I fit in very well with the current team culture.
-- **build on** → We continuously build on our feedback culture.
+- **bring about** → Technology has brought about huge changes in how we work.
+- **keep up with** → Society needs to keep up with the pace of technological change.
+- **deal with** → We must deal with the negative effects of social media.
+- **open up** → The internet has opened up many new opportunities.
+- **cut down on** → We should cut down on excessive screen time.
 
 ## 3) Typical Dialogues
 
-### Dialogue 1 – Full Work Culture Description (3–4 minutes)
+### Dialogue 1 – Balanced View (3–4 minutes)
 
-**Teacher:** Can you describe the work culture in your company?
+**Teacher:** How do you think technology is affecting society?
 
 **You:**  
-The work culture in my current company is generally positive and collaborative. We have a strong emphasis on psychological safety — people are encouraged to speak up, share ideas, and even admit mistakes without fear. This creates a very supportive team dynamic where knowledge sharing happens naturally.
+Technology has had a profound impact on society, and the effects are both positive and negative. On the positive side, it has improved connectivity, made information more accessible, and created many new job opportunities in the digital economy. Tools like AI are helping us solve complex problems faster and improving productivity in many fields.
 
-Our leadership style is quite empowering. Managers trust us to make technical decisions and give us autonomy while still providing clear direction and support when needed. We also have a healthy feedback culture with regular one-on-ones and retrospectives.
+However, there are serious concerns as well. Job displacement caused by automation is a real issue, especially for routine tasks. Privacy concerns are growing because of how much personal data is being collected. There is also the problem of digital addiction and the spread of misinformation on social platforms.
 
-What I appreciate most is the focus on work-life integration and employee well-being. The company encourages us not to work overtime unnecessarily and supports flexible working hours. Of course, no culture is perfect — sometimes we still face pressure during tight deadlines, but overall, I feel motivated and valued in this environment.
+In my view, the key is to find the right balance. We need responsible innovation — technology that is developed with human values, ethics, and sustainability in mind. As a developer, I believe we have a responsibility to think not only about what we can build, but also about how it will affect people and society in the long term.
 
 ## 4) Reading Text
 
-Work culture plays a major role in how happy and productive employees feel. A healthy culture is built on trust, psychological safety, open communication, and respect for work-life balance. When team members feel supported and valued, they are more willing to contribute ideas, take ownership, and deliver their best work. For me, a good work culture is one that encourages growth, collaboration, and well-being at the same time.
+Modern technology is reshaping society in powerful ways. While it brings tremendous benefits such as better access to education, healthcare, and global communication, it also creates challenges including privacy risks, job changes, and social inequality. The future depends on how responsibly we develop and use these technologies. A human-centered approach that considers both innovation and societal well-being is essential for positive long-term impact.
 
 ## 5) List of Questions + Ideas
 
 ### Basic to Intermediate
 
-1. How would you describe the work culture in your company?
-2. What do you like most about it?
-3. Is there anything you would like to improve?
-4. How does the culture affect your motivation?
+1. What positive effects has technology had on society?
+2. What negative effects do you see?
+3. How has technology changed the way people work?
+4. Do you think AI will take away many jobs?
 
 ### B2-Level Expanded Questions
 
-5. What are the most important values in a good work culture for you?
-6. How does leadership style influence team performance?
-7. How important is psychological safety in a tech team?
-8. What kind of work culture would be ideal for you?
-9. How has remote/hybrid work changed company culture?
-10. What can employees do to help build a better work culture?
+5. How can we reduce the negative impact of technology on society?
+6. What role should governments and companies play in managing tech impact?
+7. How does social media affect mental health and relationships?
+8. Is technology widening or narrowing the gap between rich and poor?
+9. What ethical responsibilities do developers have?
+10. How do you personally balance the benefits and risks of technology?
 
 ### Discussion & Critical Thinking
 
-11. Can a company have a good culture but still have high pressure?
-12. How important is culture compared to salary when choosing a job?
-13. What are the biggest challenges in building a strong remote culture?
-14. Should work culture be the same in every company?
-15. How can developers contribute to improving team culture?
+11. Will AI create more jobs than it destroys?
+12. Should there be stronger regulations on tech companies?
+13. How important is digital literacy in today’s society?
+14. Can technology solve major global problems like climate change?
+15. What kind of future do you hope technology will create?
 
 ---

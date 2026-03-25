@@ -1,17 +1,17 @@
 ---
-sessionNumber: 26
-title: Behavioral Interview
+sessionNumber: 28
+title: Final Interview
 topic: PHASE 5 — MOCK INTERVIEW
 phase: PHASE 5 — MOCK INTERVIEW
 level: B1+
 description: Practice lesson 26 in PHASE 5 — MOCK INTERVIEW.
 ---
 
-# Lesson 26: Behavioral Interview
+# Lesson 28: Final Interview
 
 ## Objective
 
-- Build confidence with **Behavioral Interview**.
+- Build confidence with **Final Interview**.
 - Speak clearly with practical examples.
 
 ## Key Points
@@ -28,4 +28,4 @@ description: Practice lesson 26 in PHASE 5 — MOCK INTERVIEW.
 
 ## Mini Speaking Task
 
-> Speak for 60-90 seconds about **Behavioral Interview**.
+> Speak for 60-90 seconds about **Final Interview**.
