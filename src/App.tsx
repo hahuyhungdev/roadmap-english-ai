@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import SessionHub from "./pages/SessionHub";
 import PhraseDetail from "./pages/PhraseDetail";
 import SessionDetail from "./pages/SessionDetail";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -11,7 +12,11 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<SessionHub />} />
           <Route path="/phrase/:phraseId" element={<PhraseDetail />} />
-          <Route path="/phrase/:phraseId/session/:id" element={<SessionDetail />} />
+          <Route
+            path="/phrase/:phraseId/session/:id"
+            element={<SessionDetail />}
+          />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

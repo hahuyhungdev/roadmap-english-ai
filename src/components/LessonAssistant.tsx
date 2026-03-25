@@ -49,13 +49,20 @@ export default function LessonAssistant({
 
       const data = (await res.json()) as AiResponse & { error?: string };
       if (!res.ok) {
-        throw new Error(data.error || "Failed to get AI response");
+        if (res.status === 404) {
+          throw new Error(
+            "API endpoint not found. For local dev, run: npm run dev:vercel",
+          );
+        }
+        throw new Error(data.error || `API Error: ${res.status}`);
       }
 
-      setMessages((prev) => [
-        ...prev,
-        { role: "assistant", content: data.reply },
-      ]);
+      const reply = data.reply?.trim();
+      if (!reply) {
+        throw new Error("Empty response from AI");
+      }
+
+      setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
     } catch (err) {
       const message =
         err instanceof Error ? err.message : "Failed to get AI response";
