@@ -11,10 +11,20 @@ export default function PracticeCoach({
   lessonTitle,
   lessonContent,
 }: PracticeCoachProps) {
+  function getErrorMessage(err: unknown): string {
+    if (
+      err &&
+      typeof err === "object" &&
+      "message" in err &&
+      typeof (err as any).message === "string"
+    ) {
+      return (err as any).message;
+    }
+    return String(err);
+  }
   const { start, stop, isRecording, transcript, partial, error } = useSoniox();
   const [finalTranscript, setFinalTranscript] = useState("");
   const [reply, setReply] = useState("");
-  const [review, setReview] = useState<any>(null);
   const [loading, setLoading] = useState(false);
   const [isExpanded, setIsExpanded] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -45,7 +55,6 @@ export default function PracticeCoach({
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Coach API failed");
       setReply(data.reply || "");
-      setReview(data.review || null);
       if (data.audioContent) {
         const audio = `data:audio/mp3;base64,${data.audioContent}`;
         if (audioRef.current) {
@@ -53,9 +62,9 @@ export default function PracticeCoach({
           audioRef.current.play().catch(() => {});
         }
       }
-    } catch (err: any) {
+    } catch (err) {
       console.error(err);
-      alert(err?.message || String(err));
+      alert(getErrorMessage(err));
     } finally {
       setLoading(false);
     }
@@ -85,7 +94,7 @@ export default function PracticeCoach({
                   if (isRecording) stop();
                   setFinalTranscript("");
                   setReply("");
-                  setReview(null);
+                  // cleared
                 }}
                 className="p-1 text-gray-500 hover:text-gray-700 transition-colors"
               >

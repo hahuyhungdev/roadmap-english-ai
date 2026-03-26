@@ -16,6 +16,17 @@ type UseSonioxResult = {
 // and message format to match Soniox spec.
 
 export default function useSoniox(): UseSonioxResult {
+  function getErrorMessage(err: unknown): string {
+    if (
+      err &&
+      typeof err === "object" &&
+      "message" in err &&
+      typeof (err as any).message === "string"
+    ) {
+      return (err as any).message;
+    }
+    return String(err);
+  }
   const wsRef = useRef<WebSocket | null>(null);
   const mediaRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -29,11 +40,30 @@ export default function useSoniox(): UseSonioxResult {
     "wss://api.soniox.com/v1/stream";
   const API_KEY = (import.meta.env.VITE_SONIOX_API_KEY as string) || "";
 
+  function stop() {
+    try {
+      if (mediaRef.current && mediaRef.current.state !== "inactive")
+        mediaRef.current.stop();
+    } catch (err) {
+      console.warn("stop media error", err);
+    }
+    try {
+      streamRef.current?.getTracks().forEach((t) => t.stop());
+    } catch (err) {
+      console.warn("stop tracks error", err);
+    }
+    try {
+      wsRef.current?.close();
+    } catch (err) {
+      console.warn("ws close error", err);
+    }
+    setIsRecording(false);
+  }
+
   useEffect(() => {
     return () => {
       stop();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function start() {
@@ -71,7 +101,9 @@ export default function useSoniox(): UseSonioxResult {
           // notify end of stream
           try {
             ws.send(JSON.stringify({ type: "eof" }));
-          } catch {}
+          } catch (err) {
+            console.warn("Failed to send eof", err);
+          }
         };
 
         mr.start(250);
@@ -90,34 +122,21 @@ export default function useSoniox(): UseSonioxResult {
           }
         } catch (err) {
           // ignore non-json messages
+          console.debug("Non-JSON ws message", err);
         }
       };
 
-      ws.onerror = (ev) => {
+      ws.onerror = () => {
         setError("WebSocket error");
       };
 
       ws.onclose = () => {
         setIsRecording(false);
       };
-    } catch (err: any) {
-      setError(err?.message || String(err));
+    } catch (err) {
+      setError(getErrorMessage(err));
       setIsRecording(false);
     }
-  }
-
-  function stop() {
-    try {
-      if (mediaRef.current && mediaRef.current.state !== "inactive")
-        mediaRef.current.stop();
-    } catch {}
-    try {
-      streamRef.current?.getTracks().forEach((t) => t.stop());
-    } catch {}
-    try {
-      wsRef.current?.close();
-    } catch {}
-    setIsRecording(false);
   }
 
   return { start, stop, isRecording, transcript, partial, error };
