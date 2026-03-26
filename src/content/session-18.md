@@ -7,7 +7,7 @@ level: B1+ / B2
 description: Discuss the broader impact of technology and AI on society, including jobs, privacy, ethics, and the environment with balanced opinions.
 ---
 
-# BUỔI 18: Technology’s Impact on Society & Ethics
+# Session 18: Technology’s Impact on Society & Ethics
 
 **Level:** B1+ / B2  
 **Focus:** Share balanced, thoughtful opinions on how technology affects society and discuss important ethical issues.
@@ -93,13 +93,3 @@ Modern technology, especially artificial intelligence, is reshaping society in p
 14. Should there be limits on how much data companies can collect?
 15. What kind of future do you hope technology will create for society?
 
----
-
-Bạn đã có đầy đủ **Buổi 13 đến 18** của PHASE 3.
-
-Bạn muốn tôi:
-- Chỉnh sửa bất kỳ buổi nào?
-- Tiếp tục làm Phase 4 (Behavioral & Culture Fit)?
-- Hay muốn review lại toàn bộ PHASE 3 trước?
-
-Cứ cho tôi biết bạn muốn làm gì tiếp theo nhé!

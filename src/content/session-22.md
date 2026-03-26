@@ -7,28 +7,33 @@ level: B1+ / B2
 description: Discuss how you handle tight deadlines, high pressure situations, and manage priorities effectively.
 ---
 
-# BUỔI 22: Working Under Pressure & Tight Deadlines
+# Session 22: Working Under Pressure & Tight Deadlines
 
 **Level:** B1+ / B2  
 **Focus:** Show how you stay calm, organized, and effective when working under pressure and tight deadlines.
 
 ## 1) Vocabulary & Collocations
 
-- **tight deadline** – hạn chót chặt chẽ  
-- **high-pressure situation** – tình huống áp lực cao  
-- **prioritization** – sắp xếp ưu tiên  
-- **time management** – quản lý thời gian  
-- **stress management** – quản lý căng thẳng  
-- **deliver under pressure** – hoàn thành dưới áp lực  
-- **scope creep** – tình trạng yêu cầu tăng thêm ngoài kế hoạch  
+- **tight deadline** (n) – a very short or strict time limit  
+  *Example:* We had to deliver the feature under a tight deadline of only two weeks.
 
-**Strong Collocations:**
-- work under pressure
-- meet tight deadlines
-- manage competing priorities
-- stay focused under stress
-- reprioritize tasks
-- maintain quality under pressure
+- **high-pressure situation** (n) – a stressful and demanding circumstance  
+  *Example:* I stay calm even in high-pressure situations.
+
+- **prioritization** (n) – the act of deciding what is most important  
+  *Example:* Good prioritization helped us meet the deadline successfully.
+
+- **time management** (n) – the ability to use time effectively  
+  *Example:* Strong time management skills are essential when working under pressure.
+
+- **stress management** (n) – techniques to handle and reduce stress  
+  *Example:* I practice simple stress management techniques like short breaks.
+
+- **deliver under pressure** (v) – to successfully complete work despite difficulties  
+  *Example:* I can deliver high-quality work even under pressure.
+
+- **scope creep** (n) – when project requirements keep increasing unexpectedly  
+  *Example:* We had to manage scope creep carefully to meet the deadline.
 
 ## 2) Useful Phrases & Patterns
 

@@ -7,29 +7,36 @@ level: B1+ / B2
 description: Master the most common opening interview question with a clear, structured, and engaging self-introduction at B2 level.
 ---
 
-# BUỔI 19: Tell Me About Yourself & Professional Journey
+# Session 19: Tell Me About Yourself & Professional Journey
 
 **Level:** B1+ / B2  
 **Focus:** Deliver a confident, concise, and professional self-introduction that highlights your background, relevant experience, and motivation.
 
 ## 1) Vocabulary & Collocations
 
-- **professional journey** – hành trình sự nghiệp  
-- **relevant experience** – kinh nghiệm liên quan  
-- **key achievement** – thành tựu nổi bật  
-- **career transition** – chuyển hướng sự nghiệp  
-- **cross-functional collaboration** – làm việc liên bộ phận  
-- **passion for** – đam mê với  
-- **eager to** – mong muốn  
-- **contribute to** – đóng góp cho  
+- **professional journey** (n) – the path and development of your career over time  
+  *Example:* My professional journey has taken me from a junior frontend developer to handling end-to-end feature development.
 
-**Strong Collocations:**
-- summarize my professional background
-- transition from … to …
-- gain hands-on experience
-- take on more responsibility
-- seek new challenges
-- align with company goals
+- **relevant experience** (n) – work experience that relates directly to the current role  
+  *Example:* I have relevant experience in building scalable user interfaces for enterprise applications.
+
+- **key achievement** (n) – an important success or accomplishment in your work  
+  *Example:* One of my key achievements was reducing page load time by 65%.
+
+- **career transition** (n) – a change from one job or role to another  
+  *Example:* My career transition from remote work to a full-office environment taught me a lot about collaboration.
+
+- **cross-functional collaboration** (n) – working effectively with different teams (backend, design, product, etc.)  
+  *Example:* I enjoy cross-functional collaboration because it helps deliver better products.
+
+- **hands-on experience** (n) – practical, direct experience doing the work  
+  *Example:* I gained hands-on experience with AWS deployment and CI/CD pipelines.
+
+- **upward mobility** (n) – the possibility to advance to higher positions  
+  *Example:* I’m looking for a company that offers clear upward mobility.
+
+- **professional background** (n) – your overall work history and qualifications  
+  *Example:* Let me briefly summarize my professional background.
 
 ## 2) Useful Phrases & Patterns
 

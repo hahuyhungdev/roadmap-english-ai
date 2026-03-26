@@ -7,7 +7,7 @@ level: B1+ / B2
 description: Discuss your learning habits, challenges in keeping up with technology, and your plans for professional development.
 ---
 
-# BUỔI 15: Learning & Continuous Skill Development
+# Session 15: Learning & Continuous Skill Development
 
 **Level:** B1+ / B2  
 **Focus:** Talk about how you learn new skills, your learning methods, challenges, and future learning plans.

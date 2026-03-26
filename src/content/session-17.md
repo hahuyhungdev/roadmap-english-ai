@@ -7,7 +7,7 @@ level: B1+ / B2
 description: Discuss the rising cost of living, financial pressures on tech workers, and how it affects lifestyle and career choices.
 ---
 
-# BUỔI 17: Cost of Living, Financial Pressure & Lifestyle in Tech
+# Session 17: Cost of Living, Financial Pressure & Lifestyle in Tech
 
 **Level:** B1+ / B2  
 **Focus:** Talk honestly about financial pressures, cost of living, and how they influence your lifestyle and career decisions.

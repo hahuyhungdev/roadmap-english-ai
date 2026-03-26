@@ -7,27 +7,33 @@ level: B1+ / B2
 description: Discuss teamwork, conflict resolution, initiative, and how you fit into a company’s culture.
 ---
 
-# BUỔI 24: Teamwork, Conflict, Initiative & Cultural Fit
+# Session 24: Teamwork, Conflict, Initiative & Cultural Fit
 
 **Level:** B1+ / B2  
 **Focus:** Show you are a good team player, can handle conflict professionally, take initiative, and align with company culture.
 
 ## 1) Vocabulary & Collocations
 
-- **team collaboration** – hợp tác nhóm  
-- **conflict resolution** – giải quyết xung đột  
-- **take initiative** – chủ động  
-- **informal leadership** – lãnh đạo không chính thức  
-- **cultural fit** – sự phù hợp văn hóa  
-- **stakeholder management** – quản lý bên liên quan  
-- **constructive disagreement** – bất đồng mang tính xây dựng  
+- **team collaboration** (n) – working together effectively as a team  
+  *Example:* Successful projects require strong team collaboration.
 
-**Strong Collocations:**
-- resolve conflicts effectively
-- take ownership and initiative
-- foster team collaboration
-- adapt to company culture
-- contribute positively
+- **conflict resolution** (n) – the process of solving disagreements  
+  *Example:* I prefer open discussion for conflict resolution.
+
+- **take initiative** (v) – to act without being told what to do  
+  *Example:* I like to take initiative when I see opportunities for improvement.
+
+- **informal leadership** (n) – leading others without an official title  
+  *Example:* I have experience showing informal leadership in cross-functional projects.
+
+- **cultural fit** (n) – how well a person matches a company’s values and culture  
+  *Example:* Cultural fit is very important to me when choosing a company.
+
+- **constructive disagreement** (n) – healthy discussion with different opinions  
+  *Example:* I believe constructive disagreement leads to better decisions.
+
+- **stakeholder management** (n) – handling relationships with people who have interest in a project  
+  *Example:* Good stakeholder management helped us align expectations.
 
 ## 2) Useful Phrases & Patterns
 

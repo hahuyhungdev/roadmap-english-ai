@@ -7,25 +7,33 @@ level: B1+ / B2
 description: Discuss your professional strengths and weaknesses honestly with concrete examples and show how you are improving.
 ---
 
-# BUỔI 20: Strengths, Weaknesses & Self-Awareness
+# Session 20: Strengths, Weaknesses & Self-Awareness
 
 **Level:** B1+ / B2  
 **Focus:** Answer the classic “strengths and weaknesses” question with authenticity, balance, and maturity.
 
 ## 1) Vocabulary & Collocations
 
-- **self-awareness** – nhận thức bản thân  
-- **core strength** – điểm mạnh cốt lõi  
-- **area for improvement** – lĩnh vực cần cải thiện  
-- **constructive feedback** – phản hồi xây dựng  
-- **personal development** – phát triển bản thân  
-- **overcome challenges** – vượt qua thách thức  
+- **self-awareness** (n) – understanding your own strengths and weaknesses  
+  *Example:* Self-awareness is one of the most important qualities I look for in myself and others.
 
-**Strong Collocations:**
-- leverage my strengths
-- work on my weaknesses
-- actively seek feedback
-- turn weakness into strength
+- **core strength** (n) – a major or fundamental strength  
+  *Example:* One of my core strengths is my attention to detail in UI implementation.
+
+- **area for improvement** (n) – an aspect that needs to be developed further  
+  *Example:* Delegation is currently one of my areas for improvement.
+
+- **constructive feedback** (n) – helpful criticism intended to improve performance  
+  *Example:* I actively seek constructive feedback from senior developers.
+
+- **personal development** (n) – the process of improving yourself  
+  *Example:* Continuous personal development is essential in the fast-changing tech industry.
+
+- **accountability** (n) – taking responsibility for your actions and results  
+  *Example:* I always take accountability when something goes wrong.
+
+- **growth mindset** (n) – the belief that abilities can be developed through dedication  
+  *Example:* I have a growth mindset and view challenges as opportunities to learn.
 - continuous self-improvement
 
 ## 2) Useful Phrases & Patterns

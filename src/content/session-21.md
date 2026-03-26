@@ -7,26 +7,33 @@ level: B1+ / B2
 description: Discuss your career goals, ambition, reasons for choosing the company, and what kind of environment you thrive in.
 ---
 
-# BUỔI 21: Career Goals, Ambition & Why This Company
+# Session 21: Career Goals, Ambition & Why This Company
 
 **Level:** B1+ / B2  
 **Focus:** Show clear ambition, realistic goals, and genuine interest in the company and role.
 
 ## 1) Vocabulary & Collocations
 
-- **short-term goal** – mục tiêu ngắn hạn  
-- **long-term aspiration** – hoài bão dài hạn  
-- **career advancement** – thăng tiến sự nghiệp  
-- **company culture** – văn hóa công ty  
-- **growth opportunity** – cơ hội phát triển  
-- **impactful contribution** – đóng góp có ảnh hưởng  
+- **short-term goal** (n) – an objective you want to achieve soon (1–2 years)  
+  *Example:* My short-term goal is to become a Senior Frontend Engineer.
 
-**Strong Collocations:**
-- pursue career growth
-- align with my goals
-- contribute meaningfully
-- thrive in a … environment
-- take on more responsibility
+- **long-term aspiration** (n) – a big goal or dream for the future  
+  *Example:* My long-term aspiration is to move into a technical leadership role.
+
+- **career advancement** (n) – progress and promotion in your career  
+  *Example:* I’m looking for a role that offers clear career advancement opportunities.
+
+- **company culture** (n) – the values, behaviors, and environment of a company  
+  *Example:* I thrive in a company culture that values collaboration and innovation.
+
+- **growth opportunity** (n) – chance to develop and learn new skills  
+  *Example:* This position offers excellent growth opportunities in AI integration.
+
+- **meaningful contribution** (n) – a valuable and significant impact on the company  
+  *Example:* I want to make a meaningful contribution to product development.
+
+- **work environment** (n) – the conditions and atmosphere in which you work  
+  *Example:* I perform best in a supportive and fast-paced work environment.
 
 ## 2) Useful Phrases & Patterns
 

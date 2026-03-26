@@ -7,7 +7,7 @@ level: B1+ / B2
 description: Discuss how AI is changing frontend development, productivity, required skills, and the future of the profession with balanced opinions.
 ---
 
-# BUỔI 14: Impact of AI & New Technologies on Frontend Development
+# Session 14: Impact of AI & New Technologies on Frontend Development
 
 **Level:** B1+ / B2  
 **Focus:** Share thoughtful, balanced opinions about how AI is transforming frontend development and what it means for developers.

@@ -7,27 +7,33 @@ level: B1+ / B2
 description: Talk about a failure or mistake you made, what you learned, and how you improved afterward.
 ---
 
-# BUỔI 23: Failure, Mistakes & Lessons Learned
+# Session 23: Failure, Mistakes & Lessons Learned
 
 **Level:** B1+ / B2  
 **Focus:** Demonstrate maturity, accountability, and ability to learn from setbacks.
 
 ## 1) Vocabulary & Collocations
 
-- **setback** – thất bại tạm thời  
-- **mistake** – sai lầm  
-- **lesson learned** – bài học rút ra  
-- **accountability** – trách nhiệm cá nhân  
-- **resilience** – khả năng phục hồi  
-- **root cause** – nguyên nhân gốc rễ  
-- **prevent recurrence** – ngăn ngừa tái diễn  
+- **setback** (n) – a problem that delays or stops progress  
+  *Example:* That bug was a major setback, but we learned from it.
 
-**Strong Collocations:**
-- learn from failure
-- take ownership of a mistake
-- turn a setback into an opportunity
-- reflect on what went wrong
-- implement changes
+- **mistake** (n) – an error or wrong action  
+  *Example:* I made a mistake by not testing thoroughly before release.
+
+- **lesson learned** (n) – useful knowledge gained from an experience  
+  *Example:* The most important lesson learned was the value of automated testing.
+
+- **accountability** (n) – willingness to accept responsibility  
+  *Example:* I took full accountability for the issue.
+
+- **resilience** (n) – the ability to recover quickly from difficulties  
+  *Example:* This experience strengthened my resilience.
+
+- **root cause** (n) – the fundamental reason for a problem  
+  *Example:* We spent time identifying the root cause of the failure.
+
+- **prevent recurrence** (v) – to stop something from happening again  
+  *Example:* We implemented new processes to prevent recurrence.
 
 ## 2) Useful Phrases & Patterns
 

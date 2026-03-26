@@ -7,7 +7,7 @@ level: B1+ / B2
 description: Talk confidently about your current job, salary structure, how you evaluate job offers, and your short-term career progression using natural and professional B2 English.
 ---
 
-# BUỔI 13: Work, Compensation & Career Progression
+# Session 13: Work, Compensation & Career Progression
 
 **Level:** B1+ / B2  
 **Focus:** Speak fluently and professionally about your current work, compensation, how you evaluate opportunities, and your career development plans.

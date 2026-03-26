@@ -7,7 +7,7 @@ level: B1+ / B2
 description: Discuss how economic conditions affect the tech industry, company decisions, and your personal career choices with balanced and realistic opinions.
 ---
 
-# BUỔI 16: Economic Uncertainty & Its Impact on Tech Industry and Personal Career
+# Session 16: Economic Uncertainty & Its Impact on Tech Industry and Personal Career
 
 **Level:** B1+ / B2  
 **Focus:** Speak confidently about how the economy influences the tech sector, company strategies, and your own career decisions.
