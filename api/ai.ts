@@ -9,6 +9,7 @@ type RequestBody = {
   messages?: ChatMessage[];
   lessonTitle?: string;
   lessonContent?: string;
+  mode?: "practice" | "idea" | "concise";
 };
 
 type JsonResponse = {
@@ -65,9 +66,19 @@ export default async function handler(
     .filter(Boolean)
     .join("\n\n");
 
-  const systemPrompt =
+  const mode = (body as RequestBody).mode || "practice";
+
+  let systemPrompt =
     "You are an English lesson assistant. Keep answers concise, practical, and learner-friendly. " +
     "When useful, provide: 1) simple explanation, 2) speaking examples, 3) short practice task.";
+
+  if (mode === "idea") {
+    systemPrompt =
+      "You are an idea generator for answering questions about lessons. Provide structured frameworks, patterns, and example answer outlines that help the learner produce complete responses. Focus on creative approaches, templates, and sample phrasing.";
+  } else if (mode === "concise") {
+    systemPrompt =
+      "You are an English lesson assistant that gives short, concise, and focused answers. Keep responses under 2-3 sentences when possible and avoid extra examples unless requested.";
+  }
 
   try {
     const upstream = await fetch(DEEPSEEK_API_URL, {

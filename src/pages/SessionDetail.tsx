@@ -31,7 +31,7 @@ export default function SessionDetail() {
   const next = idx >= 0 ? phase.sessions[idx + 1] : undefined;
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-4xl mx-auto">
       <div className="flex items-center justify-between mb-6">
         <Link
           to={`/phase/${phase.id}`}

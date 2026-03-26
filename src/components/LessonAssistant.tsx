@@ -18,6 +18,7 @@ export default function LessonAssistant({
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [mode, setMode] = useState<"practice" | "idea" | "concise">("practice");
 
   async function onSubmit(e?: FormEvent) {
     if (e && typeof (e as FormEvent).preventDefault === "function") {
@@ -42,6 +43,7 @@ export default function LessonAssistant({
         body: JSON.stringify({
           lessonTitle,
           lessonContent,
+          mode,
           messages: nextMessages.map((m) => ({
             role: m.role,
             content: m.content,
@@ -167,8 +169,8 @@ export default function LessonAssistant({
               onKeyDown={handleKeyDown}
               onInput={adjustTextareaHeight}
               placeholder="Ask about this lesson... (Shift+Enter for newline)"
-              rows={1}
-              className="flex-1 border border-gray-200 rounded-xl px-2 py-1.5 text-xs outline-none focus:border-indigo-300 resize-none overflow-auto max-h-72"
+              rows={2}
+              className="flex-1 border border-gray-200 rounded-xl px-2 py-1.5 text-base outline-none focus:border-indigo-300 resize-none overflow-auto max-h-72"
             />
             <button
               type="submit"
@@ -178,6 +180,26 @@ export default function LessonAssistant({
               <Send size={12} />
             </button>
           </form>
+          <div className="ml-3 inline-flex rounded-md bg-gray-50 p-0.5">
+            <button
+              onClick={() => setMode("practice")}
+              className={`${mode === "practice" ? "bg-white text-indigo-600" : "text-gray-600"} px-2 py-1 text-xs rounded-md`}
+            >
+              Practice
+            </button>
+            <button
+              onClick={() => setMode("idea")}
+              className={`${mode === "idea" ? "bg-white text-indigo-600" : "text-gray-600"} px-2 py-1 text-xs rounded-md`}
+            >
+              Idea
+            </button>
+            <button
+              onClick={() => setMode("concise")}
+              className={`${mode === "concise" ? "bg-white text-indigo-600" : "text-gray-600"} px-2 py-1 text-xs rounded-md`}
+            >
+              Concise
+            </button>
+          </div>
         </section>
       ) : (
         <button

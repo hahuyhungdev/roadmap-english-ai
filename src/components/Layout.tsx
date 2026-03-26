@@ -27,7 +27,7 @@ export default function Layout() {
           )}
         </div>
       </header>
-      <main className="flex-1 max-w-5xl mx-auto w-full px-4 sm:px-6 py-8">
+      <main className="flex-1 max-w-6xl mx-auto w-full px-4 sm:px-6 py-8">
         <Outlet />
       </main>
     </div>
