@@ -7,138 +7,132 @@ level: B1+
 description: Introduce your role, responsibilities, daily tasks, and collaboration at work in a clear and confident way.
 ---
 
-# Session  1: Your Role & Work
+# Session 1: Your Role & Work
 
 **Level:** B1+  
-**Focus:** Speaking naturally about your job as a Frontend Developer
+**Focus:** Speaking naturally and confidently about your job as a Frontend Developer.
 
-## 1) Vocabulary (with 2–3 useful examples each)
+## 1) Vocabulary & Collocations
 
-- **responsibility** (n) – something you are in charge of doing
-  - One of my main responsibilities is building responsive user interfaces.
-  - I take responsibility for making sure the application works well on mobile devices.
-  - Team members share responsibilities for code quality and performance.
+- **responsibility** (n) – something you are in charge of doing  
+  *Example:* One of my main responsibilities is to build responsive user interfaces.  
+  *Example:* I take responsibility for ensuring the application performs well across different devices.
 
-- **collaboration** (n) / **collaborate** (v) – working together with others
-  - Good collaboration between frontend and backend teams is very important.
-  - I collaborate daily with designers and product managers.
-  - Effective collaboration helps us deliver features faster.
+- **collaboration** (n) / **collaborate** (v) – working together with others  
+  *Example:* Good collaboration between frontend and backend teams leads to better results.  
+  *Example:* I collaborate closely with designers and product managers every day.
 
-- **maintain** (v) – to keep something in good condition
-  - I maintain the existing frontend codebase and fix bugs regularly.
-  - We maintain high performance standards for all user-facing pages.
-  - Maintaining clean code makes future development much easier.
+- **maintain** (v) – to keep something in good condition or working properly  
+  *Example:* I maintain the existing codebase and fix bugs regularly.  
+  *Example:* Maintaining high code quality helps the team work more efficiently.
 
-- **optimize** (v) – to make something work better or faster
-  - We optimize images and code to improve page loading speed.
-  - My goal is to optimize the user experience on every screen.
-  - We constantly optimize the application for better performance.
+- **optimize** (v) – to make something work better, faster, or more efficiently  
+  *Example:* We optimize loading speed to improve user experience.  
+  *Example:* My team works hard to optimize performance for large datasets.
 
-- **user experience (UX)** (n) – how easy and pleasant it is for people to use the product
-  - Good frontend development focuses heavily on user experience.
-  - We always think about UX when designing new features.
-  - Poor user experience can cause users to stop using the application.
+- **user experience (UX)** (n) – how easy, pleasant, and efficient it is for users to interact with the product  
+  *Example:* Good frontend development focuses heavily on user experience.  
+  *Example:* Poor UX can cause users to abandon the application.
 
-- **cross-functional team** (n) – a team with people from different job roles
-  - I work in a cross-functional team that includes developers, designers, and testers.
-  - Cross-functional teams help us solve problems more quickly.
-  - In a cross-functional team, everyone contributes different skills.
+- **user interface (UI)** (n) – the visual part of the application that users see and interact with  
+  *Example:* I am responsible for creating a clean and intuitive user interface.  
+  *Example:* The user interface must be both beautiful and functional.
 
-- **user interface (UI)** (n) – the visual part of the application that users see and interact with
-  - I am responsible for creating a clean and modern user interface.
-  - The user interface must be intuitive and easy to navigate.
+- **cross-functional team** (n) – a team that includes people with different job roles and expertise  
+  *Example:* I work in a cross-functional team with developers, designers, and testers.  
+  *Example:* Cross-functional teams help us solve problems from multiple perspectives.
+
+- **stakeholder** (n) – anyone who has an interest in the project (managers, clients, users, etc.)  
+  *Example:* I often communicate with stakeholders to understand their requirements.  
+  *Example:* Managing stakeholder expectations is an important part of my role.
+
+- **deliver** (v) – to complete and provide something (features, products, results)  
+  *Example:* My team delivers new features every two weeks.  
+  *Example:* We aim to deliver high-quality user interfaces on time.
+
+- **impact** (n) – the effect or influence something has  
+  *Example:* My work has a direct impact on how users feel when using the product.
 
 ## 2) Collocations, Chunking & Phrasal Verbs
 
-### Common Collocations
-
+### Strong Collocations
 - take responsibility for
 - work closely with
-- deliver high-quality user interfaces
+- deliver high-quality features
 - ensure smooth user experience
-- improve system performance
+- improve overall performance
 - meet business requirements
 - handle user feedback
 - bridge the gap between design and development
 - provide seamless interaction
+- maintain code quality
 
 ### Useful Chunking & Sentence Starters
-
-- On a daily basis, I…
 - My main role is to…
-- One of the most important parts of my job is…
-- I’m in charge of…
+- On a daily basis, I…
+- A big part of my job involves…
+- I’m responsible for…
+- I collaborate closely with…
 - From the user’s perspective…
 - In terms of user experience…
-- A big part of my work involves…
-- I focus on making sure that…
+- My work contributes to…
 
 ### Useful Phrasal Verbs
-
-- **work on** → I work on new features and improvements every sprint.
+- **work on** → I work on new features and bug fixes every sprint.
 - **deal with** → I often deal with browser compatibility issues.
-- **look after** → I look after the frontend side of the project.
-- **come up with** → I come up with solutions to improve navigation.
-- **carry out** → I carry out code reviews with other team members.
-- **figure out** → We figure out how to best implement new designs.
+- **look after** → I look after the frontend part of the project.
+- **come up with** → We come up with solutions to improve navigation.
+- **carry out** → I carry out code reviews with senior developers.
+- **figure out** → We figure out the best way to implement complex designs.
 
 ## 3) Typical Dialogues
 
-### Dialogue 1 – Basic Introduction (Natural & Clear)
+### Dialogue 1 – Basic Introduction
 
 **Teacher:** Tell me about your job. What do you do?
 
 **You:**  
-I work as a frontend developer. My main role is to build and improve the user interface of our web application.
+I work as a frontend developer. My main role is to build and improve the user interface of our web application. On a daily basis, I work closely with designers to turn designs into functional code and collaborate with backend developers to connect the frontend with the server. I also optimize performance and make sure the application works smoothly on different devices.
 
-On a daily basis, I work closely with designers to turn designs into working code. I also collaborate with backend developers to connect the frontend with the server. In addition, I optimize performance and make sure the application looks good and works smoothly on computers and mobile phones.
-
-### Dialogue 2 – Handling Objection (Realistic & Professional)
+### Dialogue 2 – Handling Objection
 
 **Teacher:** Isn’t frontend development just about making things look nice?
 
 **You:**  
-Actually, it’s much more than just appearance. Of course, the design is important, but my job is to create interfaces that are fast, easy to use, and work well on every device.
-
-For example, when I optimized the login and dashboard pages, the loading time improved significantly. This helped users complete their tasks faster and reduced frustration. In the end, better user experience often leads to higher customer satisfaction and better business results.
+Actually, it’s much more than appearance. While design is important, my job is to create interfaces that are fast, responsive, and easy to use. Good user experience directly affects how users interact with the product and can have a big impact on business results.
 
 ### Dialogue 3 – Talking about Collaboration
 
 **Teacher:** Who do you usually work with?
 
 **You:**  
-I work in a cross-functional team. I collaborate closely with UI/UX designers, backend developers, QA engineers, and the product manager. We use Agile methodology, so we have daily stand-up meetings and plan our work together in two-week sprints. Good communication helps us deliver features smoothly.
+I work in a cross-functional team. I collaborate closely with UI/UX designers, backend developers, and product managers. We use Agile methodology, so we have daily meetings and plan our work in sprints. Good communication helps us deliver features more effectively.
 
 ## 4) Reading Text
 
-I work as a frontend developer in a software development team. My main responsibility is to create the user interface — the part of the application that customers and employees see and interact with every day.
-
-I focus on making the interface clean, fast, and easy to use on different devices such as laptops, tablets, and phones. Every day, I work on new features, fix problems, and optimize performance. I collaborate with designers to implement beautiful designs and with backend developers to connect the interface with the server.
-
-My work directly affects how users feel when they use the product. A good user experience can make the application more successful and help the company achieve its business goals.
+As a frontend developer, my main responsibility is to create the part of the application that users see and interact with. I focus on building clean, fast, and user-friendly interfaces. Every day, I work on new features, optimize performance, and collaborate with other team members. My work plays an important role in delivering a good user experience, which ultimately helps the company achieve its business goals.
 
 ## 5) List of Questions + Ideas
 
 ### Basic Questions
-
 1. What is your current job title?
-2. What do you do as a frontend developer?
-3. What are your main responsibilities?
-4. What does a typical day at work look like for you?
+2. What are your main responsibilities?
+3. Who do you work with most often?
+4. What does a typical day look like for you?
 
 ### Deeper & Follow-up Questions
+5. How does your work affect the end users?
+6. What is the most challenging part of your job?
+7. How important is collaboration in your role?
+8. What do you enjoy most about being a frontend developer?
+9. How do you ensure good user experience in your projects?
+10. In what ways does frontend development contribute to business success?
 
-5. Who do you work with most often?
-6. What kind of tasks do you handle every day?
-7. What do you enjoy most about frontend development?
-8. What is the most challenging part of your job?
-9. How does your work affect the end users?
-10. In what ways does frontend development contribute to the success of a product?
-
-### Objection & Discussion Questions (Practice defending your ideas)
-
+### Objection & Discussion Questions
 11. Some people think frontend is easier than backend. What do you think?
 12. Why is a good user interface important for any software product?
-13. How would you explain your job to someone who is not technical?
-14. What would happen to a product if the frontend team did not do a good job?
-15. How important is collaboration between frontend and other teams?
+13. How would you explain your job to a non-technical person?
+14. What would happen if the frontend team did poor work?
+15. How do you balance beautiful design with good performance?
+
+---

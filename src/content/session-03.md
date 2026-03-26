@@ -7,52 +7,53 @@ level: B1+
 description: Describe your typical workday, common tasks, tools you use, and how you collaborate with the team.
 ---
 
-# Session  3: A Typical Day & Daily Tasks
+# Session 3: A Typical Day & Daily Tasks
 
 **Level:** B1+  
 **Focus:** Speak naturally and fluently about what you do on a normal workday as a Frontend Developer.
 
-## 1) Vocabulary (with 2–3 useful examples each)
+## 1) Vocabulary & Collocations
 
-- **task** (n) – a piece of work that needs to be done
-  - One of my daily tasks is implementing new UI components.
-  - I usually finish 3–4 tasks during a sprint.
-  - Prioritizing tasks helps me manage my time better.
+- **task** (n) – a piece of work that needs to be done  
+  *Example:* One of my daily tasks is implementing new UI components.  
+  *Example:* I prioritize my tasks at the beginning of each day.
 
-- **meeting** (n) – a planned discussion with colleagues
-  - We have a short daily stand-up meeting every morning.
-  - Sprint planning meetings help us decide what to work on next.
-  - I sometimes join meetings with stakeholders to clarify requirements.
+- **meeting** (n) – a planned discussion with colleagues  
+  *Example:* We have a short daily stand-up meeting every morning.  
+  *Example:* I attend sprint planning meetings to discuss the next tasks.
 
-- **code review** (n) – the process of checking someone’s code
-  - I participate in code reviews to maintain code quality.
-  - Giving and receiving code review feedback improves our work.
-  - Code reviews usually take place before we merge new features.
+- **code review** (n) – the process of checking other people’s code  
+  *Example:* I participate in code reviews to maintain high quality.  
+  *Example:* Code reviews help the whole team learn from each other.
 
-- **bug** (n) – a problem or error in the application
-  - I spend part of my day fixing bugs reported by users.
-  - Finding and fixing bugs quickly improves user experience.
-  - Some bugs are related to responsive design on mobile.
+- **bug** (n) – an error or problem in the application  
+  *Example:* I spend time fixing bugs reported by users.  
+  *Example:* Some bugs are related to how the page looks on mobile devices.
 
-- **sprint** (n) – a short period of work (usually 1–2 weeks) in Agile
-  - We work in two-week sprints.
-  - At the end of each sprint, we deliver new features.
-  - Sprint goals are discussed together as a team.
+- **sprint** (n) – a short period of work (usually 1–2 weeks) in Agile  
+  *Example:* We work in two-week sprints.  
+  *Example:* At the end of each sprint, we deliver completed features.
 
-- **tool** (n) – software or application used to do a job
-  - We use Figma as the main design tool.
-  - Jira is the tool we use to track tasks and progress.
-  - VS Code is my favorite coding tool.
+- **tool** (n) – software or program used to do a job  
+  *Example:* VS Code is my main coding tool.  
+  *Example:* We use Jira to track tasks and manage the project.
+
+- **collaboration** (n) – working together with others  
+  *Example:* Good collaboration is essential for successful projects.  
+  *Example:* Collaboration with the design team helps create better interfaces.
+
+- **productivity** (n) – how efficiently and effectively you work  
+  *Example:* I try to maintain high productivity throughout the day.  
+  *Example:* Good tools help increase team productivity.
 
 ## 2) Collocations, Chunking & Phrasal Verbs
 
-### Common Collocations
-
+### Strong Collocations
 - attend meetings
 - implement new features
 - fix bugs
-- review code
-- update documentation
+- perform code reviews
+- update tasks
 - optimize performance
 - gather requirements
 - track progress
@@ -60,24 +61,21 @@ description: Describe your typical workday, common tasks, tools you use, and how
 - meet deadlines
 
 ### Useful Chunking & Sentence Starters
-
 - A typical day for me starts with…
-- On most days, I spend time…
-- One of my main tasks is…
+- Most of my time is spent on…
+- One of my main daily tasks is…
 - I usually begin my day by…
-- During the day, I also…
 - In the afternoon, I focus on…
+- Throughout the day, I…
 - At the end of the day, I…
-- My workday is a mix of…
 
 ### Useful Phrasal Verbs
-
-- **work on** → I work on new features most of the morning.
-- **deal with** → I often deal with unexpected bugs.
-- **look into** → When a problem appears, I look into it immediately.
-- **come up with** → We come up with solutions during refinement meetings.
+- **work on** → I work on new features in the morning.
+- **deal with** → I often deal with unexpected bugs or issues.
+- **look into** → When a problem appears, I look into it right away.
+- **come up with** → We come up with solutions during team discussions.
 - **carry out** → I carry out testing before submitting my code.
-- **follow up** → I follow up with designers if something is unclear.
+- **follow up** → I follow up with designers if the requirements are unclear.
 
 ## 3) Typical Dialogues
 
@@ -86,58 +84,42 @@ description: Describe your typical workday, common tasks, tools you use, and how
 **Teacher:** What does a typical workday look like for you?
 
 **You:**  
-A typical day for me starts with a quick daily stand-up meeting where the team shares progress and any blockers. After that, I usually work on implementing new features or improving existing ones.
+A typical day for me starts with a daily stand-up meeting where the team shares updates and any blockers. After the meeting, I usually work on implementing new features or improving existing components.
 
-I spend most of the morning coding and testing. In the afternoon, I often do code reviews, fix bugs, or join meetings with designers to clarify UI requirements. Before the end of the day, I update my tasks in Jira and make sure everything is on track for the sprint.
+I spend most of the morning coding and testing. In the afternoon, I often do code reviews, fix bugs, or join discussions with designers and backend developers. Before finishing the day, I update my tasks and prepare for the next sprint.
 
-### Dialogue 2 – Handling Objection / Deeper Question
+### Dialogue 2 – Tools & Collaboration
 
-**Teacher:** Isn’t your job just sitting and coding all day?
-
-**You:**  
-Not really. While coding is a big part of my work, I also spend time in meetings, doing code reviews, and communicating with other team members. Collaboration is very important because frontend work needs to match the design and connect properly with the backend.
-
-For example, if the design is not clear, I have to follow up with the designer. This communication helps us avoid mistakes and deliver better results.
-
-### Dialogue 3 – Talking about Tools & Collaboration
-
-**Teacher:** What tools do you use every day?
+**Teacher:** What tools do you use and how do you collaborate?
 
 **You:**  
-I mainly use VS Code for coding, Figma to check designs, and Jira to manage tasks. We also use Slack for quick communication and GitHub for version control. These tools help the whole team stay organized and work efficiently together.
+I mainly use VS Code for coding, Figma to check designs, and Jira to manage tasks. For communication, we use Slack and Microsoft Teams. I collaborate closely with designers to implement UI correctly and with backend developers to integrate APIs smoothly. Good collaboration helps us deliver better results faster.
 
 ## 4) Reading Text
 
-As a frontend developer, my typical workday is quite varied. It usually begins with a short team stand-up meeting. Then I focus on my main tasks — building new user interface features, making the application responsive, and optimizing performance.
-
-Throughout the day, I collaborate with designers to make sure the visual design is implemented correctly and with backend developers to integrate APIs smoothly. I also review code written by teammates and fix any bugs that appear. At the end of the day, I update my progress in the task management tool and prepare for the next day.
-
-This balance between coding, meetings, and collaboration helps me deliver high-quality work while staying connected with the rest of the team.
+A frontend developer’s typical day includes a mix of coding, meetings, code reviews, and collaboration. The workday usually starts with a team meeting, followed by focused development time. Throughout the day, developers also fix bugs, optimize performance, and communicate with other team members. This balanced routine helps deliver high-quality work while keeping the team aligned.
 
 ## 5) List of Questions + Ideas
 
 ### Basic Questions
-
 1. What does a typical workday look like for you?
 2. How do you usually start your day?
 3. What are your main daily tasks?
-4. How much time do you spend coding versus in meetings?
+4. What tools do you use every day?
 
 ### Deeper & Follow-up Questions
-
-5. What tools do you use every day?
+5. How much time do you spend coding versus in meetings?
 6. How do you collaborate with other team members?
-7. What kind of problems or bugs do you often deal with?
+7. What do you do when you face a difficult task?
 8. How do you prioritize your tasks?
-9. What do you do when you face a difficult task?
-10. How does your daily work contribute to the team’s goals?
+9. What is the most enjoyable part of your day?
+10. How has your daily routine changed as you gained more experience?
 
 ### Objection & Discussion Questions
-
-11. Some people think developers only write code. What do you think?
+11. Some people think developers only write code all day. What do you think?
 12. How important is communication in your daily work?
-13. What is the most enjoyable part of your typical day?
-14. What is the most challenging part of your daily routine?
-15. How has your daily work changed since you started working as a frontend developer?
+13. What is the most challenging part of your typical day?
+14. How do you stay productive throughout the day?
+15. How does your daily work contribute to the team’s success?
 
 ---
