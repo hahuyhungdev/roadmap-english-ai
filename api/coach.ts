@@ -69,9 +69,9 @@ export default async function handler(
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const apiKey = getEnv("DEEPSEEK_API_KEY");
+  const apiKey = getEnv("VITE_DEEPSEEK_API_KEY");
   if (!apiKey)
-    return res.status(500).json({ error: "Missing DEEPSEEK_API_KEY" });
+    return res.status(500).json({ error: "Missing VITE_DEEPSEEK_API_KEY" });
 
   const body = req.body ?? {};
   const transcript = (body.transcript ?? "").trim();
