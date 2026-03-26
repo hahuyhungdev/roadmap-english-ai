@@ -37,6 +37,43 @@ type VercelLikeResponse = {
   status: (code: number) => { json: (data: JsonResponse) => void };
 };
 
+function normalizeSpacedTranscript(text: string): string {
+  if (!text) return text;
+  // 1) Normalize whitespace
+  let s = text.replace(/\s+/g, " ").trim();
+  // 2) Remove spaces before punctuation
+  s = s.replace(/\s+([.,!?;:])/g, "$1");
+
+  // 3) Join runs of single-letter tokens (e.g., "H e l l o" -> "Hello")
+  s = s.replace(/\b(?:([A-Za-z])\s+){1,}([A-Za-z])\b/g, (m) => {
+    return m.replace(/\s+/g, "");
+  });
+
+  // 4) Join short splits where a long token is followed by a very short token
+  //    (fixes cases like "Hell o" -> "Hello"). This is heuristic.
+  s = s.split(" ").reduce((acc: string[], tok) => {
+    const prev = acc[acc.length - 1];
+    const raw = tok.replace(/[.,!?;:]$/g, "");
+    if (
+      prev &&
+      prev.replace(/[.,!?;:]$/g, "").length >= 3 &&
+      raw.length <= 1 &&
+      /^[A-Za-z]+$/.test(raw)
+    ) {
+      // merge into previous token
+      acc[acc.length - 1] = prev + raw + (/[.,!?;:]$/.test(tok) ? tok.slice(-1) : "");
+    } else {
+      acc.push(tok);
+    }
+    return acc;
+  }, [] as string[]).join(" ");
+
+  // Final cleanup: collapse accidental joins like "Canyou" into "Can you" is hard
+  // heuristically ensure spacing around punctuation and keep single space separators.
+  s = s.replace(/\s+/g, " ").trim();
+  return s;
+}
+
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
 
 function getEnv(name: string): string | undefined {
@@ -69,9 +106,12 @@ export default async function handler(
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const apiKey = getEnv("VITE_DEEPSEEK_API_KEY");
+  // Accept either VITE_* (for local Vite setups) or plain DEEPSEEK_API_KEY env var
+  const apiKey = getEnv("VITE_DEEPSEEK_API_KEY") || getEnv("DEEPSEEK_API_KEY");
   if (!apiKey)
-    return res.status(500).json({ error: "Missing VITE_DEEPSEEK_API_KEY" });
+    return res
+      .status(500)
+      .json({ error: "Missing VITE_DEEPSEEK_API_KEY or DEEPSEEK_API_KEY" });
 
   const body = req.body ?? {};
   const transcript = (body.transcript ?? "").trim();
@@ -93,6 +133,11 @@ export default async function handler(
     },
   ];
 
+  // Allow overriding the model via env var. Use DeepSeek-compatible model names
+  // e.g. "deepseek-chat" or "deepseek-reasoner" (DeepSeek V3.2 variants).
+  const model =
+    getEnv("VITE_DEEPSEEK_MODEL") || getEnv("DEEPSEEK_MODEL") || "deepseek-chat";
+
   // If a message history is provided, include it after the system prompt
   if (history.length) {
     messages.splice(1, 0, ...history);
@@ -106,7 +151,7 @@ export default async function handler(
         Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "deepseek-v3",
+        model,
         temperature: 0.6,
         messages,
       }),
@@ -114,9 +159,9 @@ export default async function handler(
 
     const data = await upstream.json();
     if (!upstream.ok) {
-      return res
-        .status(upstream.status)
-        .json({ error: data?.error?.message || "DeepSeek API request failed" });
+      const errMsg = data?.error?.message || data?.message || JSON.stringify(data) || "DeepSeek API request failed";
+      console.warn("DeepSeek API error:", errMsg, data);
+      return res.status(upstream.status).json({ error: errMsg });
     }
 
     const reply = data?.choices?.[0]?.message?.content?.trim();
@@ -137,35 +182,36 @@ export default async function handler(
 
     let audioContent: string | undefined = undefined;
     // Prefer simple API-key-based TTS if provided, otherwise fall back to
-    // service account JWT OAuth flow.
-    const googleApiKey = getEnv("VITE_GOOGLE_TTS_API_KEY");
-    if (reviewObj?.corrected_version) {
-      if (googleApiKey) {
-        try {
-          const ttsResp = await fetch(
-            `https://texttospeech.googleapis.com/v1/text:synthesize?key=${encodeURIComponent(
-              googleApiKey,
-            )}`,
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                input: { text: reviewObj.corrected_version },
-                voice: { languageCode: "en-US", name: "en-US-Neural2-J" },
-                audioConfig: { audioEncoding: "MP3" },
-              }),
-            },
-          );
+    // service account JWT OAuth flow. Accept either VITE_ or plain env var.
+    const googleApiKey = getEnv("VITE_GOOGLE_TTS_API_KEY") || getEnv("GOOGLE_TTS_API_KEY");
+    // Choose TTS input text: prefer the corrected version if present, otherwise use the reply.
+    const ttsInputRaw = reviewObj?.corrected_version || reply || "";
+    const ttsInput = normalizeSpacedTranscript(ttsInputRaw);
+    if (ttsInput && googleApiKey) {
+      try {
+        const ttsResp = await fetch(
+          `https://texttospeech.googleapis.com/v1/text:synthesize?key=${encodeURIComponent(
+            googleApiKey,
+          )}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              input: { text: ttsInput },
+              voice: { languageCode: "en-US", name: "en-US-Neural2-J" },
+              audioConfig: { audioEncoding: "MP3" },
+            }),
+          },
+        );
 
-          const ttsData = await ttsResp.json();
-          if (ttsResp.ok && ttsData?.audioContent) {
-            audioContent = ttsData.audioContent; // base64
-          } else {
-            console.warn("TTS failed", ttsData);
-          }
-        } catch (err) {
-          console.warn("TTS request error", err);
+        const ttsData = await ttsResp.json();
+        if (ttsResp.ok && ttsData?.audioContent) {
+          audioContent = ttsData.audioContent; // base64
+        } else {
+          console.warn("TTS failed", ttsData);
         }
+      } catch (err) {
+        console.warn("TTS request error", err);
       }
     }
 

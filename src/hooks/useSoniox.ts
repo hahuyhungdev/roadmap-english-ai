@@ -9,6 +9,42 @@ type UseSonioxResult = {
   error?: string;
 };
 
+function normalizeSpacedTranscript(text: string): string {
+  if (!text) return text;
+  // 1) Normalize whitespace
+  let s = text.replace(/\s+/g, " ").trim();
+  // 2) Remove spaces before punctuation
+  s = s.replace(/\s+([.,!?;:])/g, "$1");
+
+  // 3) Join runs of single-letter tokens (e.g., "H e l l o" -> "Hello")
+  s = s.replace(/\b(?:([A-Za-z])\s+){1,}([A-Za-z])\b/g, (m) => {
+    return m.replace(/\s+/g, "");
+  });
+
+  // 4) Join short splits where a long token is followed by a very short token
+  //    (fixes cases like "Hell o" -> "Hello"). This is heuristic.
+  s = s.split(" ").reduce((acc: string[], tok) => {
+    const prev = acc[acc.length - 1];
+    const raw = tok.replace(/[.,!?;:]$/g, "");
+    if (
+      prev &&
+      prev.replace(/[.,!?;:]$/g, "").length >= 3 &&
+      raw.length <= 1 &&
+      /^[A-Za-z]+$/.test(raw)
+    ) {
+      // merge into previous token
+      acc[acc.length - 1] = prev + raw + (/[.,!?;:]$/.test(tok) ? tok.slice(-1) : "");
+    } else {
+      acc.push(tok);
+    }
+    return acc;
+  }, [] as string[]).join(" ");
+
+  // Final cleanup: collapse accidental joins and keep single space separators.
+  s = s.replace(/\s+/g, " ").trim();
+  return s;
+}
+
 export default function useSoniox(): UseSonioxResult {
   function getErrorMessage(err: unknown): string {
     if (err instanceof Error) return err.message;
@@ -125,11 +161,16 @@ export default function useSoniox(): UseSonioxResult {
               const finalTokens = tokens.filter((t) => t.is_final);
 
               if (partialTokens.length > 0) {
-                setPartial(partialTokens.map((t) => t.text).join(" "));
+                const partialText = normalizeSpacedTranscript(
+                  partialTokens.map((t) => t.text).join(" "),
+                );
+                setPartial(partialText);
               }
 
               if (finalTokens.length > 0) {
-                const text = finalTokens.map((t) => t.text).join(" ");
+                const text = normalizeSpacedTranscript(
+                  finalTokens.map((t) => t.text).join(" "),
+                );
                 setTranscript((prev) =>
                   prev ? `${prev} ${text}` : text,
                 );
