@@ -7,42 +7,42 @@ level: B1+ / B2
 description: Explain and strongly defend a technical decision you made, anticipate and respond to objections from stakeholders, and justify your choice with clear reasoning and business impact — at B2 level.
 ---
 
-# Session  12: Defend Your Decision
+# Session 12: Defend Your Decision
 
 **Level:** B1+ / B2  
 **Focus:** Confidently explain, justify, and defend your technical decisions while handling objections professionally and linking them to business value.
 
-## 1) Vocabulary (Expanded & Sophisticated for B2)
+## 1) Vocabulary & Collocations
 
-- **justification** (n) – clear reasons supporting a decision
-  - I provided strong justification based on performance data and user feedback.
+- **justification** (n) – clear reasons supporting a decision  
+  _Example:_ I provided strong justification based on performance data and user feedback.
 
-- **objection** (n) – an expression of disagreement
-  - I was prepared to address common objections from the product team.
+- **objection** (n) – an expression of disagreement or concern  
+  _Example:_ I was prepared to address common objections from the product team.
 
-- **rationale** (n) – the underlying reason or logic
-  - The rationale behind choosing React Query was better state management.
+- **rationale** (n) – the underlying reason or logic behind a choice  
+  _Example:_ The rationale behind choosing lazy loading was better initial load time.
 
-- **evidence-based decision** (n) – a choice supported by data
-  - We made an evidence-based decision after analyzing load time metrics.
+- **evidence-based decision** (n) – a choice supported by data and facts  
+  _Example:_ We made an evidence-based decision after analyzing load time metrics.
 
-- **counterargument** (n) – a response to an objection
-  - My main counterargument was that speed matters more than visual effects in this context.
+- **counterargument** (n) – a response to an objection  
+  _Example:_ My main counterargument was that speed matters more than decorative effects.
 
-- **long-term benefit** (n) – advantages that appear over time
-  - Although more expensive initially, the long-term benefits in maintainability were clear.
+- **long-term benefit** (n) – advantages that appear over time  
+  _Example:_ Although more expensive initially, the long-term benefits in maintainability were clear.
 
-- **short-term drawback** (n) – temporary negative aspect
-  - We acknowledged the short-term drawback of additional development time.
+- **short-term drawback** (n) – a temporary negative aspect  
+  _Example:_ We acknowledged the short-term drawback of additional development time.
 
-- **stakeholder concern** (n) – worries or priorities of people involved
-  - I directly addressed stakeholder concerns about timeline and visual quality.
+- **stakeholder concern** (n) – worries or priorities of people involved  
+  _Example:_ I directly addressed stakeholder concerns about timeline and visual quality.
 
-- **data-driven** (adj) – based on facts and measurements
-  - Our final decision was completely data-driven.
+- **data-driven** (adj) – based on facts and measurements  
+  _Example:_ Our final decision was completely data-driven.
 
-- **defensibility** (n) – how easy it is to justify something
-  - Good documentation increases the defensibility of technical decisions.
+- **defensibility** (n) – how easy it is to justify something  
+  _Example:_ Good documentation increases the defensibility of technical decisions.
 
 ## 2) Collocations, Chunking & Advanced Phrases
 

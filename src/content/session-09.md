@@ -7,42 +7,42 @@ level: B1+ / B2
 description: Discuss real trade-offs in frontend development, explain the reasoning behind choices, evaluate different options, and reflect on outcomes using professional B2-level language.
 ---
 
-# Session  9: Trade-offs & Evaluation
+# Session 9: Trade-offs & Evaluation
 
 **Level:** B1+ / B2  
 **Focus:** Speak confidently about the compromises you make in frontend work, justify your decisions, compare alternatives, and evaluate results with clear, structured reasoning.
 
-## 1) Vocabulary (Expanded & Sophisticated for B2)
+## 1) Vocabulary & Collocations
 
-- **trade-off** (n) – accepting a disadvantage to gain a more important benefit
-  - We had to make a trade-off between visual richness and loading speed.
+- **trade-off** (n) – accepting a disadvantage to gain a more important benefit  
+  _Example:_ We made a trade-off between visual richness and loading speed.
 
-- **alternative** (n) – another possible option
-  - We evaluated three alternatives before choosing the final approach.
+- **alternative** (n) – another possible option or approach  
+  _Example:_ We evaluated three alternatives before choosing the final solution.
 
-- **prioritization** (n) – deciding what is most important
-  - Good prioritization helps balance short-term needs with long-term goals.
+- **prioritization** (n) – the process of deciding what is most important  
+  _Example:_ Good prioritization helped us balance short-term delivery with long-term quality.
 
-- **compromise** (n) – an agreement where both sides give up something
-  - The final design was a compromise between the design team and engineering constraints.
+- **compromise** (n) – an agreement where both sides give up something  
+  _Example:_ The final design was a compromise between design and engineering constraints.
 
-- **evaluation** (n) – the process of judging how good or effective something is
-  - After implementation, we conducted a thorough evaluation of the results.
+- **evaluation** (n) – the process of judging how effective something is  
+  _Example:_ We conducted a thorough evaluation two weeks after release.
 
-- **scalability vs performance** – balancing growth capability against current speed
-  - We often discuss the tension between scalability and immediate performance.
+- **opportunity cost** (n) – the benefit you lose by choosing one option over another  
+  _Example:_ The opportunity cost of heavy animations was slower page performance.
 
-- **technical debt** (n) – future work created by choosing easier solutions now
-  - Adding quick fixes increased our technical debt over time.
+- **technical debt** (n) – future work created by choosing quick but suboptimal solutions  
+  _Example:_ Adding quick fixes increased our technical debt significantly.
 
-- **opportunity cost** (n) – the benefit you lose by choosing one option over another
-  - The opportunity cost of heavy animations was slower page loads for users.
+- **long-term vs short-term** – balancing immediate needs with future consequences  
+  _Example:_ We often discuss the tension between long-term maintainability and short-term delivery.
 
-- **mitigation strategy** (n) – a plan to reduce negative effects
-  - Our mitigation strategy was to implement lazy loading as a temporary measure.
+- **mitigation strategy** (n) – a plan to reduce negative effects  
+  _Example:_ Lazy loading was our mitigation strategy for heavy content.
 
-- **retrospective** (n) – a meeting to review what went well and what could improve
-  - In the sprint retrospective, we openly discussed the trade-offs we had made.
+- **retrospective** (n) – a meeting to review what went well and what could be improved  
+  _Example:_ In the sprint retrospective, we openly discussed the trade-offs we had made.
 
 ## 2) Collocations, Chunking & Advanced Phrases
 
@@ -72,37 +72,35 @@ description: Discuss real trade-offs in frontend development, explain the reason
 
 ### Advanced Phrasal Verbs
 
-- **weigh up** → We weighed up the pros and cons carefully.
+- **weigh up** → We weighed up the pros and cons carefully before deciding.
 - **opt for** → We opted for a simpler solution to reduce complexity.
 - **give up** → We had to give up some advanced animations to improve speed.
 - **pay off** → The decision eventually paid off in better user retention.
-- **fall short** → The first option fell short in terms of maintainability.
+- **fall short** → The first option fell short in terms of long-term maintainability.
 
 ## 3) Typical Dialogues
 
 ### Dialogue 1 – Full Trade-off Explanation (3–4 minutes)
 
-**Teacher:** Can you talk about a time when you had to make an important trade-off?
+**Teacher:** Can you talk about a significant trade-off you had to make?
 
 **You:**  
-Certainly. While developing a new reporting dashboard, we faced a classic trade-off between visual appeal and performance. The design team wanted rich animations, interactive charts, and many real-time elements. However, implementing everything as requested would have made the initial load time exceed 6 seconds, which we knew would frustrate users.
+Certainly. While developing a new reporting dashboard, we faced a classic trade-off between visual appeal and performance. The design team wanted rich animations, interactive charts, and many real-time elements. However, implementing everything as requested would have made the initial load time exceed 6 seconds.
 
 After weighing the pros and cons, we decided to simplify the animations and use lazy loading for heavy chart components. This meant sacrificing some visual polish in the first few seconds, but it allowed the dashboard to become interactive within 2 seconds.
 
-We also created a phased approach: basic version first, then enhanced animations in a later iteration. Although there was some pushback from designers initially, the evaluation after release showed a 40% improvement in user engagement and significantly fewer complaints about slowness. In hindsight, accepting that short-term compromise paid off because it improved both user experience and our technical debt situation.
+We also created a phased approach: deliver the fast core version first, then enhance animations later. Although there was some initial pushback, the evaluation after release showed a 40% improvement in user engagement and significantly fewer complaints about slowness. In hindsight, accepting that short-term compromise paid off because it improved both user experience and our technical debt situation.
 
 ### Dialogue 2 – Defending the Decision
 
 **Teacher:** Don’t you think you compromised too much on design?
 
 **You:**  
-I understand the concern. However, we had to prioritize user perception of speed over immediate visual impact. Research shows that users abandon slow interfaces long before they appreciate beautiful animations. By making this trade-off, we actually delivered a better overall experience and kept the door open for future enhancements.
+I understand the concern. However, we had to prioritize user perception of speed over immediate visual impact. Research shows that users often abandon slow interfaces before they can appreciate beautiful animations. By making this trade-off, we actually delivered a better overall experience.
 
 ## 4) Reading Text
 
-In frontend development, trade-offs are inevitable. A recent example was choosing between a highly interactive and visually rich interface versus fast, responsive performance. We evaluated several alternatives: implementing everything with heavy libraries, building custom lightweight components, or using a hybrid approach with progressive enhancement.
-
-We ultimately opted for the hybrid solution because it offered the best balance between user delight and technical feasibility. The decision involved accepting some limitations in the first release, but it minimized technical debt and allowed faster delivery. Post-release evaluation confirmed that the compromise was successful — loading times improved dramatically, user satisfaction scores rose, and the team learned valuable lessons about prioritization that we now apply in every sprint.
+In frontend development, trade-offs are inevitable. A recent example was choosing between a highly interactive and visually rich interface versus fast, responsive performance. We evaluated several alternatives and ultimately opted for a hybrid solution that offered the best balance. Although we had to accept some limitations in the first release, the decision minimized technical debt and allowed faster delivery. Post-release evaluation confirmed that the compromise was successful — loading times improved dramatically, user satisfaction increased, and the team gained valuable lessons about prioritization.
 
 ## 5) List of Questions + Ideas
 
@@ -118,16 +116,4 @@ We ultimately opted for the hybrid solution because it offered the best balance 
 5. How do you weigh pros and cons when facing competing priorities?
 6. Tell me about a time when you had to sacrifice design quality for performance.
 7. How do you evaluate whether a trade-off was successful?
-8. What role does opportunity cost play in your decision-making?
-9. How do you discuss trade-offs with designers or product managers?
-10. What lessons have you learned about making good compromises?
-
-### Discussion & Critical Thinking
-
-11. Why is the ability to make trade-offs an important skill for frontend developers?
-12. How do you justify technical trade-offs to non-technical stakeholders?
-13. Is it better to deliver a perfect solution late or a good solution on time?
-14. How can poor trade-off decisions increase technical debt?
-15. Describe a situation where a trade-off you made turned out better or worse than expected.
-
----
+8. What role does opportunity cost play in your decision-making

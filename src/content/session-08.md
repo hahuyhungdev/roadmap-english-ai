@@ -7,39 +7,39 @@ level: B1+ / B2
 description: Explain the solution you implemented, the reasoning behind key decisions, trade-offs considered, and the final results — using professional B2-level language.
 ---
 
-# Session  8: Explain a Solution + Decision
+# Session 8: Explain a Solution + Decision
 
 **Level:** B1+ / B2  
 **Focus:** Describe a solution clearly, justify your decisions, discuss trade-offs, and highlight measurable outcomes at B2 level.
 
-## 1) Vocabulary (Expanded & Sophisticated for B2)
+## 1) Vocabulary & Collocations
 
-- **solution** (n) – the way to solve a problem
-  - We implemented a multi-layered solution to address both frontend and backend concerns.
+- **solution** (n) – the method used to solve a problem  
+  _Example:_ We implemented a multi-step solution combining frontend and backend improvements.
 
-- **trade-off** (n) – balancing benefits against drawbacks
-  - We accepted a small trade-off in visual complexity to gain better performance.
+- **trade-off** (n) – accepting a disadvantage to gain a bigger benefit  
+  _Example:_ We accepted a small trade-off in visual richness to achieve much better performance.
 
-- **justification** (n) – reasons that explain a decision
-  - The justification for choosing lazy loading was improved initial load time.
+- **justification** (n) – clear reasons supporting a decision  
+  _Example:_ The justification for choosing lazy loading was the significant improvement in initial load time.
 
-- **optimization** (n) – the process of making something as effective as possible
-  - Performance optimization was our top priority in this iteration.
+- **optimization** (n) – the process of making something work better  
+  _Example:_ Performance optimization was our highest priority in this sprint.
 
-- **mitigation** (n) – reducing the severity of a problem
-  - Caching provided immediate mitigation while we worked on a permanent fix.
+- **mitigation** (n) – reducing the negative effect of a problem  
+  _Example:_ Caching provided immediate mitigation while we worked on a permanent fix.
 
-- **measurable improvement** (n) – a result that can be quantified
-  - We achieved a measurable improvement of 65% faster loading time.
+- **measurable outcome** (n) – a result that can be clearly measured  
+  _Example:_ We achieved a measurable outcome of 65% faster loading time.
 
-- **alternative approach** (n) – another possible way to solve the problem
-  - We evaluated several alternative approaches before making the final decision.
+- **alternative approach** (n) – another possible way to solve the same problem  
+  _Example:_ We evaluated several alternative approaches before making our final decision.
 
-- **long-term maintainability** (n) – how easy it is to maintain the solution in the future
-  - We prioritized long-term maintainability over a quick workaround.
+- **long-term maintainability** (n) – how easy it is to maintain the solution in the future  
+  _Example:_ We prioritized long-term maintainability over a quick temporary fix.
 
-- **rollback plan** (n) – a plan to reverse changes if something goes wrong
-  - We always prepare a rollback plan when deploying significant optimizations.
+- **rollback plan** (n) – a prepared plan to reverse changes if needed  
+  _Example:_ We always prepare a rollback plan before deploying major changes.
 
 ## 2) Collocations, Chunking & Advanced Phrases
 
@@ -47,84 +47,82 @@ description: Explain the solution you implemented, the reasoning behind key deci
 
 - implement a solution
 - make an informed decision
-- consider trade-offs
-- achieve significant improvement
+- consider trade-offs carefully
+- achieve measurable improvement
 - prioritize performance
 - evaluate alternatives
 - provide immediate mitigation
 - ensure long-term maintainability
 - deliver measurable results
-- justify the decision
+- justify the decision based on data
 
 ### Useful Chunking & Sentence Starters (B2)
 
-- To solve this problem, we decided to…
-- The main reason behind this decision was…
-- We considered several options and eventually chose…
+- To address this problem, we decided to…
+- The main reason for this decision was…
+- After evaluating several options, we chose…
 - Although there was a trade-off, we believed…
-- As a result of this change…
-- This solution not only fixed the issue but also…
+- As a direct result of this solution…
+- This approach not only solved the immediate issue but also…
 - Looking back, the decision proved to be…
-- From a technical and business standpoint…
+- From both technical and business perspectives…
 
 ### Advanced Phrasal Verbs
 
-- **come up with** → We came up with a hybrid approach combining caching and pagination.
-- **cut down on** → This technique helped cut down on unnecessary re-renders.
-- **roll out** → We rolled out the solution gradually to monitor its effect.
-- **pay off** → The extra effort we invested definitely paid off in the end.
-- **fall back on** → We had a simple fallback plan in case the new solution caused issues.
+- **come up with** → We came up with a hybrid solution combining caching and pagination.
+- **cut down on** → This change helped cut down on unnecessary re-renders.
+- **roll out** → We rolled out the solution gradually to monitor its effects.
+- **pay off** → The extra effort we invested definitely paid off.
+- **fall back on** → We had a simple fallback plan in case of unexpected issues.
 
 ## 3) Typical Dialogues
 
 ### Dialogue 1 – Full Solution + Decision Explanation (3–4 minutes)
 
-**Teacher:** How did you solve the dashboard loading problem?
+**Teacher:** How did you solve the slow dashboard loading problem?
 
 **You:**  
-To address the slow dashboard, we implemented a combination of solutions. First, we introduced pagination and lazy loading so that only the necessary data is fetched and rendered initially. Second, we optimized state management by using memoization to prevent unnecessary re-renders.
+To solve the slow dashboard, we implemented a combination of frontend optimizations. The main solution was introducing lazy loading and pagination so that only the necessary data is fetched and rendered initially. We also applied memoization to prevent unnecessary re-renders.
 
-The key decision was to prioritize performance over displaying all data at once. We considered building a more complex caching layer on the backend, but we chose the frontend-first approach because it could be delivered faster and still provided immediate mitigation. There was a small trade-off — users now need to click “Load more” in some sections — but we believed this was acceptable given the dramatic improvement in initial load time.
+The key decision was to focus on frontend improvements first because they could be delivered faster and provide immediate mitigation. We considered building a more complex caching system on the backend, but we decided against it due to time constraints and higher complexity. There was a small trade-off — users now need to load more data manually in some sections — but we believed this was acceptable given the dramatic improvement in initial load time.
 
-After rolling out the changes, we measured a 65% reduction in loading time and a noticeable increase in user satisfaction. The solution not only resolved the immediate issue but also improved long-term maintainability and scalability.
+After rolling out the changes, we measured a 65% reduction in loading time and a clear increase in user satisfaction. The solution not only fixed the immediate problem but also improved long-term maintainability and scalability.
 
 ### Dialogue 2 – Discussing Trade-offs
 
-**Teacher:** Was there any downside to your solution?
+**Teacher:** Were there any downsides to your solution?
 
 **You:**  
-Yes, we had to accept a minor trade-off in terms of immediate data visibility. However, after gathering user feedback, we found that most people preferred a fast and responsive dashboard over seeing everything at once. This confirmed that our decision was well justified.
+Yes, we had to accept a minor trade-off in terms of immediate data visibility. However, after collecting user feedback, we confirmed that most users preferred a fast and responsive experience over seeing everything at once. This validated that our decision was well justified.
 
 ## 4) Reading Text
 
-When we identified the root causes of the slow dashboard, we designed a targeted solution. We decided to combine frontend optimizations (lazy loading and memoization) with better data handling practices. The main justification for this approach was the need for quick wins without requiring major backend changes.
-
-We carefully evaluated trade-offs between complexity and speed, and ultimately chose the path that offered the best balance. The changes were rolled out incrementally with a solid rollback plan. As a result, we achieved significant measurable improvements in performance and user experience while also enhancing the overall scalability and maintainability of the application.
+When facing a performance issue, it is important to design a thoughtful solution rather than applying quick fixes. In this case, we chose a balanced approach that combined several frontend optimizations. We carefully considered trade-offs between speed, complexity, and user experience before making the final decision. The changes were rolled out gradually with a clear rollback plan. As a result, we achieved significant measurable improvements while also enhancing the long-term maintainability of the application.
 
 ## 5) List of Questions + Ideas
 
 ### Basic to Intermediate
 
-1. How did you solve the problem you described earlier?
+1. How did you solve the problem?
 2. What was your main solution?
-3. Why did you choose this particular approach?
+3. Why did you choose this approach?
 4. What results did you achieve?
 
 ### B2-Level Expanded Questions
 
-5. Walk me through the decision-making process you followed.
-6. What trade-offs did you consider before finalizing the solution?
-7. How did you measure the success of your solution?
-8. Would you have done anything differently with more time or resources?
+5. Walk me through your decision-making process.
+6. What trade-offs did you consider?
+7. How did you measure the success of the solution?
+8. Would you change anything if you could do it again?
 9. How did this solution improve long-term maintainability?
-10. How did you communicate the solution and its benefits to stakeholders?
+10. How did you communicate the solution to stakeholders?
 
 ### Discussion & Critical Thinking
 
-11. Why is it important to justify technical decisions clearly?
+11. Why is justifying technical decisions important?
 12. How do you balance quick fixes with long-term solutions?
-13. What makes a solution “good” in a frontend context?
-14. How do you handle situations where the best technical solution conflicts with business priorities?
-15. Describe a time when your solution exceeded expectations or had unexpected positive effects.
+13. What makes a solution “good” in frontend development?
+14. How do you handle situations where the best technical solution conflicts with business needs?
+15. Describe a time when your solution had unexpected positive effects.
 
 ---

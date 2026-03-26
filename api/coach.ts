@@ -138,7 +138,7 @@ export default async function handler(
     let audioContent: string | undefined = undefined;
     // Prefer simple API-key-based TTS if provided, otherwise fall back to
     // service account JWT OAuth flow.
-    const googleApiKey = getEnv("GOOGLE_TTS_API_KEY");
+    const googleApiKey = getEnv("VITE_GOOGLE_TTS_API_KEY");
     if (reviewObj?.corrected_version) {
       if (googleApiKey) {
         try {
