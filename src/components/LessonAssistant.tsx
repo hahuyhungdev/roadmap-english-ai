@@ -1,5 +1,11 @@
 import { Loader2, Send, Sparkles, X } from "lucide-react";
-import { useState, useRef, type FormEvent, type KeyboardEvent } from "react";
+import {
+  useState,
+  useRef,
+  useEffect,
+  type FormEvent,
+  type KeyboardEvent,
+} from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { AiChatMessage, AiResponse } from "../types/ai";
@@ -19,6 +25,26 @@ export default function LessonAssistant({
   const [error, setError] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [mode, setMode] = useState<"practice" | "idea" | "concise">("practice");
+  const MODE_KEY = "ai_lesson_mode";
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(MODE_KEY);
+      if (saved === "practice" || saved === "idea" || saved === "concise") {
+        setMode(saved);
+      }
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(MODE_KEY, mode);
+    } catch {
+      // ignore
+    }
+  }, [mode]);
 
   async function onSubmit(e?: FormEvent) {
     if (e && typeof (e as FormEvent).preventDefault === "function") {
