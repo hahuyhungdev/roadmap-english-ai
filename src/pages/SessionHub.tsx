@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ChevronRight, Layers3, CheckCircle2 } from "lucide-react";
+import { ChevronRight, CheckCircle2, BookOpen } from "lucide-react";
 import { loadPhraseGroups } from "../lib/sessions";
 import { useProgressStore } from "../store/useProgressStore";
 
@@ -19,78 +19,99 @@ export default function SessionHub() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">English Phases</h1>
-        <p className="text-gray-500 text-sm mt-1">
-          Pick a phase, then learn lessons inside it
-        </p>
+      {/* Page header */}
+      <div className="flex items-start justify-between mb-6 gap-4">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <BookOpen size={18} className="text-indigo-500" />
+            <h1 className="text-2xl font-bold text-gray-900">English Phases</h1>
+          </div>
+          <p className="text-gray-500 text-sm">
+            {totalLessons} lessons across {phrases.length} phases
+          </p>
+        </div>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-4 mb-6 flex items-center gap-4">
+      {/* Overall progress card */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-5 mb-7 flex items-center gap-5 shadow-sm">
         <div className="flex-1">
-          <div className="flex justify-between text-xs text-gray-500 mb-1.5">
-            <span>Total Progress</span>
+          <div className="flex justify-between text-xs text-gray-500 mb-2">
+            <span>Overall Progress</span>
             <span className="font-semibold text-indigo-600">
               {doneLessons} / {totalLessons} lessons
             </span>
           </div>
-          <div className="w-full bg-gray-100 rounded-full h-2">
+          <div className="w-full bg-gray-100 rounded-full h-2.5 overflow-hidden">
             <div
-              className="bg-indigo-500 h-2 rounded-full transition-all duration-500"
+              className="bg-linear-to-r from-indigo-500 to-indigo-400 h-2.5 rounded-full transition-all duration-700"
               style={{ width: `${pct}%` }}
             />
           </div>
         </div>
-        <div className="text-2xl font-bold text-indigo-600 w-14 text-right">
+        <div className="text-3xl font-bold text-indigo-600 w-16 text-right leading-none">
           {pct}%
         </div>
       </div>
 
+      {/* Phase cards */}
       <div className="space-y-3">
-        {phrases.map((phase) => {
+        {phrases.map((phase, i) => {
           const total = phase.sessions.length;
           const done = phase.sessions.filter((s) =>
             completedSessions.includes(s.id),
           ).length;
+          const phasePct = total === 0 ? 0 : Math.round((done / total) * 100);
+          const isDone = done === total && total > 0;
 
           return (
             <Link
               key={phase.id}
               to={`/phase/${phase.id}`}
-              className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors"
+              className="group flex items-start gap-4 bg-white border border-gray-200 rounded-2xl p-4 hover:border-indigo-200 hover:shadow-sm transition-all"
             >
-              <div className="flex items-start gap-3">
-                <div className="mt-0.5 text-indigo-500">
-                  <Layers3 size={18} />
-                </div>
+              {/* Phase number badge */}
+              <div
+                className={`shrink-0 w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold transition-colors ${
+                  isDone
+                    ? "bg-indigo-100 text-indigo-600"
+                    : "bg-gray-100 text-gray-400 group-hover:bg-indigo-50 group-hover:text-indigo-500"
+                }`}
+              >
+                {String(i + 1).padStart(2, "0")}
+              </div>
 
-                <div className="flex-1 min-w-0">
-                  <h2 className="text-sm font-semibold text-gray-900">
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-2 mb-0.5">
+                  <h2 className="text-sm font-semibold text-gray-900 group-hover:text-indigo-700 transition-colors">
                     {phase.title}
                   </h2>
-                  <div className="flex items-center gap-2 mt-1 text-xs text-gray-500">
-                    <span>{total} lessons</span>
-                    <span>•</span>
-                    <span>{done} completed</span>
-                  </div>
-
-                  <div className="mt-3 w-full bg-gray-100 rounded-full h-1.5">
-                    <div
-                      className="bg-indigo-500 h-1.5 rounded-full transition-all duration-500"
-                      style={{
-                        width: `${total === 0 ? 0 : (done / total) * 100}%`,
-                      }}
+                  {isDone && (
+                    <CheckCircle2
+                      size={14}
+                      className="text-indigo-500 shrink-0"
                     />
-                  </div>
-                </div>
-
-                <div className="shrink-0 flex items-center gap-1 text-gray-400">
-                  {done === total && total > 0 && (
-                    <CheckCircle2 size={16} className="text-indigo-500" />
                   )}
-                  <ChevronRight size={18} />
+                </div>
+                <p className="text-xs text-gray-400 mb-3">
+                  {done} of {total} lessons done
+                </p>
+
+                <div className="w-full bg-gray-100 rounded-full h-1.5 overflow-hidden">
+                  <div
+                    className={`h-1.5 rounded-full transition-all duration-700 ${
+                      isDone
+                        ? "bg-indigo-500"
+                        : "bg-indigo-400"
+                    }`}
+                    style={{ width: `${phasePct}%` }}
+                  />
                 </div>
               </div>
+
+              <ChevronRight
+                size={17}
+                className="shrink-0 text-gray-300 group-hover:text-indigo-400 transition-colors mt-1"
+              />
             </Link>
           );
         })}

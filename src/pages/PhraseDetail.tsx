@@ -1,5 +1,5 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { CheckCircle2, Circle, ChevronRight, ChevronLeft } from "lucide-react";
+import { CheckCircle2, Circle, ChevronRight, ChevronLeft, BookMarked } from "lucide-react";
 import clsx from "clsx";
 import { getPhraseGroup } from "../lib/sessions";
 import { useProgressStore } from "../store/useProgressStore";
@@ -29,42 +29,53 @@ export default function PhraseDetail() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="mb-6">
+      {/* Back nav */}
+      <div className="mb-5">
         <Link
           to="/"
           className="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-indigo-600 transition-colors"
         >
-          <ChevronLeft size={16} /> All Phases
+          <ChevronLeft size={15} /> All Phases
         </Link>
       </div>
 
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">{phase.title}</h1>
-        <p className="text-gray-500 text-sm mt-1">
-          Learn lessons inside this phase
-        </p>
+      {/* Phase header */}
+      <div className="flex items-start justify-between mb-6 gap-4">
+        <div className="flex items-start gap-3">
+          <div className="mt-0.5 w-9 h-9 bg-indigo-100 rounded-xl flex items-center justify-center shrink-0">
+            <BookMarked size={16} className="text-indigo-500" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">{phase.title}</h1>
+            <p className="text-gray-500 text-sm mt-0.5">
+              {total} lesson{total !== 1 ? "s" : ""} in this phase
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="bg-white border border-gray-200 rounded-xl p-4 mb-6 flex items-center gap-4">
+      {/* Progress card */}
+      <div className="bg-white border border-gray-200 rounded-2xl p-5 mb-7 flex items-center gap-5 shadow-sm">
         <div className="flex-1">
-          <div className="flex justify-between text-xs text-gray-500 mb-1.5">
+          <div className="flex justify-between text-xs text-gray-500 mb-2">
             <span>Phase Progress</span>
             <span className="font-semibold text-indigo-600">
               {done} / {total} lessons
             </span>
           </div>
-          <div className="w-full bg-gray-100 rounded-full h-2">
+          <div className="w-full bg-gray-100 rounded-full h-2.5 overflow-hidden">
             <div
-              className="bg-indigo-500 h-2 rounded-full transition-all duration-500"
+              className="bg-linear-to-r from-indigo-500 to-indigo-400 h-2.5 rounded-full transition-all duration-700"
               style={{ width: `${pct}%` }}
             />
           </div>
         </div>
-        <div className="text-2xl font-bold text-indigo-600 w-14 text-right">
+        <div className="text-3xl font-bold text-indigo-600 w-16 text-right leading-none">
           {pct}%
         </div>
       </div>
 
+      {/* Session list */}
       <div className="space-y-2">
         {phase.sessions.map((session) => {
           const completed = completedSessions.includes(session.id);
@@ -84,12 +95,13 @@ export default function PhraseDetail() {
                 }
               }}
               className={clsx(
-                "bg-white border rounded-xl px-4 py-3.5 flex items-center gap-3 transition-colors cursor-pointer",
+                "group flex items-center gap-3 rounded-2xl px-4 py-3.5 border transition-all cursor-pointer",
                 completed
-                  ? "border-indigo-200 bg-indigo-50/40"
-                  : "border-gray-200 hover:border-indigo-200",
+                  ? "border-indigo-100 bg-indigo-50/50"
+                  : "border-gray-200 bg-white hover:border-indigo-200 hover:shadow-sm",
               )}
             >
+              {/* Completion toggle */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
@@ -101,40 +113,38 @@ export default function PhraseDetail() {
                 }
               >
                 {completed ? (
-                  <CheckCircle2 size={20} className="text-indigo-500" />
+                  <CheckCircle2 size={19} className="text-indigo-500" />
                 ) : (
-                  <Circle size={20} />
+                  <Circle size={19} />
                 )}
               </button>
 
-              <span className="shrink-0 text-xs font-mono text-gray-400 w-7">
+              {/* Session number */}
+              <span className="shrink-0 text-xs font-medium text-gray-300 w-6 text-center group-hover:text-indigo-400 transition-colors">
                 {String(session.meta.sessionNumber).padStart(2, "0")}
               </span>
 
+              {/* Title + description */}
               <div className="flex-1 min-w-0">
                 <span
                   className={clsx(
-                    "text-sm font-medium block",
-                    completed ? "text-gray-400 line-through" : "text-gray-900",
+                    "text-sm font-medium block truncate",
+                    completed ? "text-gray-400 line-through" : "text-gray-800",
                   )}
                 >
                   {session.meta.title}
                 </span>
                 {session.meta.description && (
-                  <span className="text-xs text-gray-400 line-clamp-2">
+                  <span className="text-xs text-gray-400 line-clamp-1">
                     {session.meta.description}
                   </span>
                 )}
               </div>
 
-              <Link
-                to={`/phase/${phase.id}/session/${session.id}`}
-                onClick={(e) => e.stopPropagation()}
-                className="shrink-0 text-gray-300 hover:text-indigo-500 transition-colors"
-                aria-label={`Open ${session.meta.title}`}
-              >
-                <ChevronRight size={18} />
-              </Link>
+              <ChevronRight
+                size={16}
+                className="shrink-0 text-gray-300 group-hover:text-indigo-400 transition-colors"
+              />
             </div>
           );
         })}
