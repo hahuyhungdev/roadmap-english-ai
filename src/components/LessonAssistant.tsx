@@ -1,3 +1,5 @@
+"use client";
+
 import { Loader2, Send, Sparkles, X, Zap } from "lucide-react";
 import {
   useState,

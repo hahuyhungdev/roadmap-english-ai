@@ -1,3 +1,5 @@
+"use client";
+
 import { useRef, useEffect, useState } from "react";
 import useSoniox from "../hooks/useSoniox";
 import { useCoachSession } from "../hooks/useCoachSession";

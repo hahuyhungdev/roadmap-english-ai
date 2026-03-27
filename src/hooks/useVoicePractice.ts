@@ -67,10 +67,12 @@ function getAudioCtx(): AudioContext {
  * Flow: POST /api/tts → { audioContent: "base64..." } → decode → Web Audio API
  */
 async function speak(text: string): Promise<void> {
-  const apiKey = (import.meta as { env?: Record<string, string> }).env?.VITE_GOOGLE_TTS_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_TTS_API_KEY;
 
   if (!apiKey) {
-    console.warn("[SpeakingLab] VITE_GOOGLE_TTS_API_KEY not set — skipping TTS.");
+    console.warn(
+      "[SpeakingLab] NEXT_PUBLIC_GOOGLE_TTS_API_KEY not set — skipping TTS.",
+    );
     return;
   }
 
@@ -177,9 +179,7 @@ export function useVoicePractice(
   }
 
   // ── Speech-to-text via Soniox WebSocket ───────────────────────────────────
-  async function connectSoniox(
-    onFinal: (text: string) => void,
-  ): Promise<{
+  async function connectSoniox(onFinal: (text: string) => void): Promise<{
     sendAudio: (chunk: Float32Array) => void;
     isConnected: () => boolean;
   }> {
@@ -383,11 +383,13 @@ export function useVoicePractice(
 
     try {
       // 1. Connect to Soniox
-      const { sendAudio, isConnected } = await connectSoniox(async (finalText) => {
-        if (!finalText.trim()) return;
-        // This fires when Soniox delivers a final transcript
-        await handleFinalTranscript(finalText);
-      });
+      const { sendAudio, isConnected } = await connectSoniox(
+        async (finalText) => {
+          if (!finalText.trim()) return;
+          // This fires when Soniox delivers a final transcript
+          await handleFinalTranscript(finalText);
+        },
+      );
 
       // 2. Start mic capture + level polling
       await startMicCapture(sendAudio, isConnected);
@@ -411,7 +413,13 @@ export function useVoicePractice(
     // Append user turn optimistically
     setTurns((prev) => [
       ...prev,
-      { id: turnId, role: "user", text: finalText, review: null, timestamp: now },
+      {
+        id: turnId,
+        role: "user",
+        text: finalText,
+        review: null,
+        timestamp: now,
+      },
     ]);
 
     historyRef.current.push({ role: "user", content: finalText });
@@ -422,7 +430,9 @@ export function useVoicePractice(
       const { reply, review } = await callCoach(finalText);
 
       // Strip the review JSON block from the spoken text (keep it in review for UI)
-      const textForSpeech = reply.replace(/```review\n[\s\S]*?\n```/g, "").trim();
+      const textForSpeech = reply
+        .replace(/```review\n[\s\S]*?\n```/g, "")
+        .trim();
 
       // Append coach turn
       setTurns((prev) => [

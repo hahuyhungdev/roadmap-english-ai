@@ -1,3 +1,5 @@
+"use client";
+
 import { type FC, type ReactNode } from "react";
 import { Mic, RotateCcw, Volume2, Play, Square } from "lucide-react";
 import type { Turn } from "../hooks/useCoachSession";

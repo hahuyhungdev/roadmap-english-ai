@@ -1,3 +1,5 @@
+"use client";
+
 import { useCallback, useEffect, useRef, useState } from "react";
 
 type UseSonioxOptions = {
@@ -92,9 +94,9 @@ export default function useSoniox(options?: UseSonioxOptions): UseSonioxResult {
   const [error, setError] = useState<string | undefined>(undefined);
 
   const SONIOX_WS =
-    (import.meta.env.VITE_SONIOX_WS_URL as string) ||
+    process.env.NEXT_PUBLIC_SONIOX_WS_URL ||
     "wss://stt-rt.soniox.com/transcribe-websocket";
-  const API_KEY = import.meta.env.VITE_SONIOX_API_KEY as string;
+  const API_KEY = process.env.NEXT_PUBLIC_SONIOX_API_KEY as string;
 
   const stop = useCallback(() => {
     if (silenceTimerRef.current) {
@@ -150,7 +152,9 @@ export default function useSoniox(options?: UseSonioxOptions): UseSonioxResult {
       if (isRecording) return;
 
       if (!API_KEY) {
-        setError("Missing VITE_SONIOX_API_KEY — add it to your .env file.");
+        setError(
+          "Missing NEXT_PUBLIC_SONIOX_API_KEY — add it to your .env file.",
+        );
         return;
       }
 
