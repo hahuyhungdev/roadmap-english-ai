@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 type UseSonioxOptions = {
   /** Called when silence is detected after the user stops speaking */
@@ -12,7 +12,10 @@ type UseSonioxOptions = {
 };
 
 type UseSonioxResult = {
-  start: (opts?: { source?: "mic" | "tab"; stream?: MediaStream }) => Promise<void>;
+  start: (opts?: {
+    source?: "mic" | "tab";
+    stream?: MediaStream;
+  }) => Promise<void>;
   stop: () => void;
   isRecording: boolean;
   transcript: string;
@@ -91,10 +94,9 @@ export default function useSoniox(options?: UseSonioxOptions): UseSonioxResult {
   const SONIOX_WS =
     (import.meta.env.VITE_SONIOX_WS_URL as string) ||
     "wss://stt-rt.soniox.com/transcribe-websocket";
-  const API_KEY =
-    "1de8eecc7fe687f3d5992bcdc78233b35b143c78503708de768b0b370e6cc15f";
+  const API_KEY = import.meta.env.VITE_SONIOX_API_KEY as string;
 
-  function stop() {
+  const stop = useCallback(() => {
     if (silenceTimerRef.current) {
       clearTimeout(silenceTimerRef.current);
       silenceTimerRef.current = null;
@@ -130,7 +132,7 @@ export default function useSoniox(options?: UseSonioxOptions): UseSonioxResult {
       console.warn("ws close error", err);
     }
     setIsRecording(false);
-  }
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -138,256 +140,267 @@ export default function useSoniox(options?: UseSonioxOptions): UseSonioxResult {
     };
   }, []);
 
-  async function start(opts?: { source?: "mic" | "tab"; stream?: MediaStream }) {
-    setError(undefined);
-    setTranscript("");
-    setPartial("");
-    transcriptRef.current = "";
-    partialRef.current = "";
-    if (isRecording) return;
+  const start = useCallback(
+    async (opts?: { source?: "mic" | "tab"; stream?: MediaStream }) => {
+      setError(undefined);
+      setTranscript("");
+      setPartial("");
+      transcriptRef.current = "";
+      partialRef.current = "";
+      if (isRecording) return;
 
-    if (!API_KEY) {
-      setError("Missing VITE_SONIOX_API_KEY — add it to your .env file.");
-      return;
-    }
-
-    let stream: MediaStream;
-
-    try {
-      if (opts?.stream) {
-        // Use an externally-provided stream (e.g. from YouTube captureStream)
-        stream = opts.stream;
-      } else if (opts?.source === "tab") {
-        // Capture tab / system audio (YouTube, podcast, etc.)
-        stream = await navigator.mediaDevices.getDisplayMedia({
-          audio: true,
-          video: false,
-        } as DisplayMediaStreamOptions);
-      } else {
-        // Default: capture from microphone
-        stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      }
-      streamRef.current = stream;
-
-      let ws: WebSocket;
-      try {
-        ws = new WebSocket(SONIOX_WS);
-      } catch {
-        stream.getTracks().forEach((t) => t.stop());
-        setError(
-          "WebSocket connection failed — your browser or a Chrome extension may be blocking it. Try disabling extensions or use Mic mode instead.",
-        );
+      if (!API_KEY) {
+        setError("Missing VITE_SONIOX_API_KEY — add it to your .env file.");
         return;
       }
-      wsRef.current = ws;
 
-      ws.onopen = () => {
-        // Send config message (required first message per Soniox spec)
-        const config = {
-          api_key: API_KEY,
-          model: "stt-rt-preview",
-          audio_format: "webm", // MediaRecorder produces webm/opus
-        };
-        ws.send(JSON.stringify(config));
-      };
+      let stream: MediaStream;
 
-      ws.onmessage = (ev) => {
-        // Soniox sends JSON responses
-        if (typeof ev.data === "string") {
-          try {
-            const d = JSON.parse(ev.data);
-
-            // Error response — surface it and close
-            if (d.error_code || d.error_message) {
-              setError(`Soniox error ${d.error_code}: ${d.error_message}`);
-              stop();
-              return;
-            }
-
-            // Finished response — stop recording
-            if (d.finished) {
-              setIsRecording(false);
-              return;
-            }
-
-            // Token-based transcript responses
-            if (Array.isArray(d.tokens)) {
-              type Token = { text: string; is_final: boolean };
-              const tokens = d.tokens as Token[];
-              const partialTokens = tokens.filter((t) => !t.is_final);
-              const finalTokens = tokens.filter((t) => t.is_final);
-
-              console.log("[Soniox] tokens received:", tokens.length, {
-                partial: partialTokens.length,
-                final: finalTokens.length,
-              });
-
-              if (partialTokens.length > 0) {
-                const partialText = normalizeSpacedTranscript(
-                  partialTokens.map((t) => t.text).join(" "),
-                );
-                partialRef.current = partialText;
-                setPartial(partialText);
-                console.log("[Soniox] partial:", partialText);
-              }
-
-              if (finalTokens.length > 0) {
-                const text = normalizeSpacedTranscript(
-                  finalTokens.map((t) => t.text).join(" "),
-                );
-                console.log("[Soniox] final:", text);
-                setTranscript((prev) => {
-                  const next = prev ? `${prev} ${text}` : text;
-                  transcriptRef.current = next;
-                  return next;
-                });
-                partialRef.current = "";
-                setPartial("");
-              }
-            }
-          } catch {
-            console.debug("Non-JSON ws message ignored");
-          }
+      try {
+        if (opts?.stream) {
+          // Use an externally-provided stream (e.g. from YouTube captureStream)
+          stream = opts.stream;
+        } else if (opts?.source === "tab") {
+          // Capture tab / system audio (YouTube, podcast, etc.)
+          stream = await navigator.mediaDevices.getDisplayMedia({
+            audio: true,
+            video: false,
+          } as DisplayMediaStreamOptions);
+        } else {
+          // Default: capture from microphone
+          stream = await navigator.mediaDevices.getUserMedia({ audio: true });
         }
-      };
+        streamRef.current = stream;
 
-      ws.onerror = () => {
-        setError(
-          "WebSocket error — check your API key, network, and that the Soniox service is available.",
-        );
-      };
-
-      ws.onclose = (ev) => {
-        if (ev.code === 1006) {
+        let ws: WebSocket;
+        try {
+          ws = new WebSocket(SONIOX_WS);
+        } catch {
+          stream.getTracks().forEach((t) => t.stop());
           setError(
-            "Connection closed unexpectedly (1006). Verify your Soniox API key is valid.",
+            "WebSocket connection failed — your browser or a Chrome extension may be blocking it. Try disabling extensions or use Mic mode instead.",
           );
+          return;
         }
-        setIsRecording(false);
-      };
+        wsRef.current = ws;
 
-      // Start MediaRecorder after ws is open
-      ws.addEventListener(
-        "open",
-        () => {
-          // Try supported mimeTypes; fall back to browser default if none work
-          const mimeTypes = [
-            "audio/webm;codecs=opus",
-            "audio/webm",
-            "audio/ogg",
-          ];
-          let mimeType: string | undefined;
-          for (const mt of mimeTypes) {
-            if (MediaRecorder.isTypeSupported(mt)) {
-              mimeType = mt;
-              break;
+        ws.onopen = () => {
+          // Send config message (required first message per Soniox spec)
+          const config = {
+            api_key: API_KEY,
+            model: "stt-rt-preview",
+            audio_format: "webm", // MediaRecorder produces webm/opus
+          };
+          ws.send(JSON.stringify(config));
+        };
+
+        ws.onmessage = (ev) => {
+          // Soniox sends JSON responses
+          if (typeof ev.data === "string") {
+            try {
+              const d = JSON.parse(ev.data);
+
+              // Error response — surface it and close
+              if (d.error_code || d.error_message) {
+                setError(`Soniox error ${d.error_code}: ${d.error_message}`);
+                stop();
+                return;
+              }
+
+              // Finished response — stop recording
+              if (d.finished) {
+                setIsRecording(false);
+                return;
+              }
+
+              // Token-based transcript responses
+              if (Array.isArray(d.tokens)) {
+                type Token = { text: string; is_final: boolean };
+                const tokens = d.tokens as Token[];
+                const partialTokens = tokens.filter((t) => !t.is_final);
+                const finalTokens = tokens.filter((t) => t.is_final);
+
+                console.log("[Soniox] tokens received:", tokens.length, {
+                  partial: partialTokens.length,
+                  final: finalTokens.length,
+                });
+
+                if (partialTokens.length > 0) {
+                  const partialText = normalizeSpacedTranscript(
+                    partialTokens.map((t) => t.text).join(" "),
+                  );
+                  partialRef.current = partialText;
+                  setPartial(partialText);
+                  console.log("[Soniox] partial:", partialText);
+                }
+
+                if (finalTokens.length > 0) {
+                  const text = normalizeSpacedTranscript(
+                    finalTokens.map((t) => t.text).join(" "),
+                  );
+                  console.log("[Soniox] final:", text);
+                  setTranscript((prev) => {
+                    const next = prev ? `${prev} ${text}` : text;
+                    transcriptRef.current = next;
+                    return next;
+                  });
+                  partialRef.current = "";
+                  setPartial("");
+                }
+              }
+            } catch {
+              console.debug("Non-JSON ws message ignored");
             }
           }
+        };
 
-          let mr: MediaRecorder;
-          try {
-            mr = new MediaRecorder(stream, mimeType ? { mimeType } : {});
-          } catch {
-            // Fall back: let browser pick the best supported format
+        ws.onerror = () => {
+          setError(
+            "WebSocket error — check your API key, network, and that the Soniox service is available.",
+          );
+        };
+
+        ws.onclose = (ev) => {
+          if (ev.code === 1006) {
+            setError(
+              "Connection closed unexpectedly (1006). Verify your Soniox API key is valid.",
+            );
+          }
+          setIsRecording(false);
+        };
+
+        // Start MediaRecorder after ws is open
+        ws.addEventListener(
+          "open",
+          () => {
+            // Try supported mimeTypes; fall back to browser default if none work
+            const mimeTypes = [
+              "audio/webm;codecs=opus",
+              "audio/webm",
+              "audio/ogg",
+            ];
+            let mimeType: string | undefined;
+            for (const mt of mimeTypes) {
+              if (MediaRecorder.isTypeSupported(mt)) {
+                mimeType = mt;
+                break;
+              }
+            }
+
+            let mr: MediaRecorder;
             try {
-              mr = new MediaRecorder(stream);
-            } catch (innerErr) {
-              setError(`Cannot create MediaRecorder: ${getErrorMessage(innerErr)}`);
+              mr = new MediaRecorder(stream, mimeType ? { mimeType } : {});
+            } catch {
+              // Fall back: let browser pick the best supported format
+              try {
+                mr = new MediaRecorder(stream);
+              } catch (innerErr) {
+                setError(
+                  `Cannot create MediaRecorder: ${getErrorMessage(innerErr)}`,
+                );
+                ws.close();
+                return;
+              }
+            }
+            mediaRef.current = mr;
+
+            mr.ondataavailable = (ev) => {
+              if (!ev.data || ev.data.size === 0) return;
+              if (ws.readyState !== WebSocket.OPEN) return;
+              ev.data.arrayBuffer().then((buf) => {
+                try {
+                  ws.send(buf); // Soniox expects raw binary frames
+                } catch (err) {
+                  console.warn("Failed to send audio chunk", err);
+                }
+              });
+            };
+
+            try {
+              mr.start(250); // collect chunks every 250ms
+            } catch (startErr) {
+              setError(
+                `Cannot start recording: ${getErrorMessage(startErr)}. Try using Mic mode instead.`,
+              );
+              if (mr.state !== "inactive") mr.stop();
               ws.close();
               return;
             }
-          }
-          mediaRef.current = mr;
+            setIsRecording(true);
 
-          mr.ondataavailable = (ev) => {
-            if (!ev.data || ev.data.size === 0) return;
-            if (ws.readyState !== WebSocket.OPEN) return;
-            ev.data.arrayBuffer().then((buf) => {
-              try {
-                ws.send(buf); // Soniox expects raw binary frames
-              } catch (err) {
-                console.warn("Failed to send audio chunk", err);
+            // Silence detection via AudioContext + AnalyserNode
+            // Note: AudioContext may not work with tab capture streams on some browsers
+            try {
+              const ctx = new AudioContext();
+              audioCtxRef.current = ctx;
+              const source = ctx.createMediaStreamSource(stream);
+              const analyser = ctx.createAnalyser();
+              analyser.fftSize = 2048;
+              analyser.smoothingTimeConstant = 0.4;
+              source.connect(analyser);
+              analyserRef.current = analyser;
+              wasSilentRef.current = true;
+
+              const threshold = options?.silenceThreshold ?? -45;
+              const silenceMs = options?.silenceMs ?? 900;
+
+              function measureRMS(): number {
+                if (!analyser) return -Infinity;
+                const buf = new Float32Array(analyser.fftSize);
+                analyser.getFloatTimeDomainData(buf);
+                let sum = 0;
+                for (let i = 0; i < buf.length; i++) sum += buf[i] * buf[i];
+                return 10 * Math.log10(sum / buf.length + 1e-10);
               }
-            });
-          };
 
-          try {
-            mr.start(250); // collect chunks every 250ms
-          } catch (startErr) {
-            setError(`Cannot start recording: ${getErrorMessage(startErr)}. Try using Mic mode instead.`);
-            if (mr.state !== "inactive") mr.stop();
-            ws.close();
-            return;
-          }
-          setIsRecording(true);
-
-          // Silence detection via AudioContext + AnalyserNode
-          // Note: AudioContext may not work with tab capture streams on some browsers
-          try {
-            const ctx = new AudioContext();
-            audioCtxRef.current = ctx;
-            const source = ctx.createMediaStreamSource(stream);
-            const analyser = ctx.createAnalyser();
-            analyser.fftSize = 2048;
-            analyser.smoothingTimeConstant = 0.4;
-            source.connect(analyser);
-            analyserRef.current = analyser;
-            wasSilentRef.current = true;
-
-            const threshold = options?.silenceThreshold ?? -45;
-            const silenceMs = options?.silenceMs ?? 900;
-
-            function measureRMS(): number {
-              if (!analyser) return -Infinity;
-              const buf = new Float32Array(analyser.fftSize);
-              analyser.getFloatTimeDomainData(buf);
-              let sum = 0;
-              for (let i = 0; i < buf.length; i++) sum += buf[i] * buf[i];
-              return 10 * Math.log10(sum / buf.length + 1e-10);
-            }
-
-            function tick() {
-              if (!isRecording) return;
-              const db = measureRMS();
-              const silent = db < threshold;
-              if (silent) {
-                if (!wasSilentRef.current) {
-                  wasSilentRef.current = true;
-                  if (silenceTimerRef.current) clearTimeout(silenceTimerRef.current);
-                  silenceTimerRef.current = setTimeout(() => {
-                    if (isRecording) {
-                      const text =
-                        (transcriptRef.current || "") +
-                        (partialRef.current ? ` ${partialRef.current}` : "");
-                      const full = normalizeSpacedTranscript(text.trim());
-                      if (full) options?.onSilence?.(full);
-                      stop();
-                    }
-                  }, silenceMs);
+              function tick() {
+                if (!isRecording) return;
+                const db = measureRMS();
+                const silent = db < threshold;
+                if (silent) {
+                  if (!wasSilentRef.current) {
+                    wasSilentRef.current = true;
+                    if (silenceTimerRef.current)
+                      clearTimeout(silenceTimerRef.current);
+                    silenceTimerRef.current = setTimeout(() => {
+                      if (isRecording) {
+                        const text =
+                          (transcriptRef.current || "") +
+                          (partialRef.current ? ` ${partialRef.current}` : "");
+                        const full = normalizeSpacedTranscript(text.trim());
+                        if (full) options?.onSilence?.(full);
+                        stop();
+                      }
+                    }, silenceMs);
+                  }
+                } else {
+                  wasSilentRef.current = false;
+                  if (silenceTimerRef.current) {
+                    clearTimeout(silenceTimerRef.current);
+                    silenceTimerRef.current = null;
+                  }
                 }
-              } else {
-                wasSilentRef.current = false;
-                if (silenceTimerRef.current) {
-                  clearTimeout(silenceTimerRef.current);
-                  silenceTimerRef.current = null;
-                }
+                requestAnimationFrame(tick);
               }
               requestAnimationFrame(tick);
+            } catch (err) {
+              // AudioContext not available — silence detection skipped; still record
+              console.warn(
+                "AudioContext unavailable, silence detection disabled:",
+                err,
+              );
             }
-            requestAnimationFrame(tick);
-          } catch (err) {
-            // AudioContext not available — silence detection skipped; still record
-            console.warn("AudioContext unavailable, silence detection disabled:", err);
-          }
-        },
-        { once: true },
-      );
-    } catch (err) {
-      console.warn(err);
-      setError(getErrorMessage(err));
-      setIsRecording(false);
-    }
-  }
+          },
+          { once: true },
+        );
+      } catch (err) {
+        console.warn(err);
+        setError(getErrorMessage(err));
+        setIsRecording(false);
+      }
+    },
+    [options?.silenceThreshold, options?.silenceMs, options?.onSilence],
+  );
 
   return { start, stop, isRecording, transcript, partial, error };
 }

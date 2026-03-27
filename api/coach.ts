@@ -11,6 +11,7 @@ type RequestBody = {
   transcript?: string;
   history?: ChatMessage[];
   topic?: string;
+  lessonContent?: string;
 };
 
 type Review = {
@@ -111,7 +112,7 @@ export default async function handler(
   }
 
   // Accept either VITE_* (for local Vite setups) or plain DEEPSEEK_API_KEY env var
-  const apiKey = getEnv("VITE_DEEPSEEK_API_KEY") || getEnv("DEEPSEEK_API_KEY");
+  const apiKey = getEnv("DEEPSEEK_API_KEY") || getEnv("VITE_DEEPSEEK_API_KEY");
   if (!apiKey)
     return res
       .status(500)
@@ -123,6 +124,7 @@ export default async function handler(
     ? body.history
     : [];
   const topic = (body.topic ?? "").trim();
+  const lessonContent = (body.lessonContent ?? "").trim();
 
   if (!transcript)
     return res.status(400).json({ error: "transcript is required" });
@@ -131,23 +133,29 @@ export default async function handler(
 
   const messages: ChatMessage[] = [
     { role: "system", content: COACH_SYSTEM_PROMPT },
-    {
-      role: "user",
-      content: `${topicLine}User's most recent speech:\n"${transcript}"\n\nRespond as their English coach.`,
-    },
   ];
 
-  // Allow overriding the model via env var. Use DeepSeek-compatible model names
-  // e.g. "deepseek-chat" or "deepseek-reasoner" (DeepSeek V3.2 variants).
+  if (lessonContent) {
+    messages.push({
+      role: "system",
+      content: `Lesson context (use this to guide your feedback and follow-up questions):\n${lessonContent.slice(0, 4000)}`,
+    });
+  }
+
+  // If a message history is provided, include it after the system prompts
+  if (history.length) {
+    messages.push(...history);
+  }
+
+  messages.push({
+    role: "user",
+    content: `${topicLine}User's most recent speech:\n"${transcript}"\n\nRespond as their English coach.`,
+  });
+
   const model =
     getEnv("VITE_DEEPSEEK_MODEL") ||
     getEnv("DEEPSEEK_MODEL") ||
     "deepseek-chat";
-
-  // If a message history is provided, include it after the system prompt
-  if (history.length) {
-    messages.splice(1, 0, ...history);
-  }
 
   try {
     const upstream = await fetch(DEEPSEEK_API_URL, {
@@ -195,8 +203,8 @@ export default async function handler(
     // service account JWT OAuth flow. Accept either VITE_ or plain env var.
     const googleApiKey =
       getEnv("VITE_GOOGLE_TTS_API_KEY") || getEnv("GOOGLE_TTS_API_KEY");
-    // Choose TTS input text: prefer the corrected version if present, otherwise use the reply.
-    const ttsInputRaw = reviewObj?.corrected_version || reply || "";
+    // TTS: speak the conversational reply (strip the review code block so it reads naturally)
+    const ttsInputRaw = reply.replace(/```review[\s\S]*?```/g, "").trim() || "";
     const ttsInput = normalizeSpacedTranscript(ttsInputRaw);
     if (ttsInput && googleApiKey) {
       try {
