@@ -1,22 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import useSoniox from "../hooks/useSoniox";
-import { Mic, Square, X, ChevronDown } from "lucide-react";
+import { Mic, Square, X, ChevronDown, Upload } from "lucide-react";
 
 interface PracticeCoachProps {
   lessonTitle?: string;
   lessonContent?: string;
-}
-
-function getYouTubeId(url: string): string | null {
-  const patterns = [
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/,
-    /youtube\.com\/embed\/([^?\s]+)/,
-  ];
-  for (const p of patterns) {
-    const m = url.match(p);
-    if (m) return m[1];
-  }
-  return null;
 }
 
 export default function PracticeCoach({
@@ -79,78 +67,47 @@ export default function PracticeCoach({
   const [reply, setReply] = useState("");
   const [loading, setLoading] = useState(false);
   const [isExpanded, setIsExpanded] = useState(true);
-  const [youtubeUrl, setYoutubeUrl] = useState("");
   const [testText, setTestText] = useState("");
-  const [ytStatus, setYtStatus] = useState<
-    "idle" | "loading" | "ready" | "error"
-  >("idle");
-  const [ytTitle, setYtTitle] = useState("");
-
+  const [fileStatus, setFileStatus] = useState<"idle" | "ready" | "error">("idle");
+  const [fileName, setFileName] = useState("");
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const ytAudioRef = useRef<HTMLAudioElement | null>(null);
+  const audioElRef = useRef<HTMLAudioElement | null>(null);
+  const objectUrlRef = useRef<string | null>(null);
 
-  const ytVideoId = youtubeUrl ? getYouTubeId(youtubeUrl) : null;
+  async function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setFileName(file.name);
+    setFileStatus("idle");
 
-  // Auto-load audio when URL is pasted
-  useEffect(() => {
-    if (!ytVideoId) return;
-    let cancelled = false;
-    setYtStatus("loading");
-    fetch(`/api/ytstream?url=${encodeURIComponent(youtubeUrl)}`)
-      .then((r) => r.json())
-      .then((data) => {
-        if (cancelled || !ytAudioRef.current) return;
-        if (data.audioUrl) {
-          ytAudioRef.current.src = data.audioUrl;
-          ytAudioRef.current.load();
-          setYtTitle(data.title || "");
-          setYtStatus("ready");
-        } else {
-          setYtStatus("error");
-        }
-      })
-      .catch(() => {
-        if (!cancelled) setYtStatus("error");
-      });
-    return () => {
-      cancelled = true;
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ytVideoId]);
+    // Clean up previous object URL
+    if (objectUrlRef.current) {
+      URL.revokeObjectURL(objectUrlRef.current);
+      objectUrlRef.current = null;
+    }
 
-  async function loadYouTubeAudio() {
-    if (!ytVideoId) return;
-    setYtStatus("loading");
-    try {
-      const res = await fetch(`/api/ytstream?url=${encodeURIComponent(youtubeUrl)}`);
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to load YouTube audio");
-      if (ytAudioRef.current) {
-        ytAudioRef.current.src = data.audioUrl;
-        ytAudioRef.current.load();
-      }
-      setYtTitle(data.title || "");
-      setYtStatus("ready");
-    } catch (e) {
-      setYtStatus("error");
-      alert(getErrorMessage(e));
+    const url = URL.createObjectURL(file);
+    objectUrlRef.current = url;
+    setFileStatus("ready");
+
+    // Attach to hidden audio element for playback
+    if (audioElRef.current) {
+      audioElRef.current.src = url;
+      audioElRef.current.load();
     }
   }
 
-  async function startWithYouTube() {
-    if (!ytAudioRef.current || ytStatus !== "ready") {
-      alert("YouTube audio not loaded yet. Please wait and try again.");
-      return;
-    }
+  async function startWithFile() {
+    if (!audioElRef.current || fileStatus !== "ready") return;
     try {
-      // captureStream() works on <audio> elements without CORS issues
-      const stream = (ytAudioRef.current as HTMLAudioElement & {
+      const stream = (audioElRef.current as HTMLAudioElement & {
         captureStream: () => MediaStream;
       }).captureStream();
       await start({ stream });
-      ytAudioRef.current.play().catch(() => {});
+      audioElRef.current.play().catch(() => {});
     } catch (e) {
-      alert(`Cannot capture YouTube audio: ${getErrorMessage(e)}`);
+      alert(`Cannot start: ${getErrorMessage(e)}`);
     }
   }
 
@@ -182,9 +139,15 @@ export default function PracticeCoach({
               <button
                 onClick={() => {
                   if (isRecording) stop();
+                  audioElRef.current?.pause();
                   setFinalTranscript("");
                   setReply("");
-                  setYtStatus("idle");
+                  setFileStatus("idle");
+                  setFileName("");
+                  if (objectUrlRef.current) {
+                    URL.revokeObjectURL(objectUrlRef.current);
+                    objectUrlRef.current = null;
+                  }
                 }}
                 className="p-1 text-gray-500 hover:text-gray-700 transition-colors"
               >
@@ -195,6 +158,29 @@ export default function PracticeCoach({
 
           {/* Content */}
           <div className="flex-1 overflow-y-auto p-3 space-y-3">
+            {/* File Upload */}
+            <div>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="audio/*"
+                onChange={handleFileChange}
+                className="hidden"
+                id="audio-file-upload"
+              />
+              <label
+                htmlFor="audio-file-upload"
+                className={`flex items-center gap-2 w-full px-3 py-2 border rounded-lg cursor-pointer text-xs font-medium transition-colors ${
+                  fileStatus === "ready"
+                    ? "border-green-400 bg-green-50 text-green-700"
+                    : "border-gray-200 bg-gray-50 text-gray-600 hover:bg-gray-100"
+                }`}
+              >
+                <Upload size={13} />
+                {fileName || "Upload audio file (MP3, WAV, M4A...)"}
+              </label>
+            </div>
+
             {/* Control Buttons */}
             <div className="flex gap-2">
               <button
@@ -205,17 +191,17 @@ export default function PracticeCoach({
                 <Mic size={13} /> Mic
               </button>
               <button
-                onClick={startWithYouTube}
-                disabled={isRecording || ytStatus !== "ready"}
+                onClick={startWithFile}
+                disabled={isRecording || fileStatus !== "ready"}
                 className="flex-1 inline-flex items-center justify-center gap-1 px-2 py-2 bg-blue-500 text-white text-xs font-medium rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                title={ytStatus !== "ready" ? "Paste YouTube URL and wait for it to load" : "Use YouTube audio as source"}
+                title={fileStatus !== "ready" ? "Upload an audio file first" : "Play audio file and transcribe"}
               >
-                <Mic size={13} /> YouTube
+                <Upload size={13} /> File
               </button>
               <button
                 onClick={() => {
                   stop();
-                  ytAudioRef.current?.pause();
+                  audioElRef.current?.pause();
                   const text =
                     (transcript || "") + (partial ? ` ${partial}` : "");
                   const trimmed = text.trim();
@@ -226,43 +212,6 @@ export default function PracticeCoach({
               >
                 <Square size={13} /> Done
               </button>
-            </div>
-
-            {/* YouTube URL */}
-            <div>
-              <input
-                type="url"
-                placeholder="Paste YouTube URL..."
-                value={youtubeUrl}
-                onChange={(e) => {
-                  setYoutubeUrl(e.target.value);
-                  setYtStatus("idle");
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") loadYouTubeAudio();
-                }}
-                className="w-full text-xs px-2 py-1.5 border border-gray-200 rounded-md focus:outline-none focus:ring-1 focus:ring-indigo-400"
-              />
-              {/* Status */}
-              <div className="mt-1 flex items-center justify-between">
-                {ytStatus === "idle" && ytVideoId && (
-                  <button
-                    onClick={loadYouTubeAudio}
-                    className="text-xs text-blue-600 hover:underline"
-                  >
-                    Load audio
-                  </button>
-                )}
-                {ytStatus === "loading" && (
-                  <p className="text-xs text-gray-400 animate-pulse">Loading audio...</p>
-                )}
-                {ytStatus === "ready" && ytTitle && (
-                  <p className="text-xs text-green-500 truncate flex-1">{ytTitle}</p>
-                )}
-                {ytStatus === "error" && (
-                  <p className="text-xs text-red-400">Failed to load</p>
-                )}
-              </div>
             </div>
 
             {/* Test text */}
@@ -357,8 +306,8 @@ export default function PracticeCoach({
         </div>
       )}
 
-      {/* Hidden audio — used for YouTube stream capture */}
-      <audio ref={ytAudioRef} style={{ display: "none" }} />
+      {/* Hidden audio — used for file stream capture */}
+      <audio ref={audioElRef} style={{ display: "none" }} />
       {/* Coach TTS audio */}
       <audio ref={audioRef} />
     </>
