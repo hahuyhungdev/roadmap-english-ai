@@ -60,7 +60,12 @@ export function VideoPanel({
               opts={{
                 width: "100%",
                 height: "100%",
-                playerVars: { autoplay: 1, rel: 0, modestbranding: 1 },
+                playerVars: {
+                  autoplay: 1,
+                  rel: 0,
+                  modestbranding: 1,
+                  origin: typeof window !== "undefined" ? window.location.origin : undefined,
+                },
               }}
               onReady={onPlayerReady}
               className="w-full h-full"

@@ -5,6 +5,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "English System",
   description: "English learning roadmap with AI-powered coaching",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
