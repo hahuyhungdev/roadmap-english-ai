@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import type { TTSProvider, TTSSettings } from "../shared/types";
-import { EDGE_ACCENTS } from "../shared/constants";
+import { DEFAULT_SPEED, EDGE_ACCENTS } from "../shared/constants";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 type TTSStatus = "idle" | "loading" | "playing";
@@ -198,12 +198,12 @@ function speakChunk(
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 export function useTTSSettings(defaults?: Partial<TTSSettings>) {
   const [provider, setProvider] = useState<TTSProvider>(
-    defaults?.provider ?? "edge",
+    defaults?.provider ?? "google",
   );
   const [accent, setAccent] = useState(
-    defaults?.accent ?? "microsoft-brian-us", // Default to deep male voice (Brian)
+    defaults?.accent ?? "en-US-Chirp3-HD-Fenrir", // Default to Fenrir (Chirp3-HD)
   );
-  const [speed, setSpeed] = useState(defaults?.speed ?? 0.75);
+  const [speed, setSpeed] = useState(defaults?.speed ?? DEFAULT_SPEED);
   const [status, setStatus] = useState<TTSStatus>("idle");
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
 

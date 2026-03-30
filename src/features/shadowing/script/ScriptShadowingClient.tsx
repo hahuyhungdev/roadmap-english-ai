@@ -101,8 +101,8 @@ export default function ScriptShadowingClient() {
                 onProviderChange={s.tts.setProvider}
                 onAccentChange={s.tts.setAccent}
                 onSpeedChange={s.tts.setSpeed}
-                autoPronouce={s.autoPronouce}
-                onAutoPronouceChange={s.setAutoPronouce}
+                autoPronounceSentence={s.autoPronounceSentence}
+                onAutoPronounceSentenceChange={s.setAutoPronounceSentence}
                 loopSentence={s.loopSentence}
                 onLoopSentenceChange={s.setLoopSentence}
               />
@@ -241,6 +241,14 @@ export default function ScriptShadowingClient() {
                         <Mic size={12} /> Record
                       </>
                     )}
+                  </button>
+                  <button
+                    onClick={s.tts.stop}
+                    disabled={!s.tts.playing}
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-red-600 border border-red-200 rounded-lg bg-red-50 hover:bg-red-100 disabled:opacity-50 transition-all"
+                    title="Stop speaking"
+                  >
+                    <Square size={12} /> Stop Speaking
                   </button>
                 </div>
 

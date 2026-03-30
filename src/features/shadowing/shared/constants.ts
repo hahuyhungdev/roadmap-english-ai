@@ -67,9 +67,10 @@ export const GOOGLE_ACCENTS = TTS_ACCENTS.google;
 
 export const EDGE_ACCENTS = TTS_ACCENTS.edge;
 
+export const DEFAULT_SPEED = 0.85;
 export const TTS_SPEEDS = [
   { value: 0.75, label: "0.75x" },
-  { value: 0.9, label: "0.9x" },
+  { value: DEFAULT_SPEED, label: "0.85x" },
   { value: 1.0, label: "1.0x" },
   { value: 1.15, label: "1.15x" },
 ];

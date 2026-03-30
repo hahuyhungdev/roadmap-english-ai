@@ -3,8 +3,8 @@
 import {
   useState,
   useRef,
-  useCallback,
   useEffect,
+  useEffectEvent,
   type FormEvent,
 } from "react";
 import useSoniox from "@/hooks/useSoniox";
@@ -15,6 +15,7 @@ import {
   newId,
   splitScriptIntoSentences,
 } from "../shared/utils";
+import { DEFAULT_SPEED } from "@/features/shadowing/shared/constants";
 
 export function useScriptShadowing() {
   // ── Script / sentences ────────────────────────────────────────────────────
@@ -25,11 +26,11 @@ export function useScriptShadowing() {
   const sentenceRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // ── TTS ───────────────────────────────────────────────────────────────────
-  const tts = useTTSSettings({ provider: "edge", speed: 0.75 });
+  const tts = useTTSSettings({ provider: "google", speed: DEFAULT_SPEED });
 
   // ── Playback options ──────────────────────────────────────────────────────
-  const [autoPronouce, setAutoPronouce] = useState(false);
-  const [loopSentence, setLoopSentence] = useState(false);
+  const [autoPronounceSentence, setAutoPronounceSentence] = useState(true);
+  const [loopSentence, setLoopSentence] = useState(true);
   const loopCountRef = useRef(0);
   const loopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const hearingSentenceIdx = useRef(-1);
@@ -89,10 +90,21 @@ export function useScriptShadowing() {
     }
   }, [activeSentenceIdx]);
 
-  // ── Clear hearingIdx when TTS finishes ───────────────────────────────────
+  // ── Clear hearingIdx only when loop is completely done ──────────────────
+  // (Don't clear on every TTS finish — that breaks the loop effect! Only clear
+  //  when loopSentence is disabled or loopCount reaches 0)
   useEffect(() => {
-    if (!tts.playing) hearingSentenceIdx.current = -1;
-  }, [tts.playing]);
+    if (!loopSentence && loopCountRef.current === 0) {
+      hearingSentenceIdx.current = -1;
+    }
+  }, [loopSentence]);
+
+  // Also clear when user changes sentences
+  useEffect(() => {
+    if (activeSentenceIdx !== hearingSentenceIdx.current) {
+      hearingSentenceIdx.current = -1;
+    }
+  }, [activeSentenceIdx]);
 
   // ── Reset loop count when loopSentence toggles (FIX #6) ──────────────────
   useEffect(() => {
@@ -102,7 +114,7 @@ export function useScriptShadowing() {
   // ── Auto-pronounce on sentence change ────────────────────────────────────
   useEffect(() => {
     if (
-      !autoPronouce ||
+      !autoPronounceSentence ||
       activeSentenceIdx < 0 ||
       !sentences[activeSentenceIdx] ||
       tts.playing ||
@@ -121,7 +133,7 @@ export function useScriptShadowing() {
 
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeSentenceIdx, autoPronouce]);
+  }, [activeSentenceIdx, autoPronounceSentence]);
 
   // ── Loop playback (FIX #4 — removed `tts` object dep; FIX #5 — mounted guard) ──
   useEffect(() => {
@@ -150,7 +162,8 @@ export function useScriptShadowing() {
   // ── Actions ───────────────────────────────────────────────────────────────
 
   // FIX #7 — guard against concurrent submits; historyRef mutation is now safe
-  const submitTranscript = useCallback(async (text: string) => {
+  // useEffectEvent: stable reference with access to latest state/refs
+  const submitTranscript = useEffectEvent(async (text: string) => {
     const trimmed = text.trim();
     if (!trimmed || isSubmittingRef.current) return;
 
@@ -211,11 +224,10 @@ export function useScriptShadowing() {
       setCoachLoading(false);
       isSubmittingRef.current = false; // FIX #7 — always release the lock
     }
-  }, []);
+  });
 
-  // FIX #2 — memoized so the keyboard handler always gets a stable reference
-  //          with the correct activeSentenceIdx
-  const startRecordingAction = useCallback(() => {
+  // FIX #2 — useEffectEvent keeps this stable while always having access to latest activeSentenceIdx
+  const startRecordingAction = useEffectEvent(() => {
     audioChunksRef.current = [];
     recordingForIdxRef.current =
       activeSentenceIdx >= 0 ? activeSentenceIdx : null;
@@ -270,74 +282,68 @@ export function useScriptShadowing() {
       .catch(() => {});
 
     startRef.current({ source: "mic" });
-  }, [activeSentenceIdx]);
+  });
 
-  // ── Keyboard shortcuts (FIX #2 — startRecordingAction now in deps) ────────
-  useEffect(() => {
-    function handleKey(e: KeyboardEvent) {
-      const tag = (
-        document.activeElement as HTMLElement
-      )?.tagName?.toLowerCase();
-      if (tag === "input" || tag === "textarea" || tag === "select") return;
+  // ── Keyboard shortcuts (FIX #11 — useEffectEvent always has latest activeSentenceIdx) ────────
+  const handleKey = useEffectEvent((e: KeyboardEvent) => {
+    const tag = (document.activeElement as HTMLElement)?.tagName?.toLowerCase();
+    if (tag === "input" || tag === "textarea" || tag === "select") return;
 
-      const goTo = (idx: number) => {
-        if (idx >= 0 && idx < sentences.length) setActiveSentenceIdx(idx);
-      };
+    const goTo = (idx: number) => {
+      if (idx >= 0 && idx < sentences.length) setActiveSentenceIdx(idx);
+    };
 
-      switch (e.key) {
-        case " ":
-        case "s":
-        case "S":
-          e.preventDefault();
-          if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
-            hearingSentenceIdx.current = activeSentenceIdx;
-            void tts.speak(sentences[activeSentenceIdx].text);
-          }
-          break;
-        case "ArrowLeft":
-        case "a":
-        case "A":
-          e.preventDefault();
-          goTo(activeSentenceIdx - 1);
-          break;
-        case "ArrowRight":
-        case "d":
-        case "D":
-          e.preventDefault();
-          goTo(activeSentenceIdx + 1);
-          break;
-        case "ArrowUp":
-          e.preventDefault();
-          // Record
-          if (isRecording) stopRef.current();
-          else startRecordingAction();
-          break;
-        case "ArrowDown":
-          e.preventDefault();
-          // Listen again
-          if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
-            hearingSentenceIdx.current = activeSentenceIdx;
-            void tts.speak(sentences[activeSentenceIdx].text);
-          }
-          break;
-        case "r":
-        case "R":
-          e.preventDefault();
-          if (isRecording) stopRef.current();
-          else startRecordingAction();
-          break;
-      }
+    switch (e.key) {
+      case " ":
+      case "s":
+      case "S":
+        e.preventDefault();
+        if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
+          hearingSentenceIdx.current = activeSentenceIdx;
+          void tts.speak(sentences[activeSentenceIdx].text);
+        }
+        break;
+      case "ArrowLeft":
+      case "a":
+      case "A":
+        e.preventDefault();
+        goTo(activeSentenceIdx - 1);
+        break;
+      case "ArrowRight":
+      case "d":
+      case "D":
+        e.preventDefault();
+        goTo(activeSentenceIdx + 1);
+        break;
+      case "ArrowUp":
+        e.preventDefault();
+        // Record
+        if (isRecording) stopRef.current();
+        else startRecordingAction();
+        break;
+      case "ArrowDown":
+        e.preventDefault();
+        // Listen again
+        if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
+          hearingSentenceIdx.current = activeSentenceIdx;
+          void tts.speak(sentences[activeSentenceIdx].text);
+        }
+        break;
+      case "r":
+      case "R":
+        e.preventDefault();
+        if (isRecording) stopRef.current();
+        else startRecordingAction();
+        break;
     }
+  });
 
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [
-    sentences,
-    activeSentenceIdx,
-    isRecording,
-    tts.speak,
-    startRecordingAction,
-  ]);
+  // Register keyboard listener (stable because handleKey is useEffectEvent)
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => handleKey(e);
+    window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [handleKey]);
 
   // FIX #9 — loading a new script clears the previous session completely
   function handleLoadScript(e?: FormEvent) {
@@ -394,8 +400,8 @@ export function useScriptShadowing() {
     // TTS (whole object — consumer destructures what it needs)
     tts,
     // Playback options
-    autoPronouce,
-    setAutoPronouce,
+    autoPronounceSentence,
+    setAutoPronounceSentence,
     loopSentence,
     setLoopSentence,
     // Recording

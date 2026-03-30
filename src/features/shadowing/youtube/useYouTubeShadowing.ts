@@ -12,6 +12,7 @@ import useSoniox from "@/hooks/useSoniox";
 import { useTTSSettings } from "../shared/useTTSSettings";
 import type { YTPlayer, ShadowTurn, Sentence } from "../shared/types";
 import { extractVideoId, extractReview, newId } from "../shared/utils";
+import { DEFAULT_SPEED } from "@/features/shadowing/shared/constants";
 
 export function useYouTubeShadowing() {
   // ── Video ────────────────────────────────────────────────────────────────
@@ -30,7 +31,7 @@ export function useYouTubeShadowing() {
   const sentenceRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // ── TTS (self-contained) ─────────────────────────────────────────────────
-  const tts = useTTSSettings({ provider: "google", speed: 0.75 });
+  const tts = useTTSSettings({ provider: "google", speed: DEFAULT_SPEED });
 
   // ── Recording ────────────────────────────────────────────────────────────
   const {

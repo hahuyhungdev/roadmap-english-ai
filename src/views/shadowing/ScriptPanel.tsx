@@ -9,7 +9,11 @@ import {
   Star,
   Trash2,
 } from "lucide-react";
-import { TTS_ACCENTS, TTS_PROVIDERS, TTS_SPEEDS } from "./constants";
+import {
+  TTS_ACCENTS,
+  TTS_PROVIDERS,
+  TTS_SPEEDS,
+} from "@/features/shadowing/shared/constants";
 import { SentenceCard } from "./SentenceCard";
 import type { Sentence } from "./types";
 

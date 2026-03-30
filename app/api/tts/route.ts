@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const text = (body.text ?? "").trim();
-    const voiceName: string = body.voice ?? "en-US-Chirp3-HD-Charon";
+    const voiceName: string = body.voice ?? "en-US-Chirp3-HD-Fenrir";
 
     if (!text) {
       return NextResponse.json({ error: "text is required" }, { status: 400 });

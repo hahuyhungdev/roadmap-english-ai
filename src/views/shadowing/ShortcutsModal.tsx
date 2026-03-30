@@ -1,7 +1,7 @@
 "use client";
 
 import { Keyboard, X } from "lucide-react";
-import { SHORTCUTS } from "./constants";
+import { YOUTUBE_SHORTCUTS } from "@/features/shadowing/shared/constants";
 
 interface ShortcutsModalProps {
   onClose: () => void;
@@ -30,7 +30,7 @@ export function ShortcutsModal({ onClose }: ShortcutsModalProps) {
           </button>
         </div>
         <div className="space-y-2">
-          {SHORTCUTS.map(([key, desc]) => (
+          {YOUTUBE_SHORTCUTS.map(([key, desc]) => (
             <div key={key} className="flex items-center justify-between gap-4">
               <kbd className="shrink-0 min-w-[110px] text-center px-2 py-1 bg-gray-100 border border-gray-200 rounded-lg text-xs font-mono font-semibold text-gray-700">
                 {key}

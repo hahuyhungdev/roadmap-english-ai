@@ -14,8 +14,8 @@ interface Props {
   onAccentChange: (a: string) => void;
   onSpeedChange: (s: number) => void;
   /** Only shown for Script mode */
-  autoPronouce?: boolean;
-  onAutoPronouceChange?: (v: boolean) => void;
+  autoPronounceSentence?: boolean;
+  onAutoPronounceSentenceChange?: (v: boolean) => void;
   loopSentence?: boolean;
   onLoopSentenceChange?: (v: boolean) => void;
 }
@@ -31,8 +31,8 @@ export function TTSSettingsPanel({
   onProviderChange,
   onAccentChange,
   onSpeedChange,
-  autoPronouce,
-  onAutoPronouceChange,
+  autoPronounceSentence,
+  onAutoPronounceSentenceChange,
   loopSentence,
   onLoopSentenceChange,
 }: Props) {
@@ -136,7 +136,7 @@ export function TTSSettingsPanel({
           </div>
 
           {/* Playback options (Script mode only) */}
-          {onAutoPronouceChange !== undefined && (
+          {onAutoPronounceSentenceChange !== undefined && (
             <>
               <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">
                 Playback
@@ -145,8 +145,10 @@ export function TTSSettingsPanel({
                 <label className="flex items-center gap-2 cursor-pointer">
                   <input
                     type="checkbox"
-                    checked={autoPronouce}
-                    onChange={(e) => onAutoPronouceChange(e.target.checked)}
+                    checked={autoPronounceSentence}
+                    onChange={(e) =>
+                      onAutoPronounceSentenceChange(e.target.checked)
+                    }
                     className="w-3.5 h-3.5 rounded border-gray-300 accent-indigo-600"
                   />
                   <span className="text-xs text-gray-600">Auto-pronounce</span>
