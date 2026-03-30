@@ -98,6 +98,54 @@ async function fetchCaptionTracks(
   return player.captions?.playerCaptionsTracklistRenderer?.captionTracks ?? [];
 }
 
+/** Fallback: fetch youtubei player + pick a caption track and parse XML (used as a last-resort backup) */
+async function fetchPlayerAndParse(videoId: string): Promise<Sentence[] | null> {
+  try {
+    const pageResp = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
+      headers: { "User-Agent": UA, "Accept-Language": "en-US,en;q=0.9" },
+      signal: AbortSignal.timeout(12000),
+    });
+    const cookie = extractCookie(pageResp);
+    const html = await pageResp.text();
+    const apiKey = (html.match(/"INNERTUBE_API_KEY"\s*:\s*"([a-zA-Z0-9_-]+)"/) ?? [])[1] ?? "";
+    if (!apiKey) {
+      console.warn("fetchPlayerAndParse: no apiKey for", videoId);
+      return null;
+    }
+
+    const resp = await fetch(
+      `https://www.youtube.com/youtubei/v1/player?key=${apiKey}&prettyPrint=false`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "User-Agent": UA,
+          ...(cookie ? { Cookie: cookie } : {}),
+        },
+        body: JSON.stringify({ videoId, context: { client: { clientName: "ANDROID", clientVersion: "20.10.38" } } }),
+        signal: AbortSignal.timeout(10000),
+      },
+    );
+    if (!resp.ok) return null;
+    const player = await resp.json();
+    const tracks = player.captions?.playerCaptionsTracklistRenderer?.captionTracks ?? [];
+    if (!tracks.length) return null;
+
+    const pick = tracks.find((t: YTCaptionTrack) => t.languageCode === "en") ?? tracks[0];
+    if (!pick?.baseUrl) return null;
+    const captionUrl = pick.baseUrl.replace(/&fmt=srv3/g, "");
+    const capResp = await fetch(captionUrl, { headers: { "User-Agent": UA, ...(cookie ? { Cookie: cookie } : {}) }, signal: AbortSignal.timeout(10000) });
+    if (!capResp.ok) return null;
+    const xml = await capResp.text();
+    if (!xml.trim() || (!xml.includes("<transcript>") && !xml.includes("<text"))) return null;
+    const sentences = parseTranscriptXml(xml);
+    return sentences.length ? sentences : null;
+  } catch (e) {
+    console.warn("fetchPlayerAndParse failed for", videoId, e instanceof Error ? e.message : String(e));
+    return null;
+  }
+}
+
 /** Parse timedtext XML into sentences. Format:
  *  <text start="12.16" dur="1.976">I&amp;#39;m a storyteller.</text> */
 function parseTranscriptXml(xml: string): Sentence[] {
@@ -243,6 +291,16 @@ export async function GET(req: NextRequest) {
         }
       } catch (e) {
         console.warn("get_video_info fallback failed for", videoId, e instanceof Error ? e.message : String(e));
+      }
+
+      // Try an additional youtubei -> caption XML parse fallback as a last resort
+      try {
+        const parsed = await fetchPlayerAndParse(videoId);
+        if (parsed && parsed.length) {
+          return NextResponse.json({ sentences: parsed, videoId, language: "en", fallback: true });
+        }
+      } catch (e) {
+        console.warn("youtubei fallback parse attempt failed:", e instanceof Error ? e.message : String(e));
       }
 
       // No fallback worked
