@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = "nodejs";
+
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
@@ -29,14 +31,38 @@ async function fetchPageData(videoId: string): Promise<{
   cookie: string;
   apiKey: string;
 }> {
-  const resp = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
-    headers: { "User-Agent": UA, "Accept-Language": "en-US,en;q=0.9" },
-    signal: AbortSignal.timeout(12000),
-  });
-  const cookie = extractCookie(resp);
-  const html = await resp.text();
-  const apiKey =
-    (html.match(/"INNERTUBE_API_KEY"\s*:\s*"([a-zA-Z0-9_-]+)"/) ?? [])[1] ?? "";
+  // Try initial fetch
+  const doFetch = async (ua: string, acceptLang: string) =>
+    fetch(`https://www.youtube.com/watch?v=${videoId}`, {
+      headers: { "User-Agent": ua, "Accept-Language": acceptLang },
+      signal: AbortSignal.timeout(12000),
+    });
+
+  const resp = await doFetch(UA, "en-US,en;q=0.9");
+  let cookie = extractCookie(resp);
+  let html = await resp.text();
+  let apiKey = (html.match(/"INNERTUBE_API_KEY"\s*:\s*"([a-zA-Z0-9_-]+)"/) ?? [])[1] ?? "";
+
+  // Retry once with a slightly different Accept-Language/UA if we didn't get cookies or apiKey
+  if (!cookie || !apiKey) {
+    try {
+      const resp2 = await doFetch(
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "en-GB,en;q=0.9",
+      );
+      cookie = cookie || extractCookie(resp2);
+      const html2 = await resp2.text();
+      if (!apiKey) apiKey = (html2.match(/"INNERTUBE_API_KEY"\s*:\s*"([a-zA-Z0-9_-]+)"/) ?? [])[1] ?? "";
+      // prefer original html unless empty
+      if (!html || html.length < 100) html = html2;
+    } catch (e) {
+      console.warn("fetchPageData retry failed:", e instanceof Error ? e.message : String(e));
+    }
+  }
+
+  if (!cookie) console.warn("fetchPageData: no cookies extracted for video", videoId);
+  if (!apiKey) console.warn("fetchPageData: no INNERTUBE_API_KEY found for video", videoId);
+
   return { cookie, apiKey };
 }
 
@@ -147,15 +173,81 @@ export async function GET(req: NextRequest) {
         { status: 502 },
       );
     }
+    console.log("log cookie", cookie, "api=======", apiKey);
 
     // 2. InnerTube ANDROID → caption tracks
     const tracks = await fetchCaptionTracks(videoId, apiKey, cookie);
+
     if (!tracks.length) {
+      // 2a. Try legacy timedtext endpoint as a lightweight fallback
+      try {
+        const timedResp = await fetch(
+          `https://video.google.com/timedtext?v=${videoId}&lang=en`,
+          {
+            headers: { "User-Agent": UA },
+            signal: AbortSignal.timeout(8000),
+          },
+        );
+        if (timedResp.ok) {
+          const xmlFallback = await timedResp.text();
+          if (xmlFallback.trim() && xmlFallback.includes("<transcript>")) {
+            const fallbackSentences = parseTranscriptXml(xmlFallback);
+            if (fallbackSentences.length) {
+              return NextResponse.json({
+                sentences: fallbackSentences,
+                videoId,
+                language: "en",
+                fallback: true,
+              });
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("timedtext fallback failed for", videoId, e instanceof Error ? e.message : String(e));
+      }
+
+      // 2b. Try get_video_info as an additional fallback (may contain player_response.captions)
+      try {
+        const gv = await fetch(
+          `https://www.youtube.com/get_video_info?video_id=${videoId}&html5=1`,
+          { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(8000) },
+        );
+        if (gv.ok) {
+          const txt = await gv.text();
+          const params = new URLSearchParams(txt);
+          const player_response = params.get("player_response") || params.get("player_response_json") || "";
+          if (player_response) {
+            try {
+              const pr = JSON.parse(player_response);
+              const caps = pr.captions?.playerCaptionsTracklistRenderer?.captionTracks || [];
+              if (caps.length) {
+                // use first caption track URL
+                const capUrl = (caps[0].baseUrl || "").replace(/&fmt=srv3/g, "");
+                if (capUrl) {
+                  const capResp = await fetch(capUrl, { headers: { "User-Agent": UA }, signal: AbortSignal.timeout(10000) });
+                  if (capResp.ok) {
+                    const xml = await capResp.text();
+                    if (xml.includes("<transcript>")) {
+                      const sentences = parseTranscriptXml(xml);
+                      if (sentences.length) {
+                        return NextResponse.json({ sentences, videoId, language: caps[0].languageCode ?? "en", fallback: true });
+                      }
+                    }
+                  }
+                }
+              }
+            } catch (e) {
+              console.warn("get_video_info parse failed for", videoId, e instanceof Error ? e.message : String(e));
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("get_video_info fallback failed for", videoId, e instanceof Error ? e.message : String(e));
+      }
+
+      // No fallback worked
       return NextResponse.json(
-        {
-          error:
-            "No captions available for this video. Try a video with CC/subtitles enabled.",
-        },
+        { error: "No captions available for this video. Try a video with CC/subtitles enabled." },
         { status: 404 },
       );
     }

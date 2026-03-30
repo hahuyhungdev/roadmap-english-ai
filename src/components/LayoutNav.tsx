@@ -1,14 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { BookOpen, Mic2 } from "lucide-react";
 import clsx from "clsx";
+import { useEffect, useState } from "react";
 
 export default function LayoutNav() {
-  const pathname = usePathname();
-  const isHome = pathname === "/";
-  const isShadowing = pathname.startsWith("/shadowing");
+  // Avoid using `usePathname` directly in render because it can cause
+  // server/client HTML mismatches. Instead, compute active path on the
+  // client after mount and render neutral markup on the server.
+  const [clientPath, setClientPath] = useState<string | null>(null);
+
+  useEffect(() => {
+    setClientPath(window.location.pathname || "/");
+  }, []);
+
+  const isHome = clientPath === "/";
+  const isShadowing = !!clientPath && clientPath.startsWith("/shadowing");
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -26,6 +34,8 @@ export default function LayoutNav() {
             href="/shadowing"
             className={clsx(
               "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors",
+              // On the server (clientPath === null) this will render the
+              // neutral style; after hydration we update to show active state.
               isShadowing
                 ? "bg-indigo-50 text-indigo-600"
                 : "text-gray-500 hover:text-gray-700 hover:bg-gray-50",
