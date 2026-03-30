@@ -146,6 +146,33 @@ async function fetchPlayerAndParse(videoId: string): Promise<Sentence[] | null> 
   }
 }
 
+/** Fallback using ytdl-core to obtain player_response.captions and fetch caption XML */
+async function fetchViaYtdl(videoId: string, cookie?: string): Promise<Sentence[] | null> {
+  try {
+    // dynamic import to avoid bundling in environments that don't support it
+    const ytdl = await import("ytdl-core");
+    const info = await ytdl.getInfo(`https://youtube.com/watch?v=${videoId}`, {
+      requestOptions: { headers: { "User-Agent": UA, ...(cookie ? { Cookie: cookie } : {}) } },
+      lang: "en",
+    });
+    const pr = (info as any).player_response || (info as any).playerResponse || (info as any).player;
+    const caps = pr?.captions?.playerCaptionsTracklistRenderer?.captionTracks || [];
+    if (!caps.length) return null;
+    const pick = caps.find((t: YTCaptionTrack) => t.languageCode === "en") ?? caps[0];
+    const capUrl = (pick.baseUrl || "").replace(/&fmt=srv3/g, "");
+    if (!capUrl) return null;
+    const capResp = await fetch(capUrl, { headers: { "User-Agent": UA, ...(cookie ? { Cookie: cookie } : {}) }, signal: AbortSignal.timeout(10000) });
+    if (!capResp.ok) return null;
+    const xml = await capResp.text();
+    if (!xml.trim() || (!xml.includes("<transcript>") && !xml.includes("<text"))) return null;
+    const sentences = parseTranscriptXml(xml);
+    return sentences.length ? sentences : null;
+  } catch (e) {
+    console.warn("fetchViaYtdl failed for", videoId, e instanceof Error ? e.message : String(e));
+    return null;
+  }
+}
+
 /** Parse timedtext XML into sentences. Format:
  *  <text start="12.16" dur="1.976">I&amp;#39;m a storyteller.</text> */
 function parseTranscriptXml(xml: string): Sentence[] {
@@ -201,6 +228,11 @@ function parseTranscriptXml(xml: string): Sentence[] {
 }
 
 export async function GET(req: NextRequest) {
+  try {
+    console.log("/api/transcript hit ->", req.url, "params:", Object.fromEntries(req.nextUrl.searchParams.entries()));
+  } catch (e) {
+    /* ignore logging errors */
+  }
   const url = req.nextUrl.searchParams.get("url");
   if (!url) return NextResponse.json({ error: "Missing url" }, { status: 400 });
 
@@ -293,7 +325,16 @@ export async function GET(req: NextRequest) {
         console.warn("get_video_info fallback failed for", videoId, e instanceof Error ? e.message : String(e));
       }
 
-      // Try an additional youtubei -> caption XML parse fallback as a last resort
+      // Try ytdl-core fallback first (more robust on server), then youtubei parse
+      try {
+        const parsedYtdl = await fetchViaYtdl(videoId, cookie);
+        if (parsedYtdl && parsedYtdl.length) {
+          return NextResponse.json({ sentences: parsedYtdl, videoId, language: "en", fallback: "ytdl" });
+        }
+      } catch (e) {
+        console.warn("ytdl fallback failed:", e instanceof Error ? e.message : String(e));
+      }
+
       try {
         const parsed = await fetchPlayerAndParse(videoId);
         if (parsed && parsed.length) {
