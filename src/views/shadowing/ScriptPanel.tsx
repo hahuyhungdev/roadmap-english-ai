@@ -1,19 +1,17 @@
 "use client";
 
+import clsx from "clsx";
 import {
   FileText,
   Loader2,
-  Mic,
   RefreshCw,
   Settings2,
   Star,
   Trash2,
 } from "lucide-react";
-import clsx from "clsx";
-import type { Sentence } from "./types";
-import { TTS_VOICES, TTS_SPEEDS } from "./constants";
-import { AudioReplay } from "./AudioReplay";
+import { TTS_ACCENTS, TTS_PROVIDERS, TTS_SPEEDS } from "./constants";
 import { SentenceCard } from "./SentenceCard";
+import type { Sentence } from "./types";
 
 export interface ScriptPanelProps {
   videoId: string | null;
@@ -31,8 +29,12 @@ export interface ScriptPanelProps {
   recordingForIdx: number | null;
   // Settings
   showTtsSettings: boolean;
+  ttsProvider: string;
+  ttsAccent: string;
   ttsVoice: string;
   ttsSpeed: number;
+  autoPronounceSentence: boolean;
+  loopSentence: boolean;
   // Score
   overallScore: number | null;
   hasTurns: boolean;
@@ -41,8 +43,12 @@ export interface ScriptPanelProps {
   onJumpToSentence: (idx: number) => void;
   onToggleTtsSettings: () => void;
   onClearSession: () => void;
+  onSetTtsProvider: (p: string) => void;
+  onSetTtsAccent: (a: string) => void;
   onSetTtsVoice: (v: string) => void;
   onSetTtsSpeed: (s: number) => void;
+  onSetAutoPronounceSentence: (v: boolean) => void;
+  onSetLoopSentence: (v: boolean) => void;
 }
 
 export function ScriptPanel({
@@ -52,22 +58,26 @@ export function ScriptPanel({
   sentenceItemRefs,
   scriptLoading,
   scriptError,
-  hearingIdx,
-  ttsLoading,
-  ttsPlaying,
-  isRecording,
-  recordingForIdx,
+
   showTtsSettings,
-  ttsVoice,
+  ttsProvider,
+  ttsAccent,
+
   ttsSpeed,
+  autoPronounceSentence,
+  loopSentence,
   overallScore,
   hasTurns,
   onFetchScript,
   onJumpToSentence,
   onToggleTtsSettings,
   onClearSession,
-  onSetTtsVoice,
+  onSetTtsProvider,
+  onSetTtsAccent,
+
   onSetTtsSpeed,
+  onSetAutoPronounceSentence,
+  onSetLoopSentence,
 }: ScriptPanelProps) {
   return (
     <>
@@ -119,22 +129,48 @@ export function ScriptPanel({
       {/* TTS settings drawer */}
       {showTtsSettings && (
         <div className="px-4 py-3 border-b border-gray-100 bg-gray-50/60 shrink-0">
-          <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">
+          <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-3">
             Voice Settings
           </p>
-          <div className="flex gap-2">
+          <div className="grid grid-cols-3 gap-2 mb-3">
             <div className="flex-1">
               <label className="text-[10px] text-gray-500 block mb-1">
-                Voice
+                Provider
               </label>
               <select
-                value={ttsVoice}
-                onChange={(e) => onSetTtsVoice(e.target.value)}
+                value={ttsProvider}
+                onChange={(e) => {
+                  onSetTtsProvider(e.target.value);
+                  // Reset accent to first available accent for the provider
+                  const accents =
+                    TTS_ACCENTS[e.target.value as keyof typeof TTS_ACCENTS];
+                  if (accents && accents.length > 0) {
+                    onSetTtsAccent(accents[0].value);
+                  }
+                }}
                 className="w-full px-2 py-1.5 text-xs border border-gray-200 rounded-lg outline-none focus:border-indigo-300 bg-white"
               >
-                {TTS_VOICES.map((v) => (
-                  <option key={v.value} value={v.value}>
-                    {v.label}
+                {TTS_PROVIDERS.map((p) => (
+                  <option key={p.value} value={p.value}>
+                    {p.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div className="flex-1">
+              <label className="text-[10px] text-gray-500 block mb-1">
+                Accent
+              </label>
+              <select
+                value={ttsAccent}
+                onChange={(e) => onSetTtsAccent(e.target.value)}
+                className="w-full px-2 py-1.5 text-xs border border-gray-200 rounded-lg outline-none focus:border-indigo-300 bg-white"
+              >
+                {(
+                  TTS_ACCENTS[ttsProvider as keyof typeof TTS_ACCENTS] || []
+                ).map((a) => (
+                  <option key={a.value} value={a.value}>
+                    {a.label}
                   </option>
                 ))}
               </select>
@@ -155,6 +191,34 @@ export function ScriptPanel({
                 ))}
               </select>
             </div>
+          </div>
+
+          <p className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider mb-2">
+            Playback Options
+          </p>
+          <div className="space-y-2">
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={autoPronounceSentence}
+                onChange={(e) => onSetAutoPronounceSentence(e.target.checked)}
+                className="w-3.5 h-3.5 rounded border-gray-300 accent-indigo-600"
+              />
+              <span className="text-xs text-gray-600">
+                Auto-pronounce each sentence
+              </span>
+            </label>
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={loopSentence}
+                onChange={(e) => onSetLoopSentence(e.target.checked)}
+                className="w-3.5 h-3.5 rounded border-gray-300 accent-indigo-600"
+              />
+              <span className="text-xs text-gray-600">
+                Loop sentence (3x, 3s apart)
+              </span>
+            </label>
           </div>
         </div>
       )}

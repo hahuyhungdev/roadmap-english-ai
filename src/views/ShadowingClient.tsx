@@ -9,8 +9,12 @@ import { PracticeFeed } from "./shadowing/PracticeFeed";
 
 export default function ShadowingClient() {
   const {
+    mode,
+    setMode,
     urlInput,
     setUrlInput,
+    scriptInput,
+    setScriptInput,
     videoId,
     urlError,
     playerRef,
@@ -37,7 +41,12 @@ export default function ShadowingClient() {
     setShowTtsSettings,
     overallScore,
     hasTurns,
+    autoPronounceSentence,
+    setAutoPronounceSentence,
+    loopSentence,
+    setLoopSentence,
     handleLoadVideo,
+    handleLoadScript,
     handlePlayerReady,
     handleFetchScript,
     goToSentenceIdx,
@@ -73,44 +82,104 @@ export default function ShadowingClient() {
       </div>
 
       {/* URL form */}
-      <form onSubmit={handleLoadVideo} className="flex gap-2 items-start">
-        <div className="flex-1">
-          <input
-            value={urlInput}
-            onChange={(e) => setUrlInput(e.target.value)}
-            placeholder="Paste a YouTube URL…"
-            className={
-              urlError
-                ? "w-full px-4 py-2.5 rounded-xl border text-sm outline-none transition-colors border-red-300 bg-red-50 focus:border-red-400"
-                : "w-full px-4 py-2.5 rounded-xl border text-sm outline-none transition-colors border-gray-200 bg-white focus:border-indigo-300"
-            }
-          />
-          {urlError && (
-            <p className="text-xs text-red-500 mt-1 pl-1">{urlError}</p>
-          )}
+      <div className="space-y-3">
+        {/* Mode toggle */}
+        <div className="flex gap-2">
+          <button
+            onClick={() => setMode("youtube")}
+            className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
+              mode === "youtube"
+                ? "bg-indigo-600 text-white"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            }`}
+          >
+            YouTube
+          </button>
+          <button
+            onClick={() => setMode("script")}
+            className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
+              mode === "script"
+                ? "bg-indigo-600 text-white"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            }`}
+          >
+            Script/Text
+          </button>
         </div>
-        <button
-          type="submit"
-          className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-xl transition-colors whitespace-nowrap"
-        >
-          Load
-        </button>
-      </form>
+
+        {/* YouTube mode */}
+        {mode === "youtube" && (
+          <form onSubmit={handleLoadVideo} className="flex gap-2 items-start">
+            <div className="flex-1">
+              <input
+                value={urlInput}
+                onChange={(e) => setUrlInput(e.target.value)}
+                placeholder="Paste a YouTube URL…"
+                className={
+                  urlError
+                    ? "w-full px-4 py-2.5 rounded-xl border text-sm outline-none transition-colors border-red-300 bg-red-50 focus:border-red-400"
+                    : "w-full px-4 py-2.5 rounded-xl border text-sm outline-none transition-colors border-gray-200 bg-white focus:border-indigo-300"
+                }
+              />
+              {urlError && (
+                <p className="text-xs text-red-500 mt-1 pl-1">{urlError}</p>
+              )}
+            </div>
+            <button
+              type="submit"
+              className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-xl transition-colors whitespace-nowrap"
+            >
+              Load
+            </button>
+          </form>
+        )}
+
+        {/* Script mode */}
+        {mode === "script" && (
+          <form onSubmit={handleLoadScript} className="flex flex-col gap-2">
+            <textarea
+              value={scriptInput}
+              onChange={(e) => setScriptInput(e.target.value)}
+              placeholder="Paste your script or text here (e.g., a paragraph, article, or lesson)..."
+              className={
+                scriptError
+                  ? "w-full px-4 py-2.5 rounded-xl border text-sm outline-none transition-colors border-red-300 bg-red-50 focus:border-red-400 resize-none h-24"
+                  : "w-full px-4 py-2.5 rounded-xl border text-sm outline-none transition-colors border-gray-200 bg-white focus:border-indigo-300 resize-none h-24"
+              }
+            />
+            {scriptError && (
+              <p className="text-xs text-red-500 pl-1">{scriptError}</p>
+            )}
+            <button
+              type="submit"
+              className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-xl transition-colors self-start"
+            >
+              Process Script
+            </button>
+          </form>
+        )}
+      </div>
 
       {/* Main grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
-        {/* Left: Video + Controls */}
-        <div className="lg:col-span-3">
-          <VideoPanel
-            videoId={videoId}
-            playerRef={playerRef}
-            onPlayerReady={handlePlayerReady}
-          />
-        </div>
+      <div
+        className={`grid gap-6 ${mode === "youtube" ? "grid-cols-1 lg:grid-cols-5" : "grid-cols-1"}`}
+      >
+        {/* Left: Video + Controls (YouTube mode only) */}
+        {mode === "youtube" && (
+          <div className="lg:col-span-3">
+            <VideoPanel
+              videoId={videoId}
+              playerRef={playerRef}
+              onPlayerReady={handlePlayerReady}
+            />
+          </div>
+        )}
 
         {/* Right: Script + Practice */}
         <div
-          className="lg:col-span-2 flex flex-col bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden"
+          className={`flex flex-col bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden ${
+            mode === "youtube" ? "lg:col-span-2" : ""
+          }`}
           style={{ minHeight: "600px" }}
         >
           {/* Script section */}
@@ -131,16 +200,24 @@ export default function ShadowingClient() {
               isRecording={isRecording}
               recordingForIdx={recordingForIdx}
               showTtsSettings={showTtsSettings}
+              ttsProvider="google"
+              ttsAccent="en-US"
               ttsVoice={ttsVoice}
               ttsSpeed={ttsSpeed}
+              autoPronounceSentence={autoPronounceSentence}
+              loopSentence={loopSentence}
               overallScore={overallScore}
               hasTurns={hasTurns}
               onFetchScript={handleFetchScript}
               onJumpToSentence={goToSentenceIdx}
               onToggleTtsSettings={() => setShowTtsSettings((v) => !v)}
               onClearSession={onClearSession}
+              onSetTtsProvider={() => {}}
+              onSetTtsAccent={() => {}}
               onSetTtsVoice={setTtsVoice}
               onSetTtsSpeed={setTtsSpeed}
+              onSetAutoPronounceSentence={setAutoPronounceSentence}
+              onSetLoopSentence={setLoopSentence}
             />
           </div>
 

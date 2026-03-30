@@ -65,36 +65,16 @@ function getAudioCtx(): AudioContext {
  * Flow: POST /api/tts → { audioContent: "base64..." } → decode → Web Audio API
  */
 async function speak(text: string): Promise<void> {
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_TTS_API_KEY;
-
-  if (!apiKey) {
-    console.warn(
-      "[SpeakingLab] NEXT_PUBLIC_GOOGLE_TTS_API_KEY not set — skipping TTS.",
-    );
-    return;
-  }
-
   try {
-    const res = await fetch(
-      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          input: { text },
-          voice: {
-            languageCode: "en-US",
-            name: "en-US-Neural2-F", // change to Neural2-C/K/J/A for different timbres
-          },
-          audioConfig: {
-            audioEncoding: "LINEAR16",
-            sampleRateHertz: 24_000,
-            speakingRate: 0.95,
-            pitch: 0.0,
-          },
-        }),
-      },
-    );
+    // Call server-side /api/tts endpoint (never expose API key client-side)
+    const res = await fetch("/api/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        text,
+        voice: "en-US-Chirp3-HD-Charon",
+      }),
+    });
 
     if (!res.ok) {
       console.warn("[SpeakingLab] TTS API error:", await res.text());
@@ -117,6 +97,8 @@ async function speak(text: string): Promise<void> {
     const audioBuffer = await ctx.decodeAudioData(buf);
     const source = ctx.createBufferSource();
     source.buffer = audioBuffer;
+    // Speed control via Web Audio API playbackRate (Chirp3-HD doesn't support speakingRate param)
+    source.playbackRate.value = 0.85; // slightly slower for easy shadowing
     source.connect(ctx.destination);
     source.start();
   } catch (err) {

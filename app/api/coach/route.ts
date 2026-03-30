@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { callGoogleTTS } from "../../lib/googleTtsClient";
 
 type ChatRole = "system" | "user" | "assistant";
 type ChatMessage = { role: ChatRole; content: string };
@@ -149,23 +150,12 @@ export async function POST(req: NextRequest) {
     const ttsInput = normalizeSpacedTranscript(ttsInputRaw);
     if (ttsInput && googleApiKey) {
       try {
-        const ttsResp = await fetch(
-          `https://texttospeech.googleapis.com/v1/text:synthesize?key=${encodeURIComponent(googleApiKey)}`,
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              input: { text: ttsInput },
-              voice: { languageCode: "en-US", name: "en-US-Neural2-J" },
-              audioConfig: { audioEncoding: "MP3" },
-            }),
-          },
+        // Use shared Google TTS client (imported at top)
+        audioContent = await callGoogleTTS(
+          googleApiKey,
+          ttsInput,
+          "en-US-Chirp3-HD-Charon",
         );
-
-        const ttsData = await ttsResp.json();
-        if (ttsResp.ok && ttsData?.audioContent) {
-          audioContent = ttsData.audioContent;
-        }
       } catch (err) {
         console.warn("TTS request error", err);
       }

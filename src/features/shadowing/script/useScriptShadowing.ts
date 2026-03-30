@@ -1,0 +1,441 @@
+"use client";
+
+import {
+  useState,
+  useRef,
+  useCallback,
+  useEffect,
+  type FormEvent,
+} from "react";
+import useSoniox from "@/hooks/useSoniox";
+import { useTTSSettings } from "../shared/useTTSSettings";
+import type { ShadowTurn, Sentence } from "../shared/types";
+import {
+  extractReview,
+  newId,
+  splitScriptIntoSentences,
+} from "../shared/utils";
+
+export function useScriptShadowing() {
+  // ── Script / sentences ────────────────────────────────────────────────────
+  const [scriptInput, setScriptInput] = useState("");
+  const [scriptError, setScriptError] = useState("");
+  const [sentences, setSentences] = useState<Sentence[]>([]);
+  const [activeSentenceIdx, setActiveSentenceIdx] = useState(-1);
+  const sentenceRefs = useRef<(HTMLButtonElement | null)[]>([]);
+
+  // ── TTS ───────────────────────────────────────────────────────────────────
+  const tts = useTTSSettings({ provider: "edge", speed: 0.75 });
+
+  // ── Playback options ──────────────────────────────────────────────────────
+  const [autoPronouce, setAutoPronouce] = useState(false);
+  const [loopSentence, setLoopSentence] = useState(false);
+  const loopCountRef = useRef(0);
+  const loopTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const hearingSentenceIdx = useRef(-1);
+
+  // ── Recording ─────────────────────────────────────────────────────────────
+  const {
+    start: startSoniox,
+    stop: stopSoniox,
+    isRecording,
+    transcript,
+    partial,
+    error: sonioxError,
+  } = useSoniox({ source: "mic" });
+
+  // FIX #10 — sync refs inline, not inside a useEffect (no one-render lag)
+  const startRef = useRef(startSoniox);
+  const stopRef = useRef(stopSoniox);
+  startRef.current = startSoniox;
+  stopRef.current = stopSoniox;
+
+  // FIX #1 — keep latest transcript/partial in refs so onToggleRecording
+  //          always reads the finalised value, not a stale closure snapshot.
+  const transcriptRef = useRef(transcript);
+  const partialRef = useRef(partial);
+  transcriptRef.current = transcript;
+  partialRef.current = partial;
+
+  // Stop recording on unmount
+  useEffect(() => () => stopRef.current(), []);
+
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const audioChunksRef = useRef<Blob[]>([]);
+  const blobUrlsRef = useRef<string[]>([]);
+  const pendingTurnIdRef = useRef<string | null>(null);
+  const recordingForIdxRef = useRef<number | null>(null);
+
+  // Revoke all blob URLs on unmount
+  useEffect(
+    () => () => blobUrlsRef.current.forEach((u) => URL.revokeObjectURL(u)),
+    [],
+  );
+
+  // ── Coaching turns ────────────────────────────────────────────────────────
+  const [turns, setTurns] = useState<ShadowTurn[]>([]);
+  const [coachLoading, setCoachLoading] = useState(false);
+  const historyRef = useRef<{ role: string; content: string }[]>([]);
+  const isSubmittingRef = useRef(false); // FIX #7 — prevent concurrent submits
+
+  // ── Auto-scroll active sentence into view ─────────────────────────────────
+  useEffect(() => {
+    if (activeSentenceIdx >= 0) {
+      sentenceRefs.current[activeSentenceIdx]?.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "nearest",
+      });
+    }
+  }, [activeSentenceIdx]);
+
+  // ── Clear hearingIdx when TTS finishes ───────────────────────────────────
+  useEffect(() => {
+    if (!tts.playing) hearingSentenceIdx.current = -1;
+  }, [tts.playing]);
+
+  // ── Reset loop count when loopSentence toggles (FIX #6) ──────────────────
+  useEffect(() => {
+    loopCountRef.current = loopSentence ? 2 : 0;
+  }, [loopSentence]);
+
+  // ── Auto-pronounce on sentence change ────────────────────────────────────
+  useEffect(() => {
+    if (
+      !autoPronouce ||
+      activeSentenceIdx < 0 ||
+      !sentences[activeSentenceIdx] ||
+      tts.playing ||
+      isRecording
+    )
+      return;
+
+    const text = sentences[activeSentenceIdx].text;
+    const timer = setTimeout(async () => {
+      hearingSentenceIdx.current = activeSentenceIdx;
+      // loopSentence is intentionally NOT in deps; read from ref to avoid
+      // restarting the effect when it toggles mid-sentence.
+      if (loopSentence) loopCountRef.current = 2;
+      await tts.speak(text);
+    }, 300);
+
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeSentenceIdx, autoPronouce]);
+
+  // ── Loop playback (FIX #4 — removed `tts` object dep; FIX #5 — mounted guard) ──
+  useEffect(() => {
+    if (!loopSentence || tts.playing || hearingSentenceIdx.current < 0) return;
+
+    const remaining = loopCountRef.current;
+    if (remaining <= 0) return;
+
+    const text = sentences[hearingSentenceIdx.current]?.text;
+    if (!text) return;
+
+    let mounted = true;
+
+    loopTimerRef.current = setTimeout(async () => {
+      loopCountRef.current = remaining - 1;
+      if (mounted) await tts.speak(text);
+    }, 3000);
+
+    return () => {
+      mounted = false;
+      if (loopTimerRef.current) clearTimeout(loopTimerRef.current);
+    };
+    // FIX #4 — depend on tts.speak (stable callback) instead of entire tts object
+  }, [loopSentence, sentences, tts.playing, tts.speak]);
+
+  // ── Actions ───────────────────────────────────────────────────────────────
+
+  // FIX #7 — guard against concurrent submits; historyRef mutation is now safe
+  const submitTranscript = useCallback(async (text: string) => {
+    const trimmed = text.trim();
+    if (!trimmed || isSubmittingRef.current) return;
+
+    isSubmittingRef.current = true;
+
+    const id = newId();
+    pendingTurnIdRef.current = id;
+    const sentenceIdx = recordingForIdxRef.current ?? undefined;
+    recordingForIdxRef.current = null;
+
+    if (mediaRecorderRef.current?.state === "recording") {
+      mediaRecorderRef.current.stop();
+    }
+
+    setTurns((prev) => [
+      ...prev,
+      {
+        id,
+        text: trimmed,
+        sentenceIdx,
+        feedback: null,
+        review: null,
+        timestamp: Date.now(),
+      },
+    ]);
+    setCoachLoading(true);
+    historyRef.current.push({ role: "user", content: trimmed });
+
+    try {
+      const res = await fetch("/api/voice", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          transcript: trimmed,
+          history: historyRef.current.slice(-6),
+          topic: "English script practice",
+        }),
+      });
+      const data = (await res.json()) as { reply?: string; error?: string };
+      const reply = data.reply ?? "";
+      const review = extractReview(reply);
+      const feedbackText = reply.replace(/```review[\s\S]*?```/gi, "").trim();
+
+      historyRef.current.push({ role: "assistant", content: reply });
+
+      setTurns((prev) =>
+        prev.map((t) =>
+          t.id === id ? { ...t, feedback: feedbackText, review } : t,
+        ),
+      );
+    } catch {
+      setTurns((prev) =>
+        prev.map((t) =>
+          t.id === id ? { ...t, feedback: "Could not get feedback." } : t,
+        ),
+      );
+    } finally {
+      setCoachLoading(false);
+      isSubmittingRef.current = false; // FIX #7 — always release the lock
+    }
+  }, []);
+
+  // FIX #2 — memoized so the keyboard handler always gets a stable reference
+  //          with the correct activeSentenceIdx
+  const startRecordingAction = useCallback(() => {
+    audioChunksRef.current = [];
+    recordingForIdxRef.current =
+      activeSentenceIdx >= 0 ? activeSentenceIdx : null;
+
+    navigator.mediaDevices
+      .getUserMedia({ audio: true })
+      .then((stream) => {
+        const mimeType = MediaRecorder.isTypeSupported("audio/webm;codecs=opus")
+          ? "audio/webm;codecs=opus"
+          : MediaRecorder.isTypeSupported("audio/webm")
+            ? "audio/webm"
+            : "";
+
+        const mr = new MediaRecorder(
+          stream,
+          mimeType ? { mimeType } : undefined,
+        );
+
+        mr.ondataavailable = (e) => {
+          if (e.data.size > 0) audioChunksRef.current.push(e.data);
+        };
+
+        mr.onstop = () => {
+          stream.getTracks().forEach((t) => t.stop());
+          const blob = new Blob(audioChunksRef.current, { type: "audio/webm" });
+
+          // FIX #8 — revoke the previous blob for this sentence before creating a new one
+          const prevUrl = blobUrlsRef.current[blobUrlsRef.current.length - 1];
+          if (prevUrl) URL.revokeObjectURL(prevUrl);
+
+          const url = URL.createObjectURL(blob);
+          blobUrlsRef.current.push(url);
+
+          const tid = pendingTurnIdRef.current;
+          if (tid) {
+            setTurns((prev) =>
+              prev.map((t) => (t.id === tid ? { ...t, audioUrl: url } : t)),
+            );
+          }
+        };
+
+        // FIX #3 — release mic if MediaRecorder.start() throws
+        try {
+          mr.start(250);
+          mediaRecorderRef.current = mr;
+        } catch (err) {
+          stream.getTracks().forEach((t) => t.stop());
+          console.error("[recording] MediaRecorder.start failed:", err);
+          return;
+        }
+      })
+      .catch(() => {});
+
+    startRef.current({ source: "mic" });
+  }, [activeSentenceIdx]);
+
+  // ── Keyboard shortcuts (FIX #2 — startRecordingAction now in deps) ────────
+  useEffect(() => {
+    function handleKey(e: KeyboardEvent) {
+      const tag = (
+        document.activeElement as HTMLElement
+      )?.tagName?.toLowerCase();
+      if (tag === "input" || tag === "textarea" || tag === "select") return;
+
+      const goTo = (idx: number) => {
+        if (idx >= 0 && idx < sentences.length) setActiveSentenceIdx(idx);
+      };
+
+      switch (e.key) {
+        case " ":
+        case "s":
+        case "S":
+          e.preventDefault();
+          if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
+            hearingSentenceIdx.current = activeSentenceIdx;
+            void tts.speak(sentences[activeSentenceIdx].text);
+          }
+          break;
+        case "ArrowLeft":
+        case "a":
+        case "A":
+          e.preventDefault();
+          goTo(activeSentenceIdx - 1);
+          break;
+        case "ArrowRight":
+        case "d":
+        case "D":
+          e.preventDefault();
+          goTo(activeSentenceIdx + 1);
+          break;
+        case "ArrowUp":
+          e.preventDefault();
+          // Record
+          if (isRecording) stopRef.current();
+          else startRecordingAction();
+          break;
+        case "ArrowDown":
+          e.preventDefault();
+          // Listen again
+          if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
+            hearingSentenceIdx.current = activeSentenceIdx;
+            void tts.speak(sentences[activeSentenceIdx].text);
+          }
+          break;
+        case "r":
+        case "R":
+          e.preventDefault();
+          if (isRecording) stopRef.current();
+          else startRecordingAction();
+          break;
+      }
+    }
+
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [
+    sentences,
+    activeSentenceIdx,
+    isRecording,
+    tts.speak,
+    startRecordingAction,
+  ]);
+
+  // FIX #9 — loading a new script clears the previous session completely
+  function handleLoadScript(e?: FormEvent) {
+    e?.preventDefault();
+    setScriptError("");
+    const trimmed = scriptInput.trim();
+    if (!trimmed) {
+      setScriptError("Please paste a script or text");
+      return;
+    }
+    const result = splitScriptIntoSentences(trimmed);
+    if (result.length === 0) {
+      setScriptError("Could not extract sentences");
+      return;
+    }
+    setSentences(result);
+    setActiveSentenceIdx(0);
+    sentenceRefs.current = [];
+    // Clear previous session so scores/feedback don't bleed across scripts
+    setTurns([]);
+    historyRef.current = [];
+  }
+
+  // ── Derived ───────────────────────────────────────────────────────────────
+  const scores = turns
+    .map((t) => t.review?.score)
+    .filter((s): s is number => typeof s === "number");
+
+  const overallScore =
+    scores.length > 0
+      ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
+      : null;
+
+  const activeSentenceText = sentences[activeSentenceIdx]?.text ?? "";
+
+  const lastAudioUrl = (() => {
+    for (let i = turns.length - 1; i >= 0; i--) {
+      const t = turns[i];
+      if (t.sentenceIdx === activeSentenceIdx && t.audioUrl) return t.audioUrl;
+    }
+    return null;
+  })();
+
+  return {
+    // Script
+    scriptInput,
+    setScriptInput,
+    scriptError,
+    sentences,
+    activeSentenceIdx,
+    setActiveSentenceIdx,
+    sentenceRefs,
+    handleLoadScript,
+    // TTS (whole object — consumer destructures what it needs)
+    tts,
+    // Playback options
+    autoPronouce,
+    setAutoPronouce,
+    loopSentence,
+    setLoopSentence,
+    // Recording
+    isRecording,
+    sonioxError,
+    transcript,
+    partial,
+    onToggleRecording: () => {
+      if (isRecording) {
+        stopRef.current();
+        // FIX #1 — read from refs, not stale closure values
+        const text = (transcriptRef.current || partialRef.current).trim();
+        if (text) void submitTranscript(text);
+      } else {
+        startRecordingAction();
+      }
+    },
+    // Coaching
+    turns,
+    coachLoading,
+    overallScore,
+    onClearSession: () => {
+      setTurns([]);
+      historyRef.current = [];
+    },
+    // Derived
+    activeSentenceText,
+    lastAudioUrl,
+    onListenSentence: () => {
+      if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
+        hearingSentenceIdx.current = activeSentenceIdx;
+        void tts.speak(sentences[activeSentenceIdx].text);
+      }
+    },
+    onPrev: () => {
+      if (activeSentenceIdx > 0) setActiveSentenceIdx((i) => i - 1);
+    },
+    onNext: () => {
+      if (activeSentenceIdx < sentences.length - 1)
+        setActiveSentenceIdx((i) => i + 1);
+    },
+  };
+}

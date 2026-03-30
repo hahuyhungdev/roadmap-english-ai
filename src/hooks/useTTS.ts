@@ -7,10 +7,50 @@ export function useTTS() {
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const blobUrlRef = useRef<string | null>(null);
+  const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 
   const speak = useCallback(
     async (text: string, voice = "en-US-Neural2-F", speed = 1.0) => {
       if (!text.trim() || loading) return;
+
+      // Use browser native TTS for Edge
+      if (voice === "edge-native") {
+        try {
+          setLoading(true);
+          const synth = window.speechSynthesis;
+          if (!synth) {
+            throw new Error("Speech Synthesis not available");
+          }
+
+          // Cancel any ongoing speech
+          synth.cancel();
+
+          const utterance = new SpeechSynthesisUtterance(text.trim());
+          utterance.rate = speed;
+          utterance.lang = "en-US";
+
+          utteranceRef.current = utterance;
+
+          setPlaying(true);
+          utterance.onend = () => {
+            setPlaying(false);
+            setLoading(false);
+          };
+          utterance.onerror = () => {
+            setPlaying(false);
+            setLoading(false);
+          };
+
+          synth.speak(utterance);
+        } catch (err) {
+          console.error("[useTTS Browser]", err);
+          setLoading(false);
+          setPlaying(false);
+        }
+        return;
+      }
+
+      // Use API TTS for Google voices
       setLoading(true);
       try {
         const res = await fetch("/api/tts", {
@@ -53,6 +93,11 @@ export function useTTS() {
   );
 
   const stop = useCallback(() => {
+    // Stop browser native TTS
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+    // Stop audio element
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.src = "";

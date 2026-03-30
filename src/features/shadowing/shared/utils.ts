@@ -1,12 +1,5 @@
 import type { SpeakingReview, Sentence } from "./types";
 
-export function extractVideoId(url: string): string | null {
-  const m = url.match(
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\s?]+)/,
-  );
-  return m ? m[1] : null;
-}
-
 export function extractReview(raw: string): SpeakingReview | null {
   try {
     const m = raw.match(/```review\s*([\s\S]*?)\s*```/i);
@@ -17,6 +10,13 @@ export function extractReview(raw: string): SpeakingReview | null {
   }
 }
 
+export function extractVideoId(url: string): string | null {
+  const m = url.match(
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\s?]+)/,
+  );
+  return m ? m[1] : null;
+}
+
 export function fmtTime(ms: number): string {
   const s = Math.floor(ms / 1000);
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
@@ -25,19 +25,11 @@ export function fmtTime(ms: number): string {
 let _tid = 0;
 export const newId = () => `t-${++_tid}-${Date.now()}`;
 
-/**
- * Split script into sentences using smart logic:
- * 1. Split by sentence-ending punctuation (. ? !)
- * 2. For sentences > 150 chars, further split by commas or conjunctions
- * 3. Estimate timing based on text length (no actual video timing)
- */
 export function splitScriptIntoSentences(script: string): Sentence[] {
   const cleaned = script.trim().replace(/\s+/g, " ");
   if (!cleaned) return [];
 
-  // Split by sentence-ending punctuation
   const sentenceMatches = cleaned.match(/[^.!?]*[.!?]+/g) || [];
-
   let currentTimeMs = 0;
   const result: Sentence[] = [];
 
@@ -45,60 +37,57 @@ export function splitScriptIntoSentences(script: string): Sentence[] {
     const sentence = match.trim();
     if (!sentence) continue;
 
-    // Check if sentence is too long (> 120 chars) and try to split further
     if (sentence.length > 120) {
       const chunks = splitLongSentence(sentence);
       for (const chunk of chunks) {
         const chunkText = chunk.trim();
         if (!chunkText) continue;
         const duration = estimateDuration(chunkText);
-        const startMs = currentTimeMs;
-        const endMs = currentTimeMs + duration;
-        result.push({ text: chunkText, startMs, endMs });
-        currentTimeMs = endMs;
+        result.push({
+          text: chunkText,
+          startMs: currentTimeMs,
+          endMs: currentTimeMs + duration,
+        });
+        currentTimeMs += duration;
       }
     } else {
       const duration = estimateDuration(sentence);
-      const startMs = currentTimeMs;
-      const endMs = currentTimeMs + duration;
-      result.push({ text: sentence, startMs, endMs });
-      currentTimeMs = endMs;
+      result.push({
+        text: sentence,
+        startMs: currentTimeMs,
+        endMs: currentTimeMs + duration,
+      });
+      currentTimeMs += duration;
     }
   }
 
   return result;
 }
 
-/**
- * Split a long sentence into logical chunks
- */
 function splitLongSentence(sentence: string): string[] {
-  // First try to split by common conjunctions: and, but, or, because, although, etc.
   const conjunctions =
     /\s+(and|but|or|because|although|however|therefore|meanwhile|furthermore|moreover)\s+/gi;
   const parts = sentence.split(conjunctions);
 
   if (parts.length > 1) {
-    // Reconstruct to keep conjunctions
     const result: string[] = [];
     for (let i = 0; i < parts.length; i += 2) {
       let chunk = parts[i];
       if (i + 1 < parts.length) {
         chunk += ` ${parts[i + 1]} ${parts[i + 2] || ""}`.trim();
-        i++; // Skip the conjunction and part
+        i++;
       }
       if (chunk.trim()) result.push(chunk);
     }
-
-    // If chunks are still too long, split by commas
     const furtherSplit: string[] = [];
     for (const chunk of result) {
       if (chunk.length > 100) {
-        const byComma = chunk
-          .split(/,\s+/)
-          .map((c) => c.trim())
-          .filter((c) => c);
-        furtherSplit.push(...byComma);
+        furtherSplit.push(
+          ...chunk
+            .split(/,\s+/)
+            .map((c) => c.trim())
+            .filter(Boolean),
+        );
       } else {
         furtherSplit.push(chunk);
       }
@@ -106,17 +95,10 @@ function splitLongSentence(sentence: string): string[] {
     return furtherSplit.length > 1 ? furtherSplit : [sentence];
   }
 
-  // Fallback: try splitting by commas
   const byComma = sentence.split(/,\s+/).map((c) => c.trim());
   return byComma.length > 1 ? byComma : [sentence];
 }
 
-/**
- * Estimate duration of a sentence/chunk in milliseconds
- * Based on typical speaking speed (~150 words per minute, ~5 chars per word)
- */
 function estimateDuration(text: string): number {
-  // Average: ~40ms per word, minimum 500ms
-  const wordCount = text.split(/\s+/).length;
-  return Math.max(500, wordCount * 400);
+  return Math.max(500, text.split(/\s+/).length * 400);
 }

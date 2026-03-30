@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
+import { callGoogleTTS, GOOGLE_TTS_CONFIG } from "../../lib/googleTtsClient";
 
+// ─── Route Handler ────────────────────────────────────────────────────────
 export async function POST(req: NextRequest) {
   const apiKey = process.env.GOOGLE_TTS_API_KEY;
   if (!apiKey) {
@@ -9,52 +11,19 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const body = await req.json();
-  const text = (body.text ?? "").trim();
-  const voice: string = body.voice ?? "en-US-Neural2-F";
-  const speed: number = typeof body.speed === "number" ? body.speed : 1.0;
-
-  if (!text) {
-    return NextResponse.json({ error: "text is required" }, { status: 400 });
-  }
-
   try {
-    const res = await fetch(
-      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${encodeURIComponent(apiKey)}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          input: { text },
-          voice: { languageCode: "en-US", name: voice },
-          audioConfig: {
-            audioEncoding: "MP3",
-            speakingRate: Math.min(Math.max(speed, 0.25), 4.0),
-          },
-        }),
-      },
-    );
+    const body = await req.json();
+    const text = (body.text ?? "").trim();
+    const voiceName: string = body.voice ?? "en-US-Chirp3-HD-Charon";
 
-    const data = await res.json();
-    if (!res.ok) {
-      return NextResponse.json(
-        { error: data?.error?.message || "Google TTS request failed" },
-        { status: res.status },
-      );
+    if (!text) {
+      return NextResponse.json({ error: "text is required" }, { status: 400 });
     }
 
-    if (!data.audioContent) {
-      return NextResponse.json(
-        { error: "No audio content returned" },
-        { status: 502 },
-      );
-    }
-
-    return NextResponse.json({ audioContent: data.audioContent as string });
-  } catch {
-    return NextResponse.json(
-      { error: "Failed to call Google TTS" },
-      { status: 500 },
-    );
+    const audioContent = await callGoogleTTS(apiKey, text, voiceName);
+    return NextResponse.json({ audioContent });
+  } catch (err: any) {
+    const message = err?.message || "Failed to call Google TTS";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

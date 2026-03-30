@@ -11,17 +11,10 @@ import type { YouTubeEvent } from "react-youtube";
 import useSoniox from "@/hooks/useSoniox";
 import { useTTS } from "@/hooks/useTTS";
 import type { YTPlayer, ShadowTurn, Sentence } from "./types";
-import {
-  extractVideoId,
-  extractReview,
-  newId,
-  splitScriptIntoSentences,
-} from "./utils";
+import { extractVideoId, extractReview, newId } from "./utils";
 
-export function useShadowingSession() {
-  const [mode, setMode] = useState<"youtube" | "script">("youtube");
+export function useYouTubeShadowing() {
   const [urlInput, setUrlInput] = useState("");
-  const [scriptInput, setScriptInput] = useState("");
   const [videoId, setVideoId] = useState<string | null>(null);
   const [videoTitle, setVideoTitle] = useState("");
   const [urlError, setUrlError] = useState("");
@@ -35,20 +28,12 @@ export function useShadowingSession() {
   const sentenceItemRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const [recordingForIdx, setRecordingForIdx] = useState<number | null>(null);
 
+  // YouTube uses Google API by default
+  const [ttsProvider, setTtsProvider] = useState("google");
+  const [ttsAccent, setTtsAccent] = useState("en-US");
   const [ttsVoice, setTtsVoice] = useState("en-US-Neural2-F");
   const [ttsSpeed, setTtsSpeed] = useState(0.75);
   const [hearingIdx, setHearingIdx] = useState<number | null>(null);
-
-  // Change default TTS voice and speed when switching modes
-  useEffect(() => {
-    if (mode === "script") {
-      setTtsVoice("edge-native");
-      setTtsSpeed(0.75);
-    } else {
-      setTtsVoice("en-US-Neural2-F");
-      setTtsSpeed(0.75);
-    }
-  }, [mode]);
   const {
     speak,
     stop: stopTTS,
@@ -56,7 +41,6 @@ export function useShadowingSession() {
     playing: ttsPlaying,
   } = useTTS();
 
-  // Initialize speech recognition early so isRecording is available
   const {
     start: startSoniox,
     stop: stopSoniox,
@@ -68,87 +52,9 @@ export function useShadowingSession() {
     source: "mic",
   });
 
-  // Script mode specific settings
-  const [autoPronounceSentence, setAutoPronounceSentence] = useState(false);
-  const [loopSentence, setLoopSentence] = useState(false);
-  const loopCountRef = useRef(0);
-  const loopTimerRef = useRef<NodeJS.Timeout | null>(null);
-
   useEffect(() => {
     if (!ttsPlaying) setHearingIdx(null);
   }, [ttsPlaying]);
-
-  // Auto-pronounce sentence when active changes (Script mode only)
-  useEffect(() => {
-    if (
-      mode === "script" &&
-      autoPronounceSentence &&
-      activeSentenceIdx >= 0 &&
-      sentences[activeSentenceIdx] &&
-      !ttsPlaying &&
-      !isRecording
-    ) {
-      const handleAutoSpeak = async () => {
-        const delay = mode === "script" ? 300 : 0;
-        await new Promise((r) => setTimeout(r, delay));
-        if (activeSentenceIdx >= 0 && sentences[activeSentenceIdx]) {
-          setHearingIdx(activeSentenceIdx);
-          // Initialize loop counter if looping is enabled
-          if (loopSentence) {
-            loopCountRef.current = 2; // Will play 2 more times after this first play
-          }
-          await speak(sentences[activeSentenceIdx].text, ttsVoice, ttsSpeed);
-        }
-      };
-      handleAutoSpeak().catch(() => {});
-    }
-  }, [
-    activeSentenceIdx,
-    mode,
-    autoPronounceSentence,
-    sentences,
-    ttsPlaying,
-    isRecording,
-    ttsVoice,
-    ttsSpeed,
-    loopSentence,
-    speak,
-  ]);
-
-  // Loop sentence playback (Script mode only)
-  // When loopSentence is enabled and a sentence is being heard, replay it 2 more times
-  useEffect(() => {
-    if (
-      mode === "script" &&
-      loopSentence &&
-      hearingIdx !== null &&
-      hearingIdx >= 0 &&
-      !ttsPlaying &&
-      sentences[hearingIdx]
-    ) {
-      const loopRemaining = loopCountRef.current;
-      if (loopRemaining > 0) {
-        loopTimerRef.current = setTimeout(() => {
-          loopCountRef.current = loopRemaining - 1;
-          setHearingIdx(hearingIdx); // Trigger re-play
-          speak(sentences[hearingIdx].text, ttsVoice, ttsSpeed).catch(() => {});
-        }, 3000); // 3 seconds delay
-      }
-    }
-
-    return () => {
-      if (loopTimerRef.current) clearTimeout(loopTimerRef.current);
-    };
-  }, [
-    hearingIdx,
-    mode,
-    loopSentence,
-    sentences,
-    ttsPlaying,
-    ttsVoice,
-    ttsSpeed,
-    speak,
-  ]);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
@@ -286,15 +192,13 @@ export function useShadowingSession() {
         mr.start(250);
         mediaRecorderRef.current = mr;
       })
-      .catch(() => {
-        // mic permission denied — STT will still work, just no audio replay
-      });
+      .catch(() => {});
     startRef.current({ source: "mic" });
   }
 
-  // Video sync effect - only run in YouTube mode
+  // Video sync effect - only YouTube mode
   useEffect(() => {
-    if (mode !== "youtube" || !sentences.length) return;
+    if (!sentences.length) return;
     const timer = setInterval(() => {
       const ms = (playerRef.current?.getCurrentTime() ?? 0) * 1000;
       let idx = -1;
@@ -308,7 +212,7 @@ export function useShadowingSession() {
       }
     }, 250);
     return () => clearInterval(timer);
-  }, [sentences, mode]);
+  }, [sentences]);
 
   useEffect(() => {
     if (activeSentenceIdx >= 0) {
@@ -329,13 +233,10 @@ export function useShadowingSession() {
       if (tag === "input" || tag === "textarea" || tag === "select") return;
       const player = playerRef.current;
 
-      // Helper: go to sentence in both modes
       const goToSentence = (idx: number) => {
         if (idx < 0 || idx >= sentences.length) return;
-        if (mode === "youtube" && player) {
-          player.seekTo(sentences[idx].startMs / 1000, true);
-          player.playVideo();
-        }
+        player?.seekTo(sentences[idx].startMs / 1000, true);
+        player?.playVideo();
         setActiveSentenceIdx(idx);
         activeSentenceIdxRef.current = idx;
       };
@@ -343,109 +244,53 @@ export function useShadowingSession() {
       switch (e.key) {
         case " ":
           e.preventDefault();
-          if (mode === "youtube" && player) {
-            // YouTube: play/pause video
+          if (player)
             player.getPlayerState() === 1
               ? player.pauseVideo()
               : player.playVideo();
-          } else if (mode === "script") {
-            // Script: repeat sentence
-            if (activeSentenceIdx >= 0) {
-              setHearingIdx(activeSentenceIdx);
-              void speak(sentences[activeSentenceIdx].text, ttsVoice, ttsSpeed);
-            }
-          }
           break;
-
         case "ArrowLeft":
-        case "a":
-        case "A":
           e.preventDefault();
-          if (mode === "youtube" && e.shiftKey) {
-            const prev = Math.max(0, activeSentenceIdxRef.current - 1);
-            if (sentences[prev]) {
-              goToSentence(prev);
-            }
-          } else if (mode === "script") {
-            const prev = Math.max(0, activeSentenceIdxRef.current - 1);
-            goToSentence(prev);
-          } else if (mode === "youtube" && !e.shiftKey) {
-            // YouTube: seek -5s
+          if (e.shiftKey) {
+            goToSentence(Math.max(0, activeSentenceIdxRef.current - 1));
+          } else {
             player?.seekTo((player.getCurrentTime() ?? 0) - 5, true);
           }
           break;
-
         case "ArrowRight":
-        case "d":
-        case "D":
           e.preventDefault();
-          if (mode === "youtube" && e.shiftKey) {
-            const next = Math.min(
-              sentences.length - 1,
-              activeSentenceIdxRef.current + 1,
+          if (e.shiftKey) {
+            goToSentence(
+              Math.min(sentences.length - 1, activeSentenceIdxRef.current + 1),
             );
-            if (sentences[next]) {
-              goToSentence(next);
-            }
-          } else if (mode === "script") {
-            const next = Math.min(
-              sentences.length - 1,
-              activeSentenceIdxRef.current + 1,
-            );
-            goToSentence(next);
-          } else if (mode === "youtube" && !e.shiftKey) {
-            // YouTube: seek +5s
+          } else {
             player?.seekTo((player.getCurrentTime() ?? 0) + 5, true);
           }
           break;
-
         case "ArrowDown":
-        case "s":
-        case "S":
           e.preventDefault();
-          if (mode === "youtube") {
-            // YouTube: play/pause
-            if (player) {
-              player.getPlayerState() === 1
-                ? player.pauseVideo()
-                : player.playVideo();
-            }
-          } else if (mode === "script") {
-            // Script: repeat sentence
-            if (activeSentenceIdx >= 0) {
-              setHearingIdx(activeSentenceIdx);
-              void speak(sentences[activeSentenceIdx].text, ttsVoice, ttsSpeed);
-            }
+          if (player) {
+            player.getPlayerState() === 1
+              ? player.pauseVideo()
+              : player.playVideo();
           }
           break;
-
         case "r":
         case "R":
           e.preventDefault();
           if (isRecording) stopRef.current();
           else startRecording();
           break;
-
         case "?":
           setShowShortcuts((value) => !value);
           break;
-
         case "Escape":
           setShowShortcuts(false);
           setShowTtsSettings(false);
           break;
       }
     };
-  }, [
-    mode,
-    sentences,
-    activeSentenceIdx,
-    isRecording,
-    speak,
-    ttsVoice,
-    ttsSpeed,
-    startRecording,
-  ]);
+  }, [sentences, activeSentenceIdx, isRecording, startRecording]);
 
   useEffect(() => {
     const handler = (e: globalThis.KeyboardEvent) => keyHandlerRef.current(e);
@@ -468,33 +313,6 @@ export function useShadowingSession() {
     setActiveSentenceIdx(-1);
     activeSentenceIdxRef.current = -1;
     sentenceItemRefs.current = [];
-  }
-
-  function handleLoadScript(e?: FormEvent) {
-    e?.preventDefault();
-    setUrlError("");
-    setScriptError("");
-    const trimmed = scriptInput.trim();
-    if (!trimmed) {
-      setScriptError("Please paste a script or text");
-      return;
-    }
-    try {
-      const sentences = splitScriptIntoSentences(trimmed);
-      if (sentences.length === 0) {
-        setScriptError("Could not extract sentences from the script");
-        return;
-      }
-      setSentences(sentences);
-      setVideoTitle("Script Practice");
-      setActiveSentenceIdx(0);
-      activeSentenceIdxRef.current = 0;
-      sentenceItemRefs.current = [];
-    } catch (err) {
-      setScriptError(
-        `Error processing script: ${err instanceof Error ? err.message : "Unknown error"}`,
-      );
-    }
   }
 
   function handlePlayerReady(event: YouTubeEvent) {
@@ -545,12 +363,6 @@ export function useShadowingSession() {
       setHearingIdx(idx);
       void speak(sentences[idx].text, ttsVoice, ttsSpeed);
     }
-  }
-
-  function handleSentenceShadow(idx: number) {
-    goToSentenceIdx(idx);
-    setRecordingForIdx(idx);
-    startRecording();
   }
 
   function onClearSession() {
@@ -608,12 +420,8 @@ export function useShadowingSession() {
   })();
 
   return {
-    mode,
-    setMode,
     urlInput,
     setUrlInput,
-    scriptInput,
-    setScriptInput,
     videoId,
     videoTitle,
     urlError,
@@ -625,6 +433,10 @@ export function useShadowingSession() {
     sentenceItemRefs,
     recordingForIdx,
     activeSentenceText,
+    ttsProvider,
+    setTtsProvider,
+    ttsAccent,
+    setTtsAccent,
     ttsVoice,
     setTtsVoice,
     ttsSpeed,
@@ -645,12 +457,7 @@ export function useShadowingSession() {
     overallScore,
     hasTurns: turns.length > 0,
     activeSentenceAudioUrl,
-    autoPronounceSentence,
-    setAutoPronounceSentence,
-    loopSentence,
-    setLoopSentence,
     handleLoadVideo,
-    handleLoadScript,
     handlePlayerReady,
     handleFetchScript,
     goToSentenceIdx,
