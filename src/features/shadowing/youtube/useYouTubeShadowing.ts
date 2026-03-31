@@ -85,13 +85,63 @@ export function useYouTubeShadowing() {
 
   // ── Auto-scroll ───────────────────────────────────────────────────────────
   useEffect(() => {
-    if (activeSentenceIdx >= 0) {
-      sentenceRefs.current[activeSentenceIdx]?.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "nearest",
-      });
-    }
+    if (activeSentenceIdx < 0) return;
+
+    const el = sentenceRefs.current[activeSentenceIdx];
+    if (!el) return;
+
+    const findScrollableParent = (node: Element | null): Element | null => {
+      while (node) {
+        const style = getComputedStyle(node as Element);
+        const overflowY = style.overflowY;
+        const overflowX = style.overflowX;
+        if (
+          (overflowY === "auto" || overflowY === "scroll") &&
+          (node as HTMLElement).scrollHeight >
+            (node as HTMLElement).clientHeight
+        )
+          return node as Element;
+        if (
+          (overflowX === "auto" || overflowX === "scroll") &&
+          (node as HTMLElement).scrollWidth > (node as HTMLElement).clientWidth
+        )
+          return node as Element;
+        node = node.parentElement;
+      }
+      return null;
+    };
+
+    const scrollIfNeeded = (target: Element) => {
+      const scroller =
+        findScrollableParent(target) ||
+        document.scrollingElement ||
+        document.documentElement;
+      if (!scroller) return;
+
+      const targetRect = target.getBoundingClientRect();
+      const parentRect = (scroller as Element).getBoundingClientRect
+        ? (scroller as Element).getBoundingClientRect()
+        : {
+            top: 0,
+            bottom: window.innerHeight,
+            left: 0,
+            right: window.innerWidth,
+          };
+
+      const verticallyOut =
+        targetRect.top < parentRect.top ||
+        targetRect.bottom > parentRect.bottom;
+      const horizontallyOut =
+        targetRect.left < parentRect.left ||
+        targetRect.right > parentRect.right;
+
+      if (verticallyOut)
+        target.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      else if (horizontallyOut)
+        target.scrollIntoView({ behavior: "smooth", inline: "center" });
+    };
+
+    scrollIfNeeded(el);
   }, [activeSentenceIdx]);
 
   // ── Keyboard shortcuts ────────────────────────────────────────────────────
@@ -286,19 +336,124 @@ export function useYouTubeShadowing() {
       const res = await fetch(
         `/api/transcript?url=${encodeURIComponent(`https://youtube.com/watch?v=${videoId}`)}`,
       );
-      const data = (await res.json()) as {
-        sentences?: Sentence[];
-        error?: string;
-      };
-      if (!res.ok || !data.sentences) {
-        setScriptError(data.error ?? "Failed to fetch script.");
+      const raw = await res.json().catch(() => null);
+      console.log("transcript response", res, raw);
+
+      if (!res.ok) {
+        setScriptError(raw?.error ?? "Failed to fetch script.");
         return;
       }
-      setSentences(data.sentences);
+
+      // Prefer `sentences` but fall back to `segments` if present
+      let sentencesData: Sentence[] | undefined = raw?.sentences;
+      if (!sentencesData && Array.isArray(raw?.segments)) {
+        const parseTimestampToMs = (ts?: string | number): number => {
+          if (ts == null) return 0;
+          if (typeof ts === "number") return Math.round(ts * 1000);
+          const s = String(ts).trim();
+          if (!s) return 0;
+          if (!s.includes(":")) {
+            const f = parseFloat(s);
+            return Number.isFinite(f) ? Math.round(f * 1000) : 0;
+          }
+          const parts = s.split(":").map((p) => parseFloat(p) || 0);
+          let ms = 0;
+          let multiplier = 1;
+          for (let i = parts.length - 1; i >= 0; i--) {
+            ms += parts[i] * multiplier * 1000;
+            multiplier *= 60;
+          }
+          return Math.round(ms);
+        };
+
+        const starts = raw.segments.map((seg: any) =>
+          parseTimestampToMs(
+            seg.timestamp ?? seg.time ?? seg.t ?? seg.start ?? seg.ts,
+          ),
+        );
+        sentencesData = raw.segments.map((seg: any, i: number) => {
+          const startMs = starts[i] ?? 0;
+          const endMs = i < starts.length - 1 ? starts[i + 1] : startMs + 3000;
+          return { text: String(seg.text ?? "").trim(), startMs, endMs };
+        });
+      }
+
+      if (
+        !sentencesData ||
+        !Array.isArray(sentencesData) ||
+        sentencesData.length === 0
+      ) {
+        setScriptError(raw?.error ?? "Failed to fetch script.");
+        return;
+      }
+
+      console.log(
+        "parsed sentences count",
+        sentencesData.length,
+        "segments/captions:",
+        raw?.segments?.length ?? raw?.captions?.length ?? 0,
+      );
+      console.log("sample sentences", sentencesData.slice(0, 5));
+
+      setSentences(sentencesData);
       sentenceRefs.current = [];
     } finally {
       setScriptLoading(false);
     }
+  }
+
+  // Import transcript pasted from tactiq.io tools (simple parser)
+  function parseTimestampToMs(ts: string): number {
+    // expected: HH:MM:SS.mmm or H:MM:SS.mmm
+    const m = ts.match(/(\d+):(\d{2}):(\d{2})\.(\d{1,3})/);
+    if (!m) return 0;
+    const h = parseInt(m[1], 10);
+    const min = parseInt(m[2], 10);
+    const sec = parseInt(m[3], 10);
+    let ms = parseInt(m[4].padEnd(3, "0"), 10);
+    return ((h * 60 + min) * 60 + sec) * 1000 + ms;
+  }
+
+  function handleImportTranscript(raw: string) {
+    if (!raw) return;
+    // normalize line endings
+    const lines = raw
+      .split(/\r?\n/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+    const items: { startMs: number; text: string }[] = [];
+
+    const tsRe = /^(\d{1,2}:\d{2}:\d{2}\.\d{1,3})\s+(.*)$/;
+    for (const line of lines) {
+      if (line.startsWith("#")) continue; // skip headers
+      const m = line.match(tsRe);
+      if (m) {
+        const startMs = parseTimestampToMs(m[1]);
+        const text = m[2].trim();
+        items.push({ startMs, text });
+      } else {
+        // continuation line: append to last item if exists
+        if (items.length > 0) {
+          items[items.length - 1].text += " " + line;
+        }
+      }
+    }
+
+    if (!items.length) {
+      setScriptError("Could not parse pasted transcript");
+      return;
+    }
+
+    const sentencesData: Sentence[] = items.map((it, i) => {
+      const startMs = it.startMs;
+      const endMs =
+        i < items.length - 1 ? items[i + 1].startMs : startMs + 3000;
+      return { text: it.text.trim(), startMs, endMs };
+    });
+
+    setSentences(sentencesData);
+    sentenceRefs.current = [];
+    setScriptError("");
   }
 
   function goToSentence(idx: number) {
@@ -348,6 +503,7 @@ export function useYouTubeShadowing() {
     handleLoadVideo,
     handlePlayerReady,
     handleFetchScript,
+    handleImportTranscript,
     goToSentence,
     onToggleRecording: () => {
       if (isRecording) {

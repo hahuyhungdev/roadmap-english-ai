@@ -14,6 +14,7 @@ import {
   Trash2,
 } from "lucide-react";
 import clsx from "clsx";
+import { useState } from "react";
 import YouTube, { type YouTubeEvent } from "react-youtube";
 import { useYouTubeShadowing } from "./useYouTubeShadowing";
 import { TTSSettingsPanel } from "../shared/TTSSettingsPanel";
@@ -22,6 +23,8 @@ import { AudioReplay } from "@/views/shadowing/AudioReplay";
 
 export default function YouTubeShadowingClient() {
   const s = useYouTubeShadowing();
+  const [showPaste, setShowPaste] = useState(false);
+  const [pasteText, setPasteText] = useState("");
 
   return (
     <div className="max-w-6xl mx-auto space-y-6">
@@ -133,8 +136,17 @@ export default function YouTubeShadowingClient() {
             {/* Fetch / sentence list */}
             <div className="px-4 py-2 shrink-0">
               <button
-                onClick={s.handleFetchScript}
-                disabled={s.scriptLoading || !s.videoId}
+                onClick={() => {
+                  const base = "https://tactiq.io/tools/run/youtube_transcript";
+                  const ytUrl = s.videoId
+                    ? `https://youtu.be/${s.videoId}`
+                    : undefined;
+                  const target = ytUrl
+                    ? `${base}?yt=${encodeURIComponent(ytUrl)}`
+                    : "https://tactiq.io/tools/youtube-transcript";
+                  window.open(target, "_blank", "noopener,noreferrer");
+                }}
+                disabled={s.scriptLoading}
                 className="w-full py-1.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white transition-all disabled:opacity-40"
               >
                 {s.scriptLoading ? (
@@ -150,6 +162,45 @@ export default function YouTubeShadowingClient() {
                     ? "Refresh Script"
                     : "Get Script"}
               </button>
+              <div className="mt-2 flex items-center gap-2">
+                <button
+                  onClick={() => setShowPaste((v) => !v)}
+                  className="text-xs text-indigo-600 hover:underline"
+                >
+                  {showPaste ? "Hide paste" : "Paste transcript"}
+                </button>
+              </div>
+              {showPaste && (
+                <div className="mt-2">
+                  <textarea
+                    value={pasteText}
+                    onChange={(e) => setPasteText(e.target.value)}
+                    placeholder="Paste tactiq.io transcript here..."
+                    className="w-full h-28 p-2 text-sm border border-gray-200 rounded-lg"
+                  />
+                  <div className="flex gap-2 mt-2">
+                    <button
+                      onClick={() => {
+                        s.handleImportTranscript(pasteText);
+                        setPasteText("");
+                        setShowPaste(false);
+                      }}
+                      className="py-1 px-3 bg-indigo-600 text-white rounded-lg text-sm"
+                    >
+                      Import
+                    </button>
+                    <button
+                      onClick={() => {
+                        setPasteText("");
+                        setShowPaste(false);
+                      }}
+                      className="py-1 px-3 bg-gray-100 text-sm rounded-lg"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
 
             <div className="overflow-y-auto flex-1 px-3 pb-2">

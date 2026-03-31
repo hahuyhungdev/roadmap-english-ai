@@ -2,12 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import YouTube, { type YouTubeEvent } from "react-youtube";
-import {
-  Repeat2,
-  BookmarkPlus,
-  BookmarkX,
-  PlayCircle,
-} from "lucide-react";
+import { Repeat2, BookmarkPlus, BookmarkX, PlayCircle } from "lucide-react";
 import clsx from "clsx";
 import type { YTPlayer } from "./types";
 import { fmtTime } from "./utils";
@@ -64,7 +59,10 @@ export function VideoPanel({
                   autoplay: 1,
                   rel: 0,
                   modestbranding: 1,
-                  origin: typeof window !== "undefined" ? window.location.origin : undefined,
+                  origin:
+                    typeof window !== "undefined"
+                      ? window.location.origin
+                      : undefined,
                 },
               }}
               onReady={onPlayerReady}
