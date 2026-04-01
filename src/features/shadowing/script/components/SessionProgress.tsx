@@ -1,19 +1,17 @@
 "use client";
 
-import { Progress, Badge, Group } from "@mantine/core";
+import { Progress, Group } from "@mantine/core";
 import { useState, type KeyboardEvent } from "react";
 
 interface Props {
   total: number;
   current: number; // 0-based active index
-  practiced: Set<number>;
   onJump: (idx: number) => void;
 }
 
-export function SessionProgress({ total, current, practiced, onJump }: Props) {
-  const practicedCount = practiced.size;
+export function SessionProgress({ total, current, onJump }: Props) {
   const progressPct =
-    total > 0 ? Math.round((practicedCount / total) * 100) : 0;
+    total > 0 ? Math.round(((current + 1) / total) * 100) : 0;
 
   const [jumpValue, setJumpValue] = useState("");
 
@@ -35,11 +33,10 @@ export function SessionProgress({ total, current, practiced, onJump }: Props) {
         <Group gap="xs" align="center">
           <span className="text-xs text-gray-500 font-medium">
             Sentence{" "}
-            <span className="text-indigo-600 font-bold">{current + 1}</span> of{" "}
+            <span className="text-indigo-600 font-bold">{current + 1}</span>{" "}of{" "}
             <span className="font-semibold text-gray-700">{total}</span>
           </span>
 
-          {/* Jump-to input */}
           <div className="flex items-center gap-1">
             <input
               type="number"
@@ -59,24 +56,12 @@ export function SessionProgress({ total, current, practiced, onJump }: Props) {
             </button>
           </div>
         </Group>
-
-        {practicedCount > 0 && (
-          <Badge
-            size="xs"
-            variant="light"
-            color={progressPct === 100 ? "green" : "violet"}
-            radius="xl"
-          >
-            {practicedCount}/{total} practiced
-          </Badge>
-        )}
       </Group>
       <Progress
         value={progressPct}
         size="sm"
         radius="xl"
         color={progressPct === 100 ? "green" : "violet"}
-        animated={practicedCount > 0 && progressPct < 100}
       />
     </div>
   );

@@ -41,15 +41,13 @@ export default function ScriptShadowingClient(props: Props) {
   const [celebrationFired, setCelebrationFired] = useState(false);
   const hasSentences = s.sentences.length > 0;
   const allPracticed =
-    hasSentences && s.practicedSentences.size >= s.sentences.length;
-  console.log(s.practicedSentences);
+    hasSentences && s.activeSentenceIdx >= s.sentences.length - 1;
   const celebrationActive = allPracticed && !celebrationFired;
 
   // Reset celebration flag when a new script is loaded
   const prevSentenceLengthRef = useRef(s.sentences.length);
 
   useEffect(() => {
-    console.log(s.sentences.length);
     if (s.sentences.length !== prevSentenceLengthRef.current) {
       prevSentenceLengthRef.current = s.sentences.length;
       setCelebrationFired(false);
@@ -141,7 +139,6 @@ export default function ScriptShadowingClient(props: Props) {
               <SessionProgress
                 total={s.sentences.length}
                 current={s.activeSentenceIdx}
-                practiced={s.practicedSentences}
                 onJump={s.setActiveSentenceIdx}
               />
               <p className="text-[10px] text-gray-400">
@@ -154,7 +151,6 @@ export default function ScriptShadowingClient(props: Props) {
                 text={activeSentence.text}
                 sentenceIdx={s.activeSentenceIdx}
                 total={s.sentences.length}
-                practiced={s.practicedSentences.has(s.activeSentenceIdx)}
                 tts={s.tts}
                 isRecording={s.isRecording}
                 coachLoading={s.coachLoading}

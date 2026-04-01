@@ -5,7 +5,6 @@ import {
   useRef,
   useEffect,
   useEffectEvent,
-  useMemo,
   type FormEvent,
 } from "react";
 import useSoniox from "@/hooks/useSoniox";
@@ -478,15 +477,7 @@ export function useScriptShadowing(opts?: SessionOpts) {
   }
 
   // ── Derived ───────────────────────────────────────────────────────────────
-  const practicedSentences = useMemo(
-    () =>
-      new Set(
-        turns
-          .filter((t) => t.sentenceIdx !== undefined && t.text.trim())
-          .map((t) => t.sentenceIdx as number),
-      ),
-    [turns],
-  );
+  // (practicedSentences is now state, not derived — see above)
 
   const scores = turns
     .map((t) => t.review?.score)
@@ -548,7 +539,6 @@ export function useScriptShadowing(opts?: SessionOpts) {
       historyRef.current = [];
     },
     // Derived
-    practicedSentences,
     activeSentenceText,
     lastAudioUrl,
     onListenSentence: () => {

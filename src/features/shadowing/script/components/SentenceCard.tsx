@@ -10,7 +10,6 @@ import {
   Volume2,
 } from "lucide-react";
 import { ActionIcon, Badge, Group, Loader, Text, Tooltip } from "@mantine/core";
-import clsx from "clsx";
 import { AudioReplay } from "../../shared/AudioReplay";
 import type { ShadowTurn } from "../../shared/types";
 import type { useTTSSettings } from "../../shared/useTTSSettings";
@@ -21,7 +20,6 @@ interface Props {
   text: string;
   sentenceIdx: number;
   total: number;
-  practiced: boolean;
   tts: TTS;
   isRecording: boolean;
   coachLoading: boolean;
@@ -37,7 +35,6 @@ export function SentenceCard({
   text,
   sentenceIdx,
   total,
-  practiced,
   tts,
   isRecording,
   coachLoading,
@@ -53,14 +50,7 @@ export function SentenceCard({
     .slice(-3);
 
   return (
-    <div
-      className={clsx(
-        "rounded-2xl border shadow-sm p-5 space-y-4 transition-all",
-        practiced
-          ? "border-emerald-200 bg-emerald-50"
-          : "border-indigo-100 bg-indigo-50",
-      )}
-    >
+    <div className="rounded-2xl border border-indigo-100 bg-indigo-50 shadow-sm p-5 space-y-4 transition-all">
       {/* Sentence text */}
       <div className="space-y-1">
         <Group justify="space-between" align="center">
@@ -71,11 +61,6 @@ export function SentenceCard({
           >
             Sentence {sentenceIdx + 1} / {total}
           </Text>
-          {practiced && (
-            <Badge size="xs" color="green" variant="light" radius="xl">
-              ✓ practiced
-            </Badge>
-          )}
         </Group>
         <p className="text-lg leading-relaxed text-gray-900 font-medium tracking-wide mt-1">
           {text}
