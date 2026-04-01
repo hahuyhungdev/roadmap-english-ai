@@ -8,15 +8,8 @@ import {
   type FormEvent,
 } from "react";
 import type { YouTubeEvent } from "react-youtube";
-import useSoniox from "@/hooks/useSoniox";
-import { useTTS } from "@/hooks/useTTS";
-import type {
-  YTPlayer,
-  ShadowTurn,
-  Sentence,
-  SessionOpts,
-} from "../shared/types";
-import { extractVideoId, extractReview, newId } from "../shared/utils";
+import type { YTPlayer, Sentence, SessionOpts } from "../shared/types";
+import { extractVideoId } from "../shared/utils";
 
 // ─── Tactiq transcript parser ─────────────────────────────────────────────
 function parseTimestampToMs(ts: string): number {
@@ -64,55 +57,34 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
   const [videoId, setVideoId] = useState<string | null>(
     opts?.initialVideoId ?? null,
   );
-  const [videoTitle, setVideoTitle] = useState("");
   const playerRef = useRef<YTPlayer | null>(null);
 
-  // ── Sentences (from pasted transcript) ─────────────────────────────────
+  // ── Sentences ──────────────────────────────────────────────────────────
   const [sentences, setSentences] = useState<Sentence[]>(
     opts?.initialSentences ?? [],
   );
   const [scriptError, setScriptError] = useState("");
   const [importingTranscript, setImportingTranscript] = useState(false);
+  const [improvingTranscript, setImprovingTranscript] = useState(false);
 
-  // ── TTS ────────────────────────────────────────────────────────────────
-  const tts = useTTS();
+  // ── Active sentence ─────────────────────────────────────────────────────
   const [activeSentenceIdx, setActiveSentenceIdx] = useState(-1);
   const activeSentenceIdxRef = useRef(-1);
   const sentenceRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // ── Recording ──────────────────────────────────────────────────────────
-  const {
-    start: startSoniox,
-    stop: stopSoniox,
-    isRecording,
-    transcript,
-    partial,
-    error: sonioxError,
-  } = useSoniox({ source: "mic" });
-  const startRef = useRef(startSoniox);
-  const stopRef = useRef(stopSoniox);
-  useEffect(() => {
-    startRef.current = startSoniox;
-    stopRef.current = stopSoniox;
-  }, [startSoniox, stopSoniox]);
-  useEffect(() => () => stopRef.current(), []);
-
+  const [isRecording, setIsRecording] = useState(false);
+  const [audioByIdx, setAudioByIdx] = useState<Record<number, string>>({});
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const blobUrlsRef = useRef<string[]>([]);
-  const pendingTurnIdRef = useRef<string | null>(null);
   const recordingForIdxRef = useRef<number | null>(null);
   useEffect(
     () => () => blobUrlsRef.current.forEach((u) => URL.revokeObjectURL(u)),
     [],
   );
 
-  // ── Coaching ───────────────────────────────────────────────────────────
-  const [turns, setTurns] = useState<ShadowTurn[]>([]);
-  const [coachLoading, setCoachLoading] = useState(false);
-  const historyRef = useRef<{ role: string; content: string }[]>([]);
-
-  // ── Session persistence ────────────────────────────────────────────────
+  // ── Session callbacks ──────────────────────────────────────────────────
   const optsRef = useRef(opts);
   optsRef.current = opts;
 
@@ -124,7 +96,7 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     }
   }, []);
 
-  // ── Video sync — track which sentence is playing ───────────────────────
+  // ── Video sync ─────────────────────────────────────────────────────────
   useEffect(() => {
     if (!sentences.length) return;
     const timer = setInterval(() => {
@@ -142,7 +114,7 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     return () => clearInterval(timer);
   }, [sentences]);
 
-  // ── Auto-scroll ────────────────────────────────────────────────────────
+  // ── Auto-scroll sentence pills ──────────────────────────────────────────
   useEffect(() => {
     if (activeSentenceIdx < 0) return;
     sentenceRefs.current[activeSentenceIdx]?.scrollIntoView({
@@ -186,115 +158,13 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
           if (e.shiftKey) goTo(activeSentenceIdxRef.current + 1);
           else player?.seekTo((player?.getCurrentTime() ?? 0) + 5, true);
           break;
-        case "r":
-        case "R":
-          e.preventDefault();
-          if (isRecording) stopRef.current();
-          else startRecording();
-          break;
       }
     }
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sentences, isRecording]);
+  }, [sentences]);
 
   // ── Actions ────────────────────────────────────────────────────────────
-  const submitTranscript = useCallback(
-    async (text: string) => {
-      const trimmed = text.trim();
-      if (!trimmed) return;
-      const id = newId();
-      pendingTurnIdRef.current = id;
-      const sentenceIdx = recordingForIdxRef.current ?? undefined;
-      recordingForIdxRef.current = null;
-      if (mediaRecorderRef.current?.state === "recording")
-        mediaRecorderRef.current.stop();
-
-      setTurns((prev) => [
-        ...prev,
-        {
-          id,
-          text: trimmed,
-          sentenceIdx,
-          feedback: null,
-          review: null,
-          timestamp: Date.now(),
-        },
-      ]);
-      setCoachLoading(true);
-      historyRef.current.push({ role: "user", content: trimmed });
-
-      try {
-        const res = await fetch("/api/voice", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            transcript: trimmed,
-            history: historyRef.current.slice(-6),
-            topic: videoTitle || "English shadowing",
-          }),
-        });
-        const data = (await res.json()) as { reply?: string };
-        const reply = data.reply ?? "";
-        const review = extractReview(reply);
-        const feedbackText = reply.replace(/```review[\s\S]*?```/gi, "").trim();
-        historyRef.current.push({ role: "assistant", content: reply });
-        setTurns((prev) =>
-          prev.map((t) =>
-            t.id === id ? { ...t, feedback: feedbackText, review } : t,
-          ),
-        );
-      } catch {
-        setTurns((prev) =>
-          prev.map((t) =>
-            t.id === id ? { ...t, feedback: "Could not get feedback." } : t,
-          ),
-        );
-      } finally {
-        setCoachLoading(false);
-      }
-    },
-    [videoTitle],
-  );
-
-  function startRecording() {
-    audioChunksRef.current = [];
-    recordingForIdxRef.current =
-      activeSentenceIdxRef.current >= 0 ? activeSentenceIdxRef.current : null;
-    navigator.mediaDevices
-      .getUserMedia({ audio: true })
-      .then((stream) => {
-        const mimeType = MediaRecorder.isTypeSupported("audio/webm;codecs=opus")
-          ? "audio/webm;codecs=opus"
-          : MediaRecorder.isTypeSupported("audio/webm")
-            ? "audio/webm"
-            : "";
-        const mr = new MediaRecorder(
-          stream,
-          mimeType ? { mimeType } : undefined,
-        );
-        mr.ondataavailable = (e) => {
-          if (e.data.size > 0) audioChunksRef.current.push(e.data);
-        };
-        mr.onstop = () => {
-          stream.getTracks().forEach((t) => t.stop());
-          const blob = new Blob(audioChunksRef.current, { type: "audio/webm" });
-          const url = URL.createObjectURL(blob);
-          blobUrlsRef.current.push(url);
-          const tid = pendingTurnIdRef.current;
-          if (tid)
-            setTurns((prev) =>
-              prev.map((t) => (t.id === tid ? { ...t, audioUrl: url } : t)),
-            );
-        };
-        mr.start(250);
-        mediaRecorderRef.current = mr;
-      })
-      .catch(() => {});
-    startRef.current({ source: "mic" });
-  }
-
   function handleLoadVideo(e?: FormEvent) {
     e?.preventDefault();
     setUrlError("");
@@ -305,18 +175,16 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     }
     setVideoId(id);
     optsRef.current?.onVideoChange?.(id);
-    setVideoTitle("");
     setSentences([]);
     setScriptError("");
     setActiveSentenceIdx(-1);
     activeSentenceIdxRef.current = -1;
     sentenceRefs.current = [];
+    setAudioByIdx({});
   }
 
   function handlePlayerReady(event: YouTubeEvent) {
     playerRef.current = event.target as unknown as YTPlayer;
-    const title = (event.target as { videoTitle?: string }).videoTitle ?? "";
-    if (title) setVideoTitle(title);
   }
 
   function openTactiq() {
@@ -331,7 +199,7 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     raw: string,
     importOpts?: { useAI?: boolean },
   ) {
-    if (!raw) return;
+    if (!raw.trim()) return;
     setScriptError("");
 
     if (importOpts?.useAI) {
@@ -344,9 +212,9 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
         });
         const json = await res.json().catch(() => null);
         if (res.ok && Array.isArray(json?.segments)) {
-          const segs: any[] = json.segments;
+          const segs = json.segments as any[];
           const starts = segs.map((s) => Number(s.start ?? s.timestamp ?? 0));
-          const data: Sentence[] = segs.map((s: any, i: number) => {
+          const data: Sentence[] = segs.map((s, i) => {
             const startMs = Math.round(
               Number(s.start ?? s.timestamp ?? 0) * 1000,
             );
@@ -375,13 +243,55 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
       return;
     }
 
-    // Local parsing (tactiq format)
     const parsed = parseTactiqTranscript(raw);
     if (parsed?.length) {
       notifySentences(parsed);
       sentenceRefs.current = [];
     } else {
       setScriptError("Could not parse pasted transcript");
+    }
+  }
+
+  async function handleImproveWithAI() {
+    if (!sentences.length) return;
+    setImprovingTranscript(true);
+    setScriptError("");
+    try {
+      const CHUNK = 25;
+      const improved: Sentence[] = [];
+      for (let start = 0; start < sentences.length; start += CHUNK) {
+        const chunk = sentences.slice(start, start + CHUNK);
+        const raw = chunk.map((s) => s.text).join("\n");
+        const res = await fetch("/api/transcript", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ raw }),
+        });
+        const json = await res.json().catch(() => null);
+        if (!res.ok || !Array.isArray(json?.segments)) {
+          setScriptError(json?.error ?? "AI improvement failed");
+          return;
+        }
+        const segs = json.segments as any[];
+        const rangeStart = chunk[0].startMs;
+        const rangeEnd = chunk[chunk.length - 1].endMs;
+        const range = rangeEnd - rangeStart;
+        segs.forEach((seg, i) => {
+          improved.push({
+            text: String(seg.text ?? seg.caption ?? "").trim(),
+            startMs: Math.round(rangeStart + (i / segs.length) * range),
+            endMs: Math.round(rangeStart + ((i + 1) / segs.length) * range),
+          });
+        });
+      }
+      notifySentences(improved);
+      sentenceRefs.current = [];
+      setActiveSentenceIdx(-1);
+      activeSentenceIdxRef.current = -1;
+    } catch (e: any) {
+      setScriptError(String(e?.message ?? e));
+    } finally {
+      setImprovingTranscript(false);
     }
   }
 
@@ -393,22 +303,46 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     setActiveSentenceIdx(idx);
   }
 
-  // ── Derived ────────────────────────────────────────────────────────────
-  const scores = turns
-    .map((t) => t.review?.score)
-    .filter((s): s is number => typeof s === "number");
-  const overallScore =
-    scores.length > 0
-      ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
-      : null;
-  const activeSentenceText = sentences[activeSentenceIdx]?.text ?? "";
-  const lastAudioUrl = (() => {
-    for (let i = turns.length - 1; i >= 0; i--) {
-      if (turns[i].sentenceIdx === activeSentenceIdx && turns[i].audioUrl)
-        return turns[i].audioUrl;
+  function onToggleRecording() {
+    if (isRecording) {
+      mediaRecorderRef.current?.stop();
+      return;
     }
-    return null;
-  })();
+    audioChunksRef.current = [];
+    recordingForIdxRef.current =
+      activeSentenceIdxRef.current >= 0 ? activeSentenceIdxRef.current : null;
+    navigator.mediaDevices
+      .getUserMedia({ audio: true })
+      .then((stream) => {
+        const mimeType = MediaRecorder.isTypeSupported("audio/webm;codecs=opus")
+          ? "audio/webm;codecs=opus"
+          : MediaRecorder.isTypeSupported("audio/webm")
+            ? "audio/webm"
+            : "";
+        const mr = new MediaRecorder(
+          stream,
+          mimeType ? { mimeType } : undefined,
+        );
+        mr.ondataavailable = (e) => {
+          if (e.data.size > 0) audioChunksRef.current.push(e.data);
+        };
+        mr.onstart = () => setIsRecording(true);
+        mr.onstop = () => {
+          setIsRecording(false);
+          stream.getTracks().forEach((t) => t.stop());
+          const blob = new Blob(audioChunksRef.current, { type: "audio/webm" });
+          const url = URL.createObjectURL(blob);
+          blobUrlsRef.current.push(url);
+          const idx = recordingForIdxRef.current;
+          if (idx !== null) {
+            setAudioByIdx((prev) => ({ ...prev, [idx]: url }));
+          }
+        };
+        mr.start(250);
+        mediaRecorderRef.current = mr;
+      })
+      .catch(() => {});
+  }
 
   return {
     urlInput,
@@ -416,41 +350,21 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     urlError,
     videoId,
     playerRef,
-    videoTitle,
     sentences,
     scriptError,
+    importingTranscript,
+    improvingTranscript,
     activeSentenceIdx,
     sentenceRefs,
-    importingTranscript,
     isRecording,
-    sonioxError,
-    turns,
-    coachLoading,
-    overallScore,
-    activeSentenceText,
-    lastAudioUrl,
-    tts,
+    lastAudioUrl:
+      activeSentenceIdx >= 0 ? (audioByIdx[activeSentenceIdx] ?? null) : null,
     handleLoadVideo,
     handlePlayerReady,
     handleImportTranscript,
+    handleImproveWithAI,
     openTactiq,
     goToSentence,
-    onListenSentence: () => {
-      const text = sentences[activeSentenceIdx]?.text;
-      if (text) void tts.speak(text);
-    },
-    onToggleRecording: () => {
-      if (isRecording) {
-        stopRef.current();
-        const text = (transcript || partial).trim();
-        if (text) void submitTranscript(text);
-      } else {
-        startRecording();
-      }
-    },
-    onClearSession: () => {
-      setTurns([]);
-      historyRef.current = [];
-    },
+    onToggleRecording,
   };
 }
