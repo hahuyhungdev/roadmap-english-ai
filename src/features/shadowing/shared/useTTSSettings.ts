@@ -9,93 +9,14 @@ type TTSStatus = "idle" | "loading" | "playing";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-/** Extract lang code from voice ID */
 function getLangFromVoiceId(voiceId: string): string {
   return EDGE_ACCENTS.find((a) => a.value === voiceId)?.lang ?? "en-US";
 }
 
-/** Extract the voice key name (e.g. "Jenny" from "Jenny — Bright Female") */
-function getVoiceKeyFromAccent(accentValue: string): string | null {
-  const found = EDGE_ACCENTS.find((a) => a.value === accentValue);
-  if (!found) return null;
-  // Extract first word before " — " (e.g. "Jenny" from "Jenny — Bright Female")
-  return found.label.split(" — ")[0].trim();
-}
+// Blocklist for old, robotic voices
+const BLOCKLIST = ["David", "Zira", "Hedda", "Helena"];
 
-/**
- * Find the best matching voice from available voices.
- * Strategy:
- * 1. Fuzzy match: voice name contains the voice key (e.g. "Microsoft Jenny Online" contains "Jenny")
- * 2. Fallback: any local voice for the language
- * 3. Last resort: any voice for the language
- */
-function findBestVoice(
-  availableVoices: SpeechSynthesisVoice[],
-  voiceKey: string | null,
-  lang: string,
-): SpeechSynthesisVoice | null {
-  if (!availableVoices.length) return null;
-
-  // 1. Fuzzy match: voice name contains the voice key AND is local
-  if (voiceKey) {
-    const fuzzyLocalMatch = availableVoices.find(
-      (v) =>
-        v.localService && v.name.toLowerCase().includes(voiceKey.toLowerCase()),
-    );
-    if (fuzzyLocalMatch) {
-      console.log(
-        "[findBestVoice] Found fuzzy LOCAL match:",
-        fuzzyLocalMatch.name,
-        "for key:",
-        voiceKey,
-      );
-      return fuzzyLocalMatch;
-    }
-    // If no local fuzzy match, try any fuzzy match (may be online)
-    const fuzzyMatch = availableVoices.find((v) =>
-      v.name.toLowerCase().includes(voiceKey.toLowerCase()),
-    );
-    if (fuzzyMatch) {
-      console.log(
-        "[findBestVoice] Found fuzzy match (online or local):",
-        fuzzyMatch.name,
-        "for key:",
-        voiceKey,
-      );
-      return fuzzyMatch;
-    }
-  }
-
-  // 2. Any local voice for the language
-  const localVoice = availableVoices.find(
-    (v) => v.localService && v.lang === lang,
-  );
-  if (localVoice) {
-    console.log(
-      "[findBestVoice] Fallback to local voice:",
-      localVoice.name,
-      "for lang:",
-      lang,
-    );
-    return localVoice;
-  }
-
-  // 3. Last resort: any voice for the language (may be online)
-  const anyVoice = availableVoices.find((v) => v.lang === lang);
-  if (anyVoice) {
-    console.log(
-      "[findBestVoice] Last resort voice:",
-      anyVoice.name,
-      "for lang:",
-      lang,
-    );
-    return anyVoice;
-  }
-
-  return null;
-}
-
-// Robustly wait for voices to be loaded (handles async race condition)
+// Robustly wait for voices to be loaded
 function loadVoices(): Promise<SpeechSynthesisVoice[]> {
   return new Promise((resolve) => {
     const voices = speechSynthesis.getVoices();
@@ -111,20 +32,14 @@ function loadVoices(): Promise<SpeechSynthesisVoice[]> {
   });
 }
 
-// Blocklist for old, robotic voices
-const BLOCKLIST = ["David", "Zira", "Hedda", "Helena"];
-
-// Find the best neural/natural/online voice, fallback to any non-blocklisted
+// Find best neural/natural voice, wait up to ~5s
 async function getBestVoice(
   lang = "en-US",
 ): Promise<SpeechSynthesisVoice | null> {
-  // Only return a neural/natural/online voice, never fallback to robotic/local
   let voices = await loadVoices();
   let tries = 0;
-  let neuralVoice = null;
   while (tries < 10) {
-    // Wait up to ~5s for neural voices to appear
-    neuralVoice = voices.find(
+    const neuralVoice = voices.find(
       (v) =>
         v.lang.startsWith(lang) &&
         (v.name.toLowerCase().includes("natural") ||
@@ -132,16 +47,15 @@ async function getBestVoice(
           v.name.toLowerCase().includes("online")) &&
         !BLOCKLIST.some((name) => v.name.includes(name)),
     );
-    if (neuralVoice) break;
-    // Wait 500ms and try again
+    if (neuralVoice) return neuralVoice;
     await new Promise((r) => setTimeout(r, 500));
     voices = await loadVoices();
     tries++;
   }
-  return neuralVoice ?? null;
+  return null;
 }
 
-// Chunk text for Edge bug (>~300 chars)
+// Chunk text for Edge TTS bug (~300 chars limit)
 function chunkText(text: string, maxLength: number): string[] {
   const sentences = text.match(/[^.!?]+[.!?]*/g) ?? [text];
   const chunks: string[] = [];
@@ -163,7 +77,7 @@ function speakChunk(
   voice: SpeechSynthesisVoice,
   rate: number,
   lang: string,
-  keepAliveRef: { id: any },
+  keepAliveRef: { id: ReturnType<typeof setInterval> | null },
 ): Promise<void> {
   return new Promise((resolve, reject) => {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -171,20 +85,18 @@ function speakChunk(
     utterance.lang = lang;
     utterance.rate = rate;
     utterance.onend = () => {
-      clearInterval(keepAliveRef.id);
+      if (keepAliveRef.id) clearInterval(keepAliveRef.id);
       resolve();
     };
     utterance.onerror = (e) => {
-      clearInterval(keepAliveRef.id);
+      if (keepAliveRef.id) clearInterval(keepAliveRef.id);
       if (e.error === "interrupted") {
-        // Do not log or reject for interrupted (normal cancel)
         resolve();
         return;
       }
-      console.error("[useTTSSettings] SpeechSynthesis error:", e);
       reject(e);
     };
-    // Keep-alive workaround for Chromium/Edge long-speech pause bug
+    // Keep-alive workaround for Chromium long-speech pause bug
     keepAliveRef.id = setInterval(() => {
       if (speechSynthesis.speaking && !speechSynthesis.paused) {
         speechSynthesis.pause();
@@ -195,30 +107,36 @@ function speakChunk(
   });
 }
 
+// ─── Audio pre-buffer cache (in-memory) ───────────────────────────────────
+// Stores pre-fetched audio blobs so TTS playback is instant
+const audioBufferCache = new Map<string, string>(); // key -> base64 audio
+
+function makeCacheKey(text: string, voice: string, speed: number) {
+  return `${text}|${voice}|${speed}`;
+}
+
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 export function useTTSSettings(defaults?: Partial<TTSSettings>) {
   const [provider, setProvider] = useState<TTSProvider>(
     defaults?.provider ?? "google",
   );
   const [accent, setAccent] = useState(
-    defaults?.accent ?? "en-US-Chirp3-HD-Fenrir", // Default to Fenrir (Chirp3-HD)
+    defaults?.accent ?? "en-US-Chirp3-HD-Fenrir",
   );
   const [speed, setSpeed] = useState(defaults?.speed ?? DEFAULT_SPEED);
   const [status, setStatus] = useState<TTSStatus>("idle");
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
 
-  // Refs — stable across renders, no stale closure issues
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const blobUrlRef = useRef<string | null>(null);
   const abortRef = useRef<AbortController | null>(null);
-  const resumeTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const lastSpeakRef = useRef<{ text: string; at: number } | null>(null);
 
-  // Keep latest state accessible inside callbacks without re-creating them
+  // Keep latest state in refs for stable callbacks
   const providerRef = useRef(provider);
   const accentRef = useRef(accent);
   const speedRef = useRef(speed);
-  const voicesRef = useRef(voices);
+  const statusRef = useRef<TTSStatus>("idle");
 
   useEffect(() => {
     providerRef.current = provider;
@@ -230,31 +148,21 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
     speedRef.current = speed;
   }, [speed]);
   useEffect(() => {
-    voicesRef.current = voices;
-  }, [voices]);
-
-  // ── Sync status to ref ────────────────────────────────────────────────────────
-  const statusRef = useRef<TTSStatus>("idle");
-  useEffect(() => {
     statusRef.current = status;
   }, [status]);
 
-  // ── Load voices ─────────────────────────────────────────────────────────────
+  // ── Load browser voices ─────────────────────────────────────────────────
   useEffect(() => {
     if (typeof window === "undefined") return;
-
-    const loadVoices = () => setVoices(speechSynthesis.getVoices());
-
-    loadVoices();
-    speechSynthesis.addEventListener("voiceschanged", loadVoices);
-    return () =>
-      speechSynthesis.removeEventListener("voiceschanged", loadVoices);
+    const load = () => setVoices(speechSynthesis.getVoices());
+    load();
+    speechSynthesis.addEventListener("voiceschanged", load);
+    return () => speechSynthesis.removeEventListener("voiceschanged", load);
   }, []);
 
-  // ── Cleanup on unmount ───────────────────────────────────────────────────────
+  // ── Cleanup on unmount ──────────────────────────────────────────────────
   useEffect(() => {
     return () => {
-      clearInterval(resumeTimerRef.current!);
       abortRef.current?.abort();
       if (blobUrlRef.current) URL.revokeObjectURL(blobUrlRef.current);
       audioRef.current?.pause();
@@ -262,22 +170,11 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
     };
   }, []);
 
-  // ── stop() ──────────────────────────────────────────────────────────────────
+  // ── stop() ──────────────────────────────────────────────────────────────
   const stop = useCallback(() => {
-    // Cancel in-flight fetch
     abortRef.current?.abort();
     abortRef.current = null;
-
-    // Stop Chromium resume nudge
-    if (resumeTimerRef.current) {
-      clearInterval(resumeTimerRef.current);
-      resumeTimerRef.current = null;
-    }
-
-    // Stop Web Speech API
     window.speechSynthesis?.cancel();
-
-    // Stop audio element + free blob URL
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.src = "";
@@ -287,11 +184,10 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
       URL.revokeObjectURL(blobUrlRef.current);
       blobUrlRef.current = null;
     }
-
     setStatus("idle");
   }, []);
 
-  // ── speak() ─────────────────────────────────────────────────────────────────
+  // ── speak() ─────────────────────────────────────────────────────────────
   const speak = useCallback(
     async (text: string, onEnd?: () => void) => {
       try {
@@ -299,7 +195,7 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
         if (!trimmed) return;
         if (statusRef.current === "loading") return;
 
-        // Debounce — same text within 250 ms
+        // Debounce — same text within 250ms
         const now = Date.now();
         const last = lastSpeakRef.current;
         if (last && last.text === trimmed && now - last.at < 250) return;
@@ -309,52 +205,51 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
 
         if (providerRef.current === "edge") {
           setStatus("loading");
-
           const lang = getLangFromVoiceId(accentRef.current);
           const voice = await getBestVoice(lang);
-
           if (!voice) {
             setStatus("idle");
-            // Optionally, show a user-facing warning here (e.g., toast, alert, or console)
-            if (typeof window !== "undefined") {
-              alert(
-                "No natural (neural/online) voice found. Please install or enable neural voices in your system's speech settings, then reload the page.",
-              );
-            } else {
-              console.warn(
-                "No natural (neural/online) voice found. Please install or enable neural voices in your system's speech settings, then reload the page.",
-              );
-            }
+            console.warn("No natural voice found for", lang);
             return;
           }
-
-          console.log(
-            "[TTS] Selected voice:",
-            voice.name,
-            "| Local:",
-            voice.localService,
-          );
           setStatus("playing");
-
           const chunks = chunkText(trimmed, 250);
           for (const chunk of chunks) {
-            const keepAliveRef = { id: null as any };
-            await speakChunk(
-              chunk,
-              voice,
-              speedRef.current,
-              lang,
-              keepAliveRef,
-            );
+            const keepAlive = {
+              id: null as ReturnType<typeof setInterval> | null,
+            };
+            await speakChunk(chunk, voice, speedRef.current, lang, keepAlive);
           }
-
           setStatus("idle");
           onEnd?.();
           return;
         }
 
-        // ── Google TTS ────────────────────────────────────────────────────────
+        // ── Google TTS (with pre-buffer cache) ──────────────────────────
         if (providerRef.current === "google") {
+          const cacheKey = makeCacheKey(
+            trimmed,
+            accentRef.current,
+            speedRef.current,
+          );
+          const cachedBase64 = audioBufferCache.get(cacheKey);
+
+          if (cachedBase64) {
+            // Instant playback from pre-buffer
+            setStatus("playing");
+            await playBase64Audio(
+              cachedBase64,
+              speedRef.current,
+              blobUrlRef,
+              audioRef,
+              () => {
+                setStatus("idle");
+                onEnd?.();
+              },
+            );
+            return;
+          }
+
           setStatus("loading");
           const abortController = new AbortController();
           abortRef.current = abortController;
@@ -365,45 +260,31 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
             body: JSON.stringify({
               text: trimmed,
               voice: accentRef.current,
+              speed: speedRef.current,
             }),
             signal: abortController.signal,
           });
 
           if (!res.ok) throw new Error(`TTS fetch failed: ${res.status}`);
 
-          // API returns { audioContent: "<base64 MP3>" } — decode it properly
           const data = await res.json();
           if (!data.audioContent)
-            throw new Error("No audioContent in TTS response");
+            throw new Error("No audioContent in response");
 
-          const binaryStr = atob(data.audioContent);
-          const bytes = new Uint8Array(binaryStr.length);
-          for (let i = 0; i < binaryStr.length; i++) {
-            bytes[i] = binaryStr.charCodeAt(i);
-          }
-          const blob = new Blob([bytes], { type: "audio/mpeg" });
-
-          if (blobUrlRef.current) URL.revokeObjectURL(blobUrlRef.current);
-          const url = URL.createObjectURL(blob);
-          blobUrlRef.current = url;
-
-          const audio = new Audio(url);
-          audioRef.current = audio;
-          audio.playbackRate = speedRef.current;
+          // Cache for instant replay
+          audioBufferCache.set(cacheKey, data.audioContent);
 
           setStatus("playing");
-          await new Promise<void>((resolve, reject) => {
-            audio.onended = () => {
+          await playBase64Audio(
+            data.audioContent,
+            speedRef.current,
+            blobUrlRef,
+            audioRef,
+            () => {
               setStatus("idle");
               onEnd?.();
-              resolve();
-            };
-            audio.onerror = () => {
-              setStatus("idle");
-              reject(new Error("Audio playback failed"));
-            };
-            audio.play().catch(reject);
-          });
+            },
+          );
         }
       } catch (err: any) {
         if (err?.name !== "AbortError") {
@@ -415,20 +296,116 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
     [stop],
   );
 
+  // ── Pre-buffer upcoming sentences ───────────────────────────────────────
+  const preBuffer = useCallback(async (texts: string[]) => {
+    if (providerRef.current !== "google") return;
+
+    const toFetch = texts
+      .map((t) => t.trim())
+      .filter(
+        (t) =>
+          t &&
+          !audioBufferCache.has(
+            makeCacheKey(t, accentRef.current, speedRef.current),
+          ),
+      );
+
+    if (toFetch.length === 0) return;
+
+    // Use batch endpoint for efficiency
+    try {
+      await fetch("/api/tts", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          items: toFetch.map((text) => ({
+            text,
+            voice: accentRef.current,
+            speed: speedRef.current,
+          })),
+        }),
+      });
+      // The batch endpoint caches in DB; next individual request will be fast
+      // Also pre-fetch into memory cache individually
+      for (const text of toFetch.slice(0, 5)) {
+        const cacheKey = makeCacheKey(
+          text,
+          accentRef.current,
+          speedRef.current,
+        );
+        if (audioBufferCache.has(cacheKey)) continue;
+        try {
+          const res = await fetch("/api/tts", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              text,
+              voice: accentRef.current,
+              speed: speedRef.current,
+            }),
+          });
+          const data = await res.json();
+          if (data.audioContent) {
+            audioBufferCache.set(cacheKey, data.audioContent);
+          }
+        } catch {
+          // Non-critical, just skip
+        }
+      }
+    } catch {
+      // Batch pre-fetch failed, non-critical
+    }
+  }, []);
+
   return {
-    // state
     provider,
     accent,
     speed,
     voices,
-    status, // "idle" | "loading" | "playing"
-    playing: status === "playing", // convenience bool
-    loading: status === "loading", // convenience bool
-    // actions
+    status,
+    playing: status === "playing",
+    loading: status === "loading",
     setProvider,
     setAccent,
     setSpeed,
     speak,
     stop,
+    preBuffer,
   };
+}
+
+// ─── Helper: play base64 audio ────────────────────────────────────────────
+function playBase64Audio(
+  base64: string,
+  playbackRate: number,
+  blobUrlRef: React.MutableRefObject<string | null>,
+  audioRef: React.MutableRefObject<HTMLAudioElement | null>,
+  onDone: () => void,
+): Promise<void> {
+  const binaryStr = atob(base64);
+  const bytes = new Uint8Array(binaryStr.length);
+  for (let i = 0; i < binaryStr.length; i++) {
+    bytes[i] = binaryStr.charCodeAt(i);
+  }
+  const blob = new Blob([bytes], { type: "audio/mpeg" });
+
+  if (blobUrlRef.current) URL.revokeObjectURL(blobUrlRef.current);
+  const url = URL.createObjectURL(blob);
+  blobUrlRef.current = url;
+
+  const audio = new Audio(url);
+  audioRef.current = audio;
+  audio.playbackRate = playbackRate;
+
+  return new Promise<void>((resolve, reject) => {
+    audio.onended = () => {
+      onDone();
+      resolve();
+    };
+    audio.onerror = () => {
+      onDone();
+      reject(new Error("Audio playback failed"));
+    };
+    audio.play().catch(reject);
+  });
 }

@@ -14,10 +14,31 @@ import {
 import clsx from "clsx";
 import { useScriptShadowing } from "./useScriptShadowing";
 import { TTSSettingsPanel } from "../shared/TTSSettingsPanel";
-import { AudioReplay } from "@/views/shadowing/AudioReplay";
+import { AudioReplay } from "../shared/AudioReplay";
+import type { Sentence } from "../shared/types";
 
-export default function ScriptShadowingClient() {
-  const s = useScriptShadowing();
+interface Props {
+  sessionId?: number;
+  initialScriptText?: string;
+  initialSentences?: Sentence[];
+  initialActiveSentenceIdx?: number;
+  initialTtsVoice?: string;
+  initialTtsSpeed?: number;
+  onSentencesChange?: (sentences: Sentence[]) => void;
+  onActiveSentenceChange?: (idx: number) => void;
+  onScriptTextChange?: (scriptText: string) => void;
+}
+
+export default function ScriptShadowingClient(props: Props) {
+  const s = useScriptShadowing({
+    sessionId: props.sessionId,
+    initialScriptText: props.initialScriptText,
+    initialSentences: props.initialSentences,
+    initialActiveSentenceIdx: props.initialActiveSentenceIdx,
+    onSentencesChange: props.onSentencesChange,
+    onActiveSentenceChange: props.onActiveSentenceChange,
+    onScriptTextChange: props.onScriptTextChange,
+  });
 
   return (
     <div className="max-w-4xl mx-auto space-y-6">

@@ -9,7 +9,7 @@ import {
 } from "react";
 import useSoniox from "@/hooks/useSoniox";
 import { useTTSSettings } from "../shared/useTTSSettings";
-import type { ShadowTurn, Sentence } from "../shared/types";
+import type { ShadowTurn, Sentence, SessionOpts } from "../shared/types";
 import {
   extractReview,
   newId,
@@ -17,12 +17,16 @@ import {
 } from "../shared/utils";
 import { DEFAULT_SPEED } from "@/features/shadowing/shared/constants";
 
-export function useScriptShadowing() {
+export function useScriptShadowing(opts?: SessionOpts) {
   // ── Script / sentences ────────────────────────────────────────────────────
-  const [scriptInput, setScriptInput] = useState("");
+  const [scriptInput, setScriptInput] = useState(opts?.initialScriptText ?? "");
   const [scriptError, setScriptError] = useState("");
-  const [sentences, setSentences] = useState<Sentence[]>([]);
-  const [activeSentenceIdx, setActiveSentenceIdx] = useState(-1);
+  const [sentences, setSentences] = useState<Sentence[]>(
+    opts?.initialSentences ?? [],
+  );
+  const [activeSentenceIdx, setActiveSentenceIdx] = useState(
+    opts?.initialActiveSentenceIdx ?? -1,
+  );
   const sentenceRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // ── TTS ───────────────────────────────────────────────────────────────────
@@ -79,6 +83,15 @@ export function useScriptShadowing() {
   const historyRef = useRef<{ role: string; content: string }[]>([]);
   const isSubmittingRef = useRef(false); // FIX #7 — prevent concurrent submits
 
+  // ── Session persistence ───────────────────────────────────────────────────
+  const optsRef = useRef(opts);
+  optsRef.current = opts;
+
+  useEffect(() => {
+    if (activeSentenceIdx >= 0)
+      optsRef.current?.onActiveSentenceChange?.(activeSentenceIdx);
+  }, [activeSentenceIdx]);
+
   // ── Auto-scroll active sentence into view ─────────────────────────────────
   useEffect(() => {
     if (activeSentenceIdx >= 0) {
@@ -87,8 +100,13 @@ export function useScriptShadowing() {
         block: "nearest",
         inline: "nearest",
       });
+      // Pre-buffer next 3 sentences for instant playback
+      const upcoming = sentences
+        .slice(activeSentenceIdx + 1, activeSentenceIdx + 4)
+        .map((s) => s.text);
+      if (upcoming.length > 0) tts.preBuffer(upcoming);
     }
-  }, [activeSentenceIdx]);
+  }, [activeSentenceIdx, sentences, tts]);
 
   // ── Clear hearingIdx only when loop is completely done ──────────────────
   // (Don't clear on every TTS finish — that breaks the loop effect! Only clear
@@ -387,36 +405,23 @@ export function useScriptShadowing() {
         const bq = line.match(/^[>]+\s*(.+)$/);
         if (bq) {
           usedBlockquotes = true;
-          // Try to find a preceding heading as the speaker label (e.g. "# Title")
-          // Preserve the nearest preceding heading as markdown (if any).
-          // Use the heading text as the speaker key but include the
-          // markdown heading line once before the blockquote content so
-          // the original structure is retained for users.
           let whoKey = "QUOTE";
           let headingLine: string | null = null;
           for (let j = i - 1; j >= 0; j--) {
             const hd = lines[j].match(/^#{1,6}\s*(.+)$/);
             if (hd) {
-              // Normalize heading content: remove redundant leading chars (emoji,
-              // numbering) and trailing punctuation but keep the main text.
               let content = hd[1].trim();
-              // Remove leading markers like bullets/spaces
               content = content.replace(/^[-*\s]+/, "");
-              // Remove leading non-alphanumeric (emoji/symbols)
               content = content.replace(/^[^a-zA-Z0-9]+/, "");
-              // Remove leading enumerations like "7.", "1)", "7-" etc
               content = content.replace(/^\d+[\.\)\-:]*\s*/, "");
-              // Strip trailing punctuation like ?, !, .
               content = content.replace(/[!?\.\s]+$/, "").trim();
               whoKey = content || "QUOTE";
-              // Keep the heading content but do not include the leading '#'
               headingLine = content;
               break;
             }
           }
 
           speakers[whoKey] = speakers[whoKey] || [];
-          // Insert heading content (without leading '#') once before first blockquote
           if (headingLine && speakers[whoKey].length === 0) {
             speakers[whoKey].push(headingLine);
           }
@@ -425,30 +430,24 @@ export function useScriptShadowing() {
       }
     }
 
-    // If still no speaker info, fall back to using all text as a single chunk
     if (Object.keys(speakers).length === 0) {
       speakers["MAIN"] = [trimmed];
     }
 
     const speakerNames = Object.keys(speakers);
     if (speakerNames.length > 0) {
-      // If blockquotes were the source and there are multiple small sections,
-      // prefer concatenating all blockquote replies so users can practice the
-      // assistant/reply text together (common in FAQ-style markdown).
       if (usedBlockquotes && speakerNames.length > 1) {
         const allText = speakerNames
           .map((k) => speakers[k].join("\n\n"))
           .join("\n\n");
         result = splitScriptIntoSentences(allText);
       } else {
-        // Determine the main speaker (most lines)
         speakerNames.sort((a, b) => speakers[b].length - speakers[a].length);
         const main = speakerNames[0];
         const mainText = speakers[main].join("\n\n");
         result = splitScriptIntoSentences(mainText);
       }
     } else {
-      // Fallback
       result = splitScriptIntoSentences(trimmed);
     }
 
@@ -457,11 +456,24 @@ export function useScriptShadowing() {
       return;
     }
     setSentences(result);
+    optsRef.current?.onSentencesChange?.(result);
+    optsRef.current?.onScriptTextChange?.(trimmed);
     setActiveSentenceIdx(0);
     sentenceRefs.current = [];
-    // Clear previous session so scores/feedback don't bleed across scripts
+    // Clear previous session
     setTurns([]);
     historyRef.current = [];
+
+    // Cache script in DB (fire and forget)
+    fetch("/api/shadowing/script", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ script: trimmed, sentences: result }),
+    }).catch(() => {});
+
+    // Pre-buffer TTS for first few sentences
+    const upcoming = result.slice(0, 5).map((s) => s.text);
+    tts.preBuffer(upcoming);
   }
 
   // ── Derived ───────────────────────────────────────────────────────────────

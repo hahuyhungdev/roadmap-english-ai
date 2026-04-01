@@ -1,28 +1,44 @@
 "use client";
 
 import {
+  ExternalLink,
   FileText,
-  Keyboard,
   Loader2,
   Mic,
-  ArrowLeft,
-  ArrowRight,
   Play,
-  RefreshCw,
   Square,
   Star,
   Trash2,
 } from "lucide-react";
 import clsx from "clsx";
 import { useState } from "react";
-import YouTube, { type YouTubeEvent } from "react-youtube";
 import { useYouTubeShadowing } from "./useYouTubeShadowing";
-import { TTSSettingsPanel } from "../shared/TTSSettingsPanel";
-import { VideoPanel } from "@/views/shadowing/VideoPanel";
-import { AudioReplay } from "@/views/shadowing/AudioReplay";
+import { VideoPanel } from "../shared/VideoPanel";
+import { AudioReplay } from "../shared/AudioReplay";
+import type { Sentence } from "../shared/types";
 
-export default function YouTubeShadowingClient() {
-  const s = useYouTubeShadowing();
+interface Props {
+  sessionId?: number;
+  initialVideoId?: string;
+  initialSentences?: Sentence[];
+  initialActiveSentenceIdx?: number;
+  onSentencesChange?: (sentences: Sentence[]) => void;
+  onActiveSentenceChange?: (idx: number) => void;
+  onVideoChange?: (videoId: string) => void;
+  onScriptTextChange?: (scriptText: string) => void;
+}
+
+export default function YouTubeShadowingClient(props: Props) {
+  const s = useYouTubeShadowing({
+    sessionId: props.sessionId,
+    initialVideoId: props.initialVideoId,
+    initialSentences: props.initialSentences,
+    initialActiveSentenceIdx: props.initialActiveSentenceIdx,
+    onSentencesChange: props.onSentencesChange,
+    onActiveSentenceChange: props.onActiveSentenceChange,
+    onVideoChange: props.onVideoChange,
+    onScriptTextChange: props.onScriptTextChange,
+  });
   const [showPaste, setShowPaste] = useState(false);
   const [pasteText, setPasteText] = useState("");
 
@@ -91,7 +107,7 @@ export default function YouTubeShadowingClient() {
             style={{ flex: "3 1 0", minHeight: 0, overflow: "hidden" }}
           >
             {/* Panel header */}
-            <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100 shrink-0 relative">
+            <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100 shrink-0">
               <div className="flex items-center gap-2">
                 <FileText size={14} className="text-indigo-500" />
                 <span className="text-sm font-semibold text-gray-800">
@@ -113,14 +129,6 @@ export default function YouTubeShadowingClient() {
                     {s.overallScore}/10
                   </span>
                 )}
-                <TTSSettingsPanel
-                  provider={s.tts.provider}
-                  accent={s.tts.accent}
-                  speed={s.tts.speed}
-                  onProviderChange={s.tts.setProvider}
-                  onAccentChange={s.tts.setAccent}
-                  onSpeedChange={s.tts.setSpeed}
-                />
                 {s.turns.length > 0 && (
                   <button
                     onClick={s.onClearSession}
@@ -136,31 +144,12 @@ export default function YouTubeShadowingClient() {
             {/* Fetch / sentence list */}
             <div className="px-4 py-2 shrink-0">
               <button
-                onClick={() => {
-                  const base = "https://tactiq.io/tools/run/youtube_transcript";
-                  const ytUrl = s.videoId
-                    ? `https://youtu.be/${s.videoId}`
-                    : undefined;
-                  const target = ytUrl
-                    ? `${base}?yt=${encodeURIComponent(ytUrl)}`
-                    : "https://tactiq.io/tools/youtube-transcript";
-                  window.open(target, "_blank", "noopener,noreferrer");
-                }}
-                disabled={s.scriptLoading || s.importingTranscript}
+                onClick={s.openTactiq}
+                disabled={!s.videoId || s.importingTranscript}
                 className="w-full py-1.5 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white transition-all disabled:opacity-40"
               >
-                {s.scriptLoading ? (
-                  <Loader2 size={13} className="animate-spin" />
-                ) : s.sentences.length > 0 ? (
-                  <RefreshCw size={13} />
-                ) : (
-                  <FileText size={13} />
-                )}
-                {s.scriptLoading
-                  ? "Fetching…"
-                  : s.sentences.length > 0
-                    ? "Refresh Script"
-                    : "Get Script"}
+                <ExternalLink size={13} />
+                Get Script from Tactiq
               </button>
               <div className="mt-2 flex items-center gap-2">
                 <button
@@ -181,23 +170,16 @@ export default function YouTubeShadowingClient() {
                   <div className="flex gap-2 mt-2">
                     <button
                       onClick={() => {
-                        s.handleImportTranscript(pasteText, { useAI: false });
+                        if (!pasteText.trim()) return;
+                        const useAI = window.confirm(
+                          "Do you want to improve with AI?\n\nAI will split sentences more naturally and clean up the transcript.",
+                        );
+                        s.handleImportTranscript(pasteText, { useAI });
                         setPasteText("");
                         setShowPaste(false);
                       }}
-                      disabled={s.importingTranscript}
-                      className="py-1 px-3 bg-gray-100 text-sm rounded-lg"
-                    >
-                      Import (local)
-                    </button>
-                    <button
-                      onClick={() => {
-                        s.handleImportTranscript(pasteText, { useAI: true });
-                        setPasteText("");
-                        setShowPaste(false);
-                      }}
-                      disabled={s.importingTranscript}
-                      className="py-1 px-3 bg-indigo-600 text-white rounded-lg text-sm"
+                      disabled={s.importingTranscript || !pasteText.trim()}
+                      className="py-1 px-3 bg-indigo-600 text-white rounded-lg text-sm disabled:opacity-40"
                     >
                       {s.importingTranscript ? (
                         <span className="inline-flex items-center gap-2">
@@ -205,7 +187,7 @@ export default function YouTubeShadowingClient() {
                           Importing…
                         </span>
                       ) : (
-                        "Import with AI"
+                        "Import"
                       )}
                     </button>
                     <button
@@ -228,7 +210,7 @@ export default function YouTubeShadowingClient() {
                   {s.scriptError}
                 </div>
               )}
-              {s.sentences.length === 0 && !s.scriptLoading && (
+              {s.sentences.length === 0 && (
                 <div className="flex flex-col items-center justify-center h-24 text-center text-gray-400 gap-2">
                   <FileText size={28} strokeWidth={1} />
                   <p className="text-xs">
@@ -264,7 +246,8 @@ export default function YouTubeShadowingClient() {
                     ))}
                   </div>
                   <div className="mx-1 rounded-xl border border-indigo-100 bg-indigo-50 p-4 shadow-sm">
-                    {s.activeSentenceIdx < 0 || s.activeSentenceIdx >= s.sentences.length ? (
+                    {s.activeSentenceIdx < 0 ||
+                    s.activeSentenceIdx >= s.sentences.length ? (
                       <p className="text-center text-sm text-gray-500">
                         Select a sentence above.
                       </p>
@@ -298,7 +281,7 @@ export default function YouTubeShadowingClient() {
                 Practice
               </span>
               {s.sonioxError && (
-                <span className="text-[10px] text-red-500 truncate max-w-[200px]">
+                <span className="text-[10px] text-red-500 truncate max-w-50">
                   {s.sonioxError}
                 </span>
               )}

@@ -35,3 +35,16 @@ export interface TTSSettings {
   accent: string;
   speed: number;
 }
+
+/** Options for initializing a shadowing hook from a persisted session */
+export interface SessionOpts {
+  sessionId?: number;
+  initialVideoId?: string;
+  initialScriptText?: string;
+  initialSentences?: Sentence[];
+  initialActiveSentenceIdx?: number;
+  onSentencesChange?: (sentences: Sentence[]) => void;
+  onActiveSentenceChange?: (idx: number) => void;
+  onVideoChange?: (videoId: string) => void;
+  onScriptTextChange?: (scriptText: string) => void;
+}
