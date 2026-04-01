@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getSession, getPhraseGroup } from "@/lib/sessions.server";
-import SessionDetailClient from "@/views/SessionDetailClient";
+import SessionDetailClient from "@/features/learning/SessionDetailClient";
 
 export default async function SessionDetailPage({
   params,

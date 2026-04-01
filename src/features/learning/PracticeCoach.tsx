@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef, useEffect, useState, useEffectEvent } from "react";
-import useSoniox from "../hooks/useSoniox";
-import { useCoachSession } from "../hooks/useCoachSession";
+import useSoniox from "@/hooks/useSoniox";
+import { useCoachSession } from "./useCoachSession";
 import {
   StatusBar,
   PracticeCoachHeader,

@@ -32,14 +32,33 @@ function loadVoices(): Promise<SpeechSynthesisVoice[]> {
   });
 }
 
-// Find best neural/natural voice, wait up to ~5s
-async function getBestVoice(
+// Find voice matching accent ID, fall back to any neural voice
+async function getVoiceForAccent(
+  accentId: string,
   lang = "en-US",
 ): Promise<SpeechSynthesisVoice | null> {
   let voices = await loadVoices();
-  let tries = 0;
-  while (tries < 10) {
-    const neuralVoice = voices.find(
+  // "microsoft-andrew-us" → "andrew"; "microsoft-brian-us" → "brian"
+  const parts = accentId.toLowerCase().split("-");
+  const namePart = parts[1]; // the voice name segment
+
+  // Try up to 6 times (Chromium loads voices asynchronously)
+  for (let attempt = 0; attempt < 6; attempt++) {
+    if (attempt > 0) {
+      await new Promise((r) => setTimeout(r, 500));
+      voices = await loadVoices();
+    }
+
+    if (namePart) {
+      const specific = voices.find(
+        (v) =>
+          v.name.toLowerCase().includes(namePart) && v.lang.startsWith(lang),
+      );
+      if (specific) return specific;
+    }
+
+    // Fallback: any natural/neural/online voice for the lang
+    const fallback = voices.find(
       (v) =>
         v.lang.startsWith(lang) &&
         (v.name.toLowerCase().includes("natural") ||
@@ -47,10 +66,7 @@ async function getBestVoice(
           v.name.toLowerCase().includes("online")) &&
         !BLOCKLIST.some((name) => v.name.includes(name)),
     );
-    if (neuralVoice) return neuralVoice;
-    await new Promise((r) => setTimeout(r, 500));
-    voices = await loadVoices();
-    tries++;
+    if (fallback) return fallback;
   }
   return null;
 }
@@ -118,10 +134,10 @@ function makeCacheKey(text: string, voice: string, speed: number) {
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 export function useTTSSettings(defaults?: Partial<TTSSettings>) {
   const [provider, setProvider] = useState<TTSProvider>(
-    defaults?.provider ?? "google",
+    defaults?.provider ?? "edge",
   );
   const [accent, setAccent] = useState(
-    defaults?.accent ?? "en-US-Chirp3-HD-Fenrir",
+    defaults?.accent ?? "microsoft-andrew-us",
   );
   const [speed, setSpeed] = useState(defaults?.speed ?? DEFAULT_SPEED);
   const [status, setStatus] = useState<TTSStatus>("idle");
@@ -206,10 +222,14 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
         if (providerRef.current === "edge") {
           setStatus("loading");
           const lang = getLangFromVoiceId(accentRef.current);
-          const voice = await getBestVoice(lang);
+          const voice = await getVoiceForAccent(accentRef.current, lang);
           if (!voice) {
             setStatus("idle");
-            console.warn("No natural voice found for", lang);
+            console.warn(
+              "[useTTSSettings] No voice found for",
+              accentRef.current,
+              lang,
+            );
             return;
           }
           setStatus("playing");

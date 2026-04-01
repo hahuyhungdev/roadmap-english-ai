@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPhraseGroup } from "@/lib/sessions.server";
-import PhraseDetailClient from "@/views/PhraseDetailClient";
+import PhraseDetailClient from "@/features/learning/PhraseDetailClient";
 
 export default async function PhraseDetailPage({
   params,

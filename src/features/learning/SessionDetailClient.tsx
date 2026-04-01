@@ -7,8 +7,8 @@ import remarkGfm from "remark-gfm";
 import { CheckCircle2, Circle, ChevronLeft, ChevronRight } from "lucide-react";
 import clsx from "clsx";
 import { useProgressStore } from "@/store/useProgressStore";
-import LessonAssistant from "@/components/LessonAssistant";
-import PracticeCoach from "@/components/PracticeCoach";
+import LessonAssistant from "./LessonAssistant";
+import PracticeCoach from "./PracticeCoach";
 import type { Session } from "@/types";
 import type { PhraseGroup } from "@/lib/sessions.server";
 

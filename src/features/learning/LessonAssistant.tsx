@@ -10,7 +10,7 @@ import {
 } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import type { AiChatMessage, AiResponse } from "../types/ai";
+import type { AiChatMessage, AiResponse } from "@/types/ai";
 
 interface LessonAssistantProps {
   lessonTitle: string;
@@ -158,7 +158,7 @@ export default function LessonAssistant({
 
   return (
     <section
-      className="fixed bottom-6 right-6 w-[23rem]  border border-gray-200 rounded-2xl shadow-xl shadow-gray-200/60 flex flex-col z-50 overflow-hidden bg-white"
+      className="fixed bottom-6 right-6 w-92  border border-gray-200 rounded-2xl shadow-xl shadow-gray-200/60 flex flex-col z-50 overflow-hidden bg-white"
       style={{ height: "36rem", maxHeight: "80vh" }}
     >
       {/* Header */}
@@ -216,7 +216,7 @@ export default function LessonAssistant({
             <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center">
               <Sparkles size={16} className="text-indigo-500" />
             </div>
-            <p className="text-xs text-gray-500 leading-relaxed max-w-[14rem]">
+            <p className="text-xs text-gray-500 leading-relaxed max-w-56">
               Ask anything about this lesson — summary, examples, corrections,
               or a quick quiz.
             </p>

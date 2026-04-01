@@ -5,6 +5,7 @@ import {
   useRef,
   useEffect,
   useEffectEvent,
+  useMemo,
   type FormEvent,
 } from "react";
 import useSoniox from "@/hooks/useSoniox";
@@ -30,7 +31,7 @@ export function useScriptShadowing(opts?: SessionOpts) {
   const sentenceRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // ── TTS ───────────────────────────────────────────────────────────────────
-  const tts = useTTSSettings({ provider: "google", speed: DEFAULT_SPEED });
+  const tts = useTTSSettings({ provider: "edge", speed: DEFAULT_SPEED });
 
   // ── Playback options ──────────────────────────────────────────────────────
   const [autoPronounceSentence, setAutoPronounceSentence] = useState(true);
@@ -477,6 +478,16 @@ export function useScriptShadowing(opts?: SessionOpts) {
   }
 
   // ── Derived ───────────────────────────────────────────────────────────────
+  const practicedSentences = useMemo(
+    () =>
+      new Set(
+        turns
+          .filter((t) => t.sentenceIdx !== undefined && t.text.trim())
+          .map((t) => t.sentenceIdx as number),
+      ),
+    [turns],
+  );
+
   const scores = turns
     .map((t) => t.review?.score)
     .filter((s): s is number => typeof s === "number");
@@ -537,6 +548,7 @@ export function useScriptShadowing(opts?: SessionOpts) {
       historyRef.current = [];
     },
     // Derived
+    practicedSentences,
     activeSentenceText,
     lastAudioUrl,
     onListenSentence: () => {

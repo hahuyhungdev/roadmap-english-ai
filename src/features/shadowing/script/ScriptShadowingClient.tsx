@@ -1,20 +1,15 @@
 "use client";
 
-import {
-  FileText,
-  Keyboard,
-  Mic,
-  ArrowLeft,
-  ArrowRight,
-  Play,
-  Square,
-  Star,
-  Trash2,
-} from "lucide-react";
-import clsx from "clsx";
+import { useState, useRef, useEffect } from "react";
+import { ActionIcon, Badge, Group, Tooltip } from "@mantine/core";
+import { Star, Trash2 } from "lucide-react";
 import { useScriptShadowing } from "./useScriptShadowing";
 import { TTSSettingsPanel } from "../shared/TTSSettingsPanel";
-import { AudioReplay } from "../shared/AudioReplay";
+import { ScriptInputForm } from "./components/ScriptInputForm";
+import { SessionProgress } from "./components/SessionProgress";
+import { SentenceCard } from "./components/SentenceCard";
+import { SessionTimer } from "./components/SessionTimer";
+import { CelebrationOverlay } from "./components/CelebrationOverlay";
 import type { Sentence } from "../shared/types";
 
 interface Props {
@@ -40,81 +35,64 @@ export default function ScriptShadowingClient(props: Props) {
     onScriptTextChange: props.onScriptTextChange,
   });
 
+  const [scriptCollapsed, setScriptCollapsed] = useState(false);
+
+  // Celebration: fire once when all sentences have been practiced
+  const [celebrationFired, setCelebrationFired] = useState(false);
+  const hasSentences = s.sentences.length > 0;
+  const allPracticed =
+    hasSentences && s.practicedSentences.size >= s.sentences.length;
+  console.log(s.practicedSentences);
+  const celebrationActive = allPracticed && !celebrationFired;
+
+  // Reset celebration flag when a new script is loaded
+  const prevSentenceLengthRef = useRef(s.sentences.length);
+
+  useEffect(() => {
+    console.log(s.sentences.length);
+    if (s.sentences.length !== prevSentenceLengthRef.current) {
+      prevSentenceLengthRef.current = s.sentences.length;
+      setCelebrationFired(false);
+    }
+  }, [s.sentences.length]);
+
+  const activeSentence = s.sentences[s.activeSentenceIdx];
+
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
-      {/* Header */}
-      <div className="flex items-start justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-900">Script Shadowing</h1>
-          <p className="text-sm text-gray-500 mt-1">
-            Paste any text and practice sentence by sentence with AI feedback.
-          </p>
-        </div>
-        <span className="text-xs text-gray-500 mt-2">
-          Press{" "}
-          <kbd className="font-mono bg-gray-100 px-1.5 py-0.5 rounded">?</kbd>{" "}
-          for shortcuts
-        </span>
-      </div>
+    <>
+      <CelebrationOverlay
+        active={celebrationActive}
+        message="🎉 All sentences practiced!"
+        onDone={() => setCelebrationFired(true)}
+      />
 
-      {/* Script input */}
-      <form onSubmit={s.handleLoadScript} className="flex flex-col gap-2">
-        <textarea
-          value={s.scriptInput}
-          onChange={(e) => s.setScriptInput(e.target.value)}
-          placeholder="Paste your script or text here…"
-          className={clsx(
-            "w-full px-4 py-2.5 rounded-xl border text-sm outline-none transition-colors resize-none h-24",
-            s.scriptError
-              ? "border-red-400 bg-red-50 focus:border-red-500"
-              : "border-gray-200  focus:border-indigo-400",
-          )}
-        />
-        {s.scriptError && (
-          <p className="text-xs text-red-500 pl-1">{s.scriptError}</p>
-        )}
-        <button
-          type="submit"
-          className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold rounded-xl transition-colors self-start"
-        >
-          Process Script
-        </button>
-      </form>
+      <div className="max-w-3xl mx-auto space-y-5">
+        {/* ── Header ── */}
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h1 className="text-xl font-bold text-gray-900">
+              Script Shadowing
+            </h1>
+            <p className="text-xs text-gray-400 mt-0.5">
+              Paste any text · practice sentence by sentence · get AI feedback
+            </p>
+          </div>
 
-      {/* Main panel */}
-      <div
-        className="flex flex-col  border border-gray-200 rounded-2xl shadow-sm overflow-hidden"
-        style={{ minHeight: "600px" }}
-      >
-        {/* ── Script section ── */}
-        <div
-          className="flex flex-col border-b border-gray-100"
-          style={{ flex: "3 1 0", minHeight: 0, overflow: "hidden" }}
-        >
-          {/* Panel header */}
-          <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100 shrink-0 relative">
-            <div className="flex items-center gap-2">
-              <FileText size={14} className="text-indigo-500" />
-              <span className="text-sm font-semibold text-gray-800">
-                Script
-              </span>
-              {s.sentences.length > 0 && (
-                <span className="text-[11px] text-gray-500 bg-gray-100 px-1.5 py-0.5 rounded-full">
-                  {s.sentences.length}
-                </span>
-              )}
-            </div>
-            <div className="flex items-center gap-1.5">
-              {s.overallScore !== null && (
-                <span className="flex items-center gap-1 px-2 py-0.5 text-xs font-bold bg-amber-50 text-amber-600 border border-amber-200 rounded-full">
-                  <Star
-                    size={10}
-                    className="fill-amber-500 text-amber-500 shrink-0"
-                  />
-                  {s.overallScore}/10
-                </span>
-              )}
-              {/* TTSSettingsPanel manages its own open/close */}
+          <div className="flex items-center gap-2 shrink-0">
+            <SessionTimer active={hasSentences} />
+
+            {s.overallScore !== null && (
+              <Badge
+                size="sm"
+                variant="light"
+                color="yellow"
+                leftSection={<Star size={10} className="fill-yellow-500" />}
+              >
+                {s.overallScore}/10
+              </Badge>
+            )}
+
+            {hasSentences && (
               <TTSSettingsPanel
                 provider={s.tts.provider}
                 accent={s.tts.accent}
@@ -127,192 +105,80 @@ export default function ScriptShadowingClient(props: Props) {
                 loopSentence={s.loopSentence}
                 onLoopSentenceChange={s.setLoopSentence}
               />
-              {s.turns.length > 0 && (
-                <button
+            )}
+
+            {s.turns.length > 0 && (
+              <Tooltip label="Clear session" position="bottom" withArrow>
+                <ActionIcon
+                  variant="subtle"
+                  color="red"
+                  size="sm"
                   onClick={s.onClearSession}
-                  title="Clear session"
-                  className="w-7 h-7 flex items-center justify-center rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 transition-colors"
                 >
-                  <Trash2 size={14} />
-                </button>
-              )}
+                  <Trash2 size={13} />
+                </ActionIcon>
+              </Tooltip>
+            )}
+          </div>
+        </div>
+
+        {/* ── Script Input ── */}
+        <ScriptInputForm
+          value={s.scriptInput}
+          onChange={s.setScriptInput}
+          onSubmit={s.handleLoadScript}
+          error={s.scriptError}
+          hasSentences={hasSentences}
+          collapsed={scriptCollapsed}
+          onCollapse={() => setScriptCollapsed(true)}
+          onExpand={() => setScriptCollapsed(false)}
+        />
+
+        {/* ── Practice Panel ── */}
+        {hasSentences && (
+          <div className="space-y-3">
+            <div className="rounded-2xl border border-gray-200 bg-white shadow-sm px-4 py-3 space-y-2">
+              <SessionProgress
+                total={s.sentences.length}
+                current={s.activeSentenceIdx}
+                practiced={s.practicedSentences}
+                onJump={s.setActiveSentenceIdx}
+              />
+              <p className="text-[10px] text-gray-400">
+                A/D · ←/→ to navigate · R to record · S/Space to listen
+              </p>
             </div>
-          </div>
 
-          {/* Sentence list */}
-          <div className="overflow-y-auto flex-1 px-3 pb-2">
-            {s.scriptError && (
-              <div className="mx-1 my-2 px-3 py-2.5 bg-red-50 border border-red-100 rounded-xl text-xs text-red-600">
-                {s.scriptError}
-              </div>
-            )}
-            {s.sentences.length === 0 && (
-              <div className="flex flex-col items-center justify-center h-24 text-center text-gray-400 gap-2">
-                <FileText size={28} strokeWidth={1} />
-                <p className="text-xs">Process a script above to start.</p>
-              </div>
-            )}
-            {s.sentences.length > 0 && (
-              <>
-                <p className="text-[10px] text-gray-500 px-1 pb-1.5">
-                  A/D or ←/→ to navigate
-                </p>
-                <div className="flex items-center gap-2 overflow-x-auto pb-4 px-1">
-                  {s.sentences.map((_, i) => (
-                    <button
-                      key={i}
-                      ref={(el) => {
-                        s.sentenceRefs.current[i] = el;
-                      }}
-                      onClick={() => s.setActiveSentenceIdx(i)}
-                      className={clsx(
-                        "shrink-0 w-8 h-8 text-xs font-semibold rounded-lg border transition-all",
-                        i === s.activeSentenceIdx
-                          ? "bg-indigo-600 text-white border-indigo-600 shadow-sm"
-                          : " text-gray-500 border-gray-200 hover:border-indigo-400 hover:text-indigo-600",
-                      )}
-                    >
-                      {i + 1}
-                    </button>
-                  ))}
-                </div>
-                <div className="mx-1 rounded-xl border border-indigo-100 bg-indigo-50 p-4 shadow-sm">
-                  {s.activeSentenceIdx < 0 ? (
-                    <p className="text-center text-sm text-gray-500">
-                      Select a sentence above.
-                    </p>
-                  ) : (
-                    <div>
-                      <p className="text-[10px] uppercase tracking-[0.18em] text-indigo-600 font-semibold">
-                        Sentence {s.activeSentenceIdx + 1}
-                      </p>
-                      <p className="mt-3 text-sm leading-7 text-indigo-900">
-                        {s.sentences[s.activeSentenceIdx].text}
-                      </p>
-                    </div>
-                  )}
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-
-        {/* ── Practice section ── */}
-        <div
-          className="flex flex-col"
-          style={{ flex: "2 1 0", minHeight: 0, overflow: "hidden" }}
-        >
-          <div className="flex items-center justify-between px-4 py-2 border-b border-gray-100 shrink-0">
-            <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide flex items-center gap-1.5">
-              <Mic size={11} className={s.isRecording ? "text-red-500" : ""} />{" "}
-              Practice
-            </span>
-            {s.sonioxError && (
-              <span className="text-[10px] text-red-500 truncate max-w-[200px]">
-                {s.sonioxError}
-              </span>
-            )}
-          </div>
-
-          <div className="flex-1 px-4 py-4 space-y-4 overflow-auto">
-            {s.activeSentenceIdx < 0 ? (
-              <div className="flex flex-col items-center justify-center h-full text-center text-gray-500 gap-2">
-                <p className="text-sm">Choose a sentence above</p>
-              </div>
+            {s.activeSentenceIdx >= 0 && activeSentence ? (
+              <SentenceCard
+                text={activeSentence.text}
+                sentenceIdx={s.activeSentenceIdx}
+                total={s.sentences.length}
+                practiced={s.practicedSentences.has(s.activeSentenceIdx)}
+                tts={s.tts}
+                isRecording={s.isRecording}
+                coachLoading={s.coachLoading}
+                turns={s.turns}
+                lastAudioUrl={s.lastAudioUrl}
+                onListen={s.onListenSentence}
+                onToggleRecording={s.onToggleRecording}
+                onPrev={s.onPrev}
+                onNext={s.onNext}
+              />
             ) : (
-              <div className="space-y-3">
-                {/* Nav + controls */}
-                <div className="flex gap-2">
-                  <button
-                    onClick={s.onPrev}
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-gray-700 border border-gray-200 rounded-lg  hover:bg-gray-50"
-                  >
-                    <ArrowLeft size={12} /> Prev
-                  </button>
-                  <button
-                    onClick={s.onNext}
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-gray-700 border border-gray-200 rounded-lg  hover:bg-gray-50"
-                  >
-                    Next <ArrowRight size={12} />
-                  </button>
-                </div>
-                <div className="flex gap-2">
-                  <button
-                    onClick={s.onListenSentence}
-                    disabled={s.tts.loading || s.tts.playing}
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-indigo-600 border border-indigo-200 rounded-lg bg-indigo-50 hover:bg-indigo-100 disabled:opacity-50 transition-all"
-                  >
-                    <Play size={12} /> Listen
-                  </button>
-                  <button
-                    onClick={s.onToggleRecording}
-                    className={clsx(
-                      "flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all",
-                      s.isRecording
-                        ? "bg-red-50 text-red-600 border-red-200 hover:bg-red-100"
-                        : " text-gray-700 border-gray-200 hover:bg-gray-50",
-                    )}
-                  >
-                    {s.isRecording ? (
-                      <>
-                        <Square size={11} /> Stop
-                      </>
-                    ) : (
-                      <>
-                        <Mic size={12} /> Record
-                      </>
-                    )}
-                  </button>
-                  <button
-                    onClick={s.tts.stop}
-                    disabled={!s.tts.playing}
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-red-600 border border-red-200 rounded-lg bg-red-50 hover:bg-red-100 disabled:opacity-50 transition-all"
-                    title="Stop speaking"
-                  >
-                    <Square size={12} /> Stop Speaking
-                  </button>
-                </div>
-
-                {s.lastAudioUrl && <AudioReplay url={s.lastAudioUrl} />}
-
-                {/* Transcripts / feedback */}
-                {s.turns
-                  .filter((t) => t.sentenceIdx === s.activeSentenceIdx)
-                  .slice(-3)
-                  .map((turn) => (
-                    <div
-                      key={turn.id}
-                      className="rounded-xl border border-gray-200  p-3 space-y-1.5"
-                    >
-                      <p className="text-xs text-gray-500 italic">
-                        "{turn.text}"
-                      </p>
-                      {turn.feedback && (
-                        <p className="text-xs text-gray-700 leading-relaxed">
-                          {turn.feedback}
-                        </p>
-                      )}
-                      {turn.review?.score !== undefined && (
-                        <span className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-600 bg-amber-50 px-2 py-0.5 rounded-full">
-                          <Star
-                            size={9}
-                            className="fill-amber-500 text-amber-500"
-                          />
-                          {turn.review.score}/10
-                        </span>
-                      )}
-                    </div>
-                  ))}
-                {s.coachLoading && (
-                  <p className="text-xs text-indigo-500 animate-pulse">
-                    Getting AI feedback…
-                  </p>
-                )}
+              <div className="rounded-2xl border border-gray-100 bg-gray-50 p-8 text-center">
+                <p className="text-sm text-gray-400">
+                  Select a sentence to start practicing.
+                </p>
               </div>
             )}
           </div>
-        </div>
+        )}
+
+        {s.sonioxError && (
+          <p className="text-[11px] text-red-500">{s.sonioxError}</p>
+        )}
       </div>
-    </div>
+    </>
   );
 }
