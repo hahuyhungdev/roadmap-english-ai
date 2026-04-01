@@ -81,3 +81,27 @@ export const scriptSessions = pgTable("script_sessions", {
   sentences: jsonb("sentences").notNull(), // Sentence[] JSON
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
+
+// ─── English Sessions (Curriculum Backup) ────────────────────────────────────
+// Mirrors the content/*.md files so the curriculum is recoverable from DB
+export const englishSessions = pgTable("english_sessions", {
+  slug: varchar("slug", { length: 100 }).primaryKey(), // e.g. "session-01"
+  sessionNumber: integer("session_number").notNull(),
+  title: varchar("title", { length: 500 }).notNull(),
+  topic: varchar("topic", { length: 500 }).notNull(),
+  phase: varchar("phase", { length: 200 }).notNull(),
+  level: varchar("level", { length: 50 }),
+  description: text("description"),
+  contentMd: text("content_md").notNull(), // full markdown body (without frontmatter)
+  syncedAt: timestamp("synced_at").defaultNow().notNull(),
+});
+
+// ─── Lesson Progress ──────────────────────────────────────────────────────────
+// Tracks which sessions the user has marked as done.
+// Single-user personal app: no user_id needed.
+export const lessonProgress = pgTable("lesson_progress", {
+  sessionSlug: varchar("session_slug", { length: 100 }).primaryKey(),
+  done: text("done").notNull().default("false"), // "true" | "false" (avoids boolean DDL quirks)
+  doneAt: timestamp("done_at"),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});

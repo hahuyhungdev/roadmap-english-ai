@@ -15,6 +15,13 @@
       "when": 1775019947465,
       "tag": "0001_overjoyed_giant_man",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1775042825477,
+      "tag": "0002_english_lessons",
+      "breakpoints": true
     }
   ]
 }

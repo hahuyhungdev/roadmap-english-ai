@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect } from "react";
 import { ChevronRight, CheckCircle2, BookOpen } from "lucide-react";
 import { useProgressStore } from "@/store/useProgressStore";
 import type { PhraseGroup } from "@/lib/sessions.server";
@@ -10,7 +11,12 @@ export default function SessionHubClient({
 }: {
   phrases: PhraseGroup[];
 }) {
-  const { completedSessions } = useProgressStore();
+  const { completedSessions, syncFromDB } = useProgressStore();
+
+  // Sync progress from DB once on mount
+  useEffect(() => {
+    void syncFromDB();
+  }, [syncFromDB]);
 
   const totalLessons = phrases.reduce((sum, p) => sum + p.sessions.length, 0);
   const doneLessons = phrases.reduce(
