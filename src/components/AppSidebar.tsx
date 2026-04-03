@@ -45,7 +45,7 @@ export default function AppSidebar() {
     <aside
       className={clsx(
         "h-screen fixed left-0 top-0 z-40 border-r border-gray-200/70 bg-white/90 backdrop-blur-sm py-5 transition-all shadow-xs",
-        collapsed ? "w-20 px-2" : "w-64 px-3",
+        collapsed ? "w-14" : "w-50",
       )}
     >
       <div className="px-2 mb-4 flex items-start justify-between gap-2">

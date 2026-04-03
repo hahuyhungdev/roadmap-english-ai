@@ -16,7 +16,10 @@ function getErrorText(err: unknown): string {
 
 function isMissingShadowingSessionsTableError(err: unknown): boolean {
   const text = getErrorText(err).toLowerCase();
+  const isWrappedShadowingQueryError =
+    text.includes("failed query:") && text.includes("shadowing_sessions");
   return (
+    isWrappedShadowingQueryError ||
     text.includes('relation "shadowing_sessions" does not exist') ||
     (text.includes("shadowing_sessions") && text.includes("does not exist"))
   );

@@ -1,16 +1,14 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import type { PhraseGroup } from "@/lib/sessions.server";
+import { useProgressStore } from "@/store/useProgressStore";
+import type { Session } from "@/types";
+import clsx from "clsx";
+import { CheckCircle2, ChevronLeft, Circle } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { CheckCircle2, Circle, ChevronLeft, ChevronRight } from "lucide-react";
-import clsx from "clsx";
-import { useProgressStore } from "@/store/useProgressStore";
-import LessonAssistant from "./LessonAssistant";
-import PracticeCoach from "./PracticeCoach";
-import type { Session } from "@/types";
-import type { PhraseGroup } from "@/lib/sessions.server";
 
 export default function SessionDetailClient({
   session,
@@ -19,13 +17,15 @@ export default function SessionDetailClient({
   session: Session;
   phase: PhraseGroup;
 }) {
-  const router = useRouter();
-  const { isCompleted, toggleCompleted } = useProgressStore();
+  const { completedSessions, toggleCompleted, syncFromDB } = useProgressStore();
+  const [mounted, setMounted] = useState(false);
 
-  const completed = isCompleted(session.id);
-  const idx = phase.sessions.findIndex((s) => s.id === session.id);
-  const prev = idx > 0 ? phase.sessions[idx - 1] : undefined;
-  const next = idx >= 0 ? phase.sessions[idx + 1] : undefined;
+  useEffect(() => {
+    setMounted(true);
+    void syncFromDB();
+  }, [syncFromDB]);
+
+  const completed = mounted && completedSessions.includes(session.id);
 
   return (
     <div className="max-w-6xl mx-auto overflow-x-scroll h-[calc(100vh-10rem)]">
