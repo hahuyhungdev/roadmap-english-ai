@@ -4,13 +4,14 @@ import {
   BarChart3,
   Clock3,
   Gauge,
+  Languages,
   FileText,
   Loader2,
   Mic,
   Square,
 } from "lucide-react";
 import clsx from "clsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useYouTubeShadowing } from "./useYouTubeShadowing";
 import { VideoPanel } from "../shared/VideoPanel";
 import { AudioReplay } from "../shared/AudioReplay";
@@ -32,6 +33,15 @@ interface Props {
   onScriptTextChange?: (scriptText: string) => void;
 }
 
+function extractVietnameseMap(sentences: Sentence[]): Record<number, string> {
+  const result: Record<number, string> = {};
+  sentences.forEach((sentence, idx) => {
+    const viText = sentence.viText?.trim();
+    if (viText) result[idx] = viText;
+  });
+  return result;
+}
+
 export default function YouTubeShadowingClient(props: Props) {
   const s = useYouTubeShadowing({
     sessionId: props.sessionId,
@@ -45,11 +55,26 @@ export default function YouTubeShadowingClient(props: Props) {
   });
   const [retimePace, setRetimePace] = useState<SentencePacePreset>("balanced");
   const [retiming, setRetiming] = useState(false);
+  const [translatingVi, setTranslatingVi] = useState(false);
+  const [showVietnamese, setShowVietnamese] = useState(false);
+  const [viByIdx, setViByIdx] = useState<Record<number, string>>(() =>
+    extractVietnameseMap(props.initialSentences ?? []),
+  );
+  const [translateError, setTranslateError] = useState("");
   const busy = s.improvingTranscript;
+  const translatedCount = Object.keys(viByIdx).length;
+  const hasFullTranslation =
+    s.sentences.length > 0 && translatedCount >= s.sentences.length;
   const progressPct =
     s.sentences.length > 0 && s.activeSentenceIdx >= 0
       ? Math.round(((s.activeSentenceIdx + 1) / s.sentences.length) * 100)
       : 0;
+
+  useEffect(() => {
+    const persistedMap = extractVietnameseMap(s.sentences);
+    if (!Object.keys(persistedMap).length) return;
+    setViByIdx((prev) => ({ ...persistedMap, ...prev }));
+  }, [s.sentences]);
 
   function handleRetiming() {
     if (!s.sentences.length || retiming) return;
@@ -68,6 +93,78 @@ export default function YouTubeShadowingClient(props: Props) {
       }
     } finally {
       setRetiming(false);
+    }
+  }
+
+  async function handleTranslateToVietnamese() {
+    if (!s.sentences.length || translatingVi) return;
+    setTranslatingVi(true);
+    setTranslateError("");
+    try {
+      const MAX_SENTENCES_PER_BATCH = 80;
+      const MAX_CHARS_PER_BATCH = 7000;
+
+      const batches: { startIdx: number; items: string[] }[] = [];
+      let current: string[] = [];
+      let currentChars = 0;
+      let batchStart = 0;
+
+      s.sentences.forEach((sentence, idx) => {
+        const text = sentence.text;
+        const nextChars = currentChars + text.length;
+        const shouldSplit =
+          current.length >= MAX_SENTENCES_PER_BATCH ||
+          (current.length > 0 && nextChars > MAX_CHARS_PER_BATCH);
+
+        if (shouldSplit) {
+          batches.push({ startIdx: batchStart, items: current });
+          current = [text];
+          currentChars = text.length;
+          batchStart = idx;
+          return;
+        }
+
+        if (current.length === 0) batchStart = idx;
+        current.push(text);
+        currentChars = nextChars;
+      });
+
+      if (current.length > 0) {
+        batches.push({ startIdx: batchStart, items: current });
+      }
+
+      const next: Record<number, string> = {};
+
+      for (const batch of batches) {
+        const res = await fetch("/api/shadowing/youtube/translate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            sentences: batch.items,
+            targetLanguage: "vi",
+          }),
+        });
+        const json = await res.json().catch(() => null);
+        if (!res.ok || !Array.isArray(json?.translatedSentences)) {
+          throw new Error(json?.error ?? "Translation failed");
+        }
+
+        for (const item of json.translatedSentences as Array<any>) {
+          const localIdx = Number(item?.index);
+          const globalIdx = batch.startIdx + localIdx;
+          const vi = String(item?.vi ?? "").trim();
+          if (Number.isFinite(globalIdx) && vi) next[globalIdx] = vi;
+        }
+      }
+
+      const merged = { ...viByIdx, ...next };
+      setViByIdx(merged);
+      s.applyVietnameseTranslations(merged);
+      setShowVietnamese(true);
+    } catch (e: any) {
+      setTranslateError(String(e?.message ?? e));
+    } finally {
+      setTranslatingVi(false);
     }
   }
 
@@ -157,6 +254,30 @@ export default function YouTubeShadowingClient(props: Props) {
                     )}
                     Re-timing
                   </button>
+                  {!hasFullTranslation && (
+                    <button
+                      onClick={handleTranslateToVietnamese}
+                      disabled={translatingVi || !s.sentences.length}
+                      className="flex items-center gap-1 px-2.5 py-1 text-[11px] font-semibold text-emerald-700 border border-emerald-200 rounded-lg bg-emerald-50 hover:bg-emerald-100 disabled:opacity-40 transition-colors"
+                      title="Translate EN transcript to Vietnamese"
+                    >
+                      {translatingVi ? (
+                        <Loader2 size={11} className="animate-spin" />
+                      ) : (
+                        <Languages size={11} />
+                      )}
+                      Translate VI
+                    </button>
+                  )}
+                  {!!Object.keys(viByIdx).length && (
+                    <button
+                      onClick={() => setShowVietnamese((v) => !v)}
+                      className="px-2.5 py-1 text-[11px] font-semibold text-gray-600 border border-gray-200 rounded-lg bg-white hover:bg-gray-50 transition-colors"
+                      title="Toggle Vietnamese line"
+                    >
+                      {showVietnamese ? "Hide VI" : "Show VI"}
+                    </button>
+                  )}
                 </div>
               )}
             </div>
@@ -194,11 +315,22 @@ export default function YouTubeShadowingClient(props: Props) {
                     <p className="mt-1 text-sm text-gray-800 leading-relaxed">
                       {sentence.text}
                     </p>
+                    {showVietnamese && viByIdx[i] && (
+                      <p className="mt-1 text-[12px] text-emerald-700 leading-relaxed">
+                        {viByIdx[i]}
+                      </p>
+                    )}
                   </button>
                 ))}
               </div>
             )}
           </div>
+
+          {translateError && (
+            <div className="mx-3 mb-3 px-3 py-2 bg-red-50 border border-red-100 rounded-xl text-xs text-red-600">
+              {translateError}
+            </div>
+          )}
         </div>
 
         {/* Right: current sentence + actions */}
@@ -214,6 +346,11 @@ export default function YouTubeShadowingClient(props: Props) {
                   <p className="mt-1.5 text-lg leading-relaxed text-indigo-900 font-medium">
                     {s.sentences[s.activeSentenceIdx]?.text}
                   </p>
+                  {showVietnamese && viByIdx[s.activeSentenceIdx] && (
+                    <p className="mt-2 text-sm leading-relaxed text-emerald-700">
+                      {viByIdx[s.activeSentenceIdx]}
+                    </p>
+                  )}
                 </div>
 
                 <button

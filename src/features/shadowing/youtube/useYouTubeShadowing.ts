@@ -181,6 +181,24 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     activeSentenceIdxRef.current = -1;
   }
 
+  function applyVietnameseTranslations(viByIdx: Record<number, string>) {
+    if (!sentences.length) return;
+
+    let changed = false;
+    const next = sentences.map((sentence, idx) => {
+      const viText = viByIdx[idx]?.trim();
+      if (!viText || viText === sentence.viText) return sentence;
+      changed = true;
+      return { ...sentence, viText };
+    });
+
+    if (!changed) return;
+
+    setSentences(next);
+    optsRef.current?.onSentencesChange?.(next);
+    optsRef.current?.onScriptTextChange?.(next.map((s) => s.text).join("\n"));
+  }
+
   function onToggleRecording() {
     if (isRecording) {
       mediaRecorderRef.current?.stop();
@@ -237,6 +255,7 @@ export function useYouTubeShadowing(opts?: SessionOpts) {
     handleImproveWithAI,
     goToSentence,
     replaceSentences,
+    applyVietnameseTranslations,
     onToggleRecording,
   };
 }

@@ -26,7 +26,12 @@ export type ShadowTurn = {
   timestamp: number;
 };
 
-export type Sentence = { text: string; startMs: number; endMs: number };
+export type Sentence = {
+  text: string;
+  startMs: number;
+  endMs: number;
+  viText?: string;
+};
 
 export type TTSProvider = "edge" | "google";
 
