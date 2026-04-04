@@ -9,6 +9,8 @@ import { CheckCircle2, ChevronLeft, Circle } from "lucide-react";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import LessonAssistant from "./LessonAssistant";
+import PracticeCoach from "./PracticeCoach";
 
 export default function SessionDetailClient({
   session,
@@ -103,6 +105,15 @@ export default function SessionDetailClient({
           {session.content}
         </ReactMarkdown>
       </article>
+
+      <LessonAssistant
+        lessonTitle={session.meta.title}
+        lessonContent={session.content}
+      />
+      <PracticeCoach
+        lessonTitle={session.meta.title}
+        lessonContent={session.content}
+      />
     </div>
   );
 }

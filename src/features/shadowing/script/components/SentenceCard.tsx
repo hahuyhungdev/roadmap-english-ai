@@ -18,34 +18,6 @@ import type { useTTSSettings } from "../../shared/useTTSSettings";
 
 type TTS = ReturnType<typeof useTTSSettings>;
 
-// ─── Word highlight helper ────────────────────────────────────────────────────
-// Splits `text` around the word at `charIndex` for karaoke-style highlight.
-// Falls back to plain text when not speaking (charIndex < 0).
-function SpeakingText({
-  text,
-  charIndex,
-}: {
-  text: string;
-  charIndex: number;
-}) {
-  if (charIndex < 0 || charIndex >= text.length) {
-    return <span className="text-gray-900">{text}</span>;
-  }
-  // Find end of the current word
-  const after = text.slice(charIndex);
-  const wordEnd = after.search(/\s/);
-  const end = charIndex + (wordEnd === -1 ? after.length : wordEnd);
-
-  return (
-    <>
-      <span className="text-gray-400">{text.slice(0, charIndex)}</span>
-      <span className="bg-indigo-100 text-indigo-900 rounded-sm px-0.5">
-        {text.slice(charIndex, end)}
-      </span>
-      <span className="text-gray-900">{text.slice(end)}</span>
-    </>
-  );
-}
 
 interface Props {
   text: string;
@@ -165,8 +137,8 @@ export function SentenceCard({
             placeholder="Edit this sentence"
           />
         ) : (
-          <p className="text-lg leading-relaxed font-medium tracking-wide mt-1">
-            <SpeakingText text={text} charIndex={tts.speakingCharIndex} />
+          <p className="text-lg leading-relaxed font-medium tracking-wide mt-1 text-gray-900">
+            {text}
           </p>
         )}
       </div>

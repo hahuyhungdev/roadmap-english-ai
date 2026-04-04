@@ -94,8 +94,6 @@ function speakChunk(
   rate: number,
   lang: string,
   signal?: AbortSignal,
-  onBoundary?: (absCharIndex: number) => void,
-  chunkOffset = 0,
 ): Promise<void> {
   return new Promise((resolve, reject) => {
     if (signal?.aborted) {
@@ -106,11 +104,6 @@ function speakChunk(
     utterance.voice = voice;
     utterance.lang = lang;
     utterance.rate = rate;
-
-    // Word-boundary tracking for text highlighting
-    utterance.onboundary = (e) => {
-      if (e.name === "word") onBoundary?.(chunkOffset + e.charIndex);
-    };
 
     // Keep-alive only for long utterances — the pause/resume hack on short
     // sentences causes micro-stutters and is completely unnecessary.
@@ -130,7 +123,6 @@ function speakChunk(
         clearInterval(keepAliveId);
         keepAliveId = null;
       }
-      utterance.onboundary = null;
     };
 
     utterance.onend = () => {
@@ -184,7 +176,7 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   // Index of the character currently being spoken (-1 = not speaking).
   // Populated by SpeechSynthesisUtterance.onboundary for word highlight.
-  const [speakingCharIndex, setSpeakingCharIndex] = useState(-1);
+
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const blobUrlRef = useRef<string | null>(null);
@@ -265,7 +257,6 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
       URL.revokeObjectURL(blobUrlRef.current);
       blobUrlRef.current = null;
     }
-    setSpeakingCharIndex(-1);
     setStatus("idle");
   }, []);
 
@@ -301,7 +292,6 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
 
           if (!voice || speakAc.signal.aborted) {
             setStatus("idle");
-            setSpeakingCharIndex(-1);
             if (!voice)
               console.warn(
                 "[useTTSSettings] No voice found for",
@@ -312,7 +302,6 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
           }
           setStatus("playing");
           const chunks = chunkText(trimmed, 250);
-          let charOffset = 0;
           for (const chunk of chunks) {
             if (speakAc.signal.aborted) break;
             await speakChunk(
@@ -321,13 +310,9 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
               speedRef.current,
               lang,
               speakAc.signal,
-              (idx) => setSpeakingCharIndex(idx),
-              charOffset,
             );
-            charOffset += chunk.length + 1; // +1 for the space between chunks
           }
           if (!speakAc.signal.aborted) {
-            setSpeakingCharIndex(-1);
             setStatus("idle");
             onEnd?.();
           }
@@ -350,17 +335,14 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
             setStatus("playing");
             await playBase64Audio(
               cachedBase64,
-              trimmed,
               blobUrlRef,
               audioRef,
               () => {
                 if (!speakAc.signal.aborted) {
-                  setSpeakingCharIndex(-1);
                   setStatus("idle");
                   onEnd?.();
                 }
               },
-              (idx) => setSpeakingCharIndex(idx),
             );
             return;
           }
@@ -398,17 +380,14 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
           setStatus("playing");
           await playBase64Audio(
             data.audioContent,
-            trimmed,
             blobUrlRef,
             audioRef,
             () => {
               if (!speakAc.signal.aborted) {
-                setSpeakingCharIndex(-1);
                 setStatus("idle");
                 onEnd?.();
               }
             },
-            (idx) => setSpeakingCharIndex(idx),
           );
         }
       } catch (err: any) {
@@ -478,7 +457,6 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
     status,
     playing: status === "playing",
     loading: status === "loading",
-    speakingCharIndex,
     setProvider,
     setAccent,
     setSpeed,
@@ -495,11 +473,9 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
 // interface as Edge TTS `onboundary`, so the UI can use one highlight path.
 function playBase64Audio(
   base64: string,
-  text: string,
   blobUrlRef: React.MutableRefObject<string | null>,
   audioRef: React.MutableRefObject<HTMLAudioElement | null>,
   onDone: () => void,
-  onBoundary?: (charIndex: number) => void,
 ): Promise<void> {
   const binaryStr = atob(base64);
   const bytes = new Uint8Array(binaryStr.length);
@@ -515,46 +491,11 @@ function playBase64Audio(
   const audio = new Audio(url);
   audioRef.current = audio;
 
-  // Build word map: [{charIndex, word}] for time-based highlight.
-  // We divide audio duration evenly across words — crude but zero-cost
-  // and visually effective for short practice sentences.
-  type WordEntry = { charIndex: number };
-  let wordMap: WordEntry[] = [];
-  let lastWordIdx = -1;
-
-  if (onBoundary && text) {
-    // Extract char offsets of each word
-    const re = /\S+/g;
-    let m: RegExpExecArray | null;
-    while ((m = re.exec(text)) !== null) {
-      wordMap.push({ charIndex: m.index });
-    }
-  }
-
   return new Promise<void>((resolve, reject) => {
     const cleanup = () => {
       audio.onended = null;
       audio.onerror = null;
-      audio.ontimeupdate = null;
     };
-
-    // Drive word highlight via timeupdate
-    if (onBoundary && wordMap.length > 0) {
-      audio.ontimeupdate = () => {
-        const dur = audio.duration;
-        if (!dur || !isFinite(dur)) return;
-        // Which word should be active at currentTime?
-        const fraction = audio.currentTime / dur;
-        const idx = Math.min(
-          Math.floor(fraction * wordMap.length),
-          wordMap.length - 1,
-        );
-        if (idx !== lastWordIdx) {
-          lastWordIdx = idx;
-          onBoundary(wordMap[idx].charIndex);
-        }
-      };
-    }
 
     audio.onended = () => {
       cleanup();

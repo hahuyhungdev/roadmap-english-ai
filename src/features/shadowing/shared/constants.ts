@@ -57,9 +57,9 @@ export const TTS_ACCENTS = {
       label: "Fenrir — Authoritative, Strong",
     },
     { value: "en-US-Chirp3-HD-Orus", label: "Orus — Neutral, Clear" },
-    // Fallback: Neural2 voices (older, lower quality)
-    { value: "en-US-Neural2-J", label: "Neural2 — Male (Legacy)" },
-    { value: "en-US-Neural2-C", label: "Neural2 — Female (Legacy)" },
+    // Fallback: Neural2 voices 
+    { value: "en-US-Neural2-F", label: "Neural2 — Female (Best)" },
+    { value: "en-US-Neural2-J", label: "Neural2 — Male" },
   ],
 };
 
