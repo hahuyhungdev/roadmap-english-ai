@@ -8,6 +8,7 @@ import {
   type FormEvent,
   type KeyboardEvent,
 } from "react";
+import { Textarea } from "@mantine/core";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { AiChatMessage, AiResponse } from "@/types/ai";
@@ -284,18 +285,25 @@ export default function LessonAssistant({
         className="shrink-0 px-3 py-3 border-t border-gray-100 "
       >
         <div className="flex items-end gap-2">
-          <textarea
+          <Textarea
             ref={textareaRef}
             value={input}
             onChange={(e) => {
-              setInput(e.target.value);
+              setInput(e.currentTarget.value);
               adjustTextareaHeight();
             }}
             onKeyDown={handleKeyDown}
             onInput={adjustTextareaHeight}
             placeholder={PLACEHOLDER[mode]}
             rows={1}
-            className="flex-1 border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-800 outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 resize-none transition-all placeholder:text-gray-500"
+            autosize
+            minRows={1}
+            maxRows={7}
+            className="flex-1"
+            classNames={{
+              input:
+                "border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-800 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 resize-none transition-all placeholder:text-gray-500",
+            }}
             style={{ maxHeight: "7rem" }}
           />
           <button

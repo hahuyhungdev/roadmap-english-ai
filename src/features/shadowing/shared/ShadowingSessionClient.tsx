@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Loader2, Pencil, Check } from "lucide-react";
+import { TextInput } from "@mantine/core";
 import YouTubeShadowingClient from "../youtube/YouTubeShadowingClient";
 import ScriptShadowingClient from "../script/ScriptShadowingClient";
 
@@ -162,9 +163,9 @@ export function ShadowingSessionClient({ sessionId, modePath }: Props) {
 
         {editingTitle ? (
           <div className="flex items-center gap-2 flex-1">
-            <input
+            <TextInput
               value={titleDraft}
-              onChange={(e) => setTitleDraft(e.target.value)}
+              onChange={(e) => setTitleDraft(e.currentTarget.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter") handleSaveTitle();
                 if (e.key === "Escape") {
@@ -173,7 +174,11 @@ export function ShadowingSessionClient({ sessionId, modePath }: Props) {
                 }
               }}
               autoFocus
-              className="flex-1 text-lg font-semibold text-gray-900 px-2 py-1 border border-indigo-300 rounded-lg outline-none"
+              className="flex-1"
+              classNames={{
+                input:
+                  "text-lg font-semibold text-gray-900 border border-indigo-300 rounded-lg",
+              }}
             />
             <button
               onClick={handleSaveTitle}

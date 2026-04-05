@@ -1,6 +1,6 @@
 "use client";
 
-import { Progress, Group } from "@mantine/core";
+import { Progress, Group, TextInput, Button } from "@mantine/core";
 import { useState, type KeyboardEvent } from "react";
 
 interface Props {
@@ -38,22 +38,26 @@ export function SessionProgress({ total, current, onJump }: Props) {
           </span>
 
           <div className="flex items-center gap-1">
-            <input
+            <TextInput
               type="number"
               min={1}
               max={total}
               value={jumpValue}
-              onChange={(e) => setJumpValue(e.target.value)}
+              onChange={(e) => setJumpValue(e.currentTarget.value)}
               onKeyDown={handleKey}
               placeholder="#"
-              className="w-12 px-1.5 py-0.5 text-xs rounded-lg border border-gray-200 focus:border-indigo-400 focus:outline-none text-center"
+              size="xs"
+              w={52}
+              styles={{ input: { textAlign: "center" } }}
             />
-            <button
+            <Button
               onClick={handleJump}
-              className="px-2 py-0.5 text-[11px] font-semibold text-indigo-600 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 rounded-lg transition-colors"
+              size="compact-xs"
+              variant="light"
+              color="indigo"
             >
               Go
-            </button>
+            </Button>
           </div>
         </Group>
       </Group>

@@ -454,17 +454,32 @@ export function useScriptShadowing(opts?: SessionOpts) {
       .map((l) => l.trim())
       .filter(Boolean);
 
-    const speakerRegex = /^(?:[-*]\s*)?([A-Za-z0-9 _'"-]{1,40}):\s*(.+)$/;
+    const speakerRegex = /^(?:[-*]\s*)?([A-Za-z][A-Za-z' -]{0,29}):\s*(.+)$/;
+    const nonSpeakerLabelRegex =
+      /^(version\s*\d+|balanced\s*answer|sample\s*answer|answer|question|q\.?|a\.?)$/i;
     const speakers: Record<string, string[]> = {};
+    let explicitSpeakerLineCount = 0;
     // First pass: explicit "Name: text" style
     for (const line of lines) {
       const m = line.match(speakerRegex);
       if (m) {
         const who = m[1].trim();
         const text = m[2].trim();
+        if (nonSpeakerLabelRegex.test(who)) continue;
+        explicitSpeakerLineCount++;
         speakers[who] = speakers[who] || [];
         speakers[who].push(text);
       }
+    }
+
+    // Only treat as real speaker dialogue when it clearly looks like one.
+    // This avoids dropping content for normal notes that contain labels like
+    // "Version 1:" or "Balanced Answer:".
+    const explicitSpeakerNames = Object.keys(speakers);
+    const looksLikeDialogue =
+      explicitSpeakerNames.length >= 2 && explicitSpeakerLineCount >= 4;
+    if (!looksLikeDialogue) {
+      for (const key of explicitSpeakerNames) delete speakers[key];
     }
 
     // If no explicit speaker prefixes, detect blockquote-style dialogues

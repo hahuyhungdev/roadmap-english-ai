@@ -3,15 +3,24 @@ import { db } from "@/lib/db";
 import { lessonProgress } from "@/lib/schema";
 import { eq } from "drizzle-orm";
 
+function isDoneValue(value: unknown): boolean {
+  return value === true || value === "true" || value === 1 || value === "1";
+}
+
 /**
  * GET /api/progress
  * Returns slugs of all sessions marked done: { done: string[] }
  */
 export async function GET() {
   try {
-    const rows = await db.select().from(lessonProgress);
+    const rows = await db
+      .select({
+        sessionSlug: lessonProgress.sessionSlug,
+        done: lessonProgress.done,
+      })
+      .from(lessonProgress);
     const done = rows
-      .filter((r) => r.done === "true")
+      .filter((r) => isDoneValue(r.done))
       .map((r) => r.sessionSlug);
     return NextResponse.json({ done });
   } catch (err) {
@@ -36,26 +45,22 @@ export async function POST(req: Request) {
     }
 
     const existing = await db
-      .select()
+      .select({ done: lessonProgress.done })
       .from(lessonProgress)
       .where(eq(lessonProgress.sessionSlug, sessionSlug));
 
-    const newDone = existing[0]?.done !== "true";
+    const newDone = !isDoneValue(existing[0]?.done);
 
     await db
       .insert(lessonProgress)
       .values({
         sessionSlug,
         done: newDone ? "true" : "false",
-        doneAt: newDone ? new Date() : null,
-        updatedAt: new Date(),
       })
       .onConflictDoUpdate({
         target: lessonProgress.sessionSlug,
         set: {
           done: newDone ? "true" : "false",
-          doneAt: newDone ? new Date() : null,
-          updatedAt: new Date(),
         },
       });
 

@@ -12,7 +12,7 @@ import {
   X,
   Volume2,
 } from "lucide-react";
-import { ActionIcon, Group, Loader, Text, Tooltip } from "@mantine/core";
+import { ActionIcon, Group, Loader, Text, Tooltip, Textarea } from "@mantine/core";
 import { AudioReplay } from "../../shared/AudioReplay";
 import type { useTTSSettings } from "../../shared/useTTSSettings";
 
@@ -129,12 +129,18 @@ export function SentenceCard({
           )}
         </Group>
         {isEditing ? (
-          <textarea
+          <Textarea
             value={draftText}
-            onChange={(e) => setDraftText(e.target.value)}
+            onChange={(e) => setDraftText(e.currentTarget.value)}
             onKeyDown={handleEditorKey}
-            className="mt-1 w-full min-h-[88px] rounded-xl border border-indigo-200 bg-white px-3 py-2 text-base leading-relaxed font-medium tracking-wide text-gray-900 focus:border-indigo-400 focus:outline-none"
             placeholder="Edit this sentence"
+            autosize
+            minRows={3}
+            className="mt-1"
+            classNames={{
+              input:
+                "w-full rounded-xl border border-indigo-200 bg-white px-3 py-2 text-base leading-relaxed font-medium tracking-wide text-gray-900 focus:border-indigo-400 focus:outline-none",
+            }}
           />
         ) : (
           <p className="text-lg leading-relaxed font-medium tracking-wide mt-1 text-gray-900">

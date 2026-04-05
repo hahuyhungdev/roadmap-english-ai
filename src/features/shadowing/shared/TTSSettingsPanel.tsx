@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Settings2 } from "lucide-react";
 import clsx from "clsx";
+import { Select, Checkbox, NumberInput } from "@mantine/core";
 import type { TTSProvider } from "../shared/types";
 import { TTS_SPEEDS, EDGE_ACCENTS, GOOGLE_ACCENTS } from "../shared/constants";
 
@@ -119,19 +120,18 @@ export function TTSSettingsPanel({
             <label className="text-[10px] text-gray-500 block mb-1">
               Accent
             </label>
-            <select
+            <Select
               value={accent}
-              onChange={(e) => onAccentChange(e.target.value)}
-              className="w-full px-2 py-1.5 text-xs border border-gray-200 rounded-lg outline-none focus:border-indigo-400 "
-            >
-              {accents.map(
-                (a: { value: string; label: string }, idx: number) => (
-                  <option key={a.value + "-" + idx} value={a.value}>
-                    {a.label}
-                  </option>
-                ),
-              )}
-            </select>
+              onChange={(v) => {
+                if (v) onAccentChange(v);
+              }}
+              data={accents.map((a: { value: string; label: string }) => ({
+                value: a.value,
+                label: a.label,
+              }))}
+              size="xs"
+              radius="md"
+            />
           </div>
 
           {/* Speed */}
@@ -164,29 +164,23 @@ export function TTSSettingsPanel({
                 Playback
               </p>
               <div className="space-y-2">
-                <label className="flex items-center gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={autoPronounceSentence}
-                    onChange={(e) =>
-                      onAutoPronounceSentenceChange(e.target.checked)
-                    }
-                    className="w-3.5 h-3.5 rounded border-gray-400 accent-indigo-600"
-                  />
-                  <span className="text-xs text-gray-600">Auto-pronounce</span>
-                </label>
+                <Checkbox
+                  checked={Boolean(autoPronounceSentence)}
+                  onChange={(e) =>
+                    onAutoPronounceSentenceChange(e.currentTarget.checked)
+                  }
+                  label={<span className="text-xs text-gray-600">Auto-pronounce</span>}
+                  size="xs"
+                  color="indigo"
+                />
                 {onLoopSentenceChange !== undefined && (
-                  <label className="flex items-center gap-2 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={loopSentence}
-                      onChange={(e) => onLoopSentenceChange(e.target.checked)}
-                      className="w-3.5 h-3.5 rounded border-gray-400 accent-indigo-600"
-                    />
-                    <span className="text-xs text-gray-600">
-                      Loop 3× (3s apart)
-                    </span>
-                  </label>
+                  <Checkbox
+                    checked={Boolean(loopSentence)}
+                    onChange={(e) => onLoopSentenceChange(e.currentTarget.checked)}
+                    label={<span className="text-xs text-gray-600">Loop 3× (3s apart)</span>}
+                    size="xs"
+                    color="indigo"
+                  />
                 )}
               </div>
             </>
@@ -203,17 +197,15 @@ export function TTSSettingsPanel({
                   <label className="text-[10px] text-gray-500 block mb-1">
                     Min chars
                   </label>
-                  <input
-                    type="number"
+                  <NumberInput
+                    value={minSentenceLength ?? 20}
                     min={0}
                     max={maxSentenceLength ?? 120}
-                    value={minSentenceLength ?? 20}
-                    onChange={(e) =>
-                      onMinSentenceLengthChange(
-                        Math.max(0, Number(e.target.value)),
-                      )
+                    onChange={(value) =>
+                      onMinSentenceLengthChange(Math.max(0, Number(value) || 0))
                     }
-                    className="w-full px-2 py-1 text-xs border border-gray-200 rounded-lg outline-none focus:border-indigo-400"
+                    size="xs"
+                    hideControls
                   />
                 </div>
                 {onMaxSentenceLengthChange !== undefined && (
@@ -221,17 +213,17 @@ export function TTSSettingsPanel({
                     <label className="text-[10px] text-gray-500 block mb-1">
                       Max chars
                     </label>
-                    <input
-                      type="number"
+                    <NumberInput
+                      value={maxSentenceLength ?? 120}
                       min={minSentenceLength ?? 20}
                       max={500}
-                      value={maxSentenceLength ?? 120}
-                      onChange={(e) =>
+                      onChange={(value) =>
                         onMaxSentenceLengthChange(
-                          Math.max(1, Number(e.target.value)),
+                          Math.max(1, Number(value) || 1),
                         )
                       }
-                      className="w-full px-2 py-1 text-xs border border-gray-200 rounded-lg outline-none focus:border-indigo-400"
+                      size="xs"
+                      hideControls
                     />
                   </div>
                 )}
