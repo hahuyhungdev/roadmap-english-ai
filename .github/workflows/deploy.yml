@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -13,14 +18,23 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to VPS via SSH
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
           username: root
           key: ${{ secrets.SSH_KEY }}
+          command_timeout: 30m
           script: |
-            cd /var/www/marcus-app/roadmap-english-ai
-            git pull origin main
-            npm install
-            npm run build
-            pm2 restart roadmap-ai
+            export APP_DIR=/var/www/marcus-app/roadmap-english-ai
+            export BRANCH=main
+            export PM2_APP_NAME=roadmap-ai
+            export APP_URL=http://127.0.0.1:3000/
+
+            # Bootstrap the server on first run so deploy_vps.sh exists locally.
+            if [ ! -f "$APP_DIR/scripts/deploy_vps.sh" ]; then
+              cd "$APP_DIR"
+              git fetch origin
+              git reset --hard "origin/$BRANCH"
+            fi
+
+            bash "$APP_DIR/scripts/deploy_vps.sh"
