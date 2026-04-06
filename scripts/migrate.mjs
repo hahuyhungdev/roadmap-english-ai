@@ -1,10 +1,12 @@
 // Run this script to create the database tables
 // Usage: node scripts/migrate.mjs
 
-import { neon } from "@neondatabase/serverless";
+import pg from "pg";
 import { readFileSync, existsSync, readdirSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+
+const { Client } = pg;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
@@ -34,12 +36,13 @@ if (!DATABASE_URL) {
   process.exit(1);
 }
 
-const sql = neon(DATABASE_URL);
+const cliDatabaseUrl = DATABASE_URL.replace(/[?&]schema=public\b/, "");
+const client = new Client({ connectionString: cliDatabaseUrl });
 
 async function runWithRetry(stmt, retries = 3, delayMs = 1000) {
   for (let i = 0; i <= retries; i++) {
     try {
-      await sql.query(stmt);
+      await client.query(stmt);
       return;
     } catch (err) {
       if (err.message?.includes("already exists")) throw err;
@@ -65,6 +68,7 @@ if (migrationFiles.length === 0) {
 }
 
 async function migrate() {
+  await client.connect();
   let failed = 0;
   for (const file of migrationFiles) {
     console.log(`\n── ${file} ──`);
@@ -92,11 +96,17 @@ async function migrate() {
 
   if (failed > 0) {
     console.error(`\n❌ Migration finished with ${failed} error(s).`);
+    await client.end();
     process.exitCode = 1;
     return;
   }
 
   console.log("\n✅ Migration complete!");
+  await client.end();
 }
 
-migrate().catch(console.error);
+migrate().catch(async (err) => {
+  console.error(err);
+  await client.end().catch(() => {});
+  process.exit(1);
+});

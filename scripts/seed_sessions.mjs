@@ -5,10 +5,12 @@
  * Safe to re-run — uses INSERT ... ON CONFLICT DO UPDATE (upsert).
  */
 
-import { neon } from "@neondatabase/serverless";
+import pg from "pg";
 import { readFileSync, readdirSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+
+const { Client } = pg;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
@@ -34,7 +36,8 @@ if (!DATABASE_URL) {
   process.exit(1);
 }
 
-const sql = neon(DATABASE_URL);
+const cliDatabaseUrl = DATABASE_URL.replace(/[?&]schema=public\b/, "");
+const client = new Client({ connectionString: cliDatabaseUrl });
 
 // ── Parse frontmatter ────────────────────────────────────────────────────────
 function parseFrontmatter(raw) {
@@ -57,6 +60,7 @@ function parseFrontmatter(raw) {
 
 // ── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
+  await client.connect();
   const contentDir = resolve(root, "content");
   const files = readdirSync(contentDir)
     .filter((f) => f.endsWith(".md"))
@@ -115,15 +119,17 @@ async function main() {
   `;
 
   console.log("  Upserting all sessions in one query…");
-  await sql.query(query);
+  await client.query(query);
 
   for (const { slug, meta } of sessions) {
     console.log(`  ✅  ${slug}: ${meta.title}`);
   }
+  await client.end();
   console.log(`\n✨  Done — ${sessions.length} sessions synced to DB.`);
 }
 
 main().catch((err) => {
   console.error("❌  Seed failed:", err);
+  client.end().catch(() => {});
   process.exit(1);
 });

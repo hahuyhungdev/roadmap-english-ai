@@ -6,7 +6,7 @@ AI-powered English practice app focused on speaking, shadowing, and sentence-by-
 
 - Next.js (App Router) + React + TypeScript
 - Mantine UI + Tailwind CSS
-- Drizzle ORM + Neon Postgres
+- Drizzle ORM + PostgreSQL
 - Soniox (speech-to-text) integration via client hook
 - Google TTS + AI feedback endpoints
 
