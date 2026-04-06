@@ -1,90 +1,116 @@
 ---
 sessionNumber: 23
 title: Failure, Mistakes & Lessons Learned
-topic: Resilience & Learning from Failure
-phase: PHASE 4 — Behavioral & Culture Fit
-level: B1+ / B2
-description: Talk about a failure or mistake you made, what you learned, and how you improved afterward.
+topic: Learning from Failure
+phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
+level: B2
+description: Talk about a professional failure or mistake, what you learned, and how you improved afterward.
 ---
 
 # Session 23: Failure, Mistakes & Lessons Learned
 
-**Level:** B1+ / B2  
-**Focus:** Demonstrate maturity, accountability, and ability to learn from setbacks.
+**Level:** B2  
+**Focus:** Speaking honestly about a mistake or failure, showing self-awareness and what you learned from it.
 
 ## 1) Vocabulary & Collocations
 
-- **setback** (n) – a problem that delays or stops progress  
-  _Example:_ That bug was a major setback, but we learned from it.
+- **failure** (n) – lack of success  
+  _Example:_ We can learn a lot from failure.
 
-- **mistake** (n) – an error or wrong action  
-  _Example:_ I made a mistake by not testing thoroughly before release.
+- **mistake** (n) – something done wrongly  
+  _Example:_ Making mistakes is normal in the learning process.
 
-- **lesson learned** (n) – useful knowledge gained from an experience  
-  _Example:_ The most important lesson learned was the value of automated testing.
+- **lesson learned** (n) – useful knowledge gained from experience  
+  _Example:_ The most important lesson I learned was to communicate earlier.
 
-- **accountability** (n) – willingness to accept responsibility  
-  _Example:_ I took full accountability for the issue.
+- **self-awareness** (n) – understanding your own strengths and weaknesses  
+  _Example:_ This experience increased my self-awareness.
 
-- **resilience** (n) – the ability to recover quickly from difficulties  
-  _Example:_ This experience strengthened my resilience.
+- **improve** (v) – to become better  
+  _Example:_ After that mistake, I worked hard to improve my approach.
 
-- **root cause** (n) – the fundamental reason for a problem  
-  _Example:_ We spent time identifying the root cause of the failure.
+- **take responsibility** (v) – to accept that you are responsible for something  
+  _Example:_ I took responsibility for the delay.
 
-- **prevent recurrence** (v) – to stop something from happening again  
-  _Example:_ We implemented new processes to prevent recurrence.
+## 2) Grammar & Useful Patterns (B2)
 
-## 2) Useful Phrases & Patterns
+- **Past Simple for the event**  
+  Last year, I **made** a mistake that caused a delay in the project.
 
-- "One mistake I made was..."
-- "At first, I didn’t realize..."
-- "The root cause was..."
-- "I took ownership by..."
-- "From this experience, I learned that..."
-- "Since then, I have made sure to..."
+- **Past Perfect**  
+  I **had not communicated** the risk clearly enough, so the team was surprised.
 
-**Best Practice:** Use STAR + Reflection (what you learned + how you changed)
+- **Reflection**  
+  Looking back, I realize that…
 
-## 3) Typical Dialogues
+- **Result / Lesson**  
+  As a result, I now always…
 
-### Dialogue 1 – Full Answer (2.5–3.5 minutes)
+### Useful Sentence Patterns
+- One mistake I made was…
+- At that time, I…
+- Looking back, I understand that…
+- From this experience, I learned…
+- Since then, I have…
 
-**Interviewer:** Tell me about a time you failed or made a mistake at work.
+## 3) Collocations, Chunking & Phrasal Verbs
+
+### Strong Collocations
+- make a mistake
+- learn from failure
+- take responsibility
+- gain valuable lessons
+- turn a mistake into a learning opportunity
+- improve significantly
+- reflect on the experience
+
+### Useful Chunking & Sentence Starters
+- One of the biggest mistakes I made was…
+- At first, I thought…
+- However, I later realized…
+- The most important lesson I learned is…
+- Since then, I always…
+
+### Useful Phrasal Verbs
+- **own up to** → I owned up to my mistake quickly.
+- **learn from** → I learned a lot from that experience.
+- **work on** → I have been working on improving my communication.
+- **turn around** → We managed to turn the situation around.
+
+## 4) Typical Dialogues
+
+**Interviewer:** Tell me about a time you made a mistake at work.
 
 **You:**  
-One significant mistake I made was during a product release last year. I rushed the final testing phase because we were behind schedule. As a result, a small bug in the payment flow went live and affected several users for a few hours.
+One mistake I made was during a major release last year. I noticed a potential performance issue but I didn’t raise it early enough because I thought I could fix it quickly by myself. As a result, the issue appeared in production and affected some users for a few hours.
 
-I took full ownership of the issue. I immediately worked with the team to fix it and personally communicated with affected users. After the incident, I analyzed the root cause — I had relied too much on manual testing under time pressure.
+I took full responsibility and communicated honestly with the team and stakeholders. We fixed it and did a post-mortem review. The most important lesson I learned was the importance of raising risks early and communicating clearly. Since then, I have become much more proactive about flagging potential problems and discussing them with the team as soon as possible.
 
-From this experience, I learned the importance of building proper automated tests and never compromising on critical user flows, no matter how tight the deadline is. Since then, I have always advocated for including sufficient testing time in sprint planning. This mistake helped me become more disciplined and responsible in my work.
+## 5) Reading Text
 
-## 4) Reading Text
+Everyone makes mistakes in their career. What matters most is how you respond to them. Good professionals take responsibility, learn from their mistakes, and use the experience to improve. Employers value candidates who can talk honestly about failures and show clear growth.
 
-Interviewers ask about failure to evaluate your honesty, accountability, and growth mindset. The best answers focus less on the mistake itself and more on what you learned and how you changed your behavior afterward.
+## 6) List of Questions + Ideas
 
-## 5) List of Questions + Ideas
+### Basic Questions
+1. Can you tell me about a mistake you made at work?
+2. What happened?
+3. What did you learn from that experience?
+4. How did you handle the situation?
 
-### Common Questions
+### Deeper & Follow-up Questions
+5. How did the mistake affect the team or project?
+6. Did you take responsibility for it?
+7. What would you do differently now?
+8. How has this experience changed the way you work?
+9. Have you made similar mistakes since then?
+10. What is the most valuable lesson you’ve learned in your career?
 
-1. Tell me about a time you failed.
-2. What is the biggest mistake you’ve made at work?
-3. How do you handle failure?
-4. Describe a difficult situation and how you overcame it.
-
-### B2-Level Expanded
-
-5. What did you learn from that failure?
-6. How did the mistake affect the team or company?
-7. Have you made the same mistake again?
-8. How do you support team members when they make mistakes?
-9. What does failure mean to you?
-10. How has your attitude toward failure changed over time?
-
-### Discussion & Best Practices
-
-11. Why is it important to talk about failure in interviews?
-12. How much detail should you give about the mistake?
-13. What makes a failure answer strong?
+### Objection & Discussion Questions
+11. Is it okay to talk about failures in a job interview?
+12. Should you hide small mistakes or be completely honest?
+13. Do you think making mistakes is necessary for growth?
+14. How should managers react when someone makes a mistake?
+15. Is fear of failure holding developers back from taking risks?
 
 ---

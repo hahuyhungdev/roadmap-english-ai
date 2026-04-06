@@ -1,100 +1,116 @@
 ---
 sessionNumber: 18
 title: Technology’s Impact on Society & Ethics
-topic: Tech, Society and Ethical Issues
-phase: PHASE 3 — Discussion & Impact
-level: B1+ / B2
-description: Discuss the broader impact of technology and AI on society, including jobs, privacy, ethics, and the environment with balanced opinions.
+topic: Technology, Society and Ethical Issues
+phase: PHASE 3 — DISCUSSION & IMPACT
+level: B2
+description: Discuss the broader impact of technology and AI on society, including jobs, privacy, ethics, and the environment.
 ---
 
 # Session 18: Technology’s Impact on Society & Ethics
 
-**Level:** B1+ / B2  
-**Focus:** Share balanced, thoughtful opinions on how technology affects society and discuss important ethical issues.
+**Level:** B2  
+**Focus:** Giving balanced opinions about how technology affects society and ethical considerations.
 
-## 1) Vocabulary (Expanded & Sophisticated for B2)
+## 1) Vocabulary & Collocations
 
-- **societal impact** (n) – effect on society as a whole
-- **job displacement** (n) – loss of jobs due to technology
-- **digital divide** (n) – gap between those who have access to technology and those who don’t
-- **data privacy** (n) – protection of personal information
-- **algorithmic bias** (n) – unfair results caused by AI systems
-- **ethical dilemma** (n) – difficult moral choice
-- **social media influence** (n) – power of platforms to shape opinions
-- **environmental footprint** (n) – impact on the natural environment
-- **responsible innovation** (n) – developing technology in an ethical way
-- **digital well-being** (n) – healthy relationship with technology
+- **impact** (n) – the effect of something  
+  _Example:_ Technology has both positive and negative impacts on society.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **society** (n) – people in general  
+  _Example:_ We need to think about how technology affects society.
+
+- **privacy** (n) – the right to keep personal information private  
+  _Example:_ Data collection raises serious privacy concerns.
+
+- **ethics** (n) – moral principles that guide behavior  
+  _Example:_ Ethical issues are becoming more important in AI development.
+
+- **job displacement** (n) – when people lose jobs because of technology  
+  _Example:_ AI may cause job displacement in some industries.
+
+- **responsibility** (n) – the duty to do something correctly  
+  _Example:_ Developers have a responsibility to consider ethical implications.
+
+## 2) Grammar & Useful Patterns (B2)
+
+- **Balanced view**  
+  Technology has **both advantages and disadvantages**.
+
+- **Passive voice**  
+  Many jobs **are being replaced** by automation.
+
+- **Should / Need to** for recommendations  
+  We **need to** think carefully about the ethical side of technology.
+
+- **Contrast**  
+  **While** technology brings many benefits, it also creates new problems.
+
+### Useful Sentence Patterns
+- Technology has changed society in many ways…
+- On the positive side,…
+- However, we also have to consider…
+- I believe developers should…
+- In my opinion, the most important issue is…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
-- create job displacement
-- raise ethical concerns
-- protect data privacy
-- reduce digital divide
-- address algorithmic bias
-- promote responsible innovation
-- minimize environmental footprint
-- balance innovation and ethics
+- positive impact
+- negative effect
+- raise concerns
+- ethical issues
+- protect privacy
+- create opportunities
+- cause job displacement
+- take responsibility
 
 ### Useful Chunking & Sentence Starters
+- In today’s world,…
+- One of the biggest impacts is…
+- On the one hand,…
+- On the other hand,…
+- We should be careful about…
 
-- On the positive side, technology has…
-- However, one major concern is…
-- In my opinion, we need to…
-- This creates an ethical dilemma because…
-- While technology brings many benefits, …
-- Society needs to find a balance between…
-- I believe companies should take responsibility for…
+### Useful Phrasal Verbs
+- **bring about** → Technology has brought about many changes in society.
+- **deal with** → Society needs to deal with new ethical challenges.
+- **keep up with** → It’s hard to keep up with how fast technology is developing.
 
-### Advanced Phrasal Verbs
-
-- **bring about** → AI has brought about significant changes in the job market.
-- **deal with** → We must deal with issues of data privacy more seriously.
-- **call for** → Many experts are calling for stronger regulations on AI.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Main Discussion (3–4 minutes)
+## 4) Typical Dialogues
 
 **Teacher:** What do you think about the impact of technology on society?
 
 **You:**  
-Technology has brought many positive changes to society, such as easier access to information, improved healthcare, and greater connectivity. However, it has also created serious challenges.
+Technology has brought many positive changes to society, such as making communication easier and improving access to information. However, it also creates challenges. For example, AI and automation may cause job displacement for some people. Privacy is another big concern because companies collect a lot of personal data.
 
-One major concern is job displacement. As AI and automation become more advanced, many routine jobs may disappear. At the same time, new roles are being created, but not everyone has the skills to transition into them. This widens the digital divide.
+I believe developers and companies have a responsibility to think about ethics when building new technologies. We should aim to create technology that benefits society while minimizing negative effects. Finding the right balance is one of the most important issues today.
 
-Another important issue is data privacy and algorithmic bias. Many AI systems collect huge amounts of personal data, and there have been cases where algorithms unfairly discriminate against certain groups. I believe companies and governments need to work together to promote responsible innovation and protect users’ rights.
+## 5) Reading Text
 
-Overall, I think we should embrace technology while being mindful of its ethical implications. The key is to ensure that technological progress benefits society as a whole, not just a few companies or individuals.
+Technology has a powerful influence on society. While it brings convenience, efficiency, and new opportunities, it also raises important questions about privacy, ethics, employment, and fairness. Responsible development of technology requires careful thought about its long-term effects on people and the environment.
 
-## 4) Reading Text
+## 6) List of Questions + Ideas
 
-Modern technology, especially artificial intelligence, is reshaping society in profound ways. While it drives economic growth and improves quality of life, it also raises important ethical questions about privacy, fairness, employment, and environmental sustainability. Finding the right balance between innovation and responsibility remains one of the greatest challenges of our time.
+### Basic Questions
+1. How does technology affect society?
+2. What are some positive impacts of technology?
+3. What are some negative impacts?
+4. Why is ethics important in technology?
 
-## 5) List of Questions + Ideas
+### Deeper & Follow-up Questions
+5. How is AI affecting jobs and employment?
+6. What privacy concerns do you have about new technologies?
+7. Should developers think about ethics when building products?
+8. How can technology be made more environmentally friendly?
+9. What responsibility do tech companies have to society?
+10. How do you think technology will change society in the next 10 years?
 
-### Basic to Intermediate
+### Objection & Discussion Questions
+11. Is technology making our lives better or worse overall?
+12. Should governments control how technology companies use data?
+13. Is it possible for technology to be completely ethical?
+14. Who should be responsible for the negative effects of technology?
+15. Can technology solve social problems or does it create more?
 
-1. What are some positive impacts of technology on society?
-2. What are some negative impacts?
-3. How does AI affect jobs?
-4. Why is data privacy important?
-
-### B2-Level Expanded Questions
-
-5. What is algorithmic bias and why does it matter?
-6. How can we reduce the digital divide?
-7. Should governments regulate AI more strictly?
-8. What responsibility do tech companies have toward society?
-9. How does technology affect mental health and digital well-being?
-10. Do you think technology overall makes society better or worse?
-
-### Discussion & Critical Thinking
-
-11. Is it possible to have technological progress without ethical problems?
-12. Who should be responsible for the negative effects of technology — companies, governments, or users?
-13. How can we prepare the workforce for AI-driven job changes?
-14. Should there be limits on how much data companies can collect?
-15. What kind of future do you hope technology will create for society?
+---

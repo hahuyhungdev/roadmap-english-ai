@@ -1,90 +1,117 @@
 ---
 sessionNumber: 21
 title: Career Goals, Ambition & Why This Company
-topic: Future Plans & Company Fit
-phase: PHASE 4 — Behavioral & Culture Fit
-level: B1+ / B2
-description: Discuss your career goals, ambition, reasons for choosing the company, and what kind of environment you thrive in.
+topic: Future Goals & Company Fit
+phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
+level: B2
+description: Discuss your career goals, ambition, and why you are interested in this company.
 ---
 
 # Session 21: Career Goals, Ambition & Why This Company
 
-**Level:** B1+ / B2  
-**Focus:** Show clear ambition, realistic goals, and genuine interest in the company and role.
+**Level:** B2  
+**Focus:** Speaking clearly about your short-term and long-term career goals and explaining why you want to join the company.
 
 ## 1) Vocabulary & Collocations
 
-- **short-term goal** (n) – an objective you want to achieve soon (1–2 years)  
-  _Example:_ My short-term goal is to become a Senior Frontend Engineer.
+- **career goal** (n) – what you want to achieve in your career  
+  _Example:_ My short-term career goal is to improve my system design skills.
 
-- **long-term aspiration** (n) – a big goal or dream for the future  
-  _Example:_ My long-term aspiration is to move into a technical leadership role.
+- **ambition** (n) – a strong desire to achieve success  
+  _Example:_ I have the ambition to take on more technical leadership roles.
 
-- **career advancement** (n) – progress and promotion in your career  
-  _Example:_ I’m looking for a role that offers clear career advancement opportunities.
+- **long-term goal** (n) – what you want to achieve in the distant future  
+  _Example:_ In the long term, I aim to become a technical architect.
 
-- **company culture** (n) – the values, behaviors, and environment of a company  
-  _Example:_ I thrive in a company culture that values collaboration and innovation.
+- **company fit** (n) – how well you match with the company  
+  _Example:_ I believe there is a good company fit between my values and this role.
 
-- **growth opportunity** (n) – chance to develop and learn new skills  
-  _Example:_ This position offers excellent growth opportunities in AI integration.
+- **growth opportunity** (n) – chance to develop and advance  
+  _Example:_ This position offers excellent growth opportunities.
 
-- **meaningful contribution** (n) – a valuable and significant impact on the company  
-  _Example:_ I want to make a meaningful contribution to product development.
+- **contribute to** (v) – to give something useful to a company  
+  _Example:_ I want to contribute to building high-quality user experiences.
 
-- **work environment** (n) – the conditions and atmosphere in which you work  
-  _Example:_ I perform best in a supportive and fast-paced work environment.
+## 2) Grammar & Useful Patterns (B2)
 
-## 2) Useful Phrases & Patterns
+- **Future forms**  
+  In the next two years, I **want to / plan to** deepen my expertise in…
 
-- In the short term, I aim to...
-- In the long term, I hope to...
-- I’m particularly drawn to this company because...
-- I believe I can add value by...
-- I’m looking for an environment where...
-- This role aligns well with my career goals because...
+- **Reason clauses**  
+  I am interested in this company **because** it focuses on innovative products.
 
-## 3) Typical Dialogues
+- **Conditional**  
+  If I join this team, I **will be able to** work on more complex projects.
 
-### Dialogue 1 – Full Answer (2.5–3.5 minutes)
+- **Contrast**  
+  **While** I enjoy my current role, I am looking for new challenges.
 
-**Interviewer:** Where do you see yourself in 3–5 years? Why do you want to join our company?
+### Useful Sentence Patterns
+- My short-term goal is to…
+- In the long term, I hope to…
+- I am particularly interested in this company because…
+- I believe I can contribute by…
+- This opportunity aligns well with my…
+
+## 3) Collocations, Chunking & Phrasal Verbs
+
+### Strong Collocations
+- short-term goal
+- long-term ambition
+- career development
+- growth opportunity
+- technical leadership
+- company culture
+- contribute value
+- align with my goals
+
+### Useful Chunking & Sentence Starters
+- In the short term, I want to…
+- Looking further ahead, my goal is to…
+- I am excited about this opportunity because…
+- I believe my experience would allow me to…
+- What attracts me to this company is…
+
+### Useful Phrasal Verbs
+- **look for** → I am looking for a role with more leadership responsibilities.
+- **aim for** → I aim for a position where I can mentor others.
+- **contribute to** → I want to contribute to building better products.
+- **move towards** → I am moving towards more strategic technical roles.
+
+## 4) Typical Dialogues
+
+**Interviewer:** What are your career goals and why do you want to join us?
 
 **You:**  
-In the short term, within the next 2 years, I want to grow into a Senior Frontend Engineer role, where I can take more ownership of system architecture and mentor junior developers.
+In the short term, my goal is to strengthen my skills in system design and performance optimization while taking on more mentoring responsibilities. In the long term, I aspire to move into a technical leadership role where I can help shape the architecture of large-scale applications.
 
-In the long term, I aspire to move into a Tech Lead or Frontend Architect position, where I can influence technical decisions at a higher level while still staying close to hands-on development.
+I am interested in your company because you are working on complex, user-focused products at scale. I believe my experience in building high-performance interfaces and integrating AI features would allow me to contribute meaningfully to your team. Moreover, I admire your company culture and the emphasis on innovation, which aligns well with my own values and ambitions.
 
-I’m interested in your company because of its strong reputation for building scalable, user-focused products and its commitment to innovation. I’ve been impressed by how your team uses modern technologies and encourages cross-functional collaboration.
+## 5) Reading Text
 
-Additionally, I value the hybrid working model your company offers, as it aligns with my preference for both focused individual work and regular team interaction. I believe my frontend experience combined with my collaborative mindset would allow me to contribute meaningfully to your upcoming projects while growing together with the team.
+When interviewers ask about career goals, they want to understand your motivation and whether your ambitions fit with the company. A good answer should show that you have clear direction, realistic goals, and genuine interest in the company’s work and culture.
 
-## 4) Reading Text
+## 6) List of Questions + Ideas
 
-When answering career goals and “Why this company?”, interviewers want to see ambition, realism, and genuine research. Good answers connect your personal goals with the company’s direction and show that you’ve thought carefully about the fit.
+### Basic Questions
+1. What are your career goals?
+2. Where do you see yourself in 3–5 years?
+3. Why do you want to join our company?
+4. What are your short-term and long-term goals?
 
-## 5) List of Questions + Ideas
+### Deeper & Follow-up Questions
+5. How do your goals align with this position?
+6. What kind of role do you want to grow into?
+7. What motivates you to achieve your goals?
+8. Why are you leaving your current company?
+9. How does this company help you reach your ambitions?
+10. What do you hope to contribute to our team?
 
-### Common Questions
-
-1. Where do you see yourself in 3–5 years?
-2. Why do you want to work for us?
-3. What are your career goals?
-4. Why are you leaving your current job?
-
-### B2-Level Expanded
-
-5. What kind of work environment do you thrive in?
-6. How does this role fit into your long-term plans?
-7. What are your salary expectations?
-8. What motivates you to do your best work?
-9. How do you define success in your career?
-10. What questions do you have for us?
-
-### Discussion & Best Practices
-
-11. How specific should your goals be?
-12. How to answer salary expectations professionally?
-13. How to show enthusiasm without sounding desperate?
+### Objection & Discussion Questions
+11. Some people say it’s better not to have clear career goals. Do you agree?
+12. Is it okay to be very ambitious in a job interview?
+13. Should career goals be more about money or about learning?
+14. How honest should you be about your long-term plans?
+15. What makes a company a good fit for your career goals?
 
 ---

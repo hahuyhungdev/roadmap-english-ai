@@ -1,84 +1,120 @@
 ---
 sessionNumber: 16
-title: The Future of Software Engineering Jobs in the AI Era
-topic: AI Impact on Developer Roles & Career
-phase: PHASE 3 — Discussion & Impact
-level: B1+ / B2
-description: Discuss how AI is transforming software engineering jobs, especially frontend development, the skills needed in the future, opportunities vs risks, and your personal preparation strategy — with balanced, thoughtful B2-level opinions.
+title: Building a Personal Brand as a Developer
+topic: Personal Branding in Tech
+phase: PHASE 3 — DISCUSSION & IMPACT
+level: B2
+description: Discuss the importance of personal branding, strategies you use or consider, benefits, and challenges.
 ---
 
-# Session 16: The Future of Software Engineering Jobs in the AI Era
+# Session 16: Building a Personal Brand as a Developer
 
-**Level:** B1+ / B2  
-**Focus:** Share balanced, insightful opinions about how AI is changing the role of developers and what it means for your career.
+**Level:** B2  
+**Focus:** Speaking about why personal branding matters and how developers can build their professional image.
 
 ## 1) Vocabulary & Collocations
 
-- **AI disruption** (n) – major changes caused by artificial intelligence  
-  _Example:_ AI disruption is forcing many traditional developer roles to evolve.
+- **personal brand** (n) – the image and reputation you create for yourself professionally  
+  _Example:_ Building a strong personal brand can open many career opportunities.
 
-- **skill shift** (n) – significant change in the skills that are in demand  
-  _Example:_ There is a clear skill shift from pure coding to system design and AI integration.
+- **professional image** (n) – how others see you in your career  
+  _Example:_ Your professional image is shaped by your online presence and work.
 
-- **prompt engineering** (n) – the skill of writing effective instructions for AI tools  
-  _Example:_ Prompt engineering is becoming an important skill for frontend developers.
+- **networking** (n) – building relationships with other professionals  
+  _Example:_ Networking is an important part of personal branding.
 
-- **human oversight** (n) – human supervision and judgment over AI output  
-  _Example:_ Even with powerful AI, human oversight remains essential for quality and ethics.
+- **online presence** (n) – your visibility on the internet (LinkedIn, GitHub, blogs, etc.)  
+  _Example:_ A good online presence helps people know your expertise.
 
-- **job displacement** (n) – loss of jobs due to automation or AI  
-  _Example:_ Some routine coding tasks may face job displacement in the coming years.
+- **reputation** (n) – what people think about you  
+  _Example:_ A good reputation can lead to better job offers.
 
-- **augmentation** (n) – using AI to enhance human capabilities rather than replace them  
-  _Example:_ I see AI as a tool for augmentation, not replacement.
+- **visibility** (n) – how easily people can find and notice you  
+  _Example:_ Increasing your visibility in the tech community is beneficial.
 
-- **future-proof skills** (n) – skills that will remain valuable in the long term  
-  _Example:_ System thinking and problem-solving are future-proof skills.
+- **thought leadership** (n) – being recognized as an expert who shares knowledge  
+  _Example:_ Writing articles is one way to show thought leadership.
 
-- **adaptability** (n) – the ability to adjust to rapid changes  
-  _Example:_ Adaptability will be one of the most important qualities for engineers.
+## 2) Grammar & Useful Patterns (B2)
 
-- **orchestration** (n) – coordinating multiple AI tools and systems  
-  _Example:_ The future role may focus more on orchestration than writing every line of code.
+- **Purpose clauses**  
+  I share knowledge on LinkedIn **to build** my personal brand.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Benefit structures**  
+  Building a personal brand **can help you** get better opportunities.
+
+- **Contrast**  
+  **Although** it takes time, the benefits are worth the effort.
+
+- **Advice / Recommendation**  
+  Developers **should** focus on creating valuable content.
+
+### Useful Sentence Patterns
+- Building a personal brand is important because…
+- One way to build your brand is by…
+- The main benefit of personal branding is…
+- However, there are also some challenges…
+- In my opinion, developers should…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
+- build a personal brand
+- strengthen your reputation
+- increase visibility
+- share knowledge
+- create valuable content
+- grow your network
+- establish thought leadership
+- develop an online presence
 
-- face AI disruption
-- undergo a skill shift
-- require human oversight
-- embrace AI augmentation
-- develop future-proof skills
-- adapt to rapid changes
-- balance automation and creativity
-- maintain competitive edge
-- navigate uncertainty
-- rethink traditional roles
+### Useful Chunking & Sentence Starters
+- In today’s job market,…
+- One effective way to…
+- The advantage of building a personal brand is…
+- However, I also think that…
+- To build my brand, I plan to…
 
-### Useful Chunking & Sentence Starters (B2)
+### Useful Phrasal Verbs
+- **stand out** → A strong personal brand helps you stand out from other developers.
+- **put yourself out there** → You need to put yourself out there by sharing your work.
+- **keep in touch** → I try to keep in touch with people in the tech community.
+- **work on** → I work on my personal brand by writing technical posts.
 
-- On one hand, AI will…
-- On the other hand, …
-- I believe AI will not replace developers, but…
-- The biggest change will be a shift from…
-- In the next 3–5 years, I expect…
-- To stay relevant, developers need to…
-- From my perspective, the key is…
-- This creates both opportunities and challenges because…
+## 4) Typical Dialogues
 
-### Advanced Phrasal Verbs
-
-- **keep up with** → It’s challenging to keep up with the speed of AI development.
-- **rely on** → We should not rely too heavily on AI-generated code.
-- **adapt to** → Frontend developers must adapt to working alongside AI tools.
-- **phase out** → Some repetitive tasks may be phased out by AI.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Main Discussion (3–4 minutes)
-
-**Teacher:** How do you think AI will affect software engineering jobs in the next few years?
+**Teacher:** Do you think building a personal brand is important for developers?
 
 **You:**  
-On one hand, AI is already changing our work significantly. Tools like GitHub Copilot and advanced AI assistants can generate code very quickly, which boosts productivity and helps with repetitive tasks. This means developers can spend more time on higher-level work such
+Yes, I believe building a personal brand is becoming more important in tech. It helps you become more visible and can lead to better job opportunities, invitations to speak, or interesting projects.
+
+I am starting to build my brand by sharing what I learn on LinkedIn and GitHub. I also plan to write technical articles and give small presentations. Although it takes time and effort, I think the long-term benefits are worth it. A strong personal brand shows that you are not only a good coder but also someone who can share knowledge and contribute to the community.
+
+## 5) Reading Text
+
+In the competitive tech industry, having strong technical skills is no longer enough. Many developers now understand the value of building a personal brand. By sharing knowledge, participating in the community, and maintaining a good online presence, developers can create more opportunities and establish themselves as experts in their field.
+
+## 6) List of Questions + Ideas
+
+### Basic Questions
+1. What is personal branding?
+2. Why is personal branding important for developers?
+3. How can developers build their personal brand?
+4. Do you have a personal brand now?
+
+### Deeper & Follow-up Questions
+5. What are the benefits of having a strong personal brand?
+6. What are the challenges of building a personal brand?
+7. Which platforms do you think are best for personal branding?
+8. How much time should developers spend on personal branding?
+9. Have you ever benefited from your personal brand?
+10. What is your plan for building your personal brand in the future?
+
+### Objection & Discussion Questions
+11. Some developers say technical skills are more important than personal branding. What do you think?
+12. Is it necessary for every developer to build a personal brand?
+13. Can personal branding be seen as showing off?
+14. Should companies encourage employees to build personal brands?
+15. What is the best way to build an authentic personal brand?
+
+---

@@ -1,137 +1,127 @@
 ---
 sessionNumber: 2
 title: Your System & Business Value
-topic: System Overview & Business Impact
+topic: System Overview & User Impact
 phase: PHASE 1 — TECH EXPLAIN
 level: B2
-description: Explain your system clearly at a high level, describe its purpose, main users, business value, and how your frontend work contributes to it.
+description: Explain your system clearly at a high level, describe its purpose, main users, how it serves both users and the business, and the value it creates.
 ---
 
 # Session 2: Your System & Business Value
 
 **Level:** B2  
-**Focus:** Speaking confidently about the overall system you work on, its purpose, main users, and the business value it delivers.
+**Focus:** Speaking confidently about the overall system you work on, its purpose, main users, and the value it brings to both end-users and the company.
 
 ## 1) Vocabulary & Collocations
 
-- **system** (n) – a set of connected components working together  
-  _Example:_ Our system is an enterprise web platform that supports daily business operations.
+- **system** (n) – a platform or application made of connected parts  
+  _Example:_ Our system is a comprehensive web platform that supports daily operations.
 
-- **high-level overview** (n) – a general explanation without technical details  
-  _Example:_ Let me give you a high-level overview of the system.
+- **high-level overview** (n) – a general explanation without deep technical details  
+  _Example:_ Let me give you a high-level overview of what the system does.
 
-- **purpose** (n) – the main reason for existence  
-  _Example:_ The primary purpose of the system is to streamline business processes.
+- **purpose** (n) – the main goal or reason for the system  
+  _Example:_ The main purpose is to make complex tasks simpler for users.
+
+- **end-user** (n) – the person who directly uses the application  
+  _Example:_ The primary end-users are employees from sales, operations, and management teams.
+
+- **user experience** (n) – how easy and pleasant it is for people to use the system  
+  _Example:_ We focus heavily on improving user experience.
 
 - **business value** (n) – the benefit the system brings to the company  
-  _Example:_ This system delivers significant business value by reducing processing time.
+  _Example:_ The system creates real business value by increasing efficiency.
 
-- **user group** (n) – a specific group of people who use the system  
-  _Example:_ The main user groups are sales, operations, and finance teams.
+- **productivity** (n) – the ability to get more work done effectively  
+  _Example:_ It significantly boosts user productivity.
 
-- **efficiency** (n) – doing things well without wasting time or resources  
-  _Example:_ The system greatly improves operational efficiency.
+- **streamline** (v) – to make a process simpler and more efficient  
+  _Example:_ The system helps streamline daily workflows.
 
-- **integration** (n) – connecting different systems together  
-  _Example:_ The system has seamless integration with other internal tools.
+- **integration** (n) – the connection between different systems or tools  
+  _Example:_ It has smooth integration with other internal tools.
 
-- **impact** (n) – the effect or influence  
-  _Example:_ Our work has a direct impact on user productivity.
-
-## 2) Grammar & Useful Patterns
-
-- **Present Simple for facts & general truths**  
-  The system **serves** hundreds of users every day.
-
-- **Relative clauses** (to add explanation)  
-  The system, **which connects multiple departments**, helps reduce manual work.
-
-- **Purpose clauses**  
-  We built this feature **to help users** make faster decisions.
-
-- **Cause and effect**  
-  Because the system is easy to use, **employees can** complete tasks more quickly.
-
-- **Passive voice** (common when talking about systems)  
-  Data **is updated** in real time.
-
-### Useful Sentence Patterns
-- The main purpose of the system is to…
-- From the user’s perspective, the system allows them to…
-- This system creates value by…
-- One of the key benefits is that…
-- As a result, the company can…
-
-## 3) Collocations, Chunking & Phrasal Verbs
+## 2) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
+
+- give a high-level overview
+- primary end-users
+- improve user experience
+- boost productivity
+- streamline workflows
 - deliver business value
-- improve operational efficiency
+- support daily operations
 - meet user needs
-- provide real-time data
-- support multiple departments
-- handle large volumes of data
 - create measurable impact
-- streamline business processes
+- handle complex tasks
 
 ### Useful Chunking & Sentence Starters
+
 - At a high level, the system…
-- The system is designed to…
-- From a business perspective…
-- This leads to…
-- In simple terms, it enables users to…
+- The main purpose of the system is to…
+- From the user’s perspective…
+- The system helps users to…
+- One of the key benefits is…
+- This system is valuable because…
+- As a frontend developer, I contribute by…
 
 ### Useful Phrasal Verbs
-- **work with** → The system works with several external services.
-- **deal with** → It deals with large amounts of data daily.
-- **rely on** → Many departments rely on this system.
-- **break down** → I usually break down the system into main functions when explaining.
 
-## 4) Typical Dialogues
+- **work with** → The system works with several other internal platforms.
+- **deal with** → It deals with large amounts of data every day.
+- **look after** → My team looks after the user interface part.
+- **come up with** → We come up with new features based on user needs.
+- **break down** → I usually break down the system into simple parts when explaining it.
+
+## 3) Typical Dialogues
 
 ### Dialogue 1 – High-Level Explanation
 
 **Teacher:** Can you explain what your system does?
 
 **You:**  
-Our system is a web-based enterprise platform that supports the company’s core business operations. At a high level, its main purpose is to streamline daily processes and improve efficiency across different departments.
+At a high level, our system is a web-based platform designed to support the company’s core daily operations. Its main purpose is to help employees handle complex tasks more easily and efficiently.
 
-The primary users are employees from sales, operations, and finance teams. The system allows them to manage data, track progress, and generate reports in one place. As a frontend developer, I focus on making the interface intuitive and fast so users can work more productively.
+The primary users are staff from sales, operations, and management departments. From the user’s perspective, the system allows them to access important information quickly, track progress, and complete their work in one place. It also has good integration with other internal tools.
 
-Overall, the system delivers clear business value by reducing manual work and helping the company make better decisions faster.
+As a Senior Frontend Engineer, I focus on making the interface intuitive, fast, and responsive so that users can work comfortably on any device. Overall, the system improves both user productivity and operational efficiency.
 
-### Dialogue 2 – Business Value Focus
+### Dialogue 2 – Value for Users and Business
 
-**Teacher:** Why is this system important for the company?
+**Teacher:** What value does this system bring?
 
 **You:**  
-This system is important because it creates real business value. It helps reduce processing time, minimize errors, and increase team productivity. For example, tasks that used to take several hours can now be completed in minutes. This not only saves time but also allows the company to serve customers more effectively.
+The system creates value for both users and the business. For users, it simplifies complicated processes and saves them a lot of time. For the company, it reduces manual work, minimizes errors, and helps teams make faster decisions. In short, it improves daily productivity while supporting long-term business goals.
 
-## 5) Reading Text
+## 4) Reading Text
 
-In today’s competitive business environment, companies depend on well-designed systems to maintain efficiency and stay ahead. A successful system must not only function well but also deliver clear value to both users and the business. When explaining a system, it is essential to focus on its purpose, the people who use it, and the benefits it brings rather than technical complexity.
+Modern organizations depend on well-designed systems to support their daily activities. A good system should not only solve business problems but also serve real user needs by making work easier, faster, and less stressful. When explaining a system, it is important to describe its purpose, who uses it, and the value it creates for both people and the organization.
 
-## 6) List of Questions + Ideas
+## 5) List of Questions + Ideas
 
 ### Basic Questions
+
 1. What does your system do?
 2. Can you give a high-level overview of the system?
 3. Who are the main users of the system?
 4. What is the main purpose of the system?
 
 ### Deeper & Follow-up Questions
+
 5. How does the system help users in their daily work?
-6. What are the most important features?
-7. How does the system create business value for the company?
-8. How does your frontend work contribute to the system’s success?
-9. What problems does this system solve?
+6. What are some of the key features?
+7. How does the system create value for users?
+8. In what ways does it benefit the company?
+9. How does the system integrate with other tools?
 10. How do you measure the success of the system?
 
 ### Objection & Discussion Questions
+
 11. Why do companies need complex systems like this?
 12. How would you explain this system to a non-technical person?
 13. What would happen if the system stopped working for a day?
-14. How important is user experience compared to backend functionality?
-15. Is it better to have one big system or several smaller integrated systems?
+14. Is user experience more important than business features?
+15. How can a good frontend contribute to the overall success of the system?
 
 ---

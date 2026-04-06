@@ -1,88 +1,117 @@
 ---
 sessionNumber: 24
-title: Teamwork, Conflict, Initiative & Cultural Fit
-topic: Collaboration, Leadership & Company Values
-phase: PHASE 4 — Behavioral & Culture Fit
-level: B1+ / B2
-description: Discuss teamwork, conflict resolution, initiative, and how you fit into a company’s culture.
+title: Teamwork, Conflict Resolution & Cultural Fit
+topic: Teamwork and Cultural Fit
+phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
+level: B2
+description: Discuss teamwork, how you handle conflict, take initiative, and fit into different company cultures.
 ---
 
-# Session 24: Teamwork, Conflict, Initiative & Cultural Fit
+# Session 24: Teamwork, Conflict Resolution & Cultural Fit
 
-**Level:** B1+ / B2  
-**Focus:** Show you are a good team player, can handle conflict professionally, take initiative, and align with company culture.
+**Level:** B2  
+**Focus:** Speaking about your teamwork style, how you handle conflict, and how you adapt to different company cultures.
 
 ## 1) Vocabulary & Collocations
 
-- **team collaboration** (n) – working together effectively as a team  
-  _Example:_ Successful projects require strong team collaboration.
+- **teamwork** (n) – working together effectively with others  
+  _Example:_ Good teamwork is essential for delivering complex projects.
 
-- **conflict resolution** (n) – the process of solving disagreements  
-  _Example:_ I prefer open discussion for conflict resolution.
+- **conflict** (n) – disagreement between people  
+  _Example:_ Healthy conflict can lead to better solutions.
 
-- **take initiative** (v) – to act without being told what to do  
-  _Example:_ I like to take initiative when I see opportunities for improvement.
+- **resolution** (n) – solving a problem or disagreement  
+  _Example:_ I prefer open and respectful conflict resolution.
 
-- **informal leadership** (n) – leading others without an official title  
-  _Example:_ I have experience showing informal leadership in cross-functional projects.
+- **initiative** (n) – the ability to take action without being told  
+  _Example:_ I like to take initiative when I see an opportunity to improve something.
 
-- **cultural fit** (n) – how well a person matches a company’s values and culture  
-  _Example:_ Cultural fit is very important to me when choosing a company.
+- **cultural fit** (n) – how well you match with a company’s values and style  
+  _Example:_ Cultural fit is very important for long-term success.
 
-- **constructive disagreement** (n) – healthy discussion with different opinions  
-  _Example:_ I believe constructive disagreement leads to better decisions.
+- **adapt** (v) – to adjust to a new environment  
+  _Example:_ I can adapt quickly to different team cultures.
 
-- **stakeholder management** (n) – handling relationships with people who have interest in a project  
-  _Example:_ Good stakeholder management helped us align expectations.
+## 2) Grammar & Useful Patterns (B2)
 
-## 2) Useful Phrases & Patterns
+- **Past Simple for examples**  
+  Last year, there **was** a disagreement about the technical approach.
 
-- "In a team setting, I usually..."
-- "When facing a disagreement, I..."
-- "I took the initiative to..."
-- "To resolve the conflict, I..."
-- "I believe good teamwork requires..."
-- "I fit well with a culture that values..."
+- **Reported speech**  
+  I told my colleague that I understood his concern but…
 
-## 3) Typical Dialogues
+- **Conditionals**  
+  If there is conflict, I prefer to discuss it openly.
 
-### Dialogue 1 – Full Answer (3 minutes)
+- **Contrast**  
+  **While** we had different opinions, we managed to reach a good compromise.
 
-**Interviewer:** Tell me about a time you had a conflict with a teammate. How do you demonstrate initiative?
+### Useful Sentence Patterns
+- In a team, I usually…
+- When there is conflict, I…
+- I believe good teamwork means…
+- I can adapt to different cultures because…
+- One example of when I took initiative was…
+
+## 3) Collocations, Chunking & Phrasal Verbs
+
+### Strong Collocations
+- work well in a team
+- resolve conflict
+- take initiative
+- reach a compromise
+- adapt to culture
+- open communication
+- collaborative environment
+- constructive feedback
+
+### Useful Chunking & Sentence Starters
+- I believe good teamwork is based on…
+- When conflict arises, I usually…
+- An example of my initiative was when…
+- I can adapt to new environments by…
+- In my experience, the key to good collaboration is…
+
+### Useful Phrasal Verbs
+- **get along with** → I generally get along well with different personalities.
+- **sort out** → We managed to sort out the disagreement through discussion.
+- **step up** → I stepped up and proposed a solution.
+- **fit in** → I can fit in well with both structured and flexible teams.
+
+## 4) Typical Dialogues
+
+**Interviewer:** How do you handle conflict in a team?
 
 **You:**  
-Last year, I had a disagreement with a backend developer about the API design for a new feature. He preferred a quick solution, while I believed we should build a more scalable version to avoid future problems.
+I believe open and respectful communication is the best way to handle conflict. For example, last year there was a disagreement between me and a backend developer about how to implement a new feature. Instead of arguing, I suggested we sit down together to discuss both approaches. We listened to each other’s concerns and eventually reached a compromise that combined the best parts of both ideas.
 
-Instead of arguing, I suggested we review the requirements together and analyze both short-term and long-term impacts. We presented both options to the product manager with pros and cons. In the end, we reached a compromise that balanced speed and scalability.
+I think being able to resolve conflict constructively is very important for good teamwork. I also try to take initiative when I see something that can be improved, while still respecting the team’s overall direction.
 
-I also like taking initiative. For example, I noticed our component library was becoming inconsistent, so I proposed and led a small refactoring project that improved reusability across the team.
+## 5) Reading Text
 
-I thrive in collaborative environments where people communicate openly and value both individual contribution and team success. That’s why I believe I would fit well with your company culture.
+Strong teamwork and the ability to resolve conflict are highly valued in tech companies. Good team players communicate clearly, take initiative when needed, and can adapt to different working styles and company cultures. These soft skills often make the difference between a good developer and an excellent team member.
 
-## 4) Reading Text
+## 6) List of Questions + Ideas
 
-Companies look for candidates who can work well in teams, handle disagreements professionally, show initiative without being told, and adapt to their culture. Strong answers combine specific examples with reflection on your working style and values.
+### Basic Questions
+1. How do you work in a team?
+2. Can you give an example of good teamwork?
+3. How do you handle conflict with colleagues?
+4. Do you prefer working alone or in a team?
 
-## 5) List of Questions + Ideas
-
-### Common Questions
-
-1. Tell me about a time you worked successfully in a team.
-2. Describe a conflict you had with a colleague and how you resolved it.
-3. Give an example of when you took initiative.
-4. How would your teammates describe you?
-
-### B2-Level Expanded
-
-5. How do you handle different working styles in a team?
-6. What do you do when you disagree with your manager?
-7. How do you contribute to a positive team culture?
+### Deeper & Follow-up Questions
+5. What makes a good team member in your opinion?
+6. Tell me about a time you took initiative in a team.
+7. How do you adapt to a new team or company culture?
 8. What kind of company culture do you work best in?
-9. Have you ever led a project without formal authority?
-10. How important is cultural fit for you?
+9. Have you ever had a serious conflict at work? How did you resolve it?
+10. How important are soft skills compared to technical skills?
 
-### Discussion & Best Practices
+### Objection & Discussion Questions
+11. Some people say conflict is always bad for a team. Do you agree?
+12. Is it better to avoid conflict or face it directly?
+13. How important is cultural fit when choosing a job?
+14. Can someone be a good developer but a bad team player?
+15. Should companies focus more on technical skills or teamwork skills?
 
-11. How to show leadership without a formal title?
-12. What makes a good team player?
-13. How to answer “How do you handle conflict?” positively?
+---

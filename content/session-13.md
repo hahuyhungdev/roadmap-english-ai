@@ -1,128 +1,122 @@
 ---
 sessionNumber: 13
 title: Work, Compensation & Career Progression
-topic: Compensation, Job Evaluation & Career Growth
-phase: PHASE 3 — Discussion & Impact
-level: B1+ / B2
-description: Talk confidently about your current job, salary structure, how you evaluate job offers, and your short-term career progression using natural and professional B2 English.
+topic: Job, Salary & Career Growth
+phase: PHASE 3 — DISCUSSION & IMPACT
+level: B2
+description: Talk confidently about your current job, compensation, how you evaluate job offers, and your career progression plans.
 ---
 
 # Session 13: Work, Compensation & Career Progression
 
-**Level:** B1+ / B2  
-**Focus:** Speak fluently and professionally about your current work, compensation, how you evaluate opportunities, and your career development plans.
+**Level:** B2  
+**Focus:** Speaking naturally about your job, salary expectations, and future career goals.
 
-## 1) Vocabulary (Expanded & Sophisticated for B2)
+## 1) Vocabulary & Collocations
 
-- **compensation package** (n) – total salary and benefits
-  - The compensation package includes base salary, bonus, and health insurance.
+- **compensation** (n) – the total money and benefits you receive for your work  
+  _Example:_ Compensation includes salary, bonuses, and health insurance.
 
-- **career progression** (n) – advancement in your professional path
-  - I’m looking for clear career progression opportunities.
+- **salary structure** (n) – how salary is organized in a company  
+  _Example:_ The company has a clear salary structure based on experience and performance.
 
-- **job offer evaluation** (n) – the process of assessing a new job opportunity
-  - My job offer evaluation is based on salary, growth potential, and work culture.
+- **career progression** (n) – the development and advancement in your career  
+  _Example:_ I’m thinking carefully about my career progression for the next few years.
 
-- **base salary** (n) – fixed monthly or yearly pay
-  - The base salary is competitive but the bonus structure is more important to me.
+- **job offer** (n) – a proposal to join a company with specific conditions  
+  _Example:_ When I receive a job offer, I consider many factors.
 
-- **performance bonus** (n) – extra pay based on individual or company performance
-  - We receive a performance bonus twice a year.
+- **work-life balance** (n) – the balance between work and personal life  
+  _Example:_ Good work-life balance is very important to me.
 
-- **long-term incentive** (n) – rewards given over several years (stocks, RSUs)
-  - Some companies offer long-term incentives through company stock.
+- **growth opportunity** (n) – chance to develop and advance  
+  _Example:_ I look for positions that offer clear growth opportunities.
 
-- **work-life integration** (n) – balancing work with personal life
-  - I value companies that support healthy work-life integration.
+- **long-term goal** (n) – what you want to achieve in the future  
+  _Example:_ My long-term goal is to become a technical leader.
 
-- **upward mobility** (n) – ability to move to higher positions
-  - I’m looking for a role with good upward mobility.
+## 2) Grammar & Useful Patterns (B2)
 
-- **market rate** (n) – average salary for similar positions in the industry
-  - I researched the market rate before negotiating my salary.
+- **Present Perfect for experience**  
+  I **have worked** as a Senior Frontend Engineer for over five years.
 
-- **professional development** (n) – continuous improvement of skills
-  - The company supports professional development through training budgets.
+- **Conditionals for future plans**  
+  If I receive a good offer, I **will consider** it carefully.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Comparison**  
+  This position offers **better compensation** and **more growth opportunities** than my current job.
+
+- **Reason clauses**  
+  I evaluate job offers **because** I want to find the best balance between salary, growth, and work-life balance.
+
+### Useful Sentence Patterns
+- In my current role, I…
+- When evaluating a job offer, I consider…
+- My short-term goal is to…
+- In the long term, I hope to…
+- The most important thing for me is…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
+- competitive compensation
+- career progression
+- growth opportunity
+- work-life balance
+- evaluate a job offer
+- long-term goal
+- short-term plan
+- professional development
 
-- negotiate compensation
-- evaluate job offers
-- consider long-term growth
-- balance salary and benefits
-- seek career progression
-- assess total compensation
-- prioritize work-life balance
-- invest in professional development
+### Useful Chunking & Sentence Starters
+- Currently, I work as…
+- When I look at a job offer, I pay attention to…
+- My main goal for the next two years is…
+- I believe that good compensation should include…
+- In the future, I would like to…
 
-### Useful Chunking & Sentence Starters (B2 level)
+### Useful Phrasal Verbs
+- **look for** → I am looking for better growth opportunities.
+- **think about** → I often think about my career progression.
+- **aim for** → I aim for a position with more technical leadership.
+- **weigh up** → I weigh up the pros and cons of each offer.
 
-- In terms of compensation, …
-- When evaluating a job offer, I consider…
-- My current role offers…
-- What matters most to me is…
-- I’m looking for opportunities where…
-- From a long-term perspective…
-- I believe a good compensation package should include…
-- Career progression is important to me because…
+## 4) Typical Dialogues
 
-### Advanced Phrasal Verbs
-
-- **look into** → I always look into the company’s growth prospects.
-- **weigh up** → I weigh up salary against career growth opportunities.
-- **trade off** → Sometimes you have to trade off higher salary for better work-life balance.
-- **aim for** → I’m aiming for a senior frontend position in the next two years.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Main Discussion (3–4 minutes)
-
-**Teacher:** Can you tell me about your current compensation and how you evaluate new job opportunities?
+**Teacher:** Can you tell me about your current job and career plans?
 
 **You:**  
-In my current role, the compensation package is reasonable. It includes a competitive base salary, performance bonuses twice a year, and some benefits like health insurance and annual leave. However, compared to the market rate for frontend engineers with my experience, I think there is still room for improvement.
+I’m currently working as a Senior Frontend Engineer with more than five years of experience. I enjoy the technical challenges and the opportunity to mentor junior developers. 
 
-When I evaluate a new job offer, I don’t only look at the base salary. I weigh up several factors: the total compensation package, opportunities for career progression, the company’s stability, and work-life integration. For example, even if a company offers a higher salary, I might not accept it if there is no clear path for upward mobility or if the culture is too stressful.
+When I evaluate a new job offer, I consider several factors: compensation, work-life balance, growth opportunities, and the company’s technology direction. Good compensation is important, but I also look for roles where I can continue learning and take on more responsibility.
 
-Right now, I’m aiming for a senior frontend role in the next 18 to 24 months. I believe that a good mix of challenging projects, learning opportunities, and fair compensation will help me reach that goal.
+In the short term, I want to deepen my expertise in system design and AI-assisted development. In the long term, my goal is to move into a technical leadership position where I can guide teams and make bigger architectural decisions.
 
-### Dialogue 2 – Deeper Follow-up
+## 5) Reading Text
 
-**Teacher:** What would make you accept a new job offer?
+Career progression in the tech industry depends on many factors, including skills, experience, and personal goals. While compensation is important, many developers also look for opportunities to learn new things, work on interesting projects, and maintain a healthy work-life balance. Planning your career carefully helps you make better decisions about future job offers.
 
-**You:**  
-I would seriously consider an offer if it provides at least 15–20% higher total compensation and clear opportunities for growth. I also value hybrid working arrangements because I previously worked remotely and found it helped my productivity and personal life.
+## 6) List of Questions + Ideas
 
-## 4) Reading Text
-
-Evaluating job offers is more complex than simply comparing salaries. Professionals today look at the full compensation package, including bonuses, benefits, and long-term incentives. Equally important are factors such as career progression, company culture, and work-life integration. In today’s competitive tech market, candidates with strong skills often prioritize companies that invest in their professional development and offer clear paths for advancement.
-
-## 5) List of Questions + Ideas
-
-### Basic to Intermediate
-
-1. Can you describe your current compensation package?
-2. What do you like and dislike about your current job?
+### Basic Questions
+1. What is your current job and how long have you been in this role?
+2. What do you like most about your job?
 3. How do you evaluate a new job offer?
-4. What is most important to you in a job?
+4. What is important to you in terms of compensation?
 
-### B2-Level Expanded Questions
+### Deeper & Follow-up Questions
+5. How important is salary compared to other factors?
+6. What are your short-term career goals?
+7. What are your long-term career ambitions?
+8. How do you plan to achieve your career goals?
+9. Would you consider moving to a different company? Why?
+10. What kind of company culture do you prefer?
 
-5. How do you compare base salary versus total compensation?
-6. What role does career progression play in your job decisions?
-7. Have you ever negotiated salary? How did it go?
-8. What kind of company culture are you looking for?
-9. How important is work-life integration to you?
-10. Where do you see your career in the next 2–3 years?
-
-### Discussion & Critical Thinking
-
-11. Is a high salary more important than career growth? Why or why not?
-12. How has the shift from remote to office work affected your view on compensation?
-13. Should companies offer more benefits instead of higher salaries?
-14. What makes a job offer truly attractive in today’s market?
-15. How do economic conditions influence your job decisions?
+### Objection & Discussion Questions
+11. Some people say money is the most important factor in a job. Do you agree?
+12. Is it better to stay in one company for a long time or change jobs frequently?
+13. Should developers focus more on salary or on learning opportunities?
+14. How important is work-life balance compared to career growth?
+15. What advice would you give to someone who wants to progress in their tech career?
 
 ---

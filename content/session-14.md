@@ -1,101 +1,129 @@
 ---
 sessionNumber: 14
-title: Impact of AI & New Technologies on Frontend Development
-topic: AI’s Influence on Frontend Work
-phase: PHASE 3 — Discussion & Impact
-level: B1+ / B2
-description: Discuss how AI is changing frontend development, productivity, required skills, and the future of the profession with balanced opinions.
+title: Impact of AI on Software Engineering & The Future of Our Roles
+topic: AI in Software Development & Future Skills
+phase: PHASE 3 — DISCUSSION & IMPACT
+level: B2
+description: Discuss how AI is changing software engineering in general, its impact on daily work, required skills, opportunities and challenges, with balanced opinions.
 ---
 
-# Session 14: Impact of AI & New Technologies on Frontend Development
+# Session 14: Impact of AI on Software Engineering & The Future of Our Roles
 
-**Level:** B1+ / B2  
-**Focus:** Share thoughtful, balanced opinions about how AI is transforming frontend development and what it means for developers.
+**Level:** B2  
+**Focus:** Giving balanced opinions about how AI is transforming software engineering and what it means for developers in the future.
 
-## 1) Vocabulary (Expanded & Sophisticated for B2)
+## 1) Vocabulary & Collocations
 
-- **AI-assisted development** (n) – using AI tools to help write code
-- **productivity boost** (n) – significant increase in work efficiency
-- **code generation** (n) – AI creating code automatically
-- **prompt engineering** (n) – skill of writing good instructions for AI
-- **human oversight** (n) – human checking and improving AI output
-- **skill shift** (n) – change in the skills that are needed
-- **automation** (n) – replacing manual work with machines or AI
-- **creative problem-solving** (n) – using imagination to solve complex issues
-- **system architecture** (n) – high-level design of software systems
-- **future-proof skills** (n) – skills that will remain valuable in the future
+- **artificial intelligence (AI)** (n) – technology that allows machines to perform intelligent tasks  
+  _Example:_ AI is becoming more common in software development.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **automation** (n) – using machines or software to do work automatically  
+  _Example:_ AI can automate many repetitive tasks.
+
+- **productivity** (n) – how much work someone can do in a certain time  
+  _Example:_ AI tools can greatly improve developer productivity.
+
+- **routine task** (n) – simple, repeated work  
+  _Example:_ Writing basic code and tests are routine tasks.
+
+- **creative problem-solving** (n) – using imagination to solve difficult problems  
+  _Example:_ Creative problem-solving is still very important for engineers.
+
+- **skill shift** (n) – change in the types of skills that are needed  
+  _Example:_ There is a clear skill shift happening in our industry.
+
+- **opportunity** (n) – a good chance for development or success  
+  _Example:_ AI creates many new opportunities for developers.
+
+- **challenge** (n) – a difficult situation that needs effort to deal with  
+  _Example:_ One challenge is learning how to work effectively with AI.
+
+- **adapt** (v) – to change your behavior to deal with new situations  
+  _Example:_ Developers need to adapt quickly to new technologies.
+
+## 2) Grammar & Useful Patterns (B2)
+
+- **Future forms**  
+  AI **will change** / **is going to change** the way we work.
+
+- **Balanced opinions**  
+  On one hand, … On the other hand, …
+
+- **Cause and effect**  
+  Because of AI tools, developers **can focus** more on complex problems.
+
+- **Contrast**  
+  **While** AI can help with many tasks, human judgment is still essential.
+
+- **Prediction + reason**  
+  In the future, I think developers **will need to** combine technical skills with business understanding.
+
+### Useful Sentence Patterns
+- AI is changing the way we…
+- On the positive side, AI can help us…
+- However, there are also some challenges…
+- This means that software engineers need to…
+- The most important thing in the future will be…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
 - boost productivity
-- accelerate development
-- require human oversight
-- shift from coding to architecture
-- master prompt engineering
-- maintain code quality
-- adapt to new technologies
-- embrace AI tools
-- balance speed and quality
+- automate routine tasks
+- improve efficiency
+- face new challenges
+- adapt to changes
+- develop new skills
+- create opportunities
+- shift in required skills
 
 ### Useful Chunking & Sentence Starters
+- In my opinion, AI will…
+- On one hand, AI helps developers…
+- On the other hand, it also means that…
+- This change will require us to…
+- The key to success in the future is…
 
-- On one hand, AI has…
-- On the other hand, …
-- AI is transforming the way we…
-- I believe the biggest change will be…
-- The key skill in the future will be…
-- While AI can help with…, it cannot replace…
-- In my opinion, developers should…
+### Useful Phrasal Verbs
+- **keep up with** → It’s important to keep up with AI developments.
+- **take over** → AI may take over some routine coding tasks.
+- **focus on** → We can focus on more interesting and complex work.
+- **rely on** → Many developers now rely on AI tools to write code.
 
-### Advanced Phrasal Verbs
+## 4) Typical Dialogues
 
-- **keep up with** → It’s important to keep up with rapid AI advancements.
-- **rely on** → We should not rely too much on AI-generated code.
-- **adapt to** → Frontend developers need to adapt to AI-assisted workflows.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Main Discussion (3–4 minutes)
-
-**Teacher:** How is AI changing frontend development?
+**Teacher:** How is AI affecting software engineering?
 
 **You:**  
-On one hand, AI has brought a significant productivity boost. Tools like GitHub Copilot and Cursor can generate code quickly, suggest better solutions, and even help with debugging. This allows us to focus more on system architecture and user experience rather than writing repetitive code.
+AI is having a big impact on software engineering in general. On one hand, it helps a lot with routine tasks such as writing simple code, generating tests, and even reviewing code. This can save developers a lot of time and increase productivity. On the other hand, it also creates new challenges because some traditional skills may become less important.
 
-On the other hand, I believe human oversight is still essential. AI-generated code can sometimes be inefficient or contain security risks. As frontend developers, we need new skills such as prompt engineering and the ability to review and improve AI output.
+I believe the future role of software engineers will change. Instead of focusing only on writing code, we will need to spend more time on understanding business needs, designing good solutions, and making sure AI tools are used correctly. While there are risks that some jobs might become easier or even change completely, I see it as a good opportunity if we are willing to learn and adapt.
 
-In the future, I think the role will shift from pure coding to higher-level tasks like designing component systems, integrating AI features, and making important technical decisions. The developers who can combine technical knowledge with creative problem-solving will have the strongest advantage.
+## 5) Reading Text
 
-## 4) Reading Text
+Artificial Intelligence is transforming the software engineering industry. While it can make development faster and reduce repetitive work, it also requires engineers to develop new skills and think differently about their roles. The most successful developers in the future will be those who can work effectively with AI while keeping strong problem-solving and communication skills.
 
-Artificial Intelligence is rapidly changing the software development landscape. In frontend development, AI tools can now generate UI components, write CSS, and suggest optimal solutions. While this increases speed and productivity, many experts argue that human creativity, judgment, and responsibility remain irreplaceable. The most successful developers will be those who learn to work effectively with AI rather than compete against it.
+## 6) List of Questions + Ideas
 
-## 5) List of Questions + Ideas
+### Basic Questions
+1. How is AI changing software engineering?
+2. What tasks can AI help with?
+3. What new skills will be important in the future?
+4. Do you see AI as an opportunity or a threat?
 
-### Basic to Intermediate
+### Deeper & Follow-up Questions
+5. Which parts of a developer’s job do you think AI cannot replace?
+6. How should developers prepare for these changes?
+7. Will AI reduce the number of software engineering jobs?
+8. What is the biggest challenge AI brings to our profession?
+9. How has AI already changed your daily work?
+10. What will the role of a software engineer look like in 5–10 years?
 
-1. How has AI changed your daily work?
-2. What AI tools have you used?
-3. What are the advantages of using AI in frontend development?
-4. What are the disadvantages?
-
-### B2-Level Expanded Questions
-
-5. Will AI replace frontend developers in the future?
-6. What new skills should frontend developers learn because of AI?
-7. How do you balance speed and code quality when using AI?
-8. What is “prompt engineering” and why is it important?
-9. How has your role changed or how do you expect it to change?
-10. Do you think AI will make developers more or less valuable?
-
-### Discussion & Critical Thinking
-
-11. Should companies encourage or limit the use of AI coding tools?
-12. What is more important in the AI era: technical skills or soft skills?
-13. How can developers stay competitive in an AI-driven world?
-14. Is AI a threat or an opportunity for junior developers?
-15. How should education and training change to prepare developers for the AI future?
+### Objection & Discussion Questions
+11. Some people say AI will replace many developers. What do you think?
+12. Is it necessary for every developer to learn how to use AI tools?
+13. Should companies focus more on AI or on training people?
+14. Will AI make software development easier or more difficult?
+15. What is more important in the future: coding skills or thinking skills?
 
 ---

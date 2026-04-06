@@ -1,117 +1,116 @@
 ---
 sessionNumber: 17
-title: Work Culture, Performance Pressure & Mental Health in Tech
-topic: Sustainable Work Culture & Mental Fitness
-phase: PHASE 3 — Discussion & Impact
-level: B1+ / B2
-description: Discuss the high-pressure work culture in tech, performance expectations, burnout risks, and how both companies and individuals can promote mental fitness and sustainable careers.
+title: Work Culture, Pressure & Mental Health in Tech
+topic: Work Culture and Well-being
+phase: PHASE 3 — DISCUSSION & IMPACT
+level: B2
+description: Discuss the high-pressure work culture in tech, performance expectations, burnout risks, and how to maintain mental health.
 ---
 
-# Session 17: Work Culture, Performance Pressure & Mental Health in Tech
+# Session 17: Work Culture, Pressure & Mental Health in Tech
 
-**Level:** B1+ / B2  
-**Focus:** Speak thoughtfully about the realities of work culture in technology, the pressure to perform, risks of burnout, and ways to build a healthier, more sustainable career.
+**Level:** B2  
+**Focus:** Speaking about the realities of work culture in tech and how to maintain a healthy balance.
 
 ## 1) Vocabulary & Collocations
 
-- **work culture** (n) – the values, behaviors, and atmosphere in a company  
-  _Example:_ A healthy work culture supports both high performance and employee well-being.
+- **work culture** (n) – the environment and atmosphere in a company  
+  _Example:_ A good work culture helps people stay motivated.
 
-- **performance pressure** (n) – strong expectation to deliver results constantly  
-  _Example:_ Many tech companies create intense performance pressure through KPIs.
+- **pressure** (n) – stress caused by high expectations  
+  _Example:_ Many developers face high pressure to deliver quickly.
 
-- **burnout** (n) – physical and mental exhaustion caused by prolonged stress  
-  _Example:_ Burnout has become a serious issue in the tech industry.
+- **burnout** (n) – extreme tiredness and loss of motivation from overwork  
+  _Example:_ Burnout is a serious problem in the tech industry.
 
-- **mental fitness** (n) – the state of maintaining good mental health and resilience  
-  _Example:_ Companies should invest in mental fitness programs for employees.
+- **mental health** (n) – a person’s emotional and psychological well-being  
+  _Example:_ Companies should care more about employees’ mental health.
 
-- **work-life balance** (n) – the equilibrium between professional and personal life  
-  _Example:_ True work-life balance is difficult to achieve in high-pressure environments.
+- **work-life balance** (n) – dividing time fairly between work and personal life  
+  _Example:_ Good work-life balance reduces stress.
 
-- **sustainable pace** (n) – working at a speed that can be maintained long-term  
-  _Example:_ We need to promote a more sustainable pace instead of constant hustle.
+- **sustainable career** (n) – a career that can continue healthily for a long time  
+  _Example:_ I want to build a sustainable career in tech.
 
-- **psychological safety** (n) – an environment where people feel safe to speak up  
-  _Example:_ Psychological safety is essential for healthy team dynamics.
+## 2) Grammar & Useful Patterns (B2)
 
-- **resilience** (n) – the ability to recover from difficulties  
-  _Example:_ Building personal resilience helps developers handle pressure better.
+- **Cause and effect**  
+  High pressure **can lead to** burnout if we are not careful.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Advice / Suggestion**  
+  Companies **should** create a healthier work environment.
+
+- **Contrast**  
+  **Although** the salary is good, the pressure can be very high.
+
+- **Conditionals**  
+  If we ignore mental health, **we will face** more problems in the long term.
+
+### Useful Sentence Patterns
+- In many tech companies,…
+- One of the biggest problems is…
+- To maintain good mental health, I…
+- It is important for companies to…
+- I believe we should…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
-- face performance pressure
-- experience burnout
-- promote mental fitness
+- high-pressure environment
+- face pressure
+- suffer from burnout
 - maintain work-life balance
-- foster psychological safety
-- work at a sustainable pace
-- build long-term resilience
-- address mental health issues
-- create a supportive culture
-- prevent employee burnout
+- promote mental health
+- create a healthy culture
+- sustainable career
 
-### Useful Chunking & Sentence Starters (B2)
+### Useful Chunking & Sentence Starters
+- In the tech industry,…
+- One major issue is…
+- To avoid burnout, I…
+- Companies should focus on…
+- In my opinion, it’s important to…
 
-- In many tech companies today…
-- One of the biggest challenges is…
-- On the positive side, some companies are…
-- However, the downside is…
-- I believe companies should…
-- From my experience…
-- To maintain long-term productivity…
-- It’s important to find a balance between…
+### Useful Phrasal Verbs
+- **burn out** → Many people burn out if they work too hard for too long.
+- **deal with** → It’s important to learn how to deal with pressure.
+- **look after** → We need to look after our mental health.
+- **cut down on** → I try to cut down on overtime when possible.
 
-### Advanced Phrasal Verbs
+## 4) Typical Dialogues
 
-- **burn out** → Many developers burn out if they work at an unsustainable pace.
-- **keep up with** → It’s stressful trying to keep up with constant performance demands.
-- **speak up** → Psychological safety encourages people to speak up about workload issues.
-- **look after** → We all need to look after our mental health proactively.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Main Discussion (3–4 minutes)
-
-**Teacher:** What do you think about work culture and pressure in the tech industry?
+**Teacher:** What do you think about work culture in tech?
 
 **You:**  
-In many tech companies, there is quite high performance pressure. Employees are often measured by strict KPIs, tight deadlines, and the need to deliver results constantly. While this can drive innovation and high productivity, it also increases the risk of burnout.
+Work culture in tech can be very demanding. There is often high pressure to deliver features quickly and work long hours. While this can lead to fast career growth, it also increases the risk of burnout.
 
-From my experience, moving from remote to full-office work changed the dynamic. In the office, there is more visibility, which sometimes creates unspoken pressure to stay late or always appear busy. On the other hand, good companies are starting to pay more attention to mental fitness by offering flexible hours, wellness programs, and encouraging open conversations about workload.
+I think companies should do more to support mental health, such as encouraging reasonable working hours and providing time for rest. Personally, I try to maintain a good work-life balance by setting boundaries and taking regular breaks. A healthy work culture not only makes people happier but also helps them perform better in the long term.
 
-I personally try to maintain a sustainable pace by setting clear boundaries, taking regular breaks, and communicating openly with my manager when I feel overwhelmed. I believe both individuals and companies have responsibility — individuals should practice self-care, while companies should create a culture of psychological safety where people feel comfortable speaking up.
+## 5) Reading Text
 
-## 4) Reading Text
+The tech industry is known for its fast pace and high expectations. While this environment can be exciting, it can also create stress and lead to burnout. Creating a healthy work culture that values mental health and work-life balance is becoming more important for both employees and companies.
 
-The tech industry is known for its fast pace and high performance expectations. While this environment can be exciting and rewarding, it also brings significant challenges, including stress, burnout, and difficulties maintaining work-life balance. Sustainable success in tech requires not only technical skills but also mental fitness and the ability to work at a healthy, long-term pace. Companies that support their employees’ well-being tend to have better retention and long-term productivity.
+## 6) List of Questions + Ideas
 
-## 5) List of Questions + Ideas
-
-### Basic to Intermediate
-
-1. How would you describe the work culture in tech companies?
-2. What kinds of pressure do developers often face?
+### Basic Questions
+1. What is the work culture like in tech companies?
+2. What kind of pressure do developers usually face?
 3. Have you ever experienced burnout?
-4. What do you do to manage stress?
+4. How important is mental health in your opinion?
 
-### B2-Level Expanded Questions
+### Deeper & Follow-up Questions
+5. How can companies improve their work culture?
+6. What do you do to maintain good mental health?
+7. Is high pressure necessary to achieve good results?
+8. How does work culture affect productivity?
+9. What is a healthy work-life balance for you?
+10. How has your view on work pressure changed over time?
 
-5. How has the shift between remote and office work affected pressure levels?
-6. What responsibility do companies have regarding employee mental health?
-7. How can developers maintain a sustainable pace in a high-pressure environment?
-8. What is psychological safety and why is it important?
-9. How do you balance ambition with well-being?
-10. What changes would you like to see in tech work culture?
-
-### Discussion & Critical Thinking
-
-11. Is high pressure necessary to drive innovation in tech?
-12. Should companies measure success only by output and KPIs?
-13. How can individuals and companies work together to prevent burnout?
-14. Is work-life balance still realistic in today’s tech industry?
-15. What does “healthy ambition” look like in a competitive field like technology?
+### Objection & Discussion Questions
+11. Some people say high pressure is normal in tech. Do you agree?
+12. Should companies prioritize productivity or employee well-being?
+13. Is it the company’s responsibility or the individual’s to prevent burnout?
+14. Can a relaxed work culture still produce excellent results?
+15. What changes would you like to see in tech work culture?
 
 ---

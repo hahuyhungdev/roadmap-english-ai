@@ -1,106 +1,119 @@
 ---
 sessionNumber: 19
 title: Tell Me About Yourself & Professional Journey
-topic: Professional Introduction & Storytelling
-phase: PHASE 4 — Behavioral & Culture Fit
-level: B1+ / B2
-description: Master the most common opening interview question with a clear, structured, and engaging self-introduction at B2 level.
+topic: Self-Introduction & Career Story
+phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
+level: B2
+description: Master the most common interview question with a clear, structured, and engaging self-introduction.
 ---
 
 # Session 19: Tell Me About Yourself & Professional Journey
 
-**Level:** B1+ / B2  
-**Focus:** Deliver a confident, concise, and professional self-introduction that highlights your background, relevant experience, and motivation.
+**Level:** B2  
+**Focus:** Delivering a confident, well-structured 1.5–2 minute self-introduction that covers your background, experience, strengths, and future direction.
 
 ## 1) Vocabulary & Collocations
 
-- **professional journey** (n) – the path and development of your career over time  
-  _Example:_ My professional journey has taken me from a junior frontend developer to handling end-to-end feature development.
+- **professional journey** (n) – your career path and development over time  
+  _Example:_ Let me briefly describe my professional journey.
 
-- **relevant experience** (n) – work experience that relates directly to the current role  
-  _Example:_ I have relevant experience in building scalable user interfaces for enterprise applications.
+- **background** (n) – your education and previous experience  
+  _Example:_ I have a strong technical background in frontend development.
 
-- **key achievement** (n) – an important success or accomplishment in your work  
-  _Example:_ One of my key achievements was reducing page load time by 65%.
+- **expertise** (n) – special skill or knowledge in a particular area  
+  _Example:_ My expertise lies in building scalable user interfaces.
 
-- **career transition** (n) – a change from one job or role to another  
-  _Example:_ My career transition from remote work to a full-office environment taught me a lot about collaboration.
+- **leadership** (n) – the ability to guide and influence others  
+  _Example:_ I have taken on more leadership responsibilities in recent years.
 
-- **cross-functional collaboration** (n) – working effectively with different teams (backend, design, product, etc.)  
-  _Example:_ I enjoy cross-functional collaboration because it helps deliver better products.
+- **passion** (n) – strong interest and enthusiasm  
+  _Example:_ I have a real passion for creating excellent user experiences.
 
-- **hands-on experience** (n) – practical, direct experience doing the work  
-  _Example:_ I gained hands-on experience with AWS deployment and CI/CD pipelines.
+- **aspiration** (n) – a strong desire to achieve something  
+  _Example:_ My aspiration is to take on more technical leadership roles.
 
-- **upward mobility** (n) – the possibility to advance to higher positions  
-  _Example:_ I’m looking for a company that offers clear upward mobility.
+## 2) Grammar & Useful Patterns (B2)
 
-- **professional background** (n) – your overall work history and qualifications  
-  _Example:_ Let me briefly summarize my professional background.
+- **Present Perfect for experience**  
+  I **have worked** as a Senior Frontend Engineer for over five years.
 
-## 2) Useful Phrases & Patterns
+- **Linking ideas**  
+  After gaining experience in…, I **moved on to** focus more on…
 
-### Best Structure (Present-Past-Future)
+- **Purpose / Reason**  
+  I chose this path **because** I enjoy solving complex user problems.
 
-- **Present**: Current role + what you do
-- **Past**: Relevant experience & achievements
-- **Future**: Why this role/company + enthusiasm
+- **Future plans**  
+  In the future, I **would like to** take on more leadership responsibilities.
 
-**Key Phrases:**
+### Useful Sentence Patterns
+- I’d like to start by saying…
+- Over the past … years, I have…
+- Currently, I am responsible for…
+- What I enjoy most about my work is…
+- Looking ahead, I hope to…
 
-- "Currently, I work as a Frontend Engineer at..."
-- "In my previous role, I was responsible for..."
-- "One of my key achievements was..."
-- "This experience helped me develop..."
-- "I'm particularly interested in this role because..."
-- "I'm excited about the opportunity to contribute to..."
+## 3) Collocations, Chunking & Phrasal Verbs
 
-### Advanced Sentence Starters
+### Strong Collocations
+- professional journey
+- technical expertise
+- career progression
+- take on responsibility
+- gain experience
+- develop skills
+- pursue growth
+- leadership role
 
-- Over the past X years, I have...
-- What drives me in my career is...
-- Moving forward, I’m looking for an opportunity where...
+### Useful Chunking & Sentence Starters
+- My name is… and I am currently…
+- I have over … years of experience in…
+- In my previous roles, I…
+- One thing I’m particularly proud of is…
+- Moving forward, I am looking for…
 
-## 3) Typical Dialogues
+### Useful Phrasal Verbs
+- **take on** → I have taken on more leadership responsibilities.
+- **focus on** → I now focus on system design and team mentoring.
+- **move into** → I would like to move into a technical leadership position.
+- **build on** → I want to build on my current experience.
 
-### Dialogue 1 – Full Answer (2–3 minutes)
+## 4) Typical Dialogues
 
 **Interviewer:** Tell me about yourself.
 
 **You:**  
-Thank you for the opportunity. Currently, I’m a Frontend Engineer at [Company], where I focus on building responsive and high-performance user interfaces using React.
+My name is Hung, but most people call me Marcus. I’m a Senior Frontend Engineer with more than five years of experience specializing in React and TypeScript. 
 
-In the past three years, I’ve worked on several end-to-end features, including payment flows and dashboard systems. One of my key achievements was optimizing a slow checkout process, which reduced loading time by over 60% and improved user conversion. Before that, I worked remotely for a Singapore-based company, where I gained valuable experience collaborating with international teams across different time zones.
+I started my career building user interfaces and gradually moved into more complex, large-scale applications. Over the past few years, I have focused on performance optimization, clean architecture, and mentoring junior developers. I’ve also hosted internal seminars on web performance and AI tools.
 
-What I enjoy most is solving real user problems and working in cross-functional teams. That’s why I’m particularly excited about this opportunity at your company — I admire your focus on user-centric design and innovative products. I’m eager to bring my frontend expertise and collaborative mindset to help deliver excellent user experiences.
+What I enjoy most is creating intuitive, high-performance interfaces that genuinely improve user productivity. Looking ahead, I’m eager to take on more technical leadership responsibilities and contribute to building scalable, user-centered products in a strong team environment.
 
-## 4) Reading Text
+## 5) Reading Text
 
-A strong “Tell me about yourself” answer should be structured, concise, and relevant. The best approach follows the Present-Past-Future formula. Start with your current role, briefly mention relevant past experience and achievements, then connect your background to the position you’re applying for. Avoid repeating your resume — focus on telling a clear story that shows who you are professionally and why you’re a good fit.
+The question “Tell me about yourself” is often the first question in interviews. A good answer should be well-structured, concise, and relevant. It should briefly cover your background, current role, key strengths, and future aspirations while showing enthusiasm and confidence.
 
-## 5) List of Questions + Ideas
+## 6) List of Questions + Ideas
 
-### Common Variations
+### Basic Questions
+1. Tell me about yourself.
+2. Walk me through your professional journey.
+3. What is your background?
+4. Why did you choose frontend development?
 
-1. Walk me through your resume.
-2. Tell me about your professional background.
-3. How would you describe your career so far?
-4. What should I know about you that’s not on your CV?
+### Deeper & Follow-up Questions
+5. What are your greatest strengths as a developer?
+6. How has your role changed over the past few years?
+7. What achievements are you most proud of?
+8. Where do you see yourself in 3–5 years?
+9. What motivates you in your career?
+10. Why are you interested in this position?
 
-### B2-Level Follow-ups
-
-5. Why did you move from your previous company?
-6. What are you most proud of in your career?
-7. How does your experience align with this role?
-8. What motivates you in your work?
-9. Where do you see yourself in 3–5 years?
-10. Why are you interested in our company?
-
-### Discussion & Practice
-
-11. What makes a good self-introduction?
-12. How long should the answer be? (Best practice: 1.5 – 2.5 minutes)
-13. How do you avoid sounding like you’re reading from a script?
-14. How can you tailor this answer for different companies?
+### Objection & Discussion Questions
+11. Some people say “Tell me about yourself” is a difficult question. Why do you think that is?
+12. How long should a self-introduction be in an interview?
+13. Should you focus more on technical skills or soft skills when introducing yourself?
+14. Is it okay to mention personal interests in a professional introduction?
+15. How do you make your self-introduction memorable?
 
 ---
