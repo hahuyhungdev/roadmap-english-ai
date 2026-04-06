@@ -1,128 +1,123 @@
 ---
 sessionNumber: 7
-title: Describe a Problem + Root Cause
-topic: Problem Identification & Root Cause Analysis
-phase: PHASE 2 — Problem-Solving
-level: B1+ / B2
-description: Describe a real technical or user-related problem in detail, analyze its root causes, and explain its impact on users and the business — using structured, professional B2-level language.
+title: Describing a Technical Problem & Root Cause
+topic: Problem Analysis & Impact
+phase: PHASE 2 — PROBLEM-SOLVING
+level: B2
+description: Describe a real technical or user-related problem in detail, analyze its root causes, and explain its impact on users and the business.
 ---
 
-# Session 7: Describe a Problem + Root Cause
+# Session 7: Describing a Technical Problem & Root Cause
 
-**Level:** B1+ / B2  
-**Focus:** Speak clearly and analytically about a specific problem, identify root causes, and discuss its consequences using precise vocabulary and logical structure.
+**Level:** B2  
+**Focus:** Speaking clearly and professionally about a technical problem, its root causes, and its impact.
 
 ## 1) Vocabulary & Collocations
 
-- **root cause** (n) – the fundamental reason behind a problem  
-  _Example:_ After investigation, we discovered the root cause was inefficient data fetching.
+- **issue** (n) – a problem or difficulty  
+  _Example:_ We faced a serious performance issue last month.
 
-- **bottleneck** (n) – a point where progress is restricted  
-  _Example:_ The slow API response created a major bottleneck in the user flow.
+- **root cause** (n) – the main reason behind a problem  
+  _Example:_ After investigation, we found the root cause of the issue.
 
-- **symptom** (n) – a visible sign of a deeper problem  
-  _Example:_ Long loading times were only a symptom of a larger architecture issue.
+- **impact** (n) – the effect or influence of the problem  
+  _Example:_ This issue had a significant impact on user experience.
 
-- **cascade effect** (n) – when one problem triggers multiple others  
-  _Example:_ A small delay in the backend created a cascade effect across the entire dashboard.
+- **symptom** (n) – a sign that shows a problem exists  
+  _Example:_ Slow loading time was the most obvious symptom.
 
-- **user friction** (n) – difficulty or frustration experienced by users  
-  _Example:_ Too many form fields created unnecessary user friction during checkout.
+- **bottleneck** (n) – a point where the process is restricted  
+  _Example:_ The API calls created a major bottleneck.
 
-- **scalability issue** (n) – a problem that appears when the system grows  
-  _Example:_ We faced scalability issues as the number of concurrent users increased rapidly.
+- **affect** (v) – to influence or cause a change  
+  _Example:_ The problem affected thousands of users daily.
 
-- **regression** (n) – a problem that reappears after a change  
-  _Example:_ A recent update introduced a regression in the mobile navigation.
+- **investigate** (v) – to examine something carefully  
+  _Example:_ We spent two days investigating the root cause.
 
-- **measurable impact** (n) – an effect that can be quantified  
-  _Example:_ The issue had a measurable impact on user satisfaction scores.
+## 2) Grammar & Useful Patterns (B2)
 
-- **underlying issue** (n) – a hidden or fundamental problem  
-  _Example:_ We had to dig deeper to uncover the underlying issue.
+- **Past Simple for describing events**  
+  Last month, we **encountered** a serious performance issue.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Cause and Effect**  
+  The problem **occurred because** the component was re-rendering too frequently.
+
+- **Relative clauses**  
+  The issue, **which affected thousands of users**, was caused by unnecessary re-renders.
+
+- **Result clauses**  
+  As a result, the application became very slow for many users.
+
+- **Time expressions**  
+  At first, … → Later, … → Finally, …
+
+### Useful Sentence Patterns
+- We faced a problem where…
+- The root cause was…
+- This issue occurred because…
+- As a result, …
+- This had a negative impact on…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
+- face a problem
 - identify the root cause
-- uncover underlying issues
-- experience performance degradation
-- create user friction
-- lead to poor user experience
-- result in decreased productivity
-- trigger a cascade effect
-- face scalability challenges
-- have a significant business impact
-- analyze the root cause
+- analyze the issue
+- have a significant impact
+- cause poor user experience
+- lead to performance degradation
+- investigate thoroughly
+- affect user productivity
 
-### Useful Chunking & Sentence Starters (B2 level)
+### Useful Chunking & Sentence Starters
+- Last month, we encountered…
+- The main problem was that…
+- After investigating, we discovered…
+- This led to…
+- The impact on users was…
 
-- The problem I encountered was…
-- On the surface, it looked like…, but actually…
-- After careful investigation, I discovered that…
-- The root cause turned out to be…
-- This issue stemmed from…
-- As a result, users experienced…
-- From a business perspective, this led to…
-- What made the situation worse was…
+### Useful Phrasal Verbs
+- **come across** → We came across a strange bug in production.
+- **look into** → I had to look into the issue immediately.
+- **figure out** → It took us a while to figure out the root cause.
+- **deal with** → We had to deal with many complaints from users.
 
-### Advanced Phrasal Verbs
+## 4) Typical Dialogues
 
-- **stem from** → The delay stemmed from inefficient database queries.
-- **dig into** → We had to dig into the logs to find the real cause.
-- **break down** → I broke down the problem step by step.
-- **snowball into** → A small rendering issue can snowball into a major performance problem.
-- **account for** → We failed to account for high traffic during peak hours.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Full Problem + Root Cause Explanation (3–4 minutes)
-
-**Teacher:** Tell me about a significant problem you faced recently.
+**Teacher:** Can you describe a technical problem you faced at work?
 
 **You:**  
-One notable problem we faced was that the main analytics dashboard was loading very slowly — sometimes taking over 8 seconds. On the surface, it appeared to be a simple frontend rendering issue. However, after digging into it, I found the root cause was much deeper.
+Last quarter, we faced a serious performance issue in our main dashboard. The page was loading very slowly, sometimes taking more than 8 seconds. This problem affected hundreds of users every day and received many complaints.
 
-The main issue stemmed from the backend returning large amounts of unnecessary data on every request, combined with poor state management on the frontend that caused excessive re-renders. These two factors together created a cascade effect, especially during peak usage hours.
+After investigating, we discovered that the root cause was unnecessary re-renders in a large data table component. Every time the user scrolled or filtered data, the whole table was re-rendering completely. As a result, it created a major bottleneck and significantly degraded the user experience.
 
-As a result, users experienced significant friction, productivity dropped, and we saw a measurable decline in user satisfaction scores. From a business perspective, slow dashboards affected decision-making speed and increased the number of support tickets.
+## 5) Reading Text
 
-### Dialogue 2 – Deeper Follow-up
+In software development, identifying and analyzing problems is a crucial skill. Good developers not only fix symptoms but also find the root cause. Understanding the real reason behind an issue helps prevent it from happening again and reduces negative impact on both users and the business.
 
-**Teacher:** How serious was this problem?
+## 6) List of Questions + Ideas
 
-**You:**  
-It was quite serious because it wasn’t just about speed. When managers can’t get timely insights, it directly impacts business decisions. This kind of user friction can also damage long-term trust in the platform.
+### Basic Questions
+1. Can you describe a technical problem you faced recently?
+2. What was the main issue?
+3. What was the root cause of the problem?
+4. How did you discover the root cause?
 
-## 4) Reading Text
+### Deeper & Follow-up Questions
+5. How did this problem affect users?
+6. What was the business impact of this issue?
+7. How long did it take to identify the root cause?
+8. Was this problem easy or difficult to solve? Why?
+9. Did this problem happen more than once?
+10. What did you learn from this experience?
 
-Identifying and analyzing problems is a critical skill for developers. A seemingly simple symptom, such as slow page loading, often has deeper root causes. Effective problem-solving requires looking beyond the surface to understand the underlying issues, their cascade effects, and the real impact on both users and the business. Only then can we propose meaningful solutions.
-
-## 5) List of Questions + Ideas
-
-### Basic to Intermediate
-
-1. Describe a problem you faced in a recent project.
-2. What was the most obvious symptom?
-3. What do you believe was the root cause?
-4. How did the problem affect users?
-
-### B2-Level Expanded Questions
-
-5. Walk me through how you identified the root cause.
-6. What kind of cascade effects did this problem create?
-7. How did this issue impact the business or team productivity?
-8. Was the problem related to scalability, performance, or something else?
-9. What constraints made the problem harder to solve?
-10. If the same problem occurred again, how would you approach it differently?
-
-### Discussion & Critical Thinking
-
-11. Why is distinguishing between symptoms and root causes important?
-12. How do you explain a technical problem and its impact to non-technical stakeholders?
-13. What makes a problem “serious” in a frontend development context?
-14. How can small technical decisions lead to big user experience issues?
-15. Describe a problem that seemed simple at first but turned out to be complex.
+### Objection & Discussion Questions
+11. Some people say most problems are caused by poor coding. Do you agree?
+12. Is it better to fix problems quickly or find the root cause first?
+13. How would you explain a technical problem to a non-technical manager?
+14. What is the most difficult kind of problem to solve in frontend?
+15. Should developers spend more time preventing problems or fixing them?
 
 ---

@@ -1,128 +1,123 @@
 ---
 sessionNumber: 8
-title: Explain a Solution + Decision
-topic: Solution Design & Decision Making
-phase: PHASE 2 — Problem-Solving
-level: B1+ / B2
-description: Explain the solution you implemented, the reasoning behind key decisions, trade-offs considered, and the final results — using professional B2-level language.
+title: Explaining Your Solution & Decision Making
+topic: Solution & Reasoning
+phase: PHASE 2 — PROBLEM-SOLVING
+level: B2
+description: Explain the solution you implemented, the reasoning behind your decisions, trade-offs considered, and the final results.
 ---
 
-# Session 8: Explain a Solution + Decision
+# Session 8: Explaining Your Solution & Decision Making
 
-**Level:** B1+ / B2  
-**Focus:** Describe a solution clearly, justify your decisions, discuss trade-offs, and highlight measurable outcomes at B2 level.
+**Level:** B2  
+**Focus:** Speaking clearly about how you solved a problem, why you chose that solution, and what results you achieved.
 
 ## 1) Vocabulary & Collocations
 
-- **solution** (n) – the method used to solve a problem  
-  _Example:_ We implemented a multi-step solution combining frontend and backend improvements.
+- **solution** (n) – the way to solve a problem  
+  _Example:_ We implemented a good solution to fix the performance issue.
 
-- **trade-off** (n) – accepting a disadvantage to gain a bigger benefit  
-  _Example:_ We accepted a small trade-off in visual richness to achieve much better performance.
+- **approach** (n) – a way of dealing with a problem  
+  _Example:_ We decided to use a different approach.
 
-- **justification** (n) – clear reasons supporting a decision  
-  _Example:_ The justification for choosing lazy loading was the significant improvement in initial load time.
+- **decision** (n) – a choice you make after thinking  
+  _Example:_ The key decision was to rewrite the component.
 
-- **optimization** (n) – the process of making something work better  
-  _Example:_ Performance optimization was our highest priority in this sprint.
+- **trade-off** (n) – accepting a disadvantage to gain an advantage  
+  _Example:_ We had to make some trade-offs between speed and functionality.
 
-- **mitigation** (n) – reducing the negative effect of a problem  
-  _Example:_ Caching provided immediate mitigation while we worked on a permanent fix.
+- **implement** (v) – to put a plan into action  
+  _Example:_ We implemented the solution within two days.
 
-- **measurable outcome** (n) – a result that can be clearly measured  
-  _Example:_ We achieved a measurable outcome of 65% faster loading time.
+- **result** (n) / **outcome** (n) – the final effect  
+  _Example:_ The result was a significant improvement in loading speed.
 
-- **alternative approach** (n) – another possible way to solve the same problem  
-  _Example:_ We evaluated several alternative approaches before making our final decision.
+- **optimize** (v) – to make something work better  
+  _Example:_ We optimized the component to reduce re-renders.
 
-- **long-term maintainability** (n) – how easy it is to maintain the solution in the future  
-  _Example:_ We prioritized long-term maintainability over a quick temporary fix.
+## 2) Grammar & Useful Patterns (B2)
 
-- **rollback plan** (n) – a prepared plan to reverse changes if needed  
-  _Example:_ We always prepare a rollback plan before deploying major changes.
+- **Past Simple for actions**  
+  We **decided** to use memoization to solve the problem.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Reasoning expressions**  
+  We chose this solution **because** it was the most efficient option.
+
+- **Contrast / Trade-off**  
+  Although it took more time to implement, **it was worth it** because…
+
+- **Result expressions**  
+  As a result, the loading time **was reduced** from 8 seconds to under 2 seconds.
+
+- **Reflection**  
+  Looking back, I think this was the right decision because…
+
+### Useful Sentence Patterns
+- To solve this problem, we decided to…
+- The main reason we chose this approach was…
+- We considered … but finally decided to…
+- As a result, …
+- This solution helped us to…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
 - implement a solution
-- make an informed decision
-- consider trade-offs carefully
-- achieve measurable improvement
-- prioritize performance
-- evaluate alternatives
-- provide immediate mitigation
-- ensure long-term maintainability
-- deliver measurable results
-- justify the decision based on data
+- make a decision
+- consider trade-offs
+- achieve good results
+- improve performance significantly
+- reduce loading time
+- solve the root cause
+- evaluate different options
 
-### Useful Chunking & Sentence Starters (B2)
+### Useful Chunking & Sentence Starters
+- To solve this issue, we…
+- After considering several options,…
+- The main reason behind our decision was…
+- In the end, we…
+- This approach allowed us to…
 
-- To address this problem, we decided to…
-- The main reason for this decision was…
-- After evaluating several options, we chose…
-- Although there was a trade-off, we believed…
-- As a direct result of this solution…
-- This approach not only solved the immediate issue but also…
-- Looking back, the decision proved to be…
-- From both technical and business perspectives…
+### Useful Phrasal Verbs
+- **come up with** → We came up with several possible solutions.
+- **work out** → The solution we chose worked out very well.
+- **carry out** → We carried out the changes in the next sprint.
+- **end up** → We ended up choosing the memoization approach.
 
-### Advanced Phrasal Verbs
+## 4) Typical Dialogues
 
-- **come up with** → We came up with a hybrid solution combining caching and pagination.
-- **cut down on** → This change helped cut down on unnecessary re-renders.
-- **roll out** → We rolled out the solution gradually to monitor its effects.
-- **pay off** → The extra effort we invested definitely paid off.
-- **fall back on** → We had a simple fallback plan in case of unexpected issues.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Full Solution + Decision Explanation (3–4 minutes)
-
-**Teacher:** How did you solve the slow dashboard loading problem?
+**Teacher:** How did you solve the performance problem?
 
 **You:**  
-To solve the slow dashboard, we implemented a combination of frontend optimizations. The main solution was introducing lazy loading and pagination so that only the necessary data is fetched and rendered initially. We also applied memoization to prevent unnecessary re-renders.
+To solve the slow loading issue, we decided to implement memoization and React.memo for the large data table component. We chose this approach because it directly addressed the root cause — unnecessary re-renders — without rewriting the entire feature.
 
-The key decision was to focus on frontend improvements first because they could be delivered faster and provide immediate mitigation. We considered building a more complex caching system on the backend, but we decided against it due to time constraints and higher complexity. There was a small trade-off — users now need to load more data manually in some sections — but we believed this was acceptable given the dramatic improvement in initial load time.
+We considered using virtualization first, but after testing, we realized memoization gave us better results with less complexity. As a result, the loading time dropped from 8 seconds to under 2 seconds. Users gave positive feedback, and the number of complaints decreased significantly.
 
-After rolling out the changes, we measured a 65% reduction in loading time and a clear increase in user satisfaction. The solution not only fixed the immediate problem but also improved long-term maintainability and scalability.
+## 5) Reading Text
 
-### Dialogue 2 – Discussing Trade-offs
+When facing technical problems, experienced developers focus not only on fixing the symptoms but also on choosing the most appropriate solution. Good decision-making involves analyzing options, considering trade-offs, and thinking about both short-term and long-term impacts. The best solutions are those that solve the root cause while bringing clear value to users and the business.
 
-**Teacher:** Were there any downsides to your solution?
+## 6) List of Questions + Ideas
 
-**You:**  
-Yes, we had to accept a minor trade-off in terms of immediate data visibility. However, after collecting user feedback, we confirmed that most users preferred a fast and responsive experience over seeing everything at once. This validated that our decision was well justified.
-
-## 4) Reading Text
-
-When facing a performance issue, it is important to design a thoughtful solution rather than applying quick fixes. In this case, we chose a balanced approach that combined several frontend optimizations. We carefully considered trade-offs between speed, complexity, and user experience before making the final decision. The changes were rolled out gradually with a clear rollback plan. As a result, we achieved significant measurable improvements while also enhancing the long-term maintainability of the application.
-
-## 5) List of Questions + Ideas
-
-### Basic to Intermediate
-
+### Basic Questions
 1. How did you solve the problem?
-2. What was your main solution?
-3. Why did you choose this approach?
-4. What results did you achieve?
+2. What was your solution?
+3. Why did you choose that solution?
+4. What was the result after implementing it?
 
-### B2-Level Expanded Questions
+### Deeper & Follow-up Questions
+5. What other solutions did you consider?
+6. What trade-offs did you have to make?
+7. How did you decide which solution was best?
+8. How long did it take to implement the solution?
+9. Did the solution completely solve the problem?
+10. What did you learn from this experience?
 
-5. Walk me through your decision-making process.
-6. What trade-offs did you consider?
-7. How did you measure the success of the solution?
-8. Would you change anything if you could do it again?
-9. How did this solution improve long-term maintainability?
-10. How did you communicate the solution to stakeholders?
-
-### Discussion & Critical Thinking
-
-11. Why is justifying technical decisions important?
-12. How do you balance quick fixes with long-term solutions?
-13. What makes a solution “good” in frontend development?
-14. How do you handle situations where the best technical solution conflicts with business needs?
-15. Describe a time when your solution had unexpected positive effects.
+### Objection & Discussion Questions
+11. Is the fastest solution always the best solution?
+12. How do you decide between a quick fix and a proper long-term solution?
+13. Should developers always choose the most modern solution?
+14. What is more important: solving the problem quickly or solving it correctly?
+15. How do you explain your technical decisions to non-technical stakeholders?
 
 ---

@@ -1,131 +1,112 @@
 ---
 sessionNumber: 3
-title: A Typical Day & Daily Tasks
-topic: Daily Work & Responsibilities
-phase: PHASE 1 — TECH EXPLAIN
-level: B1+
-description: Describe your typical workday, common tasks, tools you use, and how you collaborate with the team.
+title: Tech Stack, Tools & Why You Choose Them
+topic: Technologies & Decision Making
+phase: PHASE 1 — TECH EXPLAIN 
+level: B2
+description: Explain your tech stack, tools you use, and the reasons behind your technology choices in a clear and professional way.
 ---
 
-# Session 3: A Typical Day & Daily Tasks
+# Session 3: Tech Stack, Tools & Why You Choose Them
 
-**Level:** B1+  
-**Focus:** Speak naturally and fluently about what you do on a normal workday as a Frontend Developer.
+**Level:** B2  
+**Focus:** Speaking confidently about the technologies and tools you use, and explaining why you choose them.
 
 ## 1) Vocabulary & Collocations
 
-- **task** (n) – a piece of work that needs to be done  
-  _Example:_ One of my daily tasks is implementing new UI components.  
-  _Example:_ I prioritize my tasks at the beginning of each day.
+- **tech stack** (n) – the combination of technologies used in a project  
+  _Example:_ Our tech stack is built around React and TypeScript.
 
-- **meeting** (n) – a planned discussion with colleagues  
-  _Example:_ We have a short daily stand-up meeting every morning.  
-  _Example:_ I attend sprint planning meetings to discuss the next tasks.
+- **framework** (n) – a structured platform for developing applications  
+  _Example:_ React is our primary framework for building user interfaces.
 
-- **code review** (n) – the process of checking other people’s code  
-  _Example:_ I participate in code reviews to maintain high quality.  
-  _Example:_ Code reviews help the whole team learn from each other.
+- **productivity** (n) – the efficiency of doing work  
+  _Example:_ Modern tools greatly improve developer productivity.
 
-- **bug** (n) – an error or problem in the application  
-  _Example:_ I spend time fixing bugs reported by users.  
-  _Example:_ Some bugs are related to how the page looks on mobile devices.
+- **maintainability** (n) – how easy it is to maintain the code long-term  
+  _Example:_ We always consider maintainability when selecting tools.
 
-- **sprint** (n) – a short period of work (usually 1–2 weeks) in Agile  
-  _Example:_ We work in two-week sprints.  
-  _Example:_ At the end of each sprint, we deliver completed features.
+- **reliability** (n) – the quality of being dependable  
+  _Example:_ Reliability is a key factor in our technology choices.
 
-- **tool** (n) – software or program used to do a job  
-  _Example:_ VS Code is my main coding tool.  
-  _Example:_ We use Jira to track tasks and manage the project.
+- **scalability** (n) – the ability to grow with more users or data  
+  _Example:_ We need technologies that support good scalability.
 
-- **collaboration** (n) – working together with others  
-  _Example:_ Good collaboration is essential for successful projects.  
-  _Example:_ Collaboration with the design team helps create better interfaces.
+## 2) Grammar & Useful Patterns (B2)
 
-- **productivity** (n) – how efficiently and effectively you work  
-  _Example:_ I try to maintain high productivity throughout the day.  
-  _Example:_ Good tools help increase team productivity.
+- **Reason clauses**: because / since / as  
+  We use TypeScript **because** it helps catch errors early.
 
-## 2) Collocations, Chunking & Phrasal Verbs
+- **Purpose clauses**: to / in order to  
+  We chose React **to build** reusable components more efficiently.
+
+- **Comparative structures**  
+  TypeScript is **more reliable than** plain JavaScript for large projects.
+
+- **Passive voice for decisions**  
+  These tools **are selected** based on performance and developer experience.
+
+### Useful Sentence Patterns
+- We decided to use … because …
+- One of the main reasons we choose … is …
+- This technology allows us to …
+- Compared to the old stack, the new one is …
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
-- attend meetings
-- implement new features
-- fix bugs
-- perform code reviews
-- update tasks
-- optimize performance
-- gather requirements
-- track progress
-- collaborate with the team
-- meet deadlines
+- modern tech stack
+- choose a framework
+- increase productivity
+- improve maintainability
+- reduce bugs
+- speed up development
+- ensure reliability
 
 ### Useful Chunking & Sentence Starters
-
-- A typical day for me starts with…
-- Most of my time is spent on…
-- One of my main daily tasks is…
-- I usually begin my day by…
-- In the afternoon, I focus on…
-- Throughout the day, I…
-- At the end of the day, I…
+- My current tech stack includes…
+- We use … because…
+- The biggest advantage of this tool is…
+- This helps us to…
 
 ### Useful Phrasal Verbs
+- **work with** → I work with React and TypeScript daily.
+- **rely on** → We rely on these libraries to speed up development.
+- **build on** → We build on top of modern frameworks.
+- **speed up** → These tools help speed up our workflow.
 
-- **work on** → I work on new features in the morning.
-- **deal with** → I often deal with unexpected bugs or issues.
-- **look into** → When a problem appears, I look into it right away.
-- **come up with** → We come up with solutions during team discussions.
-- **carry out** → I carry out testing before submitting my code.
-- **follow up** → I follow up with designers if the requirements are unclear.
+## 4) Typical Dialogues
 
-## 3) Typical Dialogues
-
-### Dialogue 1 – Describing a Typical Day
-
-**Teacher:** What does a typical workday look like for you?
+**Teacher:** What tech stack do you use?
 
 **You:**  
-A typical day for me starts with a daily stand-up meeting where the team shares updates and any blockers. After the meeting, I usually work on implementing new features or improving existing components.
+I mainly work with a tech stack based on ReactJS and TypeScript. We also use supporting tools for testing and styling. We chose this stack because it offers strong typing, excellent performance, and great reusability. TypeScript helps us reduce errors in large applications, while React makes it easier to create and maintain reusable components. Overall, this combination significantly improves our development speed and code quality.
 
-I spend most of the morning coding and testing. In the afternoon, I often do code reviews, fix bugs, or join discussions with designers and backend developers. Before finishing the day, I update my tasks and prepare for the next sprint.
+## 5) Reading Text
 
-### Dialogue 2 – Tools & Collaboration
+Choosing the right tech stack is crucial for any development team. The best choices are usually based on factors such as performance, maintainability, developer productivity, and long-term scalability. A well-chosen tech stack can make development faster, reduce bugs, and help the team deliver better products.
 
-**Teacher:** What tools do you use and how do you collaborate?
-
-**You:**  
-I mainly use VS Code for coding, Figma to check designs, and Jira to manage tasks. For communication, we use Slack and Microsoft Teams. I collaborate closely with designers to implement UI correctly and with backend developers to integrate APIs smoothly. Good collaboration helps us deliver better results faster.
-
-## 4) Reading Text
-
-A frontend developer’s typical day includes a mix of coding, meetings, code reviews, and collaboration. The workday usually starts with a team meeting, followed by focused development time. Throughout the day, developers also fix bugs, optimize performance, and communicate with other team members. This balanced routine helps deliver high-quality work while keeping the team aligned.
-
-## 5) List of Questions + Ideas
+## 6) List of Questions + Ideas
 
 ### Basic Questions
-
-1. What does a typical workday look like for you?
-2. How do you usually start your day?
-3. What are your main daily tasks?
-4. What tools do you use every day?
+1. What is your current tech stack?
+2. Which main tools do you use?
+3. Why did you choose these technologies?
+4. What frameworks do you work with?
 
 ### Deeper & Follow-up Questions
-
-5. How much time do you spend coding versus in meetings?
-6. How do you collaborate with other team members?
-7. What do you do when you face a difficult task?
-8. How do you prioritize your tasks?
-9. What is the most enjoyable part of your day?
-10. How has your daily routine changed as you gained more experience?
+5. What are the advantages of your current tech stack?
+6. How does your tech stack improve productivity?
+7. Have you ever changed your tech stack? Why?
+8. How do you decide which new tools to adopt?
+9. What problems can a bad tech stack cause?
+10. How important is maintainability when choosing tools?
 
 ### Objection & Discussion Questions
-
-11. Some people think developers only write code all day. What do you think?
-12. How important is communication in your daily work?
-13. What is the most challenging part of your typical day?
-14. How do you stay productive throughout the day?
-15. How does your daily work contribute to the team’s success?
+11. Some people say newer technologies are always better. What do you think?
+12. Is it better to use popular frameworks or stable older ones?
+13. How would you explain your tech stack to a non-technical manager?
+14. What happens if the team refuses to learn new tools?
+15. Should companies change their tech stack frequently?
 
 ---

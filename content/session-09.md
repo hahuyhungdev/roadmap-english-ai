@@ -1,119 +1,119 @@
 ---
 sessionNumber: 9
-title: Trade-offs & Evaluation
-topic: Decision Making & Critical Thinking
-phase: PHASE 2 — Problem-Solving
-level: B1+ / B2
-description: Discuss real trade-offs in frontend development, explain the reasoning behind choices, evaluate different options, and reflect on outcomes using professional B2-level language.
+title: Trade-offs & Evaluating Options
+topic: Decision Making & Trade-offs
+phase: PHASE 2 — PROBLEM-SOLVING
+level: B2
+description: Discuss trade-offs in frontend development, explain the reasoning behind your choices, and evaluate different options.
 ---
 
-# Session 9: Trade-offs & Evaluation
+# Session 9: Trade-offs & Evaluating Options
 
-**Level:** B1+ / B2  
-**Focus:** Speak confidently about the compromises you make in frontend work, justify your decisions, compare alternatives, and evaluate results with clear, structured reasoning.
+**Level:** B2  
+**Focus:** Speaking professionally about trade-offs, comparing different solutions, and explaining your decision-making process.
 
 ## 1) Vocabulary & Collocations
 
-- **trade-off** (n) – accepting a disadvantage to gain a more important benefit  
-  _Example:_ We made a trade-off between visual richness and loading speed.
+- **trade-off** (n) – accepting a disadvantage to gain an advantage  
+  _Example:_ We had to make a trade-off between speed and code complexity.
 
-- **alternative** (n) – another possible option or approach  
-  _Example:_ We evaluated three alternatives before choosing the final solution.
+- **option** (n) – one of several possible choices  
+  _Example:_ We evaluated several options before making a decision.
 
-- **prioritization** (n) – the process of deciding what is most important  
-  _Example:_ Good prioritization helped us balance short-term delivery with long-term quality.
+- **advantage** (n) – a positive aspect  
+  _Example:_ The main advantage of this approach is better performance.
 
-- **compromise** (n) – an agreement where both sides give up something  
-  _Example:_ The final design was a compromise between design and engineering constraints.
+- **disadvantage** (n) – a negative aspect  
+  _Example:_ One disadvantage is that it takes longer to implement.
 
-- **evaluation** (n) – the process of judging how effective something is  
-  _Example:_ We conducted a thorough evaluation two weeks after release.
+- **evaluate** (v) – to judge how good something is  
+  _Example:_ We evaluated all options based on performance and maintainability.
 
-- **opportunity cost** (n) – the benefit you lose by choosing one option over another  
-  _Example:_ The opportunity cost of heavy animations was slower page performance.
+- **balance** (v) – to find a suitable middle point  
+  _Example:_ It’s important to balance speed and code quality.
 
-- **technical debt** (n) – future work created by choosing quick but suboptimal solutions  
-  _Example:_ Adding quick fixes increased our technical debt significantly.
+- **compromise** (n) – an agreement where both sides accept less  
+  _Example:_ We reached a compromise between design and performance.
 
-- **long-term vs short-term** – balancing immediate needs with future consequences  
-  _Example:_ We often discuss the tension between long-term maintainability and short-term delivery.
+## 2) Grammar & Useful Patterns (B2)
 
-- **mitigation strategy** (n) – a plan to reduce negative effects  
-  _Example:_ Lazy loading was our mitigation strategy for heavy content.
+- **Comparison structures**  
+  Solution A is **faster than** Solution B, **but** it is **more difficult to maintain**.
 
-- **retrospective** (n) – a meeting to review what went well and what could be improved  
-  _Example:_ In the sprint retrospective, we openly discussed the trade-offs we had made.
+- **Although / While / However** (contrast)  
+  **Although** virtualization was more complex, it gave us better long-term results.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Superlative + reason**  
+  This was **the best option** because it offered the best balance between speed and complexity.
+
+- **Conditional for hypothetical**  
+  If we had chosen the quick fix, we **would have faced** the same problem again later.
+
+### Useful Sentence Patterns
+- We had to choose between … and …
+- On one hand, … On the other hand, …
+- The main trade-off was …
+- After evaluating all options, we decided to …
+- In the end, we chose … because …
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
-- make a conscious trade-off
+- make a trade-off
+- evaluate options
 - weigh the pros and cons
-- prioritize performance over aesthetics
-- accept short-term pain for long-term gain
-- evaluate multiple options
-- minimize technical debt
-- balance competing priorities
-- measure the impact of the decision
-- learn from the trade-off
-- justify the compromise
+- balance performance and maintainability
+- consider long-term impact
+- reach a compromise
+- choose the best approach
 
-### Useful Chunking & Sentence Starters (B2 level)
+### Useful Chunking & Sentence Starters
+- We considered two main options…
+- The biggest trade-off was…
+- After careful evaluation,…
+- On the positive side,…
+- However, the downside was…
 
-- When making this decision, we had to weigh…
-- On one hand … on the other hand…
-- We ultimately chose … because…
-- Although this meant sacrificing…, it allowed us to…
-- Looking back, the trade-off proved to be…
-- From a business perspective, the benefits outweighed…
-- In hindsight, I would…
-- The key lesson we learned was…
+### Useful Phrasal Verbs
+- **weigh up** → We had to weigh up the advantages and disadvantages.
+- **go for** → In the end, we went for the memoization approach.
+- **rule out** → We ruled out the quick fix because it wasn’t sustainable.
+- **end up** → We ended up choosing a more balanced solution.
 
-### Advanced Phrasal Verbs
+## 4) Typical Dialogues
 
-- **weigh up** → We weighed up the pros and cons carefully before deciding.
-- **opt for** → We opted for a simpler solution to reduce complexity.
-- **give up** → We had to give up some advanced animations to improve speed.
-- **pay off** → The decision eventually paid off in better user retention.
-- **fall short** → The first option fell short in terms of long-term maintainability.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Full Trade-off Explanation (3–4 minutes)
-
-**Teacher:** Can you talk about a significant trade-off you had to make?
+**Teacher:** Did you have to make any trade-offs when solving the problem?
 
 **You:**  
-Certainly. While developing a new reporting dashboard, we faced a classic trade-off between visual appeal and performance. The design team wanted rich animations, interactive charts, and many real-time elements. However, implementing everything as requested would have made the initial load time exceed 6 seconds.
+Yes, we had to make several trade-offs. We considered two main options: using virtualization or implementing memoization. Virtualization would have given better performance with large datasets, but it was more complex and would take longer to implement. Memoization was simpler and faster to apply, but it might not scale as well in the future.
 
-After weighing the pros and cons, we decided to simplify the animations and use lazy loading for heavy chart components. This meant sacrificing some visual polish in the first few seconds, but it allowed the dashboard to become interactive within 2 seconds.
+After evaluating both, we decided to go with memoization because it offered the best balance between quick results and maintainability. Although we sacrificed some long-term scalability, it allowed us to deliver the improvement quickly and receive positive user feedback.
 
-We also created a phased approach: deliver the fast core version first, then enhance animations later. Although there was some initial pushback, the evaluation after release showed a 40% improvement in user engagement and significantly fewer complaints about slowness. In hindsight, accepting that short-term compromise paid off because it improved both user experience and our technical debt situation.
+## 5) Reading Text
 
-### Dialogue 2 – Defending the Decision
+In real-world development, there is rarely a perfect solution. Most decisions involve trade-offs between speed, quality, complexity, and long-term maintainability. Good developers carefully evaluate their options and choose the solution that brings the best overall value to the project and the business.
 
-**Teacher:** Don’t you think you compromised too much on design?
+## 6) List of Questions + Ideas
 
-**You:**  
-I understand the concern. However, we had to prioritize user perception of speed over immediate visual impact. Research shows that users often abandon slow interfaces before they can appreciate beautiful animations. By making this trade-off, we actually delivered a better overall experience.
+### Basic Questions
+1. What trade-offs did you have to make?
+2. What options did you consider?
+3. Why did you choose that particular solution?
+4. What were the advantages and disadvantages?
 
-## 4) Reading Text
+### Deeper & Follow-up Questions
+5. How did you evaluate the different options?
+6. Was it a difficult decision? Why?
+7. What factors were most important in your decision?
+8. Would you make the same decision again?
+9. How do you balance short-term and long-term needs?
+10. What is the hardest trade-off you usually face in frontend development?
 
-In frontend development, trade-offs are inevitable. A recent example was choosing between a highly interactive and visually rich interface versus fast, responsive performance. We evaluated several alternatives and ultimately opted for a hybrid solution that offered the best balance. Although we had to accept some limitations in the first release, the decision minimized technical debt and allowed faster delivery. Post-release evaluation confirmed that the compromise was successful — loading times improved dramatically, user satisfaction increased, and the team gained valuable lessons about prioritization.
+### Objection & Discussion Questions
+11. Is it better to choose the fastest solution or the best long-term solution?
+12. Should developers always avoid trade-offs?
+13. How do you explain trade-offs to non-technical stakeholders?
+14. Do you think making compromises is a sign of weakness?
+15. In your opinion, what is the most common trade-off in frontend development?
 
-## 5) List of Questions + Ideas
-
-### Basic to Intermediate
-
-1. Can you describe a trade-off you had to make recently?
-2. What were the different options you considered?
-3. Which factor was most important in your final decision?
-4. What was the result of that trade-off?
-
-### B2-Level Expanded Questions
-
-5. How do you weigh pros and cons when facing competing priorities?
-6. Tell me about a time when you had to sacrifice design quality for performance.
-7. How do you evaluate whether a trade-off was successful?
-8. What role does opportunity cost play in your decision-making
+---

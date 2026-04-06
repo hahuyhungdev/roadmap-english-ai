@@ -1,135 +1,119 @@
 ---
 sessionNumber: 12
-title: Defend Your Decision
-topic: Justification & Handling Objections
-phase: PHASE 2 — Problem-Solving
-level: B1+ / B2
-description: Explain and strongly defend a technical decision you made, anticipate and respond to objections from stakeholders, and justify your choice with clear reasoning and business impact — at B2 level.
+title: Defending Your Technical Decisions
+topic: Justifying Decisions & Handling Objections
+phase: PHASE 2 — PROBLEM-SOLVING
+level: B2
+description: Explain and defend a technical decision you made, anticipate objections, and justify your choice with clear reasoning and business impact.
 ---
 
-# Session 12: Defend Your Decision
+# Session 12: Defending Your Technical Decisions
 
-**Level:** B1+ / B2  
-**Focus:** Confidently explain, justify, and defend your technical decisions while handling objections professionally and linking them to business value.
+**Level:** B2  
+**Focus:** Speaking confidently to explain and defend your technical decisions, even when facing objections.
 
 ## 1) Vocabulary & Collocations
 
-- **justification** (n) – clear reasons supporting a decision  
-  _Example:_ I provided strong justification based on performance data and user feedback.
+- **decision** (n) – a choice made after consideration  
+  _Example:_ This was one of the most important technical decisions I made.
 
-- **objection** (n) – an expression of disagreement or concern  
-  _Example:_ I was prepared to address common objections from the product team.
+- **justify** (v) – to give reasons to show something is right  
+  _Example:_ I had to justify my decision to the product team.
 
-- **rationale** (n) – the underlying reason or logic behind a choice  
-  _Example:_ The rationale behind choosing lazy loading was better initial load time.
+- **objection** (n) – a reason why someone disagrees  
+  _Example:_ I anticipated several objections from stakeholders.
 
-- **evidence-based decision** (n) – a choice supported by data and facts  
-  _Example:_ We made an evidence-based decision after analyzing load time metrics.
+- **reasoning** (n) – the process of thinking about something logically  
+  _Example:_ My reasoning was based on both technical and business factors.
 
-- **counterargument** (n) – a response to an objection  
-  _Example:_ My main counterargument was that speed matters more than decorative effects.
+- **business impact** (n) – the effect on the company’s goals  
+  _Example:_ I explained the business impact of my decision.
 
-- **long-term benefit** (n) – advantages that appear over time  
-  _Example:_ Although more expensive initially, the long-term benefits in maintainability were clear.
+- **long-term benefit** (n) – advantage that appears later  
+  _Example:_ Although it took more time, it brought long-term benefits.
 
-- **short-term drawback** (n) – a temporary negative aspect  
-  _Example:_ We acknowledged the short-term drawback of additional development time.
+- **short-term cost** (n) – immediate disadvantage  
+  _Example:_ We accepted some short-term cost for better long-term results.
 
-- **stakeholder concern** (n) – worries or priorities of people involved  
-  _Example:_ I directly addressed stakeholder concerns about timeline and visual quality.
+## 2) Grammar & Useful Patterns (B2)
 
-- **data-driven** (adj) – based on facts and measurements  
-  _Example:_ Our final decision was completely data-driven.
+- **Reasoning structures**  
+  I chose this approach **because** it provided the best balance between speed and maintainability.
 
-- **defensibility** (n) – how easy it is to justify something  
-  _Example:_ Good documentation increases the defensibility of technical decisions.
+- **Anticipating objections**  
+  Some people might argue that…, however, …
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Contrast**  
+  **While** the quick fix seemed attractive, it would have caused problems later.
+
+- **Conditional for justification**  
+  If we had chosen the other option, we **would have faced** more issues in the future.
+
+### Useful Sentence Patterns
+- I decided to … because …
+- Although some people suggested …, I believed that …
+- My main reason for choosing this was …
+- From a business perspective, this decision …
+- In the long run, this will help us …
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
 - defend a decision
-- provide solid justification
-- address objections proactively
-- base the decision on data
-- weigh short-term vs long-term benefits
-- anticipate stakeholder concerns
-- present a compelling rationale
-- demonstrate business value
-- stand by the decision
-- learn from feedback
+- justify my choice
+- anticipate objections
+- consider long-term impact
+- provide strong reasoning
+- balance short-term and long-term needs
+- make a data-driven decision
 
-### Useful Chunking & Sentence Starters (B2 level)
+### Useful Chunking & Sentence Starters
+- I decided to go with … because…
+- Some stakeholders were concerned that…
+- However, I explained that…
+- The main benefit of this decision is…
+- Looking at the bigger picture,…
 
-- The decision I made was based on…
-- Although some people raised the objection that…, I believe…
-- My rationale for this choice is…
-- While it’s true that…, the benefits outweigh…
-- Let me address that concern directly…
-- From a business perspective…
-- Looking at the data, we can see that…
-- In retrospect, I’m confident that…
+### Useful Phrasal Verbs
+- **stand by** → I still stand by my decision.
+- **speak up** → I had to speak up and explain my reasoning.
+- **back up** → I backed up my decision with data and test results.
+- **think through** → I thought through all possible consequences.
 
-### Advanced Phrasal Verbs
+## 4) Typical Dialogues
 
-- **stand by** → I still stand by the decision I made.
-- **push back against** → I had to push back against the suggestion to add more animations.
-- **back up** → I backed up my argument with performance metrics.
-- **account for** → We accounted for possible objections during planning.
-- **speak up for** → As a frontend developer, I spoke up for user experience priorities.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Defending Your Decision (3–4 minutes)
-
-**Teacher:** Why did you decide to simplify the animations and prioritize speed? Some people disagreed.
+**Teacher:** Can you defend a technical decision you made?
 
 **You:**  
-The decision to simplify animations and focus on performance was based on clear data and user research. We discovered that 68% of our users accessed the platform on mobile devices with varying network conditions. Heavy animations were causing load times to exceed 5 seconds, which according to industry benchmarks leads to high bounce rates.
+Last project, I decided to implement memoization and code splitting instead of using a simpler but less efficient approach. Some team members objected because they thought it would take too much time. However, I explained that although it required more initial effort, it would significantly improve performance and reduce future maintenance costs.
 
-Some stakeholders objected, saying the interface would look less modern. My rationale was that users value responsiveness more than decorative effects. I presented metrics showing that similar optimizations in other projects increased user engagement by 35%.
+I supported my decision with performance test results and showed the potential business impact. In the end, the team agreed. The decision proved to be correct as we reduced loading time by over 60% and received much better user feedback.
 
-To address the concern about visual quality, I proposed a phased implementation: deliver the fast core version first, then gradually enhance animations once the foundation was solid. This compromise showed that we weren’t ignoring design — we were just sequencing priorities intelligently.
+## 5) Reading Text
 
-In the end, the results validated the decision: loading time dropped to 1.8 seconds, conversion rates improved, and even the design team later agreed it was the right choice. I stand by this decision because it delivered measurable business value while keeping long-term maintainability in mind.
+Being able to defend technical decisions is an important skill for senior developers. Good decisions are not only based on technical excellence but also consider business value, team capacity, and long-term maintainability. The ability to explain and justify choices clearly helps build trust with both technical and non-technical stakeholders.
 
-### Dialogue 2 – Handling Strong Objection
+## 6) List of Questions + Ideas
 
-**Teacher:** But the CEO really wanted those animations.
+### Basic Questions
+1. Can you describe a technical decision you made?
+2. Why did you make that decision?
+3. What objections did you face?
+4. How did you respond to those objections?
 
-**You:**  
-I completely understand the desire for a premium look. However, I would respectfully push back by showing that a beautiful but slow interface risks losing users before they even see those animations. I suggested we A/B test both versions. The data from the test clearly supported prioritizing speed, and that evidence helped bring everyone on board.
+### Deeper & Follow-up Questions
+5. What factors did you consider before making the decision?
+6. How did you measure whether it was the right choice?
+7. Would you make the same decision again? Why?
+8. How do you balance technical quality with business needs?
+9. How do you explain technical decisions to non-technical people?
+10. What is the most difficult decision you have had to defend?
 
-## 4) Reading Text
-
-Defending technical decisions is a critical skill in enterprise environments. When I chose to reduce animation complexity in favor of faster load times, several stakeholders expressed concerns about the visual appeal. I defended the decision by presenting performance data, user feedback, and industry benchmarks.
-
-My rationale was clear: speed directly affects user retention and business metrics. By addressing objections proactively, offering a phased approach, and backing my arguments with evidence, I was able to gain support. The final results — improved loading speeds, higher engagement, and positive feedback — confirmed that the decision was both technically sound and business-smart.
-
-## 5) List of Questions + Ideas
-
-### Basic to Intermediate
-
-1. Describe a decision you had to defend.
-2. What objections did you face?
-3. How did you justify your choice?
-4. What was the outcome?
-
-### B2-Level Expanded Questions
-
-5. How do you prepare to defend a technical decision?
-6. Tell me about a time when you had to push back against stakeholder preferences.
-7. What data or evidence did you use to support your position?
-8. How do you balance technical excellence with business priorities?
-9. How do you handle situations where your decision is initially unpopular?
-10. What makes a decision “defensible” in a team environment?
-
-### Discussion & Critical Thinking
-
-11. Why is the ability to defend decisions important for developers?
-12. How can you defend a decision without sounding defensive?
-13. What is the best way to turn objections into constructive discussion?
-14. How do you defend frontend-focused decisions to backend or product teams?
-15. Describe a time when defending your decision led to a better final outcome.
+### Objection & Discussion Questions
+11. Should developers always follow what stakeholders want?
+12. Is it okay to make a decision that the team initially disagrees with?
+13. How do you handle strong objections from senior managers?
+14. Should technical decisions be based more on data or experience?
+15. What is more important: making the perfect decision or making a timely decision?
 
 ---

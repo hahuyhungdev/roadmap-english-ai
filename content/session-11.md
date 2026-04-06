@@ -1,135 +1,120 @@
 ---
 sessionNumber: 11
 title: Handling Production Issues & Incident Response
-topic: Production Incident & Post-Mortem
-phase: PHASE 2 — Problem-Solving
-level: B1+ / B2
-description: Describe a production issue you faced, explain how you handled it under pressure, describe your contribution, communication with stakeholders, and key lessons learned — using clear and professional B2-level language.
+topic: Production Bugs & Crisis Management
+phase: PHASE 2 — PROBLEM-SOLVING
+level: B2
+description: Describe a production issue you faced, how you handled it under pressure, your contribution, communication with stakeholders, and lessons learned.
 ---
 
 # Session 11: Handling Production Issues & Incident Response
 
-**Level:** B1+ / B2  
-**Focus:** Speak confidently about a real production incident, how you responded, communicated with others, and what you learned from it.
+**Level:** B2  
+**Focus:** Speaking professionally about how you handle production issues, manage pressure, communicate with stakeholders, and learn from incidents.
 
 ## 1) Vocabulary & Collocations
 
-- **production issue** (n) – a problem that occurs in the live environment  
-  _Example:_ We faced a critical production issue that affected many users.
+- **production issue** (n) – a problem that occurs in the live system  
+  _Example:_ We had a critical production issue last week.
 
-- **incident response** (n) – the process of handling and resolving an unexpected problem  
-  _Example:_ Good incident response helped us minimize downtime.
+- **incident** (n) – an unexpected event that needs immediate attention  
+  _Example:_ This was a high-priority incident.
 
-- **post-mortem** (n) – a meeting to review what happened and how to prevent it in the future  
-  _Example:_ We held a post-mortem to analyze the root cause and improve our processes.
+- **response** (n) – the action taken to deal with a problem  
+  _Example:_ Our incident response was fast and effective.
 
-- **downtime** (n) – the period when the system is not available  
-  _Example:_ We managed to reduce downtime from 45 minutes to under 10 minutes.
+- **stakeholder** (n) – a person or group affected by the project  
+  _Example:_ I communicated regularly with stakeholders during the incident.
 
-- **impact** (n) – the effect on users or the business  
-  _Example:_ The issue had a significant impact on user experience during peak hours.
+- **downtime** (n) – the time when the system is not working  
+  _Example:_ We managed to minimize downtime.
 
-- **rollback** (n) – the action of returning to a previous stable version  
-  _Example:_ We prepared a quick rollback plan in case the fix caused new problems.
+- **rollback** (n) – returning to a previous working version  
+  _Example:_ We prepared a rollback plan as a backup.
 
-- **stakeholder communication** (n) – keeping managers and clients informed during an incident  
-  _Example:_ Clear stakeholder communication helped reduce panic and build trust.
+- **post-mortem** (n) – a review after an incident to learn lessons  
+  _Example:_ We held a post-mortem meeting to analyze what happened.
 
-- **root cause** (n) – the fundamental reason for the problem  
-  _Example:_ The root cause was a missing error handling in one of the API calls.
+## 2) Grammar & Useful Patterns (B2)
 
-- **lesson learned** (n) – useful knowledge gained from an experience  
-  _Example:_ One key lesson learned was the importance of better monitoring and alerts.
+- **Past Continuous + Past Simple** (for background + action)  
+  While users **were complaining**, I **was investigating** the root cause.
 
-- **preventive measure** (n) – an action taken to stop the same problem from happening again  
-  _Example:_ We implemented several preventive measures after the incident.
+- **Time sequences**  
+  First, … → Then, … → After that, … → Finally, …
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Reported speech**  
+  The product manager asked me **how long** it would take to fix the issue.
+
+- **Reflection**  
+  Looking back, I realized that…
+
+### Useful Sentence Patterns
+- When the issue occurred, I immediately…
+- Under pressure, I had to…
+- I kept stakeholders updated by…
+- In the end, we managed to…
+- From this incident, I learned that…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
 - handle a production issue
-- respond to an incident
+- respond quickly
 - minimize downtime
+- communicate clearly
+- investigate the cause
+- implement a fix
 - conduct a post-mortem
-- communicate clearly with stakeholders
-- identify the root cause
-- implement preventive measures
 - learn valuable lessons
-- roll back changes
-- restore service quickly
 
-### Useful Chunking & Sentence Starters (B2 level)
+### Useful Chunking & Sentence Starters
+- Last week, we faced a production issue where…
+- As soon as I noticed the problem,…
+- I immediately informed…
+- During the incident, my main role was…
+- The key lesson I learned was…
 
-- The production issue we faced was…
-- When the problem occurred, my first action was…
-- I immediately communicated with…
-- After investigating, we discovered that…
-- To resolve the issue, we…
-- The key lesson we learned was…
-- As a result of this incident, we now…
-- This experience taught me that…
+### Useful Phrasal Verbs
+- **look into** → I had to look into the issue right away.
+- **deal with** → We had to deal with the situation calmly.
+- **bring down** → We managed to bring down the error rate.
+- **come up with** → We came up with a temporary fix quickly.
 
-### Advanced Phrasal Verbs
+## 4) Typical Dialogues
 
-- **step in** → I stepped in to help coordinate the response.
-- **bring down** → We managed to bring down the downtime significantly.
-- **look into** → The team quickly looked into the logs to find the cause.
-- **roll back** → We decided to roll back the last deployment.
-- **follow up** → I followed up with stakeholders after the issue was resolved.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Full Incident Explanation (3–4 minutes)
-
-**Teacher:** Tell me about a production issue you handled and how you responded.
+**Teacher:** Tell me about a production issue you handled.
 
 **You:**  
-One of the most memorable production issues I handled was when the main dashboard suddenly became unresponsive for many users during peak hours. The problem started after we deployed a new feature.
+Last month, we had a critical production issue where a major feature suddenly stopped working for many users. As soon as I was notified, I joined the incident call and started investigating. While the team was checking the backend, I focused on the frontend side and discovered that a recent deployment had caused a JavaScript error.
 
-When the issue was reported, I immediately joined the incident call. My first action was to check the frontend logs and monitoring tools while coordinating with the backend and DevOps teams. We discovered that a recent change had caused an infinite loop in one component when handling large datasets.
+I kept stakeholders updated every 30 minutes and proposed a rollback as a quick solution. We applied the fix within 45 minutes and fully resolved the issue. After that, we held a post-mortem meeting to prevent similar problems in the future. This experience taught me the importance of clear communication under pressure.
 
-To resolve it quickly, we rolled back the problematic deployment while simultaneously preparing a proper fix. I also kept stakeholders updated with clear status messages every 10–15 minutes so they knew what was happening.
+## 5) Reading Text
 
-After the service was restored, we held a post-mortem meeting. The root cause was insufficient testing for edge cases with large data. As a result, we implemented better monitoring alerts and added more comprehensive test scenarios for large datasets.
+Production issues are inevitable in software development. How a team responds to these incidents often determines how much damage is done. Good incident response requires quick thinking, clear communication, effective collaboration, and the ability to learn from mistakes so that similar problems do not happen again.
 
-This experience taught me the importance of clear communication under pressure and having solid rollback plans.
+## 6) List of Questions + Ideas
 
-### Dialogue 2 – Highlighting Your Contribution
+### Basic Questions
+1. Can you describe a production issue you faced?
+2. How did you first hear about the issue?
+3. What was your role during the incident?
+4. How long did it take to resolve the problem?
 
-**Teacher:** What was your specific role during the incident?
+### Deeper & Follow-up Questions
+5. How did you communicate with stakeholders?
+6. What was the most difficult part of handling the incident?
+7. Did you use any temporary fixes or rollbacks?
+8. What did you learn from this experience?
+9. How do you prepare for production incidents?
+10. How has your approach to incidents changed over time?
 
-**You:**  
-I took responsibility for the frontend side — investigating the issue, providing quick updates to the team, and preparing the rollback. I also helped draft clear messages for stakeholders so they understood the situation without technical jargon.
-
-## 4) Reading Text
-
-Production incidents are inevitable in real-world applications. When they occur, the ability to stay calm, communicate clearly, and act quickly is crucial. A good incident response includes rapid investigation, coordinated action across teams, transparent communication with stakeholders, and a thorough post-mortem to prevent the same problem from happening again. These experiences often lead to important improvements in monitoring, testing, and team processes.
-
-## 5) List of Questions + Ideas
-
-### Basic to Intermediate
-
-1. Describe a production issue you faced.
-2. How did you first respond when the issue occurred?
-3. What was the root cause?
-4. How long did it take to resolve the issue?
-
-### B2-Level Expanded Questions
-
-5. What was your specific contribution during the incident?
-6. How did you communicate with stakeholders while the issue was ongoing?
-7. What preventive measures did you implement afterward?
-8. What did you learn from this incident?
-9. How do you prepare for potential production issues?
-10. How has your approach to incident response changed over time?
-
-### Discussion & Critical Thinking
-
-11. Why is clear communication during an incident so important?
-12. What makes a good post-mortem meeting effective?
-13. How do you balance speed and caution when fixing a live issue?
-14. What is the difference between a quick fix and a proper long-term solution?
-15. Describe a time when an incident led to significant improvement in your team’s processes.
+### Objection & Discussion Questions
+11. Is it better to fix a production issue quickly or correctly?
+12. Should developers be on call 24/7?
+13. How do you stay calm when facing a major production incident?
+14. Is rollback a sign of failure or a smart decision?
+15. What is the most important skill when handling production issues?
 
 ---

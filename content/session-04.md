@@ -1,131 +1,92 @@
 ---
 sessionNumber: 4
-title: Tools, Technologies & Tech Stack
-topic: Tools & Technologies
-phase: PHASE 1 — TECH EXPLAIN
-level: B1+
-description: Explain the tools and technologies you use, why you use them, and how they help you in your work (keep it high-level and easy to understand).
+title: Adapting to Changes, User Feedback & Continuous Improvement
+topic: Change Management & Continuous Improvement
+phase: PHASE 1 — TECH EXPLAIN 
+level: B2
+description: Explain how you adapt to changing requirements, collect and use user feedback, and drive continuous improvement.
 ---
 
-# Session 4: Tools, Technologies & Tech Stack
+# Session 4: Adapting to Changes, User Feedback & Continuous Improvement
 
-**Level:** B1+  
-**Focus:** Describe the main tools and technologies you use as a Frontend Developer in a simple, clear way with business and user benefits.
+**Level:** B2  
+**Focus:** Speaking about how you handle project changes and use feedback to continuously improve the product.
 
 ## 1) Vocabulary & Collocations
 
-- **technology stack** (n) – the combination of technologies used to build an application  
-  _Example:_ Our technology stack includes React, TypeScript, and Tailwind CSS.  
-  _Example:_ A modern technology stack helps the team develop faster and more reliably.
+- **adapt** (v) – to change in response to new situations  
+  _Example:_ Good developers must learn to adapt quickly to changes.
 
-- **framework** (n) – a structured set of tools that makes development easier and more consistent  
-  _Example:_ React is the main framework we use for building user interfaces.  
-  _Example:_ A good framework saves development time and improves code quality.
+- **requirement** (n) – a necessary condition or demand  
+  _Example:_ Business requirements can change during the project.
 
-- **library** (n) – a collection of reusable code that solves specific problems  
-  _Example:_ We use several UI libraries to create consistent components.  
-  _Example:_ Popular libraries help us avoid writing the same code repeatedly.
+- **user feedback** (n) – opinions received from actual users  
+  _Example:_ Regular user feedback helps us make better decisions.
 
-- **version control** (n) – a system that tracks changes in code over time  
-  _Example:_ We use Git for version control to work safely as a team.  
-  _Example:_ Version control allows us to go back to previous versions if needed.
+- **continuous improvement** (n) – the ongoing process of making small enhancements  
+  _Example:_ We believe in continuous improvement rather than big changes.
 
-- **performance** (n) – how fast and efficient the application is  
-  _Example:_ We constantly work on improving application performance.  
-  _Example:_ Better performance leads to a smoother user experience.
+- **iteration** (n) – one cycle of planning and improvement  
+  _Example:_ We implement changes in small iterations.
 
-- **responsive design** (n) – design that works well on different screen sizes (mobile, tablet, desktop)  
-  _Example:_ Responsive design is essential because many users access the app on phones.  
-  _Example:_ We test every feature to ensure responsive design.
+- **prioritize** (v) – to decide the order of importance  
+  _Example:_ We prioritize changes based on user impact.
 
-- **tool** (n) – software or application used to help with development  
-  _Example:_ VS Code is my main coding tool.  
-  _Example:_ We use several tools to make development more efficient.
+- **refine** (v) – to improve something gradually  
+  _Example:_ We constantly refine the interface based on feedback.
 
-- **integration** (n) – the process of connecting different tools or systems  
-  _Example:_ Good integration between tools helps the team work smoothly.  
-  _Example:_ We focus on seamless integration with the backend.
+## 2) Grammar & Useful Patterns (B2)
 
-## 2) Collocations, Chunking & Phrasal Verbs
+- **When + Present Simple**  
+  **When requirements change**, we evaluate their impact first.
+
+- **After + V-ing**  
+  **After collecting feedback**, we discuss which improvements to make.
+
+- **Relative clauses**  
+  We focus on changes **that bring the highest value to users**.
+
+- **Contrast** (although / however)  
+  **Although** frequent changes can be difficult, they often lead to better results.
+
+- **Result** (so / therefore / as a result)  
+  We listen to users carefully, **so** we can continuously improve the product.
+
+### Useful Sentence Patterns
+- When the requirements change, I usually…
+- Based on user feedback, we…
+- This allows us to…
+- As a result, the product becomes…
+- The key benefit of this approach is…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
-- modern technology stack
-- frontend framework
-- UI library
-- version control system
-- improve performance
-- ensure responsiveness
-- speed up development
-- write clean code
-- follow best practices
-- integrate with backend
+- adapt to changes
+- handle new requirements
+- collect user feedback
+- drive continuous improvement
+- prioritize changes
+- implement improvements
+- refine the user experience
+- respond quickly to feedback
 
 ### Useful Chunking & Sentence Starters
-
-- The main technology we use is…
-- We work with…
-- One of the most useful tools is…
-- This technology helps us…
-- We chose this framework because…
-- In terms of performance…
-- The biggest benefit of using this tool is…
-- From a development perspective…
+- When requirements change…
+- Based on user feedback…
+- One of the main challenges is…
+- To handle this situation, we…
+- This leads to better…
 
 ### Useful Phrasal Verbs
+- **deal with** → We often deal with unexpected changes.
+- **come up with** → We come up with solutions based on feedback.
+- **work on** → We work on the highest priority items first.
+- **figure out** → We figure out the best way to balance old and new work.
 
-- **work with** → I work with React and TypeScript every day.
-- **build with** → Most of our interfaces are built with React.
-- **speed up** → UI libraries help speed up development.
-- **look up** → I often look up documentation when I need help.
-- **deal with** → We deal with cross-browser compatibility carefully.
-- **keep up with** → It’s important to keep up with new frontend technologies.
+## 4) Typical Dialogues
 
-## 3) Typical Dialogues
-
-### Dialogue 1 – Simple Tech Stack Explanation
-
-**Teacher:** What technologies and tools do you use in your work?
+**Teacher:** How do you handle changes in requirements?
 
 **You:**  
-As a frontend developer, I mainly work with React and TypeScript. We also use Tailwind CSS for styling and several UI libraries to create consistent components. For version control, we use Git and GitHub.
-
-These tools help us build fast, responsive, and maintainable user interfaces. We also use Figma to work with designers and Jira to track our tasks.
-
-### Dialogue 2 – Explaining Benefits
-
-**Teacher:** Why do you use these particular technologies?
-
-**You:**  
-We chose React because it allows us to create reusable components, which makes development faster and the code easier to maintain. TypeScript helps us write safer code and catch errors early. These technologies together improve both development speed and the final user experience.
-
-### Dialogue 3 – Handling a Simple Question
-
-**Teacher:** Aren’t there too many tools to learn?
-
-**You:**  
-It may look like a lot at first, but each tool has a clear purpose. Once you learn them, they make the work much more efficient and enjoyable. Good tools help the team collaborate better and deliver higher quality products.
-
-## 4) Reading Text
-
-Frontend developers use a combination of frameworks, libraries, and tools called a technology stack. Popular choices include React for building interfaces, TypeScript for safer code, and Tailwind CSS for styling. These technologies, together with version control and task management tools, help teams build modern, fast, and user-friendly applications more efficiently.
-
-## 5) List of Questions + Ideas
-
-### Basic Questions
-
-1. What is your main frontend framework?
-2. What tools do you use every day?
-3. Do you use any design or collaboration tools?
-4. What version control system does your team use?
-
-### Deeper & Follow-up Questions
-
-5. Why does your team choose these technologies?
-6. How do these tools help improve performance or user experience?
-7. What is the benefit of using TypeScript?
-8. How do you keep your skills up to date with new tools?
-9. How does your tech stack help the team work faster?
-10. What challenges do you sometimes face with these technologies?
-
-### Objection &
+Requirements frequently change in our projects. When this happens, I first analyze the reason and assess the impact on users and the timeline. Then we prioritize the most valuable changes and implement them in small iterations. We also gather user feedback regularly to ensure we are improving the right areas. This method helps us stay flexible while maintaining good product quality.

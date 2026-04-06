@@ -1,132 +1,121 @@
 ---
 sessionNumber: 5
-title: Main Features & Functionalities
-topic: System Features
-phase: PHASE 1 — TECH EXPLAIN
-level: B1+
-description: Explain the key features of the system you work on, focusing on what they do, who benefits, and why they matter (high-level, user & business focused).
+title: How Technology Changes the Way We Work
+topic: Technology Impact on Work Practices
+phase: PHASE 1 — TECH EXPLAIN 
+level: B2
+description: Discuss how modern technologies are changing the way developers work, productivity, collaboration, and daily processes (high-level, IELTS-style).
 ---
 
-# Session 5: Main Features & Functionalities
+# Session 5: How Technology Changes the Way We Work
 
-**Level:** B1+  
-**Focus:** Describe the most important features of the system clearly, using simple language and emphasizing user benefits and business value.
+**Level:** B2  
+**Focus:** Speaking about how new technologies are transforming the way we work in software development.
 
 ## 1) Vocabulary & Collocations
 
-- **feature** (n) – a specific function or capability of the system  
-  _Example:_ One of the most useful features is the real-time dashboard.  
-  _Example:_ We recently added a new search feature based on user feedback.
+- **transform** (v) – to change completely  
+  _Example:_ New technologies have transformed the way we develop software.
 
-- **functionality** (n) – the set of functions that the system can perform  
-  _Example:_ The core functionality allows users to manage orders easily.  
-  _Example:_ This functionality saves a lot of manual work for the team.
+- **productivity** (n) – the amount of work done in a certain time  
+  _Example:_ Modern tools have greatly increased developer productivity.
 
-- **dashboard** (n) – a visual screen that shows important information  
-  _Example:_ The main dashboard displays key metrics at a glance.  
-  _Example:_ Users can customize their own dashboard according to their needs.
+- **collaboration** (n) – working together with others  
+  _Example:_ Technology has improved collaboration between remote teams.
 
-- **real-time** (adj) – happening immediately without delay  
-  _Example:_ The system provides real-time updates on order status.  
-  _Example:_ Real-time notifications help users stay informed.
+- **automation** (n) – using machines or software to do tasks automatically  
+  _Example:_ Automation helps reduce repetitive manual work.
 
-- **search functionality** (n) – the ability to find information quickly  
-  _Example:_ The advanced search functionality supports multiple filters.  
-  _Example:_ Good search functionality greatly improves user productivity.
+- **workflow** (n) – the way tasks are organized and completed  
+  _Example:_ New tools have made our workflow much smoother.
 
-- **notification** (n) – an alert or message that informs the user  
-  _Example:_ The system sends automatic notifications when tasks need attention.  
-  _Example:_ We reduced unnecessary notifications to avoid disturbing users.
+- **efficiency** (n) – doing more with less time and effort  
+  _Example:_ Technology has significantly improved our efficiency.
 
-- **workflow** (n) – the sequence of steps needed to complete a task  
-  _Example:_ The new approval workflow makes the process much faster.  
-  _Example:_ We simplified the workflow to reduce errors and save time.
+- **flexibility** (n) – the ability to adapt easily  
+  _Example:_ Modern technology gives us more flexibility in how we work.
 
-- **user benefit** (n) – the advantage that users gain from a feature  
-  _Example:_ This feature provides clear user benefits by saving time.  
-  _Example:_ We always consider user benefits when designing new functionality.
+## 2) Grammar & Useful Patterns (B2)
 
-## 2) Collocations, Chunking & Phrasal Verbs
+- **Present Perfect for changes**  
+  Technology **has changed** the way we work in many ways.
+
+- **Cause and Effect**  
+  Because of AI tools, developers **can** focus more on creative tasks.
+
+- **Comparison** (used to vs now)  
+  We **used to** write everything manually, but now we **can** generate code automatically.
+
+- **Passive voice**  
+  Many repetitive tasks **are being automated** by modern tools.
+
+- **Conditional sentences**  
+  If we didn’t have these tools, our work **would be** much slower.
+
+### Useful Sentence Patterns
+- Technology has changed the way we…
+- Thanks to …, we can now…
+- In the past, we used to …, but nowadays…
+- This leads to…
+- As a result, developers can focus more on…
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-
-- key features
-- core functionality
-- real-time updates
-- advanced search
-- automated notifications
-- streamlined workflow
-- improve productivity
-- provide instant access
-- meet user needs
-- deliver business value
+- transform the way we work
+- increase productivity
+- improve collaboration
+- automate repetitive tasks
+- streamline workflow
+- enhance efficiency
+- provide flexibility
+- boost team performance
 
 ### Useful Chunking & Sentence Starters
-
-- One of the main features is…
-- This feature allows users to…
-- The most important functionality is…
-- From the user’s point of view…
-- This helps users by…
-- The benefit of this feature is…
-- Thanks to this functionality…
-- In practice, users can…
+- Technology has changed the way…
+- Thanks to modern tools,…
+- One of the biggest changes is…
+- This allows us to…
+- As a result,…
 
 ### Useful Phrasal Verbs
+- **speed up** → New tools help speed up development.
+- **cut down on** → Automation helps cut down on manual work.
+- **focus on** → We can focus on more important tasks.
+- **keep up with** → It’s important to keep up with new technologies.
 
-- **log in** → Users log in to access their personalized dashboard.
-- **look up** → Employees can quickly look up information.
-- **keep up with** → The system helps teams keep up with changes in real time.
-- **carry out** → The workflow helps users carry out tasks step by step.
-- **filter out** → Users can filter out unnecessary results.
-- **set up** → Managers can easily set up custom notifications.
+## 4) Typical Dialogues
 
-## 3) Typical Dialogues
-
-### Dialogue 1 – Explaining Key Features
-
-**Teacher:** What are the main features of the system?
+**Teacher:** How has technology changed the way you work?
 
 **You:**  
-The system has several important features. The central dashboard gives users a quick overview of key metrics and current status. There is also a powerful search function with multiple filters, and real-time notifications that alert users when something important happens.
+Technology has changed the way we work significantly in recent years. Thanks to modern frameworks and AI-powered tools, we can develop features much faster than before. Automation helps us reduce repetitive tasks, so we can focus more on solving real user problems. Additionally, collaboration tools make it easier for remote teams to work together effectively. Overall, these changes have improved our productivity and made our workflow much more efficient.
 
-Another useful feature is the streamlined approval workflow, which reduces manual steps and makes processes faster.
+## 5) Reading Text
 
-### Dialogue 2 – User & Business Benefits
+Technology is constantly changing the way people work, especially in the software industry. New tools and frameworks allow developers to work faster, collaborate better, and focus on more valuable tasks. However, these changes also require developers to learn new skills continuously in order to keep up with the rapid pace of development.
 
-**Teacher:** How do these features help users and the business?
-
-**You:**  
-These features help users work more efficiently and make better decisions. For example, real-time notifications mean managers no longer have to check emails constantly. The improved workflow reduces processing time and minimizes errors. In the end, this leads to higher productivity and better business results.
-
-## 4) Reading Text
-
-The system includes many useful features designed to make daily work easier. The main dashboard shows important information at a glance, while the search functionality helps users find records quickly. Real-time notifications keep everyone informed, and the streamlined workflow reduces manual work. All these features are built to improve productivity, reduce errors, and deliver clear value to both users and the business.
-
-## 5) List of Questions + Ideas
+## 6) List of Questions + Ideas
 
 ### Basic Questions
-
-1. What are the main features of the system?
-2. Can you describe the dashboard?
-3. What is the most useful feature?
-4. Does the system have real-time functions?
+1. How has technology changed the way you work?
+2. What are the biggest changes you have seen?
+3. How do new tools affect your daily work?
+4. Has technology made your work easier or more difficult?
 
 ### Deeper & Follow-up Questions
-
-5. How does the search feature work?
-6. Who benefits most from these features?
-7. How do these features improve productivity?
-8. What new features are you planning to add?
-9. How do you make sure features are easy to use?
-10. How do features contribute to business goals?
+5. How has automation changed frontend development?
+6. What are the advantages of modern collaboration tools?
+7. How important is it to keep learning new technologies?
+8. Has technology improved work-life balance or made it worse?
+9. How do AI tools affect developer productivity?
+10. What skills are becoming more important because of new technology?
 
 ### Objection & Discussion Questions
-
-11. Some people say too many features make a system complicated. What do you think?
-12. How would you explain the main features to a new user?
-13. Why is real-time functionality important?
-14. How do features create business value?
-15. What makes a feature truly valuable for users?
+11. Some people say technology makes work more stressful. What do you think?
+12. Is it better to use many tools or keep things simple?
+13. Will technology eventually replace human developers?
+14. How should companies help employees adapt to new technologies?
+15. Does faster development always mean better quality?
 
 ---

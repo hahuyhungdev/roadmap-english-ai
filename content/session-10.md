@@ -1,99 +1,120 @@
 ---
 sessionNumber: 10
-title: Performance / Cost Scenario
-topic: Performance Optimization & Cost Awareness
-phase: PHASE 2 — Problem-Solving
-level: B1+ / B2
-description: Discuss performance issues and cost implications in a real enterprise scenario, explain optimization strategies, and show awareness of business impact (speed vs cost, scale vs budget).
+title: Performance Issues & Optimization Strategies
+topic: Performance & Business Impact
+phase: PHASE 2 — PROBLEM-SOLVING
+level: B2
+description: Discuss performance problems in enterprise applications, optimization techniques you used, and the business impact.
 ---
 
-# Session 10: Performance / Cost Scenario
+# Session 10: Performance Issues & Optimization Strategies
 
-**Level:** B1+ / B2  
-**Focus:** Explain a performance-related scenario, discuss optimization choices, analyze cost implications, and link technical decisions to business outcomes using professional B2 language.
+**Level:** B2  
+**Focus:** Speaking about performance issues, how you optimized them, and why performance matters for the business.
 
 ## 1) Vocabulary & Collocations
 
-- **optimization** (n) – the process of making something work better or more efficiently  
-  _Example:_ Performance optimization became our highest priority this quarter.
+- **performance** (n) – how fast or efficient something is  
+  _Example:_ Poor performance can frustrate users and affect business results.
 
-- **latency** (n) – the delay between a request and response  
-  _Example:_ High latency on mobile networks was hurting user experience.
+- **optimization** (n) – the process of making something work better  
+  _Example:_ We applied several optimization techniques.
 
-- **resource consumption** (n) – the amount of memory, CPU, or bandwidth used  
-  _Example:_ Heavy images led to excessive resource consumption on user devices.
+- **loading time** (n) – the time it takes for a page to load  
+  _Example:_ We managed to reduce the average loading time significantly.
 
-- **cost efficiency** (n) – achieving good results without wasting money  
-  _Example:_ We focused on cost efficiency by reducing unnecessary API calls.
+- **rendering** (n) – the process of displaying content on the screen  
+  _Example:_ Unnecessary rendering was causing slowdowns.
 
-- **scalability cost** (n) – expenses that increase as the system grows  
-  _Example:_ Without optimization, scalability costs can become very high.
+- **bottleneck** (n) – a part that slows down the whole system  
+  _Example:_ The large table component was the main bottleneck.
 
-- **budget constraint** (n) – limitation on available money  
-  _Example:_ We had to work within tight budget constraints for this feature.
+- **user experience** (n) – how pleasant and easy it is to use the product  
+  _Example:_ Good performance directly improves user experience.
 
-- **return on investment (ROI)** (n) – the benefit gained compared to the cost  
-  _Example:_ The optimization delivered a strong ROI by reducing cloud expenses.
+- **business impact** (n) – the effect on the company’s goals  
+  _Example:_ Performance issues can have a serious business impact.
 
-- **bottleneck** (n) – a point causing slowdown  
-  _Example:_ Image loading was the main bottleneck in the page.
+## 2) Grammar & Useful Patterns (B2)
 
-- **caching strategy** (n) – a plan for storing data to improve speed  
-  _Example:_ Implementing an intelligent caching strategy reduced server load significantly.
+- **Past Simple + Result**  
+  We **optimized** the component, **and as a result**, loading time decreased dramatically.
 
-- **overhead** (n) – extra time, memory, or cost required  
-  _Example:_ Complex animations created unnecessary computational overhead.
+- **Before & After comparison**  
+  Before optimization, the page **took** 8 seconds to load. After optimization, it **only takes** 1.5 seconds.
 
-## 2) Collocations, Chunking & Advanced Phrases
+- **Passive voice**  
+  Many unnecessary re-renders **were eliminated**.
+
+- **Quantifiers & Approximations**  
+  We reduced loading time **by approximately 75%**.
+
+### Useful Sentence Patterns
+- The main performance issue was…
+- To improve performance, we…
+- As a result of the optimization,…
+- This change helped us reduce…
+- From a business perspective, …
+
+## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
+- performance issue
+- optimize performance
+- reduce loading time
+- improve user experience
+- eliminate bottlenecks
+- apply optimization techniques
+- achieve significant improvement
+- measure performance
 
-- improve performance while controlling costs
-- reduce latency
-- minimize resource consumption
-- achieve cost efficiency
-- address performance bottlenecks
-- balance speed and budget
-- measure return on investment
-- optimize under budget constraints
-- implement caching strategies
-- avoid unnecessary overhead
+### Useful Chunking & Sentence Starters
+- We were facing a performance issue where…
+- To solve this, we applied…
+- After optimization,…
+- This resulted in…
+- From the business point of view,…
 
-### Useful Chunking & Sentence Starters (B2)
+### Useful Phrasal Verbs
+- **slow down** → The large component was slowing down the whole page.
+- **speed up** → Our changes helped speed up the application.
+- **cut down** → We managed to cut down unnecessary re-renders.
+- **bring down** → We brought down the loading time from 8 to 1.5 seconds.
 
-- In this scenario, the main challenge was…
-- To improve performance without increasing costs, we…
-- We had to balance… against…
-- The optimization resulted in…
-- From a cost perspective…
-- Technically speaking, we…
-- This decision helped us achieve…
-- In the long run, it proved to be…
+## 4) Typical Dialogues
 
-### Advanced Phrasal Verbs
-
-- **cut down on** → We cut down on image sizes to reduce bandwidth costs.
-- **bring down** → These changes helped bring down average loading time.
-- **pay for itself** → The optimization paid for itself within two months through lower cloud bills.
-- **scale up** → We designed the solution so it could scale up without proportional cost increases.
-- **factor in** → We always factor in both performance and cost when evaluating solutions.
-
-## 3) Typical Dialogues
-
-### Dialogue 1 – Full Performance/Cost Scenario (3–4 minutes)
-
-**Teacher:** Tell me about a performance issue where cost also played a role.
+**Teacher:** Can you talk about a performance issue you solved?
 
 **You:**  
-Last quarter we had a scenario where product detail pages were loading slowly on mobile devices. The main bottleneck was large uncompressed images and too many simultaneous API requests.
+We had a major performance issue with our main dashboard. The page was taking too long to load, especially when displaying large amounts of data. The root cause was excessive re-rendering in a complex table component.
 
-We had two main options: move more processing to the backend (which would increase server costs) or optimize heavily on the frontend. After careful evaluation, we chose the frontend optimization route. We implemented modern image formats (WebP), lazy loading, and a smart caching strategy. We also reduced the number of API calls by combining endpoints.
+To fix this, we applied React.memo and useMemo to prevent unnecessary re-renders. We also optimized how data was fetched and processed. As a result, we reduced the average loading time by about 75%. This improvement greatly enhanced the user experience and received very positive feedback from the business team.
 
-This approach allowed us to bring down average load time from 5.8 seconds to 1.9 seconds without increasing infrastructure costs. In fact, we reduced monthly cloud expenses by 22%. The trade-off was spending more development time upfront, but the ROI was excellent — better user experience, higher conversion rates, and lower operational costs.
+## 5) Reading Text
 
-### Dialogue 2 – Business Impact
+Performance is one of the most important aspects of frontend development, especially in enterprise applications. Slow applications frustrate users and can negatively affect business results. Good developers not only fix performance problems when they appear but also apply optimization strategies proactively to deliver smooth and responsive user experiences.
 
-**Teacher:** How did this affect the business?
+## 6) List of Questions + Ideas
 
-**You:**  
-The faster pages directly improved user satisfaction and reduced bounce rates. From a cost perspective, lowering server load meant we could handle more traffic without upgrading our AWS resources immediately. This gave the company better cost
+### Basic Questions
+1. What performance issues have you faced?
+2. How did you identify the performance problem?
+3. What optimization techniques did you use?
+4. What was the result after optimization?
+
+### Deeper & Follow-up Questions
+5. How do you measure performance in your projects?
+6. What is the most common performance issue in frontend?
+7. How does poor performance affect the business?
+8. Do you optimize from the beginning or only when problems appear?
+9. What tools do you use to analyze performance?
+10. How do you balance beautiful design with good performance?
+
+### Objection & Discussion Questions
+11. Is performance more important than beautiful design?
+12. Should teams spend a lot of time on optimization even if users don’t complain?
+13. Is it better to optimize early or fix performance issues later?
+14. How do you convince stakeholders to invest time in performance improvement?
+15. Will AI tools make performance optimization easier in the future?
+
+---
