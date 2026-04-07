@@ -69,8 +69,9 @@ export function AudioReplay({
       a.currentTime = 0;
       setPlaying(false);
     } else {
-      void a.play();
-      setPlaying(true);
+      a.play()
+        .then(() => setPlaying(true))
+        .catch(() => setPlaying(false));
     }
   }
 

@@ -36,12 +36,48 @@ function sanitizeScriptQuotes(text: string): string {
     .replace(new RegExp(marker, "g"), "'");
 }
 
+function stripMarkdownSyntax(text: string): string {
+  return text
+    .replace(/\r/g, "")
+    .split("\n")
+    .map((line) => {
+      let cleaned = line.trim();
+      if (!cleaned) return "";
+
+      // Remove common block-level markdown markers.
+      cleaned = cleaned
+        .replace(/^>{1,}\s*/, "")
+        .replace(/^#{1,6}\s+/, "")
+        .replace(/^([-*+]\s+\[[ xX]\]\s+)/, "")
+        .replace(/^([-*+]\s+)/, "")
+        .replace(/^(\d+[.)]\s+)/, "");
+
+      // Handle headings like "### 1. Title" after heading marker removal.
+      cleaned = cleaned.replace(/^(\d+[.)]\s+)/, "");
+
+      // Convert markdown links to their visible label.
+      cleaned = cleaned.replace(/\[([^\]]+)\]\((?:[^)]+)\)/g, "$1");
+
+      // Remove inline emphasis/code markers while keeping text.
+      cleaned = cleaned
+        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .replace(/__([^_]+)__/g, "$1")
+        .replace(/\*([^*]+)\*/g, "$1")
+        .replace(/_([^_]+)_/g, "$1")
+        .replace(/`([^`]+)`/g, "$1");
+
+      return cleaned.replace(/[ \t]+/g, " ").trim();
+    })
+    .join("\n");
+}
+
 export function splitScriptIntoSentences(
   script: string,
   minLength = 50,
   maxLength = 100,
 ): Sentence[] {
-  const normalizedScript = sanitizeScriptQuotes(script);
+  const markdownStripped = stripMarkdownSyntax(script);
+  const normalizedScript = sanitizeScriptQuotes(markdownStripped);
   const blocks = normalizedScript
     .replace(/\r/g, "")
     .split(/\n\s*\n+/)

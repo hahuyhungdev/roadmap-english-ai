@@ -186,53 +186,6 @@ export function TTSSettingsPanel({
             </>
           )}
 
-          {/* Sentence length (Script mode only) */}
-          {onMinSentenceLengthChange !== undefined && (
-            <>
-              <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider mt-3 mb-2">
-                Sentence Length
-              </p>
-              <div className="flex gap-2">
-                <div className="flex-1">
-                  <label className="text-[10px] text-gray-500 block mb-1">
-                    Min chars
-                  </label>
-                  <NumberInput
-                    value={minSentenceLength ?? 20}
-                    min={0}
-                    max={maxSentenceLength ?? 120}
-                    onChange={(value) =>
-                      onMinSentenceLengthChange(Math.max(0, Number(value) || 0))
-                    }
-                    size="xs"
-                    hideControls
-                  />
-                </div>
-                {onMaxSentenceLengthChange !== undefined && (
-                  <div className="flex-1">
-                    <label className="text-[10px] text-gray-500 block mb-1">
-                      Max chars
-                    </label>
-                    <NumberInput
-                      value={maxSentenceLength ?? 120}
-                      min={minSentenceLength ?? 20}
-                      max={500}
-                      onChange={(value) =>
-                        onMaxSentenceLengthChange(
-                          Math.max(1, Number(value) || 1),
-                        )
-                      }
-                      size="xs"
-                      hideControls
-                    />
-                  </div>
-                )}
-              </div>
-              <p className="text-[9px] text-gray-400 mt-1">
-                Applied on next script load
-              </p>
-            </>
-          )}
         </div>
       )}
     </div>

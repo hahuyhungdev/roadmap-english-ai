@@ -7,7 +7,7 @@ CREATE TABLE "shadowing_sessions" (
 	"script_text" text,
 	"sentences" jsonb,
 	"tts_voice" varchar(100) DEFAULT 'en-US-Chirp3-HD-Fenrir',
-	"tts_speed" real DEFAULT 0.85,
+	"tts_speed" real DEFAULT 0.75,
 	"active_sentence_idx" integer DEFAULT 0,
 	"created_at" timestamp DEFAULT now() NOT NULL,
 	"updated_at" timestamp DEFAULT now() NOT NULL

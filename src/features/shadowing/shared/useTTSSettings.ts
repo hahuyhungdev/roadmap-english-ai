@@ -351,11 +351,13 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
           const abortController = new AbortController();
           abortRef.current = abortController;
           // Also abort fetch if speak is cancelled
-          speakAc.signal.addEventListener(
-            "abort",
-            () => abortController.abort(),
-            { once: true },
-          );
+          speakAc.signal.addEventListener?.("abort", () => {
+            abortController.abort();
+          }, { once: true });
+          
+          if (!speakAc.signal.addEventListener) {
+            speakAc.signal.onabort = () => abortController.abort();
+          }
 
           const res = await fetch("/api/tts", {
             method: "POST",
@@ -368,7 +370,10 @@ export function useTTSSettings(defaults?: Partial<TTSSettings>) {
             signal: abortController.signal,
           });
 
-          if (!res.ok) throw new Error(`TTS fetch failed: ${res.status}`);
+          if (!res.ok) {
+            const errorJson = await res.json().catch(() => ({}));
+            throw new Error(`TTS fetch failed: ${res.status} - ${errorJson.error || "Unknown server error"}`);
+          }
 
           const data = await res.json();
           if (!data.audioContent)
@@ -477,7 +482,7 @@ function playBase64Audio(
   audioRef: React.MutableRefObject<HTMLAudioElement | null>,
   onDone: () => void,
 ): Promise<void> {
-  const binaryStr = atob(base64);
+  const binaryStr = window.atob(base64);
   const bytes = new Uint8Array(binaryStr.length);
   for (let i = 0; i < binaryStr.length; i++) {
     bytes[i] = binaryStr.charCodeAt(i);
@@ -488,28 +493,45 @@ function playBase64Audio(
   const url = URL.createObjectURL(blob);
   blobUrlRef.current = url;
 
-  const audio = new Audio(url);
+  // Next.js fast refresh + Audio object bug workaround
+  const audio = new Audio();
+  audio.src = url;
+  // Ensure we load the metadata before playing, fixes "No supported sources" in Chrome sometimes
+  audio.load();
+  
   audioRef.current = audio;
 
-  return new Promise<void>((resolve, reject) => {
+  return new Promise<void>((resolve) => {
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      onDone();
+      resolve();
+    };
+
     const cleanup = () => {
       audio.onended = null;
       audio.onerror = null;
     };
 
     audio.onended = () => {
-      cleanup();
-      onDone();
-      resolve();
+      finish();
     };
-    audio.onerror = () => {
-      cleanup();
-      onDone();
-      reject(new Error("Audio playback failed"));
+
+    audio.onerror = (e) => {
+      console.warn("Audio playback error:", e, audio.error);
+      finish();
     };
-    audio.play().catch((err) => {
-      cleanup();
-      reject(err);
-    });
+
+    // Explicit promise chain handles the browser's play policy
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch((err: unknown) => {
+        console.warn("Audio play() rejected:", err);
+        finish();
+      });
+    }
   });
 }

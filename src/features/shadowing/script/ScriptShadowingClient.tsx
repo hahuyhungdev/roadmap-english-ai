@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import { ActionIcon, Tooltip } from "@mantine/core";
+import { ActionIcon, Tooltip, Modal, Button, Textarea, Text, Select } from "@mantine/core";
 import { Trash2 } from "lucide-react";
 import { useScriptShadowing } from "./useScriptShadowing";
 import { TTSSettingsPanel } from "../shared/TTSSettingsPanel";
@@ -35,6 +35,11 @@ export default function ScriptShadowingClient(props: Props) {
   });
 
   const [scriptCollapsed, setScriptCollapsed] = useState(false);
+  const [previewOpened, setPreviewOpened] = useState(false);
+  const [previewScriptText, setPreviewScriptText] = useState("");
+  const [previewDrafts, setPreviewDrafts] = useState<string[]>([]);
+  const [previewError, setPreviewError] = useState("");
+  const [splitPace, setSplitPace] = useState("balanced");
 
   // Celebration: fire once when all sentences have been practiced
   const [celebrationFired, setCelebrationFired] = useState(false);
@@ -54,6 +59,58 @@ export default function ScriptShadowingClient(props: Props) {
   }, [s.sentences.length]);
 
   const activeSentence = s.sentences[s.activeSentenceIdx];
+
+  function buildSentencesWithTiming(texts: string[]): Sentence[] {
+    let currentStart = 0;
+    return texts.map((text) => {
+      const words = text.trim().split(/\s+/).filter(Boolean).length;
+      const duration = Math.max(500, words * 400);
+      const sentence: Sentence = {
+        text,
+        startMs: currentStart,
+        endMs: currentStart + duration,
+      };
+      currentStart += duration;
+      return sentence;
+    });
+  }
+
+  function getPaceConfig(pace: string) {
+    if (pace === "short") return { min: 20, max: 60 };
+    if (pace === "long") return { min: 80, max: 200 };
+    return { min: 50, max: 120 };
+  }
+
+  function handleProcessScript(e?: React.FormEvent, customPace?: string) {
+    const paceToUse = customPace ?? splitPace;
+    const conf = getPaceConfig(paceToUse);
+    const preview = s.buildScriptPreview(e, undefined, conf.min, conf.max);
+    if (!preview) return;
+
+    setPreviewScriptText(preview.scriptText);
+    setPreviewDrafts(preview.sentences.map((x) => x.text));
+    setPreviewError("");
+    setPreviewOpened(true);
+  }
+
+  function handlePaceChange(newPace: string | null) {
+    if (!newPace || newPace === splitPace) return;
+    setSplitPace(newPace);
+    handleProcessScript(undefined, newPace);
+  }
+
+  function handleApplyPreview() {
+    const cleanedTexts = previewDrafts.map((x) => x.trim()).filter(Boolean);
+    if (cleanedTexts.length === 0) {
+      setPreviewError("Please keep at least one sentence");
+      return;
+    }
+
+    const editedScript = cleanedTexts.join("\n\n");
+    s.applyScriptSentences(editedScript || previewScriptText, buildSentencesWithTiming(cleanedTexts));
+    setPreviewOpened(false);
+    setScriptCollapsed(true);
+  }
 
   return (
     <>
@@ -90,10 +147,6 @@ export default function ScriptShadowingClient(props: Props) {
                 onAutoPronounceSentenceChange={s.setAutoPronounceSentence}
                 loopSentence={s.loopSentence}
                 onLoopSentenceChange={s.setLoopSentence}
-                minSentenceLength={s.minSentenceLength}
-                onMinSentenceLengthChange={s.setMinSentenceLength}
-                maxSentenceLength={s.maxSentenceLength}
-                onMaxSentenceLengthChange={s.setMaxSentenceLength}
               />
             )}
 
@@ -116,13 +169,76 @@ export default function ScriptShadowingClient(props: Props) {
         <ScriptInputForm
           value={s.scriptInput}
           onChange={s.setScriptInput}
-          onSubmit={s.handleLoadScript}
+          onSubmit={handleProcessScript}
           error={s.scriptError}
           hasSentences={hasSentences}
           collapsed={scriptCollapsed}
           onCollapse={() => setScriptCollapsed(true)}
           onExpand={() => setScriptCollapsed(false)}
         />
+
+        <Modal
+          opened={previewOpened}
+          onClose={() => setPreviewOpened(false)}
+          title="Preview extracted sentences"
+          centered
+          size="lg"
+        >
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <Text size="sm" c="dimmed">
+                Review and edit before starting practice.
+              </Text>
+              <Select
+                value={splitPace}
+                onChange={handlePaceChange}
+                data={[
+                  { label: "Short", value: "short" },
+                  { label: "Balanced", value: "balanced" },
+                  { label: "Long", value: "long" },
+                ]}
+                size="xs"
+                w={120}
+              />
+            </div>
+
+            <div className="max-h-[50vh] overflow-y-auto pr-1 space-y-2">
+              {previewDrafts.map((draft, idx) => (
+                <div key={idx} className="space-y-1">
+                  <Text size="xs" c="dimmed">
+                    Sentence {idx + 1}
+                  </Text>
+                  <Textarea
+                    value={draft}
+                    onChange={(e) => {
+                      const next = [...previewDrafts];
+                      next[idx] = e.currentTarget.value;
+                      setPreviewDrafts(next);
+                    }}
+                    autosize
+                    minRows={2}
+                    maxRows={6}
+                  />
+                </div>
+              ))}
+            </div>
+
+            {previewError && (
+              <Text size="xs" c="red">
+                {previewError}
+              </Text>
+            )}
+
+            <div className="flex justify-end gap-2 pt-1">
+              <Button variant="subtle" color="gray" onClick={() => setPreviewOpened(false)}>
+                Cancel
+              </Button>
+              <Button color="violet" onClick={handleApplyPreview}>
+                Start Practice
+              </Button>
+            </div>
+          </div>
+        </Modal>
 
         {/* ── Practice Panel ── */}
         {hasSentences && (

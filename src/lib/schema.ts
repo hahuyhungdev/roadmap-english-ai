@@ -28,7 +28,7 @@ export const shadowingSessions = pgTable(
     ttsVoice: varchar("tts_voice", { length: 100 }).default(
       "en-US-Chirp3-HD-Fenrir",
     ),
-    ttsSpeed: real("tts_speed").default(0.85),
+    ttsSpeed: real("tts_speed").default(0.75),
     activeSentenceIdx: integer("active_sentence_idx").default(0),
     // Metadata
     createdAt: timestamp("created_at").defaultNow().notNull(),

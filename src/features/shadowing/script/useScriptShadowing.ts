@@ -438,15 +438,51 @@ export function useScriptShadowing(opts?: SessionOpts) {
     return () => window.removeEventListener("keydown", handleKey);
   }, [handleKey]);
 
-  // FIX #9 — loading a new script clears the previous session completely
-  function handleLoadScript(e?: FormEvent) {
-    e?.preventDefault();
-    setScriptError("");
-    const trimmed = scriptInput.trim();
-    if (!trimmed) {
+  function applyScriptSentences(scriptText: string, nextSentences: Sentence[]) {
+    if (!scriptText.trim()) {
       setScriptError("Please paste a script or text");
       return;
     }
+    if (!Array.isArray(nextSentences) || nextSentences.length === 0) {
+      setScriptError("Could not extract sentences");
+      return;
+    }
+
+    setScriptError("");
+    setScriptInput(scriptText);
+    setSentences(nextSentences);
+    optsRef.current?.onSentencesChange?.(nextSentences);
+    optsRef.current?.onScriptTextChange?.(scriptText);
+    setActiveSentenceIdx(0);
+    sentenceRefs.current = [];
+
+    // Clear previous session
+    setTurns([]);
+    blobUrlsRef.current.forEach((u) => URL.revokeObjectURL(u));
+    blobUrlsRef.current = [];
+    pendingTurnIdRef.current = null;
+
+    // Cache script in DB (fire and forget)
+    fetch("/api/shadowing/script", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ script: scriptText, sentences: nextSentences }),
+    }).catch(() => {});
+  }
+
+  function buildScriptPreview(e?: FormEvent, customScript?: string, customMin?: number, customMax?: number) {
+    e?.preventDefault();
+    setScriptError("");
+    const textToProcess = customScript !== undefined ? customScript : scriptInput;
+    const trimmed = textToProcess.trim();
+    if (!trimmed) {
+      setScriptError("Please paste a script or text");
+      return null;
+    }
+    
+    const minLen = customMin !== undefined ? customMin : minSentenceLength;
+    const maxLen = customMax !== undefined ? customMax : maxSentenceLength;
+    
     // If the script looks like dialogue/markdown with speaker prefixes
     // (e.g. "John: Hello" or "- John: Hello"), prefer extracting only
     // the main character's lines to practice with. Otherwise fall back to
@@ -461,7 +497,7 @@ export function useScriptShadowing(opts?: SessionOpts) {
 
     const speakerRegex = /^(?:[-*]\s*)?([A-Za-z][A-Za-z' -]{0,29}):\s*(.+)$/;
     const nonSpeakerLabelRegex =
-      /^(version\s*\d+|balanced\s*answer|sample\s*answer|answer|question|q\.?|a\.?)$/i;
+      /^(version\s*\d+|balanced\s*answer|sample\s*answer|answer|question|q\.?|a\.?|situation|task|action|result|star|strengths?|weakness(?:es)?|experience|background|summary|conclusion|intro(?:duction)?)$/i;
     const speakers: Record<string, string[]> = {};
     let explicitSpeakerLineCount = 0;
     // First pass: explicit "Name: text" style
@@ -481,8 +517,13 @@ export function useScriptShadowing(opts?: SessionOpts) {
     // This avoids dropping content for normal notes that contain labels like
     // "Version 1:" or "Balanced Answer:".
     const explicitSpeakerNames = Object.keys(speakers);
+    const repeatedSpeakerCount = explicitSpeakerNames.filter(
+      (name) => (speakers[name]?.length ?? 0) >= 2,
+    ).length;
     const looksLikeDialogue =
-      explicitSpeakerNames.length >= 2 && explicitSpeakerLineCount >= 4;
+      explicitSpeakerNames.length >= 2 &&
+      explicitSpeakerLineCount >= 4 &&
+      repeatedSpeakerCount >= 1;
     if (!looksLikeDialogue) {
       for (const key of explicitSpeakerNames) delete speakers[key];
     }
@@ -532,8 +573,8 @@ export function useScriptShadowing(opts?: SessionOpts) {
           .join("\n\n");
         result = splitScriptIntoSentences(
           allText,
-          minSentenceLength,
-          maxSentenceLength,
+          minLen,
+          maxLen,
         );
       } else {
         speakerNames.sort((a, b) => speakers[b].length - speakers[a].length);
@@ -541,54 +582,49 @@ export function useScriptShadowing(opts?: SessionOpts) {
         const mainText = speakers[main].join("\n\n");
         result = splitScriptIntoSentences(
           mainText,
-          minSentenceLength,
-          maxSentenceLength,
+          minLen,
+          maxLen,
         );
       }
     } else {
       result = splitScriptIntoSentences(
         trimmed,
-        minSentenceLength,
-        maxSentenceLength,
+        minLen,
+        maxLen,
       );
     }
 
     if (result.length === 0) {
       setScriptError("Could not extract sentences");
-      return;
+      return null;
     }
-    setSentences(result);
-    optsRef.current?.onSentencesChange?.(result);
-    optsRef.current?.onScriptTextChange?.(trimmed);
-    setActiveSentenceIdx(0);
-    sentenceRefs.current = [];
-    // Clear previous session
-    setTurns([]);
-    blobUrlsRef.current.forEach((u) => URL.revokeObjectURL(u));
-    blobUrlsRef.current = [];
-    pendingTurnIdRef.current = null;
 
-    // Cache script in DB (fire and forget)
-    fetch("/api/shadowing/script", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ script: trimmed, sentences: result }),
-    }).catch(() => {});
+    return {
+      scriptText: trimmed,
+      sentences: result,
+    };
+  }
+
+  // Keep default behavior for existing callers: process + apply immediately.
+  function handleLoadScript(e?: FormEvent) {
+    const preview = buildScriptPreview(e);
+    if (!preview) return;
+    applyScriptSentences(preview.scriptText, preview.sentences);
   }
 
   const onUpdateSentenceText = (idx: number, nextText: string) => {
     const trimmed = nextText.trim();
     if (!trimmed) return;
 
-    setSentences((prev) => {
-      if (idx < 0 || idx >= prev.length) return prev;
+    const prev = sentencesRef.current;
+    if (idx < 0 || idx >= prev.length) return;
 
-      const next = [...prev];
-      next[idx] = { ...next[idx], text: trimmed };
-      optsRef.current?.onSentencesChange?.(next);
-      optsRef.current?.onScriptTextChange?.(next.map((s) => s.text).join("\n"));
-      return next;
-    });
+    const next = [...prev];
+    next[idx] = { ...next[idx], text: trimmed };
+    
+    setSentences(next);
+    optsRef.current?.onSentencesChange?.(next);
+    optsRef.current?.onScriptTextChange?.(next.map((s) => s.text).join("\n"));
   };
 
   // ── Derived ───────────────────────────────────────────────────────────────
@@ -632,6 +668,8 @@ export function useScriptShadowing(opts?: SessionOpts) {
     activeSentenceIdx,
     setActiveSentenceIdx,
     sentenceRefs,
+    buildScriptPreview,
+    applyScriptSentences,
     handleLoadScript,
     onUpdateSentenceText,
     // TTS (whole object — consumer destructures what it needs)

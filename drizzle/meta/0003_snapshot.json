@@ -213,7 +213,7 @@
           "type": "real",
           "primaryKey": false,
           "notNull": false,
-          "default": 0.85
+          "default": 0.75
         },
         "active_sentence_idx": {
           "name": "active_sentence_idx",

@@ -72,10 +72,10 @@ export const DEFAULT_VOICE_BY_PROVIDER: Record<'edge' | 'google', string> = {
   google: "en-US-Chirp3-HD-Charon",
 };
 
-export const DEFAULT_SPEED = 0.85;
+export const DEFAULT_SPEED = 0.75;
 export const TTS_SPEEDS = [
   { value: 0.75, label: "0.75x" },
-  { value: DEFAULT_SPEED, label: "0.85x" },
+  { value: 0.85, label: "0.85x" },
   { value: 1.0, label: "1.0x" },
   { value: 1.15, label: "1.15x" },
 ];
