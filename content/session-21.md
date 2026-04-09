@@ -1,117 +1,156 @@
 ---
 sessionNumber: 21
-title: Career Goals, Ambition & Why This Company
-topic: Future Goals & Company Fit
+title: Motivation, Values & Why This Environment
+topic: Personal Drivers, Work Values, and Culture Alignment
 phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
-level: B2
-description: Discuss your career goals, ambition, and why you are interested in this company.
+level: B2+
+description: Explain your motivations and values clearly, and connect them credibly to the target team environment.
 ---
 
-# Session 21: Career Goals, Ambition & Why This Company
+# Session 21: Motivation, Values & Why This Environment
 
-**Level:** B2  
-**Focus:** Speaking clearly about your short-term and long-term career goals and explaining why you want to join the company.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about authentic motivation, values-based decisions, and environment fit.
 
 ## 1) Vocabulary & Collocations
 
-- **career goal** (n) – what you want to achieve in your career  
-  _Example:_ My short-term career goal is to improve my system design skills.
+- **intrinsic motivation** (n) - internal drive from meaning or curiosity  
+  _Example:_ Intrinsic motivation helps me stay consistent in difficult projects.
 
-- **ambition** (n) – a strong desire to achieve success  
-  _Example:_ I have the ambition to take on more technical leadership roles.
+- **work values** (n) - principles that guide professional choices  
+  _Example:_ My work values include ownership, clarity, and respect.
 
-- **long-term goal** (n) – what you want to achieve in the distant future  
-  _Example:_ In the long term, I aim to become a technical architect.
+- **environment fit** (n) - match between your style and team culture  
+  _Example:_ Environment fit matters for long-term performance.
 
-- **company fit** (n) – how well you match with the company  
-  _Example:_ I believe there is a good company fit between my values and this role.
+- **purpose alignment** (n) - connection between your goals and company mission  
+  _Example:_ Purpose alignment is a key reason I am interested in this role.
 
-- **growth opportunity** (n) – chance to develop and advance  
-  _Example:_ This position offers excellent growth opportunities.
+- **decision criteria** (n) - standards used to evaluate opportunities  
+  _Example:_ Learning quality is one of my top decision criteria.
 
-- **contribute to** (v) – to give something useful to a company  
-  _Example:_ I want to contribute to building high-quality user experiences.
+- **value conflict** (n) - tension between your principles and workplace behavior  
+  _Example:_ I avoid environments with repeated value conflict.
 
-## 2) Grammar & Useful Patterns (B2)
+- **engagement driver** (n) - factor that increases your commitment and energy  
+  _Example:_ Impact visibility is a strong engagement driver for me.
 
-- **Future forms**  
-  In the next two years, I **want to / plan to** deepen my expertise in…
+- **career priority** (n) - most important objective at current stage  
+  _Example:_ My current career priority is meaningful cross-functional ownership.
 
-- **Reason clauses**  
-  I am interested in this company **because** it focuses on innovative products.
+- **culture signal** (n) - indicator of how a team actually works  
+  _Example:_ Feedback quality is an important culture signal.
 
-- **Conditional**  
-  If I join this team, I **will be able to** work on more complex projects.
+- **long-term fit** (n) - sustainable compatibility over time  
+  _Example:_ I evaluate long-term fit, not only short-term opportunity.
 
-- **Contrast**  
-  **While** I enjoy my current role, I am looking for new challenges.
+**Additional useful terms:**
+- **growth environment** (n)
+- **ownership mindset** (n)
+- **team norms** (n)
+- **professional purpose** (n)
+- **value consistency** (n)
+
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
+
+- **Reasoned motivation statement**  
+  I am motivated by work where technical quality directly improves user outcomes.
+
+- **Values plus behavior linkage**  
+  One value I prioritize is ownership, which means I communicate risks early.
+
+- **Contrast for fit decisions**  
+  I value autonomy, but I also need a team culture with strong collaboration.
+
+- **Future alignment framing**  
+  This environment fits my next growth stage because it combines scale and responsibility.
 
 ### Useful Sentence Patterns
-- My short-term goal is to…
-- In the long term, I hope to…
-- I am particularly interested in this company because…
-- I believe I can contribute by…
-- This opportunity aligns well with my…
+- What motivates me most is...
+- A value that strongly influences my choices is...
+- I feel engaged when...
+- This environment is a good fit because...
+- In the long term, I want to work where...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-- short-term goal
-- long-term ambition
-- career development
-- growth opportunity
-- technical leadership
-- company culture
-- contribute value
-- align with my goals
+- clarify career motivation
+- align with team values
+- evaluate cultural fit
+- prioritize meaningful work
+- choose growth-oriented environments
+- maintain value consistency
+- connect purpose and performance
+- sustain long-term engagement
 
 ### Useful Chunking & Sentence Starters
-- In the short term, I want to…
-- Looking further ahead, my goal is to…
-- I am excited about this opportunity because…
-- I believe my experience would allow me to…
-- What attracts me to this company is…
+- At this stage of my career, I prioritize...
+- A workplace value I will not compromise on is...
+- I am most effective in environments where...
+- One reason this role stands out is...
+- My motivation is strongest when...
 
 ### Useful Phrasal Verbs
-- **look for** → I am looking for a role with more leadership responsibilities.
-- **aim for** → I aim for a position where I can mentor others.
-- **contribute to** → I want to contribute to building better products.
-- **move towards** → I am moving towards more strategic technical roles.
+- **care about** -> I care about product impact, not just delivery speed.
+- **opt for** -> I opt for teams with transparent communication.
+- **grow into** -> I want to grow into broader product ownership.
+- **commit to** -> I commit to environments with clear standards.
 
 ## 4) Typical Dialogues
 
-**Interviewer:** What are your career goals and why do you want to join us?
+### Dialogue 1 - Motivation Beyond Salary
+
+**Teacher:** Why do you want this role and this environment?
 
 **You:**  
-In the short term, my goal is to strengthen my skills in system design and performance optimization while taking on more mentoring responsibilities. In the long term, I aspire to move into a technical leadership role where I can help shape the architecture of large-scale applications.
+I am motivated by complex problems with visible user impact. This environment fits because teams here seem to value quality, accountability, and learning.  
 
-I am interested in your company because you are working on complex, user-focused products at scale. I believe my experience in building high-performance interfaces and integrating AI features would allow me to contribute meaningfully to your team. Moreover, I admire your company culture and the emphasis on innovation, which aligns well with my own values and ambitions.
+I also see strong cross-functional collaboration, which is where I usually create the most value.
+
+### Dialogue 2 - Values Under Pressure
+
+**Teacher:** What happens when your values conflict with delivery pressure?
+
+**You:**  
+I try to protect key values through practical decisions. For example, I will negotiate scope before compromising critical quality standards. That balance keeps trust and performance sustainable.
+
+### Dialogue 3 - General Life Transfer
+
+**Teacher:** Are values mostly a workplace topic?
+
+**You:**  
+Not really. Values influence personal decisions too, especially under pressure. Clear values help us make consistent choices.
 
 ## 5) Reading Text
 
-When interviewers ask about career goals, they want to understand your motivation and whether your ambitions fit with the company. A good answer should show that you have clear direction, realistic goals, and genuine interest in the company’s work and culture.
+Interviewers ask about motivation to understand whether your engagement is sustainable. Candidates with clear motivation and value alignment usually adapt faster and perform better.
+
+At advanced speaking levels, strong answers are specific and realistic. They connect personal drivers to role demands and team culture without using generic phrases.
+
+Good fit is not about perfect similarity. It is about shared principles and compatible working habits.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. What are your career goals?
-2. Where do you see yourself in 3–5 years?
-3. Why do you want to join our company?
-4. What are your short-term and long-term goals?
+### Core Questions (must-practice)
+1. What motivates you most in your professional work?
+2. Which values guide your decisions at work?
+3. How do you evaluate whether an environment is a good fit?
+4. Why is this specific environment attractive to you?
 
-### Deeper & Follow-up Questions
-5. How do your goals align with this position?
-6. What kind of role do you want to grow into?
-7. What motivates you to achieve your goals?
-8. Why are you leaving your current company?
-9. How does this company help you reach your ambitions?
-10. What do you hope to contribute to our team?
+### High-Value Case Questions
+5. Describe a time your values influenced a difficult decision.
+6. Tell me about an environment where you performed at your best and why.
+7. Share a case where poor culture fit affected outcomes.
 
-### Objection & Discussion Questions
-11. Some people say it’s better not to have clear career goals. Do you agree?
-12. Is it okay to be very ambitious in a job interview?
-13. Should career goals be more about money or about learning?
-14. How honest should you be about your long-term plans?
-15. What makes a company a good fit for your career goals?
+### Critical Discussion Questions
+8. Should motivation be measured by passion or consistency?
+9. Is cultural fit useful, or can it create bias?
+10. Can high compensation replace weak value alignment?
+
+**Tips for speaking practice:**
+- Be concrete about what motivates you and why.
+- Connect values to specific behavior, not abstract words.
+- Show how your fit benefits both you and the company.
 
 ---

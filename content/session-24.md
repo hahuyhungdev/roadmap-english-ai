@@ -1,117 +1,156 @@
 ---
 sessionNumber: 24
-title: Teamwork, Conflict Resolution & Cultural Fit
-topic: Teamwork and Cultural Fit
+title: Collaboration, Conflict Navigation & Influence Without Authority
+topic: Team Dynamics, Conflict Resolution, and Cross-Functional Influence
 phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
-level: B2
-description: Discuss teamwork, how you handle conflict, take initiative, and fit into different company cultures.
+level: B2+
+description: Practice handling team conflict and influencing outcomes through collaboration, clarity, and trust rather than formal power.
 ---
 
-# Session 24: Teamwork, Conflict Resolution & Cultural Fit
+# Session 24: Collaboration, Conflict Navigation & Influence Without Authority
 
-**Level:** B2  
-**Focus:** Speaking about your teamwork style, how you handle conflict, and how you adapt to different company cultures.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about teamwork, difficult conversations, and practical influence in cross-functional environments.
 
 ## 1) Vocabulary & Collocations
 
-- **teamwork** (n) – working together effectively with others  
-  _Example:_ Good teamwork is essential for delivering complex projects.
+- **collaboration pattern** (n) - recurring way people coordinate and work together  
+  _Example:_ Healthy collaboration patterns reduce project friction.
 
-- **conflict** (n) – disagreement between people  
-  _Example:_ Healthy conflict can lead to better solutions.
+- **conflict navigation** (n) - managing disagreement constructively  
+  _Example:_ Conflict navigation is a core leadership skill.
 
-- **resolution** (n) – solving a problem or disagreement  
-  _Example:_ I prefer open and respectful conflict resolution.
+- **influence without authority** (n) - ability to shape decisions without formal power  
+  _Example:_ Senior engineers often need influence without authority.
 
-- **initiative** (n) – the ability to take action without being told  
-  _Example:_ I like to take initiative when I see an opportunity to improve something.
+- **cross-functional partner** (n) - colleague from another discipline  
+  _Example:_ Strong relationships with cross-functional partners improve execution.
 
-- **cultural fit** (n) – how well you match with a company’s values and style  
-  _Example:_ Cultural fit is very important for long-term success.
+- **alignment strategy** (n) - plan to create shared understanding  
+  _Example:_ My alignment strategy starts with goals and constraints.
 
-- **adapt** (v) – to adjust to a new environment  
-  _Example:_ I can adapt quickly to different team cultures.
+- **communication friction** (n) - delays caused by unclear communication  
+  _Example:_ Written summaries reduced communication friction.
 
-## 2) Grammar & Useful Patterns (B2)
+- **constructive disagreement** (n) - respectful conflict focused on better outcomes  
+  _Example:_ Constructive disagreement improved our final architecture.
 
-- **Past Simple for examples**  
-  Last year, there **was** a disagreement about the technical approach.
+- **decision ownership** (n) - clarity about who makes final decisions  
+  _Example:_ Decision ownership prevented repeated debates.
 
-- **Reported speech**  
-  I told my colleague that I understood his concern but…
+- **relationship trust** (n) - confidence built through reliability and respect  
+  _Example:_ Relationship trust makes hard conversations easier.
 
-- **Conditionals**  
-  If there is conflict, I prefer to discuss it openly.
+- **consensus quality** (n) - depth and durability of agreement  
+  _Example:_ Consensus quality improved after we clarified trade-offs.
 
-- **Contrast**  
-  **While** we had different opinions, we managed to reach a good compromise.
+**Additional useful terms:**
+- **stakeholder expectation** (n)
+- **conflict trigger** (n)
+- **shared objective** (n)
+- **negotiation boundary** (n)
+- **influence tactic** (n)
+
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
+
+- **Respectful disagreement**  
+  I understand your point, but I see a reliability risk if we skip that validation step.
+
+- **Goal re-centering language**  
+  Instead of debating preferences, let us align on the user outcome we need.
+
+- **Conditional compromise**  
+  We can support faster delivery if we reduce scope and protect critical quality checks.
+
+- **Relationship-preserving language**  
+  I appreciate your urgency, and I think we can find a balanced option.
 
 ### Useful Sentence Patterns
-- In a team, I usually…
-- When there is conflict, I…
-- I believe good teamwork means…
-- I can adapt to different cultures because…
-- One example of when I took initiative was…
+- The conflict was mainly about...
+- To keep discussion constructive, I...
+- A compromise that worked for both sides was...
+- I influenced the decision by...
+- The trust-building action that helped most was...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-- work well in a team
-- resolve conflict
-- take initiative
-- reach a compromise
-- adapt to culture
-- open communication
-- collaborative environment
-- constructive feedback
+- navigate team conflict
+- influence key decisions
+- align across functions
+- preserve working relationships
+- clarify decision ownership
+- reduce communication friction
+- build durable consensus
+- escalate issues responsibly
 
 ### Useful Chunking & Sentence Starters
-- I believe good teamwork is based on…
-- When conflict arises, I usually…
-- An example of my initiative was when…
-- I can adapt to new environments by…
-- In my experience, the key to good collaboration is…
+- In cross-functional projects, one common conflict is...
+- I usually de-escalate conflict by...
+- To influence without authority, I...
+- The agreement became possible when...
+- Looking back, the key lesson is...
 
 ### Useful Phrasal Verbs
-- **get along with** → I generally get along well with different personalities.
-- **sort out** → We managed to sort out the disagreement through discussion.
-- **step up** → I stepped up and proposed a solution.
-- **fit in** → I can fit in well with both structured and flexible teams.
+- **work through** -> We worked through disagreement step by step.
+- **push back on** -> I pushed back on risky assumptions respectfully.
+- **bring together** -> I brought together engineering and product priorities.
+- **follow up with** -> I followed up with a clear written summary.
 
 ## 4) Typical Dialogues
 
-**Interviewer:** How do you handle conflict in a team?
+### Dialogue 1 - Resolving Team Conflict
+
+**Teacher:** Tell me about a conflict you handled successfully.
 
 **You:**  
-I believe open and respectful communication is the best way to handle conflict. For example, last year there was a disagreement between me and a backend developer about how to implement a new feature. Instead of arguing, I suggested we sit down together to discuss both approaches. We listened to each other’s concerns and eventually reached a compromise that combined the best parts of both ideas.
+Two teams disagreed on whether to prioritize speed or reliability. I asked both sides to define risks and success criteria, then compared options transparently.  
 
-I think being able to resolve conflict constructively is very important for good teamwork. I also try to take initiative when I see something that can be improved, while still respecting the team’s overall direction.
+We agreed on a phased plan that delivered quickly without ignoring key safeguards. The conflict ended because trade-offs were explicit.
+
+### Dialogue 2 - Influence Without Formal Authority
+
+**Teacher:** How do you influence when you are not the manager?
+
+**You:**  
+I focus on clarity, data, and trust. I present options with expected outcomes, listen to concerns carefully, and propose compromises that protect shared goals.
+
+### Dialogue 3 - General Life Transfer
+
+**Teacher:** Do conflict navigation skills matter outside work?
+
+**You:**  
+Yes. In daily life, clear communication and respect help people disagree without damaging relationships. The principle is similar: understand first, then influence.
 
 ## 5) Reading Text
 
-Strong teamwork and the ability to resolve conflict are highly valued in tech companies. Good team players communicate clearly, take initiative when needed, and can adapt to different working styles and company cultures. These soft skills often make the difference between a good developer and an excellent team member.
+Collaboration in modern teams is rarely simple. Different functions have different priorities, timelines, and constraints.
+
+Professionals who can navigate conflict and influence outcomes without authority become highly valuable. They reduce friction, increase alignment, and improve execution speed.
+
+In interviews, concrete stories about conflict navigation often reveal real leadership potential.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. How do you work in a team?
-2. Can you give an example of good teamwork?
-3. How do you handle conflict with colleagues?
-4. Do you prefer working alone or in a team?
+### Core Questions (must-practice)
+1. How do you handle conflict in cross-functional teams?
+2. What strategies help you influence decisions without authority?
+3. How do you balance relationship trust and decision quality?
+4. How do you keep disagreement constructive under pressure?
 
-### Deeper & Follow-up Questions
-5. What makes a good team member in your opinion?
-6. Tell me about a time you took initiative in a team.
-7. How do you adapt to a new team or company culture?
-8. What kind of company culture do you work best in?
-9. Have you ever had a serious conflict at work? How did you resolve it?
-10. How important are soft skills compared to technical skills?
+### High-Value Case Questions
+5. Describe a conflict where your communication changed the outcome.
+6. Tell me about a time you influenced a decision as an individual contributor.
+7. Share a case where collaboration quality improved project results.
 
-### Objection & Discussion Questions
-11. Some people say conflict is always bad for a team. Do you agree?
-12. Is it better to avoid conflict or face it directly?
-13. How important is cultural fit when choosing a job?
-14. Can someone be a good developer but a bad team player?
-15. Should companies focus more on technical skills or teamwork skills?
+### Critical Discussion Questions
+8. Is consensus always necessary for effective execution?
+9. Should conflict be minimized or used as a source of better ideas?
+10. Can influence skills outweigh formal authority in modern teams?
+
+**Tips for speaking practice:**
+- Describe conflict neutrally and avoid personal blame.
+- Explain how you aligned goals before proposing solutions.
+- Finish with measurable impact on trust or delivery quality.
 
 ---

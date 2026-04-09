@@ -1,119 +1,156 @@
 ---
 sessionNumber: 19
-title: Tell Me About Yourself & Professional Journey
-topic: Self-Introduction & Career Story
+title: "Personal Pitch: Professional Story & Value Proposition"
+topic: Self-Introduction, Career Narrative, and Practical Business Value
 phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
-level: B2
-description: Master the most common interview question with a clear, structured, and engaging self-introduction.
+level: B2+
+description: Build a clear and persuasive personal pitch that explains who you are, what value you create, and why it matters.
 ---
 
-# Session 19: Tell Me About Yourself & Professional Journey
+# Session 19: Personal Pitch: Professional Story & Value Proposition
 
-**Level:** B2  
-**Focus:** Delivering a confident, well-structured 1.5–2 minute self-introduction that covers your background, experience, strengths, and future direction.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style to deliver a concise, credible, and memorable professional introduction.
 
 ## 1) Vocabulary & Collocations
 
-- **professional journey** (n) – your career path and development over time  
-  _Example:_ Let me briefly describe my professional journey.
+- **value proposition** (n) - clear statement of the value you bring  
+  _Example:_ My value proposition is combining product thinking with strong execution.
 
-- **background** (n) – your education and previous experience  
-  _Example:_ I have a strong technical background in frontend development.
+- **career narrative** (n) - coherent story of your professional development  
+  _Example:_ A strong career narrative makes your profile easier to trust.
 
-- **expertise** (n) – special skill or knowledge in a particular area  
-  _Example:_ My expertise lies in building scalable user interfaces.
+- **core strength** (n) - capability that repeatedly drives good results  
+  _Example:_ My core strength is turning unclear requirements into practical plans.
 
-- **leadership** (n) – the ability to guide and influence others  
-  _Example:_ I have taken on more leadership responsibilities in recent years.
+- **impact statement** (n) - short sentence describing measurable contribution  
+  _Example:_ My impact statement usually includes speed, quality, and user outcomes.
 
-- **passion** (n) – strong interest and enthusiasm  
-  _Example:_ I have a real passion for creating excellent user experiences.
+- **professional identity** (n) - how you position yourself in your field  
+  _Example:_ My professional identity is a builder who also mentors teammates.
 
-- **aspiration** (n) – a strong desire to achieve something  
-  _Example:_ My aspiration is to take on more technical leadership roles.
+- **business relevance** (n) - connection between your work and business goals  
+  _Example:_ I always explain business relevance, not only technical detail.
 
-## 2) Grammar & Useful Patterns (B2)
+- **credibility marker** (n) - proof point that increases trust  
+  _Example:_ Leading a complex release became a strong credibility marker.
 
-- **Present Perfect for experience**  
-  I **have worked** as a Senior Frontend Engineer for over five years.
+- **differentiator** (n) - trait that makes you stand out from similar candidates  
+  _Example:_ My differentiator is balancing technical quality with communication.
 
-- **Linking ideas**  
-  After gaining experience in…, I **moved on to** focus more on…
+- **positioning** (n) - strategic way to present your profile  
+  _Example:_ Good positioning helps interviewers remember your strengths.
 
-- **Purpose / Reason**  
-  I chose this path **because** I enjoy solving complex user problems.
+- **career direction** (n) - future path you intentionally pursue  
+  _Example:_ I am clear about my career direction toward broader ownership.
 
-- **Future plans**  
-  In the future, I **would like to** take on more leadership responsibilities.
+**Additional useful terms:**
+- **proof of impact** (n)
+- **signature project** (n)
+- **capability stack** (n)
+- **personal brand** (n)
+- **fit narrative** (n)
+
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
+
+- **Structured self-introduction**  
+  I am a frontend engineer with strong product collaboration experience, and I specialize in building reliable user-facing systems.
+
+- **Past-to-present progression**  
+  I started with implementation-heavy roles, then moved into architecture and mentoring responsibilities.
+
+- **Evidence with outcomes**  
+  In my last project, I reduced load time by 35%, which improved retention in key user flows.
+
+- **Future-facing alignment**  
+  I am looking for an environment where I can scale impact through cross-functional leadership.
 
 ### Useful Sentence Patterns
-- I’d like to start by saying…
-- Over the past … years, I have…
-- Currently, I am responsible for…
-- What I enjoy most about my work is…
-- Looking ahead, I hope to…
+- The short version of my profile is...
+- What I consistently deliver is...
+- One project that represents my strengths is...
+- The value I bring to teams is...
+- Going forward, I want to...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-- professional journey
-- technical expertise
-- career progression
-- take on responsibility
-- gain experience
-- develop skills
-- pursue growth
-- leadership role
+- craft a personal pitch
+- communicate professional value
+- build a credible profile
+- connect skills to outcomes
+- position strengths clearly
+- highlight measurable impact
+- align with role expectations
+- present a coherent story
 
 ### Useful Chunking & Sentence Starters
-- My name is… and I am currently…
-- I have over … years of experience in…
-- In my previous roles, I…
-- One thing I’m particularly proud of is…
-- Moving forward, I am looking for…
+- If I summarize my profile in one minute...
+- A pattern in my career is...
+- I add value by...
+- A result I am proud of is...
+- This role fits because...
 
 ### Useful Phrasal Verbs
-- **take on** → I have taken on more leadership responsibilities.
-- **focus on** → I now focus on system design and team mentoring.
-- **move into** → I would like to move into a technical leadership position.
-- **build on** → I want to build on my current experience.
+- **stand out** -> I try to stand out through clear impact examples.
+- **build on** -> I want to build on my product collaboration experience.
+- **step into** -> I am ready to step into broader ownership.
+- **back up** -> I back up every claim with concrete evidence.
 
 ## 4) Typical Dialogues
 
-**Interviewer:** Tell me about yourself.
+### Dialogue 1 - Personal Pitch in an Interview
+
+**Teacher:** Tell me about yourself in a way that is relevant to this role.
 
 **You:**  
-My name is Hung, but most people call me Marcus. I’m a Senior Frontend Engineer with more than five years of experience specializing in React and TypeScript. 
+I am a frontend engineer with strong experience in React, TypeScript, and product collaboration. Over the last few years, I have worked on performance, architecture, and team practices, not only feature delivery.  
 
-I started my career building user interfaces and gradually moved into more complex, large-scale applications. Over the past few years, I have focused on performance optimization, clean architecture, and mentoring junior developers. I’ve also hosted internal seminars on web performance and AI tools.
+My value proposition is simple: I turn complex requirements into stable user outcomes while helping teams communicate better. In this role, I can contribute quickly because the challenges match my strengths.
 
-What I enjoy most is creating intuitive, high-performance interfaces that genuinely improve user productivity. Looking ahead, I’m eager to take on more technical leadership responsibilities and contribute to building scalable, user-centered products in a strong team environment.
+### Dialogue 2 - Value Positioning Under Follow-up Questions
+
+**Teacher:** Many candidates say they are impactful. What proves your impact?
+
+**You:**  
+I focus on measurable outcomes. In one release, we reduced page load time by 35% and lowered production issues by improving review standards. I also mentored junior engineers, which improved team velocity over time.
+
+### Dialogue 3 - General Everyday Perspective
+
+**Teacher:** Is personal pitching useful outside interviews?
+
+**You:**  
+Yes. In networking or collaboration, people understand you faster when your story is clear. It helps build trust and reduces misunderstanding.
 
 ## 5) Reading Text
 
-The question “Tell me about yourself” is often the first question in interviews. A good answer should be well-structured, concise, and relevant. It should briefly cover your background, current role, key strengths, and future aspirations while showing enthusiasm and confidence.
+A strong personal pitch is not a biography. It is a strategic summary of your value. Good candidates explain their profile in clear language, support it with proof, and connect it to the target role.
+
+At advanced levels, interviewers look for clarity, credibility, and relevance. They want to hear not only what you did, but why it mattered.
+
+When your story is structured and evidence-based, you sound confident without sounding exaggerated.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. Tell me about yourself.
-2. Walk me through your professional journey.
-3. What is your background?
-4. Why did you choose frontend development?
+### Core Questions (must-practice)
+1. How would you introduce yourself in 60 to 90 seconds?
+2. What is your professional value proposition?
+3. Which strengths define your professional identity?
+4. How do you prove your impact with real evidence?
 
-### Deeper & Follow-up Questions
-5. What are your greatest strengths as a developer?
-6. How has your role changed over the past few years?
-7. What achievements are you most proud of?
-8. Where do you see yourself in 3–5 years?
-9. What motivates you in your career?
-10. Why are you interested in this position?
+### High-Value Case Questions
+5. Describe a project that best represents your value.
+6. Tell me about a time your positioning helped you win trust quickly.
+7. Share a case where you adjusted your pitch for a different audience.
 
-### Objection & Discussion Questions
-11. Some people say “Tell me about yourself” is a difficult question. Why do you think that is?
-12. How long should a self-introduction be in an interview?
-13. Should you focus more on technical skills or soft skills when introducing yourself?
-14. Is it okay to mention personal interests in a professional introduction?
-15. How do you make your self-introduction memorable?
+### Critical Discussion Questions
+8. Is personal branding necessary for technical professionals?
+9. Should candidates emphasize achievements or growth potential?
+10. Can a strong pitch compensate for limited experience?
+
+**Tips for speaking practice:**
+- Keep your pitch short, structured, and evidence-based.
+- Use one metric and one story to increase credibility.
+- Align your final sentence with the target role.
 
 ---

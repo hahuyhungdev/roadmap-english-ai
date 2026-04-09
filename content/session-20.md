@@ -1,112 +1,156 @@
 ---
 sessionNumber: 20
-title: Strengths, Weaknesses & Self-Awareness
-topic: Self-Reflection & Personal Development
+title: Strengths, Weaknesses & Growth Evidence
+topic: Self-Awareness, Improvement Strategy, and Credible Development
 phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
-level: B2
-description: Discuss your professional strengths and weaknesses honestly with concrete examples and show how you are improving.
+level: B2+
+description: Present strengths and weaknesses with maturity, concrete proof, and a realistic growth plan.
 ---
 
-# Session 20: Strengths, Weaknesses & Self-Awareness
+# Session 20: Strengths, Weaknesses & Growth Evidence
 
-**Level:** B2  
-**Focus:** Talking honestly about your strengths and weaknesses with good self-awareness and examples of improvement.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about self-awareness, professional growth, and evidence-based improvement.
 
 ## 1) Vocabulary & Collocations
 
-- **strength** (n) – a good quality or ability  
-  _Example:_ One of my biggest strengths is problem-solving under pressure.
+- **self-awareness** (n) - accurate understanding of your capabilities and limits  
+  _Example:_ Self-awareness helps me choose the right development priorities.
 
-- **weakness** (n) – an area that needs improvement  
-  _Example:_ I used to struggle with delegation, but I’m working on it.
+- **growth evidence** (n) - observable proof of improvement over time  
+  _Example:_ Growth evidence is stronger than general claims.
 
-- **self-awareness** (n) – understanding your own strengths and weaknesses  
-  _Example:_ Self-awareness is very important for professional growth.
+- **development gap** (n) - skill area where current level is below target  
+  _Example:_ Public speaking was a development gap early in my career.
 
-- **improvement** (n) – the process of becoming better  
-  _Example:_ I’m actively working on continuous improvement.
+- **improvement plan** (n) - structured actions to close a skill gap  
+  _Example:_ I created an improvement plan with weekly practice goals.
 
-- **area for development** (n) – something you need to improve  
-  _Example:_ Delegation is currently an area for development for me.
+- **feedback loop** (n) - regular cycle of feedback and adjustment  
+  _Example:_ A feedback loop made progress visible and measurable.
 
-- **concrete example** (n) – a specific real-life situation  
-  _Example:_ Let me give you a concrete example from my last project.
+- **behavior change** (n) - consistent modification of work habits  
+  _Example:_ Real growth requires behavior change, not only intention.
 
-## 2) Grammar & Useful Patterns (B2)
+- **performance pattern** (n) - repeated trend in how you work  
+  _Example:_ I noticed a performance pattern: strong quality, slower delegation.
 
-- **Used to + Verb** (past habit)  
-  I **used to** spend too much time on details, but now I’ve learned to prioritize better.
+- **development milestone** (n) - measurable checkpoint in improvement  
+  _Example:_ Mentoring a junior teammate became a key development milestone.
 
-- **Present Continuous for current efforts**  
-  I **am working on** improving my delegation skills.
+- **blind spot** (n) - weakness you do not see clearly yourself  
+  _Example:_ Peer feedback helped me identify a communication blind spot.
 
-- **Although / While** (contrast)  
-  **Although** I sometimes focus too much on technical details, I’ve learned to balance it with business needs.
+- **capability expansion** (n) - broadening what you can handle effectively  
+  _Example:_ My capability expansion came from cross-functional projects.
+
+**Additional useful terms:**
+- **learning cadence** (n)
+- **skill maturity** (n)
+- **coaching input** (n)
+- **confidence calibration** (n)
+- **improvement trajectory** (n)
+
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
+
+- **Balanced strength framing**  
+  One strength I rely on is execution discipline, especially in ambiguous projects.
+
+- **Weakness with accountability**  
+  A weakness I identified was over-optimizing details, which sometimes slowed delivery.
+
+- **Progress narrative with evidence**  
+  Over the last year, I improved delegation by using clearer ownership and weekly check-ins.
+
+- **Reflection plus next action**  
+  I have improved significantly, but I still need to strengthen strategic communication.
 
 ### Useful Sentence Patterns
-- One of my main strengths is…
-- In the past, I used to…, but now I…
-- I am aware that I need to improve…
-- To overcome this weakness, I…
-- I believe self-awareness is important because…
+- A strength that consistently helps me is...
+- One weakness I actively manage is...
+- I realized this issue when...
+- To improve, I introduced...
+- The evidence of progress is...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-- key strength
-- main weakness
-- area for improvement
-- show self-awareness
-- work on a weakness
-- turn a weakness into a strength
-- learn from experience
+- demonstrate self-awareness
+- identify development gaps
+- build improvement routines
+- collect feedback regularly
+- track growth milestones
+- convert weakness into strength
+- improve communication habits
+- sustain performance growth
 
 ### Useful Chunking & Sentence Starters
-- One of my greatest strengths is…
-- A weakness I used to have was…
-- I am currently working on…
-- To improve this, I have…
-- I’ve learned that…
+- Looking back, I noticed that...
+- A weakness I did not ignore was...
+- The turning point came when...
+- I measured progress through...
+- The next growth goal is...
 
 ### Useful Phrasal Verbs
-- **work on** → I am actively working on my delegation skills.
-- **pick up** → I can pick up new concepts quite quickly.
-- **open up** → I’ve learned to open up and ask for feedback more often.
+- **work on** -> I worked on delegation through structured follow-up.
+- **open up to** -> I opened up to feedback from non-technical peers.
+- **level up** -> I leveled up communication by presenting more often.
+- **cut down on** -> I cut down on perfectionism in low-risk tasks.
 
 ## 4) Typical Dialogues
 
-**Interviewer:** What are your strengths and weaknesses?
+### Dialogue 1 - Strengths and Weaknesses with Evidence
+
+**Teacher:** What are your strengths and weaknesses?
 
 **You:**  
-One of my main strengths is my ability to optimize performance and create clean, scalable code. I also enjoy mentoring junior developers and helping the team improve overall code quality.
+A core strength is execution clarity. I can turn unclear requirements into practical plans and keep teams aligned.  
 
-As for weaknesses, in the past I used to focus too much on technical perfection, which sometimes slowed down delivery. I’ve become more aware of this, so now I am working on balancing quality with business priorities and deadlines. I regularly ask for feedback from my team lead to make sure I’m improving in this area.
+A weakness was spending too much time on technical perfection. I improved by setting quality thresholds based on business impact, and my delivery speed increased without major quality loss.
+
+### Dialogue 2 - Growth Mindset Under Challenge
+
+**Teacher:** How do you prove you are improving, not just saying you are?
+
+**You:**  
+I use measurable signals. For example, I tracked communication quality through stakeholder feedback and meeting outcomes. Over six months, rework caused by misunderstanding dropped significantly.
+
+### Dialogue 3 - General Life Transfer
+
+**Teacher:** Does this growth mindset apply outside work?
+
+**You:**  
+Yes. In personal goals too, I focus on small habits, feedback, and consistency. Improvement is more reliable when it is measurable.
 
 ## 5) Reading Text
 
-Good self-awareness is highly valued in professional environments. Employers want to see that candidates can honestly recognize their strengths and weaknesses and are actively working to improve. Being able to talk about weaknesses constructively shows maturity and a growth mindset.
+Strong candidates do not hide weaknesses. They describe them with maturity and show a clear path of improvement.
+
+At advanced speaking levels, interviewers listen for three signals: self-awareness, ownership, and evidence. Vague answers sound unconvincing, while specific examples build trust.
+
+A good answer is balanced: acknowledge weakness honestly, explain action clearly, and show measurable progress.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. What are your greatest strengths?
-2. What are your main weaknesses?
-3. How do you handle your weaknesses?
-4. Can you give examples of your strengths?
+### Core Questions (must-practice)
+1. What are your most valuable strengths in professional contexts?
+2. What weakness has affected your work the most?
+3. How do you actively improve weaknesses over time?
+4. What evidence shows your growth is real?
 
-### Deeper & Follow-up Questions
-5. How have your strengths helped you in previous projects?
-6. How do you know when you need to improve something?
-7. How do you ask for and receive feedback?
-8. What areas are you currently working to improve?
-9. How has your self-awareness changed over the years?
-10. What strengths do you think are most important for a senior developer?
+### High-Value Case Questions
+5. Describe a weakness you turned into a professional advantage.
+6. Tell me about feedback that changed your behavior significantly.
+7. Share a case where self-awareness improved your team outcomes.
 
-### Objection & Discussion Questions
-11. Is it risky to talk about weaknesses in an interview?
-12. Should you focus more on strengths or be honest about weaknesses?
-13. Can every weakness be turned into a strength?
-14. How important is self-awareness compared to technical skills?
-15. Do you think companies value self-aware employees?
+### Critical Discussion Questions
+8. Should candidates be fully transparent about weaknesses in interviews?
+9. Is growth mindset more important than current competence?
+10. Can strong strengths compensate for one major weakness?
+
+**Tips for speaking practice:**
+- Mention one strength, one weakness, one improvement result.
+- Avoid defensive language when discussing limitations.
+- Use numbers or concrete outcomes where possible.
 
 ---

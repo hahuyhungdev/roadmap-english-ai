@@ -1,117 +1,156 @@
 ---
 sessionNumber: 22
-title: Working Under Pressure & Managing Priorities
-topic: Handling Pressure & Prioritization
+title: Prioritization Under Ambiguity & Stakeholder Alignment
+topic: Decision-Making with Incomplete Information and Competing Demands
 phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
-level: B2
-description: Describe how you handle tight deadlines, high pressure situations, and manage priorities effectively.
+level: B2+
+description: Explain how you prioritize when information is unclear and stakeholders have conflicting expectations.
 ---
 
-# Session 22: Working Under Pressure & Managing Priorities
+# Session 22: Prioritization Under Ambiguity & Stakeholder Alignment
 
-**Level:** B2  
-**Focus:** Speaking about how you manage pressure and prioritize tasks in a professional way.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about prioritization logic, trade-offs, and stakeholder communication under uncertainty.
 
 ## 1) Vocabulary & Collocations
 
-- **pressure** (n) – stress caused by high demands or tight deadlines  
-  _Example:_ I can work well under pressure.
+- **ambiguity tolerance** (n) - ability to act despite incomplete information  
+  _Example:_ Ambiguity tolerance is essential in fast-moving product teams.
 
-- **deadline** (n) – the time by which something must be finished  
-  _Example:_ We often work with tight deadlines.
+- **priority framework** (n) - structured method for ranking tasks  
+  _Example:_ I use a priority framework based on impact, urgency, and risk.
 
-- **priority** (n) – something that is more important than other things  
-  _Example:_ I always identify the highest priorities first.
+- **decision signal** (n) - evidence that supports one option over another  
+  _Example:_ Customer retention data became the strongest decision signal.
 
-- **time management** (n) – the ability to use time effectively  
-  _Example:_ Good time management is essential when working under pressure.
+- **stakeholder alignment** (n) - shared agreement among involved parties  
+  _Example:_ We held a short sync to improve stakeholder alignment.
 
-- **stress management** (n) – the ability to handle stress  
-  _Example:_ I have developed good stress management techniques.
+- **scope pressure** (n) - demand to include too much work in limited time  
+  _Example:_ Scope pressure increased as deadlines approached.
 
-- **deliver under pressure** (v) – to successfully complete work when there is high pressure  
-  _Example:_ I can deliver quality work even under pressure.
+- **trade-off clarity** (n) - explicit understanding of gains and losses  
+  _Example:_ Trade-off clarity reduced conflict in planning meetings.
 
-## 2) Grammar & Useful Patterns (B2)
+- **risk-weighted decision** (n) - choice that accounts for potential downside  
+  _Example:_ We made a risk-weighted decision to delay one feature.
 
-- **Past Simple for examples**  
-  Last year, we **had** a very tight deadline, so I…
+- **execution confidence** (n) - belief that team can deliver as planned  
+  _Example:_ Better alignment improved execution confidence.
 
-- **When + Past Simple**  
-  **When** the deadline was approaching, I focused on…
+- **dependency mapping** (n) - identifying links between tasks and teams  
+  _Example:_ Dependency mapping helped us avoid avoidable delays.
 
-- **Result clauses**  
-  I prioritized the most critical features, **so** we could deliver on time.
+- **decision hygiene** (n) - disciplined process for making and documenting choices  
+  _Example:_ Decision hygiene prevented repeated debates.
 
-- **Contrast**  
-  **Although** the pressure was high, I stayed calm and organized.
+**Additional useful terms:**
+- **information gap** (n)
+- **priority drift** (n)
+- **resource constraint** (n)
+- **alignment checkpoint** (n)
+- **decision rationale** (n)
+
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
+
+- **Uncertainty framing**  
+  We do not have full certainty yet, but we have enough evidence to decide responsibly.
+
+- **Prioritization logic**  
+  I prioritized issue A over issue B because the user impact was immediate and measurable.
+
+- **Conditional planning**  
+  If new evidence appears, we will revisit this priority in the next planning cycle.
+
+- **Conflict-neutral language**  
+  We had different priorities, so we aligned on shared goals before choosing scope.
 
 ### Useful Sentence Patterns
-- When I work under pressure, I usually…
-- First, I identify the highest priorities…
-- To manage my time effectively, I…
-- In high-pressure situations, I…
-- This approach helped me to…
+- Under ambiguity, I usually start with...
+- The highest priority was..., mainly because...
+- To align stakeholders, I...
+- The trade-off we accepted was...
+- We reviewed this decision when...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-- work under pressure
-- tight deadline
-- manage priorities
-- handle stress
-- deliver on time
-- stay focused
-- remain calm
-- time management skills
+- prioritize under uncertainty
+- align conflicting expectations
+- clarify decision criteria
+- communicate trade-offs clearly
+- manage scope pressure
+- update priorities dynamically
+- document decision rationale
+- protect delivery confidence
 
 ### Useful Chunking & Sentence Starters
-- In high-pressure situations, I…
-- When facing a tight deadline, I…
-- My strategy for managing priorities is…
-- I have learned to…
-- This method helps me to…
+- With incomplete information, I focus on...
+- The key uncertainty was...
+- A practical alignment step was...
+- We chose this option because...
+- If assumptions change, we will...
 
 ### Useful Phrasal Verbs
-- **deal with** → I’ve learned how to deal with pressure effectively.
-- **focus on** → I focus on the most important tasks first.
-- **break down** → I break down big tasks into smaller parts.
-- **catch up** → I make sure the team doesn’t fall behind.
+- **sort out** -> We sorted out priorities before sprint planning.
+- **narrow down** -> I narrowed down options using impact criteria.
+- **push back on** -> I pushed back on low-impact scope additions.
+- **line up with** -> Our final plan lined up with business goals.
 
 ## 4) Typical Dialogues
 
-**Interviewer:** How do you handle working under pressure?
+### Dialogue 1 - Prioritizing with Incomplete Data
+
+**Teacher:** How do you prioritize when requirements are unclear?
 
 **You:**  
-I actually work quite well under pressure. When facing a tight deadline, I first break down the tasks and identify the highest priorities. Then I create a clear plan and focus on delivering the most critical features first.
+I define decision criteria first: user impact, delivery risk, and strategic value. Then I choose the option with the strongest evidence and lowest downside.  
 
-For example, last sprint we had an unexpected change in requirements just two days before the release. I stayed calm, re-prioritized the work, and communicated clearly with the team. We managed to deliver the main features on time without sacrificing quality. I believe good preparation and clear communication are the keys to handling pressure successfully.
+I also document assumptions so we can adjust quickly if new information appears.
+
+### Dialogue 2 - Aligning Conflicting Stakeholders
+
+**Teacher:** What if product and engineering disagree on priorities?
+
+**You:**  
+I make trade-offs visible. For example, if we accelerate release, what risk do we accept? If we increase quality, what timeline changes? Once choices are explicit, alignment becomes easier.
+
+### Dialogue 3 - General Life Transfer
+
+**Teacher:** Can prioritization skills help in personal life?
+
+**You:**  
+Yes. When I have many goals, I rank them by impact and urgency. This reduces stress and improves consistency.
 
 ## 5) Reading Text
 
-Working under pressure is common in the tech industry. The ability to stay calm, manage priorities, and deliver quality work even when time is limited is highly valued by employers. Good time management and stress management skills help developers perform well in challenging situations.
+Ambiguity is normal in real projects. Strong professionals do not wait for perfect information; they make responsible decisions with transparent logic.
+
+Prioritization quality depends on clear criteria, trade-off communication, and fast alignment. Teams fail when priorities change without explanation.
+
+In interviews, practical examples of prioritization under uncertainty signal maturity and leadership readiness.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. How do you handle working under pressure?
-2. How do you manage tight deadlines?
-3. How do you prioritize your tasks?
-4. Can you give an example of when you worked under pressure?
+### Core Questions (must-practice)
+1. How do you prioritize tasks when information is incomplete?
+2. What framework do you use to rank competing priorities?
+3. How do you align stakeholders with different expectations?
+4. How do you communicate trade-offs under time pressure?
 
-### Deeper & Follow-up Questions
-5. What is your strategy for managing multiple priorities?
-6. How do you stay calm when facing high pressure?
-7. Have you ever missed a deadline? What happened?
-8. How do you communicate with your team when under pressure?
-9. What techniques do you use for time management?
-10. How has your ability to handle pressure improved over time?
+### High-Value Case Questions
+5. Describe a time you made a strong decision with limited data.
+6. Tell me about a conflict in prioritization and how you resolved it.
+7. Share a case where your prioritization prevented project failure.
 
-### Objection & Discussion Questions
-11. Some people say working under pressure leads to better results. Do you agree?
-12. Is it better to work fast or to work carefully under pressure?
-13. Should managers give employees high pressure to increase productivity?
-14. How important is work-life balance when facing tight deadlines?
-15. Can too much pressure be harmful in the long term?
+### Critical Discussion Questions
+8. Is speed more important than certainty in ambiguous environments?
+9. Should stakeholders always be aligned before execution starts?
+10. Can rigid frameworks reduce decision quality in dynamic projects?
+
+**Tips for speaking practice:**
+- State decision criteria before discussing outcomes.
+- Explain one trade-off clearly with cause and effect.
+- Show how you revisited decisions as new data arrived.
 
 ---
