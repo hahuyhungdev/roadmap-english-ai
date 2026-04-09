@@ -1,16 +1,16 @@
 ---
 sessionNumber: 11
-title: Handling Production Issues & Incident Response
-topic: Production Bugs & Crisis Management
+title: Incident Response, Communication & Recovery
+topic: Production Reliability & Crisis Communication
 phase: PHASE 2 — PROBLEM-SOLVING
-level: B2
+level: B2+
 description: Describe a production issue you faced, how you handled it under pressure, your contribution, communication with stakeholders, and lessons learned.
 ---
 
-# Session 11: Handling Production Issues & Incident Response
+# Session 11: Incident Response, Communication & Recovery
 
-**Level:** B2  
-**Focus:** Speaking professionally about how you handle production issues, manage pressure, communicate with stakeholders, and learn from incidents.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about incident response, pressure management, and stakeholder communication.
 
 ## 1) Vocabulary & Collocations
 
@@ -35,86 +35,133 @@ description: Describe a production issue you faced, how you handled it under pre
 - **post-mortem** (n) – a review after an incident to learn lessons  
   _Example:_ We held a post-mortem meeting to analyze what happened.
 
-## 2) Grammar & Useful Patterns (B2)
+- **triage** (n) – quick prioritization of severity and affected scope  
+  _Example:_ Effective triage helped us reduce confusion in the first 15 minutes.
 
-- **Past Continuous + Past Simple** (for background + action)  
-  While users **were complaining**, I **was investigating** the root cause.
+- **containment** (n) – immediate action to limit damage  
+  _Example:_ Our first containment step was disabling a risky feature flag.
 
-- **Time sequences**  
-  First, … → Then, … → After that, … → Finally, …
+- **escalation** (n) – involving higher-level support when risk increases  
+  _Example:_ We escalated early when impact expanded across accounts.
 
-- **Reported speech**  
-  The product manager asked me **how long** it would take to fix the issue.
+- **status update** (n) – structured communication about progress and next steps  
+  _Example:_ We sent status updates every 20 minutes during recovery.
 
-- **Reflection**  
-  Looking back, I realized that…
+**Additional useful terms:**
+- **SEV level** (n) – incident severity classification
+- **runbook** (n) – operational guide for common incidents
+- **ownership** (n) – clear responsibility for actions
+- **action item** (n) – concrete post-mortem follow-up task
+- **recovery time objective (RTO)** (n) – target maximum recovery duration
+
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
+
+- **Timeline storytelling**  
+  First we detected the issue, then we contained impact, and finally we restored service.
+
+- **Priority language under pressure**  
+  Under pressure, I prioritized containment before deep diagnosis.
+
+- **Stakeholder update language**  
+  We communicated impact, mitigation, and next update time in each status message.
+
+- **Reflection + prevention language**  
+  Looking back, the key gap was unclear ownership during handover.
+
+- **Conditional reflection**  
+  If we had escalated earlier, recovery would have been faster.
 
 ### Useful Sentence Patterns
 - When the issue occurred, I immediately…
-- Under pressure, I had to…
-- I kept stakeholders updated by…
-- In the end, we managed to…
-- From this incident, I learned that…
+- Under pressure, I prioritized...
+- I kept stakeholders updated by...
+- We chose rollback/fix-first because...
+- In the end, we restored service by...
+- The biggest communication challenge was...
+- To prevent recurrence, we introduced...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-- handle a production issue
-- respond quickly
+- triage the incident
+- contain user impact
 - minimize downtime
-- communicate clearly
-- investigate the cause
-- implement a fix
+- coordinate cross-functional response
+- provide timely status updates
+- implement rollback safely
 - conduct a post-mortem
-- learn valuable lessons
+- define preventive action items
+- improve incident readiness
 
 ### Useful Chunking & Sentence Starters
-- Last week, we faced a production issue where…
-- As soon as I noticed the problem,…
-- I immediately informed…
-- During the incident, my main role was…
-- The key lesson I learned was…
+- We detected the incident when...
+- In the first 15 minutes, we...
+- My primary role during the incident was...
+- We updated stakeholders every ... minutes with...
+- The key lesson from this incident was...
 
 ### Useful Phrasal Verbs
-- **look into** → I had to look into the issue right away.
-- **deal with** → We had to deal with the situation calmly.
-- **bring down** → We managed to bring down the error rate.
-- **come up with** → We came up with a temporary fix quickly.
+- **look into** → We looked into logs and alert patterns immediately.
+- **step in** → I stepped in to coordinate frontend triage.
+- **bring down** → We brought down the error rate after rollback.
+- **follow up on** → We followed up on all post-mortem action items.
 
 ## 4) Typical Dialogues
 
-**Teacher:** Tell me about a production issue you handled.
+### Dialogue 1 – Incident Timeline
+
+**Teacher:** Walk me through a production incident you handled.
 
 **You:**  
-Last month, we had a critical production issue where a major feature suddenly stopped working for many users. As soon as I was notified, I joined the incident call and started investigating. While the team was checking the backend, I focused on the frontend side and discovered that a recent deployment had caused a JavaScript error.
+We detected the incident through monitoring alerts and customer reports. In the first 15 minutes, we triaged severity, identified affected flows, and assigned clear owners for backend, frontend, and communication.
 
-I kept stakeholders updated every 30 minutes and proposed a rollback as a quick solution. We applied the fix within 45 minutes and fully resolved the issue. After that, we held a post-mortem meeting to prevent similar problems in the future. This experience taught me the importance of clear communication under pressure.
+To reduce impact quickly, we rolled back the risky change and disabled one feature flag. In parallel, we investigated logs to validate the triggering condition.
+
+Service was restored within the target window. After recovery, we documented action items and updated our runbook.
+
+### Dialogue 2 – Stakeholder Communication
+
+**Teacher:** How did you communicate with stakeholders during the incident?
+
+**You:**  
+I used short and structured updates: current impact, mitigation status, and next update time. I avoided deep technical details unless requested. This kept decision-makers aligned and reduced panic.
+
+### Dialogue 3 – Pressure Management
+
+**Teacher:** How do you stay calm and effective during major outages?
+
+**You:**  
+I focus on process discipline: clear priorities, explicit ownership, and short feedback loops. I also separate urgent containment from deeper analysis. That structure helps the team move fast without losing clarity.
 
 ## 5) Reading Text
 
-Production issues are inevitable in software development. How a team responds to these incidents often determines how much damage is done. Good incident response requires quick thinking, clear communication, effective collaboration, and the ability to learn from mistakes so that similar problems do not happen again.
+Production incidents test both technical depth and communication maturity. Fast fixes without clear updates can still damage trust. On the other hand, clear communication without containment is not enough.
+
+High-performing teams use a repeatable response flow: detect, triage, contain, recover, and learn. They also train this process before incidents happen, not during the crisis.
+
+In interviews, strong answers show leadership behavior: clear priorities, calm communication, and concrete prevention actions.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. Can you describe a production issue you faced?
-2. How did you first hear about the issue?
-3. What was your role during the incident?
-4. How long did it take to resolve the problem?
+### Core Questions (must-practice)
+1. Walk me through a production incident from detection to recovery.
+2. What was your role, and how did you prioritize the first 30 minutes?
+3. How did you communicate status and risk to stakeholders?
+4. What post-incident actions prevented similar issues?
 
-### Deeper & Follow-up Questions
-5. How did you communicate with stakeholders?
-6. What was the most difficult part of handling the incident?
-7. Did you use any temporary fixes or rollbacks?
-8. What did you learn from this experience?
-9. How do you prepare for production incidents?
-10. How has your approach to incidents changed over time?
+### High-Value Case Questions
+5. Describe an incident where rollback was the best decision.
+6. Share a case where communication quality changed the incident outcome.
+7. Tell me about a high-pressure incident and how you stayed effective.
 
-### Objection & Discussion Questions
-11. Is it better to fix a production issue quickly or correctly?
-12. Should developers be on call 24/7?
-13. How do you stay calm when facing a major production incident?
-14. Is rollback a sign of failure or a smart decision?
-15. What is the most important skill when handling production issues?
+### Critical Discussion Questions
+8. Is quick rollback better than immediate root-cause fixing during an outage?
+9. Should every developer participate in on-call rotation?
+10. What matters most in incident handling: technical depth or communication clarity?
+
+**Tips for speaking practice:**
+- Answer in this order: detect -> triage -> contain -> recover -> prevent.
+- Mention audience and cadence of status updates.
+- End with one concrete change that improved future readiness.
 
 ---

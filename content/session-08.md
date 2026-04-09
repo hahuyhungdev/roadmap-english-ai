@@ -1,123 +1,163 @@
 ---
 sessionNumber: 8
-title: Explaining Your Solution & Decision Making
-topic: Solution & Reasoning
+title: Solution Design & Execution Narrative
+topic: Solution Strategy, Constraints & Outcomes
 phase: PHASE 2 — PROBLEM-SOLVING
-level: B2
-description: Explain the solution you implemented, the reasoning behind your decisions, trade-offs considered, and the final results.
+level: B2+
+description: Explain how you designed, implemented, and validated a solution under real constraints.
 ---
 
-# Session 8: Explaining Your Solution & Decision Making
+# Session 8: Solution Design & Execution Narrative
 
-**Level:** B2  
-**Focus:** Speaking clearly about how you solved a problem, why you chose that solution, and what results you achieved.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about how you chose a solution, handled constraints, and delivered measurable results.
 
 ## 1) Vocabulary & Collocations
 
 - **solution** (n) – the way to solve a problem  
-  _Example:_ We implemented a good solution to fix the performance issue.
+  _Example:_ We selected a solution that balanced speed, risk, and maintainability.
 
 - **approach** (n) – a way of dealing with a problem  
-  _Example:_ We decided to use a different approach.
+  _Example:_ Our approach was to ship a safe version first, then optimize.
 
 - **decision** (n) – a choice you make after thinking  
-  _Example:_ The key decision was to rewrite the component.
+  _Example:_ The key decision was to avoid a full rewrite under a tight deadline.
 
 - **trade-off** (n) – accepting a disadvantage to gain an advantage  
-  _Example:_ We had to make some trade-offs between speed and functionality.
+  _Example:_ The main trade-off was faster delivery versus long-term flexibility.
 
 - **implement** (v) – to put a plan into action  
-  _Example:_ We implemented the solution within two days.
+  _Example:_ We implemented the fix in phases to reduce release risk.
 
 - **result** (n) / **outcome** (n) – the final effect  
-  _Example:_ The result was a significant improvement in loading speed.
+  _Example:_ The outcome was a clear drop in incident frequency.
 
 - **optimize** (v) – to make something work better  
-  _Example:_ We optimized the component to reduce re-renders.
+  _Example:_ We optimized only the most expensive path first.
 
-## 2) Grammar & Useful Patterns (B2)
+- **constraint** (n) – limitation in time, scope, or resources  
+  _Example:_ Time constraint forced us to prioritize reliability over elegance.
 
-- **Past Simple for actions**  
-  We **decided** to use memoization to solve the problem.
+- **rollback plan** (n) – predefined safe recovery path  
+  _Example:_ We prepared a rollback plan before deployment.
 
-- **Reasoning expressions**  
-  We chose this solution **because** it was the most efficient option.
+- **acceptance criteria** (n) – conditions proving the solution is successful  
+  _Example:_ We defined clear acceptance criteria before implementation.
 
-- **Contrast / Trade-off**  
-  Although it took more time to implement, **it was worth it** because…
+**Additional useful terms:**
+- **phased rollout** (n) – releasing in controlled steps
+- **proof of concept (PoC)** (n) – small validation experiment
+- **dependency risk** (n) – risk tied to external teams/systems
+- **execution risk** (n) – risk during implementation/release
+- **time-to-value** (n) – time before users see real benefit
 
-- **Result expressions**  
-  As a result, the loading time **was reduced** from 8 seconds to under 2 seconds.
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
 
-- **Reflection**  
-  Looking back, I think this was the right decision because…
+- **Decision rationale with constraints**  
+  Given the deadline and dependency risk, we chose an incremental solution.
+
+- **Counterfactual reasoning**  
+  If we had chosen a full rewrite, we would have delayed release significantly.
+
+- **Concession + justification**  
+  Although the first version was not perfect, it reduced the highest risk quickly.
+
+- **Result + evidence**  
+  As a result, error rate dropped and user completion improved.
+
+- **Reflection language**  
+  Looking back, I would keep the same direction but improve testing earlier.
 
 ### Useful Sentence Patterns
-- To solve this problem, we decided to…
-- The main reason we chose this approach was…
-- We considered … but finally decided to…
-- As a result, …
-- This solution helped us to…
+- To solve this effectively, we designed the solution around...
+- The main constraint was..., so we prioritized...
+- We considered ... but ruled it out because...
+- The trade-off we accepted was...
+- We validated success by measuring...
+- If I had to do it again, I would...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
 - implement a solution
-- make a decision
-- consider trade-offs
-- achieve good results
-- improve performance significantly
-- reduce loading time
-- solve the root cause
-- evaluate different options
+- define acceptance criteria
+- evaluate alternatives
+- minimize release risk
+- execute in phases
+- ship incremental value
+- monitor post-release metrics
+- refine based on feedback
+- reduce recurrence probability
 
 ### Useful Chunking & Sentence Starters
-- To solve this issue, we…
-- After considering several options,…
-- The main reason behind our decision was…
-- In the end, we…
-- This approach allowed us to…
+- To solve this under real constraints, we...
+- Our decision framework focused on...
+- The option we rejected was...
+- The main risk we managed was...
+- The final outcome was...
 
 ### Useful Phrasal Verbs
-- **come up with** → We came up with several possible solutions.
-- **work out** → The solution we chose worked out very well.
-- **carry out** → We carried out the changes in the next sprint.
-- **end up** → We ended up choosing the memoization approach.
+- **come up with** → We came up with three implementation paths.
+- **rule out** → We ruled out the high-risk option before release.
+- **roll out** → We rolled out the fix gradually by user segment.
+- **follow through on** → We followed through on post-release checks.
 
 ## 4) Typical Dialogues
 
-**Teacher:** How did you solve the performance problem?
+### Dialogue 1 – Solution Story
+
+**Teacher:** How did you design and deliver your solution?
 
 **You:**  
-To solve the slow loading issue, we decided to implement memoization and React.memo for the large data table component. We chose this approach because it directly addressed the root cause — unnecessary re-renders — without rewriting the entire feature.
+We first defined success criteria: reduce failure rate, keep release timeline, and avoid major regression risk. Then we compared three options: quick patch, partial refactor, and full rewrite.
 
-We considered using virtualization first, but after testing, we realized memoization gave us better results with less complexity. As a result, the loading time dropped from 8 seconds to under 2 seconds. Users gave positive feedback, and the number of complaints decreased significantly.
+Given our constraints, we chose a phased partial refactor. It addressed the core issue without blocking delivery. We released it behind a feature flag and monitored key metrics closely.
+
+The result was measurable: fewer support tickets, faster workflow completion, and better release confidence.
+
+### Dialogue 2 – Quick Fix vs Long-Term Fix
+
+**Teacher:** How do you decide between a quick fix and a long-term solution?
+
+**You:**  
+I usually separate the decision into two layers: immediate risk and structural risk. If user impact is high, I apply a safe quick fix first. Then I schedule a long-term fix with clear ownership and acceptance criteria. This approach protects users now and code quality later.
+
+### Dialogue 3 – Stakeholder Pressure
+
+**Teacher:** What if stakeholders push for a faster but riskier release?
+
+**You:**  
+I acknowledge the urgency and explain risk in business terms, not only technical terms. For example, I compare short-term gain versus outage risk and support cost. Then I propose a safer phased alternative. Most stakeholders accept it when trade-offs are explicit and measurable.
 
 ## 5) Reading Text
 
-When facing technical problems, experienced developers focus not only on fixing the symptoms but also on choosing the most appropriate solution. Good decision-making involves analyzing options, considering trade-offs, and thinking about both short-term and long-term impacts. The best solutions are those that solve the root cause while bringing clear value to users and the business.
+A strong solution narrative is not just "what we built." It is "why this option, under which constraints, with what evidence." Interviewers usually assess this logic more than the tool itself.
+
+Experienced engineers separate urgency from direction. They reduce risk quickly when needed, but they also protect long-term maintainability through phased improvements.
+
+The most persuasive answers connect technical choices to outcomes that everyone understands: stability, speed, user trust, and business value.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. How did you solve the problem?
-2. What was your solution?
-3. Why did you choose that solution?
-4. What was the result after implementing it?
+### Core Questions (must-practice)
+1. What solution did you implement, and what constraint shaped your choice most?
+2. Which alternatives did you evaluate, and why were they rejected?
+3. What trade-off did you intentionally accept?
+4. How did you validate that the solution worked?
 
-### Deeper & Follow-up Questions
-5. What other solutions did you consider?
-6. What trade-offs did you have to make?
-7. How did you decide which solution was best?
-8. How long did it take to implement the solution?
-9. Did the solution completely solve the problem?
-10. What did you learn from this experience?
+### High-Value Case Questions
+5. Describe a solution that worked technically but failed in adoption. What did you change?
+6. Tell me about a quick fix that later required structural improvement.
+7. Share a case where stakeholder pressure changed your execution plan.
 
-### Objection & Discussion Questions
-11. Is the fastest solution always the best solution?
-12. How do you decide between a quick fix and a proper long-term solution?
-13. Should developers always choose the most modern solution?
-14. What is more important: solving the problem quickly or solving it correctly?
-15. How do you explain your technical decisions to non-technical stakeholders?
+### Critical Discussion Questions
+8. Should teams prioritize speed or correctness when risk is high?
+9. Is "good enough" engineering acceptable in product teams?
+10. How do you persuade non-technical stakeholders without sounding defensive?
+
+**Tips for speaking practice:**
+- Use this structure: problem -> options -> constraint -> choice -> result.
+- Mention one rejected option to show judgment.
+- End with one measurable outcome and one lesson learned.
 
 ---

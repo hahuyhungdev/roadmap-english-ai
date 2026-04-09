@@ -1,123 +1,164 @@
 ---
 sessionNumber: 7
-title: Describing a Technical Problem & Root Cause
-topic: Problem Analysis & Impact
+title: Root Cause Analysis & Problem Framing
+topic: Diagnosing Technical Problems & Business Impact
 phase: PHASE 2 — PROBLEM-SOLVING
-level: B2
-description: Describe a real technical or user-related problem in detail, analyze its root causes, and explain its impact on users and the business.
+level: B2+
+description: Diagnose technical problems with a clear narrative: symptom, investigation, root cause, impact, and prevention.
 ---
 
-# Session 7: Describing a Technical Problem & Root Cause
+# Session 7: Root Cause Analysis & Problem Framing
 
-**Level:** B2  
-**Focus:** Speaking clearly and professionally about a technical problem, its root causes, and its impact.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about how you identify problems, validate hypotheses, and explain impact to technical and non-technical audiences.
 
 ## 1) Vocabulary & Collocations
 
-- **issue** (n) – a problem or difficulty  
-  _Example:_ We faced a serious performance issue last month.
+- **symptom** (n) – the first visible sign of a deeper issue  
+  _Example:_ High timeout rates were the first symptom we noticed.
 
-- **root cause** (n) – the main reason behind a problem  
-  _Example:_ After investigation, we found the root cause of the issue.
+- **root cause** (n) – the fundamental reason the issue happened  
+  _Example:_ The root cause was a cache invalidation bug, not API latency.
 
-- **impact** (n) – the effect or influence of the problem  
-  _Example:_ This issue had a significant impact on user experience.
+- **hypothesis** (n) – a possible explanation tested with evidence  
+  _Example:_ Our initial hypothesis was incorrect, so we tested another path.
 
-- **symptom** (n) – a sign that shows a problem exists  
-  _Example:_ Slow loading time was the most obvious symptom.
+- **reproduce** (v) – to trigger the issue consistently  
+  _Example:_ Once we reproduced the bug locally, debugging became much faster.
 
-- **bottleneck** (n) – a point where the process is restricted  
-  _Example:_ The API calls created a major bottleneck.
+- **blast radius** (n) – the scope of users/systems affected  
+  _Example:_ The blast radius was limited to enterprise accounts using one feature.
 
-- **affect** (v) – to influence or cause a change  
-  _Example:_ The problem affected thousands of users daily.
+- **telemetry** (n) – logs, traces, and metrics used for diagnosis  
+  _Example:_ Telemetry data helped us confirm when the regression started.
 
-- **investigate** (v) – to examine something carefully  
-  _Example:_ We spent two days investigating the root cause.
+- **bottleneck** (n) – the slowest point that limits overall performance  
+  _Example:_ The bottleneck was client-side rendering, not network calls.
 
-## 2) Grammar & Useful Patterns (B2)
+- **workaround** (n) – temporary fix before permanent solution  
+  _Example:_ We deployed a workaround to reduce user impact immediately.
 
-- **Past Simple for describing events**  
-  Last month, we **encountered** a serious performance issue.
+- **regression** (n) – something that worked before but now fails  
+  _Example:_ The incident was caused by a regression from the latest release.
 
-- **Cause and Effect**  
-  The problem **occurred because** the component was re-rendering too frequently.
+- **business impact** (n) – measurable effect on revenue, cost, or productivity  
+  _Example:_ The issue increased support tickets and delayed internal operations.
 
-- **Relative clauses**  
-  The issue, **which affected thousands of users**, was caused by unnecessary re-renders.
+**Additional useful terms:**
+- **MTTD** (n) – mean time to detect
+- **MTTR** (n) – mean time to recovery
+- **edge case** (n) – unusual but valid scenario
+- **false positive** (n) – alert that appears critical but is not
+- **preventive action** (n) – change made to avoid recurrence
 
-- **Result clauses**  
-  As a result, the application became very slow for many users.
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
 
-- **Time expressions**  
-  At first, … → Later, … → Finally, …
+- **Sequencing for clear storytelling**  
+  First, we confirmed the symptom. Then we tested hypotheses. Finally, we isolated the root cause.
+
+- **Hedging when evidence is incomplete**  
+  It appeared that the API was the issue, but logs suggested otherwise.
+
+- **Cause-and-effect with precision**  
+  The bug occurred because stale cache entries were reused after deployment.
+
+- **Contrast for correction**  
+  We initially suspected network latency; however, the actual bottleneck was rendering.
+
+- **Impact framing for non-technical audiences**  
+  This meant users needed more time per task, so operational productivity dropped.
 
 ### Useful Sentence Patterns
-- We faced a problem where…
-- The root cause was…
-- This issue occurred because…
-- As a result, …
-- This had a negative impact on…
+- The first symptom we noticed was...
+- Our initial hypothesis was..., but the data showed...
+- After reproducing the issue, we confirmed...
+- The root cause was..., which led to...
+- The blast radius included...
+- To prevent recurrence, we introduced...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
-- face a problem
 - identify the root cause
-- analyze the issue
-- have a significant impact
-- cause poor user experience
-- lead to performance degradation
-- investigate thoroughly
-- affect user productivity
+- narrow down the scope
+- reproduce the bug reliably
+- correlate logs and traces
+- quantify user impact
+- estimate business impact
+- deploy a temporary workaround
+- document incident findings
+- define preventive actions
+- reduce recurrence risk
 
 ### Useful Chunking & Sentence Starters
-- Last month, we encountered…
-- The main problem was that…
-- After investigating, we discovered…
-- This led to…
-- The impact on users was…
+- At first glance, it looked like...
+- After correlating metrics and logs,...
+- One key signal was...
+- The issue was isolated to...
+- From a business standpoint, this caused...
 
 ### Useful Phrasal Verbs
-- **come across** → We came across a strange bug in production.
-- **look into** → I had to look into the issue immediately.
-- **figure out** → It took us a while to figure out the root cause.
-- **deal with** → We had to deal with many complaints from users.
+- **look into** → We looked into error spikes before touching the code.
+- **narrow down** → We narrowed down the issue to one release window.
+- **rule out** → We ruled out backend latency after trace analysis.
+- **follow up on** → We followed up on prevention actions in the next sprint.
 
 ## 4) Typical Dialogues
 
-**Teacher:** Can you describe a technical problem you faced at work?
+### Dialogue 1 – Technical Interview Style
+
+**Teacher:** Describe a serious technical problem you faced and how you diagnosed it.
 
 **You:**  
-Last quarter, we faced a serious performance issue in our main dashboard. The page was loading very slowly, sometimes taking more than 8 seconds. This problem affected hundreds of users every day and received many complaints.
+We observed a sudden increase in page timeout complaints after a release. The first symptom was a spike in front-end error rates and slower task completion time.
 
-After investigating, we discovered that the root cause was unnecessary re-renders in a large data table component. Every time the user scrolled or filtered data, the whole table was re-rendering completely. As a result, it created a major bottleneck and significantly degraded the user experience.
+Our initial hypothesis was API latency, but trace data did not support that. After reproducing the issue with production-like data, we confirmed the root cause: repeated client-side re-renders triggered by a state synchronization bug.
+
+The blast radius was significant for heavy dashboard users, and support tickets increased. We deployed a workaround first, then implemented a permanent fix with stronger render guards.
+
+### Dialogue 2 – Explaining to a Non-Technical Manager
+
+**Teacher:** How would you explain this incident to a non-technical stakeholder?
+
+**You:**  
+In simple terms, the system was doing the same work many times unnecessarily, so pages became slow. That increased user frustration and support workload. We stabilized it quickly with a temporary fix, then resolved the deeper cause in the next release. We also added monitoring to catch similar patterns earlier.
+
+### Dialogue 3 – Reflection Under Uncertainty
+
+**Teacher:** What if you cannot find the root cause quickly?
+
+**You:**  
+I separate response into two tracks: impact reduction and diagnosis. First, we reduce user impact through rollback or feature flags. In parallel, we continue structured investigation with clear hypotheses and evidence. This keeps service stable while we search for the real cause.
 
 ## 5) Reading Text
 
-In software development, identifying and analyzing problems is a crucial skill. Good developers not only fix symptoms but also find the root cause. Understanding the real reason behind an issue helps prevent it from happening again and reduces negative impact on both users and the business.
+Strong engineers do not jump directly to fixes. They first frame the problem clearly: what changed, what broke, who is affected, and how severe the impact is. This framing helps teams prioritize response and avoid costly assumptions.
+
+Root-cause analysis is not only technical work; it is communication work. Teams need to explain uncertainty, share progress, and align on next steps while pressure is high. When communication is clear, decisions are faster and trust remains high.
+
+The best outcome is not only recovery, but learning. Teams that convert incident lessons into preventive actions improve reliability over time.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. Can you describe a technical problem you faced recently?
-2. What was the main issue?
-3. What was the root cause of the problem?
-4. How did you discover the root cause?
+### Core Questions (must-practice)
+1. What technical problem did you face, and what was the first visible symptom?
+2. How did you test and validate your hypotheses?
+3. How did you confirm the root cause with evidence?
+4. How did you communicate impact to technical and non-technical stakeholders?
 
-### Deeper & Follow-up Questions
-5. How did this problem affect users?
-6. What was the business impact of this issue?
-7. How long did it take to identify the root cause?
-8. Was this problem easy or difficult to solve? Why?
-9. Did this problem happen more than once?
-10. What did you learn from this experience?
+### High-Value Case Questions
+5. Describe a case where your first assumption was wrong. What changed your mind?
+6. Share a problem that had both user impact and business impact.
+7. Tell me about a recurring issue and what prevention mechanism you added.
 
-### Objection & Discussion Questions
-11. Some people say most problems are caused by poor coding. Do you agree?
-12. Is it better to fix problems quickly or find the root cause first?
-13. How would you explain a technical problem to a non-technical manager?
-14. What is the most difficult kind of problem to solve in frontend?
-15. Should developers spend more time preventing problems or fixing them?
+### Critical Discussion Questions
+8. Is quick mitigation more important than immediate root-cause analysis during an incident?
+9. In your opinion, do incidents come more from code, process, or communication?
+10. How should teams split effort between prevention and fast recovery?
+
+**Tips for speaking practice:**
+- Keep your narrative in this order: symptom -> diagnosis -> cause -> impact -> prevention.
+- Use plain language first, then add technical depth.
+- Add one metric (time, error rate, affected users) for credibility.
 
 ---

@@ -1,16 +1,16 @@
 ---
 sessionNumber: 10
-title: Performance Issues & Optimization Strategies
-topic: Performance & Business Impact
+title: Performance Optimization with Business Impact
+topic: Performance Engineering, UX & Product Metrics
 phase: PHASE 2 — PROBLEM-SOLVING
-level: B2
+level: B2+
 description: Discuss performance problems in enterprise applications, optimization techniques you used, and the business impact.
 ---
 
-# Session 10: Performance Issues & Optimization Strategies
+# Session 10: Performance Optimization with Business Impact
 
-**Level:** B2  
-**Focus:** Speaking about performance issues, how you optimized them, and why performance matters for the business.
+**Level:** B2+  
+**Focus:** Speaking in a B2+/C1 interview style about diagnosing performance problems, choosing optimization strategy, and translating improvements into business value.
 
 ## 1) Vocabulary & Collocations
 
@@ -35,86 +35,134 @@ description: Discuss performance problems in enterprise applications, optimizati
 - **business impact** (n) – the effect on the company’s goals  
   _Example:_ Performance issues can have a serious business impact.
 
-## 2) Grammar & Useful Patterns (B2)
+- **latency** (n) – delay between action and response  
+  _Example:_ High latency in critical flows reduced user confidence.
 
-- **Past Simple + Result**  
-  We **optimized** the component, **and as a result**, loading time decreased dramatically.
+- **throughput** (n) – amount of work completed in a period  
+  _Example:_ After optimization, throughput improved during peak hours.
 
-- **Before & After comparison**  
-  Before optimization, the page **took** 8 seconds to load. After optimization, it **only takes** 1.5 seconds.
+- **critical path** (n) – steps that most affect perceived speed  
+  _Example:_ We optimized the critical path before secondary screens.
 
-- **Passive voice**  
-  Many unnecessary re-renders **were eliminated**.
+- **Core Web Vitals** (n) – key user-centered web performance metrics  
+  _Example:_ We tracked Core Web Vitals to measure real user impact.
 
-- **Quantifiers & Approximations**  
-  We reduced loading time **by approximately 75%**.
+**Additional useful terms:**
+- **bundle size** (n) – total JavaScript/CSS payload
+- **lazy loading** (n) – loading resources only when needed
+- **render budget** (n) – target limit for render cost/time
+- **cache strategy** (n) – policy for storing and reusing data
+- **performance regression** (n) – degradation after release
+
+## 2) Grammar & Useful Patterns (B2+ / C1-lite)
+
+- **Before/After impact framing**  
+  Before optimization, users waited 8 seconds; after optimization, median load time was 1.8 seconds.
+
+- **Result with metric language**  
+  As a result, drop-off rate decreased and completion rate increased.
+
+- **Priority language**  
+  We prioritized high-impact bottlenecks first instead of optimizing everything.
+
+- **Concession with business logic**  
+  Although the refactor required extra effort, the ROI was clear within one release cycle.
+
+- **Recommendation language**  
+  If I had to prioritize one metric, I would prioritize user task completion time.
 
 ### Useful Sentence Patterns
 - The main performance issue was…
-- To improve performance, we…
-- As a result of the optimization,…
-- This change helped us reduce…
-- From a business perspective, …
+- To improve performance, we focused on...
+- The biggest bottleneck was...
+- We measured impact using...
+- As a result of the optimization,...
+- From a business perspective, this improved...
+- The highest-ROI improvement was...
 
 ## 3) Collocations, Chunking & Phrasal Verbs
 
 ### Strong Collocations
 - performance issue
-- optimize performance
+- optimize the critical path
 - reduce loading time
 - improve user experience
 - eliminate bottlenecks
-- apply optimization techniques
-- achieve significant improvement
-- measure performance
+- prevent performance regression
+- improve Core Web Vitals
+- reduce bounce/drop-off rates
+- monitor real-user metrics
+- increase conversion efficiency
 
 ### Useful Chunking & Sentence Starters
-- We were facing a performance issue where…
-- To solve this, we applied…
-- After optimization,…
-- This resulted in…
-- From the business point of view,…
+- We observed a slowdown in...
+- After profiling, we identified...
+- We chose to optimize ... first because...
+- After release, the metric trend showed...
+- From a business point of view, this translated into...
 
 ### Useful Phrasal Verbs
-- **slow down** → The large component was slowing down the whole page.
-- **speed up** → Our changes helped speed up the application.
-- **cut down** → We managed to cut down unnecessary re-renders.
-- **bring down** → We brought down the loading time from 8 to 1.5 seconds.
+- **slow down** → Large rendering tasks slowed down key user flows.
+- **speed up** → We sped up first-content display with code splitting.
+- **cut down on** → We cut down on unnecessary client-side computation.
+- **bring down** → We brought down page load and error rates together.
 
 ## 4) Typical Dialogues
 
-**Teacher:** Can you talk about a performance issue you solved?
+### Dialogue 1 – Performance Story
+
+**Teacher:** Tell me about a performance issue you solved and the impact.
 
 **You:**  
-We had a major performance issue with our main dashboard. The page was taking too long to load, especially when displaying large amounts of data. The root cause was excessive re-rendering in a complex table component.
+We had a serious performance issue in a high-traffic dashboard. Users experienced slow loading and occasional UI freezing during filtering.
 
-To fix this, we applied React.memo and useMemo to prevent unnecessary re-renders. We also optimized how data was fetched and processed. As a result, we reduced the average loading time by about 75%. This improvement greatly enhanced the user experience and received very positive feedback from the business team.
+After profiling, we found two bottlenecks: expensive re-renders and oversized initial bundles. We optimized the render path, introduced lazy loading, and tightened data-fetch sequencing.
+
+Within one release, median load time dropped significantly and task completion improved. Support complaints also decreased, which gave clear business value.
+
+### Dialogue 2 – Stakeholder Conversation
+
+**Teacher:** How do you convince stakeholders that performance work is worth the effort?
+
+**You:**  
+I link performance to outcomes they care about: conversion, retention, and support cost. For example, "a 2-second improvement reduces abandonment and improves completion." Once impact is measurable, performance becomes a product priority, not just an engineering preference.
+
+### Dialogue 3 – Optimization Scope
+
+**Teacher:** Do you optimize everything from day one?
+
+**You:**  
+No, I optimize by impact. Early in a feature, I set reasonable performance budgets and monitor usage. Then I prioritize bottlenecks that affect key user journeys. This keeps delivery practical while still protecting quality.
 
 ## 5) Reading Text
 
-Performance is one of the most important aspects of frontend development, especially in enterprise applications. Slow applications frustrate users and can negatively affect business results. Good developers not only fix performance problems when they appear but also apply optimization strategies proactively to deliver smooth and responsive user experiences.
+Performance engineering is not about making everything "as fast as possible." It is about improving what users feel most and what business outcomes depend on.
+
+High-performing teams measure first, optimize second, and validate after release. They focus on critical journeys, not vanity metrics.
+
+In interviews, strong answers combine technical diagnosis with business translation: what changed, why it mattered, and how success was measured.
 
 ## 6) List of Questions + Ideas
 
-### Basic Questions
-1. What performance issues have you faced?
-2. How did you identify the performance problem?
-3. What optimization techniques did you use?
-4. What was the result after optimization?
+### Core Questions (must-practice)
+1. What performance issue had the strongest impact on users?
+2. How did you measure and localize the bottleneck?
+3. Which optimization had the highest ROI?
+4. How did performance improvements affect product/business metrics?
 
-### Deeper & Follow-up Questions
-5. How do you measure performance in your projects?
-6. What is the most common performance issue in frontend?
-7. How does poor performance affect the business?
-8. Do you optimize from the beginning or only when problems appear?
-9. What tools do you use to analyze performance?
-10. How do you balance beautiful design with good performance?
+### High-Value Case Questions
+5. Describe a case where optimization reduced drop-off or complaints.
+6. Tell me about an optimization that improved speed but increased complexity.
+7. Share a case where stakeholders initially underestimated performance work.
 
-### Objection & Discussion Questions
-11. Is performance more important than beautiful design?
-12. Should teams spend a lot of time on optimization even if users don’t complain?
-13. Is it better to optimize early or fix performance issues later?
-14. How do you convince stakeholders to invest time in performance improvement?
-15. Will AI tools make performance optimization easier in the future?
+### Critical Discussion Questions
+8. Should teams optimize early or wait for usage data first?
+9. Is visual polish still valuable when baseline performance is weak?
+10. How do you justify performance investment to non-technical decision-makers?
+
+**Tips for speaking practice:**
+- Use one before/after metric in every answer.
+- Connect each technical change to a user or business outcome.
+- Explain your reasoning in simple language before technical details.
 
 ---
