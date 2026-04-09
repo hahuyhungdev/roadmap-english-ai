@@ -25,8 +25,8 @@ git reset --hard "origin/$BRANCH"
 git clean -fd
 
 echo "== Install dependencies and build =="
-npm ci
-npm run build
+pnpm install --frozen-lockfile
+pnpm run build
 
 echo "== Package standalone build =="
 cp -r .next/static .next/standalone/.next/static

@@ -5,7 +5,7 @@ AI-powered English practice app focused on speaking, shadowing, and sentence-by-
 ## Tech Stack
 
 - Next.js (App Router) + React + TypeScript
-- Mantine UI + Tailwind CSS
+- Mantine UI + Tailwind CSS + react-rnd (Floating Notes)
 - Drizzle ORM + PostgreSQL
 - Soniox (speech-to-text) integration via client hook
 - Google TTS + AI feedback endpoints
@@ -17,12 +17,13 @@ AI-powered English practice app focused on speaking, shadowing, and sentence-by-
 - Voice recording per sentence with instant replay
 - AI coaching endpoints for speaking feedback
 - Caching for TTS, transcripts, and parsed script sessions
+- Floating Note Panel (resizable, draggable, auto-saving workspace for taking notes anywhere)
 
 ## Quick Start
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open http://localhost:3000
@@ -44,14 +45,14 @@ SUPADATA_API_KEY=...
 ## Database
 
 ```bash
-npm run db:generate
-npm run db:push
+pnpm db:generate
+pnpm db:push
 ```
 
 Optional migration runner:
 
 ```bash
-npm run db:migrate
+pnpm db:migrate
 ```
 
 ## Script Shadowing Controls
@@ -78,14 +79,14 @@ Sentence editing behavior:
 
 ## Useful Scripts
 
-- `npm run dev`: start development server
-- `npm run build`: production build
-- `npm run start`: run production build
-- `npm run lint`: run lint checks
-- `npm run clean:transcript`: clean transcript text via script
-- `npm run db:generate`: generate Drizzle files
-- `npm run db:push`: push schema to DB
-- `npm run db:migrate`: run custom migration script
+- `pnpm dev`: start development server
+- `pnpm build`: production build
+- `pnpm start`: run production build
+- `pnpm lint`: run lint checks
+- `pnpm clean:transcript`: clean transcript text via script
+- `pnpm db:generate`: generate Drizzle files
+- `pnpm db:push`: push schema to DB
+- `pnpm db:migrate`: run custom migration script
 
 ## API Routes (High Level)
 
