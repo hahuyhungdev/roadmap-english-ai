@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import LayoutNav from "@/components/LayoutNav";
 import AppSidebar from "@/components/AppSidebar";
+import NotePanel from "@/components/NotePanel";
 
 const SIDEBAR_COLLAPSED_KEY = "sidebar-collapsed";
 
@@ -61,6 +62,7 @@ export default function AppChrome({ children }: { children: React.ReactNode }) {
           {children}
         </main>
       </div>
+      <NotePanel />
     </div>
   );
 }
