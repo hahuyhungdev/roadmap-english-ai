@@ -47,9 +47,59 @@ type LessonNote = {
   updatedAt: string | null;
 };
 
+type SectionKey = "vocabulary" | "mispronounced" | "incorrect";
+type SectionNotes = Record<SectionKey, string>;
+
+const SECTION_LABELS: Record<SectionKey, string> = {
+  vocabulary: "NEW VOCABULARY",
+  mispronounced: "MISPRONOUNCED WORDS",
+  incorrect: "INCORRECT SENTENCES",
+};
+
+const NOTE_FORMAT_PREFIX = "__NOTE_PANEL_V2__";
+
+const EMPTY_NOTES: SectionNotes = {
+  vocabulary: "",
+  mispronounced: "",
+  incorrect: "",
+};
+
+function parseSectionContent(content: string): SectionNotes {
+  const raw = content.trim();
+  if (!raw) return { ...EMPTY_NOTES };
+
+  if (raw.startsWith(NOTE_FORMAT_PREFIX)) {
+    const jsonRaw = raw.slice(NOTE_FORMAT_PREFIX.length).trim();
+    try {
+      const parsed = JSON.parse(jsonRaw) as Partial<SectionNotes>;
+      return {
+        vocabulary:
+          typeof parsed.vocabulary === "string" ? parsed.vocabulary : "",
+        mispronounced:
+          typeof parsed.mispronounced === "string" ? parsed.mispronounced : "",
+        incorrect: typeof parsed.incorrect === "string" ? parsed.incorrect : "",
+      };
+    } catch {
+      return { ...EMPTY_NOTES, vocabulary: content };
+    }
+  }
+
+  // Legacy fallback: keep previous free-text notes in the first section.
+  return { ...EMPTY_NOTES, vocabulary: content };
+}
+
+function serializeSectionContent(notes: SectionNotes): string {
+  return `${NOTE_FORMAT_PREFIX}\n${JSON.stringify(notes)}`;
+}
+
+function getSectionLineCount(value: string): number {
+  const trimmed = value.trim();
+  return trimmed ? trimmed.split(/\n+/).length : 0;
+}
+
 export default function NotePanel() {
   const [opened, setOpened] = useState(false);
-  const [content, setContent] = useState("");
+  const [sectionNotes, setSectionNotes] = useState<SectionNotes>({ ...EMPTY_NOTES });
   const pathname = usePathname();
   const { width, height } = useViewportSize();
   const queryClient = useQueryClient();
@@ -84,12 +134,12 @@ export default function NotePanel() {
 
   useEffect(() => {
     if (!sessionSlug) {
-      setContent("");
+      setSectionNotes({ ...EMPTY_NOTES });
       return;
     }
 
     if (noteQuery.data) {
-      setContent(noteQuery.data.content);
+      setSectionNotes(parseSectionContent(noteQuery.data.content));
     }
   }, [sessionSlug, noteQuery.data]);
 
@@ -122,8 +172,10 @@ export default function NotePanel() {
     },
   });
 
-  const serverContent = noteQuery.data?.content ?? "";
-  const isDirty = Boolean(sessionSlug) && content !== serverContent;
+  const serverNotes = parseSectionContent(noteQuery.data?.content ?? "");
+  const serializedCurrent = serializeSectionContent(sectionNotes);
+  const serializedServer = serializeSectionContent(serverNotes);
+  const isDirty = Boolean(sessionSlug) && serializedCurrent !== serializedServer;
 
   const statusText = !sessionSlug
     ? "Open a lesson page to start notes"
@@ -144,12 +196,17 @@ export default function NotePanel() {
     try {
       await saveMutation.mutateAsync({
         sessionSlug,
-        content,
+        content: serializedCurrent,
       });
     } catch (err) {
       console.error("[NotePanel] Failed to save lesson note", err);
     }
   };
+
+  const panelDefaultWidth = 400;
+  const panelPreferredHeight = Math.max(640, Math.floor(height * 0.9));
+  const panelDefaultHeight =
+    height > 0 ? Math.max(500, Math.min(panelPreferredHeight, height - 24)) : 640;
 
   return (
     <>
@@ -175,13 +232,13 @@ export default function NotePanel() {
       {opened && width > 0 && (
         <Rnd
           default={{
-            x: Math.max(0, width - 420),
-            y: Math.max(0, (height - 500) / 2),
-            width: 400,
-            height: 500,
+            x: Math.max(0, width - panelDefaultWidth - 24),
+            y: Math.max(8, (height - panelDefaultHeight) / 2),
+            width: panelDefaultWidth,
+            height: panelDefaultHeight,
           }}
-          minWidth={300}
-          minHeight={250}
+          minWidth={360}
+          minHeight={420}
           bounds="window"
           dragHandleClassName="drag-handle"
           style={{ zIndex: 101, position: "fixed" }}
@@ -247,35 +304,82 @@ export default function NotePanel() {
               </Group>
             </Group>
 
-            <Textarea
-              value={content}
-              onChange={(event) => setContent(event.currentTarget.value)}
-              disabled={!sessionSlug || noteQuery.isPending}
-              placeholder={
-                !sessionSlug
-                  ? "Open a lesson page to start taking notes..."
-                  : noteQuery.isPending
-                    ? "Loading notes..."
-                    : "Start taking notes for this lesson..."
-              }
-              styles={{
-                root: {
-                  flex: 1,
-                  display: "flex",
-                  flexDirection: "column",
-                  overflow: "hidden",
-                },
-                wrapper: { flex: 1, display: "flex", flexDirection: "column" },
-                input: {
-                  flex: 1,
-                  resize: "none",
-                  border: "none",
-                  borderRadius: 0,
-                  padding: "16px",
-                  fontSize: "16px",
-                },
+            <div
+              style={{
+                flex: 1,
+                display: "flex",
+                flexDirection: "column",
+                overflowY: "auto",
+                padding: "10px 12px 14px",
               }}
-            />
+            >
+              {(["vocabulary", "mispronounced", "incorrect"] as SectionKey[]).map(
+                (sectionKey, index) => (
+                  <div
+                    key={sectionKey}
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      flex: index === 2 ? 1 : undefined,
+                      minHeight: index === 2 ? 220 : 170,
+                      marginTop: index === 0 ? 0 : 12,
+                      paddingTop: index === 0 ? 0 : 12,
+                      borderTop:
+                        index === 0
+                          ? "none"
+                          : "1px solid var(--mantine-color-gray-3)",
+                    }}
+                  >
+                    <Group justify="space-between" mb={6}>
+                      <Text size="xs" fw={700} c="dimmed">
+                        {SECTION_LABELS[sectionKey]}
+                      </Text>
+                      <Text size="xs" c="dimmed">
+                        {getSectionLineCount(sectionNotes[sectionKey])} line
+                        {getSectionLineCount(sectionNotes[sectionKey]) === 1 ? "" : "s"}
+                      </Text>
+                    </Group>
+
+                    <Textarea
+                      value={sectionNotes[sectionKey]}
+                      onChange={(event) => {
+                        const nextValue = event.currentTarget.value;
+                        setSectionNotes((prev) => ({
+                          ...prev,
+                          [sectionKey]: nextValue,
+                        }));
+                      }}
+                      disabled={!sessionSlug || noteQuery.isPending}
+                      placeholder={
+                        !sessionSlug
+                          ? "Open a lesson page to start taking notes..."
+                          : noteQuery.isPending
+                            ? "Loading notes..."
+                            : `Add notes for ${SECTION_LABELS[sectionKey]}...`
+                      }
+                      styles={{
+                        root: {
+                          flex: 1,
+                          display: "flex",
+                          flexDirection: "column",
+                        },
+                        wrapper: {
+                          flex: 1,
+                          display: "flex",
+                          flexDirection: "column",
+                        },
+                        input: {
+                          flex: 1,
+                          minHeight: index === 2 ? 180 : 120,
+                          resize: "none",
+                          fontSize: "14px",
+                        },
+                      }}
+                    />
+                  </div>
+                ),
+              )}
+            </div>
           </Paper>
         </Rnd>
       )}
