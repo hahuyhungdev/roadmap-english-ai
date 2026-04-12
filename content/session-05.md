@@ -4,25 +4,25 @@ title: How Technology Changes the Way We Work
 topic: Technology Impact on Work Practices
 phase: PHASE 1 — TECH EXPLAIN 
 level: B2
-description: Discuss how modern technologies are changing the way developers work, productivity, collaboration, and daily processes (high-level, IELTS-style).
+description: Discuss how modern technologies are changing the way people work, learn, and communicate, including productivity and collaboration impacts.
 ---
 
 # Session 5: How Technology Changes the Way We Work
 
 **Level:** B2  
-**Focus:** Speaking about how modern technologies (including AI) are transforming workflows, collaboration, productivity, and decision-making in software teams.
+**Focus:** Speaking about how everyday digital tools are changing workflows, collaboration, productivity, and communication in work and study.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **transform** (v) – to change completely  
-  _Example:_ New technologies have transformed the way we develop software.
+  _Example:_ New technologies have transformed the way we work and learn.
 
 - **productivity** (n) – the amount of work done in a certain time  
-  _Example:_ Modern tools have greatly increased developer productivity.
+  _Example:_ Modern tools have increased productivity in many jobs.
 
 - **collaboration** (n) – working together with others  
-  _Example:_ Technology has improved collaboration between remote teams.
+  _Example:_ Technology has improved collaboration between students and coworkers.
 
 - **automation** (n) – using machines or software to do tasks automatically  
   _Example:_ Automation helps reduce repetitive manual work.
@@ -33,22 +33,20 @@ description: Discuss how modern technologies are changing the way developers wor
 - **efficiency** (n) – doing more with less time and effort  
   _Example:_ Technology has significantly improved our efficiency.
 
-- **flexibility** (n) – the ability to adapt easily  
   _Example:_ Modern technology gives us more flexibility in how we work.
 
-- **AI-assisted development** (n) – using AI tools to support coding and problem-solving  
-  _Example:_ AI-assisted development speeds up prototyping and documentation tasks.
+  _Example:_ Digital tools help people draft messages, summarize notes, and organize tasks faster.
 
+ **digital tools** (n) – apps or software that help with day-to-day tasks  
 - **context switching** (n) – repeatedly changing between tasks or tools  
   _Example:_ Better tooling helps reduce context switching.
-
 - **asynchronous communication** (n) – collaboration without everyone being online at the same time  
-  _Example:_ Asynchronous communication is essential for distributed teams.
+  _Example:_ Asynchronous communication is useful for remote classes and global workplaces.
 
 **Additional useful terms:**
 - **cognitive load** (n) – mental effort required to complete work
-- **tooling ecosystem** (n) – integrated set of tools used in development
-- **feedback loop** (n) – cycle of building, measuring, and improving
+- **digital literacy** (n) – ability to use everyday tools effectively
+- **feedback loop** (n) – cycle of acting, measuring, and improving
 - **standardization** (n) – using common processes to reduce inconsistency
 - **change fatigue** (n) – stress caused by too many changes in a short time
 
@@ -61,10 +59,10 @@ description: Discuss how modern technologies are changing the way developers wor
   Technology **has changed** the way we work in many ways.
 
 - **Cause and Effect**  
-  Because of automation and AI tools, developers can focus more on complex problem-solving.
+  Because of automation and helpful apps, people can focus more on complex problem-solving.
 
 - **Comparison** (used to vs now)  
-  We **used to** write everything manually, but now we **can** generate code automatically.
+  We **used to** do many tasks manually, but now simple apps help us draft and organize content quickly.
 
 - **Passive voice**  
   Many repetitive tasks **are being automated** by modern tools.
@@ -80,9 +78,9 @@ description: Discuss how modern technologies are changing the way developers wor
 - Thanks to …, we can now…
 - In the past, we used to …, but nowadays…
 - This leads to…
-- As a result, developers can focus more on…
+- As a result, people can focus more on…
 - One downside we should consider is…
-- To adapt effectively, teams need to…
+- To adapt effectively, individuals and organizations need to…
 
 </details>
 
@@ -100,9 +98,9 @@ description: Discuss how modern technologies are changing the way developers wor
 - boost team performance
 - shorten feedback loops
 - reduce context switching
-- adopt AI-assisted workflows
-- standardize development practices
-- improve release confidence
+- adopt helpful workflows
+- standardize daily practices
+- improve communication quality
 
 ### Useful Chunking & Sentence Starters
 - Technology has changed the way…
@@ -110,13 +108,13 @@ description: Discuss how modern technologies are changing the way developers wor
 - One of the biggest changes is…
 - This allows us to…
 - As a result,…
-- In distributed teams, we rely on…
+- In remote groups, we rely on…
 - A major benefit is…, but a common risk is…
 - To avoid tool overload, we…
-- A practical example from my team is…
+- A practical example from my routine is…
 
 ### Useful Phrasal Verbs
-- **speed up** → New tools help speed up development.
+- **speed up** → New tools help speed up daily tasks.
 - **cut down on** → Automation helps cut down on manual work.
 - **focus on** → We can focus on more important tasks.
 - **keep up with** → It’s important to keep up with new technologies.
@@ -131,41 +129,41 @@ description: Discuss how modern technologies are changing the way developers wor
 
 ### Dialogue 1 – General Impact
 
-**Teacher:** How has technology changed the way you work?
+**Interviewer:** How has technology changed your work or study?
 
 **You:**  
-Technology has changed our work significantly. We now build, test, and deploy faster because many repetitive tasks are automated. AI tools also help with drafting code, writing tests, and summarizing documentation, so we can focus more on architecture and user problems.
+Technology has made routine tasks faster, so I have more time for planning and communication. Simple tools help me draft messages and summarize long texts, but I always check details before sharing.
 
-At the same time, we need discipline. If teams adopt too many tools too quickly, productivity can drop because of context switching. So we standardize core workflows and introduce changes gradually.
+I try not to use too many tools at once; keeping a simple routine helps me stay focused.
 
-Overall, technology increases speed and flexibility, but only when teams manage it intentionally.
+Overall, technology speeds things up when used with care.
 
-### Dialogue 2 – AI in Daily Work
+### Dialogue 2 – Tools in Daily Life
 
-**Teacher:** How do AI tools affect your daily development process?
+**Interviewer:** How do digital tools affect your daily routine?
 
 **You:**  
-AI tools help me draft boilerplate code, explore alternative solutions, and speed up debugging. However, I treat AI output as a starting point, not the final answer. I still validate logic, edge cases, and security implications.
+Tools help me create first drafts, gather ideas, and organize notes. I treat their output as a draft: I always check details and make changes so it fits the situation.
 
-In short, AI improves productivity, but engineering judgment remains essential.
+In short, tools save time, but human judgment is still important.
 
 ### Dialogue 3 – Managing Risks
 
-**Teacher:** Some people think modern tools create dependency. Do you agree?
+**Interviewer:** Some people think new tools create dependency. Do you agree?
 
 **You:**  
-I partly agree. Dependency risk is real if teams stop understanding fundamentals. That is why we combine tool usage with code reviews, architecture discussions, and internal learning sessions. The goal is to use tools as accelerators, not as replacements for core engineering skills.
+I partly agree. If people stop practicing core skills, problems appear. So I use tools to speed up routine work but keep practicing fundamentals and checking results.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Technology has shifted software work from manual execution to high-leverage decision-making. Developers now spend less time on repetitive setup and more time on architecture, product thinking, and user impact. Collaboration has also changed: distributed teams rely on asynchronous updates, shared documentation, and automated quality checks.
+Technology has shifted many jobs and learning routines from manual execution to higher-value decision-making. People now spend less time on repetitive setup and more time on analysis, communication, and creative problem-solving. Collaboration has also changed: remote groups rely on asynchronous updates, shared documents, and digital coordination tools.
 
-However, progress is not only about speed. Teams must also manage adoption risks such as tool overload, inconsistent practices, and reduced focus. The most successful teams introduce change step by step, measure outcomes, and invest in continuous learning.
+However, progress is not only about speed. People and organizations must manage adoption risks such as tool overload, inconsistent practices, and reduced focus. The most successful users introduce change step by step, measure outcomes, and invest in continuous learning.
 
-In professional speaking, a balanced perspective is important. Highlight both benefits and limitations, and explain how your team adapts in practice.
+In professional speaking, a balanced perspective is important. Highlight both benefits and limitations, and explain how people adapt in practice.
 
 </details>
 
@@ -173,25 +171,25 @@ In professional speaking, a balanced perspective is important. Highlight both be
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What is the biggest technology change in your daily work?
-2. How have automation and AI affected your productivity?
-3. How have modern tools changed team collaboration?
+1. What is the biggest technology change in your daily work or study?
+2. How have automation and simple tools affected your productivity?
+3. How have modern tools changed collaboration in your environment?
 4. What is the biggest risk of adopting new tools too quickly?
 
 ### High-Value Case Questions
-5. Share a case where automation or AI saved significant time.
-6. Tell me about a tool adoption that failed and what your team learned.
-7. Describe one process change that improved team performance.
+5. Share a case where automation or simple tools saved significant time.
+6. Tell me about a tool adoption that failed and what people learned.
+7. Describe one process change that improved performance.
 
 ### Critical Discussion Questions
-8. Will AI replace developers, or mainly change their role?
-9. Is it better to use one stable toolchain or many specialized tools?
-10. Does faster development always lead to better product quality?
+8. Will simple tools replace workers, or mainly change their roles?
+9. Is it better to use one stable platform or many specialized tools?
+10. Does faster output always lead to better quality?
 
 **Tips for speaking practice:**
 - Compare "before vs now" with one concrete example.
 - Mention both benefit and risk in each long answer.
-- Add one measurable result (time saved, fewer bugs, faster release).
+- Add one measurable result (time saved, fewer errors, faster completion).
 
 ---
 

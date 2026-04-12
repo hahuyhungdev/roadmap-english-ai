@@ -113,16 +113,26 @@ description: Explain how you adapt to changing requirements, collect and use use
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-**Teacher / Interviewer:** How do you handle changes in requirements and use user feedback for continuous improvement?
+### Dialogue 1 - Change in Requirements
+
+**Interviewer:** How do you handle changing requirements?
 
 **You:**  
-In my experience, requirements frequently change because of new business needs, market shifts, or user discoveries. When this happens, I first **assess the impact** on timeline, cost, and existing features. Then we discuss with the product owner and team to **prioritize the changes** using our backlog.
+When requirements change, I check the impact on scope and timeline, then we prioritize the most important items and make adjustments in small steps.
 
-We implement improvements in small **iterations** or sprints to stay flexible. For user feedback, we **gather it continuously** through in-app surveys, analytics tools (like Hotjar or Mixpanel), user interviews, and support tickets. After analyzing the feedback, we **refine** problematic areas—for example, simplifying a complex workflow that users found confusing.
+### Dialogue 2 - User Feedback in Practice
 
-A concrete case from my last project: Users reported that the registration process had too many steps. Based on that feedback and A/B testing, we **came up with** a streamlined version and **rolled it out** in the next sprint. As a result, completion rate increased by over 30%.
+**Interviewer:** How do you use user feedback effectively?
 
-We also hold **sprint retrospectives** at the end of every iteration to reflect on our process using a Kaizen mindset — focusing on small, actionable improvements. This helps us **foster continuous improvement** without big disruptions. Overall, I believe embracing change and keeping users at the center is the best way to deliver high-quality products.
+**You:**  
+We collect feedback through surveys, direct conversations, and usage data, then look for common patterns to guide small, practical improvements.
+
+### Dialogue 3 - Continuous Improvement Mindset
+
+**Interviewer:** What does continuous improvement look like in your team?
+
+**You:**  
+After each cycle we do a short retrospective and pick one or two concrete improvements. Small, steady changes tend to work better than big, disruptive ones.
 
 </details>
 
