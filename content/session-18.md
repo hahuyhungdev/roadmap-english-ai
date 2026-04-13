@@ -1,84 +1,87 @@
 ---
 sessionNumber: 18
-title: Technology, Trust, Privacy & Accountability
-topic: Technology Trust, Privacy, Bias, and Accountability
-phase: PHASE 3 — DISCUSSION & IMPACT
-level: B2+
-description: Discuss technology's social impact with balanced reasoning, benefits, risks, ethical trade-offs, and responsibilities.
+title: Individualism vs Community - Who Comes First?
+topic: Personal Performance and Team Responsibility
+phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+level: B1-B2
+description: Discuss the tension between individual success and collective team health in software environments.
 ---
 
-# Session 18: Technology, Trust, Privacy & Accountability
+# Session 18: Individualism vs Community - Who Comes First?
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about social impact and ethical trade-offs in technology, with clear and accessible language.
+**Level:** B1-B2  
+**Focus:** Discuss team culture trade-offs, including high performers, collaboration, and long-term trust.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **social impact** (n) – effect of technology on people and communities  
-  _Example:_ Social impact should be evaluated alongside technical feasibility.
+- **individualism** (n) - focus on personal goals and freedom  
+  _Example:_ Individualism can drive innovation, but teamwork may suffer.
 
-- **ethical trade-off** (n) – difficult choice between competing values  
-  _Example:_ Data personalization often creates an ethical trade-off with privacy.
+- **collective responsibility** (n) - shared duty for team outcomes  
+  _Example:_ Production quality needs collective responsibility.
 
-- **data privacy** (n) – protection of personal information  
-  _Example:_ Data privacy is a core trust issue for users.
+- **team culture** (n) - shared behavior and values in a team  
+  _Example:_ Team culture became stronger after better collaboration rules.
 
-- **algorithmic bias** (n) – unfair outcomes produced by model behavior  
-  _Example:_ Teams must test for algorithmic bias before deployment.
+- **brilliant jerk** (n) - high performer with harmful behavior  
+  _Example:_ A brilliant jerk can damage team morale.
 
-- **digital divide** (n) – unequal access to technology and opportunity  
-  _Example:_ The digital divide limits who benefits from innovation.
+- **knowledge sharing** (n) - distributing information across team members  
+  _Example:_ Knowledge sharing reduced dependency on one engineer.
 
-- **accountability** (n) – clear responsibility for outcomes and harms  
-  _Example:_ Accountability is essential when systems affect real lives.
+- **single point of failure** (n) - one person/system whose failure blocks work  
+  _Example:_ One expert became a single point of failure.
 
-- **transparency** (n) – ability to explain decisions and behavior clearly  
-  _Example:_ Transparency increases public trust in AI systems.
+- **open source mindset** (n) - contribution and responsibility to community  
+  _Example:_ Open source mindset values long-term maintainability.
 
-- **informed consent** (n) – permission based on clear understanding  
-  _Example:_ Users should give informed consent for sensitive data usage.
+- **team trust** (n) - confidence among teammates  
+  _Example:_ Team trust dropped when one person ignored review rules.
 
-- **unintended consequence** (n) – negative effect not planned in design  
-  _Example:_ Automation can create unintended consequences in labor markets.
+- **special treatment** (n) - giving different rules to some people  
+  _Example:_ Special treatment for top performers created resentment.
 
-- **responsible innovation** (n) – building useful technology with ethical safeguards  
-  _Example:_ Responsible innovation balances progress and protection.
+- **shared ownership** (n) - many people responsible for one area  
+  _Example:_ Shared ownership improved release reliability.
 
 **Additional useful terms:**
-- **data governance** (n) – policies for safe data handling
-- **public trust** (n) – confidence society has in technology providers
-- **regulatory compliance** (n) – meeting legal and policy requirements
-- **harm mitigation** (n) – actions to reduce negative outcomes
-- **human oversight** (n) – human review over automated decisions
+- **collaboration debt** (n) - long-term cost of poor teamwork
+- **hero culture** (n) - relying on a few "hero" employees
+- **psychological safety** (n) - feeling safe to ask or challenge
+- **team norm** (n) - expected behavior in group work
+- **mutual support** (n) - teammates helping each other consistently
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Balanced argument structure**  
-  Technology creates major benefits, but it also introduces serious ethical risks.
+- **Balanced argument language**  
+  High performers can add value, but team health still matters.
 
-- **Concession + responsibility**  
-  Although innovation should move fast, safeguards should not be optional.
+- **Cause and effect**  
+  Because knowledge was concentrated in one person, delivery slowed during leave.
+
+- **Conditional language**  
+  If teams reward toxic behavior, trust declines over time.
+
+- **Concession language**  
+  Although individual freedom is important, shared standards are necessary.
 
 - **Recommendation language**  
-  If I had to choose one principle, I would prioritize accountability.
+  Teams should set clear rules that apply to everyone.
 
-- **Cause-effect for societal outcomes**  
-  When data practices are opaque, public trust declines quickly.
-
-- **Conditional ethics framing**  
-  If harm is likely and mitigation is weak, deployment should be delayed.
+- **Personal stance language**  
+  I believe strong individual talent works best inside strong team culture.
 
 ### Useful Sentence Patterns
-- On the positive side, technology helps...
-- The main ethical concern is...
-- A responsible approach should include...
-- In practice, teams can reduce risk by...
-- The long-term consequence might be...
-- In my opinion, trust depends on...
+- In my view, team success needs...
+- One risk of hero culture is...
+- We handled this by...
+- It improved collaboration, but...
+- High performers should..., not...
+- A fair team rule is...
 
 </details>
 
@@ -86,69 +89,78 @@ description: Discuss technology's social impact with balanced reasoning, benefit
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- create social value
-- raise ethical concerns
-- protect user privacy
-- reduce algorithmic bias
-- ensure accountability
-- build public trust
-- balance innovation and safety
-- improve transparency standards
-- mitigate unintended harm
+- build healthy team culture
+- reward collaborative behavior
+- reduce key-person risk
+- enforce shared standards
+- improve cross-team trust
+- avoid hero dependency
+- support collective outcomes
+- handle toxic behavior
+- protect psychological safety
+- balance freedom and responsibility
+- promote shared ownership
+- strengthen community mindset
 
 ### Useful Chunking & Sentence Starters
-- In today's society, technology can...
-- A major ethical challenge is...
-- From a public-interest perspective,...
-- The right balance is...
-- To reduce harm, organizations should...
+- A common team problem is...
+- We had one strong performer who...
+- The short-term gain was..., but...
+- To fix this, we...
+- A fair compromise is...
+- Team rules should...
+- In open source, I learned...
+- Long term, this helped us...
 
 ### Useful Phrasal Verbs
-- **bring about** → Technology has brought about major social change.
-- **think through** → Teams should think through second-order consequences.
-- **push back on** → Engineers should push back on unsafe launch pressure.
-- **phase in** → High-risk technologies should be phased in gradually.
+- **step up** -> Everyone should step up, not only one person.
+- **share out** -> We shared out ownership of critical modules.
+- **back up** -> Team members backed up each other during on-call.
+- **call out** -> We called out harmful behavior early.
+- **bring in** -> We brought in mentoring to support weaker members.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Balanced Social View
+### Dialogue 1 - High Performer Problem
 
-**Teacher:** Is technology making society better or worse?
-
-**You:**  
-Overall, I think technology improves many aspects of life, such as access to information, healthcare support, and productivity. However, it also creates new risks, especially around privacy, bias, and dependency.
-
-So for me, the real question is not "good or bad" but "how responsibly we design and govern it."
-
-### Dialogue 2 – Ethics in Daily Engineering
-
-**Teacher:** How can developers apply ethics in real projects?
+**Interviewer:** Should high performers get special treatment?
 
 **You:**  
-At project level, ethics means practical choices: collecting only necessary data, testing for bias, documenting limitations, and keeping human oversight in high-risk decisions.
+Some flexibility is okay, but core team rules should be equal. We had a strong engineer who skipped code reviews and caused regressions.
 
-These steps are not abstract philosophy; they are part of product quality.
+He shipped fast, but team trust dropped. We changed policy so everyone follows the same quality gate.
 
-### Dialogue 3 – General Public Communication
+### Dialogue 2 - Individual Goal vs Team Goal
 
-**Teacher:** How would you explain tech ethics to a non-technical audience?
+**Interviewer:** What if your personal goal conflicts with team needs?
 
 **You:**  
-I would keep it simple: people should understand what data is collected, how decisions are made, and who is responsible when something goes wrong. If people cannot understand those three points, trust will be weak.
+I try to balance both. In one quarter, I wanted to learn a new stack, but the team needed stability on a critical release.
+
+I delayed my personal goal and helped release first. Later, I got time for learning.
+
+### Dialogue 3 - Community Mindset
+
+**Interviewer:** What does community mindset mean in software?
+
+**You:**  
+It means sharing knowledge, helping others, and keeping code understandable. In open source and in company projects, this makes teams more resilient.
+
+It may feel slower at first, but it reduces long-term risk.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Technology can solve real problems at scale, but scale also increases responsibility. A design decision that seems small in development can affect millions of people after deployment.
+Software teams need both strong individuals and strong collaboration. If a team depends too much on one person, delivery becomes fragile. If individual talent is ignored, innovation can slow down.
 
-Responsible innovation requires more than legal compliance. It requires clear accountability, transparent communication, and proactive harm mitigation.
+The best approach is balance: reward impact, but also reward teamwork, mentoring, and documentation. Team rules should be clear and fair for everyone, including top performers.
 
-In interviews, strong candidates show they can think beyond code and consider long-term societal impact.
+In discussion, use real examples from your team. Practical stories show maturity better than abstract opinions.
 
 </details>
 
@@ -156,25 +168,25 @@ In interviews, strong candidates show they can think beyond code and consider lo
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What are the biggest positive and negative impacts of technology on society today?
-2. Which ethical risks in AI or software concern you most?
-3. What responsibilities should developers and companies have?
-4. How can teams balance innovation speed with public trust?
+1. How do you balance individual ambition and team goals?
+2. What is the risk of relying on one "hero" engineer?
+3. Should high performers get special treatment?
+4. How do you build shared ownership in your team?
 
 ### High-Value Case Questions
-5. Describe a product decision where ethics and business goals conflicted.
-6. Tell me about a time you raised a risk or concern in a project discussion.
-7. Share a case where better transparency improved user trust.
+5. Share a case where team culture improved project outcomes.
+6. Tell me about a conflict between individual and team priorities.
+7. Describe how you reduced key-person dependency.
 
 ### Critical Discussion Questions
-8. Should governments regulate AI more aggressively?
-9. Is it possible to build powerful technology without causing social harm?
-10. Who should be accountable when automated systems make harmful decisions?
+8. Should high performers be given special treatment, even if team culture suffers?
+9. Is individualism stronger than community in modern tech culture?
+10. How should teams handle talented but toxic behavior?
 
 **Tips for speaking practice:**
-- Use balanced arguments, not one-sided opinions.
-- Explain ethical ideas in plain, everyday language.
-- Connect ethics to concrete product decisions and outcomes.
+- Give one concrete team example.
+- Mention short-term and long-term effects.
+- Keep your position clear but balanced.
 
 ---
 

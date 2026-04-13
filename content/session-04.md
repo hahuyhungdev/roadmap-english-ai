@@ -1,76 +1,87 @@
 ---
 sessionNumber: 4
-title: Change Management & Continuous Improvement
-topic: Adapting to Changes, User Feedback & Continuous Improvement
-phase: PHASE 1 — TECH EXPLAIN 
-level: B2
-description: Explain how you adapt to changing requirements, collect and use user feedback, and drive continuous improvement in a professional and structured way.
+title: Technical Debt and Change Management
+topic: Balancing Delivery Speed and Long-Term Code Health
+phase: PHASE 1 - TECH & BUSINESS
+level: B1-B2
+description: Discuss technical debt in simple language and explain how you align refactor work with product goals.
 ---
 
-# Session 4: Adapting to Changes, User Feedback & Continuous Improvement
+# Session 4: Technical Debt and Change Management
 
-**Level:** B2  
-**Focus:** Speaking confidently about how you handle project changes, incorporate user feedback, and promote ongoing improvements in software development (especially in Agile environments).
+**Level:** B1-B2  
+**Focus:** Explain how you handle legacy code, convince stakeholders, and balance short-term delivery with long-term stability.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **adapt (v)** – to change or adjust in response to new conditions  / situations 
-  _Example:_ Good developers must **adapt quickly** to evolving business needs.
+- **technical debt** (n) - old code problems caused by past shortcuts  
+  _Example:_ We spend too much time fixing old code in this module.
 
-- **changing requirements (n)** – demands that shift during the project lifecycle  
-  _Example:_ We often deal with **changing requirements** due to new market insights.
+- **legacy code** (n) - older code still in use  
+  _Example:_ The login flow still depends on legacy code.
 
-- **user feedback (n)** – opinions and data collected from end users  
-  _Example:_ We **gather user feedback** regularly to validate our assumptions.
+- **refactor** (v/n) - improve structure without changing feature behavior  
+  _Example:_ We planned a refactor before adding more features.
 
-- **continuous improvement (n)** – the ongoing process of making small, incremental enhancements  
-  _Example:_ We foster a **culture of continuous improvement** through regular retrospectives.
+- **maintenance** (n) - ongoing fixes and updates  
+  _Example:_ Maintenance cost became too high for this service.
 
-- **iteration (n)** / **sprint (n)** – a short development cycle for planning, building, and reviewing  
-  _Example:_ We implement changes in small **iterations** or **sprints**.
+- **hotfix** (n) - quick fix for urgent production issues  
+  _Example:_ We shipped a hotfix during on-call.
 
-- **prioritize (v)** – to rank tasks by importance or value  
-  _Example:_ We **prioritize changes** based on user impact and business value.
+- **regression** (n) - old behavior breaks after a change  
+  _Example:_ We added tests to catch regression early.
 
-- **refine (v)** – to improve something gradually by making small adjustments  
-  _Example:_ We **constantly refine** the user interface based on real usage data.
+- **backlog** (n) - list of future work items  
+  _Example:_ We tracked refactor tasks in our backlog.
+
+- **risk** (n) - chance of a negative outcome  
+  _Example:_ Releasing without cleanup increased risk.
+
+- **downtime** (n) - period when system is unavailable  
+  _Example:_ Legacy bugs caused downtime twice last month.
+
+- **change plan** (n) - step-by-step approach for updates  
+  _Example:_ We proposed a change plan with small weekly steps.
 
 **Additional useful terms:**
-- **scope creep** (n) – uncontrolled expansion of project scope
-- **impact analysis** (n) – evaluating how a change affects timeline, cost, and quality
-- **retrospective** (n) – a meeting to reflect on what went well and what can improve
-- **Kaizen** (n) – the philosophy of continuous small improvements
-- **backlog** (n) – a prioritized list of features and changes
-- **feature flag** (n) – a technique to enable/disable features without redeploying
+- **code review** (n) - peer check before merge
+- **test coverage** (n) - amount of code protected by tests
+- **rollback** (n/v) - return to previous stable version
+- **cleanup sprint** (n) - sprint focused on fixes and refactor
+- **stability** (n) - reliability over time
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **When + Present Simple**  
-  When requirements change, we perform an **impact analysis** first.
+- **Present Perfect for ongoing issues**  
+  We have seen repeated bugs in this part of the system.
 
-- **After + V-ing**  
-  After collecting and analyzing user feedback, we decide which improvements to implement next.
+- **Past Simple for one project story**  
+  We paused one feature and cleaned up the payment module.
 
-- **Relative clauses**  
-  We focus on changes **that deliver the highest value to users** or **which users complain about most frequently**.
+- **Cause and effect**  
+  Because the code was tightly coupled, small changes created new bugs.
 
-- **Contrast (although / however / even though)**  
-  Although frequent changes can cause disruption, they often lead to a much better final product.
+- **Concession language**  
+  Even though refactor takes time, it reduces incident risk.
 
-- **Result (so / therefore / as a result / consequently)**  
-  We listen carefully to users, **so** we can continuously improve the product and increase user satisfaction.
+- **Conditionals for planning**  
+  If we do not fix this now, release risk will keep growing.
+
+- **Persuasion structures**  
+  I explained that one week of cleanup could save many support hours.
 
 ### Useful Sentence Patterns
-- When the requirements change, I usually…
-- Based on the user feedback we received…
-- This approach allows us to…
-- As a result, the product becomes more…
-- The key benefit of this method is…
-- One real example from my project was when…
+- This part is hard to maintain because...
+- We had a lot of bugs here, so...
+- We decided to fix it before adding new features.
+- I showed the team that...
+- It delayed delivery a bit, but...
+- The long-term result was...
 
 </details>
 
@@ -78,72 +89,78 @@ description: Explain how you adapt to changing requirements, collect and use use
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- adapt quickly to changes
-- handle / manage changing requirements
-- assess the impact of changes
-- gather / collect / solicit / act on user feedback
-- drive / foster / promote continuous improvement
-- prioritize backlog items / changes
-- implement improvements incrementally
-- refine the user experience / processes
-- conduct sprint retrospectives
-- embrace change rather than resist it
-- deliver value incrementally
-- minimize disruption to the team
+- manage technical debt
+- refactor legacy code
+- reduce regression risk
+- improve release stability
+- prioritize bug fixes
+- build stakeholder trust
+- estimate cleanup effort
+- plan phased changes
+- reduce on-call noise
+- protect critical paths
+- avoid repeated hotfixes
+- align engineering and product
 
 ### Useful Chunking & Sentence Starters
-- When requirements change mid-project…
-- Based on user feedback from surveys and analytics…
-- One of the main challenges we face is…
-- To handle this situation effectively, we…
-- This leads to better user satisfaction and…
-- In our Agile process, we apply the principle of…
-- During the sprint retrospective, the team discussed…
+- We saw the same bug again and again...
+- The main issue was...
+- To explain it to product, I said...
+- Our short-term plan was..., then...
+- We accepted a delay because...
+- One risk we could not ignore was...
+- After cleanup, we noticed...
+- If we had skipped this, ...
 
 ### Useful Phrasal Verbs
-- **deal with** → We often **deal with** unexpected requirement changes.
-- **come up with** → The team **comes up with** practical solutions based on feedback.
-- **work on** → We **work on** the highest-priority items first.
-- **figure out** → We **figure out** how to balance new features with existing work.
-- **roll out** → We **roll out** improvements gradually using feature flags.
-- **follow up on** → We always **follow up on** feedback to measure real impact.
+- **clean up** -> We cleaned up the oldest part of the checkout code.
+- **break up** -> We broke up the refactor into small tickets.
+- **slow down** -> We slowed down feature work for one sprint.
+- **pay off** -> The cleanup paid off during the next release.
+- **fall back** -> We prepared a rollback plan to fall back safely.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Change in Requirements
+### Dialogue 1 - Explain Technical Debt
 
-**Interviewer:** How do you handle changing requirements?
-
-**You:**  
-When requirements change, I check the impact on scope and timeline, then we prioritize the most important items and make adjustments in small steps.
-
-### Dialogue 2 - User Feedback in Practice
-
-**Interviewer:** How do you use user feedback effectively?
+**Interviewer:** Can you share a case of technical debt?
 
 **You:**  
-We collect feedback through surveys, direct conversations, and usage data, then look for common patterns to guide small, practical improvements.
+Yes. Our checkout module had many quick fixes from past deadlines. We had a lot of bugs there, and on-call alerts were frequent.
 
-### Dialogue 3 - Continuous Improvement Mindset
+We set aside one sprint to refactor the core validation logic. It slowed new feature work, but incident count dropped.
 
-**Interviewer:** What does continuous improvement look like in your team?
+### Dialogue 2 - Convincing Stakeholders
+
+**Interviewer:** How did you convince product to allow refactor time?
 
 **You:**  
-After each cycle we do a short retrospective and pick one or two concrete improvements. Small, steady changes tend to work better than big, disruptive ones.
+I showed data: bug count, support hours, and failed releases from that module. I explained that one week of cleanup could save time every sprint.
+
+We agreed on a phased plan. We kept one small feature, but delayed two low-impact items.
+
+### Dialogue 3 - Balancing Speed and Health
+
+**Interviewer:** How do you balance delivery and code quality?
+
+**You:**  
+I try to ship in small steps. If the risk is low, we can move fast. If a module is unstable, we fix core problems first.
+
+This approach is not always fastest today, but it avoids bigger delays later.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-In modern software development, change is inevitable. Agile methodologies welcome changing requirements even late in the project because they help teams deliver more value to users. Instead of resisting change, successful teams focus on **impact analysis**, clear prioritization, and **incremental implementation**.
+Technical debt is normal in real projects, especially when deadlines are tight. The problem starts when teams keep adding new features without fixing old weak areas. Then small changes become risky, and bug fixing takes too much time.
 
-User feedback is the most valuable source of truth. Teams collect it through multiple channels — surveys, usability testing, analytics, and direct interviews — then turn insights into prioritized backlog items. Continuous improvement, often inspired by the Japanese philosophy of **Kaizen**, relies on regular retrospectives where the team identifies small process enhancements. Over time, these small changes lead to significant gains in productivity, quality, and team morale.
+Change management means making this work visible and practical. Engineers can explain the cost in simple terms: incidents, support load, release delays, and stress on on-call. This helps managers understand why refactor work has business value.
 
-The key to success lies in balancing flexibility with control: responding quickly to feedback while protecting the project from uncontrolled scope creep.
+Good teams use a balanced plan: fix high-risk code first, keep some feature delivery, and track progress in backlog.
 
 </details>
 
@@ -151,25 +168,25 @@ The key to success lies in balancing flexibility with control: responding quickl
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you handle changing requirements in your project?
-2. How do you collect and validate user feedback?
-3. How do you prioritize change requests from users and stakeholders?
-4. What role do retrospectives play in continuous improvement?
+1. What does technical debt look like in your project?
+2. How do you explain refactor value to non-technical people?
+3. When do you fix old code instead of building new features?
+4. How do you reduce regression during refactor?
 
 ### High-Value Case Questions
-5. Describe a major requirement change and how your team managed it.
-6. Tell me about a product improvement driven by user feedback.
-7. Share a case where scope creep appeared. How did you control it?
+5. Share a case where cleanup work improved release quality.
+6. Tell me about a refactor that failed or took longer than expected.
+7. Describe how your team tracked debt work in backlog.
 
 ### Critical Discussion Questions
-8. Do frequent changes slow down development, or improve outcomes?
-9. When should teams push back on user feedback?
-10. How do you balance flexibility with timeline control in Agile projects?
+8. Is it okay to ship with known debt under deadline pressure?
+9. Should every sprint include dedicated cleanup time?
+10. What is the risk of postponing refactor for too long?
 
 **Tips for speaking practice:**
-- Support each answer with one concrete project example.
-- Add a metric when possible (before vs after).
-- Use Situation -> Action -> Result for longer responses.
+- Use one concrete bug example.
+- Mention both short-term cost and long-term gain.
+- Keep the explanation simple and measurable.
 
 ---
 

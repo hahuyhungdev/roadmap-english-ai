@@ -1,103 +1,193 @@
 ---
 sessionNumber: 26
-title: Final Interview – Full Mock + Review
-topic: Comprehensive Final Mock Interview
-phase: PHASE 5 — MOCK INTERVIEW
-level: B1+ / B2
-description: Do a complete, realistic final mock interview covering behavioral, motivation, and situational questions. Followed by detailed feedback and reflection.
+title: Final Mock Interview and Gap Analysis
+topic: End-to-End Simulation with Structured Improvement Plan
+phase: PHASE 5 - MOCK INTERVIEW
+level: B1-B2
+description: Run a final full interview simulation, identify top strengths and gaps, and build a personal improvement roadmap.
 ---
 
-# Session 26: Final Interview – Full Mock + Review
+# Session 26: Final Mock Interview and Gap Analysis
 
-**Level:** B1+ / B2  
-**Focus:** Simulate a full-length job interview (20–25 minutes) and then review your performance thoroughly.
+**Level:** B1-B2  
+**Focus:** Deliver consistent interview performance and finish with a clear, practical next-step plan.
 
 <details open>
-<summary><strong>1) Mock Interview Flow (Teacher acts as Interviewer)</strong></summary>
+<summary><strong>1) Vocabulary </strong></summary>
 
-**Total time:** 20–25 minutes speaking
+- **gap analysis** (n) - review of strengths and weaknesses  
+  _Example:_ Gap analysis helped me focus on two priority skills.
 
-### Part 1: Opening (3–4 minutes)
+- **consistency** (n) - stable performance across many questions  
+  _Example:_ Consistency is more important than one perfect answer.
 
-1. Tell me about yourself.
-2. Why do you want to work for our company?
+- **performance baseline** (n) - current level used for improvement tracking  
+  _Example:_ Mock 1 gave me a performance baseline.
 
-### Part 2: Behavioral & Experience (10–12 minutes)
+- **improvement roadmap** (n) - step-by-step development plan  
+  _Example:_ I created a four-week improvement roadmap.
 
-3. Tell me about a time you worked under tight deadline or high pressure.
-4. Describe a time you made a mistake or faced failure. What did you learn?
-5. Give an example of how you handled a conflict with a teammate or stakeholder.
-6. Tell me about a time you took initiative or showed leadership without formal authority.
+- **priority gap** (n) - weakness with highest improvement value  
+  _Example:_ My priority gap was answer structure under pressure.
 
-### Part 3: Motivation & Future (5–6 minutes)
+- **strength signal** (n) - behavior showing clear competency  
+  _Example:_ Strong examples were my main strength signal.
 
-7. Where do you see yourself in 3–5 years?
-8. What are your salary expectations? (Practice this professionally)
-9. Do you have any questions for us?
+- **band target** (n) - communication level goal  
+  _Example:_ My band target is stable B2+/IELTS 7 style speaking.
 
-### Part 4: Closing
+- **post-mortem review** (n) - structured reflection after a major practice session  
+  _Example:_ We used post-mortem review after the mock.
 
-10. Is there anything else you’d like us to know about you?
+- **practice cadence** (n) - regular training schedule  
+  _Example:_ Weekly practice cadence kept my progress steady.
+
+- **actionable feedback** (n) - feedback you can apply directly  
+  _Example:_ Actionable feedback helped me improve fast.
+
+**Additional useful terms:**
+- **confidence dip** (n) - moment when confidence drops
+- **response quality** (n) - usefulness and clarity of an answer
+- **tracking metric** (n) - measurable indicator of progress
+- **review loop** (n) - cycle of practice, review, and adjustment
+- **next-step commitment** (n) - clear action promise after review
 
 </details>
 
 <details open>
-<summary><strong>2) Teacher Instructions</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- Ask the questions naturally.
-- Use some follow-up questions (e.g., “Can you give me an example?”, “What would you do differently?”, “Why was that important?”).
-- Do not help with vocabulary during the mock — only after it finishes.
+- **Comparison with previous performance**  
+  Compared with Mock 1, I gave clearer examples and better structure.
 
-</details>
+- **Reflection language**  
+  I performed well on behavioral stories, but I still need faster thinking in discussion questions.
 
-<details open>
-<summary><strong>3) Post-Mock Review & Feedback (Important Part)</strong></summary>
+- **Future plan language**  
+  I will practice two timed answers each day this week.
 
-After the mock interview, spend 10–15 minutes reviewing together:
+- **Priority language**  
+  My top priority is reducing filler words under pressure.
 
-**Self-Reflection Questions (You answer first):**
+- **Conditional improvement language**  
+  If I practice follow-up handling daily, my confidence will improve.
 
-1. How do you feel about your performance overall?
-2. Which answer was your strongest? Why?
-3. Which answer was the weakest? Why?
-4. Did you speak fluently? Did you use too many fillers (um, ah, like)?
-5. How well did you structure your answers (especially STAR method)?
+- **Commitment language**  
+  I am committed to reviewing recorded answers every weekend.
 
-**Teacher Feedback Areas:**
-
-- Fluency & pronunciation
-- Confidence & body language (if in person)
-- Structure and clarity of answers
-- Ability to handle follow-up questions
-- Vocabulary range and naturalness
-
-</details>
-
-<details open>
-<summary><strong>4) Reading Text</strong></summary>
-
-The final mock interview is your chance to put everything together. Treat it as a real interview. Focus on being clear, calm, and authentic. Remember that interviewers care about how you think, how you communicate, and whether you would be a good fit for the team — not just technical perfection.
+### Useful Sentence Patterns
+- My strongest part today was...
+- One clear gap is...
+- Compared to last time, I...
+- My improvement plan is...
+- I will measure progress by...
+- In my next mock, I want to...
 
 </details>
 
 <details open>
-<summary><strong>5) Final Reflection & Action Plan</strong></summary>
+<summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
-1. What are your 3 strongest points from today’s mock?
-2. What are your 2 weakest areas that you need to improve?
-3. What specific things will you practice before your real interviews?
-4. Which questions do you still feel nervous about?
+### Strong Collocations
+- run final mock interview
+- evaluate speaking consistency
+- identify key performance gaps
+- build improvement roadmap
+- prioritize high-impact practice
+- track weekly progress
+- strengthen interview structure
+- improve follow-up handling
+- increase answer clarity
+- reduce filler words
+- maintain calm under pressure
+- convert feedback into action
 
-**Homework:**
+### Useful Chunking & Sentence Starters
+- In this final mock,...
+- My strongest answer was...
+- The weakest part was...
+- One recurring issue is...
+- To fix that, I will...
+- My measurable goal is...
+- Over the next two weeks,...
+- I will review progress by...
 
-- Record yourself answering the 5 most difficult questions again.
-- Review the recording and note improvements.
-- Prepare stronger versions of your weakest answers.
+### Useful Phrasal Verbs
+- **look back** -> Looking back, my structure is much better now.
+- **tighten up** -> I need to tighten up my opening answers.
+- **work on** -> I will work on faster follow-up responses.
+- **build on** -> I want to build on my strong STAR examples.
+- **carry out** -> I will carry out my practice plan every week.
+
+</details>
+
+<details open>
+<summary><strong>4) Typical Dialogues</strong></summary>
+
+### Dialogue 1 - Post-Mock Reflection
+
+**Interviewer:** How did your final mock go?
+
+**You:**  
+My structure was better than last time, especially in behavioral questions. I used clearer examples and showed business impact more often.
+
+But in abstract discussion questions, I still paused too long. I need faster idea framing.
+
+### Dialogue 2 - Top Gaps and Plan
+
+**Interviewer:** What are your top two gaps now?
+
+**You:**  
+First, follow-up question handling under pressure. Second, reducing filler words in long answers.
+
+I will practice timed responses daily and review recordings twice a week.
+
+### Dialogue 3 - Final Roadmap
+
+**Interviewer:** What is your concrete next-step roadmap?
+
+**You:**  
+For the next four weeks, I will do three behavioral answers, two discussion answers, and one Q&A practice set each week. I will track answer length and filler count.
+
+This is structured and realistic. It takes time, but progress is visible.
+
+</details>
+
+<details open>
+<summary><strong>5) Reading Text</strong></summary>
+
+The final mock interview is not only a test. It is a planning tool. Strong candidates use it to identify realistic next steps, not just to celebrate good answers.
+
+A useful gap analysis is simple: top two strengths, top two gaps, and a short practice roadmap with measurable goals. This keeps improvement focused.
+
+Interview progress comes from repetition and feedback loops. Clear structure, consistent practice, and practical examples will keep your speaking level stable in real interviews.
+
+</details>
+
+<details open>
+<summary><strong>6) List of Questions + Ideas</strong></summary>
+
+### Core Questions (must-practice)
+1. What were your strongest answers in the final mock?
+2. What were your two biggest remaining gaps?
+3. How will you practice before real interviews?
+4. How do you measure speaking improvement week by week?
+
+### High-Value Case Questions
+5. Compare your Mock 1 and Mock 2 performance with examples.
+6. Share one answer that improved a lot and why.
+7. Describe one weakness that is still hard to fix and your plan.
+
+### Critical Discussion Questions
+8. Is consistent B2 performance better than occasional advanced answers?
+9. How much mock practice is enough before real interviews?
+10. Should candidates focus more on language fluency or answer content?
+
+**Tips for speaking practice:**
+- Keep one weekly review cycle: practice -> record -> review -> adjust.
+- Focus on top two gaps only, not everything at once.
+- Use practical metrics: answer length, filler count, and clarity score.
 
 ---
-
-```
-
-```
 
 </details>

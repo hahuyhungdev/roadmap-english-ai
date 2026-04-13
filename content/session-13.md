@@ -1,84 +1,87 @@
 ---
 sessionNumber: 13
-title: Career Growth, Compensation & Professional Priorities
-topic: Career Strategy, Compensation, and Long-Term Direction
-phase: PHASE 3 — DISCUSSION & IMPACT
-level: B2+
-description: Discuss compensation, career progression, and job selection criteria in a mature, balanced, and persuasive way.
+title: AI in Practice - Productivity, Risk, and Responsibility
+topic: Strategic AI Use Beyond Daily Shortcuts
+phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+level: B1-B2
+description: Discuss AI adoption in software teams with balanced reasoning about productivity, risk, and accountability.
 ---
 
-# Session 13: Career Growth, Compensation & Professional Priorities
+# Session 13: AI in Practice - Productivity, Risk, and Responsibility
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about career choices, compensation expectations, and long-term professional direction.
+**Level:** B1-B2  
+**Focus:** Go beyond daily tool usage and discuss responsibility, privacy, and quality when teams adopt AI at scale.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **compensation package** (n) – full set of salary and benefits  
-  _Example:_ I evaluate the full compensation package, not just base salary.
+- **AI adoption** (n) - introducing AI tools into team workflow  
+  _Example:_ AI adoption improved coding speed in our team.
 
-- **total compensation** (n) – salary + bonus + stock + benefits  
-  _Example:_ Total compensation should reflect impact and responsibility.
+- **over-reliance** (n) - depending too much on a tool  
+  _Example:_ Over-reliance can weaken debugging skills.
 
-- **career progression** (n) – long-term development path  
-  _Example:_ I look for roles with clear career progression.
+- **accountability** (n) - clear responsibility for outcomes  
+  _Example:_ Engineers still keep accountability for final code.
 
-- **growth trajectory** (n) – expected direction of professional growth  
-  _Example:_ The role offered a strong growth trajectory in architecture ownership.
+- **data leak** (n) - private data exposed by mistake  
+  _Example:_ Poor prompt handling can cause data leaks.
 
-- **market rate** (n) – common pay level in the job market  
-  _Example:_ I benchmark offers against market rate and scope.
+- **insecure code** (n) - code with security weaknesses  
+  _Example:_ AI sometimes suggests insecure code patterns.
 
-- **scope of responsibility** (n) – size and complexity of expected work  
-  _Example:_ Compensation should align with scope of responsibility.
+- **critical thinking** (n) - careful reasoning instead of blind trust  
+  _Example:_ Critical thinking is still required with AI output.
 
-- **work-life sustainability** (n) – ability to maintain performance without burnout  
-  _Example:_ Long-term work-life sustainability is a non-negotiable for me.
+- **compliance rule** (n) - legal or internal requirement  
+  _Example:_ Compliance rules limit what data we can share.
 
-- **career leverage** (n) – opportunity that unlocks stronger future roles  
-  _Example:_ Sometimes I prioritize career leverage over short-term salary gain.
+- **human review** (n) - manual check by engineers  
+  _Example:_ Human review caught logic errors before deployment.
 
-- **role fit** (n) – how well a role matches your strengths and goals  
-  _Example:_ Role fit matters as much as compensation in my decision.
+- **ownership** (n) - responsibility for decisions and results  
+  _Example:_ Tool support is helpful, but ownership stays with the team.
 
-- **value proposition** (n) – clear reason why you are worth hiring/paying more  
-  _Example:_ I present my value proposition with impact metrics.
+- **governance** (n) - policy for safe and consistent tool usage  
+  _Example:_ We created AI governance guidelines for all repos.
 
 **Additional useful terms:**
-- **equity** (n) – ownership-based compensation
-- **performance bonus** (n) – variable pay tied to outcomes
-- **promotion path** (n) – expected timeline to next level
-- **mentorship exposure** (n) – chance to learn from strong leaders
-- **mobility options** (n) – opportunities to switch teams or domains
+- **privacy risk** (n) - chance of exposing sensitive data
+- **audit trail** (n) - record of decisions and changes
+- **policy guardrail** (n) - rule that prevents unsafe actions
+- **quality gate** (n) - required checks before release
+- **responsible use** (n) - careful use with clear limits
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Priority language**  
-  If I had to prioritize, I would choose long-term growth over short-term comfort.
+- **Balanced opinion language**  
+  AI can improve speed, but it can also introduce hidden risk.
 
-- **Balanced evaluation structures**  
-  While compensation matters, role scope and learning environment matter just as much.
+- **Responsibility statements**  
+  Even if AI writes part of the code, the engineer is responsible.
 
-- **Conditional career reasoning**  
-  If a role offers strong mentorship and ownership, I can accept slower short-term gains.
+- **Conditionals for risk**  
+  If teams skip review, AI mistakes can reach production.
 
-- **Evidence-based self-positioning**  
-  In my previous role, I improved delivery speed, so I now target roles with broader scope.
+- **Concession language**  
+  Although AI tools are useful, they should not replace core thinking.
 
-- **Concession + decision**  
-  Although one offer was higher financially, I chose the role with better growth trajectory.
+- **Policy language (must / must not)**  
+  Teams must not share sensitive customer data in prompts.
+
+- **Cause and effect**  
+  Because we added strict review rules, regression risk went down.
 
 ### Useful Sentence Patterns
-- In my current role, I create value by...
-- When evaluating offers, I use three criteria: ...
-- For me, compensation is important, but...
-- A role becomes attractive when it offers...
-- In the long term, I aim to...
-- A real example from my career is...
+- AI helps us..., but we still...
+- The biggest risk is...
+- Our policy requires...
+- A real example from my team is...
+- Responsibility should stay with...
+- To use AI safely, we...
 
 </details>
 
@@ -86,67 +89,78 @@ description: Discuss compensation, career progression, and job selection criteri
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- evaluate an offer holistically
-- align compensation with impact
-- prioritize long-term growth
-- expand ownership scope
-- build a sustainable career
-- compare risk and upside
-- negotiate professionally
-- define career milestones
-- balance ambition and well-being
+- adopt AI responsibly
+- protect sensitive data
+- enforce quality gates
+- review generated code
+- prevent security regressions
+- keep human accountability
+- define usage policies
+- reduce over-reliance risk
+- build safe workflows
+- document AI-assisted changes
+- improve engineering productivity
+- balance speed and responsibility
 
 ### Useful Chunking & Sentence Starters
-- At this stage of my career,...
-- The three factors I care about most are...
-- What I optimize for is...
-- From a long-term perspective,...
-- One lesson I learned is...
+- In our team, AI is useful for...
+- We do not allow AI for...
+- One risk we saw was...
+- To reduce that risk, we...
+- The trade-off is faster output versus...
+- We keep accountability by...
+- From a leadership view,...
+- A good policy should...
 
 ### Useful Phrasal Verbs
-- **look for** → I look for roles with clear ownership and growth.
-- **weigh up** → I weigh up financial upside and learning upside.
-- **move into** → I want to move into broader technical leadership.
-- **turn down** → I turned down a higher offer because role fit was weak.
+- **lean on** -> We lean on AI for drafts, not final decisions.
+- **check for** -> We always check for security issues.
+- **lock down** -> We lock down access to sensitive repositories.
+- **write up** -> We write up policy violations for team learning.
+- **own up** -> Engineers must own up to mistakes, even with AI help.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Career Decision Narrative
+### Dialogue 1 - Strategic AI View
 
-**Teacher:** What do you consider when choosing your next role?
-
-**You:**  
-I usually evaluate three things: role scope, growth trajectory, and total compensation. Salary matters, but I do not optimize for salary alone.
-
-At my experience level, I care more about impact ownership and long-term leverage. If a role allows me to work on architecture, cross-team collaboration, and mentoring, it is usually a stronger long-term choice.
-
-### Dialogue 2 – Compensation Discussion
-
-**Teacher:** How do you discuss compensation professionally?
+**Interviewer:** How do you view AI adoption in engineering teams?
 
 **You:**  
-I keep the discussion transparent and evidence-based. I refer to market benchmarks, role scope, and measurable outcomes from my previous work. I also clarify that I value total package quality, not only base salary.
+I see it as a force multiplier for routine work. It helps with test drafts, log summaries, and boilerplate. But we keep strict review because wrong suggestions can look correct.
 
-### Dialogue 3 – General Perspective Beyond Work
+So we move faster, but we do not lower quality gates.
 
-**Teacher:** Is career growth only about title and money?
+### Dialogue 2 - Responsibility Question
+
+**Interviewer:** Who is responsible if AI-generated code causes an outage?
 
 **You:**  
-Not really. For me, growth also means better judgment, stronger communication, and healthier work habits. A successful career should improve both professional impact and personal sustainability.
+The engineering team is responsible. Tools can support decisions, but they cannot own production outcomes.
+
+In our team, every AI-assisted PR still has full code review and test checks.
+
+### Dialogue 3 - Risk Example
+
+**Interviewer:** Tell me about an AI-related risk you saw.
+
+**You:**  
+We once accepted an AI-generated query that was inefficient at scale. It worked in local tests, but production latency increased.
+
+We fixed it quickly and added load checks before deployment. Speed improved, but review became stricter.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Career decisions become more strategic as experience increases. Early in a career, learning speed is often the top priority. Later, professionals usually balance compensation, ownership, team quality, and long-term direction.
+AI in engineering is not only a productivity topic. It is also a responsibility topic. Teams that use AI well gain speed, but they keep strong human review and clear policy boundaries.
 
-Mature candidates do not present career choices as random moves. They explain clear criteria and show how each decision supports a coherent trajectory.
+The main risks are over-reliance, insecure suggestions, and privacy mistakes. These risks are manageable if teams define clear rules: where AI is allowed, what data is blocked, and what checks are mandatory.
 
-In interviews, this clarity builds trust. It signals that you can make thoughtful decisions for both your own career and the business.
+In professional discussion, strong answers are balanced. Show both value and risk, and explain who owns final decisions.
 
 </details>
 
@@ -154,25 +168,25 @@ In interviews, this clarity builds trust. It signals that you can make thoughtfu
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What are your top priorities when evaluating a new role?
-2. How do you balance compensation, learning, and work-life sustainability?
-3. What kind of responsibility scope are you targeting next?
-4. How does this role fit your 3-5 year direction?
+1. How is strategic AI adoption different from daily AI usage?
+2. What are the biggest risks of using AI in software development?
+3. Who should be accountable for AI-assisted code?
+4. What policy rules does your team need for safe AI use?
 
 ### High-Value Case Questions
-5. Describe a time you chose growth over a higher salary.
-6. Tell me about an offer you turned down and why.
-7. Share a career decision that changed your trajectory positively.
+5. Share a case where AI improved team productivity significantly.
+6. Tell me about an AI-related bug and what process changed after that.
+7. Describe how you explain AI risk to non-technical managers.
 
 ### Critical Discussion Questions
-8. Is salary the best indicator of career success?
-9. Is job-hopping better than long tenure for career growth?
-10. Should professionals optimize for stability or upside at your stage?
+8. Should developers be held accountable for code AI generated?
+9. Should AI usage be limited in regulated industries?
+10. Can teams stay innovative without heavy AI use?
 
 **Tips for speaking practice:**
-- Use explicit criteria instead of vague preferences.
-- Add one real example with measurable impact.
-- Keep tone confident but practical, not defensive.
+- Keep a balanced tone: benefit + risk + control.
+- Mention one team policy in each long answer.
+- Use one real incident or near-miss example.
 
 ---
 

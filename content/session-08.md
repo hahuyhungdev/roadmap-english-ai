@@ -1,84 +1,87 @@
 ---
 sessionNumber: 8
-title: Solution Design & Execution Under Constraints
-topic: Solution Strategy, Constraints & Outcomes
-phase: PHASE 2 — PROBLEM-SOLVING
-level: B2+
-description: Explain how you designed, implemented, and validated a solution under real constraints.
+title: Trade-offs and Technical Debt - When Good Enough Is Right
+topic: Strategic Decisions Under Constraints
+phase: PHASE 2 - ANALYTICAL THINKING IN IT
+level: B1-B2
+description: Explain how to make practical trade-offs under time, budget, and quality constraints.
 ---
 
-# Session 8: Solution Design & Execution Under Constraints
+# Session 8: Trade-offs and Technical Debt - When Good Enough Is Right
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about how you chose a solution, handled constraints, and delivered measurable results.
+**Level:** B1-B2  
+**Focus:** Discuss real decisions like rewrite vs refactor and speed vs quality with clear business reasoning.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **solution** (n) – the way to solve a problem  
-  _Example:_ We selected a solution that balanced speed, risk, and maintainability.
+- **rewrite** (n/v) - building a system part again from zero  
+  _Example:_ A full rewrite looked clean but too risky for our timeline.
 
-- **approach** (n) – a way of dealing with a problem  
-  _Example:_ Our approach was to ship a safe version first, then optimize.
+- **refactor** (n/v) - improve existing code structure  
+  _Example:_ We chose refactor to keep shipping features.
 
-- **decision** (n) – a choice you make after thinking  
-  _Example:_ The key decision was to avoid a full rewrite under a tight deadline.
+- **technical debt** (n) - future cost from current shortcuts  
+  _Example:_ We accepted some technical debt to meet contract deadline.
 
-- **trade-off** (n) – accepting a disadvantage to gain an advantage  
-  _Example:_ The main trade-off was faster delivery versus long-term flexibility.
+- **good enough** (adj phrase) - acceptable quality for current goal  
+  _Example:_ The first version was good enough for pilot users.
 
-- **implement** (v) – to put a plan into action  
-  _Example:_ We implemented the fix in phases to reduce release risk.
+- **scope cut** (n) - removing low-priority items  
+  _Example:_ We made a scope cut to protect release stability.
 
-- **result** (n) / **outcome** (n) – the final effect  
-  _Example:_ The outcome was a clear drop in incident frequency.
+- **timeline pressure** (n) - pressure from short deadlines  
+  _Example:_ Timeline pressure pushed us to simplify implementation.
 
-- **optimize** (v) – to make something work better  
-  _Example:_ We optimized only the most expensive path first.
+- **risk appetite** (n) - level of risk a team can accept  
+  _Example:_ Our risk appetite was low because of enterprise clients.
 
-- **constraint** (n) – limitation in time, scope, or resources  
-  _Example:_ Time constraint forced us to prioritize reliability over elegance.
+- **cost of delay** (n) - business loss when release is late  
+  _Example:_ Cost of delay was high, so we avoided a full rewrite.
 
-- **rollback plan** (n) – predefined safe recovery path  
-  _Example:_ We prepared a rollback plan before deployment.
+- **workaround** (n) - temporary solution  
+  _Example:_ We used a workaround and planned cleanup in backlog.
 
-- **acceptance criteria** (n) – conditions proving the solution is successful  
-  _Example:_ We defined clear acceptance criteria before implementation.
+- **quality gate** (n) - required checks before release  
+  _Example:_ We kept quality gates even under deadline pressure.
 
 **Additional useful terms:**
-- **phased rollout** (n) – releasing in controlled steps
-- **proof of concept (PoC)** (n) – small validation experiment
-- **dependency risk** (n) – risk tied to external teams/systems
-- **execution risk** (n) – risk during implementation/release
-- **time-to-value** (n) – time before users see real benefit
+- **trade-off analysis** (n) - structured comparison of options
+- **constraint** (n) - limit such as budget or time
+- **MVP** (n) - minimum viable product
+- **rollback plan** (n) - safe recovery if release fails
+- **follow-up task** (n) - action planned after release
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Decision rationale with constraints**  
-  Given the deadline and dependency risk, we chose an incremental solution.
+- **Option comparison**  
+  We could rewrite the module, or we could refactor the critical path first.
 
-- **Counterfactual reasoning**  
-  If we had chosen a full rewrite, we would have delayed release significantly.
+- **Reasoning with because / due to**  
+  We chose the smaller change due to strict timeline pressure.
 
-- **Concession + justification**  
-  Although the first version was not perfect, it reduced the highest risk quickly.
+- **Concession language**  
+  Although the solution was not perfect, it met release needs.
 
-- **Result + evidence**  
-  As a result, error rate dropped and user completion improved.
+- **Conditional trade-off language**  
+  If we had rewritten everything, delivery would have slipped by two months.
 
-- **Reflection language**  
-  Looking back, I would keep the same direction but improve testing earlier.
+- **Decision language in past tense**  
+  We decided to ship in phases and monitor quality closely.
+
+- **Future commitment language**  
+  We plan to clean it up in the next cycle.
 
 ### Useful Sentence Patterns
-- To solve this effectively, we designed the solution around...
-- The main constraint was..., so we prioritized...
-- We considered ... but ruled it out because...
-- The trade-off we accepted was...
-- We validated success by measuring...
-- If I had to do it again, I would...
+- We considered two options: ...
+- We chose ... because ...
+- The trade-off was ...
+- It solved the short-term need, but ...
+- We accepted this risk because ...
+- We tracked cleanup work in backlog.
 
 </details>
 
@@ -86,69 +89,78 @@ description: Explain how you designed, implemented, and validated a solution und
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- implement a solution
-- define acceptance criteria
-- evaluate alternatives
-- minimize release risk
-- execute in phases
-- ship incremental value
+- evaluate technical options
+- balance speed and quality
+- accept short-term debt
+- protect release stability
+- reduce delivery risk
+- cut low-impact scope
+- ship in phases
 - monitor post-release metrics
-- refine based on feedback
-- reduce recurrence probability
+- schedule follow-up cleanup
+- align with business goals
+- estimate cost of delay
+- keep quality gates
 
 ### Useful Chunking & Sentence Starters
-- To solve this under real constraints, we...
-- Our decision framework focused on...
-- The option we rejected was...
-- The main risk we managed was...
-- The final outcome was...
+- We had to decide between...
+- The business goal was...
+- A full rewrite would have...
+- So we went with...
+- The risk we accepted was...
+- To control that risk, we...
+- This was good enough for now because...
+- Later, we plan to...
 
 ### Useful Phrasal Verbs
-- **come up with** → We came up with three implementation paths.
-- **rule out** → We ruled out the high-risk option before release.
-- **roll out** → We rolled out the fix gradually by user segment.
-- **follow through on** → We followed through on post-release checks.
+- **cut back** -> We cut back non-essential features for this release.
+- **hold off** -> We held off the rewrite until after peak season.
+- **ship out** -> We shipped out a smaller but stable version.
+- **clean up** -> We cleaned up technical debt in the next sprint.
+- **line up** -> We lined up QA support before deployment.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Solution Story
+### Dialogue 1 - Rewrite vs Refactor
 
-**Teacher:** How did you design and deliver your solution?
-
-**You:**  
-We first defined success criteria: reduce failure rate, keep release timeline, and avoid major regression risk. Then we compared three options: quick patch, partial refactor, and full rewrite.
-
-Given our constraints, we chose a phased partial refactor. It addressed the core issue without blocking delivery. We released it behind a feature flag and monitored key metrics closely.
-
-The result was measurable: fewer support tickets, faster workflow completion, and better release confidence.
-
-### Dialogue 2 – Quick Fix vs Long-Term Fix
-
-**Teacher:** How do you decide between a quick fix and a long-term solution?
+**Interviewer:** Tell me about a major technical trade-off.
 
 **You:**  
-I usually separate the decision into two layers: immediate risk and structural risk. If user impact is high, I apply a safe quick fix first. Then I schedule a long-term fix with clear ownership and acceptance criteria. This approach protects users now and code quality later.
+We debated rewrite versus refactor for an old reporting module. Rewrite was attractive, but it would block feature delivery for too long.
 
-### Dialogue 3 – Stakeholder Pressure
+We refactored only high-risk parts first. It was not perfect, but release stayed on track.
 
-**Teacher:** What if stakeholders push for a faster but riskier release?
+### Dialogue 2 - Cutting Corners Professionally
+
+**Interviewer:** When is cutting corners acceptable?
 
 **You:**  
-I acknowledge the urgency and explain risk in business terms, not only technical terms. For example, I compare short-term gain versus outage risk and support cost. Then I propose a safer phased alternative. Most stakeholders accept it when trade-offs are explicit and measurable.
+It can be acceptable when impact is low and risk is controlled. In one release, we used a simple workaround to meet a contract deadline.
+
+But we documented the debt clearly and scheduled cleanup in backlog.
+
+### Dialogue 3 - Defending Good Enough
+
+**Interviewer:** How do you explain "good enough" to your team?
+
+**You:**  
+I define minimum quality clearly: no critical bugs, stable deployment, and passing tests. If those are met, we can ship and improve later.
+
+It helps speed, but only if we keep follow-up commitments.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-A strong solution narrative is not just "what we built." It is "why this option, under which constraints, with what evidence." Interviewers usually assess this logic more than the tool itself.
+In software projects, teams often choose between ideal architecture and practical delivery. A smart decision is not always the most elegant one. It is the one that fits current constraints without creating unacceptable risk.
 
-Experienced engineers separate urgency from direction. They reduce risk quickly when needed, but they also protect long-term maintainability through phased improvements.
+"Good enough" should not mean careless. It means clear quality limits, controlled scope, and a plan to handle technical debt later. Without that plan, short-term speed becomes long-term pain.
 
-The most persuasive answers connect technical choices to outcomes that everyone understands: stability, speed, user trust, and business value.
+In interviews, show your reasoning process. Explain what you considered, what you sacrificed, and why the decision made business sense.
 
 </details>
 
@@ -156,25 +168,25 @@ The most persuasive answers connect technical choices to outcomes that everyone 
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What solution did you implement, and what constraint shaped your choice most?
-2. Which alternatives did you evaluate, and why were they rejected?
-3. What trade-off did you intentionally accept?
-4. How did you validate that the solution worked?
+1. Tell me about a rewrite vs refactor decision.
+2. How do you define "good enough" in your team?
+3. When is technical debt acceptable?
+4. How do you make sure temporary fixes do not become permanent?
 
 ### High-Value Case Questions
-5. Describe a solution that worked technically but failed in adoption. What did you change?
-6. Tell me about a quick fix that later required structural improvement.
-7. Share a case where stakeholder pressure changed your execution plan.
+5. Share a case where you cut scope to protect quality.
+6. Describe a workaround you used under deadline pressure.
+7. Tell me about a decision you would make differently now.
 
 ### Critical Discussion Questions
-8. Should teams prioritize speed or correctness when risk is high?
-9. Is "good enough" engineering acceptable in product teams?
-10. How do you persuade non-technical stakeholders without sounding defensive?
+8. Is code quality more important than time-to-market?
+9. Should managers decide technical debt priorities?
+10. Is "move fast" still valid for enterprise products?
 
 **Tips for speaking practice:**
-- Use this structure: problem -> options -> constraint -> choice -> result.
-- Mention one rejected option to show judgment.
-- End with one measurable outcome and one lesson learned.
+- Mention the business constraint first.
+- Show one trade-off and one safeguard.
+- End with what you learned.
 
 ---
 

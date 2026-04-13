@@ -1,84 +1,87 @@
 ---
 sessionNumber: 15
-title: Decision-Making Under Uncertainty (Work and Daily Life)
-topic: Uncertainty, Risk Thinking, and Practical Judgment
-phase: PHASE 3 — DISCUSSION & IMPACT
-level: B2+
-description: Discuss how you make decisions when information is incomplete, in both professional and everyday situations.
+title: Cross-Cultural Communication and Global Team Reality
+topic: Working Across Cultures, Time Zones, and Communication Styles
+phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+level: B1-B2
+description: Discuss practical communication strategies for global teams with different cultures and working styles.
 ---
 
-# Session 15: Decision-Making Under Uncertainty (Work and Daily Life)
+# Session 15: Cross-Cultural Communication and Global Team Reality
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about making clear, practical decisions when data is incomplete or ambiguous.
+**Level:** B1-B2  
+**Focus:** Handle communication differences in global software teams with clear, respectful, and practical language.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **uncertainty** (n) – situation where outcomes are unclear  
-  _Example:_ In product work, we often make decisions under uncertainty.
+- **communication style** (n) - way people express ideas and feedback  
+  _Example:_ Different communication styles can cause misunderstandings.
 
-- **ambiguity** (n) – lack of clear meaning or direction  
-  _Example:_ Ambiguity in requirements can delay decision-making.
+- **direct feedback** (n) - clear and explicit comments  
+  _Example:_ Some teams prefer direct feedback in code reviews.
 
-- **risk appetite** (n) – level of risk a person or team accepts  
-  _Example:_ Our risk appetite is lower for customer-facing payment flows.
+- **indirect feedback** (n) - softer feedback to avoid conflict  
+  _Example:_ Indirect feedback can be polite but less clear.
 
-- **confidence level** (n) – how sure you are about assumptions  
-  _Example:_ We had medium confidence level, so we staged the rollout.
+- **high-context culture** (n) - communication with implied meaning  
+  _Example:_ In high-context cultures, silence may carry meaning.
 
-- **reversible decision** (n) – decision that can be changed with low cost  
-  _Example:_ Under uncertainty, reversible decisions are often safer.
+- **low-context culture** (n) - communication with explicit wording  
+  _Example:_ Low-context teams usually prefer clear and direct instructions.
 
-- **opportunity cost** (n) – what you lose when choosing one option over another  
-  _Example:_ The opportunity cost of waiting was slower market response.
+- **async communication** (n) - communication without real-time response  
+  _Example:_ Async communication helps teams across time zones.
 
-- **contingency plan** (n) – backup plan if things go wrong  
-  _Example:_ We prepared a contingency plan before launch.
+- **time zone overlap** (n) - shared working hours across regions  
+  _Example:_ We use time zone overlap for urgent decisions.
 
-- **assumption** (n) – belief used before full evidence is available  
-  _Example:_ We documented key assumptions before execution.
+- **misalignment** (n) - different understanding of goals or tasks  
+  _Example:_ Misalignment happened because the requirement was vague.
 
-- **trade-off** (n) – compromise between two competing priorities  
-  _Example:_ The trade-off was speed versus confidence.
+- **trust building** (n) - process of creating reliable team relationships  
+  _Example:_ Trust building takes time in remote teams.
 
-- **judgment call** (n) – decision based on experience when data is incomplete  
-  _Example:_ In the end, it was a judgment call supported by limited evidence.
+- **clarification** (n) - request for clearer information  
+  _Example:_ I ask for clarification early to avoid rework.
 
 **Additional useful terms:**
-- **scenario planning** (n) – preparing options for multiple possible outcomes
-- **decision threshold** (n) – minimum evidence needed to proceed
-- **downside risk** (n) – worst potential negative impact
-- **decision fatigue** (n) – reduced quality after too many decisions
-- **mitigation strategy** (n) – action that reduces risk severity
+- **tone** (n) - feeling or attitude in communication
+- **intent** (n) - real purpose behind a message
+- **friction point** (n) - recurring source of conflict
+- **cultural norm** (n) - common behavior in a group
+- **team agreement** (n) - shared rule for communication
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Hedging language for uncertainty**  
-  It seems likely that adoption will improve, but we need more evidence.
+- **Polite clarification language**  
+  Could you clarify what "urgent" means in this context?
 
-- **Conditional reasoning**  
-  If downside risk is high, I choose a safer, reversible option.
+- **Contrast language**  
+  In some teams, direct feedback is normal, while in others it feels rude.
 
-- **Concession + decision**  
-  Although data was incomplete, delaying action would have created bigger cost.
+- **Suggestion language**  
+  We should document decisions in writing to avoid confusion.
 
-- **Priority framing**  
-  If I had to prioritize one factor, I would prioritize reversibility.
+- **Conditional language**  
+  If we rely only on meetings, remote teammates may miss context.
 
-- **Balanced viewpoint language**  
-  On balance, this was not the perfect option, but it was the most practical one.
+- **Softening disagreement**  
+  I may be wrong, but I see a different risk here.
+
+- **Summary language**  
+  To confirm, we agreed on X by Friday, correct?
 
 ### Useful Sentence Patterns
-- Given the uncertainty, we decided to...
-- Our confidence level was..., so we...
-- The biggest downside risk was...
-- To reduce risk, we prepared...
-- In hindsight, I would...
-- A similar principle also applies in daily life when...
+- In my global team, we...
+- A common misunderstanding is...
+- To reduce friction, we...
+- I usually confirm by writing...
+- This approach is slower, but...
+- Over time, it helped us...
 
 </details>
 
@@ -86,67 +89,78 @@ description: Discuss how you make decisions when information is incomplete, in b
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- make decisions under uncertainty
-- estimate downside risk
-- define decision threshold
-- test key assumptions
-- choose reversible options
-- reduce decision regret
-- balance speed and confidence
-- prepare contingency plans
-- adjust based on feedback
+- bridge communication gaps
+- adapt communication style
+- build cross-cultural trust
+- clarify unclear requests
+- align async workflows
+- reduce team friction
+- respect cultural differences
+- confirm action items
+- document key decisions
+- improve remote collaboration
+- manage time zone overlap
+- avoid costly misunderstandings
 
 ### Useful Chunking & Sentence Starters
-- In uncertain situations, I usually...
-- The first thing I clarify is...
-- A practical way to reduce risk is...
-- If evidence is weak, I...
-- The lesson I learned is...
+- In a global team, one challenge is...
+- We noticed confusion when...
+- To fix that, we started...
+- I learned to...
+- It worked well because...
+- The trade-off was...
+- A simple team rule is...
+- This improved trust by...
 
 ### Useful Phrasal Verbs
-- **weigh up** → I weigh up risk, cost, and reversibility before deciding.
-- **rule out** → We ruled out high-impact options with low confidence.
-- **back out of** → We defined clear criteria to back out of the plan if needed.
-- **stick with** → We stuck with a conservative option until data improved.
+- **speak up** -> I speak up when requirements are unclear.
+- **write down** -> We write down final decisions after meetings.
+- **check in** -> We check in asynchronously at end of day.
+- **smooth out** -> We smoothed out handoff issues with templates.
+- **follow up** -> I follow up in chat to confirm next steps.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Professional Decision
+### Dialogue 1 - Style Differences
 
-**Teacher:** Tell me about a decision you made with incomplete information.
-
-**You:**  
-We had to choose whether to launch a feature with limited usage data. Confidence was moderate, and timeline pressure was real.
-
-I proposed a reversible rollout with strict monitoring and a rollback condition. This allowed us to learn quickly while protecting users.
-
-### Dialogue 2 – General Life Decision
-
-**Teacher:** How do you make important decisions in your personal life when outcomes are uncertain?
+**Interviewer:** How do you handle different communication styles?
 
 **You:**  
-I use a similar method: define priorities, estimate downside, and keep options reversible when possible. For example, when considering relocation, I first tested the idea with a short trial period before making a permanent move.
+In one project, a teammate gave very direct feedback, and another teammate felt offended. I suggested we focus feedback on code behavior, not personal tone.
 
-### Dialogue 3 – Communicating Uncertainty
+It did not solve everything immediately, but review quality improved.
 
-**Teacher:** How do you communicate uncertainty without sounding indecisive?
+### Dialogue 2 - Time Zone Reality
+
+**Interviewer:** How do you collaborate across time zones?
 
 **You:**  
-I separate facts, assumptions, and risks clearly. Then I propose a decision with safeguards and checkpoints. This shows confidence in process, even when certainty is not possible.
+We use async updates and short overlap meetings for blockers. I post clear summaries with owners and deadlines.
+
+It takes discipline, but it reduces waiting and repeated questions.
+
+### Dialogue 3 - Building Trust Remotely
+
+**Interviewer:** How do you build trust without face-to-face contact?
+
+**You:**  
+I try to be reliable: clear updates, honest risks, and on-time follow-ups. When I make mistakes, I say it clearly and fix them.
+
+Trust grows slowly, but consistent behavior works better than perfect wording.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Most real decisions are made before full certainty exists. Strong professionals do not wait for perfect information; they use structured judgment.
+Global teams are common in software, but communication differences can create delays and conflict. The problem is often not technical skill. It is unclear wording, unspoken expectations, or tone mismatch.
 
-A practical decision process includes: clarify objectives, identify assumptions, estimate downside risk, and define exit criteria. This process applies not only in engineering but also in personal life choices.
+Practical habits help a lot: clear written summaries, defined response times, and respectful clarification questions. Teams also need to accept that one communication style does not fit everyone.
 
-In speaking practice, uncertainty topics are useful because they train nuance, persuasion, and clarity at the same time.
+In interviews, explain one real communication challenge and one specific method that improved collaboration.
 
 </details>
 
@@ -154,25 +168,25 @@ In speaking practice, uncertainty topics are useful because they train nuance, p
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you make decisions when important information is missing?
-2. Which factors matter most in uncertain situations?
-3. How do you reduce downside risk before committing?
-4. How do you communicate uncertainty to stakeholders clearly?
+1. What communication challenges have you seen in global teams?
+2. How do you work effectively across time zones?
+3. How do you avoid misunderstandings in async communication?
+4. What does respectful cross-cultural feedback look like?
 
 ### High-Value Case Questions
-5. Describe a project decision made with limited data.
-6. Tell me about a personal decision where you used a structured approach.
-7. Share a decision you changed later when new evidence appeared.
+5. Share a conflict caused by style differences and how you handled it.
+6. Tell me about a process that improved remote collaboration.
+7. Describe a time when clarification prevented rework.
 
 ### Critical Discussion Questions
-8. Is fast decision-making better than cautious decision-making under uncertainty?
-9. Should leaders hide uncertainty to keep teams confident?
-10. Is it possible to make high-quality decisions without strong data?
+8. Should global companies use one communication standard for everyone?
+9. Is direct feedback always better than indirect feedback?
+10. How much should people adapt to other cultures at work?
 
 **Tips for speaking practice:**
-- Distinguish facts, assumptions, and risks.
-- Show your process, not only your final answer.
-- Use one professional case and one general-life case to sound flexible.
+- Use one culture-related example.
+- Show both challenge and adjustment.
+- Keep tone respectful and practical.
 
 ---
 

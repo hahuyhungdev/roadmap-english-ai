@@ -1,80 +1,87 @@
 ---
 sessionNumber: 21
-title: Motivation, Values & Why This Environment
-topic: Personal Drivers, Work Values, and Culture Alignment
-phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
-level: B2+
-description: Explain your motivations and values clearly, and connect them credibly to the target team environment.
+title: Motivation, Values, and Self-Awareness
+topic: Understanding What Actually Drives Your Career
+phase: PHASE 4 - BEHAVIORAL & CAREER
+level: B1-B2
+description: Answer motivation and values questions with depth, honesty, and practical examples.
 ---
 
-# Session 21: Motivation, Values & Why This Environment
+# Session 21: Motivation, Values, and Self-Awareness
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about authentic motivation, values-based decisions, and environment fit.
+**Level:** B1-B2  
+**Focus:** Give authentic interview answers about what drives you, what you value, and how that fits company culture.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **intrinsic motivation** (n) - internal drive from meaning or curiosity  
-  _Example:_ Intrinsic motivation helps me stay consistent in difficult projects.
+- **motivation** (n) - reason you want to do work  
+  _Example:_ My strongest motivation is solving user-facing problems.
 
-- **work values** (n) - principles that guide professional choices  
-  _Example:_ My work values include ownership, clarity, and respect.
+- **core value** (n) - principle that guides your decisions  
+  _Example:_ One core value for me is ownership.
 
-- **environment fit** (n) - match between your style and team culture  
-  _Example:_ Environment fit matters for long-term performance.
+- **autonomy** (n) - freedom to make decisions in your work  
+  _Example:_ I realized I value autonomy more than job title.
 
-- **purpose alignment** (n) - connection between your goals and company mission  
-  _Example:_ Purpose alignment is a key reason I am interested in this role.
+- **purpose** (n) - meaningful reason behind your work  
+  _Example:_ Purpose helps me stay consistent during hard sprints.
 
-- **decision criteria** (n) - standards used to evaluate opportunities  
-  _Example:_ Learning quality is one of my top decision criteria.
+- **culture fit** (n) - how well your values match company culture  
+  _Example:_ I care about culture fit, not only compensation.
 
-- **value conflict** (n) - tension between your principles and workplace behavior  
-  _Example:_ I avoid environments with repeated value conflict.
+- **self-awareness** (n) - understanding your real strengths and limits  
+  _Example:_ Self-awareness improved my career decisions.
 
-- **engagement driver** (n) - factor that increases your commitment and energy  
-  _Example:_ Impact visibility is a strong engagement driver for me.
+- **misalignment** (n) - mismatch between your values and your environment  
+  _Example:_ I left one role due to value misalignment.
 
-- **career priority** (n) - most important objective at current stage  
-  _Example:_ My current career priority is meaningful cross-functional ownership.
+- **intrinsic motivation** (n) - internal motivation from the work itself  
+  _Example:_ Intrinsic motivation is stronger for me than external rewards.
 
-- **culture signal** (n) - indicator of how a team actually works  
-  _Example:_ Feedback quality is an important culture signal.
+- **career anchor** (n) - stable priority in your career choices  
+  _Example:_ Learning and ownership are my career anchors.
 
-- **long-term fit** (n) - sustainable compatibility over time  
-  _Example:_ I evaluate long-term fit, not only short-term opportunity.
+- **reflection** (n) - careful review of your experiences  
+  _Example:_ Regular reflection helped me redefine success.
 
 **Additional useful terms:**
-- **growth environment** (n)
-- **ownership mindset** (n)
-- **team norms** (n)
-- **professional purpose** (n)
-- **value consistency** (n)
+- **energy source** (n) - work activity that gives motivation
+- **drain factor** (n) - activity that reduces motivation
+- **value conflict** (n) - clash between personal and company values
+- **growth signal** (n) - sign of meaningful progress
+- **career clarity** (n) - clear understanding of your direction
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Reasoned motivation statement**  
-  I am motivated by work where technical quality directly improves user outcomes.
+- **Present Simple for values**  
+  I value ownership, clear feedback, and meaningful work.
 
-- **Values plus behavior linkage**  
-  One value I prioritize is ownership, which means I communicate risks early.
+- **Past reflection language**  
+  I thought I wanted promotion fast, but I realized I wanted autonomy.
 
-- **Contrast for fit decisions**  
-  I value autonomy, but I also need a team culture with strong collaboration.
+- **Contrast language**  
+  Salary matters, but daily work quality matters more to me.
 
-- **Future alignment framing**  
-  This environment fits my next growth stage because it combines scale and responsibility.
+- **Conditionals for fit**  
+  If team values are unclear, motivation usually drops.
+
+- **Evidence language**  
+  One example that shows this is...
+
+- **Future alignment language**  
+  In my next role, I want stronger alignment with these values.
 
 ### Useful Sentence Patterns
 - What motivates me most is...
-- A value that strongly influences my choices is...
-- I feel engaged when...
-- This environment is a good fit because...
-- In the long term, I want to work where...
+- A value I will not compromise on is...
+- I discovered this when...
+- This environment fits me because...
+- A mismatch appears when...
+- I stay motivated by...
 
 </details>
 
@@ -82,66 +89,78 @@ description: Explain your motivations and values clearly, and connect them credi
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- clarify career motivation
-- align with team values
-- evaluate cultural fit
-- prioritize meaningful work
-- choose growth-oriented environments
-- maintain value consistency
-- connect purpose and performance
-- sustain long-term engagement
+- identify core values
+- build self-awareness
+- maintain long-term motivation
+- align with company culture
+- define career priorities
+- recognize value mismatch
+- choose meaningful work
+- balance ambition and well-being
+- improve personal clarity
+- sustain professional energy
+- make value-based decisions
+- communicate motivation clearly
 
 ### Useful Chunking & Sentence Starters
-- At this stage of my career, I prioritize...
-- A workplace value I will not compromise on is...
-- I am most effective in environments where...
-- One reason this role stands out is...
-- My motivation is strongest when...
+- Early in my career, I believed...
+- Over time, I realized...
+- A clear example is...
+- This motivated me because...
+- What drains my energy is...
+- I work best in teams that...
+- My values align with this role because...
+- In the long term, I want...
 
 ### Useful Phrasal Verbs
-- **care about** -> I care about product impact, not just delivery speed.
-- **opt for** -> I opt for teams with transparent communication.
-- **grow into** -> I want to grow into broader product ownership.
-- **commit to** -> I commit to environments with clear standards.
+- **figure out** -> I figured out what really motivates me.
+- **line up with** -> My values line up with teams that value ownership.
+- **burn out** -> I burn out when goals are unclear for too long.
+- **lean toward** -> I lean toward roles with autonomy and mentorship.
+- **grow into** -> I want to grow into a role with broader impact.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Motivation Beyond Salary
+### Dialogue 1 - Real Motivation
 
-**Teacher:** Why do you want this role and this environment?
-
-**You:**  
-I am motivated by complex problems with visible user impact. This environment fits because teams here seem to value quality, accountability, and learning.  
-
-I also see strong cross-functional collaboration, which is where I usually create the most value.
-
-### Dialogue 2 - Values Under Pressure
-
-**Teacher:** What happens when your values conflict with delivery pressure?
+**Interviewer:** What motivates you?
 
 **You:**  
-I try to protect key values through practical decisions. For example, I will negotiate scope before compromising critical quality standards. That balance keeps trust and performance sustainable.
+I am most motivated when I can solve practical user problems and see clear impact. For example, we reduced checkout errors and support tickets dropped.
 
-### Dialogue 3 - General Life Transfer
+Results like that give me more energy than title changes alone.
 
-**Teacher:** Are values mostly a workplace topic?
+### Dialogue 2 - Value Discovery
+
+**Interviewer:** Have your priorities changed over time?
 
 **You:**  
-Not really. Values influence personal decisions too, especially under pressure. Clear values help us make consistent choices.
+Yes. I used to focus mainly on promotion. Later I realized autonomy and learning matter more for my long-term growth.
+
+That change helped me choose projects better.
+
+### Dialogue 3 - Culture Fit
+
+**Interviewer:** What kind of company culture suits you?
+
+**You:**  
+I work best in teams with clear ownership, honest feedback, and low politics. I prefer direct communication and realistic planning.
+
+A fast team is good, but not if quality and trust are ignored.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Interviewers ask about motivation to understand whether your engagement is sustainable. Candidates with clear motivation and value alignment usually adapt faster and perform better.
+Motivation answers in interviews often sound generic. Strong answers are personal and practical. You should explain what gives you energy, what drains you, and how your values shaped real decisions.
 
-At advanced speaking levels, strong answers are specific and realistic. They connect personal drivers to role demands and team culture without using generic phrases.
+Self-awareness is important for career growth. Without it, people chase goals that do not fit them. Over time, this creates frustration and weak performance.
 
-Good fit is not about perfect similarity. It is about shared principles and compatible working habits.
+Balanced answers are best. Show ambition, but also show clarity about what kind of environment helps you do your best work.
 
 </details>
 
@@ -149,25 +168,25 @@ Good fit is not about perfect similarity. It is about shared principles and comp
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What motivates you most in your professional work?
-2. Which values guide your decisions at work?
-3. How do you evaluate whether an environment is a good fit?
-4. Why is this specific environment attractive to you?
+1. What motivates you as a software engineer?
+2. What are your top three work values?
+3. How did your motivation change over the years?
+4. What kind of culture helps you perform best?
 
 ### High-Value Case Questions
-5. Describe a time your values influenced a difficult decision.
-6. Tell me about an environment where you performed at your best and why.
-7. Share a case where poor culture fit affected outcomes.
+5. Share a time when you realized your priorities had changed.
+6. Tell me about a value mismatch with a team or project.
+7. Describe one decision you made based on your values.
 
 ### Critical Discussion Questions
-8. Should motivation be measured by passion or consistency?
-9. Is cultural fit useful, or can it create bias?
-10. Can high compensation replace weak value alignment?
+8. Is motivation mostly internal or external?
+9. Should candidates prioritize culture fit over compensation?
+10. Can strong motivation exist in a toxic environment?
 
 **Tips for speaking practice:**
-- Be concrete about what motivates you and why.
-- Connect values to specific behavior, not abstract words.
-- Show how your fit benefits both you and the company.
+- Avoid generic answers like "I love coding."
+- Use one moment of self-discovery.
+- Link values to concrete behavior.
 
 ---
 

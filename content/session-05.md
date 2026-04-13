@@ -1,86 +1,87 @@
 ---
 sessionNumber: 5
-title: How Technology Changes the Way We Work
-topic: Technology Impact on Work Practices
-phase: PHASE 1 — TECH EXPLAIN 
-level: B2
-description: Discuss how modern technologies are changing the way people work, learn, and communicate, including productivity and collaboration impacts.
+title: AI Tools and the Changing Developer Role
+topic: Daily AI Usage, Limits, and Practical Trade-offs
+phase: PHASE 1 - TECH & BUSINESS
+level: B1-B2
+description: Explain how you use AI tools in daily engineering work, where they help, and where you still rely on human checks.
 ---
 
-# Session 5: How Technology Changes the Way We Work
+# Session 5: AI Tools and the Changing Developer Role
 
-**Level:** B2  
-**Focus:** Speaking about how everyday digital tools are changing workflows, collaboration, productivity, and communication in work and study.
+**Level:** B1-B2  
+**Focus:** Speak clearly about practical AI usage in software teams, including speed gains, risks, and clear boundaries.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **transform** (v) – to change completely  
-  _Example:_ New technologies have transformed the way we work and learn.
+- **code assistant** (n) - AI tool that suggests code  
+  _Example:_ I use a code assistant for boilerplate and test drafts.
 
-- **productivity** (n) – the amount of work done in a certain time  
-  _Example:_ Modern tools have increased productivity in many jobs.
+- **boilerplate** (n) - repeated code patterns  
+  _Example:_ AI is helpful for boilerplate, but I review every line.
 
-- **collaboration** (n) – working together with others  
-  _Example:_ Technology has improved collaboration between students and coworkers.
+- **unit test** (n) - small test for one function or component  
+  _Example:_ We ask AI for unit test ideas, then adjust edge cases.
 
-- **automation** (n) – using machines or software to do tasks automatically  
-  _Example:_ Automation helps reduce repetitive manual work.
+- **debugging** (n) - finding and fixing problems  
+  _Example:_ AI helps me read logs faster during debugging.
 
-- **workflow** (n) – the way tasks are organized and completed  
-  _Example:_ New tools have made our workflow much smoother.
+- **prompt** (n) - instruction given to an AI tool  
+  _Example:_ A clear prompt gives better output.
 
-- **efficiency** (n) – doing more with less time and effort  
-  _Example:_ Technology has significantly improved our efficiency.
+- **hallucination** (n) - incorrect AI output that sounds confident  
+  _Example:_ We saw hallucination in API usage, so we verified docs.
 
-  _Example:_ Modern technology gives us more flexibility in how we work.
+- **security-critical** (adj) - related to sensitive security logic  
+  _Example:_ We never paste security-critical code into external tools.
 
-  _Example:_ Digital tools help people draft messages, summarize notes, and organize tasks faster.
+- **compliance** (n) - following legal or company rules  
+  _Example:_ Compliance rules limit what data we can share with AI tools.
 
- **digital tools** (n) – apps or software that help with day-to-day tasks  
-- **context switching** (n) – repeatedly changing between tasks or tools  
-  _Example:_ Better tooling helps reduce context switching.
-- **asynchronous communication** (n) – collaboration without everyone being online at the same time  
-  _Example:_ Asynchronous communication is useful for remote classes and global workplaces.
+- **review** (n/v) - checking code quality and correctness  
+  _Example:_ Human review is still mandatory before merge.
+
+- **regression** (n) - new change breaks old behavior  
+  _Example:_ AI suggestions can cause regression if we skip tests.
 
 **Additional useful terms:**
-- **cognitive load** (n) – mental effort required to complete work
-- **digital literacy** (n) – ability to use everyday tools effectively
-- **feedback loop** (n) – cycle of acting, measuring, and improving
-- **standardization** (n) – using common processes to reduce inconsistency
-- **change fatigue** (n) – stress caused by too many changes in a short time
+- **context window** (n) - amount of text AI can process at once
+- **autocomplete** (n) - automatic code suggestions
+- **false positive** (n) - warning that looks real but is not
+- **policy** (n) - internal rule for tool usage
+- **fallback plan** (n) - backup process when AI output is wrong
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for changes**  
-  Technology **has changed** the way we work in many ways.
+- **Present Simple for routine use**  
+  I use AI tools for first drafts and repetitive coding tasks.
 
-- **Cause and Effect**  
-  Because of automation and helpful apps, people can focus more on complex problem-solving.
+- **Present Perfect for change over time**  
+  AI tools have reduced time spent on basic setup.
 
-- **Comparison** (used to vs now)  
-  We **used to** do many tasks manually, but now simple apps help us draft and organize content quickly.
+- **Contrast language (but / however)**  
+  AI is fast, but I never trust output without checks.
 
-- **Passive voice**  
-  Many repetitive tasks **are being automated** by modern tools.
+- **Rules and boundaries (must / should not)**  
+  We must review AI-generated code before deployment.
 
-- **Conditional sentences**  
-  If we didn’t have these tools, our work **would be** much slower.
+- **Conditionals for risk**  
+  If we copy code blindly, we can introduce security bugs.
 
-- **Contrast structures** (while / however / even though)  
-  While technology improves speed, it can also increase dependency on tools.
+- **Past case explanation**  
+  Last sprint, AI helped us generate tests, but we rewrote many assertions.
 
 ### Useful Sentence Patterns
-- Technology has changed the way we…
-- Thanks to …, we can now…
-- In the past, we used to …, but nowadays…
-- This leads to…
-- As a result, people can focus more on…
-- One downside we should consider is…
-- To adapt effectively, individuals and organizations need to…
+- I use AI mostly for..., not for...
+- It saves time, but...
+- A real example is...
+- We still rely on human review because...
+- Our team policy says...
+- The best use case for me is...
 
 </details>
 
@@ -88,82 +89,78 @@ description: Discuss how modern technologies are changing the way people work, l
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- transform the way we work
-- increase productivity
-- improve collaboration
-- automate repetitive tasks
-- streamline workflow
-- enhance efficiency
-- provide flexibility
-- boost team performance
-- shorten feedback loops
-- reduce context switching
-- adopt helpful workflows
-- standardize daily practices
-- improve communication quality
+- generate test drafts
+- speed up debugging
+- review AI output
+- catch logic errors
+- avoid blind copy-paste
+- protect sensitive code
+- follow compliance rules
+- validate against documentation
+- reduce repetitive work
+- improve developer workflow
+- prevent security regressions
+- set clear usage boundaries
 
 ### Useful Chunking & Sentence Starters
-- Technology has changed the way…
-- Thanks to modern tools,…
-- One of the biggest changes is…
-- This allows us to…
-- As a result,…
-- In remote groups, we rely on…
-- A major benefit is…, but a common risk is…
-- To avoid tool overload, we…
-- A practical example from my routine is…
+- In my daily workflow, I use AI to...
+- A good use case is...
+- One bad use case is...
+- We got faster results when...
+- We still had to check...
+- The trade-off is speed versus...
+- To stay safe, we...
+- In production code, I always...
 
 ### Useful Phrasal Verbs
-- **speed up** → New tools help speed up daily tasks.
-- **cut down on** → Automation helps cut down on manual work.
-- **focus on** → We can focus on more important tasks.
-- **keep up with** → It’s important to keep up with new technologies.
-- **roll out** → We roll out new tools gradually to reduce adoption risk.
-- **fall behind** → Teams that avoid learning may fall behind quickly.
-- **phase in** → We phase in process changes instead of changing everything at once.
+- **speed up** -> AI can speed up test setup.
+- **check over** -> I always check over generated code.
+- **leave out** -> Sometimes AI leaves out edge cases.
+- **lock down** -> We lock down access for sensitive repositories.
+- **fall back** -> If output is weak, we fall back to manual coding.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – General Impact
+### Dialogue 1 - Daily Use
 
-**Interviewer:** How has technology changed your work or study?
-
-**You:**  
-Technology has made routine tasks faster, so I have more time for planning and communication. Simple tools help me draft messages and summarize long texts, but I always check details before sharing.
-
-I try not to use too many tools at once; keeping a simple routine helps me stay focused.
-
-Overall, technology speeds things up when used with care.
-
-### Dialogue 2 – Tools in Daily Life
-
-**Interviewer:** How do digital tools affect your daily routine?
+**Interviewer:** How do you use AI tools at work?
 
 **You:**  
-Tools help me create first drafts, gather ideas, and organize notes. I treat their output as a draft: I always check details and make changes so it fits the situation.
+I use them for repetitive tasks like test templates, simple refactor suggestions, and writing commit message drafts. In one sprint, this saved me about two to three hours.
 
-In short, tools save time, but human judgment is still important.
+It helps speed, but I still verify logic and run tests before merge.
 
-### Dialogue 3 – Managing Risks
+### Dialogue 2 - Clear Boundaries
 
-**Interviewer:** Some people think new tools create dependency. Do you agree?
+**Interviewer:** What do you never use AI for?
 
 **You:**  
-I partly agree. If people stop practicing core skills, problems appear. So I use tools to speed up routine work but keep practicing fundamentals and checking results.
+I do not use AI for security-critical code or compliance-sensitive business logic. We also avoid sharing private customer data in prompts.
+
+AI is useful for support tasks, but ownership stays with the engineer.
+
+### Dialogue 3 - Trade-off Case
+
+**Interviewer:** Has AI ever caused problems in your team?
+
+**You:**  
+Yes. We accepted a generated helper function too quickly, and it caused a regression in edge cases. We found it in QA and fixed it before release.
+
+So now we move faster with AI, but quality checks are stricter.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Technology has shifted many jobs and learning routines from manual execution to higher-value decision-making. People now spend less time on repetitive setup and more time on analysis, communication, and creative problem-solving. Collaboration has also changed: remote groups rely on asynchronous updates, shared documents, and digital coordination tools.
+AI tools are now part of many developer workflows. They help with boilerplate, test ideas, and quick debugging support. This can reduce routine work and let engineers focus on harder tasks.
 
-However, progress is not only about speed. People and organizations must manage adoption risks such as tool overload, inconsistent practices, and reduced focus. The most successful users introduce change step by step, measure outcomes, and invest in continuous learning.
+But teams still need clear rules. AI output can be wrong, outdated, or insecure. That is why strong teams treat AI output as a draft, not as final code. Review, testing, and documentation checks are still required.
 
-In professional speaking, a balanced perspective is important. Highlight both benefits and limitations, and explain how people adapt in practice.
+In interviews, practical answers are best: explain where AI saves time, where it creates risk, and how your team controls that risk.
 
 </details>
 
@@ -171,25 +168,25 @@ In professional speaking, a balanced perspective is important. Highlight both be
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What is the biggest technology change in your daily work or study?
-2. How have automation and simple tools affected your productivity?
-3. How have modern tools changed collaboration in your environment?
-4. What is the biggest risk of adopting new tools too quickly?
+1. How do you use AI tools in your daily workflow?
+2. Which tasks are good for AI support and which are not?
+3. How do you prevent bugs from AI-generated code?
+4. What team rule do you follow when using AI tools?
 
 ### High-Value Case Questions
-5. Share a case where automation or simple tools saved significant time.
-6. Tell me about a tool adoption that failed and what people learned.
-7. Describe one process change that improved performance.
+5. Share a case where AI saved real engineering time.
+6. Tell me about a bug caused by AI output and what changed after that.
+7. Describe how AI changed your role in code review.
 
 ### Critical Discussion Questions
-8. Will simple tools replace workers, or mainly change their roles?
-9. Is it better to use one stable platform or many specialized tools?
-10. Does faster output always lead to better quality?
+8. Does AI make junior developers learn slower?
+9. Should teams allow AI in all parts of the codebase?
+10. Who is responsible when AI-generated code fails in production?
 
 **Tips for speaking practice:**
-- Compare "before vs now" with one concrete example.
-- Mention both benefit and risk in each long answer.
-- Add one measurable result (time saved, fewer errors, faster completion).
+- Mention one real tool and one real task.
+- Include one trade-off in each answer.
+- Keep your language operational, not abstract.
 
 ---
 

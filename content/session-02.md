@@ -1,81 +1,87 @@
 ---
 sessionNumber: 2
-title: Your System & Business Value
-topic: System Overview & User Impact
-phase: PHASE 1 — TECH EXPLAIN
-level: B2
-description: Explain your system clearly at a high level, describe its purpose, main users, how it serves both users and the business, and the value it creates.
+title: System and Stakeholders
+topic: Explaining Architecture and Team Communication
+phase: PHASE 1 - TECH & BUSINESS
+level: B1-B2
+description: Describe your system at a high level and explain how you work with different stakeholders.
 ---
 
-# Session 2: Your System & Business Value
+# Session 2: System and Stakeholders
 
-**Level:** B2  
-**Focus:** Speaking confidently about your system at a high level: what it does, who uses it, why it matters, and how it creates measurable value.
+**Level:** B1-B2  
+**Focus:** Explain your system clearly without deep technical details, and show how communication changes by stakeholder.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **system** (n) – a platform made of connected modules and services  
-  _Example:_ Our system connects user requests, internal workflows, and reporting in one place.
+- **architecture** (n) - overall system structure  
+  _Example:_ Our architecture is simple for users but modular for developers.
 
-- **high-level overview** (n) – a simple explanation without low-level implementation details  
-  _Example:_ I usually start with a high-level overview before discussing technical parts.
+- **monolith** (n) - one large application with many parts  
+  _Example:_ We still use a monolith for admin features.
 
-- **core workflow** (n) – the main sequence of actions users follow  
-  _Example:_ The core workflow starts with data input and ends with approval and tracking.
+- **microservice** (n) - small service focused on one job  
+  _Example:_ Payment is handled by a separate microservice.
 
-- **target user** (n) – the primary audience a feature is designed for  
-  _Example:_ Our target users are operations teams and customer support staff.
+- **data pipeline** (n) - flow of data from source to destination  
+  _Example:_ The data pipeline updates dashboards every hour.
 
-- **pain point** (n) – a recurring user problem or frustration  
-  _Example:_ One pain point was that users had to switch tools too often.
+- **stakeholder** (n) - person or team affected by system results  
+  _Example:_ Product and support are key stakeholders for our release.
 
-- **business value** (n) – measurable benefit for the organization  
-  _Example:_ The new flow created business value by reducing manual processing time.
+- **requirement** (n) - what the product must do  
+  _Example:_ We clarified requirements before writing code.
 
-- **adoption rate** (n) – how many users actively use the system  
-  _Example:_ We track adoption rate to see whether the feature is actually useful.
+- **handoff** (n) - passing work between teams  
+  _Example:_ Clear handoff notes reduced delays with QA.
 
-- **operational efficiency** (n) – doing business tasks faster and with fewer errors  
-  _Example:_ The platform improved operational efficiency across multiple teams.
+- **dependency** (n) - another team or system you need  
+  _Example:_ We were blocked by an API dependency.
 
-- **integration** (n) – connection with other systems or data sources  
-  _Example:_ Integration with CRM tools helped users avoid duplicate work.
+- **incident** (n) - unexpected production problem  
+  _Example:_ During an incident, we gave updates every 30 minutes.
+
+- **SLA** (n) - expected response or uptime target  
+  _Example:_ We monitor SLA because enterprise clients care about uptime.
 
 **Additional useful terms:**
-- **user journey** (n) – step-by-step user experience from start to finish
-- **KPI** (n) – key performance indicator
-- **retention** (n) – percentage of users who keep using the system
-- **throughput** (n) – amount of work completed in a period
-- **time-to-value** (n) – time before users experience clear benefits
+- **owner** (n) - person responsible for a system area
+- **scope** (n) - boundaries of a project
+- **timeline** (n) - schedule of work
+- **constraint** (n) - limit like time or budget
+- **alignment** (n) - shared understanding across teams
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Defining purpose (to / so that)**  
-  The system was designed to centralize workflow management so that teams can make faster decisions.
+- **Present Simple for system overview**  
+  Our platform handles user accounts, billing, and analytics.
 
-- **Explaining impact (because / therefore / as a result)**  
-  Users had fewer manual steps; as a result, completion time decreased.
+- **There is / There are for structure**  
+  There are three main services: auth, payments, and reporting.
 
-- **Relative clauses for precision**  
-  We prioritize features that reduce repetitive work for operations teams.
+- **Passive voice for process**  
+  Tickets are reviewed by QA before release.
 
-- **Contrast (while / whereas / however)**  
-  The old process was flexible but inconsistent, whereas the new system is standardized and traceable.
+- **Purpose language (so that / in order to)**  
+  We use weekly syncs so that sales gets accurate timeline updates.
 
-- **Passive voice in product communication**  
-  New feature requests are reviewed monthly and prioritized by impact.
+- **Contrast (while / but)**  
+  Product focuses on speed, while QA focuses on risk.
+
+- **Conditionals for risk**  
+  If we skip alignment, we usually get rework later.
 
 ### Useful Sentence Patterns
-- At a high level, our system helps...
-- The main users are..., who need to...
-- One key pain point we solved was...
-- This feature creates value by...
-- From a business perspective, the biggest gain is...
-- A real example is when...
+- At a high level, our system...
+- The main users are..., and they care about...
+- I communicate with... mainly about...
+- We keep it simple by...
+- One common issue is..., so we...
+- This helps us avoid...
 
 </details>
 
@@ -83,86 +89,78 @@ description: Explain your system clearly at a high level, describe its purpose, 
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-
-- give a high-level overview
-- define target users
-- map the user journey
-- solve user pain points
-- improve user experience
-- increase adoption rate
-- streamline workflows
-- deliver business value
-- support daily operations
-- reduce manual errors
-- improve decision-making speed
-- track measurable outcomes
-- align product and business goals
+- explain system architecture
+- map stakeholder needs
+- align product requirements
+- reduce handoff delays
+- manage cross-team dependencies
+- communicate release status
+- escalate production incidents
+- define service boundaries
+- track timeline risks
+- share progress updates
+- avoid scope confusion
+- improve team alignment
 
 ### Useful Chunking & Sentence Starters
-
-- At a high level, the system…
-- The core purpose of the system is to…
-- The main users are…
-- From the user’s perspective…
-- One major pain point was…
-- The business benefit is that…
-- We validate this value by tracking…
-- A concrete case from our project was…
+- At a high level, the system...
+- From the user side,...
+- From the business side,...
+- Product cares about..., while QA cares about...
+- To keep everyone aligned,...
+- A real issue we faced was...
+- We solved it by...
+- The main lesson was...
 
 ### Useful Phrasal Verbs
-
-- **work with** → The system works with several other internal platforms.
-- **deal with** → It deals with large amounts of data every day.
-- **look after** → My team looks after the web interface and interaction quality.
-- **come up with** → We come up with improvements after interviewing users.
-- **break down** → I break down the workflow into simple steps for non-technical audiences.
-- **roll out** → We roll out major changes gradually to reduce risk.
-- **follow up on** → We follow up on usage metrics after every release.
+- **depend on** -> This release depends on backend API changes.
+- **hand over** -> We hand over test notes to QA before release.
+- **sync up** -> I sync up with product twice a week.
+- **follow through** -> We follow through on action items after meetings.
+- **step in** -> I step in when communication between teams breaks down.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – High-Level Explanation
+### Dialogue 1 - Explain the System
 
-**Teacher:** Can you explain what your system does?
-
-**You:**  
-At a high level, our system is a web platform that manages a full business workflow, from request creation to completion tracking. The main users are operations teams, team leads, and managers.
-
-Before this system, teams handled many steps manually across different tools. Now they can complete the process in one place with better visibility and fewer handover errors. As a frontend engineer, I focus on making the workflow clear, fast, and easy to learn.
-
-The business value is measurable: we reduced task completion time and improved cross-team coordination.
-
-### Dialogue 2 – Value for Users and Business
-
-**Teacher:** What value does this system bring?
+**Interviewer:** Can you describe the system you work on?
 
 **You:**  
-For users, the system reduces repetitive work and gives them one consistent process to follow. This lowers confusion and helps new members become productive faster.
+At a high level, we have a web app, a backend API, and a reporting service. Users create orders in the app, then data moves to billing and analytics.
 
-For the business, it improves data quality, shortens cycle time, and supports faster decisions with clearer reporting. In one release, after simplifying a key flow, we saw fewer support tickets and higher completion rates.
+I keep this explanation simple because non-technical stakeholders care more about flow and risk than implementation details.
 
-So the value is both user-level and business-level.
+### Dialogue 2 - Working with Stakeholders
 
-### Dialogue 3 – Handling a Skeptical Stakeholder
-
-**Teacher:** A manager says, "The old process still works. Why change?" How would you respond?
+**Interviewer:** How do you communicate with different teams?
 
 **You:**  
-I would agree that the old process works at a basic level, but it does not scale well. It depends on manual coordination, which increases delays and errors as volume grows. The new system standardizes steps, improves traceability, and provides measurable outcomes. So we are not changing for novelty; we are changing for consistency, speed, and long-term efficiency.
+With product, I discuss scope and deadlines. With QA, I discuss bug risk and test plans. With sales, I share what is ready for clients and what is still in backlog.
+
+It takes extra time, but it reduces confusion and last-minute changes.
+
+### Dialogue 3 - Handling Dependency Risk
+
+**Interviewer:** Tell me about a dependency problem.
+
+**You:**  
+We were waiting for a backend endpoint, and frontend work was blocked. I proposed a mock API so we could continue UI work and testing.
+
+We moved faster, but we still rechecked everything when the real API arrived to avoid regression.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-A strong system explanation should be simple, structured, and audience-aware. Instead of starting with technical details, begin with three core points: what problem the system solves, who the users are, and how value is measured.
+Engineers often explain systems to people who are not technical. In that case, clear language is more important than deep detail. You can describe the system as a flow: input, process, output, and business result.
 
-In many organizations, systems fail not because of technology, but because workflows are unclear or user needs are ignored. Teams that map real user journeys and prioritize practical improvements usually achieve better adoption and stronger business outcomes.
+Stakeholder communication is also part of engineering work. Product needs timeline clarity. QA needs risk details. Sales needs release confidence. If these groups are not aligned, teams lose time in rework and urgent fixes.
 
-When speaking professionally, connect system features to results. For example: fewer manual steps, faster completion, lower error rates, and better reporting. This makes your explanation more credible and persuasive.
+A strong answer in interviews shows both technical understanding and communication skill. Keep it practical and use one real case.
 
 </details>
 
@@ -170,28 +168,25 @@ When speaking professionally, connect system features to results. For example: f
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-
-1. At a high level, what does your system do?
-2. Who are the main users, and what pain points does the system solve?
-3. What is the core workflow from a user perspective?
-4. How do you measure business value and success?
+1. How would you describe your system in 60 seconds?
+2. Who are your main stakeholders and what do they care about?
+3. How do you keep product and engineering aligned?
+4. What is one communication mistake your team learned from?
 
 ### High-Value Case Questions
-
-5. Describe a release that improved both user experience and business efficiency.
-6. Tell me about a feature with low adoption. What did you change?
-7. Share a case where business priorities conflicted with user needs. How did you balance it?
+5. Share a case where dependency blocked your work.
+6. Tell me about a handoff that went wrong and how you fixed it.
+7. Describe a release where stakeholder updates helped avoid risk.
 
 ### Critical Discussion Questions
-
-8. Why use an integrated system instead of many separate tools?
-9. Is improving UX always worth the development cost?
-10. What should come first: adoption rate or feature completeness?
+8. Should engineers spend less time in meetings and more time coding?
+9. Is deep technical detail useful in stakeholder meetings?
+10. What is better: one big update or many short async updates?
 
 **Tips for speaking practice:**
-- Start with "problem -> users -> value".
-- Add one KPI or metric to strengthen credibility.
-- Explain at least one trade-off in long answers.
+- Explain flow before details.
+- Use stakeholder names (PM, QA, Sales, Ops).
+- Include one trade-off in your answer.
 
 ---
 

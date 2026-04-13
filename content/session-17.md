@@ -1,84 +1,87 @@
 ---
 sessionNumber: 17
-title: Boundaries, Stress Management & Sustainable Performance
-topic: Boundaries, Stress Management, and Sustainable Performance
-phase: PHASE 3 — DISCUSSION & IMPACT
-level: B2+
-description: Discuss pressure, burnout risk, and mental well-being in a practical, balanced, and professional way.
+title: Digital Identity, Personal Brand, and Authenticity
+topic: Professional Visibility vs Real Self
+phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+level: B1-B2
+description: Discuss the pressure to build a personal brand and how to stay authentic in public professional spaces.
 ---
 
-# Session 17: Boundaries, Stress Management & Sustainable Performance
+# Session 17: Digital Identity, Personal Brand, and Authenticity
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about handling pressure, setting boundaries, and maintaining long-term professional effectiveness.
+**Level:** B1-B2  
+**Focus:** Talk about online presence in tech with balanced views on visibility, opportunity, and authenticity.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **sustainable performance** (n) – high-quality output maintained over time  
-  _Example:_ I focus on sustainable performance rather than short bursts of overwork.
+- **digital identity** (n) - how you appear online  
+  _Example:_ My digital identity is more polished than my daily work reality.
 
-- **workload volatility** (n) – fluctuation in task pressure over time  
-  _Example:_ Workload volatility is common in product teams near release dates.
+- **personal brand** (n) - public professional image you build  
+  _Example:_ Personal brand can help with job opportunities.
 
-- **burnout risk** (n) – likelihood of long-term physical and mental exhaustion  
-  _Example:_ Ignoring boundaries increases burnout risk significantly.
+- **authenticity** (n) - being genuine, not fake  
+  _Example:_ I try to keep authenticity in my posts.
 
-- **psychological safety** (n) – environment where people can speak up safely  
-  _Example:_ Psychological safety improves team quality and decision-making.
+- **self-promotion** (n) - sharing achievements publicly  
+  _Example:_ Self-promotion is useful, but too much can feel forced.
 
-- **boundary setting** (n) – defining limits to protect focus and health  
-  _Example:_ Boundary setting helps me maintain consistent performance.
+- **signal vs noise** (n) - useful content compared with low-value content  
+  _Example:_ I focus on signal vs noise when posting online.
 
-- **recovery routine** (n) – regular habits for restoring energy  
-  _Example:_ Sleep, breaks, and exercise are part of my recovery routine.
+- **online persona** (n) - character someone shows online  
+  _Example:_ My online persona is more confident than I feel sometimes.
 
-- **priority clarity** (n) – clear agreement on what matters most now  
-  _Example:_ Priority clarity reduces stress during high-pressure periods.
+- **credibility** (n) - trust people have in your expertise  
+  _Example:_ Credibility grows when posts match real work experience.
 
-- **support system** (n) – people/processes that help under pressure  
-  _Example:_ A strong support system prevents incidents from becoming personal overload.
+- **tech influencer culture** (n) - trend of building audience in tech  
+  _Example:_ Tech influencer culture can create unrealistic pressure.
 
-- **emotional resilience** (n) – ability to remain stable during stress  
-  _Example:_ Emotional resilience can be trained through good habits.
+- **visibility** (n) - how often people see your work  
+  _Example:_ Visibility helped me connect with hiring managers.
 
-- **healthy culture** (n) – environment balancing delivery and well-being  
-  _Example:_ Healthy culture improves retention and product quality.
+- **impression management** (n) - controlling how others see you  
+  _Example:_ Too much impression management can feel exhausting.
 
 **Additional useful terms:**
-- **early warning signal** (n) – first indicator of stress overload
-- **capacity planning** (n) – matching scope with realistic team bandwidth
-- **unsustainable pace** (n) – speed that cannot be maintained safely
-- **decompression time** (n) – time intentionally reserved after intense periods
-- **managerial support** (n) – leadership action that protects team health
+- **portfolio signal** (n) - clear proof of your work quality
+- **public reputation** (n) - how people view you professionally
+- **performative behavior** (n) - acting for image, not real value
+- **content fatigue** (n) - stress from constant posting pressure
+- **professional presence** (n) - healthy and consistent online profile
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Cause-effect with nuance**  
-  High pressure can improve focus short-term, but sustained pressure reduces quality.
+- **Balanced opinion language**  
+  Personal branding can open doors, but it can also create pressure.
 
-- **Concession + boundary statement**  
-  Although peak periods are normal, chronic overtime should not be normalized.
+- **Comparison language**  
+  Online success often looks bigger than real daily work.
 
-- **Personal strategy language**  
-  Under pressure, I focus on priority clarity, communication, and realistic scope.
+- **Reflection in present perfect**  
+  I have changed how I share work to stay more authentic.
 
-- **Recommendation framing**  
-  If I had to recommend one change, it would be better capacity planning.
+- **Concession language**  
+  Although I post less often, my content is now more honest.
 
-- **Long-term perspective**  
-  In the long run, healthy teams deliver better and make fewer critical mistakes.
+- **Conditionals for choices**  
+  If I post only for attention, I lose motivation quickly.
+
+- **Preference language**  
+  I prefer sharing lessons learned instead of polished success stories.
 
 ### Useful Sentence Patterns
-- In high-pressure periods, I usually...
-- What helps me stay effective is...
-- The biggest risk of this culture is...
-- A practical boundary I use is...
-- Teams perform better when...
-- One lesson I learned is...
+- For me, personal brand means...
+- The pressure I feel online is...
+- I try to stay authentic by...
+- Visibility helps, but...
+- A healthy balance is...
+- One thing I avoid is...
 
 </details>
 
@@ -86,67 +89,78 @@ description: Discuss pressure, burnout risk, and mental well-being in a practica
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- manage pressure effectively
-- maintain sustainable performance
-- prevent burnout risk
-- set clear boundaries
-- improve psychological safety
-- align priorities early
-- create realistic timelines
-- support team resilience
-- protect long-term productivity
+- build personal brand
+- maintain authenticity
+- share real experience
+- improve professional visibility
+- avoid performative posting
+- build long-term credibility
+- manage online pressure
+- present work honestly
+- separate image from reality
+- create useful content
+- attract career opportunities
+- protect personal boundaries
 
 ### Useful Chunking & Sentence Starters
-- In my experience, pressure becomes harmful when...
-- To stay effective, I focus on...
-- One practical habit that helps is...
-- Team leaders should...
-- The long-term impact is...
+- In tech, online presence can...
+- A benefit of visibility is...
+- A risk of personal branding is...
+- I keep things authentic by...
+- One mistake I made was...
+- I changed my approach after...
+- For job search, it helps to...
+- My current rule is...
 
 ### Useful Phrasal Verbs
-- **burn out** → People burn out when pressure becomes constant.
-- **slow down** → Sometimes we need to slow down to avoid costly mistakes.
-- **speak up** → I speak up early when scope and timeline do not match.
-- **switch off** → Recovery improves when we can switch off after work.
+- **show up** -> I try to show up consistently with useful content.
+- **put out** -> I put out short posts about real project lessons.
+- **tone down** -> I toned down self-promotion and focused on value.
+- **stand out** -> Honest case studies help candidates stand out.
+- **burn out** -> Constant posting can burn people out.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Pressure Management
+### Dialogue 1 - Personal Brand View
 
-**Teacher:** How do you perform well under pressure without burning out?
-
-**You:**  
-I separate urgent tasks from important tasks and align priorities with stakeholders quickly. I also communicate realistic estimates early instead of accepting hidden overload.
-
-This helps me stay reliable under pressure while protecting long-term performance.
-
-### Dialogue 2 – Team Culture Perspective
-
-**Teacher:** What kind of work culture helps teams stay healthy and productive?
+**Interviewer:** Do developers need a personal brand?
 
 **You:**  
-A healthy culture has clear priorities, respectful communication, and realistic planning. It allows people to raise risks early without fear. In my experience, this improves both delivery speed and quality over time.
+It can help, especially for job opportunities and networking. I got two interview invitations after sharing practical posts about frontend bugs and fixes.
 
-### Dialogue 3 – General Life Balance Angle
+But I do not treat it like a performance game. I post only when I have real value to share.
 
-**Teacher:** Is work-life balance realistic in tech?
+### Dialogue 2 - Authenticity Challenge
+
+**Interviewer:** How do you stay authentic online?
 
 **You:**  
-Yes, but it requires active design, not wishful thinking. There are intense periods, but teams need recovery periods too. For me, balance means maintaining performance consistently, not being available all the time.
+I share both wins and lessons from mistakes. For example, I posted about a regression I introduced and how we prevented it later.
+
+This feels more honest. It may get fewer likes, but it builds stronger trust.
+
+### Dialogue 3 - Trade-off Discussion
+
+**Interviewer:** Is personal branding always positive?
+
+**You:**  
+Not always. It can increase visibility, but it can also create stress and comparison pressure.
+
+So I keep a simple rule: if content helps others, I share it; if not, I skip it.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-High performance and well-being are not opposites. In modern teams, they depend on each other. Teams that ignore well-being often suffer from quality decline, avoidable incidents, and high turnover.
+In the tech industry, online presence has become part of career growth. A strong profile can help with networking, hiring, and trust. At the same time, social platforms can create pressure to look constantly successful.
 
-Sustainable delivery requires healthy habits at both individual and organizational levels: realistic planning, clear communication, and recovery routines.
+A healthy approach is practical and honest. Share real work, useful lessons, and clear examples. Avoid posting only for attention. Long-term credibility comes from consistency and authenticity.
 
-In interviews, thoughtful candidates show that they can manage pressure while protecting quality and team stability.
+In interviews or discussions, balanced answers are best: personal branding has benefits, but people need boundaries to stay genuine.
 
 </details>
 
@@ -154,25 +168,25 @@ In interviews, thoughtful candidates show that they can manage pressure while pr
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you stay effective during high-pressure periods?
-2. What boundaries help you maintain long-term performance?
-3. How can teams reduce burnout risk without lowering standards?
-4. What does a healthy, high-performing engineering culture look like to you?
+1. What is the difference between personal brand and authenticity?
+2. How has your online presence affected your career?
+3. What kind of content do you choose to share publicly?
+4. How do you avoid unhealthy pressure from social media?
 
 ### High-Value Case Questions
-5. Describe a period of intense pressure and how you managed it.
-6. Tell me about a boundary you set that improved your effectiveness.
-7. Share a case where better communication reduced stress and rework.
+5. Share a case where online visibility led to a real opportunity.
+6. Tell me about a time you felt your online image was not authentic.
+7. Describe your current rules for professional posting.
 
 ### Critical Discussion Questions
-8. Is high pressure necessary for strong results in tech teams?
-9. Should companies prioritize delivery speed or team well-being when trade-offs appear?
-10. Is burnout mainly an individual issue or a system design issue?
+8. Does building a personal brand make you more authentic or less?
+9. Should engineers spend time on content creation?
+10. Is online reputation now as important as technical skill?
 
 **Tips for speaking practice:**
-- Avoid extreme statements; use balanced reasoning.
-- Explain one personal strategy and one team-level strategy.
-- Link well-being discussion to quality and business outcomes.
+- Give one real online example.
+- Include one benefit and one risk.
+- Keep language honest and simple.
 
 ---
 

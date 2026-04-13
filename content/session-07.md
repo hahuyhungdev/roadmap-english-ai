@@ -1,84 +1,87 @@
 ---
 sessionNumber: 7
-title: Root Cause Analysis & Problem Framing
-topic: Diagnosing Technical Problems & Business Impact
-phase: PHASE 2 — PROBLEM-SOLVING
-level: B2+
-description: Diagnose technical problems with a clear narrative: symptom, investigation, root cause, impact, and prevention.
+title: Root Cause Analysis and Impact Quantification
+topic: Diagnosing Incidents with Clear Business Impact
+phase: PHASE 2 - ANALYTICAL THINKING IN IT
+level: B1-B2
+description: Explain incidents in a structured way and quantify business impact with clear numbers.
 ---
 
-# Session 7: Root Cause Analysis & Problem Framing
+# Session 7: Root Cause Analysis and Impact Quantification
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about how you identify problems, validate hypotheses, and explain impact to technical and non-technical audiences.
+**Level:** B1-B2  
+**Focus:** Describe a bug or incident using a clear structure: what happened, why it happened, impact, fix, and prevention.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **symptom** (n) – the first visible sign of a deeper issue  
-  _Example:_ High timeout rates were the first symptom we noticed.
+- **root cause** (n) - the main reason a problem happened  
+  _Example:_ The root cause was a missing validation check.
 
-- **root cause** (n) – the fundamental reason the issue happened  
-  _Example:_ The root cause was a cache invalidation bug, not API latency.
+- **incident** (n) - serious production problem  
+  _Example:_ We had an incident during peak payment hours.
 
-- **hypothesis** (n) – a possible explanation tested with evidence  
-  _Example:_ Our initial hypothesis was incorrect, so we tested another path.
+- **timeline** (n) - sequence of events over time  
+  _Example:_ We created a timeline to understand what failed first.
 
-- **reproduce** (v) – to trigger the issue consistently  
-  _Example:_ Once we reproduced the bug locally, debugging became much faster.
+- **log analysis** (n) - reading logs to find patterns and errors  
+  _Example:_ Log analysis showed repeated timeout errors.
 
-- **blast radius** (n) – the scope of users/systems affected  
-  _Example:_ The blast radius was limited to enterprise accounts using one feature.
+- **5 Whys** (n) - method of asking why several times  
+  _Example:_ We used 5 Whys to avoid shallow conclusions.
 
-- **telemetry** (n) – logs, traces, and metrics used for diagnosis  
-  _Example:_ Telemetry data helped us confirm when the regression started.
+- **downtime** (n) - period when service is unavailable  
+  _Example:_ Downtime lasted about 45 minutes.
 
-- **bottleneck** (n) – the slowest point that limits overall performance  
-  _Example:_ The bottleneck was client-side rendering, not network calls.
+- **affected users** (n) - users impacted by the issue  
+  _Example:_ Around 2,000 users were affected.
 
-- **workaround** (n) – temporary fix before permanent solution  
-  _Example:_ We deployed a workaround to reduce user impact immediately.
+- **lost transactions** (n) - payments/orders that failed  
+  _Example:_ The bug caused lost transactions for three hours.
 
-- **regression** (n) – something that worked before but now fails  
-  _Example:_ The incident was caused by a regression from the latest release.
+- **mitigation** (n) - short-term action to reduce damage  
+  _Example:_ Our first mitigation was to disable one unstable endpoint.
 
-- **business impact** (n) – measurable effect on revenue, cost, or productivity  
-  _Example:_ The issue increased support tickets and delayed internal operations.
+- **post-mortem** (n) - review after incident  
+  _Example:_ We wrote a post-mortem and tracked follow-up tasks.
 
 **Additional useful terms:**
-- **MTTD** (n) – mean time to detect
-- **MTTR** (n) – mean time to recovery
-- **edge case** (n) – unusual but valid scenario
-- **false positive** (n) – alert that appears critical but is not
-- **preventive action** (n) – change made to avoid recurrence
+- **alert fatigue** (n) - too many alerts reduce response quality
+- **detection gap** (n) - delay between issue start and detection
+- **containment** (n) - actions to stop issue spread
+- **permanent fix** (n) - long-term solution
+- **owner** (n) - person responsible for follow-up
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Sequencing for clear storytelling**  
-  First, we confirmed the symptom. Then we tested hypotheses. Finally, we isolated the root cause.
+- **Past Simple for incident story**  
+  The issue started at 10:12 AM after deployment.
 
-- **Hedging when evidence is incomplete**  
-  It appeared that the API was the issue, but logs suggested otherwise.
+- **Past Continuous for ongoing failure**  
+  Users were seeing payment errors during checkout.
 
-- **Cause-and-effect with precision**  
-  The bug occurred because stale cache entries were reused after deployment.
+- **Cause and effect**  
+  Because one cache key expired early, requests failed.
 
-- **Contrast for correction**  
-  We initially suspected network latency; however, the actual bottleneck was rendering.
+- **Quantification language**  
+  The issue affected about 18% of traffic.
 
-- **Impact framing for non-technical audiences**  
-  This meant users needed more time per task, so operational productivity dropped.
+- **Sequence connectors**  
+  First we mitigated, then we identified root cause, and finally we deployed a fix.
+
+- **Future prevention language**  
+  We will add monitoring so the same issue is detected faster.
 
 ### Useful Sentence Patterns
-- The first symptom we noticed was...
-- Our initial hypothesis was..., but the data showed...
-- After reproducing the issue, we confirmed...
-- The root cause was..., which led to...
-- The blast radius included...
-- To prevent recurrence, we introduced...
+- The incident started when...
+- The root cause was...
+- We confirmed it by...
+- Business impact was...
+- Our immediate mitigation was...
+- To prevent this again, we...
 
 </details>
 
@@ -86,70 +89,78 @@ description: Diagnose technical problems with a clear narrative: symptom, invest
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- identify the root cause
-- narrow down the scope
-- reproduce the bug reliably
-- correlate logs and traces
-- quantify user impact
-- estimate business impact
-- deploy a temporary workaround
-- document incident findings
-- define preventive actions
-- reduce recurrence risk
+- identify root cause
+- quantify business impact
+- analyze production logs
+- restore service quickly
+- reduce detection time
+- ship a hotfix safely
+- write a clear post-mortem
+- assign follow-up owners
+- prevent repeat incidents
+- improve alert quality
+- track reliability metrics
+- communicate status updates
 
 ### Useful Chunking & Sentence Starters
-- At first glance, it looked like...
-- After correlating metrics and logs,...
-- One key signal was...
-- The issue was isolated to...
-- From a business standpoint, this caused...
+- At first, we thought...
+- After log analysis, we found...
+- The main impact was...
+- We took a short-term step to...
+- The permanent fix was...
+- A key lesson was...
+- Next time, we will...
+- We tracked action items in backlog.
 
 ### Useful Phrasal Verbs
-- **look into** → We looked into error spikes before touching the code.
-- **narrow down** → We narrowed down the issue to one release window.
-- **rule out** → We ruled out backend latency after trace analysis.
-- **follow up on** → We followed up on prevention actions in the next sprint.
+- **track down** -> We tracked down the failing query.
+- **shut off** -> We shut off one feature flag to stabilize traffic.
+- **bring back** -> We brought back full service after the fix.
+- **write up** -> I wrote up the timeline for the post-mortem.
+- **follow through** -> We followed through on every prevention task.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Technical Interview Style
+### Dialogue 1 - Structured Incident Explanation
 
-**Teacher:** Describe a serious technical problem you faced and how you diagnosed it.
-
-**You:**  
-We observed a sudden increase in page timeout complaints after a release. The first symptom was a spike in front-end error rates and slower task completion time.
-
-Our initial hypothesis was API latency, but trace data did not support that. After reproducing the issue with production-like data, we confirmed the root cause: repeated client-side re-renders triggered by a state synchronization bug.
-
-The blast radius was significant for heavy dashboard users, and support tickets increased. We deployed a workaround first, then implemented a permanent fix with stronger render guards.
-
-### Dialogue 2 – Explaining to a Non-Technical Manager
-
-**Teacher:** How would you explain this incident to a non-technical stakeholder?
+**Interviewer:** Tell me about a serious bug you investigated.
 
 **You:**  
-In simple terms, the system was doing the same work many times unnecessarily, so pages became slow. That increased user frustration and support workload. We stabilized it quickly with a temporary fix, then resolved the deeper cause in the next release. We also added monitoring to catch similar patterns earlier.
+We had a payment incident after a release. Users got timeout errors during checkout. We checked logs, compared old and new queries, and found an index issue as the root cause.
 
-### Dialogue 3 – Reflection Under Uncertainty
+We rolled back first, then shipped a safer fix. It restored service quickly, but we lost some transactions before mitigation.
 
-**Teacher:** What if you cannot find the root cause quickly?
+### Dialogue 2 - Quantifying Impact
+
+**Interviewer:** How did you explain business impact?
 
 **You:**  
-I separate response into two tracks: impact reduction and diagnosis. First, we reduce user impact through rollback or feature flags. In parallel, we continue structured investigation with clear hypotheses and evidence. This keeps service stable while we search for the real cause.
+I shared three numbers: downtime, affected users, and estimated lost revenue per hour. This helped product and leadership understand urgency.
+
+Technical detail mattered, but business numbers helped faster decisions.
+
+### Dialogue 3 - Prevention
+
+**Interviewer:** What did you change after the incident?
+
+**You:**  
+We added query performance alerts and a pre-release load test for high-risk endpoints. We also improved runbook steps for on-call.
+
+It took extra effort, but our detection time became much faster.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Strong engineers do not jump directly to fixes. They first frame the problem clearly: what changed, what broke, who is affected, and how severe the impact is. This framing helps teams prioritize response and avoid costly assumptions.
+Root cause analysis is not only about finding who made a mistake. It is about understanding the full chain: trigger, weak point, impact, and recovery. Calm, structured communication is very important in this process.
 
-Root-cause analysis is not only technical work; it is communication work. Teams need to explain uncertainty, share progress, and align on next steps while pressure is high. When communication is clear, decisions are faster and trust remains high.
+Strong teams quantify impact with clear numbers. Saying "it was bad" is not enough. You can share affected users, downtime, and estimated business loss. This helps teams prioritize fixes and prevention.
 
-The best outcome is not only recovery, but learning. Teams that convert incident lessons into preventive actions improve reliability over time.
+A good post-mortem should be practical: what happened, what we fixed, and what actions are already tracked.
 
 </details>
 
@@ -157,25 +168,25 @@ The best outcome is not only recovery, but learning. Teams that convert incident
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What technical problem did you face, and what was the first visible symptom?
-2. How did you test and validate your hypotheses?
-3. How did you confirm the root cause with evidence?
-4. How did you communicate impact to technical and non-technical stakeholders?
+1. How do you investigate a production bug step by step?
+2. What data do you use to find root cause?
+3. How do you quantify incident impact for non-technical teams?
+4. What makes a post-mortem useful?
 
 ### High-Value Case Questions
-5. Describe a case where your first assumption was wrong. What changed your mind?
-6. Share a problem that had both user impact and business impact.
-7. Tell me about a recurring issue and what prevention mechanism you added.
+5. Share a real incident and your role in the investigation.
+6. Tell me about a wrong assumption during debugging and how you corrected it.
+7. Describe one prevention change that reduced future incident risk.
 
 ### Critical Discussion Questions
-8. Is quick mitigation more important than immediate root-cause analysis during an incident?
-9. In your opinion, do incidents come more from code, process, or communication?
-10. How should teams split effort between prevention and fast recovery?
+8. Should teams optimize for faster recovery or perfect diagnosis first?
+9. Is it okay to ship a quick hotfix with known limitations?
+10. Who should own post-mortem follow-up actions?
 
 **Tips for speaking practice:**
-- Keep your narrative in this order: symptom -> diagnosis -> cause -> impact -> prevention.
-- Use plain language first, then add technical depth.
-- Add one metric (time, error rate, affected users) for credibility.
+- Use a clear sequence: incident -> analysis -> fix -> prevention.
+- Include at least one number in impact.
+- Keep blame out; focus on learning and system improvement.
 
 ---
 

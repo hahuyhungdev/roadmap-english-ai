@@ -1,88 +1,87 @@
 ---
 sessionNumber: 11
-title: Incident Response, Communication & Recovery
-topic: Production Reliability & Crisis Communication
-phase: PHASE 2 — PROBLEM-SOLVING
-level: B2+
-description: Describe a production issue you faced, how you handled it under pressure, your contribution, communication with stakeholders, and lessons learned.
+title: Burnout, Mental Health, and Hidden Pressure
+topic: Sustainable Performance in IT Teams
+phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+level: B1-B2
+description: Discuss burnout signs, pressure culture, and practical strategies for healthy long-term performance.
 ---
 
-# Session 11: Incident Response, Communication & Recovery
+# Session 11: Burnout, Mental Health, and Hidden Pressure
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about incident response, pressure management, and stakeholder communication.
+**Level:** B1-B2  
+**Focus:** Talk about stress and burnout in IT with honest, practical language and balanced reasoning.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **production issue** (n) – a problem that occurs in the live system  
-  _Example:_ We had a critical production issue last week.
+- **burnout** (n) - deep mental and physical exhaustion from long stress  
+  _Example:_ I noticed early burnout signs during back-to-back releases.
 
-- **incident** (n) – an unexpected event that needs immediate attention  
-  _Example:_ This was a high-priority incident.
+- **crunch time** (n) - period of intense work pressure  
+  _Example:_ Crunch time lasted too long in our last quarter.
 
-- **response** (n) – the action taken to deal with a problem  
-  _Example:_ Our incident response was fast and effective.
+- **on-call load** (n) - stress from support duty and alerts  
+  _Example:_ High on-call load affected team energy.
 
-- **stakeholder** (n) – a person or group affected by the project  
-  _Example:_ I communicated regularly with stakeholders during the incident.
+- **boundary** (n) - limit to protect time and health  
+  _Example:_ I set a boundary and stopped checking chat after work.
 
-- **downtime** (n) – the time when the system is not working  
-  _Example:_ We managed to minimize downtime.
+- **recovery** (n) - process of regaining energy and focus  
+  _Example:_ Real recovery needs rest, not just one free weekend.
 
-- **rollback** (n) – returning to a previous working version  
-  _Example:_ We prepared a rollback plan as a backup.
+- **stress signal** (n) - sign that pressure is becoming unhealthy  
+  _Example:_ Sleep problems were my main stress signal.
 
-- **post-mortem** (n) – a review after an incident to learn lessons  
-  _Example:_ We held a post-mortem meeting to analyze what happened.
+- **always available** (adj phrase) - expectation to respond anytime  
+  _Example:_ Being always available is not sustainable.
 
-- **triage** (n) – quick prioritization of severity and affected scope  
-  _Example:_ Effective triage helped us reduce confusion in the first 15 minutes.
+- **workload** (n) - amount of work assigned  
+  _Example:_ We redistributed workload after two people reported fatigue.
 
-- **containment** (n) – immediate action to limit damage  
-  _Example:_ Our first containment step was disabling a risky feature flag.
+- **supportive manager** (n) - manager who helps with realistic planning  
+  _Example:_ A supportive manager helped us reset priorities.
 
-- **escalation** (n) – involving higher-level support when risk increases  
-  _Example:_ We escalated early when impact expanded across accounts.
-
-- **status update** (n) – structured communication about progress and next steps  
-  _Example:_ We sent status updates every 20 minutes during recovery.
+- **sustainable pace** (n) - work speed that can continue long term  
+  _Example:_ We moved to a sustainable pace after process changes.
 
 **Additional useful terms:**
-- **SEV level** (n) – incident severity classification
-- **runbook** (n) – operational guide for common incidents
-- **ownership** (n) – clear responsibility for actions
-- **action item** (n) – concrete post-mortem follow-up task
-- **recovery time objective (RTO)** (n) – target maximum recovery duration
+- **mental bandwidth** (n) - available attention and energy
+- **rest day** (n) - full day without work activity
+- **team health** (n) - overall well-being of team members
+- **escalation** (n) - asking for help when pressure is too high
+- **priority reset** (n) - changing priorities to reduce overload
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Timeline storytelling**  
-  First we detected the issue, then we contained impact, and finally we restored service.
+- **Present Perfect for ongoing pressure**  
+  We have been under pressure for several months.
 
-- **Priority language under pressure**  
-  Under pressure, I prioritized containment before deep diagnosis.
+- **Past Simple for turning point**  
+  I spoke to my manager when I felt my energy dropping.
 
-- **Stakeholder update language**  
-  We communicated impact, mitigation, and next update time in each status message.
+- **Cause and effect language**  
+  Because on-call alerts were constant, focus quality went down.
 
-- **Reflection + prevention language**  
-  Looking back, the key gap was unclear ownership during handover.
+- **Advice and recommendation**  
+  Teams should plan buffer time after major releases.
 
-- **Conditional reflection**  
-  If we had escalated earlier, recovery would have been faster.
+- **Contrast language**  
+  High standards are good, but nonstop pressure is harmful.
+
+- **Conditionals for prevention**  
+  If teams ignore early signals, burnout risk grows quickly.
 
 ### Useful Sentence Patterns
-- When the issue occurred, I immediately…
-- Under pressure, I prioritized...
-- I kept stakeholders updated by...
-- We chose rollback/fix-first because...
-- In the end, we restored service by...
-- The biggest communication challenge was...
-- To prevent recurrence, we introduced...
+- A stress pattern I noticed was...
+- One boundary that helped me was...
+- We changed our process by...
+- It improved team health, but...
+- In my view, resilience means...
+- A practical step for managers is...
 
 </details>
 
@@ -90,69 +89,78 @@ description: Describe a production issue you faced, how you handled it under pre
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- triage the incident
-- contain user impact
-- minimize downtime
-- coordinate cross-functional response
-- provide timely status updates
-- implement rollback safely
-- conduct a post-mortem
-- define preventive action items
-- improve incident readiness
+- recognize burnout signs
+- manage on-call stress
+- set healthy boundaries
+- reduce chronic pressure
+- protect mental bandwidth
+- support team recovery
+- balance workload fairly
+- prevent long-term fatigue
+- build sustainable routines
+- communicate stress early
+- reset team priorities
+- improve work-life balance
 
 ### Useful Chunking & Sentence Starters
-- We detected the incident when...
-- In the first 15 minutes, we...
-- My primary role during the incident was...
-- We updated stakeholders every ... minutes with...
-- The key lesson from this incident was...
+- In my experience, burnout starts when...
+- A hidden pressure in IT is...
+- We used to..., but now...
+- One practical boundary is...
+- This helped in the short term, but...
+- To protect team health,...
+- A manager can support by...
+- The lesson I learned is...
 
 ### Useful Phrasal Verbs
-- **look into** → We looked into logs and alert patterns immediately.
-- **step in** → I stepped in to coordinate frontend triage.
-- **bring down** → We brought down the error rate after rollback.
-- **follow up on** → We followed up on all post-mortem action items.
+- **burn out** -> I nearly burned out during a long incident cycle.
+- **slow down** -> We slowed down feature work for one sprint.
+- **speak up** -> Team members were encouraged to speak up early.
+- **switch off** -> I switch off notifications after work hours.
+- **check in** -> We check in weekly on workload and stress.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Incident Timeline
+### Dialogue 1 - Recognizing Burnout
 
-**Teacher:** Walk me through a production incident you handled.
-
-**You:**  
-We detected the incident through monitoring alerts and customer reports. In the first 15 minutes, we triaged severity, identified affected flows, and assigned clear owners for backend, frontend, and communication.
-
-To reduce impact quickly, we rolled back the risky change and disabled one feature flag. In parallel, we investigated logs to validate the triggering condition.
-
-Service was restored within the target window. After recovery, we documented action items and updated our runbook.
-
-### Dialogue 2 – Stakeholder Communication
-
-**Teacher:** How did you communicate with stakeholders during the incident?
+**Interviewer:** Have you ever faced burnout risk?
 
 **You:**  
-I used short and structured updates: current impact, mitigation status, and next update time. I avoided deep technical details unless requested. This kept decision-makers aligned and reduced panic.
+Yes. During a heavy release period, I was on-call too often and started losing focus. I felt tired even after weekends.
 
-### Dialogue 3 – Pressure Management
+I spoke with my manager and reduced after-hours work for a while. It helped, but we also needed team-level changes.
 
-**Teacher:** How do you stay calm and effective during major outages?
+### Dialogue 2 - Healthy vs Toxic Pressure
+
+**Interviewer:** Is high pressure always bad?
 
 **You:**  
-I focus on process discipline: clear priorities, explicit ownership, and short feedback loops. I also separate urgent containment from deeper analysis. That structure helps the team move fast without losing clarity.
+Not always. Short pressure before a release can improve focus. But if pressure becomes normal every week, quality and morale drop.
+
+So pressure can help in short bursts, but it is harmful without recovery time.
+
+### Dialogue 3 - Practical Recovery Plan
+
+**Interviewer:** What recovery strategy worked for your team?
+
+**You:**  
+We added no-meeting blocks, rotated on-call more fairly, and reserved one sprint every two months for bug cleanup.
+
+Velocity looked slightly lower at first, but incidents and stress both decreased.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Production incidents test both technical depth and communication maturity. Fast fixes without clear updates can still damage trust. On the other hand, clear communication without containment is not enough.
+Burnout in IT is often quiet at first. People still deliver tasks, but energy, focus, and motivation go down. Teams may ignore these signs until bugs increase and communication gets worse.
 
-High-performing teams use a repeatable response flow: detect, triage, contain, recover, and learn. They also train this process before incidents happen, not during the crisis.
+Healthy teams treat performance as a long-term goal. They set clear boundaries, share workload fairly, and create space for recovery after high-pressure work. This is not about lowering standards. It is about keeping quality and people stable over time.
 
-In interviews, strong answers show leadership behavior: clear priorities, calm communication, and concrete prevention actions.
+In discussions, balanced language is important: pressure is sometimes necessary, but constant pressure is not sustainable.
 
 </details>
 
@@ -160,25 +168,25 @@ In interviews, strong answers show leadership behavior: clear priorities, calm c
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. Walk me through a production incident from detection to recovery.
-2. What was your role, and how did you prioritize the first 30 minutes?
-3. How did you communicate status and risk to stakeholders?
-4. What post-incident actions prevented similar issues?
+1. What are early signs of burnout in software teams?
+2. How do you protect your energy during high-pressure periods?
+3. How can managers reduce hidden pressure in IT teams?
+4. What is one boundary that improved your work quality?
 
 ### High-Value Case Questions
-5. Describe an incident where rollback was the best decision.
-6. Share a case where communication quality changed the incident outcome.
-7. Tell me about a high-pressure incident and how you stayed effective.
+5. Share a time when stress affected your work and how you handled it.
+6. Tell me about a team process change that reduced burnout risk.
+7. Describe a situation where saying "no" was necessary for sustainability.
 
 ### Critical Discussion Questions
-8. Is quick rollback better than immediate root-cause fixing during an outage?
-9. Should every developer participate in on-call rotation?
-10. What matters most in incident handling: technical depth or communication clarity?
+8. Is high-pressure culture a sign of ambition or a system problem?
+9. Should companies pay more for heavy on-call work?
+10. Is resilience more personal or organizational?
 
 **Tips for speaking practice:**
-- Answer in this order: detect -> triage -> contain -> recover -> prevent.
-- Mention audience and cadence of status updates.
-- End with one concrete change that improved future readiness.
+- Use honest but professional language.
+- Give one personal example and one team-level fix.
+- Include a simple trade-off in your answer.
 
 ---
 

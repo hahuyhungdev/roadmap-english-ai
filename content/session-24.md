@@ -1,80 +1,87 @@
 ---
 sessionNumber: 24
-title: Collaboration, Conflict Navigation & Influence Without Authority
-topic: Team Dynamics, Conflict Resolution, and Cross-Functional Influence
-phase: PHASE 4 — BEHAVIORAL & CULTURE FIT
-level: B2+
-description: Practice handling team conflict and influencing outcomes through collaboration, clarity, and trust rather than formal power.
+title: Salary, Negotiation, and Professional Feedback
+topic: Compensation Conversations and Growth Through Feedback
+phase: PHASE 4 - BEHAVIORAL & CAREER
+level: B1-B2
+description: Practice salary negotiation and feedback conversations with clear, professional language.
 ---
 
-# Session 24: Collaboration, Conflict Navigation & Influence Without Authority
+# Session 24: Salary, Negotiation, and Professional Feedback
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about teamwork, difficult conversations, and practical influence in cross-functional environments.
+**Level:** B1-B2  
+**Focus:** Handle compensation and feedback discussions confidently, respectfully, and with clear structure.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **collaboration pattern** (n) - recurring way people coordinate and work together  
-  _Example:_ Healthy collaboration patterns reduce project friction.
+- **compensation** (n) - total pay package  
+  _Example:_ I evaluate compensation as salary plus benefits.
 
-- **conflict navigation** (n) - managing disagreement constructively  
-  _Example:_ Conflict navigation is a core leadership skill.
+- **salary range** (n) - minimum and maximum expected pay  
+  _Example:_ I prepared a realistic salary range before negotiation.
 
-- **influence without authority** (n) - ability to shape decisions without formal power  
-  _Example:_ Senior engineers often need influence without authority.
+- **negotiation** (n) - discussion to reach agreement  
+  _Example:_ Negotiation worked better when I used market data.
 
-- **cross-functional partner** (n) - colleague from another discipline  
-  _Example:_ Strong relationships with cross-functional partners improve execution.
+- **market benchmark** (n) - salary data from similar roles  
+  _Example:_ I checked market benchmarks on levels.fyi and Glassdoor.
 
-- **alignment strategy** (n) - plan to create shared understanding  
-  _Example:_ My alignment strategy starts with goals and constraints.
+- **non-salary benefits** (n) - value beyond base pay  
+  _Example:_ Non-salary benefits like remote flexibility mattered to me.
 
-- **communication friction** (n) - delays caused by unclear communication  
-  _Example:_ Written summaries reduced communication friction.
+- **constructive feedback** (n) - useful feedback focused on improvement  
+  _Example:_ I gave constructive feedback with specific examples.
 
-- **constructive disagreement** (n) - respectful conflict focused on better outcomes  
-  _Example:_ Constructive disagreement improved our final architecture.
+- **defensive reaction** (n) - emotional resistance to feedback  
+  _Example:_ I try to avoid defensive reactions during review.
 
-- **decision ownership** (n) - clarity about who makes final decisions  
-  _Example:_ Decision ownership prevented repeated debates.
+- **action plan** (n) - clear steps after feedback  
+  _Example:_ I created an action plan after performance review.
 
-- **relationship trust** (n) - confidence built through reliability and respect  
-  _Example:_ Relationship trust makes hard conversations easier.
+- **follow-up** (n) - checking progress after changes  
+  _Example:_ I scheduled follow-up with my manager in four weeks.
 
-- **consensus quality** (n) - depth and durability of agreement  
-  _Example:_ Consensus quality improved after we clarified trade-offs.
+- **visible improvement** (n) - clear progress others can see  
+  _Example:_ I showed visible improvement in communication and delivery.
 
 **Additional useful terms:**
-- **stakeholder expectation** (n)
-- **conflict trigger** (n)
-- **shared objective** (n)
-- **negotiation boundary** (n)
-- **influence tactic** (n)
+- **offer package** (n) - full job offer details
+- **negotiation timing** (n) - best moment to discuss compensation
+- **feedback loop** (n) - cycle of feedback and action
+- **performance evidence** (n) - proof of your impact
+- **growth area** (n) - skill you need to improve
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Respectful disagreement**  
-  I understand your point, but I see a reliability risk if we skip that validation step.
+- **Polite negotiation language**  
+  Based on market data and role scope, I am targeting this range.
 
-- **Goal re-centering language**  
-  Instead of debating preferences, let us align on the user outcome we need.
+- **Conditional negotiation language**  
+  If base salary is fixed, we can discuss learning budget or remote setup.
 
-- **Conditional compromise**  
-  We can support faster delivery if we reduce scope and protect critical quality checks.
+- **Concession language**  
+  I understand budget limits, but I would like to discuss total package.
 
-- **Relationship-preserving language**  
-  I appreciate your urgency, and I think we can find a balanced option.
+- **Feedback response language**  
+  Thank you for the feedback; here is how I plan to act on it.
+
+- **Evidence language**  
+  In the last two quarters, I improved deployment stability and reduced bugs.
+
+- **Progress follow-up language**  
+  Let us review progress after one month.
 
 ### Useful Sentence Patterns
-- The conflict was mainly about...
-- To keep discussion constructive, I...
-- A compromise that worked for both sides was...
-- I influenced the decision by...
-- The trust-building action that helped most was...
+- My expected range is...
+- I based this on...
+- If needed, I am open to...
+- I appreciate the feedback, and...
+- My action plan includes...
+- I will measure progress by...
 
 </details>
 
@@ -82,66 +89,78 @@ description: Practice handling team conflict and influencing outcomes through co
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- navigate team conflict
-- influence key decisions
-- align across functions
-- preserve working relationships
-- clarify decision ownership
-- reduce communication friction
-- build durable consensus
-- escalate issues responsibly
+- negotiate compensation professionally
+- prepare salary benchmarks
+- discuss total package
+- align pay with impact
+- respond to feedback calmly
+- turn feedback into action
+- track visible improvements
+- request clarification politely
+- set realistic expectations
+- follow up on progress
+- balance confidence and humility
+- maintain professional tone
 
 ### Useful Chunking & Sentence Starters
-- In cross-functional projects, one common conflict is...
-- I usually de-escalate conflict by...
-- To influence without authority, I...
-- The agreement became possible when...
-- Looking back, the key lesson is...
+- Before negotiation, I...
+- A fair range for this role is...
+- If salary flexibility is limited,...
+- I received feedback that...
+- To act on that feedback, I...
+- We reviewed progress by...
+- The result was...
+- Next time, I will...
 
 ### Useful Phrasal Verbs
-- **work through** -> We worked through disagreement step by step.
-- **push back on** -> I pushed back on risky assumptions respectfully.
-- **bring together** -> I brought together engineering and product priorities.
-- **follow up with** -> I followed up with a clear written summary.
+- **bring up** -> I brought up compensation after discussing role scope.
+- **back up** -> I backed up my range with market data.
+- **work on** -> I worked on communication after feedback.
+- **follow up** -> I followed up with concrete progress updates.
+- **step up** -> I stepped up ownership after review feedback.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Resolving Team Conflict
+### Dialogue 1 - Salary Negotiation
 
-**Teacher:** Tell me about a conflict you handled successfully.
-
-**You:**  
-Two teams disagreed on whether to prioritize speed or reliability. I asked both sides to define risks and success criteria, then compared options transparently.  
-
-We agreed on a phased plan that delivered quickly without ignoring key safeguards. The conflict ended because trade-offs were explicit.
-
-### Dialogue 2 - Influence Without Formal Authority
-
-**Teacher:** How do you influence when you are not the manager?
+**Interviewer:** What are your salary expectations?
 
 **You:**  
-I focus on clarity, data, and trust. I present options with expected outcomes, listen to concerns carefully, and propose compromises that protect shared goals.
+Based on market benchmarks, role scope, and my recent impact, I am targeting this range. I am open to discussing the full package, including learning budget and remote setup.
 
-### Dialogue 3 - General Life Transfer
+I want a fair agreement for both sides, not only the highest number.
 
-**Teacher:** Do conflict navigation skills matter outside work?
+### Dialogue 2 - Receiving Critical Feedback
+
+**Interviewer:** Tell me about a time you received tough feedback.
 
 **You:**  
-Yes. In daily life, clear communication and respect help people disagree without damaging relationships. The principle is similar: understand first, then influence.
+My manager said my status updates were too technical for product stakeholders. I asked for examples and changed my update format to include risk, timeline, and next steps.
+
+After one month, collaboration improved and fewer misunderstandings happened.
+
+### Dialogue 3 - Giving Feedback Professionally
+
+**Interviewer:** How do you give feedback without damaging relationships?
+
+**You:**  
+I focus on behavior and impact, not personality. I share one specific example and one suggestion for improvement.
+
+This is direct but respectful. It may feel uncomfortable, but it keeps trust.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Collaboration in modern teams is rarely simple. Different functions have different priorities, timelines, and constraints.
+Salary and feedback discussions are both communication tests. In negotiation, preparation matters: know market data, know your impact, and stay flexible on total package options.
 
-Professionals who can navigate conflict and influence outcomes without authority become highly valuable. They reduce friction, increase alignment, and improve execution speed.
+For feedback, maturity means two things: giving useful feedback respectfully and receiving critical feedback without defensiveness. The most important part is action. If behavior does not change, the feedback process fails.
 
-In interviews, concrete stories about conflict navigation often reveal real leadership potential.
+In interview answers, show calm tone, real examples, and clear follow-up steps.
 
 </details>
 
@@ -149,25 +168,25 @@ In interviews, concrete stories about conflict navigation often reveal real lead
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you handle conflict in cross-functional teams?
-2. What strategies help you influence decisions without authority?
-3. How do you balance relationship trust and decision quality?
-4. How do you keep disagreement constructive under pressure?
+1. How do you prepare for salary negotiation?
+2. What do you do if your expected salary is above budget?
+3. How do you receive critical feedback professionally?
+4. How do you show visible improvement after feedback?
 
 ### High-Value Case Questions
-5. Describe a conflict where your communication changed the outcome.
-6. Tell me about a time you influenced a decision as an individual contributor.
-7. Share a case where collaboration quality improved project results.
+5. Share a successful negotiation and what worked.
+6. Tell me about feedback that changed your behavior.
+7. Describe how you gave difficult feedback to a teammate.
 
 ### Critical Discussion Questions
-8. Is consensus always necessary for effective execution?
-9. Should conflict be minimized or used as a source of better ideas?
-10. Can influence skills outweigh formal authority in modern teams?
+8. Should candidates negotiate every offer?
+9. Is compensation or growth opportunity more important early in career?
+10. Why do many feedback processes fail in teams?
 
 **Tips for speaking practice:**
-- Describe conflict neutrally and avoid personal blame.
-- Explain how you aligned goals before proposing solutions.
-- Finish with measurable impact on trust or delivery quality.
+- Use polite, confident language.
+- Include one real negotiation or feedback case.
+- End with concrete outcomes.
 
 ---
 

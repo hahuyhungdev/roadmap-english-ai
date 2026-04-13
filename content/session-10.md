@@ -1,88 +1,87 @@
 ---
 sessionNumber: 10
-title: Performance Optimization with Business Impact
-topic: Performance Engineering, UX & Product Metrics
-phase: PHASE 2 — PROBLEM-SOLVING
-level: B2+
-description: Discuss performance problems in enterprise applications, optimization techniques you used, and the business impact.
+title: Defending Decisions and Influencing Without Authority
+topic: Persuasion with Cost, Risk, and Timeline Language
+phase: PHASE 2 - ANALYTICAL THINKING IN IT
+level: B1-B2
+description: Practice explaining and defending technical decisions to product, clients, and senior engineers.
 ---
 
-# Session 10: Performance Optimization with Business Impact
+# Session 10: Defending Decisions and Influencing Without Authority
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about diagnosing performance problems, choosing optimization strategy, and translating improvements into business value.
+**Level:** B1-B2  
+**Focus:** Stay confident and collaborative when your decision is challenged, using clear business language.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **performance** (n) – how fast or efficient something is  
-  _Example:_ Poor performance can frustrate users and affect business results.
+- **influence** (v/n) - change decisions without formal power  
+  _Example:_ I influenced the roadmap by showing risk data.
 
-- **optimization** (n) – the process of making something work better  
-  _Example:_ We applied several optimization techniques.
+- **pushback** (n) - disagreement or challenge  
+  _Example:_ I got pushback from product about timeline.
 
-- **loading time** (n) – the time it takes for a page to load  
-  _Example:_ We managed to reduce the average loading time significantly.
+- **alignment** (n) - shared agreement on direction  
+  _Example:_ We reached alignment after comparing options.
 
-- **rendering** (n) – the process of displaying content on the screen  
-  _Example:_ Unnecessary rendering was causing slowdowns.
+- **risk** (n) - chance of negative result  
+  _Example:_ I explained the risk of shipping without tests.
 
-- **bottleneck** (n) – a part that slows down the whole system  
-  _Example:_ The large table component was the main bottleneck.
+- **timeline** (n) - schedule and deadlines  
+  _Example:_ We adjusted timeline to include one extra QA day.
 
-- **user experience** (n) – how pleasant and easy it is to use the product  
-  _Example:_ Good performance directly improves user experience.
+- **scope** (n) - what is included in current work  
+  _Example:_ We reduced scope to keep release stable.
 
-- **business impact** (n) – the effect on the company’s goals  
-  _Example:_ Performance issues can have a serious business impact.
+- **compromise** (n/v) - agreement where both sides adjust  
+  _Example:_ We made a compromise on feature depth.
 
-- **latency** (n) – delay between action and response  
-  _Example:_ High latency in critical flows reduced user confidence.
+- **evidence** (n) - data that supports your argument  
+  _Example:_ I used incident history as evidence.
 
-- **throughput** (n) – amount of work completed in a period  
-  _Example:_ After optimization, throughput improved during peak hours.
+- **stakeholder** (n) - person affected by decision  
+  _Example:_ Different stakeholders had different priorities.
 
-- **critical path** (n) – steps that most affect perceived speed  
-  _Example:_ We optimized the critical path before secondary screens.
-
-- **Core Web Vitals** (n) – key user-centered web performance metrics  
-  _Example:_ We tracked Core Web Vitals to measure real user impact.
+- **escalation path** (n) - process for unresolved disagreement  
+  _Example:_ We used the escalation path when teams could not agree.
 
 **Additional useful terms:**
-- **bundle size** (n) – total JavaScript/CSS payload
-- **lazy loading** (n) – loading resources only when needed
-- **render budget** (n) – target limit for render cost/time
-- **cache strategy** (n) – policy for storing and reusing data
-- **performance regression** (n) – degradation after release
+- **decision log** (n) - written record of choices and reasons
+- **option matrix** (n) - side-by-side comparison table
+- **non-negotiable** (n/adj) - requirement that cannot change
+- **soft skill** (n) - communication and teamwork ability
+- **buy-in** (n) - support from people involved
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Before/After impact framing**  
-  Before optimization, users waited 8 seconds; after optimization, median load time was 1.8 seconds.
+- **Polite disagreement**  
+  I see your point, but this option has higher release risk.
 
-- **Result with metric language**  
-  As a result, drop-off rate decreased and completion rate increased.
+- **Evidence-based statements**  
+  Based on last quarter incidents, this path is safer.
 
-- **Priority language**  
-  We prioritized high-impact bottlenecks first instead of optimizing everything.
+- **Conditional persuasion**  
+  If we reduce scope now, we can protect quality and still hit the date.
 
-- **Concession with business logic**  
-  Although the refactor required extra effort, the ROI was clear within one release cycle.
+- **Concession + recommendation**  
+  Although this approach is slower, it avoids costly regressions.
 
-- **Recommendation language**  
-  If I had to prioritize one metric, I would prioritize user task completion time.
+- **Future impact language**  
+  This decision will reduce support load in the next release cycle.
+
+- **Collaborative framing**  
+  Let us compare options and pick the one with lowest business risk.
 
 ### Useful Sentence Patterns
-- The main performance issue was…
-- To improve performance, we focused on...
-- The biggest bottleneck was...
-- We measured impact using...
-- As a result of the optimization,...
-- From a business perspective, this improved...
-- The highest-ROI improvement was...
+- I understand the concern, and...
+- From a risk perspective,...
+- If we do..., the likely outcome is...
+- My recommendation is...
+- We can compromise by...
+- This gives us a better balance between...
 
 </details>
 
@@ -90,70 +89,78 @@ description: Discuss performance problems in enterprise applications, optimizati
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- performance issue
-- optimize the critical path
-- reduce loading time
-- improve user experience
-- eliminate bottlenecks
-- prevent performance regression
-- improve Core Web Vitals
-- reduce bounce/drop-off rates
-- monitor real-user metrics
-- increase conversion efficiency
+- defend technical decisions
+- influence without authority
+- handle stakeholder pushback
+- present clear evidence
+- align on priorities
+- negotiate feature scope
+- communicate business risk
+- build cross-team trust
+- hold a clear position
+- stay open to feedback
+- document final decisions
+- protect release quality
 
 ### Useful Chunking & Sentence Starters
-- We observed a slowdown in...
-- After profiling, we identified...
-- We chose to optimize ... first because...
-- After release, the metric trend showed...
-- From a business point of view, this translated into...
+- I agree on the goal, but...
+- The key risk is...
+- From the timeline side,...
+- A practical compromise is...
+- If we choose this path,...
+- To reduce conflict, we...
+- I explained it in business terms: ...
+- In the end, we aligned on...
 
 ### Useful Phrasal Verbs
-- **slow down** → Large rendering tasks slowed down key user flows.
-- **speed up** → We sped up first-content display with code splitting.
-- **cut down on** → We cut down on unnecessary client-side computation.
-- **bring down** → We brought down page load and error rates together.
+- **push back** -> I pushed back on the unsafe timeline.
+- **back up** -> I backed up my point with bug data.
+- **work out** -> We worked out a compromise with product.
+- **line up** -> We lined up QA support before final decision.
+- **stick to** -> I stuck to the quality gate requirements.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Performance Story
+### Dialogue 1 - Product Pushback
 
-**Teacher:** Tell me about a performance issue you solved and the impact.
-
-**You:**  
-We had a serious performance issue in a high-traffic dashboard. Users experienced slow loading and occasional UI freezing during filtering.
-
-After profiling, we found two bottlenecks: expensive re-renders and oversized initial bundles. We optimized the render path, introduced lazy loading, and tightened data-fetch sequencing.
-
-Within one release, median load time dropped significantly and task completion improved. Support complaints also decreased, which gave clear business value.
-
-### Dialogue 2 – Stakeholder Conversation
-
-**Teacher:** How do you convince stakeholders that performance work is worth the effort?
+**Interviewer:** Tell me about a time you had to persuade a product manager.
 
 **You:**  
-I link performance to outcomes they care about: conversion, retention, and support cost. For example, "a 2-second improvement reduces abandonment and improves completion." Once impact is measurable, performance becomes a product priority, not just an engineering preference.
+Product wanted to ship a feature in one week, but we had unresolved regression risk. I showed bug trends from similar releases and explained likely support impact.
 
-### Dialogue 3 – Optimization Scope
+We agreed to reduce scope and ship core functionality first. We moved a bit slower, but quality stayed stable.
 
-**Teacher:** Do you optimize everything from day one?
+### Dialogue 2 - Senior Engineer Challenge
+
+**Interviewer:** What if a senior engineer disagrees with you?
 
 **You:**  
-No, I optimize by impact. Early in a feature, I set reasonable performance budgets and monitor usage. Then I prioritize bottlenecks that affect key user journeys. This keeps delivery practical while still protecting quality.
+I focus on facts, not hierarchy. In one design review, I suggested a simpler solution with lower operational cost. A senior engineer preferred a complex architecture.
+
+We compared options in a decision log, and the team chose the simpler path for current scale.
+
+### Dialogue 3 - Holding Position Professionally
+
+**Interviewer:** How do you stay confident without being defensive?
+
+**You:**  
+I acknowledge other views first, then explain my reasoning with data. If I am wrong, I adjust quickly. If risk is serious, I hold my position clearly.
+
+This keeps discussion professional and focused on outcomes.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Performance engineering is not about making everything "as fast as possible." It is about improving what users feel most and what business outcomes depend on.
+Influence in engineering is not about being the loudest person. It is about clear reasoning, good timing, and respectful communication. Many decisions involve conflicting priorities: speed, quality, cost, and user impact.
 
-High-performing teams measure first, optimize second, and validate after release. They focus on critical journeys, not vanity metrics.
+When you defend a technical decision, use evidence and simple language. Explain what could happen if the team chooses a risky path. Offer alternatives, not only criticism.
 
-In interviews, strong answers combine technical diagnosis with business translation: what changed, why it mattered, and how success was measured.
+Strong engineers are firm on important risks but flexible on details. That balance builds trust.
 
 </details>
 
@@ -161,25 +168,25 @@ In interviews, strong answers combine technical diagnosis with business translat
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What performance issue had the strongest impact on users?
-2. How did you measure and localize the bottleneck?
-3. Which optimization had the highest ROI?
-4. How did performance improvements affect product/business metrics?
+1. How do you defend a technical decision in front of non-technical stakeholders?
+2. How do you handle pushback on timeline or scope?
+3. What data do you use to persuade people?
+4. How do you disagree with a senior engineer professionally?
 
 ### High-Value Case Questions
-5. Describe a case where optimization reduced drop-off or complaints.
-6. Tell me about an optimization that improved speed but increased complexity.
-7. Share a case where stakeholders initially underestimated performance work.
+5. Share a case where you changed someone else's decision.
+6. Tell me about a compromise that protected quality.
+7. Describe a time when you changed your own view after feedback.
 
 ### Critical Discussion Questions
-8. Should teams optimize early or wait for usage data first?
-9. Is visual polish still valuable when baseline performance is weak?
-10. How do you justify performance investment to non-technical decision-makers?
+8. Is speed more important than quality in early-stage products?
+9. Should technical decisions be owned by engineers only?
+10. How much risk is acceptable when leadership pushes for delivery?
 
 **Tips for speaking practice:**
-- Use one before/after metric in every answer.
-- Connect each technical change to a user or business outcome.
-- Explain your reasoning in simple language before technical details.
+- Use calm, neutral language.
+- Explain risk in business terms.
+- Include one compromise in your story.
 
 ---
 

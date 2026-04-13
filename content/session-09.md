@@ -1,84 +1,87 @@
 ---
 sessionNumber: 9
-title: Decision Frameworks & Strategic Trade-offs
-topic: Evaluating Options Under Real Constraints
-phase: PHASE 2 — PROBLEM-SOLVING
-level: B2+
-description: Discuss trade-offs in frontend development, explain the reasoning behind your choices, and evaluate different options.
+title: Incident Under Pressure
+topic: Real-Time Outage Handling and Team Coordination
+phase: PHASE 2 - ANALYTICAL THINKING IN IT
+level: B1-B2
+description: Describe how you handle production incidents under time pressure, including communication and post-mortem work.
 ---
 
-# Session 9: Decision Frameworks & Strategic Trade-offs
+# Session 9: Incident Under Pressure
 
-**Level:** B2+  
-**Focus:** Speaking in a B2+/C1 interview style about how you compare options, prioritize criteria, and make trade-offs under uncertainty.
+**Level:** B1-B2  
+**Focus:** Explain what you did during a live outage, how you stayed calm, and how you coordinated technical and non-technical updates.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **trade-off** (n) – accepting a disadvantage to gain an advantage  
-  _Example:_ We accepted a short-term trade-off to protect long-term maintainability.
+- **outage** (n) - period when service is down  
+  _Example:_ We had a major outage during a marketing campaign.
 
-- **option** (n) – one of several possible choices  
-  _Example:_ We evaluated three options before committing engineering capacity.
+- **on-call** (adj/n) - engineer responsible for urgent issues  
+  _Example:_ I was on-call when the alerts started.
 
-- **advantage** (n) – a positive aspect  
-  _Example:_ The biggest advantage was faster time-to-value.
+- **escalation** (n) - raising issue to higher support level  
+  _Example:_ We escalated to database team within 10 minutes.
 
-- **disadvantage** (n) – a negative aspect  
-  _Example:_ The main disadvantage was higher operational complexity.
+- **war room** (n) - focused channel/meeting during incident  
+  _Example:_ We opened a war room to coordinate quickly.
 
-- **evaluate** (v) – to judge how good something is  
-  _Example:_ We evaluated options against reliability, cost, and execution risk.
+- **status update** (n) - clear progress message during incident  
+  _Example:_ We sent status updates every 15 minutes.
 
-- **balance** (v) – to find a suitable middle point  
-  _Example:_ Good decisions balance product urgency and engineering health.
+- **containment** (n) - action to stop issue from getting worse  
+  _Example:_ First containment step was disabling one faulty job.
 
-- **compromise** (n) – an agreement where both sides accept less  
-  _Example:_ We reached a compromise that protected deadlines without lowering quality too much.
+- **rollback** (n/v) - return to previous stable version  
+  _Example:_ We rolled back the release to restore service.
 
-- **decision matrix** (n) – framework for scoring options by criteria  
-  _Example:_ We used a decision matrix to reduce bias in discussion.
+- **blast radius** (n) - how widely an issue spreads  
+  _Example:_ Feature flags helped reduce blast radius.
 
-- **opportunity cost** (n) – what you lose by choosing one option over another  
-  _Example:_ The opportunity cost of a rewrite was delayed feature delivery.
+- **post-mortem** (n) - review after incident  
+  _Example:_ Our post-mortem focused on process gaps, not blame.
 
-- **reversibility** (n) – how easy it is to change a decision later  
-  _Example:_ We preferred a reversible decision due to uncertain requirements.
+- **runbook** (n) - predefined incident handling guide  
+  _Example:_ The runbook gave us clear first-response steps.
 
 **Additional useful terms:**
-- **risk exposure** (n) – level of potential negative impact
-- **confidence level** (n) – how sure the team is about assumptions
-- **time-to-market** (n) – speed to deliver value
-- **total cost of ownership (TCO)** (n) – full lifecycle cost
-- **decision debt** (n) – future cost from unclear or rushed choices
+- **incident commander** (n) - person leading incident response
+- **handover** (n) - transfer of incident context
+- **ETA** (n) - estimated time to recovery
+- **service degradation** (n) - service works but with poor quality
+- **communication channel** (n) - place for updates and coordination
 
 </details>
 
 <details open>
-<summary><strong>2) Grammar & Useful Patterns (B2+ / C1-lite)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Weighted comparison language**  
-  Option A was faster, while Option B was safer for long-term maintenance.
+- **Past Continuous for real-time actions**  
+  We were investigating logs while support was informing customers.
 
-- **Concession + conclusion**  
-  Although Option C looked modern, it did not fit our timeline and team capacity.
+- **Past Simple for key events**  
+  We detected the issue at 2:10 PM and rolled back at 2:22 PM.
 
-- **Hypothetical impact**  
-  If we had chosen the rewrite path, we would have increased delivery risk.
+- **Time sequencing**  
+  First we contained, then we diagnosed, and finally we recovered service.
 
-- **Decision confidence language**  
-  Based on current data, this was the highest-confidence option.
+- **Responsibility language**  
+  I took ownership of communication with product during the outage.
 
-- **Recommendation framing**  
-  If I had to prioritize one criterion, I would prioritize reversibility.
+- **Contrast language**  
+  We moved fast, but we still followed runbook checks.
+
+- **Future prevention language**  
+  We will improve alert rules to detect this earlier.
 
 ### Useful Sentence Patterns
-- We had to choose between ... and ...
-- We scored each option based on ...
-- The key criterion was ... because ...
-- The trade-off we accepted was ...
-- On balance, this option gave us ...
-- From a business perspective, this minimized ...
+- During the incident, my role was...
+- The first thing we did was...
+- We kept everyone updated by...
+- We had to choose between... and...
+- We recovered service in...
+- Afterward, we improved...
 
 </details>
 
@@ -86,69 +89,78 @@ description: Discuss trade-offs in frontend development, explain the reasoning b
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- make a trade-off
-- evaluate options
-- weigh pros and cons
-- prioritize decision criteria
-- assess execution risk
-- estimate opportunity cost
-- align technical direction
-- reach cross-functional compromise
-- choose a reversible option
+- handle production outage
+- coordinate incident response
+- send regular status updates
+- reduce blast radius
+- execute rollback plan
+- restore customer trust
+- manage team stress
+- document incident timeline
+- run post-mortem review
+- improve on-call readiness
+- close communication gaps
+- prevent repeat failures
 
 ### Useful Chunking & Sentence Starters
-- We evaluated three realistic paths...
-- The highest-risk option was...
-- The strongest argument for this option was...
-- The downside we accepted was...
-- If constraints changed, we would...
+- As soon as alerts fired,...
+- My first priority was...
+- We quickly set up...
+- Under pressure, we still...
+- One hard decision was...
+- The team stayed aligned by...
+- After recovery, we...
+- The key lesson was...
 
 ### Useful Phrasal Verbs
-- **weigh up** → We weighed up cost, risk, and delivery speed.
-- **go with** → We went with the option that was easier to reverse.
-- **rule out** → We ruled out the high-uncertainty path early.
-- **fall back on** → We had a fallback option if assumptions failed.
+- **jump in** -> I jumped in to coordinate updates.
+- **lock down** -> We locked down deployments during investigation.
+- **roll back** -> We rolled back the newest release.
+- **calm down** -> I focused on clear steps to calm down the team.
+- **write up** -> We wrote up the incident report the same day.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 – Framework-Driven Decision
+### Dialogue 1 - Real-Time Response
 
-**Teacher:** How do you make trade-off decisions when options are all imperfect?
-
-**You:**  
-I usually define criteria first: user impact, risk, engineering effort, and reversibility. Then we score each option with the team to reduce bias.
-
-In one case, we compared a full rewrite, partial refactor, and targeted patch. The rewrite had high long-term upside but unacceptable delivery risk. We chose partial refactor because it provided meaningful improvement with manageable risk.
-
-It was not perfect, but it was the best strategic balance for that quarter.
-
-### Dialogue 2 – Explaining to Stakeholders
-
-**Teacher:** How do you explain trade-offs to non-technical stakeholders?
+**Interviewer:** Tell me about an outage you handled under pressure.
 
 **You:**  
-I avoid technical jargon and frame trade-offs as outcomes: speed, stability, and cost. For example, "Option A ships faster but increases outage risk; Option B is slower but more reliable." This makes decisions easier for everyone to understand.
+I was on-call when checkout started failing. We opened a war room, assigned roles, and sent updates every 15 minutes.
 
-### Dialogue 3 – Decision Under Uncertainty
+We rolled back quickly to restore service. It reduced downtime, but we delayed two planned deployments.
 
-**Teacher:** What if data is incomplete and you still need to decide?
+### Dialogue 2 - Communication Under Stress
+
+**Interviewer:** How did you communicate during the incident?
 
 **You:**  
-I choose the most reversible option and set checkpoints. We decide with current evidence, monitor closely, and adjust quickly if assumptions fail. This reduces regret while keeping delivery moving.
+I posted short updates for product and support: impact, current action, and ETA. This helped them answer customer questions.
+
+Technical work was urgent, but clear communication prevented panic.
+
+### Dialogue 3 - Post-Mortem Mindset
+
+**Interviewer:** What happened after service recovered?
+
+**You:**  
+We ran a blameless post-mortem, reviewed timeline, and created follow-up tasks for monitoring and runbook updates.
+
+It took extra team time, but future incidents became easier to handle.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Engineering decisions are rarely binary. Most choices involve trade-offs between delivery speed, quality, cost, and long-term flexibility. Strong teams make these trade-offs explicit instead of pretending a perfect option exists.
+Production incidents test both technical skills and communication skills. During pressure, teams need simple priorities: contain damage, restore service, and keep stakeholders informed.
 
-Clear frameworks improve decision quality. When teams define criteria first and evaluate options transparently, disagreements become constructive.
+A common mistake is focusing only on technical fixes and ignoring communication. In real business environments, product, support, and leadership need clear status updates to make decisions.
 
-In interviews, the strongest answers show structured thinking: criteria, alternatives, final choice, and impact.
+After recovery, post-mortem work is critical. Without it, teams repeat the same outages and on-call stress stays high.
 
 </details>
 
@@ -156,25 +168,25 @@ In interviews, the strongest answers show structured thinking: criteria, alterna
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What framework do you use to evaluate competing technical options?
-2. Which criteria carry the most weight in your context, and why?
-3. How do you make decisions when data confidence is low?
-4. How do you align technical trade-offs with business timelines?
+1. What do you do in the first 10 minutes of an outage?
+2. How do you split roles during incident response?
+3. How do you communicate with non-technical stakeholders under pressure?
+4. What makes a good post-mortem?
 
 ### High-Value Case Questions
-5. Describe a decision between short-term delivery and long-term scalability.
-6. Share a case where you rejected a popular option and defended your choice.
-7. Tell me about a compromise between engineering quality and product urgency.
+5. Share a case where rollback was the best decision.
+6. Tell me about a hard trade-off during incident handling.
+7. Describe one change that improved your on-call process.
 
 ### Critical Discussion Questions
-8. Should teams intentionally choose "good enough" solutions in fast-moving products?
-9. Is strict technical consistency always better than context-based decisions?
-10. Who should make the final call when engineering and product disagree?
+8. Should teams optimize for fast rollback or root cause first?
+9. Is it okay to pause feature work after a major outage?
+10. How often should teams run incident drills?
 
 **Tips for speaking practice:**
-- Start with criteria before explaining your final choice.
-- State one clear benefit and one clear risk.
-- End with why this decision made sense at that specific time.
+- Speak in timeline order.
+- Include one emotion + one action (stress -> clear steps).
+- Mention both technical and communication outcomes.
 
 ---
 

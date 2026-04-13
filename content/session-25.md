@@ -1,102 +1,192 @@
 ---
 sessionNumber: 25
-title: Mock Interview 1 – Behavioral & General Interview
-topic: Full Mock Interview Practice
-phase: PHASE 5 — MOCK INTERVIEW
-level: B1+ / B2
-description: Practice a complete mock interview focusing on self-introduction, strengths & weaknesses, career goals, and common behavioral questions. Teacher acts as a friendly but professional interviewer.
+title: Mock Interview 1
+topic: Full Simulation - Behavioral + Discussion + Q&A
+phase: PHASE 5 - MOCK INTERVIEW
+level: B1-B2
+description: Run a realistic first mock interview and focus on fluency, structure, and confidence under follow-up pressure.
 ---
 
-# Session 25: Mock Interview 1 – Behavioral & General Interview
+# Session 25: Mock Interview 1
 
-**Level:** B1+ / B2  
-**Focus:** Simulate a real job interview with common questions. Focus on fluency, structure, confidence, and natural answers.
+**Level:** B1-B2  
+**Focus:** Simulate a full interview with behavioral questions, discussion topics, and short Q&A.
 
 <details open>
-<summary><strong>1) Vocabulary & Useful Phrases for Interview</strong></summary>
+<summary><strong>1) Vocabulary </strong></summary>
 
-- **Tell me about yourself** – Câu hỏi mở đầu phổ biến nhất
-- **Strengths & weaknesses** – Điểm mạnh & điểm yếu
-- **Career goals** – Mục tiêu sự nghiệp
-- **Why this company/role** – Tại sao chọn công ty/vị trí này
-- **Behavioral questions** – Câu hỏi về hành vi trong quá khứ
+- **mock interview** (n) - practice interview before real one  
+  _Example:_ This mock interview helped me find weak answers.
 
-**Useful Interview Phrases:**
+- **follow-up question** (n) - extra question after your first answer  
+  _Example:_ Follow-up questions tested my clarity under pressure.
 
-- "That's a great question..."
-- "Let me think for a moment..."
-- "From my experience..."
-- "One example I can share is..."
-- "To be honest..."
-- "Looking ahead, I hope to..."
-- "I'd be happy to elaborate on that..."
+- **STAR structure** (n) - Situation, Task, Action, Result  
+  _Example:_ STAR structure made my story easier to follow.
+
+- **behavioral answer** (n) - answer about past behavior at work  
+  _Example:_ I used a real behavioral answer about an outage.
+
+- **fluency** (n) - speaking smoothly without long pauses  
+  _Example:_ My fluency improved when I used simple sentences.
+
+- **clarity** (n) - easy-to-understand speaking  
+  _Example:_ Clarity matters more than complex vocabulary.
+
+- **pushback** (n) - challenge from interviewer  
+  _Example:_ I got pushback and had to defend my decision calmly.
+
+- **self-diagnosis** (n) - reviewing your own performance  
+  _Example:_ Self-diagnosis showed I needed better examples.
+
+- **time control** (n) - managing answer length  
+  _Example:_ Good time control kept my answers focused.
+
+- **confidence signal** (n) - behavior that shows confidence  
+  _Example:_ Clear structure is a strong confidence signal.
+
+**Additional useful terms:**
+- **anchor example** (n) - strong story you can reuse
+- **filler words** (n) - "um", "ah", and similar pauses
+- **interview pacing** (n) - rhythm of speaking and pausing
+- **answer framing** (n) - how you start and shape an answer
+- **recovery sentence** (n) - sentence used when you lose your train of thought
 
 </details>
 
 <details open>
-<summary><strong>2) Mock Interview Structure (Teacher reads the questions)</strong></summary>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-**Teacher’s Role:** Act as a recruiter from a global tech company. Be friendly but professional. Ask follow-up questions naturally.
+- **Past tense for STAR stories**  
+  I was on-call when a production bug caused payment failures.
 
-### Part 1: Warm-up & Introduction (5–7 phút)
+- **Result language**  
+  As a result, we reduced incident response time by 30%.
 
-1. Tell me about yourself.
-2. Walk me through your resume / professional journey.
-3. Why did you choose to become a frontend developer?
+- **Clarifying language**  
+  If I understand correctly, you want a specific example from production.
 
-### Part 2: Strengths, Weaknesses & Self-Awareness (8–10 phút)
+- **Thinking pause language**  
+  Let me think for a moment, and I will give a concrete case.
 
-4. What are your greatest strengths?
-5. What is one weakness you are currently working on?
-6. How do you handle constructive feedback?
+- **Balanced reflection language**  
+  It worked well overall, but I would improve communication next time.
 
-### Part 3: Career Goals & Motivation (8–10 phút)
+- **Follow-up handling language**  
+  A quick follow-up point is that we tracked all actions in backlog.
 
-7. Where do you see yourself in 3–5 years?
-8. Why are you interested in this role / our company?
-9. What kind of work environment do you thrive in?
-
-### Part 4: Behavioral Questions (10–12 phút)
-
-10. Tell me about a time you worked under a tight deadline.
-11. Describe a time you faced a challenge or failure at work. What did you learn?
-12. Give an example of how you worked well in a team.
-
-**Teacher Instruction:**  
-After each answer, you can ask natural follow-up questions such as:
-
-- “Can you tell me more about that?”
-- “How did that make you feel?”
-- “What would you do differently next time?”
-- “Why was that important?”
+### Useful Sentence Patterns
+- Let me share a concrete example.
+- The situation was..., and my role was...
+- What I did was...
+- The result was...
+- One thing I learned was...
+- If I did it again, I would...
 
 </details>
 
 <details open>
-<summary><strong>3) Practice Tips for You (Student)</strong></summary>
+<summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
-- Aim to speak **1.5 – 3 minutes** per answer (especially for “Tell me about yourself”).
-- Use **STAR method** (Situation – Task – Action – Result) for behavioral questions.
-- Speak naturally, not like reading a script.
-- Record yourself if possible and review later.
+### Strong Collocations
+- run a mock interview
+- answer with STAR structure
+- handle follow-up pressure
+- keep speaking clarity
+- defend decisions calmly
+- show business impact
+- manage answer timing
+- reduce filler words
+- build interview confidence
+- improve response structure
+- practice real scenarios
+- review performance gaps
+
+### Useful Chunking & Sentence Starters
+- That is a great question. In my case,...
+- One example from my recent work is...
+- The challenge was...
+- I decided to... because...
+- The trade-off was...
+- The measurable result was...
+- Looking back,...
+- I can also share another short example if useful.
+
+### Useful Phrasal Verbs
+- **walk through** -> Let me walk you through a real case.
+- **speak up** -> I spoke up when release risk was too high.
+- **back up** -> I backed up my point with incident data.
+- **sum up** -> To sum up, we fixed the issue and improved process.
+- **work on** -> I am still working on shorter, clearer answers.
 
 </details>
 
 <details open>
-<summary><strong>4) Reading Text (Model Mindset)</strong></summary>
+<summary><strong>4) Typical Dialogues</strong></summary>
 
-A good mock interview is not about being perfect — it’s about showing confidence, clear thinking, honesty, and professionalism. Even when you don’t know the perfect answer, staying calm and structured makes a strong impression. Remember: interviewers want to see how you think and communicate, not just what you know.
+### Dialogue 1 - Behavioral Story
+
+**Interviewer:** Tell me about a time you worked under pressure.
+
+**You:**  
+I was on-call during a release night when checkout errors increased. I coordinated rollback, updated product every 15 minutes, and helped QA verify the fix.
+
+Service recovered quickly. We moved fast, but we also documented prevention steps in the post-mortem.
+
+### Dialogue 2 - Discussion Topic
+
+**Interviewer:** Do AI tools make developers better or weaker?
+
+**You:**  
+They can make us faster for routine tasks, but over-reliance can weaken core debugging skills. In my team, we use AI for drafts and always require human review.
+
+This balance saves time and keeps quality stable.
+
+### Dialogue 3 - Q&A Style Response
+
+**Interviewer:** Do you have any questions for us?
+
+**You:**  
+Yes. How does your team balance delivery speed and code quality during busy release periods? I care about sustainable pace and clear ownership.
+
+I also want to understand how feedback is given and followed up.
 
 </details>
 
 <details open>
-<summary><strong>5) Post-Interview Reflection Questions (Do this after the mock)</strong></summary>
+<summary><strong>5) Reading Text</strong></summary>
 
-1. Which question was the most difficult for you? Why?
-2. Which answer did you feel most confident about?
-3. Did you speak too fast, too slow, or use too many fillers (um, ah)?
-4. How well did you structure your answers?
-5. What do you want to improve before the next mock interview?
+Mock Interview 1 is for realistic pressure, not perfect answers. The goal is to hear your own speaking patterns and find weak points early. Focus on structure, clarity, and natural language.
+
+During the mock, follow-up questions are important. They test whether your examples are real and whether you can think clearly under pressure. Keep answers simple and concrete.
+
+After the mock, do self-diagnosis first. Identify your top two strengths and top two gaps before getting external feedback.
+
+</details>
+
+<details open>
+<summary><strong>6) List of Questions + Ideas</strong></summary>
+
+### Core Questions (must-practice)
+1. Tell me about yourself and your role impact.
+2. Describe one failure and how you handled it.
+3. Tell me about a trade-off decision you made.
+4. Why do you want to join this company?
+
+### High-Value Case Questions
+5. Share an incident story with clear business impact.
+6. Describe a conflict with a difficult stakeholder and your resolution.
+7. Tell me about a time you influenced a decision without authority.
+
+### Critical Discussion Questions
+8. Should engineers prioritize speed or stability in most releases?
+9. Is AI making junior engineers less capable over time?
+10. What matters more in interviews: fluent speaking or strong examples?
+
+**Tips for speaking practice:**
+- Keep answers around 1.5 to 2.5 minutes.
+- Use STAR for behavioral stories.
+- Include one trade-off and one measurable result.
 
 ---
 
