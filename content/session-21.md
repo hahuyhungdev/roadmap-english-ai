@@ -1,107 +1,107 @@
 ---
 sessionNumber: 21
-title: Motivation, Values, and Self-Awareness
-topic: Understanding What Actually Drives Your Career
-phase: PHASE 4 - BEHAVIORAL & CAREER
+title: Individualism vs Community - Who Comes First?
+topic: Personal Performance and Team Responsibility
+phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
 level: B1-B2
-description: Answer motivation and values questions with depth, honesty, and practical examples.
+description: Discuss the tension between individual success and collective team health in software environments.
 ---
 
-# Session 21: Motivation, Values, and Self-Awareness
+# Session 21: Individualism vs Community - Who Comes First?
 
 **Level:** B1-B2  
-**Focus:** Give authentic interview answers about what drives you, what you value, and how that fits company culture.
+**Focus:** Discuss team culture trade-offs, including high performers, collaboration, and long-term trust.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **motivation** /ˌmoʊtəˈveɪʃən/ (n) - reason you want to do work  
-  _Example 1:_ My strongest motivation is solving user-facing problems.  
-  _Example 2:_ During planning, we used motivation to make a safer release decision.  
-  _Example 3:_ Later, motivation became part of our standard way of reporting issues.
+- **individualism** /ˌɪndɪvɪdˈuəlˌɪzəm/ (n) - focus on personal goals and freedom  
+  _Example 1:_ Individualism can drive innovation, but teamwork may suffer.  
+  _Example 2:_ For a customer-facing bug, individualism guided what we fixed first.  
+  _Example 3:_ That experience showed how individualism affects both speed and stability.
 
-- **core value** /kɔr ˈvæljuː/ (n) - principle that guides your decisions  
-  _Example 1:_ One core value for me is ownership.  
-  _Example 2:_ For a customer-facing bug, core value guided what we fixed first.  
-  _Example 3:_ I used core value in a stakeholder update so non-technical teams could follow.
+- **collective responsibility** /kəlˈɛktɪv rispˌɑnsəbˈɪləti/ (n) - shared duty for team outcomes  
+  _Example 1:_ Production quality needs collective responsibility.  
+  _Example 2:_ On a real project, collective responsibility helped us explain the trade-off to product.  
+  _Example 3:_ I used collective responsibility in a stakeholder update so non-technical teams could follow.
 
-- **autonomy** /ɔːˈtɑːnəmi/ (n) - freedom to make decisions in your work  
-  _Example 1:_ I realized I value autonomy more than job title.  
-  _Example 2:_ In our weekly review, autonomy was tied to delivery quality and risk.  
-  _Example 3:_ After that case, we added autonomy to our checklist for future releases.
+- **team culture** /tˈim kˈʌltʃɚ/ (n) - shared behavior and values in a team  
+  _Example 1:_ Team culture became stronger after better collaboration rules.  
+  _Example 2:_ In our weekly review, team culture was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how team culture affects both speed and stability.
 
-- **purpose** /ˈpɝːpəs/ (n) - meaningful reason behind your work  
-  _Example 1:_ Purpose helps me stay consistent during hard sprints.  
-  _Example 2:_ In one sprint, purpose came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how purpose affects both speed and stability.
+- **brilliant jerk** /brˈɪljənt dʒˈɝk/ (n) - high performer with harmful behavior  
+  _Example 1:_ A brilliant jerk can damage team morale.  
+  _Example 2:_ In one sprint, brilliant jerk came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected brilliant jerk with one clear lesson learned.
 
-- **culture fit** /ˈkʌltʃər fɪt/ (n) - how well your values match company culture  
-  _Example 1:_ I care about culture fit, not only compensation.  
-  _Example 2:_ On a real project, culture fit helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added culture fit to our checklist for future releases.
+- **knowledge sharing** /nˈɑlədʒ ʃˈɛrɪŋ/ (n) - distributing information across team members  
+  _Example 1:_ Knowledge sharing reduced dependency on one engineer.  
+  _Example 2:_ In one sprint, knowledge sharing came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how knowledge sharing affects both speed and stability.
 
-- **self-awareness** /ˌsɛlf əˈwɛrnəs/ (n) - understanding your real strengths and limits  
-  _Example 1:_ Self-awareness improved my career decisions.  
-  _Example 2:_ For a customer-facing bug, self-awareness guided what we fixed first.  
-  _Example 3:_ In retro, we connected self-awareness with one clear lesson learned.
+- **single point of failure** /sˈɪŋɡəl pˈɔɪnt ˈʌv fˈeɪljɚ/ (n) - one person/system whose failure blocks work  
+  _Example 1:_ One expert became a single point of failure.  
+  _Example 2:_ For a customer-facing bug, single point of failure guided what we fixed first.  
+  _Example 3:_ In retro, we connected single point of failure with one clear lesson learned.
 
-- **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - mismatch between your values and your environment  
-  _Example 1:_ I left one role due to value misalignment.  
-  _Example 2:_ For a customer-facing bug, misalignment guided what we fixed first.  
-  _Example 3:_ I used misalignment in a stakeholder update so non-technical teams could follow.
+- **open source mindset** /ˈoʊpən sˈɔrs mˈaɪndsˌɛt/ (n) - contribution and responsibility to community  
+  _Example 1:_ Open source mindset values long-term maintainability.  
+  _Example 2:_ In one sprint, open source mindset came up when we investigated a production issue.  
+  _Example 3:_ Later, open source mindset became part of our standard way of reporting issues.
 
-- **intrinsic motivation** /ɪnˈtrɪnzɪk ˌmoʊtəˈveɪʃən/ (n) - internal motivation from the work itself  
-  _Example 1:_ Intrinsic motivation is stronger for me than external rewards.  
-  _Example 2:_ On a real project, intrinsic motivation helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added intrinsic motivation to our checklist for future releases.
+- **team trust** /tˈim trˈʌst/ (n) - confidence among teammates  
+  _Example 1:_ Team trust dropped when one person ignored review rules.  
+  _Example 2:_ In one sprint, team trust came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how team trust affects both speed and stability.
 
-- **career anchor** /kəˈrɪr ˈæŋkər/ (n) - stable priority in your career choices  
-  _Example 1:_ Learning and ownership are my career anchors.  
-  _Example 2:_ On a real project, career anchor helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added career anchor to our checklist for future releases.
+- **special treatment** /spˈɛʃəl trˈitmənt/ (n) - giving different rules to some people  
+  _Example 1:_ Special treatment for top performers created resentment.  
+  _Example 2:_ On a real project, special treatment helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how special treatment affects both speed and stability.
 
-- **reflection** /rɪˈflɛkʃən/ (n) - careful review of your experiences  
-  _Example 1:_ Regular reflection helped me redefine success.  
-  _Example 2:_ For a customer-facing bug, reflection guided what we fixed first.  
-  _Example 3:_ Later, reflection became part of our standard way of reporting issues.
+- **shared ownership** /ʃˈɛrd ˈoʊnɚʃˌɪp/ (n) - many people responsible for one area  
+  _Example 1:_ Shared ownership improved release reliability.  
+  _Example 2:_ In one sprint, shared ownership came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how shared ownership affects both speed and stability.
 
 **Additional useful terms:**
-- **energy source** /ˈɛnərdʒi sɔrs/ (n) - work activity that gives motivation
-- **drain factor** /dreɪn ˈfæktər/ (n) - activity that reduces motivation
-- **value conflict** /ˈvæljuː ˈkɑːnflɪkt/ (n) - clash between personal and company values
-- **growth signal** /ɡroʊθ ˈsɪɡnəl/ (n) - sign of meaningful progress
-- **career clarity** /kəˈrɪr ˈklærəti/ (n) - clear understanding of your direction
+- **collaboration debt** /kəlˌæbɚˈeɪʃən dˈɛt/ (n) - long-term cost of poor teamwork
+- **hero culture** /hˈɪroʊ kˈʌltʃɚ/ (n) - relying on a few "hero" employees
+- **psychological safety** /sˌaɪkəlˈɑdʒɪkəl sˈeɪfti/ (n) - feeling safe to ask or challenge
+- **team norm** /tˈim nˈɔrm/ (n) - expected behavior in group work
+- **mutual support** /mjˈutʃuəl səpˈɔrt/ (n) - teammates helping each other consistently
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Simple for values**  
-  I value ownership, clear feedback, and meaningful work.
+- **Balanced argument language**  
+  High performers can add value, but team health still matters.
 
-- **Past reflection language**  
-  I thought I wanted promotion fast, but I realized I wanted autonomy.
+- **Cause and effect**  
+  Because knowledge was concentrated in one person, delivery slowed during leave.
 
-- **Contrast language**  
-  Salary matters, but daily work quality matters more to me.
+- **Conditional language**  
+  If teams reward toxic behavior, trust declines over time.
 
-- **Conditionals for fit**  
-  If team values are unclear, motivation usually drops.
+- **Concession language**  
+  Although individual freedom is important, shared standards are necessary.
 
-- **Evidence language**  
-  One example that shows this is...
+- **Recommendation language**  
+  Teams should set clear rules that apply to everyone.
 
-- **Future alignment language**  
-  In my next role, I want stronger alignment with these values.
+- **Personal stance language**  
+  I believe strong individual talent works best inside strong team culture.
 
 ### Useful Sentence Patterns
-- What motivates me most is...
-- A value I will not compromise on is...
-- I discovered this when...
-- This environment fits me because...
-- A mismatch appears when...
-- I stay motivated by...
+- In my view, team success needs...
+- One risk of hero culture is...
+- We handled this by...
+- It improved collaboration, but...
+- High performers should..., not...
+- A fair team rule is...
 
 </details>
 
@@ -109,86 +109,86 @@ description: Answer motivation and values questions with depth, honesty, and pra
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- identify core values
-- build self-awareness
-- maintain long-term motivation
-- align with company culture
-- define career priorities
-- recognize value mismatch
-- choose meaningful work
-- balance ambition and well-being
-- improve personal clarity
-- sustain professional energy
-- make value-based decisions
-- communicate motivation clearly
+- build healthy team culture
+- reward collaborative behavior
+- reduce key-person risk
+- enforce shared standards
+- improve cross-team trust
+- avoid hero dependency
+- support collective outcomes
+- handle toxic behavior
+- protect psychological safety
+- balance freedom and responsibility
+- promote shared ownership
+- strengthen community mindset
 
 **Examples (real work):**
-- In one release week, we had to identify core values while still trying to build self-awareness.
-- In retro, we agreed to maintain long-term motivation earlier so the same issue would not repeat.
+- In one release week, we had to build healthy team culture while still trying to reward collaborative behavior.
+- In retro, we agreed to reduce key-person risk earlier so the same issue would not repeat.
 
 ### Useful Chunking & Sentence Starters
-- Early in my career, I believed...
-- Over time, I realized...
-- A clear example is...
-- This motivated me because...
-- What drains my energy is...
-- I work best in teams that...
-- My values align with this role because...
-- In the long term, I want...
+- A common team problem is...
+- We had one strong performer who...
+- The short-term gain was..., but...
+- To fix this, we...
+- A fair compromise is...
+- Team rules should...
+- In open source, I learned...
+- Long term, this helped us...
 
 **Examples (using starters):**
 - "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
 - "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
-- **figure out** -> I figured out what really motivates me.
-- **line up with** -> My values line up with teams that value ownership.
-- **burn out** -> I burn out when goals are unclear for too long.
-- **lean toward** -> I lean toward roles with autonomy and mentorship.
-- **grow into** -> I want to grow into a role with broader impact.
+- **step up** -> Everyone should step up, not only one person.
+- **share out** -> We shared out ownership of critical modules.
+- **back up** -> Team members backed up each other during on-call.
+- **call out** -> We called out harmful behavior early.
+- **bring in** -> We brought in mentoring to support weaker members.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Real Motivation
+### Dialogue 1 - High Performer Problem
 
-**Interviewer:** What motivates you?
+**Teacher:** Should high performers get special treatment?
 
-**You:**  
-I am most motivated when I can solve practical user problems and see clear impact. For example, we reduced checkout errors and support tickets dropped.
+**Learner:**  
+Some flexibility is okay, but core team rules should be equal. We had a strong engineer who skipped code reviews and caused regressions.
 
-Results like that give me more energy than title changes alone.
+He shipped fast, but team trust dropped. We changed policy so everyone follows the same quality gate.
 
-### Dialogue 2 - Value Discovery
+### Dialogue 2 - Individual Goal vs Team Goal
 
-**Interviewer:** Have your priorities changed over time?
+**Teacher:** What if your personal goal conflicts with team needs?
 
-**You:**  
-Yes. I used to focus mainly on promotion. Later I realized autonomy and learning matter more for my long-term growth.
+**Learner:**  
+I try to balance both. In one quarter, I wanted to learn a new stack, but the team needed stability on a critical release.
 
-That change helped me choose projects better.
+I delayed my personal goal and helped release first. Later, I got time for learning.
 
-### Dialogue 3 - Culture Fit
+### Dialogue 3 - Community Mindset
 
-**Interviewer:** What kind of company culture suits you?
+**Teacher:** What does community mindset mean in software?
 
-**You:**  
-I work best in teams with clear ownership, honest feedback, and low politics. I prefer direct communication and realistic planning.
+**Learner:**  
+It means sharing knowledge, helping others, and keeping code understandable. In open source and in company projects, this makes teams more resilient.
 
-A fast team is good, but not if quality and trust are ignored.
+It may feel slower at first, but it reduces long-term risk.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Motivation answers in interviews often sound generic. Strong answers are personal and practical. You should explain what gives you energy, what drains you, and how your values shaped real decisions.
+Software teams need both strong individuals and strong collaboration. If a team depends too much on one person, delivery becomes fragile. If individual talent is ignored, innovation can slow down.
 
-Self-awareness is important for career growth. Without it, people chase goals that do not fit them. Over time, this creates frustration and weak performance.
+The best approach is balance: reward impact, but also reward teamwork, mentoring, and documentation. Team rules should be clear and fair for everyone, including top performers.
 
-Balanced answers are best. Show ambition, but also show clarity about what kind of environment helps you do your best work.
+In discussion, use real examples from your team. Practical stories show maturity better than abstract opinions.
 
 </details>
 
@@ -196,25 +196,25 @@ Balanced answers are best. Show ambition, but also show clarity about what kind 
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What motivates you as a software engineer?
-2. What are your top three work values?
-3. How did your motivation change over the years?
-4. What kind of culture helps you perform best?
+1. How do you balance individual ambition and team goals?
+2. What is the risk of relying on one "hero" engineer?
+3. Should high performers get special treatment?
+4. How do you build shared ownership in your team?
 
 ### High-Value Case Questions
-5. Share a time when you realized your priorities had changed.
-6. Tell me about a value mismatch with a team or project.
-7. Describe one decision you made based on your values.
+5. Share a case where team culture improved project outcomes.
+6. Tell me about a conflict between individual and team priorities.
+7. Describe how you reduced key-person dependency.
 
 ### Critical Discussion Questions
-8. Is motivation mostly internal or external?
-9. Should candidates prioritize culture fit over compensation?
-10. Can strong motivation exist in a toxic environment?
+8. Debate prompt: Should high performers be given special treatment, even if it damages team culture?
+9. Is individualism stronger than community in modern tech culture?
+10. How should teams handle talented but toxic behavior?
 
 **Tips for speaking practice:**
-- Avoid generic answers like "I love coding."
-- Use one moment of self-discovery.
-- Link values to concrete behavior.
+- Give one concrete team example.
+- Mention short-term and long-term effects.
+- Keep your position clear but balanced.
 
 ---
 

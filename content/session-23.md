@@ -1,107 +1,107 @@
 ---
 sessionNumber: 23
-title: Career Risk, Layoffs, and Adaptability
-topic: Staying Relevant During Uncertainty
-phase: PHASE 4 - BEHAVIORAL & CAREER
+title: Motivation, Values, and Self-Awareness
+topic: Understanding What Actually Drives Your Career
+phase: PHASE 4 - BEHAVIORAL & INTERVIEW
 level: B1-B2
-description: Discuss layoffs, project changes, and uncertain markets with practical adaptability strategies.
+description: Answer motivation and values questions with depth, honesty, and practical examples.
 ---
 
-# Session 23: Career Risk, Layoffs, and Adaptability
+# Session 23: Motivation, Values, and Self-Awareness
 
 **Level:** B1-B2  
-**Focus:** Explain how you adapt when change is outside your control.
+**Focus:** Give authentic interview answers about what drives you, what you value, and how that fits company culture.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **layoff** /lˈeɪˌɔf/ (n) - job loss due to business reasons  
-  _Example 1:_ Our team faced layoffs after budget cuts.  
-  _Example 2:_ On a real project, layoff helped us explain the trade-off to product.  
-  _Example 3:_ I used layoff in a stakeholder update so non-technical teams could follow.
+- **motivation** /ˌmoʊtəˈveɪʃən/ (n) - reason you want to do work  
+  _Example 1:_ My strongest motivation is solving user-facing problems.  
+  _Example 2:_ During planning, we used motivation to make a safer release decision.  
+  _Example 3:_ Later, motivation became part of our standard way of reporting issues.
 
-- **restructuring** /ristrˈʌktʃɚɪŋ/ (n) - major organizational change  
-  _Example 1:_ Restructuring changed project priorities overnight.  
-  _Example 2:_ In our weekly review, restructuring was tied to delivery quality and risk.  
-  _Example 3:_ That experience showed how restructuring affects both speed and stability.
+- **core value** /kɔr ˈvæljuː/ (n) - principle that guides your decisions  
+  _Example 1:_ One core value for me is ownership.  
+  _Example 2:_ For a customer-facing bug, core value guided what we fixed first.  
+  _Example 3:_ I used core value in a stakeholder update so non-technical teams could follow.
 
-- **project cancellation** /prˈɑdʒɛkt kˌænsəlˈeɪʃən/ (n) - project stopped before completion  
-  _Example 1:_ Our product initiative ended after strategy change.  
-  _Example 2:_ In our weekly review, project cancellation was tied to delivery quality and risk.  
-  _Example 3:_ I used project cancellation in a stakeholder update so non-technical teams could follow.
+- **autonomy** /ɔːˈtɑːnəmi/ (n) - freedom to make decisions in your work  
+  _Example 1:_ I realized I value autonomy more than job title.  
+  _Example 2:_ In our weekly review, autonomy was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added autonomy to our checklist for future releases.
 
-- **adaptability** /ədˌæptəbˈɪləti/ (n) - ability to adjust to new conditions  
-  _Example 1:_ Adaptability helped me stay productive during uncertainty.  
-  _Example 2:_ During planning, we used adaptability to make a safer release decision.  
-  _Example 3:_ In retro, we connected adaptability with one clear lesson learned.
+- **purpose** /ˈpɝːpəs/ (n) - meaningful reason behind your work  
+  _Example 1:_ Purpose helps me stay consistent during hard sprints.  
+  _Example 2:_ In one sprint, purpose came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how purpose affects both speed and stability.
 
-- **upskilling** /ʌpˈskɪlɪŋ/ (n) - learning skills for changing market needs  
-  _Example 1:_ I did upskilling in cloud and system design.  
-  _Example 2:_ In our weekly review, upskilling was tied to delivery quality and risk.  
-  _Example 3:_ That experience showed how upskilling affects both speed and stability.
+- **culture fit** /ˈkʌltʃər fɪt/ (n) - how well your values match company culture  
+  _Example 1:_ I care about culture fit, not only compensation.  
+  _Example 2:_ On a real project, culture fit helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added culture fit to our checklist for future releases.
 
-- **networking** /nˈɛtwˌɝkɪŋ/ (n) - building professional connections  
-  _Example 1:_ Networking helped me find new opportunities quickly.  
-  _Example 2:_ For a customer-facing bug, networking guided what we fixed first.  
-  _Example 3:_ That experience showed how networking affects both speed and stability.
+- **self-awareness** /ˌsɛlf əˈwɛrnəs/ (n) - understanding your real strengths and limits  
+  _Example 1:_ Self-awareness improved my career decisions.  
+  _Example 2:_ For a customer-facing bug, self-awareness guided what we fixed first.  
+  _Example 3:_ In retro, we connected self-awareness with one clear lesson learned.
 
-- **financial buffer** /fənˈænʃəl bˈʌfɚ/ (n) - savings for unstable periods  
-  _Example 1:_ A financial buffer reduced panic during layoffs.  
-  _Example 2:_ During planning, we used financial buffer to make a safer release decision.  
-  _Example 3:_ After that case, we added financial buffer to our checklist for future releases.
+- **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - mismatch between your values and your environment  
+  _Example 1:_ I left one role due to value misalignment.  
+  _Example 2:_ For a customer-facing bug, misalignment guided what we fixed first.  
+  _Example 3:_ I used misalignment in a stakeholder update so non-technical teams could follow.
 
-- **career resilience** /kɚˈɪr rɪzˈɪliəns/ (n) - ability to recover from setbacks  
-  _Example 1:_ Career resilience comes from skills and mindset.  
-  _Example 2:_ In one sprint, career resilience came up when we investigated a production issue.  
-  _Example 3:_ After that case, we added career resilience to our checklist for future releases.
+- **intrinsic motivation** /ɪnˈtrɪnzɪk ˌmoʊtəˈveɪʃən/ (n) - internal motivation from the work itself  
+  _Example 1:_ Intrinsic motivation is stronger for me than external rewards.  
+  _Example 2:_ On a real project, intrinsic motivation helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added intrinsic motivation to our checklist for future releases.
 
-- **transferable skills** /trænsfˈɝəbəl skˈɪlz/ (n) - skills useful in many roles  
-  _Example 1:_ Communication and debugging are transferable skills.  
-  _Example 2:_ During planning, we used transferable skills to make a safer release decision.  
-  _Example 3:_ After that case, we added transferable skills to our checklist for future releases.
+- **career anchor** /kəˈrɪr ˈæŋkər/ (n) - stable priority in your career choices  
+  _Example 1:_ Learning and ownership are my career anchors.  
+  _Example 2:_ On a real project, career anchor helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added career anchor to our checklist for future releases.
 
-- **market shift** /mˈɑrkət ʃˈɪft/ (n) - change in industry demand  
-  _Example 1:_ AI tools created a market shift in hiring priorities.  
-  _Example 2:_ In our weekly review, market shift was tied to delivery quality and risk.  
-  _Example 3:_ After that case, we added market shift to our checklist for future releases.
+- **reflection** /rɪˈflɛkʃən/ (n) - careful review of your experiences  
+  _Example 1:_ Regular reflection helped me redefine success.  
+  _Example 2:_ For a customer-facing bug, reflection guided what we fixed first.  
+  _Example 3:_ Later, reflection became part of our standard way of reporting issues.
 
 **Additional useful terms:**
-- **plan B** /plˈæn bˈi/ (n) - backup career plan
-- **skill inventory** /skˈɪl ˌɪnvəntˈɔri/ (n) - list of your current capabilities
-- **job search pipeline** /dʒˈɑb sˈɝtʃ pˈaɪplˌaɪn/ (n) - active list of opportunities
-- **recovery timeline** /rɪkˈʌvri tˈaɪmlaɪn/ (n) - period needed to stabilize again
-- **mindset reset** /mˈaɪndsˌɛt risˈɛt/ (n) - mental adjustment after disruption
+- **energy source** /ˈɛnərdʒi sɔrs/ (n) - work activity that gives motivation
+- **drain factor** /dreɪn ˈfæktər/ (n) - activity that reduces motivation
+- **value conflict** /ˈvæljuː ˈkɑːnflɪkt/ (n) - clash between personal and company values
+- **growth signal** /ɡroʊθ ˈsɪɡnəl/ (n) - sign of meaningful progress
+- **career clarity** /kəˈrɪr ˈklærəti/ (n) - clear understanding of your direction
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Past tense for disruption stories**  
-  Our project was cancelled three weeks before launch.
+- **Present Simple for values**  
+  I value ownership, clear feedback, and meaningful work.
 
-- **Present Perfect for adaptation progress**  
-  I have improved my profile by learning cloud deployment basics.
+- **Past reflection language**  
+  I thought I wanted promotion fast, but I realized I wanted autonomy.
 
-- **Cause and effect**  
-  Because the market shifted, I expanded beyond frontend-only roles.
+- **Contrast language**  
+  Salary matters, but daily work quality matters more to me.
 
-- **Conditional planning**  
-  If one path closes, I switch to my backup plan quickly.
+- **Conditionals for fit**  
+  If team values are unclear, motivation usually drops.
 
-- **Resilience language**  
-  The situation was hard, but I focused on actions I could control.
+- **Evidence language**  
+  One example that shows this is...
 
-- **Future planning language**  
-  I will keep updating my skills every quarter.
+- **Future alignment language**  
+  In my next role, I want stronger alignment with these values.
 
 ### Useful Sentence Patterns
-- A major change I did not control was...
-- My first response was...
-- I adapted by...
-- One strategy that helped was...
-- The trade-off was...
-- This experience made me...
+- What motivates me most is...
+- A value I will not compromise on is...
+- I discovered this when...
+- This environment fits me because...
+- A mismatch appears when...
+- I stay motivated by...
 
 </details>
 
@@ -109,86 +109,86 @@ description: Discuss layoffs, project changes, and uncertain markets with practi
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- handle career uncertainty
-- adapt to market shifts
-- build financial buffer
-- strengthen transferable skills
-- maintain learning momentum
-- expand professional network
-- recover from layoffs
-- update job strategy
-- stay career-ready
-- respond to project cancellation
-- manage emotional stress
-- plan next career steps
+- identify core values
+- build self-awareness
+- maintain long-term motivation
+- align with company culture
+- define career priorities
+- recognize value mismatch
+- choose meaningful work
+- balance ambition and well-being
+- improve personal clarity
+- sustain professional energy
+- make value-based decisions
+- communicate motivation clearly
 
 **Examples (real work):**
-- In one release week, we had to handle career uncertainty while still trying to adapt to market shifts.
-- In retro, we agreed to build financial buffer earlier so the same issue would not repeat.
+- In one release week, we had to identify core values while still trying to build self-awareness.
+- In retro, we agreed to maintain long-term motivation earlier so the same issue would not repeat.
 
 ### Useful Chunking & Sentence Starters
-- When uncertainty hit,...
-- At first, I felt..., but...
-- I focused on controllable actions like...
-- I updated my skills in...
-- I also reached out to...
-- This helped me..., but...
-- The biggest lesson was...
-- Now I prepare by...
+- Early in my career, I believed...
+- Over time, I realized...
+- A clear example is...
+- This motivated me because...
+- What drains my energy is...
+- I work best in teams that...
+- My values align with this role because...
+- In the long term, I want...
 
 **Examples (using starters):**
 - "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
 - "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
-- **bounce back** -> I bounced back by building a clear job plan.
-- **branch out** -> I branched out into backend-related skills.
-- **reach out** -> I reached out to former colleagues for advice.
-- **step up** -> I stepped up learning during uncertain months.
-- **fall back on** -> I fell back on transferable skills during interviews.
+- **figure out** -> I figured out what really motivates me.
+- **line up with** -> My values line up with teams that value ownership.
+- **burn out** -> I burn out when goals are unclear for too long.
+- **lean toward** -> I lean toward roles with autonomy and mentorship.
+- **grow into** -> I want to grow into a role with broader impact.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Layoff Experience
+### Dialogue 1 - Real Motivation
 
-**Interviewer:** Tell me about a time you had to adapt to change you did not control.
-
-**You:**  
-Our team was reduced during restructuring, and my project was paused. I took one week to reset, then created a clear plan: update CV, improve portfolio, and apply systematically.
-
-It was stressful, but structure helped me regain confidence.
-
-### Dialogue 2 - Staying Relevant
-
-**Interviewer:** How do you stay relevant in uncertain markets?
+**Interviewer:** What motivates you?
 
 **You:**  
-I track market demand and update one skill each quarter. Recently I added better cloud and monitoring knowledge to support broader roles.
+I am most motivated when I can solve practical user problems and see clear impact. For example, we reduced checkout errors and support tickets dropped.
 
-It takes extra effort, but it gives me more options.
+Results like that give me more energy than title changes alone.
 
-### Dialogue 3 - Mindset Under Risk
+### Dialogue 2 - Value Discovery
 
-**Interviewer:** How do you handle fear during career instability?
+**Interviewer:** Have your priorities changed over time?
 
 **You:**  
-I focus on actions: learning plan, networking, and interview practice. I also keep a financial buffer to reduce pressure.
+Yes. I used to focus mainly on promotion. Later I realized autonomy and learning matter more for my long-term growth.
 
-The uncertainty does not disappear, but I feel more in control.
+That change helped me choose projects better.
+
+### Dialogue 3 - Culture Fit
+
+**Interviewer:** What kind of company culture suits you?
+
+**You:**  
+I work best in teams with clear ownership, honest feedback, and low politics. I prefer direct communication and realistic planning.
+
+A fast team is good, but not if quality and trust are ignored.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Career risk is now common in tech. Layoffs, project cancellation, and strategy changes can happen even in strong companies. The key skill is adaptability.
+Motivation answers in interviews often sound generic. Strong answers are personal and practical. You should explain what gives you energy, what drains you, and how your values shaped real decisions.
 
-Adaptability is practical. It includes skill updates, network building, financial preparation, and emotional stability. People who respond early usually recover faster.
+Self-awareness is important for career growth. Without it, people chase goals that do not fit them. Over time, this creates frustration and weak performance.
 
-In interviews, a strong resilience story shows realism and action. Describe what happened, what you did, and what changed in your career strategy.
+Balanced answers are best. Show ambition, but also show clarity about what kind of environment helps you do your best work.
 
 </details>
 
@@ -196,25 +196,25 @@ In interviews, a strong resilience story shows realism and action. Describe what
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you adapt when your project or role changes suddenly?
-2. What is your strategy for staying relevant in the market?
-3. How do you handle layoffs or uncertainty emotionally?
-4. What transferable skills give you resilience?
+1. What motivates you as a software engineer?
+2. What are your top three work values?
+3. How did your motivation change over the years?
+4. What kind of culture helps you perform best?
 
 ### High-Value Case Questions
-5. Share a real case of project cancellation and your response.
-6. Tell me about a skill you learned because of market changes.
-7. Describe your step-by-step recovery plan after career disruption.
+5. Share a time when you realized your priorities had changed.
+6. Tell me about a value mismatch with a team or project.
+7. Describe one decision you made based on your values.
 
 ### Critical Discussion Questions
-8. Should engineers always prepare for layoffs, even in stable jobs?
-9. Is specialization risky in uncertain markets?
-10. What matters more in recovery: technical skill or network?
+8. Is motivation mostly internal or external?
+9. Should candidates prioritize culture fit over compensation?
+10. Can strong motivation exist in a toxic environment?
 
 **Tips for speaking practice:**
-- Be honest about stress, but show action.
-- Use timeline language clearly.
-- End with a practical lesson.
+- Avoid generic answers like "I love coding."
+- Use one moment of self-discovery.
+- Link values to concrete behavior.
 
 ---
 

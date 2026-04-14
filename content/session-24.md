@@ -2,7 +2,7 @@
 sessionNumber: 24
 title: Salary, Negotiation, and Professional Feedback
 topic: Compensation Conversations and Growth Through Feedback
-phase: PHASE 4 - BEHAVIORAL & CAREER
+phase: PHASE 4 - BEHAVIORAL & INTERVIEW
 level: B1-B2
 description: Practice salary negotiation and feedback conversations with clear, professional language.
 ---

@@ -154,27 +154,27 @@ description: Discuss success pressure, social comparison, and imposter feelings 
 
 ### Dialogue 1 - Imposter Syndrome Example
 
-**Interviewer:** Have you experienced imposter syndrome?
+**Teacher:** Have you experienced imposter syndrome?
 
-**You:**  
+**Learner:**  
 Yes, especially after joining a team of very senior engineers. I felt my code reviews were weaker than theirs.
 
 I asked for feedback, improved one skill each sprint, and tracked progress. Confidence grew slowly but steadily.
 
 ### Dialogue 2 - Comparison Trade-off
 
-**Interviewer:** Does comparison motivate or hurt you?
+**Teacher:** Does comparison motivate or hurt you?
 
-**You:**  
+**Learner:**  
 Both. Comparison can push me to learn faster, but too much comparison hurts focus and confidence.
 
 Now I use comparison only for ideas, not as my main self-worth measure.
 
 ### Dialogue 3 - Defining Success
 
-**Interviewer:** How do you define success now?
+**Teacher:** How do you define success now?
 
-**You:**  
+**Learner:**  
 I used to think success was title and salary only. Now I look at impact, ownership, and sustainable growth.
 
 This keeps me motivated, even when promotion timing is slower.
@@ -207,7 +207,7 @@ In professional speaking, honesty and balance matter. You can admit self-doubt a
 7. Describe a personal habit that helps you track progress.
 
 ### Critical Discussion Questions
-8. Does comparing yourself to others motivate or damage you?
+8. Debate prompt: Does comparing yourself to others motivate or damage you?
 9. Is title more important than impact in tech careers?
 10. Should companies discuss imposter syndrome more openly?
 

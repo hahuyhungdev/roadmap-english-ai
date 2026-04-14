@@ -154,27 +154,27 @@ description: Discuss burnout signs, pressure culture, and practical strategies f
 
 ### Dialogue 1 - Recognizing Burnout
 
-**Interviewer:** Have you ever faced burnout risk?
+**Teacher:** Have you ever faced burnout risk?
 
-**You:**  
+**Learner:**  
 Yes. During a heavy release period, I was on-call too often and started losing focus. I felt tired even after weekends.
 
 I spoke with my manager and reduced after-hours work for a while. It helped, but we also needed team-level changes.
 
 ### Dialogue 2 - Healthy vs Toxic Pressure
 
-**Interviewer:** Is high pressure always bad?
+**Teacher:** Is high pressure always bad?
 
-**You:**  
+**Learner:**  
 Not always. Short pressure before a release can improve focus. But if pressure becomes normal every week, quality and morale drop.
 
 So pressure can help in short bursts, but it is harmful without recovery time.
 
 ### Dialogue 3 - Practical Recovery Plan
 
-**Interviewer:** What recovery strategy worked for your team?
+**Teacher:** What recovery strategy worked for your team?
 
-**You:**  
+**Learner:**  
 We added no-meeting blocks, rotated on-call more fairly, and reserved one sprint every two months for bug cleanup.
 
 Velocity looked slightly lower at first, but incidents and stress both decreased.
@@ -207,7 +207,7 @@ In discussions, balanced language is important: pressure is sometimes necessary,
 7. Describe a situation where saying "no" was necessary for sustainability.
 
 ### Critical Discussion Questions
-8. Is high-pressure culture a sign of ambition or a system problem?
+8. Debate prompt: Is high-pressure culture a sign of ambition or a system problem?
 9. Should companies pay more for heavy on-call work?
 10. Is resilience more personal or organizational?
 

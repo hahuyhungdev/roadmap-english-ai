@@ -1,107 +1,107 @@
 ---
 sessionNumber: 8
-title: Trade-offs and Technical Debt - When Good Enough Is Right
-topic: Strategic Decisions Under Constraints
+title: Incident Under Pressure
+topic: Real-Time Outage Handling and Team Coordination
 phase: PHASE 2 - ANALYTICAL THINKING IN IT
 level: B1-B2
-description: Explain how to make practical trade-offs under time, budget, and quality constraints.
+description: Describe how you handle production incidents under time pressure, including communication and post-mortem work.
 ---
 
-# Session 8: Trade-offs and Technical Debt - When Good Enough Is Right
+# Session 8: Incident Under Pressure
 
 **Level:** B1-B2  
-**Focus:** Discuss real decisions like rewrite vs refactor and speed vs quality with clear business reasoning.
+**Focus:** Explain what you did during a live outage, how you stayed calm, and how you coordinated technical and non-technical updates.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **rewrite** /rirˈaɪt/ (n/v) - building a system part again from zero  
-  _Example 1:_ A full rewrite looked clean but too risky for our timeline.  
-  _Example 2:_ For a customer-facing bug, rewrite guided what we fixed first.  
-  _Example 3:_ Later, rewrite became part of our standard way of reporting issues.
+- **outage** /ˈaʊtədʒ/ (n) - period when service is down  
+  _Example 1:_ We had a major outage during a marketing campaign.  
+  _Example 2:_ On a real project, outage helped us explain the trade-off to product.  
+  _Example 3:_ I used outage in a stakeholder update so non-technical teams could follow.
 
-- **refactor** /ˌriːˈfæktər/ (n/v) - improve existing code structure  
-  _Example 1:_ We chose refactor to keep shipping features.  
-  _Example 2:_ During planning, we used refactor to make a safer release decision.  
-  _Example 3:_ That experience showed how refactor affects both speed and stability.
+- **on-call** /ˈɑn kˈɔl/ (adj/n) - engineer responsible for urgent issues  
+  _Example 1:_ I was on-call when the alerts started.  
+  _Example 2:_ For production systems, this would be considered on-call.  
+  _Example 3:_ That incident taught me not to ignore anything on-call.
 
-- **technical debt** /tˈɛknɪkəl dˈɛt/ (n) - future cost from current shortcuts  
-  _Example 1:_ We accepted some technical debt to meet contract deadline.  
-  _Example 2:_ In one sprint, technical debt came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how technical debt affects both speed and stability.
+- **escalation** /ˌɛskəlˈeɪʃən/ (n) - raising issue to higher support level  
+  _Example 1:_ We escalated to database team within 10 minutes.  
+  _Example 2:_ On a real project, escalation helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added escalation to our checklist for future releases.
 
-- **good enough** /ɡˈʊd ɪnˈʌf/ (adj phrase) - acceptable quality for current goal  
-  _Example 1:_ The first version was good enough for pilot users.  
-  _Example 2:_ Under deadline pressure, we avoided choices that were good enough.  
-  _Example 3:_ I now flag it early when a solution seems good enough.
+- **war room** /wˈɔr rˈum/ (n) - focused channel/meeting during incident  
+  _Example 1:_ We opened a war room to coordinate quickly.  
+  _Example 2:_ For a customer-facing bug, war room guided what we fixed first.  
+  _Example 3:_ In retro, we connected war room with one clear lesson learned.
 
-- **scope cut** /skˈoʊp kˈʌt/ (n) - removing low-priority items  
-  _Example 1:_ We made a scope cut to protect release stability.  
-  _Example 2:_ In our weekly review, scope cut was tied to delivery quality and risk.  
-  _Example 3:_ That experience showed how scope cut affects both speed and stability.
+- **status update** /stˈætəs əpdˈeɪt/ (n) - clear progress message during incident  
+  _Example 1:_ We sent status updates every 15 minutes.  
+  _Example 2:_ On a real project, status update helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how status update affects both speed and stability.
 
-- **timeline pressure** /tˈaɪmlaɪn prˈɛʃɚ/ (n) - pressure from short deadlines  
-  _Example 1:_ Timeline pressure pushed us to simplify implementation.  
-  _Example 2:_ In our weekly review, timeline pressure was tied to delivery quality and risk.  
-  _Example 3:_ After that case, we added timeline pressure to our checklist for future releases.
+- **containment** /kəntˈeɪnmənt/ (n) - action to stop issue from getting worse  
+  _Example 1:_ First containment step was disabling one faulty job.  
+  _Example 2:_ For a customer-facing bug, containment guided what we fixed first.  
+  _Example 3:_ In retro, we connected containment with one clear lesson learned.
 
-- **risk appetite** /rˈɪsk ˈæpətˌaɪt/ (n) - level of risk a team can accept  
-  _Example 1:_ Our risk appetite was low because of enterprise clients.  
-  _Example 2:_ On a real project, risk appetite helped us explain the trade-off to product.  
-  _Example 3:_ I used risk appetite in a stakeholder update so non-technical teams could follow.
+- **rollback** /rˈoʊlbˌæk/ (n/v) - return to previous stable version  
+  _Example 1:_ We rolled back the release to restore service.  
+  _Example 2:_ On a real project, rollback helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected rollback with one clear lesson learned.
 
-- **cost of delay** /kˈɑst ˈʌv dɪlˈeɪ/ (n) - business loss when release is late  
-  _Example 1:_ Cost of delay was high, so we avoided a full rewrite.  
-  _Example 2:_ On a real project, cost of delay helped us explain the trade-off to product.  
-  _Example 3:_ I used cost of delay in a stakeholder update so non-technical teams could follow.
+- **blast radius** /blˈæst rˈeɪdiəs/ (n) - how widely an issue spreads  
+  _Example 1:_ Feature flags helped reduce blast radius.  
+  _Example 2:_ For a customer-facing bug, blast radius guided what we fixed first.  
+  _Example 3:_ After that case, we added blast radius to our checklist for future releases.
 
-- **workaround** /wˈɝkɚˈaʊnd/ (n) - temporary solution  
-  _Example 1:_ We used a workaround and planned cleanup in backlog.  
-  _Example 2:_ On a real project, workaround helped us explain the trade-off to product.  
-  _Example 3:_ In retro, we connected workaround with one clear lesson learned.
+- **post-mortem** /pˈoʊst mˈɔrtəm/ (n) - review after incident  
+  _Example 1:_ Our post-mortem focused on process gaps, not blame.  
+  _Example 2:_ On a real project, post-mortem helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added post-mortem to our checklist for future releases.
 
-- **quality gate** /kwˈɑləti ɡˈeɪt/ (n) - required checks before release  
-  _Example 1:_ We kept quality gates even under deadline pressure.  
-  _Example 2:_ For a customer-facing bug, quality gate guided what we fixed first.  
-  _Example 3:_ In retro, we connected quality gate with one clear lesson learned.
+- **runbook** /ˈrʌnˌbʊk/ (n) - predefined incident handling guide  
+  _Example 1:_ The runbook gave us clear first-response steps.  
+  _Example 2:_ During planning, we used runbook to make a safer release decision.  
+  _Example 3:_ In retro, we connected runbook with one clear lesson learned.
 
 **Additional useful terms:**
-- **trade-off analysis** /trˈeɪd ˈɔf ənˈæləsəs/ (n) - structured comparison of options
-- **constraint** /kənstrˈeɪnt/ (n) - limit such as budget or time
-- **MVP** /ɛm vi pi/ (n) - minimum viable product
-- **rollback plan** /rˈoʊlbˌæk plˈæn/ (n) - safe recovery if release fails
-- **follow-up task** /fˈɑloʊ ˈʌp tˈæsk/ (n) - action planned after release
+- **incident commander** /ˈɪnsədənt kəmˈændɚ/ (n) - person leading incident response
+- **handover** /hˈændoʊvɚ/ (n) - transfer of incident context
+- **ETA** /i ti eɪ/ (n) - estimated time to recovery
+- **service degradation** /sˈɝvəs dˌɛɡrədˈeɪʃən/ (n) - service works but with poor quality
+- **communication channel** /kəmjˌunəkˈeɪʃən tʃˈænəl/ (n) - place for updates and coordination
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Option comparison**  
-  We could rewrite the module, or we could refactor the critical path first.
+- **Past Continuous for real-time actions**  
+  We were investigating logs while support was informing customers.
 
-- **Reasoning with because / due to**  
-  We chose the smaller change due to strict timeline pressure.
+- **Past Simple for key events**  
+  We detected the issue at 2:10 PM and rolled back at 2:22 PM.
 
-- **Concession language**  
-  Although the solution was not perfect, it met release needs.
+- **Time sequencing**  
+  First we contained, then we diagnosed, and finally we recovered service.
 
-- **Conditional trade-off language**  
-  If we had rewritten everything, delivery would have slipped by two months.
+- **Responsibility language**  
+  I took ownership of communication with product during the outage.
 
-- **Decision language in past tense**  
-  We decided to ship in phases and monitor quality closely.
+- **Contrast language**  
+  We moved fast, but we still followed runbook checks.
 
-- **Future commitment language**  
-  We plan to clean it up in the next cycle.
+- **Future prevention language**  
+  We will improve alert rules to detect this earlier.
 
 ### Useful Sentence Patterns
-- We considered two options: ...
-- We chose ... because ...
-- The trade-off was ...
-- It solved the short-term need, but ...
-- We accepted this risk because ...
-- We tracked cleanup work in backlog.
+- During the incident, my role was...
+- The first thing we did was...
+- We kept everyone updated by...
+- We had to choose between... and...
+- We recovered service in...
+- Afterward, we improved...
 
 </details>
 
@@ -109,86 +109,86 @@ description: Explain how to make practical trade-offs under time, budget, and qu
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- evaluate technical options
-- balance speed and quality
-- accept short-term debt
-- protect release stability
-- reduce delivery risk
-- cut low-impact scope
-- ship in phases
-- monitor post-release metrics
-- schedule follow-up cleanup
-- align with business goals
-- estimate cost of delay
-- keep quality gates
+- handle production outage
+- coordinate incident response
+- send regular status updates
+- reduce blast radius
+- execute rollback plan
+- restore customer trust
+- manage team stress
+- document incident timeline
+- run post-mortem review
+- improve on-call readiness
+- close communication gaps
+- prevent repeat failures
 
 **Examples (real work):**
-- In one release week, we had to evaluate technical options while still trying to balance speed and quality.
-- In retro, we agreed to accept short-term debt earlier so the same issue would not repeat.
+- In one release week, we had to handle production outage while still trying to coordinate incident response.
+- In retro, we agreed to send regular status updates earlier so the same issue would not repeat.
 
 ### Useful Chunking & Sentence Starters
-- We had to decide between...
-- The business goal was...
-- A full rewrite would have...
-- So we went with...
-- The risk we accepted was...
-- To control that risk, we...
-- This was good enough for now because...
-- Later, we plan to...
+- As soon as alerts fired,...
+- My first priority was...
+- We quickly set up...
+- Under pressure, we still...
+- One hard decision was...
+- The team stayed aligned by...
+- After recovery, we...
+- The key lesson was...
 
 **Examples (using starters):**
 - "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
 - "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
-- **cut back** -> We cut back non-essential features for this release.
-- **hold off** -> We held off the rewrite until after peak season.
-- **ship out** -> We shipped out a smaller but stable version.
-- **clean up** -> We cleaned up technical debt in the next sprint.
-- **line up** -> We lined up QA support before deployment.
+- **jump in** -> I jumped in to coordinate updates.
+- **lock down** -> We locked down deployments during investigation.
+- **roll back** -> We rolled back the newest release.
+- **calm down** -> I focused on clear steps to calm down the team.
+- **write up** -> We wrote up the incident report the same day.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Rewrite vs Refactor
+### Dialogue 1 - Real-Time Response
 
-**Interviewer:** Tell me about a major technical trade-off.
-
-**You:**  
-We debated rewrite versus refactor for an old reporting module. Rewrite was attractive, but it would block feature delivery for too long.
-
-We refactored only high-risk parts first. It was not perfect, but release stayed on track.
-
-### Dialogue 2 - Cutting Corners Professionally
-
-**Interviewer:** When is cutting corners acceptable?
+**Interviewer:** Tell me about an outage you handled under pressure.
 
 **You:**  
-It can be acceptable when impact is low and risk is controlled. In one release, we used a simple workaround to meet a contract deadline.
+I was on-call when checkout started failing. We opened a war room, assigned roles, and sent updates every 15 minutes.
 
-But we documented the debt clearly and scheduled cleanup in backlog.
+We rolled back quickly to restore service. It reduced downtime, but we delayed two planned deployments.
 
-### Dialogue 3 - Defending Good Enough
+### Dialogue 2 - Communication Under Stress
 
-**Interviewer:** How do you explain "good enough" to your team?
+**Interviewer:** How did you communicate during the incident?
 
 **You:**  
-I define minimum quality clearly: no critical bugs, stable deployment, and passing tests. If those are met, we can ship and improve later.
+I posted short updates for product and support: impact, current action, and ETA. This helped them answer customer questions.
 
-It helps speed, but only if we keep follow-up commitments.
+Technical work was urgent, but clear communication prevented panic.
+
+### Dialogue 3 - Post-Mortem Mindset
+
+**Interviewer:** What happened after service recovered?
+
+**You:**  
+We ran a blameless post-mortem, reviewed timeline, and created follow-up tasks for monitoring and runbook updates.
+
+It took extra team time, but future incidents became easier to handle.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-In software projects, teams often choose between ideal architecture and practical delivery. A smart decision is not always the most elegant one. It is the one that fits current constraints without creating unacceptable risk.
+Production incidents test both technical skills and communication skills. During pressure, teams need simple priorities: contain damage, restore service, and keep stakeholders informed.
 
-"Good enough" should not mean careless. It means clear quality limits, controlled scope, and a plan to handle technical debt later. Without that plan, short-term speed becomes long-term pain.
+A common mistake is focusing only on technical fixes and ignoring communication. In real business environments, product, support, and leadership need clear status updates to make decisions.
 
-In interviews, show your reasoning process. Explain what you considered, what you sacrificed, and why the decision made business sense.
+After recovery, post-mortem work is critical. Without it, teams repeat the same outages and on-call stress stays high.
 
 </details>
 
@@ -196,25 +196,25 @@ In interviews, show your reasoning process. Explain what you considered, what yo
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. Tell me about a rewrite vs refactor decision.
-2. How do you define "good enough" in your team?
-3. When is technical debt acceptable?
-4. How do you make sure temporary fixes do not become permanent?
+1. What do you do in the first 10 minutes of an outage?
+2. How do you split roles during incident response?
+3. How do you communicate with non-technical stakeholders under pressure?
+4. What makes a good post-mortem?
 
 ### High-Value Case Questions
-5. Share a case where you cut scope to protect quality.
-6. Describe a workaround you used under deadline pressure.
-7. Tell me about a decision you would make differently now.
+5. Share a case where rollback was the best decision.
+6. Tell me about a hard trade-off during incident handling.
+7. Describe one change that improved your on-call process.
 
 ### Critical Discussion Questions
-8. Is code quality more important than time-to-market?
-9. Should managers decide technical debt priorities?
-10. Is "move fast" still valid for enterprise products?
+8. Should teams optimize for fast rollback or root cause first?
+9. Is it okay to pause feature work after a major outage?
+10. How often should teams run incident drills?
 
 **Tips for speaking practice:**
-- Mention the business constraint first.
-- Show one trade-off and one safeguard.
-- End with what you learned.
+- Speak in timeline order.
+- Include one emotion + one action (stress -> clear steps).
+- Mention both technical and communication outcomes.
 
 ---
 

@@ -1,107 +1,107 @@
 ---
 sessionNumber: 14
-title: Career Growth and Self-Directed Learning
-topic: Building Skills and Impact Without Waiting for Permission
+title: Technology, Attention, and Modern Habits
+topic: Focus, Digital Overload, and Sustainable Productivity
 phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
 level: B1-B2
-description: Explain how you grow as an engineer through independent learning, practical projects, and reflection.
+description: Discuss how technology affects focus, habits, and mental energy in daily life and work.
 ---
 
-# Session 14: Career Growth and Self-Directed Learning
+# Session 14: Technology, Attention, and Modern Habits
 
 **Level:** B1-B2  
-**Focus:** Discuss career development with practical learning habits, not only titles or salary goals.
+**Focus:** Explain attention problems and habit changes with realistic examples from phone use, remote work, and daily routines.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **self-directed learning** /sˈɛlf dɚˈɛktəd lˈɝnɪŋ/ (n) - learning driven by your own plan  
-  _Example 1:_ Self-directed learning helped me move into system design tasks.  
-  _Example 2:_ For a customer-facing bug, self-directed learning guided what we fixed first.  
-  _Example 3:_ After that case, we added self-directed learning to our checklist for future releases.
+- **attention span** /əˈtɛnʃən spæn/ (n) - how long you can stay focused on one thing  
+  _Example 1:_ My attention span got shorter after years of constant notifications.  
+  _Example 2:_ In coding tasks, a short attention span increases context-switching mistakes.  
+  _Example 3:_ I protect my attention span by using focus blocks.
 
-- **upskilling** /ʌpˈskɪlɪŋ/ (n) - building new skills for current or future roles  
-  _Example 1:_ I did upskilling in cloud deployment last year.  
-  _Example 2:_ In one sprint, upskilling came up when we investigated a production issue.  
-  _Example 3:_ In retro, we connected upskilling with one clear lesson learned.
+- **doomscrolling** /ˈdumˌskroʊlɪŋ/ (n) - endless scrolling through negative or addictive content  
+  _Example 1:_ Doomscrolling at night affects my sleep quality.  
+  _Example 2:_ Doomscrolling before work makes morning focus harder.  
+  _Example 3:_ I replaced doomscrolling with a short walk after dinner.
 
-- **side project** /sˈaɪd prˈɑdʒɛkt/ (n) - personal project for learning or experimentation  
-  _Example 1:_ My side project improved my API design skills.  
-  _Example 2:_ For a customer-facing bug, side project guided what we fixed first.  
-  _Example 3:_ Later, side project became part of our standard way of reporting issues.
+- **notification overload** /ˌnoʊtəfəˈkeɪʃən ˈoʊvɚˌloʊd/ (n) - too many alerts that interrupt your attention  
+  _Example 1:_ Notification overload made me feel busy but not productive.  
+  _Example 2:_ In remote teams, notification overload can slow deep technical work.  
+  _Example 3:_ I turned off non-urgent alerts to reduce notification overload.
 
-- **code reading** /kˈoʊd rˈidɪŋ/ (n) - learning by studying real codebases  
-  _Example 1:_ I learned architecture patterns through code reading.  
-  _Example 2:_ In one sprint, code reading came up when we investigated a production issue.  
-  _Example 3:_ In retro, we connected code reading with one clear lesson learned.
+- **deep work** /dip wɝk/ (n) - focused work without distraction for complex tasks  
+  _Example 1:_ I schedule deep work in the morning for architecture tasks.  
+  _Example 2:_ Deep work helps me debug faster than fragmented multitasking.  
+  _Example 3:_ On weekends, I use deep work for personal learning.
 
-- **mentorship** /mˈɛntɚʃˌɪp/ (n) - guidance from more experienced engineers  
-  _Example 1:_ Mentorship helped me avoid common design mistakes.  
-  _Example 2:_ In one sprint, mentorship came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how mentorship affects both speed and stability.
+- **context switching** /ˈkɑntɛkst ˈswɪtʃɪŋ/ (n) - moving quickly between different tasks and topics  
+  _Example 1:_ Too much context switching drains my energy by noon.  
+  _Example 2:_ Context switching is common when engineers join many chat threads.  
+  _Example 3:_ I batch similar tasks to reduce context switching.
 
-- **feedback loop** /fˈidbˌæk lˈup/ (n) - cycle of action, feedback, and improvement  
-  _Example 1:_ I use a weekly feedback loop with my manager.  
-  _Example 2:_ During planning, we used feedback loop to make a safer release decision.  
-  _Example 3:_ After that case, we added feedback loop to our checklist for future releases.
+- **habit loop** /ˈhæbət lup/ (n) - cycle of trigger, action, and reward in behavior  
+  _Example 1:_ My habit loop was stress, scrolling, then short relief.  
+  _Example 2:_ Understanding the habit loop helped me design better work routines.  
+  _Example 3:_ I changed my habit loop by leaving my phone in another room.
 
-- **impact growth** /ˌɪmpˈækt ɡrˈoʊθ/ (n) - increasing business and team contribution  
-  _Example 1:_ I track impact growth, not just technical skill growth.  
-  _Example 2:_ On a real project, impact growth helped us explain the trade-off to product.  
-  _Example 3:_ I used impact growth in a stakeholder update so non-technical teams could follow.
+- **FOMO** /ˈfoʊmoʊ/ (n) - fear of missing out on updates, events, or opportunities  
+  _Example 1:_ FOMO made me check Slack too often.  
+  _Example 2:_ In global teams, FOMO can create unhealthy always-online behavior.  
+  _Example 3:_ I reduced FOMO by checking social apps only twice a day.
 
-- **learning roadmap** /lˈɝnɪŋ rˈoʊdmˌæp/ (n) - clear plan for what to learn next  
-  _Example 1:_ I review my learning roadmap every quarter.  
-  _Example 2:_ During planning, we used learning roadmap to make a safer release decision.  
-  _Example 3:_ Later, learning roadmap became part of our standard way of reporting issues.
+- **digital detox** /ˈdɪdʒətəl ˈditɑks/ (n) - planned break from screens or digital platforms  
+  _Example 1:_ A weekend digital detox improved my mood and sleep.  
+  _Example 2:_ During heavy projects, a short digital detox helps me reset mentally.  
+  _Example 3:_ My friend does a digital detox every Sunday.
 
-- **production reality** /prədˈʌkʃən rˌiˈælətˌi/ (n) - challenges in real systems, not theory  
-  _Example 1:_ Some design patterns fail in production reality.  
-  _Example 2:_ In one sprint, production reality came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how production reality affects both speed and stability.
+- **default behavior** /dɪˈfɔlt bəˈheɪvjɚ/ (n) - action you do automatically without thinking  
+  _Example 1:_ Opening social media became my default behavior during breaks.  
+  _Example 2:_ In office hours, default behavior often decides productivity quality.  
+  _Example 3:_ I changed my default behavior by keeping books near my desk.
 
-- **knowledge gap** /nˈɑlədʒ ɡˈæp/ (n) - missing skill or understanding  
-  _Example 1:_ I identified a knowledge gap in observability.  
-  _Example 2:_ During planning, we used knowledge gap to make a safer release decision.  
-  _Example 3:_ In retro, we connected knowledge gap with one clear lesson learned.
+- **focus block** /ˈfoʊkəs blɑk/ (n) - fixed time period reserved for concentrated work  
+  _Example 1:_ I use two focus blocks every day for hard tasks.  
+  _Example 2:_ Team focus blocks reduced interruption and improved delivery quality.  
+  _Example 3:_ A 45-minute focus block works better for me than a long session.
 
 **Additional useful terms:**
-- **deliberate practice** /dɪlˈɪbɚət prˈæktəs/ (n) - focused practice with clear goals
-- **career plateau** /kɚˈɪr plætˈoʊ/ (n) - period with little visible growth
-- **learning sprint** /lˈɝnɪŋ sprˈɪnt/ (n) - short, focused skill-building period
-- **transferable skill** /trænsfˈɝəbəl skˈɪl/ (n) - skill useful across roles
-- **reflection note** /rɪflˈɛkʃən nˈoʊt/ (n) - written learning summary
+- **screen fatigue** /skrin fəˈtiɡ/ (n) - mental tiredness from too much screen time
+- **mindless checking** /ˈmaɪndləs ˈtʃɛkɪŋ/ (n) - opening apps without clear reason
+- **attention residue** /əˈtɛnʃən ˈrɛzəˌdu/ (n) - leftover distraction from previous tasks
+- **healthy routine** /ˈhɛlθi ruˈtin/ (n) - daily pattern that supports energy and focus
+- **time boundary** /taɪm ˈbaʊndəri/ (n) - clear limits for work and online time
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for growth journey**  
-  I have improved most by learning through real project problems.
+- **Present Perfect for change over time**  
+  I have become more intentional about phone use this year.
 
-- **Past Simple for turning points**  
-  I realized theory alone was not enough after my first incident.
+- **Used to for old habits**  
+  I used to check messages every five minutes.
 
-- **Future planning language**  
-  Next quarter, I plan to focus on architecture communication.
+- **Cause and effect language**  
+  Because notifications were constant, my code quality dropped.
 
-- **Comparison language**  
-  I value skill depth more than fast title changes.
+- **Concession language**  
+  Technology saves time, but it also creates new distractions.
 
-- **Conditional language**  
-  If I wait for formal training only, progress becomes too slow.
+- **Conditionals for behavior design**  
+  If I leave my phone on the desk, I lose focus faster.
 
-- **Habit language**  
-  I review what I learned at the end of each sprint.
+- **Recommendation patterns**  
+  One practical approach is to schedule short but regular focus blocks.
 
 ### Useful Sentence Patterns
-- I measure growth by...
-- A learning habit that works for me is...
-- I closed a skill gap by...
-- Theory helped, but production taught me...
-- My next learning focus is...
-- A practical result was...
+- One digital habit I changed is...
+- I noticed my attention dropped when...
+- A small rule that helped me was...
+- This tool is useful, but...
+- The hardest part is not..., it is...
+- My current routine works because...
 
 </details>
 
@@ -109,86 +109,86 @@ description: Explain how you grow as an engineer through independent learning, p
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- drive personal growth
-- build learning habits
-- close skill gaps
-- read production code
-- apply lessons quickly
-- seek targeted feedback
-- track career progress
-- increase project ownership
-- balance theory and practice
-- create learning roadmap
-- contribute beyond coding
-- improve long-term impact
+- improve attention span
+- reduce notification overload
+- schedule deep work
+- protect focus time
+- break the habit loop
+- avoid mindless checking
+- manage screen fatigue
+- set digital boundaries
+- limit social media use
+- reduce context switching
+- build healthy routines
+- restore mental energy
 
 **Examples (real work):**
-- In one release week, we had to drive personal growth while still trying to build learning habits.
-- In retro, we agreed to close skill gaps earlier so the same issue would not repeat.
+- I schedule deep work in the morning and keep meetings in the afternoon.
+- Setting digital boundaries helped me reduce context switching during sprint week.
 
 ### Useful Chunking & Sentence Starters
-- Early in my career, I...
-- I noticed a gap in...
-- To fix that, I...
-- One useful habit is...
-- This helped me..., but...
-- In production, I learned that...
-- For long-term growth,...
-- My next step is...
+- To be honest,...
+- I started noticing this when...
+- A pattern I could not ignore was...
+- The main trigger for me is...
+- One simple fix that worked was...
+- At first it felt difficult, but...
+- Over time, I realized...
+- For work performance, this matters because...
 
 **Examples (using starters):**
-- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
-- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
+- "A pattern I could not ignore was opening my phone after every small task."
+- "One simple fix that worked was keeping all social apps off my home screen."
 
 ### Useful Phrasal Verbs
-- **pick up** -> I picked up cloud basics through a side project.
-- **level up** -> I leveled up by reviewing senior code regularly.
-- **work through** -> I worked through a real incident to learn monitoring.
-- **branch out** -> I branched out from frontend to system-level topics.
-- **keep at** -> I keep at one learning goal each quarter.
+- **scroll through** -> I used to scroll through short videos before sleeping.
+- **zone out** -> After many meetings, I zone out during deep tasks.
+- **cut off** -> I cut off notifications during focus blocks.
+- **fall into** -> It is easy to fall into distraction loops.
+- **switch off** -> I switch off work apps after a set evening time.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Growth Strategy
+### Dialogue 1 - Focus Problem
 
-**Interviewer:** How do you manage your career growth?
+**Teacher:** What is your biggest attention challenge today?
 
-**You:**  
-I focus on skills and impact first. Each quarter, I choose one technical skill and one communication skill to improve.
+**Learner:**  
+Notification overload is the biggest one. I keep reacting instead of working deeply.
 
-For example, I improved API debugging and clearer release updates. It took time, but my ownership level increased.
+I fixed it by creating two focus blocks, but I still check messages too often under stress.
 
-### Dialogue 2 - Self-Directed Learning Example
+### Dialogue 2 - Productivity Tool Paradox
 
-**Interviewer:** Tell me about a skill you learned on your own.
+**Friend:** Do productivity tools really help?
 
-**You:**  
-I needed better observability skills, so I built a small logging dashboard in a side project and applied the same ideas at work.
+**Friend:**  
+They help if I use them simply. When I keep changing tools, I spend more time organizing than doing.
 
-It was extra effort after work, but it helped during on-call incidents.
+So the trade-off is clear: structure is useful, but too much optimization wastes energy.
 
-### Dialogue 3 - Theory vs Reality
+### Dialogue 3 - Habit Change
 
-**Interviewer:** Do you think formal education is still relevant?
+**Teacher:** What habit gave you the best result?
 
-**You:**  
-Yes, it helps with fundamentals. But production reality is different, so practical learning is also necessary.
+**Learner:**  
+I stopped using my phone as a default break activity. I now take a short walk or stretch.
 
-The best approach is both: solid basics plus real project experience.
+My focus in afternoon coding sessions improved, and I feel less mentally tired.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Career growth in software is rarely linear. Titles and salary matter, but they are not the only signals. Strong engineers track growth by ownership, problem-solving ability, and communication quality.
+Technology gives us speed, but it also competes for our attention every minute. Most people do not have a motivation problem. They have an environment problem: too many alerts, too many tabs, and too many small interruptions.
 
-Self-directed learning is important because technology changes fast. Waiting for formal training can slow progress. Practical learning through side projects, code reviews, and real incidents often creates deeper understanding.
+The solution is usually simple, not dramatic. Reduce triggers, create focus blocks, and keep routines realistic. A perfect routine is not necessary. A repeatable routine is enough.
 
-In discussions, show a clear learning method and one real result. That makes your growth story credible.
+This topic is directly connected to career growth. In interviews and real jobs, people trust engineers who can stay focused, finish complex work, and communicate clearly under constant digital noise.
 
 </details>
 
@@ -196,25 +196,25 @@ In discussions, show a clear learning method and one real result. That makes you
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you measure your career growth?
-2. What is your best self-directed learning habit?
-3. How do you choose what to learn next?
-4. What is one skill you developed recently and why?
+1. What distractions affect your attention the most?
+2. How do you protect focus time during busy days?
+3. Which digital habit are you trying to change now?
+4. What does a healthy workday routine look like for you?
 
 ### High-Value Case Questions
-5. Share a side project that improved your real job performance.
-6. Tell me about a theory that did not work in production.
-7. Describe how feedback changed your learning direction.
+5. Tell me about a time distraction hurt your performance.
+6. Describe one habit change that improved your focus.
+7. Share a case where a productivity tool made things worse, not better.
 
 ### Critical Discussion Questions
-8. Is formal education still relevant for developers in 2025?
-9. Should companies expect engineers to learn outside work hours?
-10. Is broad knowledge better than deep specialization?
+8. Debate prompt: Is technology making us more productive or just more busy?
+9. Should companies limit internal notifications after work hours?
+10. Is discipline more important than motivation for long-term focus?
 
 **Tips for speaking practice:**
-- Use one concrete learning example.
-- Mention both challenge and result.
-- Avoid abstract statements without action.
+- Describe your habit change in clear timeline order.
+- Mention one failed method and one method that worked.
+- Use practical words, not abstract psychology language.
 
 ---
 
