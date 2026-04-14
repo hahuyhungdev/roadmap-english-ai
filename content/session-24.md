@@ -1,69 +1,70 @@
 ---
 sessionNumber: 24
-title: Salary, Negotiation, and Professional Feedback
-topic: Compensation Conversations and Growth Through Feedback
+title: Negotiation & Professional Feedback
+topic: Salary Talks and Growth Conversations
 phase: PHASE 4 - BEHAVIORAL & INTERVIEW
 level: B1-B2
-description: Practice salary negotiation and feedback conversations with clear, professional language.
+description: Practice salary conversation structure, evidence-based negotiation, and giving/receiving feedback with clear follow-up actions.
 ---
 
-# Session 24: Salary, Negotiation, and Professional Feedback
+# Session 24: Negotiation & Professional Feedback
 
 **Level:** B1-B2  
-**Focus:** Handle compensation and feedback discussions confidently, respectfully, and with clear structure.
+**Focus:** Salary negotiation + giving/receiving feedback.
+**Scope:** Practice salary conversation structure, evidence-based negotiation, and giving/receiving feedback with clear follow-up actions.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **compensation** /kˌɑmpənsˈeɪʃən/ (n) - total pay package  
   _Example 1:_ I evaluate compensation as salary plus benefits.  
-  _Example 2:_ In our weekly review, compensation was tied to delivery quality and risk.  
-  _Example 3:_ After that case, we added compensation to our checklist for future releases.
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
 - **salary range** /sˈælɚi rˈeɪndʒ/ (n) - minimum and maximum expected pay  
   _Example 1:_ I prepared a realistic salary range before negotiation.  
-  _Example 2:_ For a customer-facing bug, salary range guided what we fixed first.  
-  _Example 3:_ After that case, we added salary range to our checklist for future releases.
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
 - **negotiation** /nɪɡˌoʊʃiˈeɪʃən/ (n) - discussion to reach agreement  
   _Example 1:_ Negotiation worked better when I used market data.  
-  _Example 2:_ For a customer-facing bug, negotiation guided what we fixed first.  
-  _Example 3:_ After that case, we added negotiation to our checklist for future releases.
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
 - **market benchmark** /mˈɑrkət bˈɛntʃmˌɑrk/ (n) - salary data from similar roles  
   _Example 1:_ I checked market benchmarks on levels.fyi and Glassdoor.  
-  _Example 2:_ For a customer-facing bug, market benchmark guided what we fixed first.  
-  _Example 3:_ I used market benchmark in a stakeholder update so non-technical teams could follow.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **non-salary benefits** /nˈɑn sˈælɚi bˈɛnəfɪts/ (n) - value beyond base pay  
   _Example 1:_ Non-salary benefits like remote flexibility mattered to me.  
-  _Example 2:_ During planning, we used non-salary benefits to make a safer release decision.  
-  _Example 3:_ After that case, we added non-salary benefits to our checklist for future releases.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **constructive feedback** /kənstrˈʌktɪv fˈidbˌæk/ (n) - useful feedback focused on improvement  
   _Example 1:_ I gave constructive feedback with specific examples.  
-  _Example 2:_ In one sprint, constructive feedback came up when we investigated a production issue.  
-  _Example 3:_ In retro, we connected constructive feedback with one clear lesson learned.
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
 - **defensive reaction** /dɪfˈɛnsɪv riˈækʃən/ (n) - emotional resistance to feedback  
   _Example 1:_ I try to avoid defensive reactions during review.  
-  _Example 2:_ On a real project, defensive reaction helped us explain the trade-off to product.  
-  _Example 3:_ In retro, we connected defensive reaction with one clear lesson learned.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **action plan** /ˈækʃən plˈæn/ (n) - clear steps after feedback  
   _Example 1:_ I created an action plan after performance review.  
-  _Example 2:_ For a customer-facing bug, action plan guided what we fixed first.  
-  _Example 3:_ I used action plan in a stakeholder update so non-technical teams could follow.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **follow-up** /fˈɑloʊ ˈʌp/ (n) - checking progress after changes  
   _Example 1:_ I scheduled follow-up with my manager in four weeks.  
-  _Example 2:_ On a real project, follow-up helped us explain the trade-off to product.  
-  _Example 3:_ In retro, we connected follow-up with one clear lesson learned.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **visible improvement** /vˈɪzəbəl ˌɪmprˈuvmənt/ (n) - clear progress others can see  
   _Example 1:_ I showed visible improvement in communication and delivery.  
-  _Example 2:_ During planning, we used visible improvement to make a safer release decision.  
-  _Example 3:_ After that case, we added visible improvement to our checklist for future releases.
+  _Example 2:_ This gave structure to my answer in mock interview sessions.  
+  _Example 3:_ It also helped me show both ownership and reflection in my answers.
 
 **Additional useful terms:**
 - **offer package** /ˈɔfɚ pˈækədʒ/ (n) - full job offer details

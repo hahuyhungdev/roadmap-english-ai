@@ -1,69 +1,70 @@
 ---
 sessionNumber: 23
-title: Motivation, Values, and Self-Awareness
-topic: Understanding What Actually Drives Your Career
+title: Motivation & Personal Values
+topic: What Really Drives You at Work
 phase: PHASE 4 - BEHAVIORAL & INTERVIEW
 level: B1-B2
-description: Answer motivation and values questions with depth, honesty, and practical examples.
+description: Talk about personal drivers, value conflicts, meaningful work, and real examples of choices guided by your values.
 ---
 
-# Session 23: Motivation, Values, and Self-Awareness
+# Session 23: Motivation & Personal Values
 
 **Level:** B1-B2  
-**Focus:** Give authentic interview answers about what drives you, what you value, and how that fits company culture.
+**Focus:** What truly drives you (real, not textbook).
+**Scope:** Talk about personal drivers, value conflicts, meaningful work, and real examples of choices guided by your values.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **motivation** /ˌmoʊtəˈveɪʃən/ (n) - reason you want to do work  
   _Example 1:_ My strongest motivation is solving user-facing problems.  
-  _Example 2:_ During planning, we used motivation to make a safer release decision.  
-  _Example 3:_ Later, motivation became part of our standard way of reporting issues.
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
 - **core value** /kɔr ˈvæljuː/ (n) - principle that guides your decisions  
   _Example 1:_ One core value for me is ownership.  
-  _Example 2:_ For a customer-facing bug, core value guided what we fixed first.  
-  _Example 3:_ I used core value in a stakeholder update so non-technical teams could follow.
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
 - **autonomy** /ɔːˈtɑːnəmi/ (n) - freedom to make decisions in your work  
   _Example 1:_ I realized I value autonomy more than job title.  
-  _Example 2:_ In our weekly review, autonomy was tied to delivery quality and risk.  
-  _Example 3:_ After that case, we added autonomy to our checklist for future releases.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **purpose** /ˈpɝːpəs/ (n) - meaningful reason behind your work  
   _Example 1:_ Purpose helps me stay consistent during hard sprints.  
-  _Example 2:_ In one sprint, purpose came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how purpose affects both speed and stability.
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
 - **culture fit** /ˈkʌltʃər fɪt/ (n) - how well your values match company culture  
   _Example 1:_ I care about culture fit, not only compensation.  
-  _Example 2:_ On a real project, culture fit helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added culture fit to our checklist for future releases.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **self-awareness** /ˌsɛlf əˈwɛrnəs/ (n) - understanding your real strengths and limits  
   _Example 1:_ Self-awareness improved my career decisions.  
-  _Example 2:_ For a customer-facing bug, self-awareness guided what we fixed first.  
-  _Example 3:_ In retro, we connected self-awareness with one clear lesson learned.
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
 - **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - mismatch between your values and your environment  
   _Example 1:_ I left one role due to value misalignment.  
-  _Example 2:_ For a customer-facing bug, misalignment guided what we fixed first.  
-  _Example 3:_ I used misalignment in a stakeholder update so non-technical teams could follow.
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
 - **intrinsic motivation** /ɪnˈtrɪnzɪk ˌmoʊtəˈveɪʃən/ (n) - internal motivation from the work itself  
   _Example 1:_ Intrinsic motivation is stronger for me than external rewards.  
-  _Example 2:_ On a real project, intrinsic motivation helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added intrinsic motivation to our checklist for future releases.
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
 - **career anchor** /kəˈrɪr ˈæŋkər/ (n) - stable priority in your career choices  
   _Example 1:_ Learning and ownership are my career anchors.  
-  _Example 2:_ On a real project, career anchor helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added career anchor to our checklist for future releases.
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
 - **reflection** /rɪˈflɛkʃən/ (n) - careful review of your experiences  
   _Example 1:_ Regular reflection helped me redefine success.  
-  _Example 2:_ For a customer-facing bug, reflection guided what we fixed first.  
-  _Example 3:_ Later, reflection became part of our standard way of reporting issues.
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
 **Additional useful terms:**
 - **energy source** /ˈɛnərdʒi sɔrs/ (n) - work activity that gives motivation

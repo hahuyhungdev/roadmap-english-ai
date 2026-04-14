@@ -1,107 +1,108 @@
 ---
 sessionNumber: 7
-title: Root Cause Analysis and Impact Quantification
-topic: Diagnosing Incidents with Clear Business Impact
-phase: PHASE 2 - ANALYTICAL THINKING IN IT
+title: Project Walkthrough (NEW)
+topic: Explain One Project End-to-End: Problem, System, Role, Impact
+phase: PHASE 1 - TECH & BUSINESS
 level: B1-B2
-description: Explain incidents in a structured way and quantify business impact with clear numbers.
+description: Cover one real project only: business problem, system flow, your ownership, trade-off, measurable result, and lesson learned.
 ---
 
-# Session 7: Root Cause Analysis and Impact Quantification
+# Session 7: Project Walkthrough (NEW)
 
 **Level:** B1-B2  
-**Focus:** Describe a bug or incident using a clear structure: what happened, why it happened, impact, fix, and prevention.
+**Focus:** Explain one project end-to-end: problem -> system -> role -> impact.
+**Scope:** Cover one real project only: business problem, system flow, your ownership, trade-off, measurable result, and lesson learned.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **root cause** /rˈut kˈɑz/ (n) - the main reason a problem happened  
-  _Example 1:_ The root cause was a missing validation check.  
-  _Example 2:_ In retro, we linked root cause to one real production issue.  
-  _Example 3:_ After QA feedback, root cause was added to our rollout checklist.
+- **project scope** /ˈprɑːdʒɛkt skoʊp/ (n) - what is included and excluded in the project  
+  _Example 1:_ We kept project scope small for the first release.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **incident** /ˈɪnsədənt/ (n) - serious production problem  
-  _Example 1:_ We had an incident during peak payment hours.  
-  _Example 2:_ In retro, we linked incident to one real production issue.  
-  _Example 3:_ I used incident in a stakeholder update so everyone could follow.
+- **business problem** /ˈbɪznəs ˈprɑːbləm/ (n) - the real company or user issue to solve  
+  _Example 1:_ The business problem was high checkout drop-off.  
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
-- **timeline** /tˈaɪmlaɪn/ (n) - sequence of events over time  
-  _Example 1:_ We created a timeline to understand what failed first.  
-  _Example 2:_ For one customer case, timeline changed how we prioritized tasks.  
-  _Example 3:_ After QA feedback, timeline was added to our rollout checklist.
+- **system flow** /ˈsɪstəm floʊ/ (n) - how data or actions move through the system  
+  _Example 1:_ I used one simple diagram to explain system flow.  
+  _Example 2:_ In one release, this became important when priorities changed quickly.  
+  _Example 3:_ After that case, we added it to our normal workflow.
 
-- **log analysis** /lˈɔɡ ənˈæləsəs/ (n) - reading logs to find patterns and errors  
-  _Example 1:_ Log analysis showed repeated timeout errors.  
-  _Example 2:_ In a recent sprint, log analysis became a key point in our planning discussion.  
-  _Example 3:_ This quarter, log analysis helped us reduce repeated support requests.
+- **my role** /maɪ roʊl/ (n phrase) - your specific responsibility in the project  
+  _Example 1:_ My role was frontend lead for checkout pages.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **5 Whys** /fˈaɪv wˈaɪz/ (n) - method of asking why several times  
-  _Example 1:_ We used 5 Whys to avoid shallow conclusions.  
-  _Example 2:_ For one customer case, 5 whys changed how we prioritized tasks.  
-  _Example 3:_ I used 5 whys in a stakeholder update so everyone could follow.
+- **constraint** /kənˈstreɪnt/ (n) - a limit such as time, budget, or resources  
+  _Example 1:_ The main constraint was a six-week deadline.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **downtime** /dˈaʊntˌaɪm/ (n) - period when service is unavailable  
-  _Example 1:_ Downtime lasted about 45 minutes.  
-  _Example 2:_ Our team used downtime to explain the trade-off to product.  
-  _Example 3:_ In one incident review, downtime explained why the bug happened.
+- **trade-off** /ˈtreɪd ɔːf/ (n) - a choice where you gain one thing and lose another  
+  _Example 1:_ We accepted a smaller feature set to reduce release risk.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **affected users** /əfˈɛktɪd jˈuzɚz/ (n) - users impacted by the issue  
-  _Example 1:_ Around 2,000 users were affected.  
-  _Example 2:_ In a recent sprint, affected users became a key point in our planning discussion.  
-  _Example 3:_ I used affected users in a stakeholder update so everyone could follow.
+- **execution plan** /ˌɛksɪˈkjuːʃən plæn/ (n) - step-by-step approach to deliver work  
+  _Example 1:_ Our execution plan had three milestones and clear owners.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **lost transactions** /lˈɔst trænzˈækʃənz/ (n) - payments/orders that failed  
-  _Example 1:_ The bug caused lost transactions for three hours.  
-  _Example 2:_ In retro, we linked lost transactions to one real production issue.  
-  _Example 3:_ In one incident review, lost transactions explained why the bug happened.
+- **impact metric** /ˈɪmpækt ˈmɛtrɪk/ (n) - a number that shows business result  
+  _Example 1:_ Conversion rate was our main impact metric.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **mitigation** /mˌɪtɪɡˈeɪʃən/ (n) - short-term action to reduce damage  
-  _Example 1:_ Our first mitigation was to disable one unstable endpoint.  
-  _Example 2:_ In retro, we linked mitigation to one real production issue.  
-  _Example 3:_ In one incident review, mitigation explained why the bug happened.
+- **stakeholder update** /ˈsteɪkˌhoʊldər ˈʌpˌdeɪt/ (n) - progress message shared with key people  
+  _Example 1:_ I sent a stakeholder update every Friday.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **post-mortem** /pˈoʊst mˈɔrtəm/ (n) - review after incident  
-  _Example 1:_ We wrote a post-mortem and tracked follow-up tasks.  
-  _Example 2:_ Our team used post-mortem to explain the trade-off to product.  
-  _Example 3:_ I used post-mortem in a stakeholder update so everyone could follow.
+- **lesson learned** /ˈlɛsən lɝːnd/ (n) - practical takeaway after project completion  
+  _Example 1:_ One lesson learned was to involve QA earlier.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
 **Additional useful terms:**
-- **alert fatigue** /əlˈɝt fətˈiɡ/ (n) - too many alerts reduce response quality
-- **detection gap** /dɪtˈɛkʃən ɡˈæp/ (n) - delay between issue start and detection
-- **containment** /kəntˈeɪnmənt/ (n) - actions to stop issue spread
-- **permanent fix** /pˈɝmənənt fˈɪks/ (n) - long-term solution
-- **owner** /ˈoʊnɚ/ (n) - person responsible for follow-up
+- **milestone** /ˈmaɪlˌstoʊn/ (n) - key checkpoint in a project timeline
+- **timeline risk** /ˈtaɪmˌlaɪn rɪsk/ (n) - chance the project schedule slips
+- **handoff** /ˈhændˌɔːf/ (n) - transfer of work across teams
+- **rollout plan** /ˈroʊlˌaʊt plæn/ (n) - staged release approach
+- **success criteria** /səkˈsɛs kraɪˈtɪriə/ (n) - clear conditions for success
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Past Simple for incident story**  
-  The issue started at 10:12 AM after deployment.
+- **Past Simple for project timeline**  
+  We launched the first version in June.
 
-- **Past Continuous for ongoing failure**  
-  Users were seeing payment errors during checkout.
+- **Cause and result**  
+  Because checkout was slow, conversion dropped.
 
-- **Cause and effect**  
-  Because one cache key expired early, requests failed.
+- **Contrast language**  
+  We wanted full scope, but we had a hard deadline.
 
-- **Quantification language**  
-  The issue affected about 18% of traffic.
+- **Sequence language**  
+  First we validated assumptions, then we built, then we measured impact.
 
-- **Sequence connectors**  
-  First we mitigated, then we identified root cause, and finally we deployed a fix.
+- **Ownership language**  
+  I led the frontend implementation and coordinated with backend.
 
-- **Future prevention language**  
-  We will add monitoring so the same issue is detected faster.
+- **Reflection language**  
+  If I did it again, I would involve support team earlier.
 
 ### Useful Sentence Patterns
-- The incident started when...
-- The root cause was...
-- We confirmed it by...
-- Business impact was...
-- Our immediate mitigation was...
-- To prevent this again, we...
+- The project started because...
+- The main problem was...
+- My role in this project was...
+- The biggest constraint was...
+- We chose... instead of... because...
+- The measurable impact was...
 
 </details>
 
@@ -109,85 +110,86 @@ description: Explain incidents in a structured way and quantify business impact 
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- identify root cause
-- quantify business impact
-- analyze production logs
-- restore service quickly
-- reduce detection time
-- ship a hotfix safely
-- write a clear post-mortem
-- assign follow-up owners
-- prevent repeat incidents
-- improve alert quality
-- track reliability metrics
-- communicate status updates
+- define project scope
+- explain business problem
+- map system flow
+- align cross-team work
+- manage delivery risk
+- prioritize core features
+- communicate progress clearly
+- execute rollout plan
+- measure business impact
+- report key metrics
+- summarize lessons learned
+- present end-to-end story
 
 **Examples (real work):**
-- In one release week, we had to identify root cause while still trying to quantify business impact.
-- In retro, we agreed to analyze production logs earlier so the same issue would not repeat.
+- In one release, we had to define project scope while still trying to measure business impact.
+- In retro, we agreed to communicate progress clearly earlier so stakeholder pressure stayed lower.
 
 ### Useful Chunking & Sentence Starters
-- At first, we thought...
-- After log analysis, we found...
-- The main impact was...
-- We took a short-term step to...
-- The permanent fix was...
-- A key lesson was...
-- Next time, we will...
+- Let me walk you through one project...
+- The business problem we saw was...
+- At a high level, the system worked like this...
+- My role was mainly...
+- A key constraint was...
+- The trade-off we accepted was...
+- The measurable result was...
+- The biggest lesson for me was...
 
 **Examples (using starters):**
-- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
-- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
+- "Let me walk you through one project: we reduced checkout failures by simplifying validation flow."
+- "The trade-off we accepted was a smaller first release, but quality was much better."
 
 ### Useful Phrasal Verbs
-- **track down** -> We tracked down the failing query.
-- **shut off** -> We shut off one feature flag to stabilize traffic.
-- **bring back** -> We brought back full service after the fix.
-- **write up** -> I wrote up the timeline for the post-mortem.
-- **follow through** -> We followed through on every prevention task.
+- **walk through** -> Let me walk through the project from problem to result.
+- **line up** -> We lined up QA and support before rollout.
+- **roll out** -> We rolled out the change to 20% of users first.
+- **follow up** -> I followed up with product after launch metrics came in.
+- **wrap up** -> I wrapped up the project with a short lesson-learned note.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Structured Incident Explanation
+### Dialogue 1 - End-to-End Story
 
-**Interviewer:** Tell me about a serious bug you investigated.
-
-**You:**  
-We had a payment incident after a release. Users got timeout errors during checkout. We checked logs, compared old and new queries, and found an index issue as the root cause.
-
-We rolled back first, then shipped a safer fix. It restored service quickly, but we lost some transactions before mitigation.
-
-### Dialogue 2 - Quantifying Impact
-
-**Interviewer:** How did you explain business impact?
+**Interviewer:** Can you walk me through one project you are proud of?
 
 **You:**  
-I shared three numbers: downtime, affected users, and estimated lost revenue per hour. This helped product and leadership understand urgency.
+Sure. We had a business problem: too many users dropped at checkout. At a high level, our system had a frontend form, payment API, and fraud check service.
 
-Technical detail mattered, but business numbers helped faster decisions.
+My role was to redesign the frontend flow and coordinate with backend on validation. We launched in phases and conversion improved by 11% in six weeks.
 
-### Dialogue 3 - Prevention
+### Dialogue 2 - Role and Trade-off
 
-**Interviewer:** What did you change after the incident?
+**Interviewer:** What trade-off did your team make?
 
 **You:**  
-We added query performance alerts and a pre-release load test for high-risk endpoints. We also improved runbook steps for on-call.
+We wanted to release all improvements at once, but the deadline was tight. We chose a smaller scope with lower risk first.
 
-It took extra effort, but our detection time became much faster.
+It was not perfect, but we delivered on time and avoided major regressions.
+
+### Dialogue 3 - Reflection
+
+**Interviewer:** What did you learn from this project?
+
+**You:**  
+I learned that clear weekly updates reduce confusion and speed up decisions. I also learned to involve QA earlier for edge cases.
+
+So next time, I would keep the same rollout strategy but improve cross-team alignment from week one.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Root cause analysis is not only about finding who made a mistake. It is about understanding the full chain: trigger, weak point, impact, and recovery. Calm, structured communication is very important in this process.
+A strong project walkthrough is not a long technical explanation. It is a simple story with four parts: problem, system, role, and impact.
 
-Strong teams quantify impact with clear numbers. Saying "it was bad" is not enough. You can share affected users, downtime, and estimated business loss. This helps teams prioritize fixes and prevention.
+Interviewers want to see how you think, how you work with others, and how your work creates business value. That is why one clear metric is often better than ten technical details.
 
-A good post-mortem should be practical: what happened, what we fixed, and what actions are already tracked.
+When you practice, keep it practical. Use one real project, one real trade-off, and one clear lesson learned.
 
 </details>
 
@@ -195,25 +197,25 @@ A good post-mortem should be practical: what happened, what we fixed, and what a
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you investigate a production bug step by step?
-2. What data do you use to find root cause?
-3. How do you quantify incident impact for non-technical teams?
-4. What makes a post-mortem useful?
+1. Walk me through one project end-to-end.
+2. What was your exact role in that project?
+3. What trade-off did your team make and why?
+4. How did you measure project impact?
 
 ### High-Value Case Questions
-5. Share a real incident and your role in the investigation.
-6. Tell me about a wrong assumption during debugging and how you corrected it.
-7. Describe one prevention change that reduced future incident risk.
+5. Tell me about a project with strong deadline pressure.
+6. Share one project where cross-team communication was difficult.
+7. Describe one lesson that changed your next project approach.
 
 ### Critical Discussion Questions
-8. Should teams optimize for faster recovery or perfect diagnosis first?
-9. Is it okay to ship a quick hotfix with known limitations?
-10. Who should own post-mortem follow-up actions?
+8. Is a smaller but safer release always better?
+9. Should engineers always include metrics in project stories?
+10. What matters more in interviews: technical depth or clear structure?
 
 **Tips for speaking practice:**
-- Use a clear sequence: incident -> analysis -> fix -> prevention.
-- Include at least one number in impact.
-- Keep blame out; focus on learning and system improvement.
+- Keep your story in four blocks: problem -> system -> role -> impact.
+- Use one number to prove impact.
+- End with one practical lesson learned.
 
 ---
 

@@ -4,66 +4,67 @@ title: Documentation as a Product
 topic: Writing Docs That Create Business Value
 phase: PHASE 1 - TECH & BUSINESS
 level: B1-B2
-description: Treat documentation as a product by focusing on user needs, clear structure, and measurable outcomes.
+description: Talk about runbooks, API docs, handover notes, and how documentation improves team speed with clear metrics.
 ---
 
 # Session 6: Documentation as a Product
 
 **Level:** B1-B2  
-**Focus:** Explain how good documentation reduces support load, speeds onboarding, and improves team execution.
+**Focus:** Docs create value: onboarding, reducing support load, and team alignment.
+**Scope:** Talk about runbooks, API docs, handover notes, and how documentation improves team speed with clear metrics.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **runbook** /ˈrʌnˌbʊk/ (n) - step-by-step guide for operations or incidents  
   _Example 1:_ We updated the runbook for on-call handover.  
-  _Example 2:_ Our team used runbook to explain the trade-off to product.  
-  _Example 3:_ In one incident review, runbook explained why the bug happened.
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
 - **onboarding** /ˈɑːnˌbɔːrdɪŋ/ (n) - process for helping new members start quickly  
   _Example 1:_ Better docs reduced onboarding time from three days to one.  
-  _Example 2:_ In retro, we linked onboarding to one real production issue.  
-  _Example 3:_ This quarter, onboarding helped us reduce repeated support requests.
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
 - **knowledge base** /ˈnɑːlɪdʒ beɪs/ (n) - central place for shared team information  
   _Example 1:_ We moved scattered notes into one knowledge base.  
-  _Example 2:_ Our team used knowledge base to explain the trade-off to product.  
-  _Example 3:_ In one incident review, knowledge base explained why the bug happened.
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
 - **support ticket** /səˈpɔːrt ˈtɪkɪt/ (n) - user or internal request for help  
   _Example 1:_ Clear troubleshooting docs reduced support tickets.  
-  _Example 2:_ Our team used support ticket to explain the trade-off to product.  
-  _Example 3:_ After QA feedback, support ticket was added to our rollout checklist.
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
 - **API reference** /ˌeɪ piː ˈaɪ ˈrɛfərəns/ (n) - technical documentation for endpoints and usage  
   _Example 1:_ We improved API reference with real request examples.  
-  _Example 2:_ In retro, we linked api reference to one real production issue.  
-  _Example 3:_ After QA feedback, api reference was added to our rollout checklist.
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
 - **playbook** /ˈpleɪˌbʊk/ (n) - practical guide for repeating tasks  
   _Example 1:_ Our deployment playbook helps new engineers avoid mistakes.  
-  _Example 2:_ In retro, we linked playbook to one real production issue.  
-  _Example 3:_ This quarter, playbook helped us reduce repeated support requests.
+  _Example 2:_ In one release, this became important when priorities changed quickly.  
+  _Example 3:_ After that case, we added it to our normal workflow.
 
 - **owner** /ˈoʊnər/ (n) - person responsible for keeping docs updated  
   _Example 1:_ Each critical document has one owner.  
-  _Example 2:_ For one customer case, owner changed how we prioritized tasks.  
-  _Example 3:_ I used owner in a stakeholder update so everyone could follow.
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
 - **versioning** /ˈvɝːʒənɪŋ/ (n) - tracking document updates over time  
   _Example 1:_ Versioning helped us avoid old instructions.  
-  _Example 2:_ During release week, versioning helped us make a safer decision.  
-  _Example 3:_ In one incident review, versioning explained why the bug happened.
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
 - **audience** /ˈɔːdiəns/ (n) - people the doc is written for  
   _Example 1:_ We write separate docs for developers and non-technical teams.  
-  _Example 2:_ Our team used audience to explain the trade-off to product.  
-  _Example 3:_ This quarter, audience helped us reduce repeated support requests.
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
 - **clarity** /ˈklærəti/ (n) - easy to understand language and structure  
   _Example 1:_ We use simple language to improve clarity.  
-  _Example 2:_ For one customer case, clarity changed how we prioritized tasks.  
-  _Example 3:_ We mentioned clarity in stand-up when blockers appeared.
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
 **Additional useful terms:**
 - **checklist** /ˈtʃɛkˌlɪst/ (n) - short list of required steps

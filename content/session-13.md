@@ -1,107 +1,108 @@
 ---
 sessionNumber: 13
-title: Money, Lifestyle, and Life Choices
-topic: Financial Priorities, Lifestyle Pressure, and Long-Term Stability
-phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+title: Self-Perception & Confidence
+topic: Imposter Syndrome, Comparison, and Self-Worth
+phase: PHASE 3 - PRACTICAL DISCUSSION
 level: B1-B2
-description: Discuss money decisions in your 20s with practical language about saving, spending, and social pressure.
+description: Talk about confidence in real situations: comparing with peers, self-doubt after setbacks, and practical ways to rebuild self-trust.
 ---
 
-# Session 13: Money, Lifestyle, and Life Choices
+# Session 13: Self-Perception & Confidence
 
 **Level:** B1-B2  
-**Focus:** Talk honestly about money goals, lifestyle pressure, and real trade-offs without sounding extreme.
+**Focus:** Imposter syndrome, comparison, self-worth.
+**Scope:** Talk about confidence in real situations: comparing with peers, self-doubt after setbacks, and practical ways to rebuild self-trust.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **lifestyle inflation** /ˈlaɪfˌstaɪl ɪnˈfleɪʃən/ (n) - when your spending rises as your income rises  
-  _Example 1:_ After my first salary increase, lifestyle inflation happened quickly.  
-  _Example 2:_ In tech teams, lifestyle inflation can push people to chase money only.  
-  _Example 3:_ At home, I avoid lifestyle inflation by keeping a monthly budget.
+- **imposter syndrome** /ˌɪmpˈɔstɚ sˈɪndrˌoʊm/ (n) - feeling not good enough despite real results  
+  _Example 1:_ I had imposter syndrome when I joined a stronger team.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **emergency fund** /ɪˈmɝdʒənsi fʌnd/ (n) - money saved for unexpected problems  
-  _Example 1:_ I built a six-month emergency fund before changing jobs.  
-  _Example 2:_ During layoffs, an emergency fund gives engineers more options.  
-  _Example 3:_ My friend used his emergency fund when his family had a medical bill.
+- **comparison trap** /kəmpˈɛrəsən trˈæp/ (n) - unhealthy habit of comparing with others  
+  _Example 1:_ LinkedIn updates can create a comparison trap.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **cost of living** /kɔst əv ˈlɪvɪŋ/ (n) - how expensive daily life is in one place  
-  _Example 1:_ The cost of living in big cities changed my job plan.  
-  _Example 2:_ We discuss cost of living when comparing remote and onsite offers.  
-  _Example 3:_ I moved to a cheaper area because the cost of living was too high.
+- **career checkpoint** /kɚˈɪr tʃˈɛkpˌɔɪnt/ (n) - way to measure progress  
+  _Example 1:_ I now use impact and learning as my career benchmark.  
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
-- **financial independence** /faɪˈnænʃəl ˌɪndɪˈpɛndəns/ (n) - having enough money to choose your lifestyle freely  
-  _Example 1:_ Financial independence is my long-term goal, not early retirement.  
-  _Example 2:_ In interviews, I explain that money matters but growth still matters too.  
-  _Example 3:_ My cousin reached financial independence by keeping expenses low for years.
+- **self-doubt** /sˈɛlf dˈaʊt/ (n) - lack of confidence in your ability  
+  _Example 1:_ Self-doubt increased after one failed release.  
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
-- **peer pressure** /pɪr ˈprɛʃɚ/ (n) - pressure from people around you to act similarly  
-  _Example 1:_ Peer pressure made me feel behind when others bought expensive things.  
-  _Example 2:_ At work, peer pressure can influence lifestyle choices after promotions.  
-  _Example 3:_ I reduced peer pressure by muting social media for a while.
+- **growth mindset** /ɡrˈoʊθ mˈaɪndsˌɛt/ (n) - belief that skills can improve with effort  
+  _Example 1:_ Growth mindset helped me recover faster from mistakes.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
-- **safety net** /ˈseɪfti nɛt/ (n) - support that protects you when things go wrong  
-  _Example 1:_ Savings are my safety net when I take career risks.  
-  _Example 2:_ Freelancers usually need a stronger safety net than full-time employees.  
-  _Example 3:_ Family can be a safety net, but not everyone has that privilege.
+- **evidence log** /ˈɛvədəns lˈɔɡ/ (n) - list of achievements and progress  
+  _Example 1:_ I keep an evidence log of wins and feedback.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **fixed expense** /fɪkst ɪkˈspɛns/ (n) - cost that stays similar every month  
-  _Example 1:_ Rent is my biggest fixed expense.  
-  _Example 2:_ Knowing fixed expenses helps me negotiate salary more clearly.  
-  _Example 3:_ I keep fixed expenses below half of my income.
+- **seniority gap** /sinjˈɔrɪti ɡˈæp/ (n) - difference in experience level  
+  _Example 1:_ The seniority gap felt big in my first month.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
-- **delayed gratification** /dɪˈleɪd ˌɡrætəfəˈkeɪʃən/ (n) - waiting now to get a better result later  
-  _Example 1:_ Delayed gratification helped me build savings in my first two years.  
-  _Example 2:_ In career planning, delayed gratification means choosing learning over short-term comfort.  
-  _Example 3:_ I skipped a luxury trip because delayed gratification felt smarter.
+- **realistic goal** /rˌiəlˈɪstɪk ɡˈoʊl/ (n) - target that is challenging but possible  
+  _Example 1:_ I set realistic goals each quarter.  
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
-- **opportunity cost** /ˌɑpɚˈtunəti kɔst/ (n) - what you give up when you choose one option  
-  _Example 1:_ The opportunity cost of high rent was less money for learning courses.  
-  _Example 2:_ A higher salary offer had the opportunity cost of poor work-life balance.  
-  _Example 3:_ I calculate opportunity cost before every big purchase.
+- **external validation** /ɪkstˈɝnəl vˌælədˈeɪʃən/ (n) - approval from others  
+  _Example 1:_ I relied too much on external validation before.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
-- **financial anxiety** /faɪˈnænʃəl æŋˈzaɪəti/ (n) - stress related to money and uncertainty  
-  _Example 1:_ Financial anxiety gets worse when income is unstable.  
-  _Example 2:_ During startup uncertainty, financial anxiety affects performance at work.  
-  _Example 3:_ I reduced financial anxiety by tracking spending weekly.
+- **self-awareness** /sˈɛlf əwˈɛrnəs/ (n) - understanding your strengths and limits  
+  _Example 1:_ Self-awareness helped me choose better projects.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
 **Additional useful terms:**
-- **take-home pay** /teɪk hoʊm peɪ/ (n) - money you actually receive after tax
-- **lifestyle creep** /ˈlaɪfˌstaɪl krip/ (n) - slow increase in daily spending habits
-- **budget buffer** /ˈbʌdʒɪt ˈbʌfɚ/ (n) - extra money left for unexpected costs
-- **long-term goal** /lɔŋ tɝm ɡoʊl/ (n) - target you want to reach over years
-- **money mindset** /ˈmʌni ˈmaɪndˌsɛt/ (n) - your attitude and habits around money
+- **progress marker** /prˈɑɡrˌɛs mˈɑrkɚ/ (n) - sign that you are improving
+- **confidence gap** /kˈɑnfədəns ɡˈæp/ (n) - difference between skill and self-belief
+- **peer learning** /pˈɪr lˈɝnɪŋ/ (n) - learning through colleagues
+- **promotion pressure** /prəmˈoʊʃən prˈɛʃɚ/ (n) - stress to advance quickly
+- **long game** /lˈɔŋ ɡˈeɪm/ (n) - long-term career perspective
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for life progress**  
-  I have become more careful with money since I started working.
+- **Present Perfect for personal growth**  
+  I have become more confident by tracking real progress.
 
-- **Comparatives for trade-offs**  
-  A cheaper apartment is less convenient, but it gives me more financial freedom.
+- **Past Simple for key learning moment**  
+  I realized I was comparing my beginning to someone else's peak.
 
-- **Conditionals for planning**  
-  If I increase my fixed expenses too quickly, I will lose flexibility.
+- **Contrast language**  
+  Comparing can motivate me, but it can also damage confidence.
 
-- **Modals for advice**  
-  You should build an emergency fund before taking high career risks.
+- **Advice language**  
+  We should compare with our past self, not only with others.
 
-- **Concession language**  
-  Even though the salary is high, the cost of living is also high.
+- **Conditionals for mindset**  
+  If I focus only on titles, I feel constant pressure.
 
-- **Cause and effect**  
-  Because I tracked spending monthly, my financial anxiety dropped.
+- **Reflection language**  
+  I used to think success meant promotion, but now I value ownership and learning.
 
 ### Useful Sentence Patterns
-- For me, enough money means...
-- One money decision I changed recently is...
-- I used to think..., but now I think...
-- The biggest pressure around money is...
-- A healthy balance for me is...
-- In my career, this choice matters because...
+- A time I felt imposter syndrome was...
+- What helped me most was...
+- I changed my benchmark from... to...
+- Comparison can be useful when..., but...
+- A practical habit I use is...
+- My definition of success now is...
 
 </details>
 
@@ -109,86 +110,86 @@ description: Discuss money decisions in your 20s with practical language about s
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- build an emergency fund
-- track monthly spending
-- control fixed expenses
-- avoid lifestyle inflation
-- compare job offers
-- evaluate opportunity cost
-- balance saving and living
-- reduce financial anxiety
-- set realistic money goals
-- handle social pressure
-- plan long-term stability
-- protect career flexibility
+- manage self-doubt
+- build healthy confidence
+- track real progress
+- avoid comparison trap
+- set realistic goals
+- improve through feedback
+- focus on long-term growth
+- develop self-awareness
+- handle promotion pressure
+- learn from stronger peers
+- reflect on achievements
+- redefine personal success
 
 **Examples (real work):**
-- When I compare job offers, I always evaluate opportunity cost, not salary only.
-- After I started tracking monthly spending, I felt calmer during career changes.
+- In one release week, we had to manage self-doubt while still trying to build healthy confidence.
+- In retro, we agreed to track real progress earlier so the same issue would not repeat.
 
 ### Useful Chunking & Sentence Starters
-- From my experience,...
-- In my 20s, I realized...
-- A common pressure is...
-- One trade-off I accepted was...
-- What changed my mindset was...
-- A practical system that works for me is...
-- I do not want to optimize for money only because...
-- In the long run,...
+- Early in my career,...
+- I often compared myself to...
+- The problem with that was...
+- I changed my approach by...
+- A small habit that helped was...
+- This improved my confidence, but...
+- In interviews, I now explain...
+- My long-term goal is...
 
 **Examples (using starters):**
-- "A common pressure is seeing friends upgrade their lifestyle faster than you."
-- "One trade-off I accepted was a smaller apartment so I could save more."
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
-- **cut back on** -> I cut back on food delivery to improve my budget.
-- **set aside** -> I set aside money every month for emergencies.
-- **live within** -> I try to live within my means, even after a raise.
-- **burn through** -> Some people burn through bonuses too quickly.
-- **pay off** -> Delayed gratification can pay off after a few years.
+- **measure up** -> I felt I did not measure up at first.
+- **look up to** -> I look up to senior engineers, but I do not copy their path exactly.
+- **catch up** -> I focused on catching up in one skill at a time.
+- **write down** -> I write down wins after each sprint.
+- **move past** -> I moved past one failure by reviewing what I learned.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Save vs Enjoy Life
+### Dialogue 1 - Imposter Syndrome Example
 
-**Teacher:** How do you think about saving and spending in your 20s?
-
-**Learner:**  
-I do both, but with limits. I save a fixed percentage first, then spend the rest without guilt.
-
-The trade-off is that I cannot upgrade my lifestyle as fast as some friends, but I feel safer.
-
-### Dialogue 2 - Social Pressure
-
-**Friend:** Do you feel pressure when people around you spend more?
-
-**Friend:**  
-Yes, especially on social media. It can make normal life look like failure.
-
-Now I compare less and focus on my own plan. That reduced stress a lot.
-
-### Dialogue 3 - Career Decision and Money
-
-**Teacher:** Have you ever chosen growth over higher salary?
+**Teacher:** Have you experienced imposter syndrome?
 
 **Learner:**  
-Yes. I chose a role with lower pay but stronger mentorship and better projects.
+Yes, especially after joining a team of very senior engineers. I felt my code reviews were weaker than theirs.
 
-It was hard in the short term, but it helped me grow faster and earn more later.
+I asked for feedback, improved one skill each sprint, and tracked progress. Confidence grew slowly but steadily.
+
+### Dialogue 2 - Comparison Trade-off
+
+**Teacher:** Does comparison motivate or hurt you?
+
+**Learner:**  
+Both. Comparison can push me to learn faster, but too much comparison hurts focus and confidence.
+
+Now I use comparison only for ideas, not as my main self-worth measure.
+
+### Dialogue 3 - Defining Success
+
+**Teacher:** How do you define success now?
+
+**Learner:**  
+I used to think success was title and salary only. Now I look at impact, ownership, and sustainable growth.
+
+This keeps me motivated, even when promotion timing is slower.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Money decisions in your 20s are not only about numbers. They are also about identity, pressure, and future options. Many people ask, "How much is enough?" but the answer depends on your values and responsibilities.
+Many developers feel pressure from social media, peer progress, and promotion expectations. This can create self-doubt, even when performance is strong. The goal is not to stop comparing completely, but to compare in a healthy way.
 
-A common mistake is copying other people's lifestyle. What works for one person may not work for another person with different family support, goals, or risk tolerance. Practical money planning means understanding your fixed expenses, building a safety net, and making conscious trade-offs.
+Useful benchmarks are practical: quality of work, ownership, feedback, and skill growth over time. These are more stable than external signals like titles or online posts.
 
-In career conversations, this topic matters more than people think. Money pressure affects job choices, confidence, and how willing you are to take smart career risks.
+In professional speaking, honesty and balance matter. You can admit self-doubt and still show clear growth actions.
 
 </details>
 
@@ -196,25 +197,25 @@ In career conversations, this topic matters more than people think. Money pressu
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What does "enough money" mean to you right now?
-2. How do you balance saving and enjoying life?
-3. What fixed expenses do you manage most carefully?
-4. How does money pressure affect career decisions?
+1. What does success mean to you now?
+2. Have you ever felt imposter syndrome at work?
+3. How do you stay motivated without unhealthy comparison?
+4. What career benchmark do you use today?
 
 ### High-Value Case Questions
-5. Tell me about a time you chose long-term stability over short-term lifestyle.
-6. Describe a financial mistake you made and what you changed afterward.
-7. Share one job decision where salary was not your top priority.
+5. Share one moment when self-doubt affected your work.
+6. Tell me about a feedback moment that improved your confidence.
+7. Describe a personal habit that helps you track progress.
 
 ### Critical Discussion Questions
-8. Debate prompt: Should people in their 20s save aggressively or live fully?
-9. Is social media making financial pressure worse for young professionals?
-10. How much should family background influence your money expectations?
+8. Debate prompt: Does comparing yourself to others motivate or damage you?
+9. Is title more important than impact in tech careers?
+10. Should companies discuss imposter syndrome more openly?
 
 **Tips for speaking practice:**
-- Use one personal case and one general observation.
-- Mention at least one trade-off clearly.
-- Keep your tone practical, not moralistic.
+- Be honest, but show action.
+- Use one real story and one lesson.
+- Keep language simple and personal.
 
 ---
 

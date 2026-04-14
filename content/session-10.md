@@ -1,107 +1,108 @@
 ---
 sessionNumber: 10
-title: Taking Ownership of Failure
-topic: Public Accountability and Trust Rebuilding
+title: Defending Decisions
+topic: Persuasion with Cost, Risk, and Timeline Language
 phase: PHASE 2 - ANALYTICAL THINKING IN IT
 level: B1-B2
-description: Practice failure stories that show ownership, clear communication, and concrete prevention steps.
+description: Practice how to defend choices with cost/risk/timeline language when PM, lead, or stakeholders disagree.
 ---
 
-# Session 10: Taking Ownership of Failure
+# Session 10: Defending Decisions
 
 **Level:** B1-B2  
-**Focus:** Explain mistakes honestly using a clear arc: acknowledge, explain, fix, prevent.
+**Focus:** Influence without authority.
+**Scope:** Practice how to defend choices with cost/risk/timeline language when PM, lead, or stakeholders disagree.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **ownership** /ˈoʊnɚʃˌɪp/ (n) - accepting responsibility for outcomes  
-  _Example 1:_ I took ownership of the failed deployment.  
-  _Example 2:_ On a real project, ownership helped us explain the trade-off to product.  
-  _Example 3:_ I used ownership in a stakeholder update so non-technical teams could follow.
+- **influence** /ˈɪnfluəns/ (v/n) - change decisions without formal power  
+  _Example 1:_ I influenced the roadmap by showing risk data.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **mistake** /mɪstˈeɪk/ (n) - action that causes a problem  
-  _Example 1:_ My configuration mistake caused API downtime.  
-  _Example 2:_ During planning, we used mistake to make a safer release decision.  
-  _Example 3:_ Later, mistake became part of our standard way of reporting issues.
+- **pushback** /ˈpʊʃˌbæk/ (n) - disagreement or challenge  
+  _Example 1:_ I got pushback from product about timeline.  
+  _Example 2:_ In one release, this became important when priorities changed quickly.  
+  _Example 3:_ After that case, we added it to our normal workflow.
 
-- **impact** /ˌɪmpˈækt/ (n) - result of an action on users or team  
-  _Example 1:_ The issue impacted checkout for 30 minutes.  
-  _Example 2:_ In our weekly review, impact was tied to delivery quality and risk.  
-  _Example 3:_ Later, impact became part of our standard way of reporting issues.
+- **alignment** /əlˈaɪnmənt/ (n) - shared agreement on direction  
+  _Example 1:_ We reached alignment after comparing options.  
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
-- **accountability** /əkˈaʊntəbˌɪlɪti/ (n) - being answerable for your actions  
-  _Example 1:_ Accountability means no blame-shifting.  
-  _Example 2:_ During planning, we used accountability to make a safer release decision.  
-  _Example 3:_ I used accountability in a stakeholder update so non-technical teams could follow.
+- **risk** /rˈɪsk/ (n) - chance of negative result  
+  _Example 1:_ I explained the risk of shipping without tests.  
+  _Example 2:_ In one release, this became important when priorities changed quickly.  
+  _Example 3:_ After that case, we added it to our normal workflow.
 
-- **incident report** /ˈɪnsədənt ripˈɔrt/ (n) - written summary of failure and actions  
-  _Example 1:_ I wrote an incident report the same day.  
-  _Example 2:_ On a real project, incident report helped us explain the trade-off to product.  
-  _Example 3:_ Later, incident report became part of our standard way of reporting issues.
+- **timeline** /tˈaɪmlaɪn/ (n) - schedule and deadlines  
+  _Example 1:_ We adjusted timeline to include one extra QA day.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **root cause** /rˈut kˈɑz/ (n) - main reason failure happened  
-  _Example 1:_ Root cause was missing validation in deployment script.  
-  _Example 2:_ On a real project, root cause helped us explain the trade-off to product.  
-  _Example 3:_ That experience showed how root cause affects both speed and stability.
+- **scope** /skˈoʊp/ (n) - what is included in current work  
+  _Example 1:_ We reduced scope to keep release stable.  
+  _Example 2:_ In one release, this became important when priorities changed quickly.  
+  _Example 3:_ After that case, we added it to our normal workflow.
 
-- **corrective action** /kɚˈɛktɪv ˈækʃən/ (n) - step to fix immediate problem  
-  _Example 1:_ Corrective action was rollback and patch release.  
-  _Example 2:_ During planning, we used corrective action to make a safer release decision.  
-  _Example 3:_ After that case, we added corrective action to our checklist for future releases.
+- **compromise** /kˈɑmprəmˌaɪz/ (n/v) - agreement where both sides adjust  
+  _Example 1:_ We made a compromise on feature depth.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **preventive action** /prɪvˈɛntɪv ˈækʃən/ (n) - step to stop future recurrence  
-  _Example 1:_ Preventive action was adding CI checks.  
-  _Example 2:_ During planning, we used preventive action to make a safer release decision.  
-  _Example 3:_ After that case, we added preventive action to our checklist for future releases.
+- **evidence** /ˈɛvədəns/ (n) - data that supports your argument  
+  _Example 1:_ I used incident history as evidence.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **trust rebuild** /trˈʌst ribˈɪld/ (n) - process of restoring confidence  
-  _Example 1:_ Trust rebuild took time and consistent delivery.  
-  _Example 2:_ In our weekly review, trust rebuild was tied to delivery quality and risk.  
-  _Example 3:_ Later, trust rebuild became part of our standard way of reporting issues.
+- **stakeholder** /stˈeɪkhˌoʊldɚ/ (n) - person affected by decision  
+  _Example 1:_ Different stakeholders had different priorities.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **follow-up** /fˈɑloʊ ˈʌp/ (n) - later action after initial fix  
-  _Example 1:_ I gave follow-up updates to stakeholders.  
-  _Example 2:_ During planning, we used follow-up to make a safer release decision.  
-  _Example 3:_ In retro, we connected follow-up with one clear lesson learned.
+- **escalation path** /ˌɛskəlˈeɪʃən pˈæθ/ (n) - process for unresolved disagreement  
+  _Example 1:_ We used the escalation path when teams could not agree.  
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
 **Additional useful terms:**
-- **blameless review** /blˈeɪmləs rˌivjˈu/ (n) - focus on learning, not punishment
-- **service recovery** /sˈɝvəs rɪkˈʌvri/ (n) - restoring normal operations
-- **communication plan** /kəmjˌunəkˈeɪʃən plˈæn/ (n) - how updates are shared
-- **risk control** /rˈɪsk kəntrˈoʊl/ (n) - actions to reduce future risk
-- **lesson learned** /lˈɛsən lˈɝnd/ (n) - practical takeaway from failure
+- **decision log** /dɪsˈɪʒən lˈɔɡ/ (n) - written record of choices and reasons
+- **option matrix** /ˈɑpʃən mˈeɪtrɪks/ (n) - side-by-side comparison table
+- **non-negotiable** /nˈɑn nəɡˈoʊʃəbəl/ (n/adj) - requirement that cannot change
+- **soft skill** /sˈɑft skˈɪl/ (n) - communication and teamwork ability
+- **buy-in** /bˈaɪ ɪn/ (n) - support from people involved
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Past Simple for failure story**  
-  I merged a config change without one final check.
+- **Polite disagreement**  
+  I see your point, but this option has higher release risk.
 
-- **Past Perfect for sequence**  
-  We had already deployed when the first alert appeared.
+- **Evidence-based statements**  
+  Based on last quarter incidents, this path is safer.
 
-- **Ownership language**  
-  I made the decision, and I take responsibility for the result.
+- **Conditional persuasion**  
+  If we reduce scope now, we can protect quality and still hit the date.
 
-- **Cause and effect**  
-  Because we skipped one validation step, deployment failed.
+- **Concession + recommendation**  
+  Although this approach is slower, it avoids costly regressions.
 
-- **Repair and prevention language**  
-  We fixed the issue quickly and added guardrails in CI.
+- **Future impact language**  
+  This decision will reduce support load in the next release cycle.
 
-- **Reflection language**  
-  If I faced the same case again, I would slow down and verify first.
+- **Collaborative framing**  
+  Let us compare options and pick the one with lowest business risk.
 
 ### Useful Sentence Patterns
-- I made a mistake in...
-- The impact was...
-- I informed... immediately and...
-- We fixed it by...
-- To prevent this again, we...
-- This experience taught me...
+- I understand the concern, and...
+- From a risk perspective,...
+- If we do..., the likely outcome is...
+- My recommendation is...
+- We can compromise by...
+- This gives us a better balance between...
 
 </details>
 
@@ -109,86 +110,86 @@ description: Practice failure stories that show ownership, clear communication, 
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- take full ownership
-- acknowledge mistakes quickly
-- communicate incident impact
-- restore service fast
-- implement preventive controls
-- rebuild stakeholder trust
-- run blameless review
-- track follow-up tasks
-- improve release process
-- reduce repeat failures
-- document lessons learned
-- show growth through action
+- defend technical decisions
+- influence without authority
+- handle stakeholder pushback
+- present clear evidence
+- align on priorities
+- negotiate feature scope
+- communicate business risk
+- build cross-team trust
+- hold a clear position
+- stay open to feedback
+- document final decisions
+- protect release quality
 
 **Examples (real work):**
-- In one release week, we had to take full ownership while still trying to acknowledge mistakes quickly.
-- In retro, we agreed to communicate incident impact earlier so the same issue would not repeat.
+- In one release week, we had to defend technical decisions while still trying to influence without authority.
+- In retro, we agreed to handle stakeholder pushback earlier so the same issue would not repeat.
 
 ### Useful Chunking & Sentence Starters
-- I want to be transparent about...
-- The mistake happened when...
-- I informed the team right away...
-- The immediate fix was...
-- The longer-term fix was...
-- I also changed my workflow by...
-- Trust improved because...
-- The key lesson for me is...
+- I agree on the goal, but...
+- The key risk is...
+- From the timeline side,...
+- A practical compromise is...
+- If we choose this path,...
+- To reduce conflict, we...
+- I explained it in business terms: ...
+- In the end, we aligned on...
 
 **Examples (using starters):**
 - "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
 - "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
-- **own up** -> I owned up to the issue in the team channel.
-- **fix up** -> We fixed up the deployment script quickly.
-- **write up** -> I wrote up the incident details and follow-ups.
-- **follow through** -> I followed through on every prevention task.
-- **earn back** -> I had to earn back trust with consistent work.
+- **push back** -> I pushed back on the unsafe timeline.
+- **back up** -> I backed up my point with bug data.
+- **work out** -> We worked out a compromise with product.
+- **line up** -> We lined up QA support before final decision.
+- **stick to** -> I stuck to the quality gate requirements.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Owning a Failure
+### Dialogue 1 - Product Pushback
 
-**Interviewer:** Tell me about a mistake you made.
-
-**You:**  
-I deployed a config change that broke one API endpoint. I informed the team immediately and coordinated rollback.
-
-Service recovered in about 20 minutes. I took ownership and shared a clear fix plan.
-
-### Dialogue 2 - Rebuilding Trust
-
-**Interviewer:** How did you rebuild trust after that?
+**Interviewer:** Tell me about a time you had to persuade a product manager.
 
 **You:**  
-I provided transparent updates, completed all follow-up tasks, and improved pre-deploy checks. I also asked a teammate to review risky changes with me.
+Product wanted to ship a feature in one week, but we had unresolved regression risk. I showed bug trends from similar releases and explained likely support impact.
 
-It took extra time, but release confidence improved over the next month.
+We agreed to reduce scope and ship core functionality first. We moved a bit slower, but quality stayed stable.
 
-### Dialogue 3 - No Blame-Shifting
+### Dialogue 2 - Senior Engineer Challenge
 
-**Interviewer:** Did you blame anyone else?
+**Interviewer:** What if a senior engineer disagrees with you?
 
 **You:**  
-No. Other factors existed, but I focused on what I controlled. I explained my part clearly and what I changed after the incident.
+I focus on facts, not hierarchy. In one design review, I suggested a simpler solution with lower operational cost. A senior engineer preferred a complex architecture.
 
-That approach helped the team focus on prevention, not blame.
+We compared options in a decision log, and the team chose the simpler path for current scale.
+
+### Dialogue 3 - Holding Position Professionally
+
+**Interviewer:** How do you stay confident without being defensive?
+
+**You:**  
+I acknowledge other views first, then explain my reasoning with data. If I am wrong, I adjust quickly. If risk is serious, I hold my position clearly.
+
+This keeps discussion professional and focused on outcomes.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-In interviews, failure stories can become your strongest answers if you show real ownership. Companies know mistakes happen. What they care about is how you respond under pressure and what you learn.
+Influence in engineering is not about being the loudest person. It is about clear reasoning, good timing, and respectful communication. Many decisions involve conflicting priorities: speed, quality, cost, and user impact.
 
-A strong structure is simple: what happened, what impact it had, what you did immediately, and what changed afterward. Avoid excuses and avoid blaming others.
+When you defend a technical decision, use evidence and simple language. Explain what could happen if the team chooses a risky path. Offer alternatives, not only criticism.
 
-Trust rebuild is not one speech. It comes from consistent action over time.
+Strong engineers are firm on important risks but flexible on details. That balance builds trust.
 
 </details>
 
@@ -196,25 +197,25 @@ Trust rebuild is not one speech. It comes from consistent action over time.
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. Tell me about a failure that affected users or your team.
-2. How did you communicate after the failure?
-3. What did you change to prevent recurrence?
-4. How did you rebuild trust with stakeholders?
+1. How do you defend a technical decision in front of non-technical stakeholders?
+2. How do you handle pushback on timeline or scope?
+3. What data do you use to persuade people?
+4. How do you disagree with a senior engineer professionally?
 
 ### High-Value Case Questions
-5. Share a case where quick ownership reduced damage.
-6. Describe a post-mortem action that had lasting impact.
-7. Tell me about a mistake that changed your work habits.
+5. Share a case where you changed someone else's decision.
+6. Tell me about a compromise that protected quality.
+7. Describe a time when you changed your own view after feedback.
 
 ### Critical Discussion Questions
-8. Is public ownership always the best approach?
-9. Should failure impact performance reviews strongly?
-10. What is the difference between accountability and blame?
+8. Is speed more important than quality in early-stage products?
+9. Should technical decisions be owned by engineers only?
+10. How much risk is acceptable when leadership pushes for delivery?
 
 **Tips for speaking practice:**
-- Keep your story concrete and honest.
-- Show actions, not only feelings.
-- End with a clear prevention result.
+- Use calm, neutral language.
+- Explain risk in business terms.
+- Include one compromise in your story.
 
 ---
 

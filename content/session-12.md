@@ -1,107 +1,108 @@
 ---
 sessionNumber: 12
-title: Success, Comparison, and Imposter Syndrome
-topic: Confidence, Growth, and Real Career Benchmarks
-phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+title: Energy, Burnout & Sustainability
+topic: Manage Energy and Build a Sustainable Work Pace
+phase: PHASE 3 - PRACTICAL DISCUSSION
 level: B1-B2
-description: Discuss success pressure, social comparison, and imposter feelings with practical and balanced communication.
+description: Discuss signs of overload, workload control, boundaries, rest habits, and what sustainable performance looks like week to week.
 ---
 
-# Session 12: Success, Comparison, and Imposter Syndrome
+# Session 12: Energy, Burnout & Sustainability
 
 **Level:** B1-B2  
-**Focus:** Speak about confidence and self-doubt in tech careers using real examples and healthy career reasoning.
+**Focus:** Manage energy, avoid burnout, realistic productivity.
+**Scope:** Discuss signs of overload, workload control, boundaries, rest habits, and what sustainable performance looks like week to week.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **imposter syndrome** /ˌɪmpˈɔstɚ sˈɪndrˌoʊm/ (n) - feeling not good enough despite real results  
-  _Example 1:_ I had imposter syndrome when I joined a stronger team.  
-  _Example 2:_ In one sprint, imposter syndrome came up when we investigated a production issue.  
-  _Example 3:_ After that case, we added imposter syndrome to our checklist for future releases.
+- **burnout** /bˈɝnˌaʊt/ (n) - deep mental and physical exhaustion from long stress  
+  _Example 1:_ I noticed early burnout signs during back-to-back releases.  
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
-- **comparison trap** /kəmpˈɛrəsən trˈæp/ (n) - unhealthy habit of comparing with others  
-  _Example 1:_ LinkedIn updates can create a comparison trap.  
-  _Example 2:_ In one sprint, comparison trap came up when we investigated a production issue.  
-  _Example 3:_ I used comparison trap in a stakeholder update so non-technical teams could follow.
+- **crunch time** /krˈʌntʃ tˈaɪm/ (n) - period of intense work pressure  
+  _Example 1:_ Crunch time lasted too long in our last quarter.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
-- **career checkpoint** /kɚˈɪr tʃˈɛkpˌɔɪnt/ (n) - way to measure progress  
-  _Example 1:_ I now use impact and learning as my career benchmark.  
-  _Example 2:_ On a real project, career checkpoint helped us explain the trade-off to product.  
-  _Example 3:_ Later, career checkpoint became part of our standard way of reporting issues.
+- **on-call load** /ˈɑn kˈɔl lˈoʊd/ (n) - stress from support duty and alerts  
+  _Example 1:_ High on-call load affected team energy.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **self-doubt** /sˈɛlf dˈaʊt/ (n) - lack of confidence in your ability  
-  _Example 1:_ Self-doubt increased after one failed release.  
-  _Example 2:_ For a customer-facing bug, self-doubt guided what we fixed first.  
-  _Example 3:_ That experience showed how self-doubt affects both speed and stability.
+- **boundary** /bˈaʊndɚi/ (n) - limit to protect time and health  
+  _Example 1:_ I set a boundary and stopped checking chat after work.  
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
-- **growth mindset** /ɡrˈoʊθ mˈaɪndsˌɛt/ (n) - belief that skills can improve with effort  
-  _Example 1:_ Growth mindset helped me recover faster from mistakes.  
-  _Example 2:_ For a customer-facing bug, growth mindset guided what we fixed first.  
-  _Example 3:_ Later, growth mindset became part of our standard way of reporting issues.
+- **recovery** /rɪkˈʌvri/ (n) - process of regaining energy and focus  
+  _Example 1:_ Real recovery needs rest, not just one free weekend.  
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
-- **evidence log** /ˈɛvədəns lˈɔɡ/ (n) - list of achievements and progress  
-  _Example 1:_ I keep an evidence log of wins and feedback.  
-  _Example 2:_ In one sprint, evidence log came up when we investigated a production issue.  
-  _Example 3:_ Later, evidence log became part of our standard way of reporting issues.
+- **stress signal** /strˈɛs sˈɪɡnəl/ (n) - sign that pressure is becoming unhealthy  
+  _Example 1:_ Sleep problems were my main stress signal.  
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
-- **seniority gap** /sinjˈɔrɪti ɡˈæp/ (n) - difference in experience level  
-  _Example 1:_ The seniority gap felt big in my first month.  
-  _Example 2:_ In our weekly review, seniority gap was tied to delivery quality and risk.  
-  _Example 3:_ In retro, we connected seniority gap with one clear lesson learned.
+- **always available** /ˈɔlwˌeɪz əvˈeɪləbəl/ (adj phrase) - expectation to respond anytime  
+  _Example 1:_ Being always available is not sustainable.  
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
-- **realistic goal** /rˌiəlˈɪstɪk ɡˈoʊl/ (n) - target that is challenging but possible  
-  _Example 1:_ I set realistic goals each quarter.  
-  _Example 2:_ During planning, we used realistic goal to make a safer release decision.  
-  _Example 3:_ After that case, we added realistic goal to our checklist for future releases.
+- **workload** /wˈɝklˌoʊd/ (n) - amount of work assigned  
+  _Example 1:_ We redistributed workload after two people reported fatigue.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **external validation** /ɪkstˈɝnəl vˌælədˈeɪʃən/ (n) - approval from others  
-  _Example 1:_ I relied too much on external validation before.  
-  _Example 2:_ During planning, we used external validation to make a safer release decision.  
-  _Example 3:_ That experience showed how external validation affects both speed and stability.
+- **supportive manager** /səpˈɔrtɪv mˈænədʒɚ/ (n) - manager who helps with realistic planning  
+  _Example 1:_ A supportive manager helped us reset priorities.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **self-awareness** /sˈɛlf əwˈɛrnəs/ (n) - understanding your strengths and limits  
-  _Example 1:_ Self-awareness helped me choose better projects.  
-  _Example 2:_ In our weekly review, self-awareness was tied to delivery quality and risk.  
-  _Example 3:_ Later, self-awareness became part of our standard way of reporting issues.
+- **sustainable pace** /səstˈeɪnəbəl pˈeɪs/ (n) - work speed that can continue long term  
+  _Example 1:_ We moved to a sustainable pace after process changes.  
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
 **Additional useful terms:**
-- **progress marker** /prˈɑɡrˌɛs mˈɑrkɚ/ (n) - sign that you are improving
-- **confidence gap** /kˈɑnfədəns ɡˈæp/ (n) - difference between skill and self-belief
-- **peer learning** /pˈɪr lˈɝnɪŋ/ (n) - learning through colleagues
-- **promotion pressure** /prəmˈoʊʃən prˈɛʃɚ/ (n) - stress to advance quickly
-- **long game** /lˈɔŋ ɡˈeɪm/ (n) - long-term career perspective
+- **mental bandwidth** /mˈɛntəl bˈændwɪdθ/ (n) - available attention and energy
+- **rest day** /rˈɛst dˈeɪ/ (n) - full day without work activity
+- **team health** /tˈim hˈɛlθ/ (n) - overall well-being of team members
+- **escalation** /ˌɛskəlˈeɪʃən/ (n) - asking for help when pressure is too high
+- **priority reset** /praɪˈɔrəti risˈɛt/ (n) - changing priorities to reduce overload
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for personal growth**  
-  I have become more confident by tracking real progress.
+- **Present Perfect for ongoing pressure**  
+  We have been under pressure for several months.
 
-- **Past Simple for key learning moment**  
-  I realized I was comparing my beginning to someone else's peak.
+- **Past Simple for turning point**  
+  I spoke to my manager when I felt my energy dropping.
+
+- **Cause and effect language**  
+  Because on-call alerts were constant, focus quality went down.
+
+- **Advice and recommendation**  
+  Teams should plan buffer time after major releases.
 
 - **Contrast language**  
-  Comparing can motivate me, but it can also damage confidence.
+  High standards are good, but nonstop pressure is harmful.
 
-- **Advice language**  
-  We should compare with our past self, not only with others.
-
-- **Conditionals for mindset**  
-  If I focus only on titles, I feel constant pressure.
-
-- **Reflection language**  
-  I used to think success meant promotion, but now I value ownership and learning.
+- **Conditionals for prevention**  
+  If teams ignore early signals, burnout risk grows quickly.
 
 ### Useful Sentence Patterns
-- A time I felt imposter syndrome was...
-- What helped me most was...
-- I changed my benchmark from... to...
-- Comparison can be useful when..., but...
-- A practical habit I use is...
-- My definition of success now is...
+- A stress pattern I noticed was...
+- One boundary that helped me was...
+- We changed our process by...
+- It improved team health, but...
+- In my view, resilience means...
+- A practical step for managers is...
 
 </details>
 
@@ -109,86 +110,86 @@ description: Discuss success pressure, social comparison, and imposter feelings 
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- manage self-doubt
-- build healthy confidence
-- track real progress
-- avoid comparison trap
-- set realistic goals
-- improve through feedback
-- focus on long-term growth
-- develop self-awareness
-- handle promotion pressure
-- learn from stronger peers
-- reflect on achievements
-- redefine personal success
+- recognize burnout signs
+- manage on-call stress
+- set healthy boundaries
+- reduce chronic pressure
+- protect mental bandwidth
+- support team recovery
+- balance workload fairly
+- prevent long-term fatigue
+- build sustainable routines
+- communicate stress early
+- reset team priorities
+- improve work-life balance
 
 **Examples (real work):**
-- In one release week, we had to manage self-doubt while still trying to build healthy confidence.
-- In retro, we agreed to track real progress earlier so the same issue would not repeat.
+- In one release week, we had to recognize burnout signs while still trying to manage on-call stress.
+- In retro, we agreed to set healthy boundaries earlier so the same issue would not repeat.
 
 ### Useful Chunking & Sentence Starters
-- Early in my career,...
-- I often compared myself to...
-- The problem with that was...
-- I changed my approach by...
-- A small habit that helped was...
-- This improved my confidence, but...
-- In interviews, I now explain...
-- My long-term goal is...
+- In my experience, burnout starts when...
+- A hidden pressure in IT is...
+- We used to..., but now...
+- One practical boundary is...
+- This helped in the short term, but...
+- To protect team health,...
+- A manager can support by...
+- The lesson I learned is...
 
 **Examples (using starters):**
 - "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
 - "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
-- **measure up** -> I felt I did not measure up at first.
-- **look up to** -> I look up to senior engineers, but I do not copy their path exactly.
-- **catch up** -> I focused on catching up in one skill at a time.
-- **write down** -> I write down wins after each sprint.
-- **move past** -> I moved past one failure by reviewing what I learned.
+- **burn out** -> I nearly burned out during a long incident cycle.
+- **slow down** -> We slowed down feature work for one sprint.
+- **speak up** -> Team members were encouraged to speak up early.
+- **switch off** -> I switch off notifications after work hours.
+- **check in** -> We check in weekly on workload and stress.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Imposter Syndrome Example
+### Dialogue 1 - Recognizing Burnout
 
-**Teacher:** Have you experienced imposter syndrome?
-
-**Learner:**  
-Yes, especially after joining a team of very senior engineers. I felt my code reviews were weaker than theirs.
-
-I asked for feedback, improved one skill each sprint, and tracked progress. Confidence grew slowly but steadily.
-
-### Dialogue 2 - Comparison Trade-off
-
-**Teacher:** Does comparison motivate or hurt you?
+**Teacher:** Have you ever faced burnout risk?
 
 **Learner:**  
-Both. Comparison can push me to learn faster, but too much comparison hurts focus and confidence.
+Yes. During a heavy release period, I was on-call too often and started losing focus. I felt tired even after weekends.
 
-Now I use comparison only for ideas, not as my main self-worth measure.
+I spoke with my manager and reduced after-hours work for a while. It helped, but we also needed team-level changes.
 
-### Dialogue 3 - Defining Success
+### Dialogue 2 - Healthy vs Toxic Pressure
 
-**Teacher:** How do you define success now?
+**Teacher:** Is high pressure always bad?
 
 **Learner:**  
-I used to think success was title and salary only. Now I look at impact, ownership, and sustainable growth.
+Not always. Short pressure before a release can improve focus. But if pressure becomes normal every week, quality and morale drop.
 
-This keeps me motivated, even when promotion timing is slower.
+So pressure can help in short bursts, but it is harmful without recovery time.
+
+### Dialogue 3 - Practical Recovery Plan
+
+**Teacher:** What recovery strategy worked for your team?
+
+**Learner:**  
+We added no-meeting blocks, rotated on-call more fairly, and reserved one sprint every two months for bug cleanup.
+
+Velocity looked slightly lower at first, but incidents and stress both decreased.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Many developers feel pressure from social media, peer progress, and promotion expectations. This can create self-doubt, even when performance is strong. The goal is not to stop comparing completely, but to compare in a healthy way.
+Burnout in IT is often quiet at first. People still deliver tasks, but energy, focus, and motivation go down. Teams may ignore these signs until bugs increase and communication gets worse.
 
-Useful benchmarks are practical: quality of work, ownership, feedback, and skill growth over time. These are more stable than external signals like titles or online posts.
+Healthy teams treat performance as a long-term goal. They set clear boundaries, share workload fairly, and create space for recovery after high-pressure work. This is not about lowering standards. It is about keeping quality and people stable over time.
 
-In professional speaking, honesty and balance matter. You can admit self-doubt and still show clear growth actions.
+In discussions, balanced language is important: pressure is sometimes necessary, but constant pressure is not sustainable.
 
 </details>
 
@@ -196,25 +197,25 @@ In professional speaking, honesty and balance matter. You can admit self-doubt a
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What does success mean to you now?
-2. Have you ever felt imposter syndrome at work?
-3. How do you stay motivated without unhealthy comparison?
-4. What career benchmark do you use today?
+1. What are early signs of burnout in software teams?
+2. How do you protect your energy during high-pressure periods?
+3. How can managers reduce hidden pressure in IT teams?
+4. What is one boundary that improved your work quality?
 
 ### High-Value Case Questions
-5. Share one moment when self-doubt affected your work.
-6. Tell me about a feedback moment that improved your confidence.
-7. Describe a personal habit that helps you track progress.
+5. Share a time when stress affected your work and how you handled it.
+6. Tell me about a team process change that reduced burnout risk.
+7. Describe a situation where saying "no" was necessary for sustainability.
 
 ### Critical Discussion Questions
-8. Debate prompt: Does comparing yourself to others motivate or damage you?
-9. Is title more important than impact in tech careers?
-10. Should companies discuss imposter syndrome more openly?
+8. Debate prompt: Is high-pressure culture a sign of ambition or a system problem?
+9. Should companies pay more for heavy on-call work?
+10. Is resilience more personal or organizational?
 
 **Tips for speaking practice:**
-- Be honest, but show action.
-- Use one real story and one lesson.
-- Keep language simple and personal.
+- Use honest but professional language.
+- Give one personal example and one team-level fix.
+- Include a simple trade-off in your answer.
 
 ---
 

@@ -1,107 +1,108 @@
 ---
 sessionNumber: 22
-title: Conflict with Difficult People
-topic: De-escalation, Boundaries, and Professional Response
+title: Decision Making Under Uncertainty
+topic: Acting Without Full Information
 phase: PHASE 4 - BEHAVIORAL & INTERVIEW
 level: B1-B2
-description: Handle conflicts with emotionally difficult people while staying calm and professional.
+description: Discuss how you decide with incomplete data: assumptions, downside planning, trade-offs, and final decision logic.
 ---
 
-# Session 22: Conflict with Difficult People
+# Session 22: Decision Making Under Uncertainty
 
 **Level:** B1-B2  
-**Focus:** Explain how you handle toxic behavior, set boundaries, and escalate appropriately.
+**Focus:** Acting without full information.
+**Scope:** Discuss how you decide with incomplete data: assumptions, downside planning, trade-offs, and final decision logic.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **de-escalation** /dˈi ˌɛskəlˈeɪʃən/ (n) - reducing emotional tension in conflict  
-  _Example 1:_ I focused on de-escalation before discussing technical details.  
-  _Example 2:_ For a customer-facing bug, de-escalation guided what we fixed first.  
-  _Example 3:_ After that case, we added de-escalation to our checklist for future releases.
+- **calculated risk** /ˈkælkjəˌleɪtɪd rɪsk/ (n) - risk you take after thinking about possible outcomes  
+  _Example 1:_ I accepted a startup offer as a calculated risk.  
+  _Example 2:_ This helped me explain one difficult workplace situation more clearly.  
+  _Example 3:_ This made my examples sound more real, not textbook-like.
 
-- **toxic behavior** /tˈɑksɪk bɪhˈeɪvjɚ/ (n) - harmful behavior like disrespect or blame  
-  _Example 1:_ Repeated toxic behavior damaged team morale.  
-  _Example 2:_ In our weekly review, toxic behavior was tied to delivery quality and risk.  
-  _Example 3:_ That experience showed how toxic behavior affects both speed and stability.
+- **uncertainty** /ʌnˈsɝtənti/ (n) - situation where future outcomes are unclear  
+  _Example 1:_ Uncertainty is normal when you switch roles or industries.  
+  _Example 2:_ This gave structure to my answer in mock interview sessions.  
+  _Example 3:_ It also helped me show both ownership and reflection in my answers.
 
-- **boundary** /bˈaʊndɚi/ (n) - clear limit on acceptable behavior  
-  _Example 1:_ I set a boundary around disrespectful comments.  
-  _Example 2:_ During planning, we used boundary to make a safer release decision.  
-  _Example 3:_ That experience showed how boundary affects both speed and stability.
+- **opportunity cost** /ˌɑpɚˈtunəti kɔst/ (n) - value of what you give up by choosing one option  
+  _Example 1:_ The opportunity cost of staying was slower learning.  
+  _Example 2:_ This gave structure to my answer in mock interview sessions.  
+  _Example 3:_ It also helped me show both ownership and reflection in my answers.
 
-- **passive-aggressive** /pˈæsɪv əɡrˈɛsɪv/ (adj) - indirect hostility  
-  _Example 1:_ Passive-aggressive feedback made collaboration harder.  
-  _Example 2:_ From a business view, the plan looked too passive-aggressive to approve.  
-  _Example 3:_ That incident taught me not to ignore anything passive-aggressive.
+- **comfort zone** /ˈkʌmfɚt zoʊn/ (n) - familiar situation with low stress and low change  
+  _Example 1:_ I stayed in my comfort zone too long in my first job.  
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
-- **escalation** /ˌɛskəlˈeɪʃən/ (n) - involving manager/HR when needed  
-  _Example 1:_ We used escalation after multiple failed conversations.  
-  _Example 2:_ In one sprint, escalation came up when we investigated a production issue.  
-  _Example 3:_ I used escalation in a stakeholder update so non-technical teams could follow.
+- **downside scenario** /ˈdaʊnˌsaɪd səˈnɛrioʊ/ (n) - worst realistic result if a decision fails  
+  _Example 1:_ I always plan for one downside scenario before switching jobs.  
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
-- **professional tone** /prəfˈɛʃənəl tˈoʊn/ (n) - calm and respectful communication style  
-  _Example 1:_ I kept a professional tone even when the other person was upset.  
-  _Example 2:_ During planning, we used professional tone to make a safer release decision.  
-  _Example 3:_ That experience showed how professional tone affects both speed and stability.
+- **backup plan** /ˈbækˌʌp plæn/ (n) - alternative plan if the first one fails  
+  _Example 1:_ My backup plan was freelance work for three months.  
+  _Example 2:_ This gave structure to my answer in mock interview sessions.  
+  _Example 3:_ It also helped me show both ownership and reflection in my answers.
 
-- **conflict trigger** /kˈɑnflɪkt trˈɪɡɚ/ (n) - event that starts conflict  
-  _Example 1:_ Timeline pressure was the main conflict trigger.  
-  _Example 2:_ During planning, we used conflict trigger to make a safer release decision.  
-  _Example 3:_ I used conflict trigger in a stakeholder update so non-technical teams could follow.
+- **decision fatigue** /dɪˈsɪʒən fəˈtiɡ/ (n) - mental tiredness from too many decisions  
+  _Example 1:_ Decision fatigue made me delay important choices.  
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
-- **working agreement** /wˈɝkɪŋ əɡrˈimənt/ (n) - shared rules for collaboration  
-  _Example 1:_ We created a working agreement for code review behavior.  
-  _Example 2:_ In our weekly review, working agreement was tied to delivery quality and risk.  
-  _Example 3:_ That experience showed how working agreement affects both speed and stability.
+- **risk tolerance** /rɪsk ˈtɑlərəns/ (n) - how much risk you can accept emotionally and financially  
+  _Example 1:_ My risk tolerance changed after family responsibilities increased.  
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
-- **psychological safety** /sˌaɪkəlˈɑdʒɪkəl sˈeɪfti/ (n) - feeling safe to speak up  
-  _Example 1:_ Toxic comments reduced psychological safety.  
-  _Example 2:_ In our weekly review, psychological safety was tied to delivery quality and risk.  
-  _Example 3:_ In retro, we connected psychological safety with one clear lesson learned.
+- **regret minimization** /rɪˈɡrɛt ˌmɪnəməˈzeɪʃən/ (n) - choosing the option you are less likely to regret later  
+  _Example 1:_ I used regret minimization when choosing between two offers.  
+  _Example 2:_ In interview prep, I used this idea to build stronger behavioral answers.  
+  _Example 3:_ Now I use it to keep answers practical, honest, and easy to follow.
 
-- **resolution path** /rˌɛzəlˈuʃən pˈæθ/ (n) - planned way to resolve conflict  
-  _Example 1:_ Our resolution path started with 1:1 discussion.  
-  _Example 2:_ On a real project, resolution path helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added resolution path to our checklist for future releases.
+- **career pivot** /kəˈrɪr ˈpɪvət/ (n) - meaningful change in role, domain, or direction  
+  _Example 1:_ My career pivot from QA to backend took one year.  
+  _Example 2:_ I used this when practicing follow-up questions under pressure.  
+  _Example 3:_ As a result, my interview stories became clearer and more confident.
 
 **Additional useful terms:**
-- **active listening** /ˈæktɪv lˈɪsənɪŋ/ (n) - showing you understand the other side
-- **neutral language** /nˈutrəl lˈæŋɡwədʒ/ (n) - words that avoid blame
-- **repeat pattern** /rɪpˈit pˈætɚn/ (n) - behavior that happens many times
-- **impact statement** /ˌɪmpˈækt stˈeɪtmənt/ (n) - clear explanation of behavior effects
-- **safe escalation** /sˈeɪf ˌɛskəlˈeɪʃən/ (n) - responsible escalation without drama
+- **incomplete information** /ˌɪnkəmˈplit ˌɪnfɚˈmeɪʃən/ (n) - not enough data for perfect certainty
+- **long-term upside** /lɔŋ tɝm ˈʌpˌsaɪd/ (n) - potential future benefit over years
+- **short-term sacrifice** /ʃɔrt tɝm ˈsækrəˌfaɪs/ (n) - temporary cost for later gain
+- **decision criteria** /dɪˈsɪʒən kraɪˈtɪriə/ (n) - standards used to choose an option
+- **uncertainty buffer** /ʌnˈsɝtənti ˈbʌfɚ/ (n) - extra money or time reserved for unknown outcomes
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Neutral reporting language**  
-  In meetings, the comments became personal and less productive.
+- **Conditionals for possible outcomes**  
+  If the role does not work out, I will use my backup plan.
 
-- **Boundary language**  
-  I am happy to discuss ideas, but I am not okay with personal attacks.
+- **Past narrative for difficult choices**  
+  I did not have full information, so I made a decision based on values and risk.
+
+- **Comparatives for evaluation**  
+  This option is riskier in the short term but stronger in long-term upside.
+
+- **Hedging language**  
+  I cannot be 100 percent sure, but the evidence points to this direction.
+
+- **Modals for strategic advice**  
+  You should define your downside before making a big move.
 
 - **Cause and effect**  
-  Because feedback was hostile, collaboration slowed down.
-
-- **Past action sequence**  
-  First I tried direct conversation, then I documented patterns, then I escalated.
-
-- **Conditional language**  
-  If behavior does not change, escalation is necessary.
-
-- **Outcome language**  
-  After setting clear rules, meetings became more focused.
+  Because I had clear criteria, I avoided emotional overthinking.
 
 ### Useful Sentence Patterns
-- The conflict started when...
-- I tried to de-escalate by...
-- I set a boundary that...
-- I documented specific examples of...
-- We escalated because...
-- The final outcome was...
+- I made this decision even though...
+- The biggest uncertainty was...
+- My backup plan was...
+- I accepted this trade-off because...
+- Looking back, the right call was...
+- If I had to decide again, I would...
 
 </details>
 
@@ -109,86 +110,86 @@ description: Handle conflicts with emotionally difficult people while staying ca
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- handle difficult behavior
-- de-escalate team conflict
-- set clear boundaries
-- keep professional tone
-- document conflict patterns
-- protect team safety
-- escalate appropriately
-- resolve recurring tension
-- restore team trust
-- improve collaboration norms
-- avoid personal attacks
-- focus on shared goals
+- take calculated risk
+- assess downside scenario
+- define decision criteria
+- handle uncertainty calmly
+- build a backup plan
+- compare long-term upside
+- accept short-term sacrifice
+- evaluate opportunity cost
+- increase risk tolerance
+- avoid decision paralysis
+- make informed choices
+- pivot career direction
 
 **Examples (real work):**
-- In one release week, we had to handle difficult behavior while still trying to de-escalate team conflict.
-- In retro, we agreed to set clear boundaries earlier so the same issue would not repeat.
+- Before I changed jobs, I assessed downside scenario and built a six-month buffer.
+- Defining decision criteria helped me avoid emotional decisions during uncertainty.
 
 ### Useful Chunking & Sentence Starters
-- A difficult situation I faced was...
-- The behavior pattern was...
-- I responded by...
-- I kept the discussion focused on...
-- When direct discussion failed,...
-- A clear boundary I set was...
-- The trade-off was...
-- In the end, we...
+- At that point in my career,...
+- I did not have complete information, so...
+- The safe option was..., but...
+- One risk I could accept was...
+- What made the difference was...
+- I planned for the worst-case by...
+- The final decision came down to...
+- In hindsight,...
 
 **Examples (using starters):**
-- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
-- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
+- "The safe option was to stay, but the learning ceiling was already low."
+- "The final decision came down to growth potential and value alignment."
 
 ### Useful Phrasal Verbs
-- **calm down** -> I paused the meeting to calm down the discussion.
-- **call out** -> I called out disrespectful behavior clearly.
-- **step in** -> My manager stepped in after repeated issues.
-- **sort out** -> We sorted out responsibilities to reduce tension.
-- **move forward** -> After agreement, we moved forward with clearer rules.
+- **weigh up** -> I weighed up risk, learning, and salary before deciding.
+- **miss out on** -> If I stayed, I might miss out on better growth.
+- **step into** -> I stepped into a new domain with limited confidence.
+- **fall back on** -> I could fall back on freelance work if needed.
+- **work out** -> The plan did not work out exactly, but I still learned a lot.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Difficult Colleague
+### Dialogue 1 - Decision Without Full Data
 
-**Interviewer:** Tell me about conflict with a difficult teammate.
+**Teacher:** Tell me about a difficult career decision with incomplete information.
 
-**You:**  
-A teammate often gave harsh comments in code reviews. I first talked privately and explained the impact on team morale.
+**Learner:**  
+I had two offers: one stable, one risky but with stronger mentorship. I did not know which company would perform better.
 
-Some improvement happened, but the pattern returned. We then involved our manager and set review rules.
+I chose the riskier one and prepared a backup plan. It was stressful, but my skills improved much faster.
 
-### Dialogue 2 - Setting Boundaries
+### Dialogue 2 - Fear and Confidence
 
-**Interviewer:** How do you set boundaries without creating more conflict?
+**Friend:** What scares you most when taking career risks?
 
-**You:**  
-I use neutral language and specific examples. I say what behavior is a problem and what behavior I expect instead.
+**Friend:**  
+The fear of making the wrong choice. I worry about losing time or money.
 
-This keeps it professional. It may feel uncomfortable, but it prevents bigger conflict later.
+To manage that, I focus on downside planning instead of trying to predict everything.
 
-### Dialogue 3 - Escalation Decision
+### Dialogue 3 - Luck vs Effort
 
-**Interviewer:** When do you escalate to management?
+**Teacher:** How do you think about luck in career success?
 
-**You:**  
-I escalate when direct discussion fails and team impact is clear. In one case, deadlines slipped because of repeated arguments.
+**Learner:**  
+Luck matters, but preparation still matters more in the long run. Good luck helps, but you need skills to use the opportunity.
 
-Escalation helped reset expectations and protect team productivity.
+So I cannot control timing, but I can control readiness.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Conflict in teams is normal, but difficult behavior needs clear handling. If teams ignore toxic patterns, quality and trust both decline. Engineers should use calm language, specific examples, and clear boundaries.
+Career decisions are often made with incomplete information. You rarely know exactly how a new role, team, or company will turn out. Waiting for perfect certainty can lead to missed opportunities.
 
-Not every conflict needs escalation, but repeated harmful behavior often does. Escalation is not punishment. It is a process to protect team function and project outcomes.
+A practical approach is to manage risk, not eliminate it. Define your criteria, estimate downside, and build a backup plan. This gives enough structure to move forward without pretending you can predict everything.
 
-In interviews, show emotional control and practical steps. That demonstrates maturity.
+This mindset is useful in interviews and real work. Strong candidates can explain uncertainty clearly, show decision logic, and describe how they handled pressure after making the choice.
 
 </details>
 
@@ -196,25 +197,25 @@ In interviews, show emotional control and practical steps. That demonstrates mat
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. Tell me about a conflict with a difficult person at work.
-2. How do you de-escalate tense conversations?
-3. When do you set boundaries, and how?
-4. When is escalation the right choice?
+1. How do you make big decisions when information is incomplete?
+2. What is your personal risk tolerance in career moves?
+3. How do you define downside before taking a risk?
+4. What role does backup planning play in your decisions?
 
 ### High-Value Case Questions
-5. Share a case where conflict affected delivery.
-6. Describe a boundary that improved team behavior.
-7. Tell me about a conflict you handled differently over time.
+5. Tell me about a difficult career decision and your reasoning process.
+6. Describe a risk that did not work out and what you learned.
+7. Share one case where short-term sacrifice created long-term upside.
 
 ### Critical Discussion Questions
-8. Should companies tolerate difficult high performers?
-9. Is direct confrontation always better than escalation?
-10. How can leaders protect team psychological safety?
+8. Debate prompt: Is career success mostly effort or mostly luck?
+9. Should people prioritize stability before growth in their 20s?
+10. Is avoiding risk actually a hidden form of risk?
 
 **Tips for speaking practice:**
-- Focus on behavior, not personality labels.
-- Show sequence: discuss -> document -> escalate.
-- Mention final business impact.
+- Use a clear decision timeline: options, criteria, choice, result.
+- Mention one uncertainty and how you handled it.
+- Include one honest downside, not only positive outcomes.
 
 ---
 

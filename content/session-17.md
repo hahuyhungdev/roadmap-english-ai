@@ -1,69 +1,70 @@
 ---
 sessionNumber: 17
-title: Career Growth and Self-Directed Learning
-topic: Building Skills and Impact Without Waiting for Permission
-phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+title: Learning & Skill Growth
+topic: How People Actually Improve Skills Long-Term
+phase: PHASE 3 - PRACTICAL DISCUSSION
 level: B1-B2
-description: Explain how you grow as an engineer through independent learning, practical projects, and reflection.
+description: Talk about practical skill growth methods: deliberate practice, feedback loop, consistency, and applying learning in real projects.
 ---
 
-# Session 17: Career Growth and Self-Directed Learning
+# Session 17: Learning & Skill Growth
 
 **Level:** B1-B2  
-**Focus:** Discuss career development with practical learning habits, not only titles or salary goals.
+**Focus:** How people really improve skills long-term.
+**Scope:** Talk about practical skill growth methods: deliberate practice, feedback loop, consistency, and applying learning in real projects.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **self-directed learning** /sˈɛlf dɚˈɛktəd lˈɝnɪŋ/ (n) - learning driven by your own plan  
   _Example 1:_ Self-directed learning helped me move into system design tasks.  
-  _Example 2:_ For a customer-facing bug, self-directed learning guided what we fixed first.  
-  _Example 3:_ After that case, we added self-directed learning to our checklist for future releases.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **upskilling** /ʌpˈskɪlɪŋ/ (n) - building new skills for current or future roles  
   _Example 1:_ I did upskilling in cloud deployment last year.  
-  _Example 2:_ In one sprint, upskilling came up when we investigated a production issue.  
-  _Example 3:_ In retro, we connected upskilling with one clear lesson learned.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **side project** /sˈaɪd prˈɑdʒɛkt/ (n) - personal project for learning or experimentation  
   _Example 1:_ My side project improved my API design skills.  
-  _Example 2:_ For a customer-facing bug, side project guided what we fixed first.  
-  _Example 3:_ Later, side project became part of our standard way of reporting issues.
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
 - **code reading** /kˈoʊd rˈidɪŋ/ (n) - learning by studying real codebases  
   _Example 1:_ I learned architecture patterns through code reading.  
-  _Example 2:_ In one sprint, code reading came up when we investigated a production issue.  
-  _Example 3:_ In retro, we connected code reading with one clear lesson learned.
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
 - **mentorship** /mˈɛntɚʃˌɪp/ (n) - guidance from more experienced engineers  
   _Example 1:_ Mentorship helped me avoid common design mistakes.  
-  _Example 2:_ In one sprint, mentorship came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how mentorship affects both speed and stability.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **feedback loop** /fˈidbˌæk lˈup/ (n) - cycle of action, feedback, and improvement  
   _Example 1:_ I use a weekly feedback loop with my manager.  
-  _Example 2:_ During planning, we used feedback loop to make a safer release decision.  
-  _Example 3:_ After that case, we added feedback loop to our checklist for future releases.
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
 - **impact growth** /ˌɪmpˈækt ɡrˈoʊθ/ (n) - increasing business and team contribution  
   _Example 1:_ I track impact growth, not just technical skill growth.  
-  _Example 2:_ On a real project, impact growth helped us explain the trade-off to product.  
-  _Example 3:_ I used impact growth in a stakeholder update so non-technical teams could follow.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **learning roadmap** /lˈɝnɪŋ rˈoʊdmˌæp/ (n) - clear plan for what to learn next  
   _Example 1:_ I review my learning roadmap every quarter.  
-  _Example 2:_ During planning, we used learning roadmap to make a safer release decision.  
-  _Example 3:_ Later, learning roadmap became part of our standard way of reporting issues.
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
 - **production reality** /prədˈʌkʃən rˌiˈælətˌi/ (n) - challenges in real systems, not theory  
   _Example 1:_ Some design patterns fail in production reality.  
-  _Example 2:_ In one sprint, production reality came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how production reality affects both speed and stability.
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
 - **knowledge gap** /nˈɑlədʒ ɡˈæp/ (n) - missing skill or understanding  
   _Example 1:_ I identified a knowledge gap in observability.  
-  _Example 2:_ During planning, we used knowledge gap to make a safer release decision.  
-  _Example 3:_ In retro, we connected knowledge gap with one clear lesson learned.
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
 **Additional useful terms:**
 - **deliberate practice** /dɪlˈɪbɚət prˈæktəs/ (n) - focused practice with clear goals

@@ -1,69 +1,70 @@
 ---
 sessionNumber: 15
-title: Relationships, Family, and Social Expectations
-topic: Personal Priorities, Family Pressure, and Emotional Communication
-phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+title: Relationships & Boundaries
+topic: Friends, Family, Saying No, and Protecting Time
+phase: PHASE 3 - PRACTICAL DISCUSSION
 level: B1-B2
-description: Discuss relationship and family expectations with clear, respectful, and emotionally honest language.
+description: Talk about communication in close relationships: setting boundaries, handling expectations, and protecting focus without hurting trust.
 ---
 
-# Session 15: Relationships, Family, and Social Expectations
+# Session 15: Relationships & Boundaries
 
 **Level:** B1-B2  
-**Focus:** Speak about relationships and family pressure in a mature way, including boundaries, priorities, and trade-offs.
+**Focus:** Friends, family, saying no, protecting time.
+**Scope:** Talk about communication in close relationships: setting boundaries, handling expectations, and protecting focus without hurting trust.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **family expectation** /ˈfæməli ˌɛkspɛkˈteɪʃən/ (n) - what your family believes you should do in life  
   _Example 1:_ Family expectations influenced my early career choices.  
-  _Example 2:_ During promotion season, family expectation can increase stress for young engineers.  
-  _Example 3:_ I learned to discuss family expectations without arguing.
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
 - **emotional support** /ɪˈmoʊʃənəl səˈpɔrt/ (n) - care and understanding from people close to you  
   _Example 1:_ Emotional support helped me through a difficult work period.  
-  _Example 2:_ In remote teams, emotional support from close friends can protect mental health.  
-  _Example 3:_ I realized emotional support is as important as practical advice.
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
 - **quality time** /ˈkwɑləti taɪm/ (n) - focused time with people you care about  
   _Example 1:_ I schedule quality time with family on weekends.  
-  _Example 2:_ Without quality time, work stress affects personal relationships faster.  
-  _Example 3:_ Quality time can be simple, like dinner and real conversation.
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
 - **boundary setting** /ˈbaʊndəri ˈsɛtɪŋ/ (n) - clearly defining personal limits  
   _Example 1:_ Boundary setting helped me stop late-night work calls.  
-  _Example 2:_ In relationships, boundary setting prevents silent frustration.  
-  _Example 3:_ I practiced boundary setting by saying no more clearly.
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
 - **people-pleasing** /ˈpipəl ˈplizɪŋ/ (n) - trying too hard to satisfy everyone  
   _Example 1:_ People-pleasing made me overcommit at work and at home.  
-  _Example 2:_ People-pleasing often leads to burnout for high-responsibility roles.  
-  _Example 3:_ I reduced people-pleasing by setting realistic promises.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **unspoken pressure** /ʌnˈspoʊkən ˈprɛʃɚ/ (n) - pressure people feel but do not openly discuss  
   _Example 1:_ Unspoken pressure appears when friends compare life milestones.  
-  _Example 2:_ In teams, unspoken pressure can affect confidence and communication.  
-  _Example 3:_ Naming unspoken pressure made conversations easier.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - situation where goals or values do not match  
   _Example 1:_ Misalignment in priorities caused conflict in my relationship.  
-  _Example 2:_ Work-life misalignment is a common reason people change jobs.  
-  _Example 3:_ We solved misalignment by discussing expectations early.
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
 - **emotional maturity** /ɪˈmoʊʃənəl məˈtʃʊrəti/ (n) - ability to handle feelings responsibly  
   _Example 1:_ Emotional maturity means listening before reacting.  
-  _Example 2:_ Managers with emotional maturity usually lead healthier teams.  
-  _Example 3:_ I am still learning emotional maturity in hard conversations.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **personal priority** /ˈpɝsənəl praɪˈɔrəti/ (n) - what matters most to you in this period of life  
   _Example 1:_ My personal priority this year is health and stable routines.  
-  _Example 2:_ Clear personal priority helps me choose projects more carefully.  
-  _Example 3:_ I update my personal priority every few months.
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
 - **guilt** /ɡɪlt/ (n) - feeling bad when you think you disappointed someone  
   _Example 1:_ I felt guilt when I could not meet family expectations.  
-  _Example 2:_ In career decisions, guilt can push people into wrong choices.  
-  _Example 3:_ Talking openly about guilt helped me feel lighter.
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
 **Additional useful terms:**
 - **hard conversation** /hɑrd ˌkɑnvɚˈseɪʃən/ (n) - direct but difficult discussion

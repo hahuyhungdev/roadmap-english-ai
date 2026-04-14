@@ -4,13 +4,14 @@ title: Mock Interview 1
 topic: Full Simulation - Behavioral + Discussion + Q&A
 phase: PHASE 5 - MOCK INTERVIEW
 level: B1-B2
-description: Run a realistic first mock interview and focus on fluency, structure, and confidence under follow-up pressure.
+description: Full simulation with pressure and follow-up questions; focus on structure, fluency, and content clarity.
 ---
 
 # Session 25: Mock Interview 1
 
 **Level:** B1-B2  
 **Focus:** Simulate a full interview with behavioral questions, discussion topics, and short Q&A.
+**Scope:** Full simulation with pressure and follow-up questions; focus on structure, fluency, and content clarity.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>

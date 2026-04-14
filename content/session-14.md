@@ -1,107 +1,108 @@
 ---
 sessionNumber: 14
-title: Technology, Attention, and Modern Habits
-topic: Focus, Digital Overload, and Sustainable Productivity
-phase: PHASE 3 - PRACTICAL DISCUSSION: IT + LIFE
+title: Money & Real-Life Trade-offs
+topic: Saving, Spending, and Lifestyle Pressure
+phase: PHASE 3 - PRACTICAL DISCUSSION
 level: B1-B2
-description: Discuss how technology affects focus, habits, and mental energy in daily life and work.
+description: Discuss budgeting choices, emergency fund, lifestyle inflation, social pressure, and trade-offs in personal money decisions.
 ---
 
-# Session 14: Technology, Attention, and Modern Habits
+# Session 14: Money & Real-Life Trade-offs
 
 **Level:** B1-B2  
-**Focus:** Explain attention problems and habit changes with realistic examples from phone use, remote work, and daily routines.
+**Focus:** Saving vs spending, lifestyle pressure, financial decisions.
+**Scope:** Discuss budgeting choices, emergency fund, lifestyle inflation, social pressure, and trade-offs in personal money decisions.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **attention span** /əˈtɛnʃən spæn/ (n) - how long you can stay focused on one thing  
-  _Example 1:_ My attention span got shorter after years of constant notifications.  
-  _Example 2:_ In coding tasks, a short attention span increases context-switching mistakes.  
-  _Example 3:_ I protect my attention span by using focus blocks.
+- **lifestyle inflation** /ˈlaɪfˌstaɪl ɪnˈfleɪʃən/ (n) - when your spending rises as your income rises  
+  _Example 1:_ After my first salary increase, lifestyle inflation happened quickly.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
-- **doomscrolling** /ˈdumˌskroʊlɪŋ/ (n) - endless scrolling through negative or addictive content  
-  _Example 1:_ Doomscrolling at night affects my sleep quality.  
-  _Example 2:_ Doomscrolling before work makes morning focus harder.  
-  _Example 3:_ I replaced doomscrolling with a short walk after dinner.
+- **emergency fund** /ɪˈmɝdʒənsi fʌnd/ (n) - money saved for unexpected problems  
+  _Example 1:_ I built a six-month emergency fund before changing jobs.  
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
-- **notification overload** /ˌnoʊtəfəˈkeɪʃən ˈoʊvɚˌloʊd/ (n) - too many alerts that interrupt your attention  
-  _Example 1:_ Notification overload made me feel busy but not productive.  
-  _Example 2:_ In remote teams, notification overload can slow deep technical work.  
-  _Example 3:_ I turned off non-urgent alerts to reduce notification overload.
+- **cost of living** /kɔst əv ˈlɪvɪŋ/ (n) - how expensive daily life is in one place  
+  _Example 1:_ The cost of living in big cities changed my job plan.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **deep work** /dip wɝk/ (n) - focused work without distraction for complex tasks  
-  _Example 1:_ I schedule deep work in the morning for architecture tasks.  
-  _Example 2:_ Deep work helps me debug faster than fragmented multitasking.  
-  _Example 3:_ On weekends, I use deep work for personal learning.
+- **financial independence** /faɪˈnænʃəl ˌɪndɪˈpɛndəns/ (n) - having enough money to choose your lifestyle freely  
+  _Example 1:_ Financial independence is my long-term goal, not early retirement.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **context switching** /ˈkɑntɛkst ˈswɪtʃɪŋ/ (n) - moving quickly between different tasks and topics  
-  _Example 1:_ Too much context switching drains my energy by noon.  
-  _Example 2:_ Context switching is common when engineers join many chat threads.  
-  _Example 3:_ I batch similar tasks to reduce context switching.
+- **peer pressure** /pɪr ˈprɛʃɚ/ (n) - pressure from people around you to act similarly  
+  _Example 1:_ Peer pressure made me feel behind when others bought expensive things.  
+  _Example 2:_ I noticed this clearly during a stressful period last year.  
+  _Example 3:_ This helped me make better choices with less stress.
 
-- **habit loop** /ˈhæbət lup/ (n) - cycle of trigger, action, and reward in behavior  
-  _Example 1:_ My habit loop was stress, scrolling, then short relief.  
-  _Example 2:_ Understanding the habit loop helped me design better work routines.  
-  _Example 3:_ I changed my habit loop by leaving my phone in another room.
+- **safety net** /ˈseɪfti nɛt/ (n) - support that protects you when things go wrong  
+  _Example 1:_ Savings are my safety net when I take career risks.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
-- **FOMO** /ˈfoʊmoʊ/ (n) - fear of missing out on updates, events, or opportunities  
-  _Example 1:_ FOMO made me check Slack too often.  
-  _Example 2:_ In global teams, FOMO can create unhealthy always-online behavior.  
-  _Example 3:_ I reduced FOMO by checking social apps only twice a day.
+- **fixed expense** /fɪkst ɪkˈspɛns/ (n) - cost that stays similar every month  
+  _Example 1:_ Rent is my biggest fixed expense.  
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
-- **digital detox** /ˈdɪdʒətəl ˈditɑks/ (n) - planned break from screens or digital platforms  
-  _Example 1:_ A weekend digital detox improved my mood and sleep.  
-  _Example 2:_ During heavy projects, a short digital detox helps me reset mentally.  
-  _Example 3:_ My friend does a digital detox every Sunday.
+- **delayed gratification** /dɪˈleɪd ˌɡrætəfəˈkeɪʃən/ (n) - waiting now to get a better result later  
+  _Example 1:_ Delayed gratification helped me build savings in my first two years.  
+  _Example 2:_ This topic came up in a real conversation with friends about work pressure.  
+  _Example 3:_ Now I can explain this topic more clearly in discussions and interviews.
 
-- **default behavior** /dɪˈfɔlt bəˈheɪvjɚ/ (n) - action you do automatically without thinking  
-  _Example 1:_ Opening social media became my default behavior during breaks.  
-  _Example 2:_ In office hours, default behavior often decides productivity quality.  
-  _Example 3:_ I changed my default behavior by keeping books near my desk.
+- **opportunity cost** /ˌɑpɚˈtunəti kɔst/ (n) - what you give up when you choose one option  
+  _Example 1:_ The opportunity cost of high rent was less money for learning courses.  
+  _Example 2:_ I started paying attention to this when my energy dropped for several weeks.  
+  _Example 3:_ Over time, this gave me a healthier and more realistic perspective.
 
-- **focus block** /ˈfoʊkəs blɑk/ (n) - fixed time period reserved for concentrated work  
-  _Example 1:_ I use two focus blocks every day for hard tasks.  
-  _Example 2:_ Team focus blocks reduced interruption and improved delivery quality.  
-  _Example 3:_ A 45-minute focus block works better for me than a long session.
+- **financial anxiety** /faɪˈnænʃəl æŋˈzaɪəti/ (n) - stress related to money and uncertainty  
+  _Example 1:_ Financial anxiety gets worse when income is unstable.  
+  _Example 2:_ In my daily life, this became important when my schedule got overloaded.  
+  _Example 3:_ After that, I changed one habit and it made a real difference.
 
 **Additional useful terms:**
-- **screen fatigue** /skrin fəˈtiɡ/ (n) - mental tiredness from too much screen time
-- **mindless checking** /ˈmaɪndləs ˈtʃɛkɪŋ/ (n) - opening apps without clear reason
-- **attention residue** /əˈtɛnʃən ˈrɛzəˌdu/ (n) - leftover distraction from previous tasks
-- **healthy routine** /ˈhɛlθi ruˈtin/ (n) - daily pattern that supports energy and focus
-- **time boundary** /taɪm ˈbaʊndəri/ (n) - clear limits for work and online time
+- **take-home pay** /teɪk hoʊm peɪ/ (n) - money you actually receive after tax
+- **lifestyle creep** /ˈlaɪfˌstaɪl krip/ (n) - slow increase in daily spending habits
+- **budget buffer** /ˈbʌdʒɪt ˈbʌfɚ/ (n) - extra money left for unexpected costs
+- **long-term goal** /lɔŋ tɝm ɡoʊl/ (n) - target you want to reach over years
+- **money mindset** /ˈmʌni ˈmaɪndˌsɛt/ (n) - your attitude and habits around money
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for change over time**  
-  I have become more intentional about phone use this year.
+- **Present Perfect for life progress**  
+  I have become more careful with money since I started working.
 
-- **Used to for old habits**  
-  I used to check messages every five minutes.
+- **Comparatives for trade-offs**  
+  A cheaper apartment is less convenient, but it gives me more financial freedom.
 
-- **Cause and effect language**  
-  Because notifications were constant, my code quality dropped.
+- **Conditionals for planning**  
+  If I increase my fixed expenses too quickly, I will lose flexibility.
+
+- **Modals for advice**  
+  You should build an emergency fund before taking high career risks.
 
 - **Concession language**  
-  Technology saves time, but it also creates new distractions.
+  Even though the salary is high, the cost of living is also high.
 
-- **Conditionals for behavior design**  
-  If I leave my phone on the desk, I lose focus faster.
-
-- **Recommendation patterns**  
-  One practical approach is to schedule short but regular focus blocks.
+- **Cause and effect**  
+  Because I tracked spending monthly, my financial anxiety dropped.
 
 ### Useful Sentence Patterns
-- One digital habit I changed is...
-- I noticed my attention dropped when...
-- A small rule that helped me was...
-- This tool is useful, but...
-- The hardest part is not..., it is...
-- My current routine works because...
+- For me, enough money means...
+- One money decision I changed recently is...
+- I used to think..., but now I think...
+- The biggest pressure around money is...
+- A healthy balance for me is...
+- In my career, this choice matters because...
 
 </details>
 
@@ -109,86 +110,86 @@ description: Discuss how technology affects focus, habits, and mental energy in 
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- improve attention span
-- reduce notification overload
-- schedule deep work
-- protect focus time
-- break the habit loop
-- avoid mindless checking
-- manage screen fatigue
-- set digital boundaries
-- limit social media use
-- reduce context switching
-- build healthy routines
-- restore mental energy
+- build an emergency fund
+- track monthly spending
+- control fixed expenses
+- avoid lifestyle inflation
+- compare job offers
+- evaluate opportunity cost
+- balance saving and living
+- reduce financial anxiety
+- set realistic money goals
+- handle social pressure
+- plan long-term stability
+- protect career flexibility
 
 **Examples (real work):**
-- I schedule deep work in the morning and keep meetings in the afternoon.
-- Setting digital boundaries helped me reduce context switching during sprint week.
+- When I compare job offers, I always evaluate opportunity cost, not salary only.
+- After I started tracking monthly spending, I felt calmer during career changes.
 
 ### Useful Chunking & Sentence Starters
-- To be honest,...
-- I started noticing this when...
-- A pattern I could not ignore was...
-- The main trigger for me is...
-- One simple fix that worked was...
-- At first it felt difficult, but...
-- Over time, I realized...
-- For work performance, this matters because...
+- From my experience,...
+- In my 20s, I realized...
+- A common pressure is...
+- One trade-off I accepted was...
+- What changed my mindset was...
+- A practical system that works for me is...
+- I do not want to optimize for money only because...
+- In the long run,...
 
 **Examples (using starters):**
-- "A pattern I could not ignore was opening my phone after every small task."
-- "One simple fix that worked was keeping all social apps off my home screen."
+- "A common pressure is seeing friends upgrade their lifestyle faster than you."
+- "One trade-off I accepted was a smaller apartment so I could save more."
 
 ### Useful Phrasal Verbs
-- **scroll through** -> I used to scroll through short videos before sleeping.
-- **zone out** -> After many meetings, I zone out during deep tasks.
-- **cut off** -> I cut off notifications during focus blocks.
-- **fall into** -> It is easy to fall into distraction loops.
-- **switch off** -> I switch off work apps after a set evening time.
+- **cut back on** -> I cut back on food delivery to improve my budget.
+- **set aside** -> I set aside money every month for emergencies.
+- **live within** -> I try to live within my means, even after a raise.
+- **burn through** -> Some people burn through bonuses too quickly.
+- **pay off** -> Delayed gratification can pay off after a few years.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Focus Problem
+### Dialogue 1 - Save vs Enjoy Life
 
-**Teacher:** What is your biggest attention challenge today?
+**Teacher:** How do you think about saving and spending in your 20s?
 
 **Learner:**  
-Notification overload is the biggest one. I keep reacting instead of working deeply.
+I do both, but with limits. I save a fixed percentage first, then spend the rest without guilt.
 
-I fixed it by creating two focus blocks, but I still check messages too often under stress.
+The trade-off is that I cannot upgrade my lifestyle as fast as some friends, but I feel safer.
 
-### Dialogue 2 - Productivity Tool Paradox
+### Dialogue 2 - Social Pressure
 
-**Friend:** Do productivity tools really help?
+**Friend:** Do you feel pressure when people around you spend more?
 
 **Friend:**  
-They help if I use them simply. When I keep changing tools, I spend more time organizing than doing.
+Yes, especially on social media. It can make normal life look like failure.
 
-So the trade-off is clear: structure is useful, but too much optimization wastes energy.
+Now I compare less and focus on my own plan. That reduced stress a lot.
 
-### Dialogue 3 - Habit Change
+### Dialogue 3 - Career Decision and Money
 
-**Teacher:** What habit gave you the best result?
+**Teacher:** Have you ever chosen growth over higher salary?
 
 **Learner:**  
-I stopped using my phone as a default break activity. I now take a short walk or stretch.
+Yes. I chose a role with lower pay but stronger mentorship and better projects.
 
-My focus in afternoon coding sessions improved, and I feel less mentally tired.
+It was hard in the short term, but it helped me grow faster and earn more later.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Technology gives us speed, but it also competes for our attention every minute. Most people do not have a motivation problem. They have an environment problem: too many alerts, too many tabs, and too many small interruptions.
+Money decisions in your 20s are not only about numbers. They are also about identity, pressure, and future options. Many people ask, "How much is enough?" but the answer depends on your values and responsibilities.
 
-The solution is usually simple, not dramatic. Reduce triggers, create focus blocks, and keep routines realistic. A perfect routine is not necessary. A repeatable routine is enough.
+A common mistake is copying other people's lifestyle. What works for one person may not work for another person with different family support, goals, or risk tolerance. Practical money planning means understanding your fixed expenses, building a safety net, and making conscious trade-offs.
 
-This topic is directly connected to career growth. In interviews and real jobs, people trust engineers who can stay focused, finish complex work, and communicate clearly under constant digital noise.
+In career conversations, this topic matters more than people think. Money pressure affects job choices, confidence, and how willing you are to take smart career risks.
 
 </details>
 
@@ -196,25 +197,25 @@ This topic is directly connected to career growth. In interviews and real jobs, 
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. What distractions affect your attention the most?
-2. How do you protect focus time during busy days?
-3. Which digital habit are you trying to change now?
-4. What does a healthy workday routine look like for you?
+1. What does "enough money" mean to you right now?
+2. How do you balance saving and enjoying life?
+3. What fixed expenses do you manage most carefully?
+4. How does money pressure affect career decisions?
 
 ### High-Value Case Questions
-5. Tell me about a time distraction hurt your performance.
-6. Describe one habit change that improved your focus.
-7. Share a case where a productivity tool made things worse, not better.
+5. Tell me about a time you chose long-term stability over short-term lifestyle.
+6. Describe a financial mistake you made and what you changed afterward.
+7. Share one job decision where salary was not your top priority.
 
 ### Critical Discussion Questions
-8. Debate prompt: Is technology making us more productive or just more busy?
-9. Should companies limit internal notifications after work hours?
-10. Is discipline more important than motivation for long-term focus?
+8. Debate prompt: Should people in their 20s save aggressively or live fully?
+9. Is social media making financial pressure worse for young professionals?
+10. How much should family background influence your money expectations?
 
 **Tips for speaking practice:**
-- Describe your habit change in clear timeline order.
-- Mention one failed method and one method that worked.
-- Use practical words, not abstract psychology language.
+- Use one personal case and one general observation.
+- Mention at least one trade-off clearly.
+- Keep your tone practical, not moralistic.
 
 ---
 

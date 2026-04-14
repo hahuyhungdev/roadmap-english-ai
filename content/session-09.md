@@ -1,107 +1,108 @@
 ---
 sessionNumber: 9
-title: Defending Decisions and Influencing Without Authority
-topic: Persuasion with Cost, Risk, and Timeline Language
+title: Incident Under Pressure
+topic: Real-Time Outage Handling and Team Coordination
 phase: PHASE 2 - ANALYTICAL THINKING IN IT
 level: B1-B2
-description: Practice explaining and defending technical decisions to product, clients, and senior engineers.
+description: Talk about real-time response: role in outage, coordination, status updates, escalation, rollback, and post-incident follow-up.
 ---
 
-# Session 9: Defending Decisions and Influencing Without Authority
+# Session 9: Incident Under Pressure
 
 **Level:** B1-B2  
-**Focus:** Stay confident and collaborative when your decision is challenged, using clear business language.
+**Focus:** Handling outages + clear communication under stress.
+**Scope:** Talk about real-time response: role in outage, coordination, status updates, escalation, rollback, and post-incident follow-up.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **influence** /ˈɪnfluəns/ (v/n) - change decisions without formal power  
-  _Example 1:_ I influenced the roadmap by showing risk data.  
-  _Example 2:_ For a customer-facing bug, influence guided what we fixed first.  
-  _Example 3:_ In retro, we connected influence with one clear lesson learned.
+- **outage** /ˈaʊtədʒ/ (n) - period when service is down  
+  _Example 1:_ We had a major outage during a marketing campaign.  
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
-- **pushback** /ˈpʊʃˌbæk/ (n) - disagreement or challenge  
-  _Example 1:_ I got pushback from product about timeline.  
-  _Example 2:_ During planning, we used pushback to make a safer release decision.  
-  _Example 3:_ I used pushback in a stakeholder update so non-technical teams could follow.
+- **on-call** /ˈɑn kˈɔl/ (adj/n) - engineer responsible for urgent issues  
+  _Example 1:_ I was on-call when the alerts started.  
+  _Example 2:_ In one release, this became important when priorities changed quickly.  
+  _Example 3:_ After that case, we added it to our normal workflow.
 
-- **alignment** /əlˈaɪnmənt/ (n) - shared agreement on direction  
-  _Example 1:_ We reached alignment after comparing options.  
-  _Example 2:_ In our weekly review, alignment was tied to delivery quality and risk.  
-  _Example 3:_ After that case, we added alignment to our checklist for future releases.
+- **escalation** /ˌɛskəlˈeɪʃən/ (n) - raising issue to higher support level  
+  _Example 1:_ We escalated to database team within 10 minutes.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **risk** /rˈɪsk/ (n) - chance of negative result  
-  _Example 1:_ I explained the risk of shipping without tests.  
-  _Example 2:_ On a real project, risk helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added risk to our checklist for future releases.
+- **war room** /wˈɔr rˈum/ (n) - focused channel/meeting during incident  
+  _Example 1:_ We opened a war room to coordinate quickly.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
-- **timeline** /tˈaɪmlaɪn/ (n) - schedule and deadlines  
-  _Example 1:_ We adjusted timeline to include one extra QA day.  
-  _Example 2:_ In one sprint, timeline came up when we investigated a production issue.  
-  _Example 3:_ That experience showed how timeline affects both speed and stability.
+- **status update** /stˈætəs əpdˈeɪt/ (n) - clear progress message during incident  
+  _Example 1:_ We sent status updates every 15 minutes.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **scope** /skˈoʊp/ (n) - what is included in current work  
-  _Example 1:_ We reduced scope to keep release stable.  
-  _Example 2:_ On a real project, scope helped us explain the trade-off to product.  
-  _Example 3:_ Later, scope became part of our standard way of reporting issues.
+- **containment** /kəntˈeɪnmənt/ (n) - action to stop issue from getting worse  
+  _Example 1:_ First containment step was disabling one faulty job.  
+  _Example 2:_ This came up during sprint planning when we balanced speed and quality.  
+  _Example 3:_ This helped us reduce rework in the next sprint.
 
-- **compromise** /kˈɑmprəmˌaɪz/ (n/v) - agreement where both sides adjust  
-  _Example 1:_ We made a compromise on feature depth.  
-  _Example 2:_ For a customer-facing bug, compromise guided what we fixed first.  
-  _Example 3:_ That experience showed how compromise affects both speed and stability.
+- **rollback** /rˈoʊlbˌæk/ (n/v) - return to previous stable version  
+  _Example 1:_ We rolled back the release to restore service.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **evidence** /ˈɛvədəns/ (n) - data that supports your argument  
-  _Example 1:_ I used incident history as evidence.  
-  _Example 2:_ On a real project, evidence helped us explain the trade-off to product.  
-  _Example 3:_ After that case, we added evidence to our checklist for future releases.
+- **blast radius** /blˈæst rˈeɪdiəs/ (n) - how widely an issue spreads  
+  _Example 1:_ Feature flags helped reduce blast radius.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **stakeholder** /stˈeɪkhˌoʊldɚ/ (n) - person affected by decision  
-  _Example 1:_ Different stakeholders had different priorities.  
-  _Example 2:_ On a real project, stakeholder helped us explain the trade-off to product.  
-  _Example 3:_ In retro, we connected stakeholder with one clear lesson learned.
+- **post-mortem** /pˈoʊst mˈɔrtəm/ (n) - review after incident  
+  _Example 1:_ Our post-mortem focused on process gaps, not blame.  
+  _Example 2:_ We discussed this in stand-up to keep the team aligned.  
+  _Example 3:_ Now I mention this early so product and engineering stay on the same page.
 
-- **escalation path** /ˌɛskəlˈeɪʃən pˈæθ/ (n) - process for unresolved disagreement  
-  _Example 1:_ We used the escalation path when teams could not agree.  
-  _Example 2:_ For a customer-facing bug, escalation path guided what we fixed first.  
-  _Example 3:_ After that case, we added escalation path to our checklist for future releases.
+- **runbook** /ˈrʌnˌbʊk/ (n) - predefined incident handling guide  
+  _Example 1:_ The runbook gave us clear first-response steps.  
+  _Example 2:_ We used this in a production case to decide the next safe step.  
+  _Example 3:_ Using this consistently made handoff and review much smoother.
 
 **Additional useful terms:**
-- **decision log** /dɪsˈɪʒən lˈɔɡ/ (n) - written record of choices and reasons
-- **option matrix** /ˈɑpʃən mˈeɪtrɪks/ (n) - side-by-side comparison table
-- **non-negotiable** /nˈɑn nəɡˈoʊʃəbəl/ (n/adj) - requirement that cannot change
-- **soft skill** /sˈɑft skˈɪl/ (n) - communication and teamwork ability
-- **buy-in** /bˈaɪ ɪn/ (n) - support from people involved
+- **incident commander** /ˈɪnsədənt kəmˈændɚ/ (n) - person leading incident response
+- **handover** /hˈændoʊvɚ/ (n) - transfer of incident context
+- **ETA** /i ti eɪ/ (n) - estimated time to recovery
+- **service degradation** /sˈɝvəs dˌɛɡrədˈeɪʃən/ (n) - service works but with poor quality
+- **communication channel** /kəmjˌunəkˈeɪʃən tʃˈænəl/ (n) - place for updates and coordination
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Polite disagreement**  
-  I see your point, but this option has higher release risk.
+- **Past Continuous for real-time actions**  
+  We were investigating logs while support was informing customers.
 
-- **Evidence-based statements**  
-  Based on last quarter incidents, this path is safer.
+- **Past Simple for key events**  
+  We detected the issue at 2:10 PM and rolled back at 2:22 PM.
 
-- **Conditional persuasion**  
-  If we reduce scope now, we can protect quality and still hit the date.
+- **Time sequencing**  
+  First we contained, then we diagnosed, and finally we recovered service.
 
-- **Concession + recommendation**  
-  Although this approach is slower, it avoids costly regressions.
+- **Responsibility language**  
+  I took ownership of communication with product during the outage.
 
-- **Future impact language**  
-  This decision will reduce support load in the next release cycle.
+- **Contrast language**  
+  We moved fast, but we still followed runbook checks.
 
-- **Collaborative framing**  
-  Let us compare options and pick the one with lowest business risk.
+- **Future prevention language**  
+  We will improve alert rules to detect this earlier.
 
 ### Useful Sentence Patterns
-- I understand the concern, and...
-- From a risk perspective,...
-- If we do..., the likely outcome is...
-- My recommendation is...
-- We can compromise by...
-- This gives us a better balance between...
+- During the incident, my role was...
+- The first thing we did was...
+- We kept everyone updated by...
+- We had to choose between... and...
+- We recovered service in...
+- Afterward, we improved...
 
 </details>
 
@@ -109,86 +110,86 @@ description: Practice explaining and defending technical decisions to product, c
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
 ### Strong Collocations
-- defend technical decisions
-- influence without authority
-- handle stakeholder pushback
-- present clear evidence
-- align on priorities
-- negotiate feature scope
-- communicate business risk
-- build cross-team trust
-- hold a clear position
-- stay open to feedback
-- document final decisions
-- protect release quality
+- handle production outage
+- coordinate incident response
+- send regular status updates
+- reduce blast radius
+- execute rollback plan
+- restore customer trust
+- manage team stress
+- document incident timeline
+- run post-mortem review
+- improve on-call readiness
+- close communication gaps
+- prevent repeat failures
 
 **Examples (real work):**
-- In one release week, we had to defend technical decisions while still trying to influence without authority.
-- In retro, we agreed to handle stakeholder pushback earlier so the same issue would not repeat.
+- In one release week, we had to handle production outage while still trying to coordinate incident response.
+- In retro, we agreed to send regular status updates earlier so the same issue would not repeat.
 
 ### Useful Chunking & Sentence Starters
-- I agree on the goal, but...
-- The key risk is...
-- From the timeline side,...
-- A practical compromise is...
-- If we choose this path,...
-- To reduce conflict, we...
-- I explained it in business terms: ...
-- In the end, we aligned on...
+- As soon as alerts fired,...
+- My first priority was...
+- We quickly set up...
+- Under pressure, we still...
+- One hard decision was...
+- The team stayed aligned by...
+- After recovery, we...
+- The key lesson was...
 
 **Examples (using starters):**
 - "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
 - "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
-- **push back** -> I pushed back on the unsafe timeline.
-- **back up** -> I backed up my point with bug data.
-- **work out** -> We worked out a compromise with product.
-- **line up** -> We lined up QA support before final decision.
-- **stick to** -> I stuck to the quality gate requirements.
+- **jump in** -> I jumped in to coordinate updates.
+- **lock down** -> We locked down deployments during investigation.
+- **roll back** -> We rolled back the newest release.
+- **calm down** -> I focused on clear steps to calm down the team.
+- **write up** -> We wrote up the incident report the same day.
 
 </details>
 
 <details open>
 <summary><strong>4) Typical Dialogues</strong></summary>
 
-### Dialogue 1 - Product Pushback
+### Dialogue 1 - Real-Time Response
 
-**Interviewer:** Tell me about a time you had to persuade a product manager.
-
-**You:**  
-Product wanted to ship a feature in one week, but we had unresolved regression risk. I showed bug trends from similar releases and explained likely support impact.
-
-We agreed to reduce scope and ship core functionality first. We moved a bit slower, but quality stayed stable.
-
-### Dialogue 2 - Senior Engineer Challenge
-
-**Interviewer:** What if a senior engineer disagrees with you?
+**Interviewer:** Tell me about an outage you handled under pressure.
 
 **You:**  
-I focus on facts, not hierarchy. In one design review, I suggested a simpler solution with lower operational cost. A senior engineer preferred a complex architecture.
+I was on-call when checkout started failing. We opened a war room, assigned roles, and sent updates every 15 minutes.
 
-We compared options in a decision log, and the team chose the simpler path for current scale.
+We rolled back quickly to restore service. It reduced downtime, but we delayed two planned deployments.
 
-### Dialogue 3 - Holding Position Professionally
+### Dialogue 2 - Communication Under Stress
 
-**Interviewer:** How do you stay confident without being defensive?
+**Interviewer:** How did you communicate during the incident?
 
 **You:**  
-I acknowledge other views first, then explain my reasoning with data. If I am wrong, I adjust quickly. If risk is serious, I hold my position clearly.
+I posted short updates for product and support: impact, current action, and ETA. This helped them answer customer questions.
 
-This keeps discussion professional and focused on outcomes.
+Technical work was urgent, but clear communication prevented panic.
+
+### Dialogue 3 - Post-Mortem Mindset
+
+**Interviewer:** What happened after service recovered?
+
+**You:**  
+We ran a blameless post-mortem, reviewed timeline, and created follow-up tasks for monitoring and runbook updates.
+
+It took extra team time, but future incidents became easier to handle.
 
 </details>
 
 <details open>
 <summary><strong>5) Reading Text</strong></summary>
 
-Influence in engineering is not about being the loudest person. It is about clear reasoning, good timing, and respectful communication. Many decisions involve conflicting priorities: speed, quality, cost, and user impact.
+Production incidents test both technical skills and communication skills. During pressure, teams need simple priorities: contain damage, restore service, and keep stakeholders informed.
 
-When you defend a technical decision, use evidence and simple language. Explain what could happen if the team chooses a risky path. Offer alternatives, not only criticism.
+A common mistake is focusing only on technical fixes and ignoring communication. In real business environments, product, support, and leadership need clear status updates to make decisions.
 
-Strong engineers are firm on important risks but flexible on details. That balance builds trust.
+After recovery, post-mortem work is critical. Without it, teams repeat the same outages and on-call stress stays high.
 
 </details>
 
@@ -196,25 +197,25 @@ Strong engineers are firm on important risks but flexible on details. That balan
 <summary><strong>6) List of Questions + Ideas</strong></summary>
 
 ### Core Questions (must-practice)
-1. How do you defend a technical decision in front of non-technical stakeholders?
-2. How do you handle pushback on timeline or scope?
-3. What data do you use to persuade people?
-4. How do you disagree with a senior engineer professionally?
+1. What do you do in the first 10 minutes of an outage?
+2. How do you split roles during incident response?
+3. How do you communicate with non-technical stakeholders under pressure?
+4. What makes a good post-mortem?
 
 ### High-Value Case Questions
-5. Share a case where you changed someone else's decision.
-6. Tell me about a compromise that protected quality.
-7. Describe a time when you changed your own view after feedback.
+5. Share a case where rollback was the best decision.
+6. Tell me about a hard trade-off during incident handling.
+7. Describe one change that improved your on-call process.
 
 ### Critical Discussion Questions
-8. Is speed more important than quality in early-stage products?
-9. Should technical decisions be owned by engineers only?
-10. How much risk is acceptable when leadership pushes for delivery?
+8. Should teams optimize for fast rollback or root cause first?
+9. Is it okay to pause feature work after a major outage?
+10. How often should teams run incident drills?
 
 **Tips for speaking practice:**
-- Use calm, neutral language.
-- Explain risk in business terms.
-- Include one compromise in your story.
+- Speak in timeline order.
+- Include one emotion + one action (stress -> clear steps).
+- Mention both technical and communication outcomes.
 
 ---
 
