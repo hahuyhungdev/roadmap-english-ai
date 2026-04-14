@@ -15,42 +15,62 @@ description: Discuss success pressure, social comparison, and imposter feelings 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **imposter syndrome** (n) - feeling not good enough despite real results  
-  _Example:_ I had imposter syndrome when I joined a stronger team.
+- **imposter syndrome** /ˌɪmpˈɔstɚ sˈɪndrˌoʊm/ (n) - feeling not good enough despite real results  
+  _Example 1:_ I had imposter syndrome when I joined a stronger team.  
+  _Example 2:_ In one sprint, imposter syndrome came up when we investigated a production issue.  
+  _Example 3:_ After that case, we added imposter syndrome to our checklist for future releases.
 
-- **comparison trap** (n) - unhealthy habit of comparing with others  
-  _Example:_ LinkedIn updates can create a comparison trap.
+- **comparison trap** /kəmpˈɛrəsən trˈæp/ (n) - unhealthy habit of comparing with others  
+  _Example 1:_ LinkedIn updates can create a comparison trap.  
+  _Example 2:_ In one sprint, comparison trap came up when we investigated a production issue.  
+  _Example 3:_ I used comparison trap in a stakeholder update so non-technical teams could follow.
 
-- **career benchmark** (n) - way to measure progress  
-  _Example:_ I now use impact and learning as my career benchmark.
+- **career checkpoint** /kɚˈɪr tʃˈɛkpˌɔɪnt/ (n) - way to measure progress  
+  _Example 1:_ I now use impact and learning as my career benchmark.  
+  _Example 2:_ On a real project, career checkpoint helped us explain the trade-off to product.  
+  _Example 3:_ Later, career checkpoint became part of our standard way of reporting issues.
 
-- **self-doubt** (n) - lack of confidence in your ability  
-  _Example:_ Self-doubt increased after one failed release.
+- **self-doubt** /sˈɛlf dˈaʊt/ (n) - lack of confidence in your ability  
+  _Example 1:_ Self-doubt increased after one failed release.  
+  _Example 2:_ For a customer-facing bug, self-doubt guided what we fixed first.  
+  _Example 3:_ That experience showed how self-doubt affects both speed and stability.
 
-- **growth mindset** (n) - belief that skills can improve with effort  
-  _Example:_ Growth mindset helped me recover faster from mistakes.
+- **growth mindset** /ɡrˈoʊθ mˈaɪndsˌɛt/ (n) - belief that skills can improve with effort  
+  _Example 1:_ Growth mindset helped me recover faster from mistakes.  
+  _Example 2:_ For a customer-facing bug, growth mindset guided what we fixed first.  
+  _Example 3:_ Later, growth mindset became part of our standard way of reporting issues.
 
-- **evidence log** (n) - list of achievements and progress  
-  _Example:_ I keep an evidence log of wins and feedback.
+- **evidence log** /ˈɛvədəns lˈɔɡ/ (n) - list of achievements and progress  
+  _Example 1:_ I keep an evidence log of wins and feedback.  
+  _Example 2:_ In one sprint, evidence log came up when we investigated a production issue.  
+  _Example 3:_ Later, evidence log became part of our standard way of reporting issues.
 
-- **seniority gap** (n) - difference in experience level  
-  _Example:_ The seniority gap felt big in my first month.
+- **seniority gap** /sinjˈɔrɪti ɡˈæp/ (n) - difference in experience level  
+  _Example 1:_ The seniority gap felt big in my first month.  
+  _Example 2:_ In our weekly review, seniority gap was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected seniority gap with one clear lesson learned.
 
-- **realistic goal** (n) - target that is challenging but possible  
-  _Example:_ I set realistic goals each quarter.
+- **realistic goal** /rˌiəlˈɪstɪk ɡˈoʊl/ (n) - target that is challenging but possible  
+  _Example 1:_ I set realistic goals each quarter.  
+  _Example 2:_ During planning, we used realistic goal to make a safer release decision.  
+  _Example 3:_ After that case, we added realistic goal to our checklist for future releases.
 
-- **external validation** (n) - approval from others  
-  _Example:_ I relied too much on external validation before.
+- **external validation** /ɪkstˈɝnəl vˌælədˈeɪʃən/ (n) - approval from others  
+  _Example 1:_ I relied too much on external validation before.  
+  _Example 2:_ During planning, we used external validation to make a safer release decision.  
+  _Example 3:_ That experience showed how external validation affects both speed and stability.
 
-- **self-awareness** (n) - understanding your strengths and limits  
-  _Example:_ Self-awareness helped me choose better projects.
+- **self-awareness** /sˈɛlf əwˈɛrnəs/ (n) - understanding your strengths and limits  
+  _Example 1:_ Self-awareness helped me choose better projects.  
+  _Example 2:_ In our weekly review, self-awareness was tied to delivery quality and risk.  
+  _Example 3:_ Later, self-awareness became part of our standard way of reporting issues.
 
 **Additional useful terms:**
-- **progress marker** (n) - sign that you are improving
-- **confidence gap** (n) - difference between skill and self-belief
-- **peer learning** (n) - learning through colleagues
-- **promotion pressure** (n) - stress to advance quickly
-- **long game** (n) - long-term career perspective
+- **progress marker** /prˈɑɡrˌɛs mˈɑrkɚ/ (n) - sign that you are improving
+- **confidence gap** /kˈɑnfədəns ɡˈæp/ (n) - difference between skill and self-belief
+- **peer learning** /pˈɪr lˈɝnɪŋ/ (n) - learning through colleagues
+- **promotion pressure** /prəmˈoʊʃən prˈɛʃɚ/ (n) - stress to advance quickly
+- **long game** /lˈɔŋ ɡˈeɪm/ (n) - long-term career perspective
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss success pressure, social comparison, and imposter feelings 
 - reflect on achievements
 - redefine personal success
 
+**Examples (real work):**
+- In one release week, we had to manage self-doubt while still trying to build healthy confidence.
+- In retro, we agreed to track real progress earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - Early in my career,...
 - I often compared myself to...
@@ -111,6 +135,10 @@ description: Discuss success pressure, social comparison, and imposter feelings 
 - This improved my confidence, but...
 - In interviews, I now explain...
 - My long-term goal is...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **measure up** -> I felt I did not measure up at first.

@@ -15,42 +15,62 @@ description: Run a realistic first mock interview and focus on fluency, structur
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **mock interview** (n) - practice interview before real one  
-  _Example:_ This mock interview helped me find weak answers.
+- **mock interview** /mɑːk ˈɪntərˌvjuː/ (n) - practice interview before real one  
+  _Example 1:_ This mock interview helped me find weak answers.  
+  _Example 2:_ For a customer-facing bug, mock interview guided what we fixed first.  
+  _Example 3:_ After that case, we added mock interview to our checklist for future releases.
 
-- **follow-up question** (n) - extra question after your first answer  
-  _Example:_ Follow-up questions tested my clarity under pressure.
+- **follow-up question** /fˈɑloʊ ˈʌp kwˈɛstʃən/ (n) - extra question after your first answer  
+  _Example 1:_ Follow-up questions tested my clarity under pressure.  
+  _Example 2:_ During planning, we used follow-up question to make a safer release decision.  
+  _Example 3:_ I used follow-up question in a stakeholder update so non-technical teams could follow.
 
-- **STAR structure** (n) - Situation, Task, Action, Result  
-  _Example:_ STAR structure made my story easier to follow.
+- **STAR structure** /stˈɑr strˈʌktʃɚ/ (n) - Situation, Task, Action, Result  
+  _Example 1:_ STAR structure made my story easier to follow.  
+  _Example 2:_ For a customer-facing bug, star structure guided what we fixed first.  
+  _Example 3:_ Later, star structure became part of our standard way of reporting issues.
 
-- **behavioral answer** (n) - answer about past behavior at work  
-  _Example:_ I used a real behavioral answer about an outage.
+- **behavioral answer** /bɪhˈeɪvjɚəl ˈænsɚ/ (n) - answer about past behavior at work  
+  _Example 1:_ I used a real behavioral answer about an outage.  
+  _Example 2:_ In one sprint, behavioral answer came up when we investigated a production issue.  
+  _Example 3:_ Later, behavioral answer became part of our standard way of reporting issues.
 
-- **fluency** (n) - speaking smoothly without long pauses  
-  _Example:_ My fluency improved when I used simple sentences.
+- **fluency** /flˈuənsi/ (n) - speaking smoothly without long pauses  
+  _Example 1:_ My fluency improved when I used simple sentences.  
+  _Example 2:_ In one sprint, fluency came up when we investigated a production issue.  
+  _Example 3:_ After that case, we added fluency to our checklist for future releases.
 
-- **clarity** (n) - easy-to-understand speaking  
-  _Example:_ Clarity matters more than complex vocabulary.
+- **clarity** /klˈɛrəti/ (n) - easy-to-understand speaking  
+  _Example 1:_ Clarity matters more than complex vocabulary.  
+  _Example 2:_ For a customer-facing bug, clarity guided what we fixed first.  
+  _Example 3:_ After that case, we added clarity to our checklist for future releases.
 
-- **pushback** (n) - challenge from interviewer  
-  _Example:_ I got pushback and had to defend my decision calmly.
+- **pushback** /ˈpʊʃˌbæk/ (n) - challenge from interviewer  
+  _Example 1:_ I got pushback and had to defend my decision calmly.  
+  _Example 2:_ On a real project, pushback helped us explain the trade-off to product.  
+  _Example 3:_ Later, pushback became part of our standard way of reporting issues.
 
-- **self-diagnosis** (n) - reviewing your own performance  
-  _Example:_ Self-diagnosis showed I needed better examples.
+- **self-diagnosis** /sˈɛlf dˌaɪəɡnˈoʊsəs/ (n) - reviewing your own performance  
+  _Example 1:_ Self-diagnosis showed I needed better examples.  
+  _Example 2:_ In one sprint, self-diagnosis came up when we investigated a production issue.  
+  _Example 3:_ Later, self-diagnosis became part of our standard way of reporting issues.
 
-- **time control** (n) - managing answer length  
-  _Example:_ Good time control kept my answers focused.
+- **time control** /tˈaɪm kəntrˈoʊl/ (n) - managing answer length  
+  _Example 1:_ Good time control kept my answers focused.  
+  _Example 2:_ During planning, we used time control to make a safer release decision.  
+  _Example 3:_ In retro, we connected time control with one clear lesson learned.
 
-- **confidence signal** (n) - behavior that shows confidence  
-  _Example:_ Clear structure is a strong confidence signal.
+- **confidence signal** /kˈɑnfədəns sˈɪɡnəl/ (n) - behavior that shows confidence  
+  _Example 1:_ Clear structure is a strong confidence signal.  
+  _Example 2:_ In our weekly review, confidence signal was tied to delivery quality and risk.  
+  _Example 3:_ Later, confidence signal became part of our standard way of reporting issues.
 
 **Additional useful terms:**
-- **anchor example** (n) - strong story you can reuse
-- **filler words** (n) - "um", "ah", and similar pauses
-- **interview pacing** (n) - rhythm of speaking and pausing
-- **answer framing** (n) - how you start and shape an answer
-- **recovery sentence** (n) - sentence used when you lose your train of thought
+- **anchor example** /ˈæŋkɚ ɪɡzˈæmpəl/ (n) - strong story you can reuse
+- **filler words** /fˈɪlɚ wˈɝdz/ (n) - "um", "ah", and similar pauses
+- **interview pacing** /ˈɪntɚvjˌu pˈeɪsɪŋ/ (n) - rhythm of speaking and pausing
+- **answer framing** /ˈænsɚ frˈeɪmɪŋ/ (n) - how you start and shape an answer
+- **recovery sentence** /rɪkˈʌvri sˈɛntəns/ (n) - sentence used when you lose your train of thought
 
 </details>
 
@@ -102,6 +122,10 @@ description: Run a realistic first mock interview and focus on fluency, structur
 - practice real scenarios
 - review performance gaps
 
+**Examples (real work):**
+- In one release week, we had to run a mock interview while still trying to answer with STAR structure.
+- In retro, we agreed to handle follow-up pressure earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - That is a great question. In my case,...
 - One example from my recent work is...
@@ -110,7 +134,10 @@ description: Run a realistic first mock interview and focus on fluency, structur
 - The trade-off was...
 - The measurable result was...
 - Looking back,...
-- I can also share another short example if useful.
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **walk through** -> Let me walk you through a real case.

@@ -15,42 +15,62 @@ description: Practice explaining and defending technical decisions to product, c
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **influence** (v/n) - change decisions without formal power  
-  _Example:_ I influenced the roadmap by showing risk data.
+- **influence** /ˈɪnfluəns/ (v/n) - change decisions without formal power  
+  _Example 1:_ I influenced the roadmap by showing risk data.  
+  _Example 2:_ For a customer-facing bug, influence guided what we fixed first.  
+  _Example 3:_ In retro, we connected influence with one clear lesson learned.
 
-- **pushback** (n) - disagreement or challenge  
-  _Example:_ I got pushback from product about timeline.
+- **pushback** /ˈpʊʃˌbæk/ (n) - disagreement or challenge  
+  _Example 1:_ I got pushback from product about timeline.  
+  _Example 2:_ During planning, we used pushback to make a safer release decision.  
+  _Example 3:_ I used pushback in a stakeholder update so non-technical teams could follow.
 
-- **alignment** (n) - shared agreement on direction  
-  _Example:_ We reached alignment after comparing options.
+- **alignment** /əlˈaɪnmənt/ (n) - shared agreement on direction  
+  _Example 1:_ We reached alignment after comparing options.  
+  _Example 2:_ In our weekly review, alignment was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added alignment to our checklist for future releases.
 
-- **risk** (n) - chance of negative result  
-  _Example:_ I explained the risk of shipping without tests.
+- **risk** /rˈɪsk/ (n) - chance of negative result  
+  _Example 1:_ I explained the risk of shipping without tests.  
+  _Example 2:_ On a real project, risk helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added risk to our checklist for future releases.
 
-- **timeline** (n) - schedule and deadlines  
-  _Example:_ We adjusted timeline to include one extra QA day.
+- **timeline** /tˈaɪmlaɪn/ (n) - schedule and deadlines  
+  _Example 1:_ We adjusted timeline to include one extra QA day.  
+  _Example 2:_ In one sprint, timeline came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how timeline affects both speed and stability.
 
-- **scope** (n) - what is included in current work  
-  _Example:_ We reduced scope to keep release stable.
+- **scope** /skˈoʊp/ (n) - what is included in current work  
+  _Example 1:_ We reduced scope to keep release stable.  
+  _Example 2:_ On a real project, scope helped us explain the trade-off to product.  
+  _Example 3:_ Later, scope became part of our standard way of reporting issues.
 
-- **compromise** (n/v) - agreement where both sides adjust  
-  _Example:_ We made a compromise on feature depth.
+- **compromise** /kˈɑmprəmˌaɪz/ (n/v) - agreement where both sides adjust  
+  _Example 1:_ We made a compromise on feature depth.  
+  _Example 2:_ For a customer-facing bug, compromise guided what we fixed first.  
+  _Example 3:_ That experience showed how compromise affects both speed and stability.
 
-- **evidence** (n) - data that supports your argument  
-  _Example:_ I used incident history as evidence.
+- **evidence** /ˈɛvədəns/ (n) - data that supports your argument  
+  _Example 1:_ I used incident history as evidence.  
+  _Example 2:_ On a real project, evidence helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added evidence to our checklist for future releases.
 
-- **stakeholder** (n) - person affected by decision  
-  _Example:_ Different stakeholders had different priorities.
+- **stakeholder** /stˈeɪkhˌoʊldɚ/ (n) - person affected by decision  
+  _Example 1:_ Different stakeholders had different priorities.  
+  _Example 2:_ On a real project, stakeholder helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected stakeholder with one clear lesson learned.
 
-- **escalation path** (n) - process for unresolved disagreement  
-  _Example:_ We used the escalation path when teams could not agree.
+- **escalation path** /ˌɛskəlˈeɪʃən pˈæθ/ (n) - process for unresolved disagreement  
+  _Example 1:_ We used the escalation path when teams could not agree.  
+  _Example 2:_ For a customer-facing bug, escalation path guided what we fixed first.  
+  _Example 3:_ After that case, we added escalation path to our checklist for future releases.
 
 **Additional useful terms:**
-- **decision log** (n) - written record of choices and reasons
-- **option matrix** (n) - side-by-side comparison table
-- **non-negotiable** (n/adj) - requirement that cannot change
-- **soft skill** (n) - communication and teamwork ability
-- **buy-in** (n) - support from people involved
+- **decision log** /dɪsˈɪʒən lˈɔɡ/ (n) - written record of choices and reasons
+- **option matrix** /ˈɑpʃən mˈeɪtrɪks/ (n) - side-by-side comparison table
+- **non-negotiable** /nˈɑn nəɡˈoʊʃəbəl/ (n/adj) - requirement that cannot change
+- **soft skill** /sˈɑft skˈɪl/ (n) - communication and teamwork ability
+- **buy-in** /bˈaɪ ɪn/ (n) - support from people involved
 
 </details>
 
@@ -102,6 +122,10 @@ description: Practice explaining and defending technical decisions to product, c
 - document final decisions
 - protect release quality
 
+**Examples (real work):**
+- In one release week, we had to defend technical decisions while still trying to influence without authority.
+- In retro, we agreed to handle stakeholder pushback earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - I agree on the goal, but...
 - The key risk is...
@@ -111,6 +135,10 @@ description: Practice explaining and defending technical decisions to product, c
 - To reduce conflict, we...
 - I explained it in business terms: ...
 - In the end, we aligned on...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **push back** -> I pushed back on the unsafe timeline.

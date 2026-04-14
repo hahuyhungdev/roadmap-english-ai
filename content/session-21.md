@@ -15,42 +15,62 @@ description: Answer motivation and values questions with depth, honesty, and pra
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **motivation** (n) - reason you want to do work  
-  _Example:_ My strongest motivation is solving user-facing problems.
+- **motivation** /ˌmoʊtəˈveɪʃən/ (n) - reason you want to do work  
+  _Example 1:_ My strongest motivation is solving user-facing problems.  
+  _Example 2:_ During planning, we used motivation to make a safer release decision.  
+  _Example 3:_ Later, motivation became part of our standard way of reporting issues.
 
-- **core value** (n) - principle that guides your decisions  
-  _Example:_ One core value for me is ownership.
+- **core value** /kɔr ˈvæljuː/ (n) - principle that guides your decisions  
+  _Example 1:_ One core value for me is ownership.  
+  _Example 2:_ For a customer-facing bug, core value guided what we fixed first.  
+  _Example 3:_ I used core value in a stakeholder update so non-technical teams could follow.
 
-- **autonomy** (n) - freedom to make decisions in your work  
-  _Example:_ I realized I value autonomy more than job title.
+- **autonomy** /ɔːˈtɑːnəmi/ (n) - freedom to make decisions in your work  
+  _Example 1:_ I realized I value autonomy more than job title.  
+  _Example 2:_ In our weekly review, autonomy was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added autonomy to our checklist for future releases.
 
-- **purpose** (n) - meaningful reason behind your work  
-  _Example:_ Purpose helps me stay consistent during hard sprints.
+- **purpose** /ˈpɝːpəs/ (n) - meaningful reason behind your work  
+  _Example 1:_ Purpose helps me stay consistent during hard sprints.  
+  _Example 2:_ In one sprint, purpose came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how purpose affects both speed and stability.
 
-- **culture fit** (n) - how well your values match company culture  
-  _Example:_ I care about culture fit, not only compensation.
+- **culture fit** /ˈkʌltʃər fɪt/ (n) - how well your values match company culture  
+  _Example 1:_ I care about culture fit, not only compensation.  
+  _Example 2:_ On a real project, culture fit helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added culture fit to our checklist for future releases.
 
-- **self-awareness** (n) - understanding your real strengths and limits  
-  _Example:_ Self-awareness improved my career decisions.
+- **self-awareness** /ˌsɛlf əˈwɛrnəs/ (n) - understanding your real strengths and limits  
+  _Example 1:_ Self-awareness improved my career decisions.  
+  _Example 2:_ For a customer-facing bug, self-awareness guided what we fixed first.  
+  _Example 3:_ In retro, we connected self-awareness with one clear lesson learned.
 
-- **misalignment** (n) - mismatch between your values and your environment  
-  _Example:_ I left one role due to value misalignment.
+- **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - mismatch between your values and your environment  
+  _Example 1:_ I left one role due to value misalignment.  
+  _Example 2:_ For a customer-facing bug, misalignment guided what we fixed first.  
+  _Example 3:_ I used misalignment in a stakeholder update so non-technical teams could follow.
 
-- **intrinsic motivation** (n) - internal motivation from the work itself  
-  _Example:_ Intrinsic motivation is stronger for me than external rewards.
+- **intrinsic motivation** /ɪnˈtrɪnzɪk ˌmoʊtəˈveɪʃən/ (n) - internal motivation from the work itself  
+  _Example 1:_ Intrinsic motivation is stronger for me than external rewards.  
+  _Example 2:_ On a real project, intrinsic motivation helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added intrinsic motivation to our checklist for future releases.
 
-- **career anchor** (n) - stable priority in your career choices  
-  _Example:_ Learning and ownership are my career anchors.
+- **career anchor** /kəˈrɪr ˈæŋkər/ (n) - stable priority in your career choices  
+  _Example 1:_ Learning and ownership are my career anchors.  
+  _Example 2:_ On a real project, career anchor helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added career anchor to our checklist for future releases.
 
-- **reflection** (n) - careful review of your experiences  
-  _Example:_ Regular reflection helped me redefine success.
+- **reflection** /rɪˈflɛkʃən/ (n) - careful review of your experiences  
+  _Example 1:_ Regular reflection helped me redefine success.  
+  _Example 2:_ For a customer-facing bug, reflection guided what we fixed first.  
+  _Example 3:_ Later, reflection became part of our standard way of reporting issues.
 
 **Additional useful terms:**
-- **energy source** (n) - work activity that gives motivation
-- **drain factor** (n) - activity that reduces motivation
-- **value conflict** (n) - clash between personal and company values
-- **growth signal** (n) - sign of meaningful progress
-- **career clarity** (n) - clear understanding of your direction
+- **energy source** /ˈɛnərdʒi sɔrs/ (n) - work activity that gives motivation
+- **drain factor** /dreɪn ˈfæktər/ (n) - activity that reduces motivation
+- **value conflict** /ˈvæljuː ˈkɑːnflɪkt/ (n) - clash between personal and company values
+- **growth signal** /ɡroʊθ ˈsɪɡnəl/ (n) - sign of meaningful progress
+- **career clarity** /kəˈrɪr ˈklærəti/ (n) - clear understanding of your direction
 
 </details>
 
@@ -102,6 +122,10 @@ description: Answer motivation and values questions with depth, honesty, and pra
 - make value-based decisions
 - communicate motivation clearly
 
+**Examples (real work):**
+- In one release week, we had to identify core values while still trying to build self-awareness.
+- In retro, we agreed to maintain long-term motivation earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - Early in my career, I believed...
 - Over time, I realized...
@@ -111,6 +135,10 @@ description: Answer motivation and values questions with depth, honesty, and pra
 - I work best in teams that...
 - My values align with this role because...
 - In the long term, I want...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **figure out** -> I figured out what really motivates me.

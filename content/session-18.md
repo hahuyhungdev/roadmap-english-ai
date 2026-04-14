@@ -15,42 +15,62 @@ description: Discuss the tension between individual success and collective team 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **individualism** (n) - focus on personal goals and freedom  
-  _Example:_ Individualism can drive innovation, but teamwork may suffer.
+- **individualism** /ˌɪndɪvɪdˈuəlˌɪzəm/ (n) - focus on personal goals and freedom  
+  _Example 1:_ Individualism can drive innovation, but teamwork may suffer.  
+  _Example 2:_ For a customer-facing bug, individualism guided what we fixed first.  
+  _Example 3:_ That experience showed how individualism affects both speed and stability.
 
-- **collective responsibility** (n) - shared duty for team outcomes  
-  _Example:_ Production quality needs collective responsibility.
+- **collective responsibility** /kəlˈɛktɪv rispˌɑnsəbˈɪləti/ (n) - shared duty for team outcomes  
+  _Example 1:_ Production quality needs collective responsibility.  
+  _Example 2:_ On a real project, collective responsibility helped us explain the trade-off to product.  
+  _Example 3:_ I used collective responsibility in a stakeholder update so non-technical teams could follow.
 
-- **team culture** (n) - shared behavior and values in a team  
-  _Example:_ Team culture became stronger after better collaboration rules.
+- **team culture** /tˈim kˈʌltʃɚ/ (n) - shared behavior and values in a team  
+  _Example 1:_ Team culture became stronger after better collaboration rules.  
+  _Example 2:_ In our weekly review, team culture was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how team culture affects both speed and stability.
 
-- **brilliant jerk** (n) - high performer with harmful behavior  
-  _Example:_ A brilliant jerk can damage team morale.
+- **brilliant jerk** /brˈɪljənt dʒˈɝk/ (n) - high performer with harmful behavior  
+  _Example 1:_ A brilliant jerk can damage team morale.  
+  _Example 2:_ In one sprint, brilliant jerk came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected brilliant jerk with one clear lesson learned.
 
-- **knowledge sharing** (n) - distributing information across team members  
-  _Example:_ Knowledge sharing reduced dependency on one engineer.
+- **knowledge sharing** /nˈɑlədʒ ʃˈɛrɪŋ/ (n) - distributing information across team members  
+  _Example 1:_ Knowledge sharing reduced dependency on one engineer.  
+  _Example 2:_ In one sprint, knowledge sharing came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how knowledge sharing affects both speed and stability.
 
-- **single point of failure** (n) - one person/system whose failure blocks work  
-  _Example:_ One expert became a single point of failure.
+- **single point of failure** /sˈɪŋɡəl pˈɔɪnt ˈʌv fˈeɪljɚ/ (n) - one person/system whose failure blocks work  
+  _Example 1:_ One expert became a single point of failure.  
+  _Example 2:_ For a customer-facing bug, single point of failure guided what we fixed first.  
+  _Example 3:_ In retro, we connected single point of failure with one clear lesson learned.
 
-- **open source mindset** (n) - contribution and responsibility to community  
-  _Example:_ Open source mindset values long-term maintainability.
+- **open source mindset** /ˈoʊpən sˈɔrs mˈaɪndsˌɛt/ (n) - contribution and responsibility to community  
+  _Example 1:_ Open source mindset values long-term maintainability.  
+  _Example 2:_ In one sprint, open source mindset came up when we investigated a production issue.  
+  _Example 3:_ Later, open source mindset became part of our standard way of reporting issues.
 
-- **team trust** (n) - confidence among teammates  
-  _Example:_ Team trust dropped when one person ignored review rules.
+- **team trust** /tˈim trˈʌst/ (n) - confidence among teammates  
+  _Example 1:_ Team trust dropped when one person ignored review rules.  
+  _Example 2:_ In one sprint, team trust came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how team trust affects both speed and stability.
 
-- **special treatment** (n) - giving different rules to some people  
-  _Example:_ Special treatment for top performers created resentment.
+- **special treatment** /spˈɛʃəl trˈitmənt/ (n) - giving different rules to some people  
+  _Example 1:_ Special treatment for top performers created resentment.  
+  _Example 2:_ On a real project, special treatment helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how special treatment affects both speed and stability.
 
-- **shared ownership** (n) - many people responsible for one area  
-  _Example:_ Shared ownership improved release reliability.
+- **shared ownership** /ʃˈɛrd ˈoʊnɚʃˌɪp/ (n) - many people responsible for one area  
+  _Example 1:_ Shared ownership improved release reliability.  
+  _Example 2:_ In one sprint, shared ownership came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how shared ownership affects both speed and stability.
 
 **Additional useful terms:**
-- **collaboration debt** (n) - long-term cost of poor teamwork
-- **hero culture** (n) - relying on a few "hero" employees
-- **psychological safety** (n) - feeling safe to ask or challenge
-- **team norm** (n) - expected behavior in group work
-- **mutual support** (n) - teammates helping each other consistently
+- **collaboration debt** /kəlˌæbɚˈeɪʃən dˈɛt/ (n) - long-term cost of poor teamwork
+- **hero culture** /hˈɪroʊ kˈʌltʃɚ/ (n) - relying on a few "hero" employees
+- **psychological safety** /sˌaɪkəlˈɑdʒɪkəl sˈeɪfti/ (n) - feeling safe to ask or challenge
+- **team norm** /tˈim nˈɔrm/ (n) - expected behavior in group work
+- **mutual support** /mjˈutʃuəl səpˈɔrt/ (n) - teammates helping each other consistently
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss the tension between individual success and collective team 
 - promote shared ownership
 - strengthen community mindset
 
+**Examples (real work):**
+- In one release week, we had to build healthy team culture while still trying to reward collaborative behavior.
+- In retro, we agreed to reduce key-person risk earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - A common team problem is...
 - We had one strong performer who...
@@ -111,6 +135,10 @@ description: Discuss the tension between individual success and collective team 
 - Team rules should...
 - In open source, I learned...
 - Long term, this helped us...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **step up** -> Everyone should step up, not only one person.

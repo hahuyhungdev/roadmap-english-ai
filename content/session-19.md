@@ -15,42 +15,62 @@ description: Practice failure stories that show ownership, clear communication, 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **ownership** (n) - accepting responsibility for outcomes  
-  _Example:_ I took ownership of the failed deployment.
+- **ownership** /ˈoʊnɚʃˌɪp/ (n) - accepting responsibility for outcomes  
+  _Example 1:_ I took ownership of the failed deployment.  
+  _Example 2:_ On a real project, ownership helped us explain the trade-off to product.  
+  _Example 3:_ I used ownership in a stakeholder update so non-technical teams could follow.
 
-- **mistake** (n) - action that causes a problem  
-  _Example:_ My configuration mistake caused API downtime.
+- **mistake** /mɪstˈeɪk/ (n) - action that causes a problem  
+  _Example 1:_ My configuration mistake caused API downtime.  
+  _Example 2:_ During planning, we used mistake to make a safer release decision.  
+  _Example 3:_ Later, mistake became part of our standard way of reporting issues.
 
-- **impact** (n) - result of an action on users or team  
-  _Example:_ The issue impacted checkout for 30 minutes.
+- **impact** /ˌɪmpˈækt/ (n) - result of an action on users or team  
+  _Example 1:_ The issue impacted checkout for 30 minutes.  
+  _Example 2:_ In our weekly review, impact was tied to delivery quality and risk.  
+  _Example 3:_ Later, impact became part of our standard way of reporting issues.
 
-- **accountability** (n) - being answerable for your actions  
-  _Example:_ Accountability means no blame-shifting.
+- **accountability** /əkˈaʊntəbˌɪlɪti/ (n) - being answerable for your actions  
+  _Example 1:_ Accountability means no blame-shifting.  
+  _Example 2:_ During planning, we used accountability to make a safer release decision.  
+  _Example 3:_ I used accountability in a stakeholder update so non-technical teams could follow.
 
-- **incident report** (n) - written summary of failure and actions  
-  _Example:_ I wrote an incident report the same day.
+- **incident report** /ˈɪnsədənt ripˈɔrt/ (n) - written summary of failure and actions  
+  _Example 1:_ I wrote an incident report the same day.  
+  _Example 2:_ On a real project, incident report helped us explain the trade-off to product.  
+  _Example 3:_ Later, incident report became part of our standard way of reporting issues.
 
-- **root cause** (n) - main reason failure happened  
-  _Example:_ Root cause was missing validation in deployment script.
+- **root cause** /rˈut kˈɑz/ (n) - main reason failure happened  
+  _Example 1:_ Root cause was missing validation in deployment script.  
+  _Example 2:_ On a real project, root cause helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how root cause affects both speed and stability.
 
-- **corrective action** (n) - step to fix immediate problem  
-  _Example:_ Corrective action was rollback and patch release.
+- **corrective action** /kɚˈɛktɪv ˈækʃən/ (n) - step to fix immediate problem  
+  _Example 1:_ Corrective action was rollback and patch release.  
+  _Example 2:_ During planning, we used corrective action to make a safer release decision.  
+  _Example 3:_ After that case, we added corrective action to our checklist for future releases.
 
-- **preventive action** (n) - step to stop future recurrence  
-  _Example:_ Preventive action was adding CI checks.
+- **preventive action** /prɪvˈɛntɪv ˈækʃən/ (n) - step to stop future recurrence  
+  _Example 1:_ Preventive action was adding CI checks.  
+  _Example 2:_ During planning, we used preventive action to make a safer release decision.  
+  _Example 3:_ After that case, we added preventive action to our checklist for future releases.
 
-- **trust rebuild** (n) - process of restoring confidence  
-  _Example:_ Trust rebuild took time and consistent delivery.
+- **trust rebuild** /trˈʌst ribˈɪld/ (n) - process of restoring confidence  
+  _Example 1:_ Trust rebuild took time and consistent delivery.  
+  _Example 2:_ In our weekly review, trust rebuild was tied to delivery quality and risk.  
+  _Example 3:_ Later, trust rebuild became part of our standard way of reporting issues.
 
-- **follow-up** (n) - later action after initial fix  
-  _Example:_ I gave follow-up updates to stakeholders.
+- **follow-up** /fˈɑloʊ ˈʌp/ (n) - later action after initial fix  
+  _Example 1:_ I gave follow-up updates to stakeholders.  
+  _Example 2:_ During planning, we used follow-up to make a safer release decision.  
+  _Example 3:_ In retro, we connected follow-up with one clear lesson learned.
 
 **Additional useful terms:**
-- **blameless review** (n) - focus on learning, not punishment
-- **service recovery** (n) - restoring normal operations
-- **communication plan** (n) - how updates are shared
-- **risk control** (n) - actions to reduce future risk
-- **lesson learned** (n) - practical takeaway from failure
+- **blameless review** /blˈeɪmləs rˌivjˈu/ (n) - focus on learning, not punishment
+- **service recovery** /sˈɝvəs rɪkˈʌvri/ (n) - restoring normal operations
+- **communication plan** /kəmjˌunəkˈeɪʃən plˈæn/ (n) - how updates are shared
+- **risk control** /rˈɪsk kəntrˈoʊl/ (n) - actions to reduce future risk
+- **lesson learned** /lˈɛsən lˈɝnd/ (n) - practical takeaway from failure
 
 </details>
 
@@ -102,6 +122,10 @@ description: Practice failure stories that show ownership, clear communication, 
 - document lessons learned
 - show growth through action
 
+**Examples (real work):**
+- In one release week, we had to take full ownership while still trying to acknowledge mistakes quickly.
+- In retro, we agreed to communicate incident impact earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - I want to be transparent about...
 - The mistake happened when...
@@ -111,6 +135,10 @@ description: Practice failure stories that show ownership, clear communication, 
 - I also changed my workflow by...
 - Trust improved because...
 - The key lesson for me is...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **own up** -> I owned up to the issue in the team channel.

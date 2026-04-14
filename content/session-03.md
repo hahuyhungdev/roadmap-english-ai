@@ -15,42 +15,62 @@ description: Explain your stack choices and the trade-offs behind technical deci
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **tech stack** (n) - main technologies used in a project  
-  _Example:_ Our tech stack is React, Node.js, and PostgreSQL.
+- **tech stack** /tɛk stæk/ (n) - main technologies used in a project  
+  _Example 1:_ Our tech stack is React, Node.js, and PostgreSQL.  
+  _Example 2:_ In retro, we linked tech stack to one real production issue.  
+  _Example 3:_ After QA feedback, tech stack was added to our rollout checklist.
 
-- **scalability** (n) - ability to handle growth  
-  _Example:_ We chose this setup for better scalability.
+- **scalability** /ˌskeɪləˈbɪləti/ (n) - ability to handle growth  
+  _Example 1:_ We chose this setup for better scalability during peak traffic.  
+  _Example 2:_ For one customer case, scalability changed how we prioritized tasks.  
+  _Example 3:_ We mentioned scalability in stand-up when blockers appeared.
 
-- **consistency** (n) - data staying correct across operations  
-  _Example:_ We needed strong consistency for payment records.
+- **consistency** /kənˈsɪstənsi/ (n) - data staying correct across operations  
+  _Example 1:_ We needed strong consistency for payment records.  
+  _Example 2:_ Our team used consistency to explain the trade-off to product.  
+  _Example 3:_ I used consistency in a stakeholder update so everyone could follow.
 
-- **time-to-market** (n) - how fast a product can launch  
-  _Example:_ We picked a simpler tool to improve time-to-market.
+- **time-to-market** /ˌtaɪm tə ˈmɑːrkɪt/ (n) - how fast a product can launch  
+  _Example 1:_ We picked a simpler tool to improve time-to-market.  
+  _Example 2:_ Our team used time-to-market to explain the trade-off to product.  
+  _Example 3:_ I used time-to-market in a stakeholder update so everyone could follow.
 
-- **maintenance** (n) - ongoing work to keep software healthy  
-  _Example:_ This part is hard to maintain, so we planned a refactor.
+- **maintenance** /ˈmeɪntənəns/ (n) - ongoing work to keep software healthy  
+  _Example 1:_ This part is hard to maintain, so we planned a refactor.  
+  _Example 2:_ In retro, we linked maintenance to one real production issue.  
+  _Example 3:_ We mentioned maintenance in stand-up when blockers appeared.
 
-- **technical debt** (n) - shortcuts that create future problems  
-  _Example:_ We accepted some technical debt to hit the deadline.
+- **technical debt** /ˈtɛknɪkəl dɛt/ (n) - shortcuts that create future problems  
+  _Example 1:_ We accepted some technical debt to hit the deadline.  
+  _Example 2:_ During release week, technical debt helped us make a safer decision.  
+  _Example 3:_ I used technical debt in a stakeholder update so everyone could follow.
 
-- **refactor** (v/n) - improve code structure without changing behavior  
-  _Example:_ We did a small refactor before the next release.
+- **refactor** /ˌriːˈfæktər/ (v/n) - improve code structure without changing behavior  
+  _Example 1:_ We did a small refactor before the next release.  
+  _Example 2:_ In a recent sprint, refactor became a key point in our planning discussion.  
+  _Example 3:_ In one incident review, refactor explained why the bug happened.
 
-- **regression** (n) - old feature breaks after a new change  
-  _Example:_ We added tests to avoid regression.
+- **regression** /rɪˈɡrɛʃən/ (n) - old feature breaks after a new change  
+  _Example 1:_ We added tests to avoid regression.  
+  _Example 2:_ During release week, regression helped us make a safer decision.  
+  _Example 3:_ In one incident review, regression explained why the bug happened.
 
-- **deployment** (n) - process of releasing software  
-  _Example:_ We improved deployment with automatic checks.
+- **deployment** /dɪˈplɔɪmənt/ (n) - process of releasing software  
+  _Example 1:_ We improved deployment with automatic checks.  
+  _Example 2:_ Our team used deployment to explain the trade-off to product.  
+  _Example 3:_ After QA feedback, deployment was added to our rollout checklist.
 
-- **vendor lock-in** (n) - hard to leave a tool once adopted  
-  _Example:_ We avoided deep vendor lock-in by using open standards.
+- **vendor lock-in** /ˈvɛndər lɑːk ɪn/ (n) - hard to leave a tool once adopted  
+  _Example 1:_ We avoided deep vendor lock-in by using open standards.  
+  _Example 2:_ In retro, we linked vendor lock-in to one real production issue.  
+  _Example 3:_ We mentioned vendor lock-in in stand-up when blockers appeared.
 
 **Additional useful terms:**
-- **boilerplate** (n) - repeated setup code
-- **integration** (n) - connecting tools or systems
-- **migration** (n) - moving to a new tool or system
-- **benchmark** (n) - measured performance comparison
-- **fallback** (n) - backup option when plan A fails
+- **boilerplate** /ˈbɔɪlərˌpleɪt/ (n) - repeated setup code
+- **integration** /ˌɪntəˈɡreɪʃən/ (n) - connecting tools or systems
+- **migration** /maɪˈɡreɪʃən/ (n) - moving to a new tool or system
+- **benchmark** /ˈbɛntʃˌmɑːrk/ (n) - measured performance comparison
+- **fallback** /ˈfɔːlbæk/ (n) - backup option when plan A fails
 
 </details>
 
@@ -102,6 +122,10 @@ description: Explain your stack choices and the trade-offs behind technical deci
 - support fast onboarding
 - match tools to business goals
 
+**Examples (real work):**
+- In one release week, we had to choose the right stack while still trying to balance speed and quality.
+- In retro, we agreed to reduce deployment risk earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - We picked this tool because...
 - A key reason was...
@@ -111,6 +135,10 @@ description: Explain your stack choices and the trade-offs behind technical deci
 - For this project, good enough meant...
 - We reviewed the decision after...
 - The business impact was...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **go with** -> We went with a simple caching layer first.

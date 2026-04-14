@@ -15,42 +15,62 @@ description: Discuss burnout signs, pressure culture, and practical strategies f
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **burnout** (n) - deep mental and physical exhaustion from long stress  
-  _Example:_ I noticed early burnout signs during back-to-back releases.
+- **burnout** /bˈɝnˌaʊt/ (n) - deep mental and physical exhaustion from long stress  
+  _Example 1:_ I noticed early burnout signs during back-to-back releases.  
+  _Example 2:_ In our weekly review, burnout was tied to delivery quality and risk.  
+  _Example 3:_ I used burnout in a stakeholder update so non-technical teams could follow.
 
-- **crunch time** (n) - period of intense work pressure  
-  _Example:_ Crunch time lasted too long in our last quarter.
+- **crunch time** /krˈʌntʃ tˈaɪm/ (n) - period of intense work pressure  
+  _Example 1:_ Crunch time lasted too long in our last quarter.  
+  _Example 2:_ In one sprint, crunch time came up when we investigated a production issue.  
+  _Example 3:_ Later, crunch time became part of our standard way of reporting issues.
 
-- **on-call load** (n) - stress from support duty and alerts  
-  _Example:_ High on-call load affected team energy.
+- **on-call load** /ˈɑn kˈɔl lˈoʊd/ (n) - stress from support duty and alerts  
+  _Example 1:_ High on-call load affected team energy.  
+  _Example 2:_ In our weekly review, on-call load was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added on-call load to our checklist for future releases.
 
-- **boundary** (n) - limit to protect time and health  
-  _Example:_ I set a boundary and stopped checking chat after work.
+- **boundary** /bˈaʊndɚi/ (n) - limit to protect time and health  
+  _Example 1:_ I set a boundary and stopped checking chat after work.  
+  _Example 2:_ In one sprint, boundary came up when we investigated a production issue.  
+  _Example 3:_ After that case, we added boundary to our checklist for future releases.
 
-- **recovery** (n) - process of regaining energy and focus  
-  _Example:_ Real recovery needs rest, not just one free weekend.
+- **recovery** /rɪkˈʌvri/ (n) - process of regaining energy and focus  
+  _Example 1:_ Real recovery needs rest, not just one free weekend.  
+  _Example 2:_ In one sprint, recovery came up when we investigated a production issue.  
+  _Example 3:_ I used recovery in a stakeholder update so non-technical teams could follow.
 
-- **stress signal** (n) - sign that pressure is becoming unhealthy  
-  _Example:_ Sleep problems were my main stress signal.
+- **stress signal** /strˈɛs sˈɪɡnəl/ (n) - sign that pressure is becoming unhealthy  
+  _Example 1:_ Sleep problems were my main stress signal.  
+  _Example 2:_ In one sprint, stress signal came up when we investigated a production issue.  
+  _Example 3:_ I used stress signal in a stakeholder update so non-technical teams could follow.
 
-- **always available** (adj phrase) - expectation to respond anytime  
-  _Example:_ Being always available is not sustainable.
+- **always available** /ˈɔlwˌeɪz əvˈeɪləbəl/ (adj phrase) - expectation to respond anytime  
+  _Example 1:_ Being always available is not sustainable.  
+  _Example 2:_ After QA review, everyone agreed the risk was always available.  
+  _Example 3:_ That incident taught me not to ignore anything always available.
 
-- **workload** (n) - amount of work assigned  
-  _Example:_ We redistributed workload after two people reported fatigue.
+- **workload** /wˈɝklˌoʊd/ (n) - amount of work assigned  
+  _Example 1:_ We redistributed workload after two people reported fatigue.  
+  _Example 2:_ During planning, we used workload to make a safer release decision.  
+  _Example 3:_ That experience showed how workload affects both speed and stability.
 
-- **supportive manager** (n) - manager who helps with realistic planning  
-  _Example:_ A supportive manager helped us reset priorities.
+- **supportive manager** /səpˈɔrtɪv mˈænədʒɚ/ (n) - manager who helps with realistic planning  
+  _Example 1:_ A supportive manager helped us reset priorities.  
+  _Example 2:_ During planning, we used supportive manager to make a safer release decision.  
+  _Example 3:_ Later, supportive manager became part of our standard way of reporting issues.
 
-- **sustainable pace** (n) - work speed that can continue long term  
-  _Example:_ We moved to a sustainable pace after process changes.
+- **sustainable pace** /səstˈeɪnəbəl pˈeɪs/ (n) - work speed that can continue long term  
+  _Example 1:_ We moved to a sustainable pace after process changes.  
+  _Example 2:_ For a customer-facing bug, sustainable pace guided what we fixed first.  
+  _Example 3:_ After that case, we added sustainable pace to our checklist for future releases.
 
 **Additional useful terms:**
-- **mental bandwidth** (n) - available attention and energy
-- **rest day** (n) - full day without work activity
-- **team health** (n) - overall well-being of team members
-- **escalation** (n) - asking for help when pressure is too high
-- **priority reset** (n) - changing priorities to reduce overload
+- **mental bandwidth** /mˈɛntəl bˈændwɪdθ/ (n) - available attention and energy
+- **rest day** /rˈɛst dˈeɪ/ (n) - full day without work activity
+- **team health** /tˈim hˈɛlθ/ (n) - overall well-being of team members
+- **escalation** /ˌɛskəlˈeɪʃən/ (n) - asking for help when pressure is too high
+- **priority reset** /praɪˈɔrəti risˈɛt/ (n) - changing priorities to reduce overload
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss burnout signs, pressure culture, and practical strategies f
 - reset team priorities
 - improve work-life balance
 
+**Examples (real work):**
+- In one release week, we had to recognize burnout signs while still trying to manage on-call stress.
+- In retro, we agreed to set healthy boundaries earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In my experience, burnout starts when...
 - A hidden pressure in IT is...
@@ -111,6 +135,10 @@ description: Discuss burnout signs, pressure culture, and practical strategies f
 - To protect team health,...
 - A manager can support by...
 - The lesson I learned is...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **burn out** -> I nearly burned out during a long incident cycle.

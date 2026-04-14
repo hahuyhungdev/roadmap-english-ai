@@ -15,42 +15,62 @@ description: Discuss practical communication strategies for global teams with di
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **communication style** (n) - way people express ideas and feedback  
-  _Example:_ Different communication styles can cause misunderstandings.
+- **communication style** /kəmjˌunəkˈeɪʃən stˈaɪl/ (n) - way people express ideas and feedback  
+  _Example 1:_ Different communication styles can cause misunderstandings.  
+  _Example 2:_ In our weekly review, communication style was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected communication style with one clear lesson learned.
 
-- **direct feedback** (n) - clear and explicit comments  
-  _Example:_ Some teams prefer direct feedback in code reviews.
+- **direct feedback** /dɚˈɛkt fˈidbˌæk/ (n) - clear and explicit comments  
+  _Example 1:_ Some teams prefer direct feedback in code reviews.  
+  _Example 2:_ During planning, we used direct feedback to make a safer release decision.  
+  _Example 3:_ I used direct feedback in a stakeholder update so non-technical teams could follow.
 
-- **indirect feedback** (n) - softer feedback to avoid conflict  
-  _Example:_ Indirect feedback can be polite but less clear.
+- **indirect feedback** /ˌɪndɚˈɛkt fˈidbˌæk/ (n) - softer feedback to avoid conflict  
+  _Example 1:_ Indirect feedback can be polite but less clear.  
+  _Example 2:_ On a real project, indirect feedback helped us explain the trade-off to product.  
+  _Example 3:_ Later, indirect feedback became part of our standard way of reporting issues.
 
-- **high-context culture** (n) - communication with implied meaning  
-  _Example:_ In high-context cultures, silence may carry meaning.
+- **high-context culture** /hˈaɪ kˈɑntɛkst kˈʌltʃɚ/ (n) - communication with implied meaning  
+  _Example 1:_ In high-context cultures, silence may carry meaning.  
+  _Example 2:_ On a real project, high-context culture helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected high-context culture with one clear lesson learned.
 
-- **low-context culture** (n) - communication with explicit wording  
-  _Example:_ Low-context teams usually prefer clear and direct instructions.
+- **low-context culture** /lˈoʊ kˈɑntɛkst kˈʌltʃɚ/ (n) - communication with explicit wording  
+  _Example 1:_ Low-context teams usually prefer clear and direct instructions.  
+  _Example 2:_ On a real project, low-context culture helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how low-context culture affects both speed and stability.
 
-- **async communication** (n) - communication without real-time response  
-  _Example:_ Async communication helps teams across time zones.
+- **async communication** /eɪˈsɪŋk kəˌmjuːnəˈkeɪʃən/ (n) - communication without real-time response  
+  _Example 1:_ Async communication helps teams across time zones.  
+  _Example 2:_ In one sprint, async communication came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how async communication affects both speed and stability.
 
-- **time zone overlap** (n) - shared working hours across regions  
-  _Example:_ We use time zone overlap for urgent decisions.
+- **time zone overlap** /tˈaɪm zˈoʊn ˈoʊvɚlˌæp/ (n) - shared working hours across regions  
+  _Example 1:_ We use time zone overlap for urgent decisions.  
+  _Example 2:_ During planning, we used time zone overlap to make a safer release decision.  
+  _Example 3:_ I used time zone overlap in a stakeholder update so non-technical teams could follow.
 
-- **misalignment** (n) - different understanding of goals or tasks  
-  _Example:_ Misalignment happened because the requirement was vague.
+- **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - different understanding of goals or tasks  
+  _Example 1:_ Misalignment happened because the requirement was vague.  
+  _Example 2:_ In our weekly review, misalignment was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected misalignment with one clear lesson learned.
 
-- **trust building** (n) - process of creating reliable team relationships  
-  _Example:_ Trust building takes time in remote teams.
+- **trust building** /trˈʌst bˈɪldɪŋ/ (n) - process of creating reliable team relationships  
+  _Example 1:_ Trust building takes time in remote teams.  
+  _Example 2:_ For a customer-facing bug, trust building guided what we fixed first.  
+  _Example 3:_ Later, trust building became part of our standard way of reporting issues.
 
-- **clarification** (n) - request for clearer information  
-  _Example:_ I ask for clarification early to avoid rework.
+- **clarification** /klˌɛrəfəkˈeɪʃən/ (n) - request for clearer information  
+  _Example 1:_ I ask for clarification early to avoid rework.  
+  _Example 2:_ In one sprint, clarification came up when we investigated a production issue.  
+  _Example 3:_ Later, clarification became part of our standard way of reporting issues.
 
 **Additional useful terms:**
-- **tone** (n) - feeling or attitude in communication
-- **intent** (n) - real purpose behind a message
-- **friction point** (n) - recurring source of conflict
-- **cultural norm** (n) - common behavior in a group
-- **team agreement** (n) - shared rule for communication
+- **tone** /tˈoʊn/ (n) - feeling or attitude in communication
+- **intent** /ˌɪntˈɛnt/ (n) - real purpose behind a message
+- **friction point** /frˈɪkʃən pˈɔɪnt/ (n) - recurring source of conflict
+- **cultural norm** /kˈʌltʃɚəl nˈɔrm/ (n) - common behavior in a group
+- **team agreement** /tˈim əɡrˈimənt/ (n) - shared rule for communication
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss practical communication strategies for global teams with di
 - manage time zone overlap
 - avoid costly misunderstandings
 
+**Examples (real work):**
+- In one release week, we had to bridge communication gaps while still trying to adapt communication style.
+- In retro, we agreed to build cross-cultural trust earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In a global team, one challenge is...
 - We noticed confusion when...
@@ -111,6 +135,10 @@ description: Discuss practical communication strategies for global teams with di
 - The trade-off was...
 - A simple team rule is...
 - This improved trust by...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **speak up** -> I speak up when requirements are unclear.

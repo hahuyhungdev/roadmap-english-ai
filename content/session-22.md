@@ -15,42 +15,62 @@ description: Discuss speed culture in tech and how to balance ambition with resp
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **move fast** (v phrase) - execute quickly with minimal delay  
-  _Example:_ Move fast helped us launch early, but bugs increased.
+- **move fast** /mˈuv fˈæst/ (v phrase) - execute quickly with minimal delay  
+  _Example 1:_ Move fast helped us launch early, but bugs increased.  
+  _Example 2:_ For one risky release, we decided to move fast to avoid rework.  
+  _Example 3:_ This habit made it easier to move fast during release week.
 
-- **reckless** (adj) - taking unsafe risks  
-  _Example:_ Shipping without testing was reckless.
+- **reckless** /rˈɛkləs/ (adj) - taking unsafe risks  
+  _Example 1:_ Shipping without testing was reckless.  
+  _Example 2:_ From a business view, the plan looked too reckless to approve.  
+  _Example 3:_ Our team used this case to explain what reckless looks like in practice.
 
-- **growth pressure** (n) - pressure to increase users/revenue quickly  
-  _Example:_ Growth pressure pushed unrealistic deadlines.
+- **growth pressure** /ɡrˈoʊθ prˈɛʃɚ/ (n) - pressure to increase users/revenue quickly  
+  _Example 1:_ Growth pressure pushed unrealistic deadlines.  
+  _Example 2:_ In our weekly review, growth pressure was tied to delivery quality and risk.  
+  _Example 3:_ Later, growth pressure became part of our standard way of reporting issues.
 
-- **quality compromise** (n) - lowering quality to save time  
-  _Example:_ Too many quality compromises hurt retention later.
+- **quality compromise** /kwˈɑləti kˈɑmprəmˌaɪz/ (n) - lowering quality to save time  
+  _Example 1:_ Too many quality compromises hurt retention later.  
+  _Example 2:_ On a real project, quality compromise helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected quality compromise with one clear lesson learned.
 
-- **founder mindset** (n) - leadership style focused on speed and action  
-  _Example:_ Founder mindset can be strong, but needs risk balance.
+- **founder mindset** /fˈaʊndɚ mˈaɪndsˌɛt/ (n) - leadership style focused on speed and action  
+  _Example 1:_ Founder mindset can be strong, but needs risk balance.  
+  _Example 2:_ On a real project, founder mindset helped us explain the trade-off to product.  
+  _Example 3:_ Later, founder mindset became part of our standard way of reporting issues.
 
-- **ethical boundary** (n) - limit of acceptable behavior  
-  _Example:_ We crossed an ethical boundary by hiding known flaws.
+- **ethical boundary** /ˈɛθɪkəl bˈaʊndɚi/ (n) - limit of acceptable behavior  
+  _Example 1:_ We crossed an ethical boundary by hiding known flaws.  
+  _Example 2:_ In our weekly review, ethical boundary was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how ethical boundary affects both speed and stability.
 
-- **responsible innovation** (n) - progress with risk control  
-  _Example:_ Responsible innovation needs testing and transparency.
+- **responsible innovation** /rispˈɑnsəbəl ˌɪnəvˈeɪʃən/ (n) - progress with risk control  
+  _Example 1:_ Responsible innovation needs testing and transparency.  
+  _Example 2:_ During planning, we used responsible innovation to make a safer release decision.  
+  _Example 3:_ Later, responsible innovation became part of our standard way of reporting issues.
 
-- **user trust** (n) - confidence users have in product and company  
-  _Example:_ Repeated failures can damage user trust quickly.
+- **user trust** /jˈuzɚ trˈʌst/ (n) - confidence users have in product and company  
+  _Example 1:_ Repeated failures can damage user trust quickly.  
+  _Example 2:_ During planning, we used user trust to make a safer release decision.  
+  _Example 3:_ Later, user trust became part of our standard way of reporting issues.
 
-- **short-term win** (n) - quick benefit now  
-  _Example:_ We got a short-term win but created long-term debt.
+- **short-term win** /ʃˈɔrt tˈɝm wˈɪn/ (n) - quick benefit now  
+  _Example 1:_ We got a short-term win but created long-term debt.  
+  _Example 2:_ In one sprint, short-term win came up when we investigated a production issue.  
+  _Example 3:_ Later, short-term win became part of our standard way of reporting issues.
 
-- **long-term cost** (n) - future damage from current shortcuts  
-  _Example:_ Long-term cost appeared as constant hotfixes.
+- **long-term cost** /lˈɔŋ tˈɝm kˈɑst/ (n) - future damage from current shortcuts  
+  _Example 1:_ Long-term cost appeared as constant hotfixes.  
+  _Example 2:_ On a real project, long-term cost helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how long-term cost affects both speed and stability.
 
 **Additional useful terms:**
-- **risk threshold** (n) - maximum risk a team accepts
-- **release gate** (n) - required checks before launch
-- **ethical review** (n) - discussion of possible harm
-- **decision transparency** (n) - clear communication of choices
-- **sustainable growth** (n) - growth that can continue safely
+- **risk threshold** /rˈɪsk θrˈɛʃˌoʊld/ (n) - maximum risk a team accepts
+- **release gate** /rilˈis ɡˈeɪt/ (n) - required checks before launch
+- **ethical review** /ˈɛθɪkəl rˌivjˈu/ (n) - discussion of possible harm
+- **decision transparency** /dɪsˈɪʒən trænspˈɛrənsi/ (n) - clear communication of choices
+- **sustainable growth** /səstˈeɪnəbəl ɡrˈoʊθ/ (n) - growth that can continue safely
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss speed culture in tech and how to balance ambition with resp
 - prioritize sustainable growth
 - maintain product integrity
 
+**Examples (real work):**
+- In one release week, we had to balance speed and safety while still trying to define ethical boundaries.
+- In retro, we agreed to protect user trust earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In startup environments,...
 - A common pressure is...
@@ -111,6 +135,10 @@ description: Discuss speed culture in tech and how to balance ambition with resp
 - I support ambitious goals if...
 - One lesson from my team is...
 - Long term, this decision...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **speed up** -> We sped up delivery by cutting non-critical scope.

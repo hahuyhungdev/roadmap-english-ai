@@ -15,42 +15,62 @@ description: Treat documentation as a product by focusing on user needs, clear s
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **runbook** (n) - step-by-step guide for operations or incidents  
-  _Example:_ We updated the runbook for on-call handover.
+- **runbook** /ˈrʌnˌbʊk/ (n) - step-by-step guide for operations or incidents  
+  _Example 1:_ We updated the runbook for on-call handover.  
+  _Example 2:_ Our team used runbook to explain the trade-off to product.  
+  _Example 3:_ In one incident review, runbook explained why the bug happened.
 
-- **onboarding** (n) - process for helping new members start quickly  
-  _Example:_ Better docs reduced onboarding time from three days to one.
+- **onboarding** /ˈɑːnˌbɔːrdɪŋ/ (n) - process for helping new members start quickly  
+  _Example 1:_ Better docs reduced onboarding time from three days to one.  
+  _Example 2:_ In retro, we linked onboarding to one real production issue.  
+  _Example 3:_ This quarter, onboarding helped us reduce repeated support requests.
 
-- **knowledge base** (n) - central place for shared team information  
-  _Example:_ We moved scattered notes into one knowledge base.
+- **knowledge base** /ˈnɑːlɪdʒ beɪs/ (n) - central place for shared team information  
+  _Example 1:_ We moved scattered notes into one knowledge base.  
+  _Example 2:_ Our team used knowledge base to explain the trade-off to product.  
+  _Example 3:_ In one incident review, knowledge base explained why the bug happened.
 
-- **support ticket** (n) - user or internal request for help  
-  _Example:_ Clear troubleshooting docs reduced support tickets.
+- **support ticket** /səˈpɔːrt ˈtɪkɪt/ (n) - user or internal request for help  
+  _Example 1:_ Clear troubleshooting docs reduced support tickets.  
+  _Example 2:_ Our team used support ticket to explain the trade-off to product.  
+  _Example 3:_ After QA feedback, support ticket was added to our rollout checklist.
 
-- **API reference** (n) - technical documentation for endpoints and usage  
-  _Example:_ We improved API reference with real request examples.
+- **API reference** /ˌeɪ piː ˈaɪ ˈrɛfərəns/ (n) - technical documentation for endpoints and usage  
+  _Example 1:_ We improved API reference with real request examples.  
+  _Example 2:_ In retro, we linked api reference to one real production issue.  
+  _Example 3:_ After QA feedback, api reference was added to our rollout checklist.
 
-- **playbook** (n) - practical guide for repeating tasks  
-  _Example:_ Our deployment playbook helps new engineers avoid mistakes.
+- **playbook** /ˈpleɪˌbʊk/ (n) - practical guide for repeating tasks  
+  _Example 1:_ Our deployment playbook helps new engineers avoid mistakes.  
+  _Example 2:_ In retro, we linked playbook to one real production issue.  
+  _Example 3:_ This quarter, playbook helped us reduce repeated support requests.
 
-- **owner** (n) - person responsible for keeping docs updated  
-  _Example:_ Each critical document has one owner.
+- **owner** /ˈoʊnər/ (n) - person responsible for keeping docs updated  
+  _Example 1:_ Each critical document has one owner.  
+  _Example 2:_ For one customer case, owner changed how we prioritized tasks.  
+  _Example 3:_ I used owner in a stakeholder update so everyone could follow.
 
-- **versioning** (n) - tracking document updates over time  
-  _Example:_ Versioning helped us avoid old instructions.
+- **versioning** /ˈvɝːʒənɪŋ/ (n) - tracking document updates over time  
+  _Example 1:_ Versioning helped us avoid old instructions.  
+  _Example 2:_ During release week, versioning helped us make a safer decision.  
+  _Example 3:_ In one incident review, versioning explained why the bug happened.
 
-- **audience** (n) - people the doc is written for  
-  _Example:_ We write separate docs for developers and non-technical teams.
+- **audience** /ˈɔːdiəns/ (n) - people the doc is written for  
+  _Example 1:_ We write separate docs for developers and non-technical teams.  
+  _Example 2:_ Our team used audience to explain the trade-off to product.  
+  _Example 3:_ This quarter, audience helped us reduce repeated support requests.
 
-- **clarity** (n) - easy to understand language and structure  
-  _Example:_ We use simple language to improve clarity.
+- **clarity** /ˈklærəti/ (n) - easy to understand language and structure  
+  _Example 1:_ We use simple language to improve clarity.  
+  _Example 2:_ For one customer case, clarity changed how we prioritized tasks.  
+  _Example 3:_ We mentioned clarity in stand-up when blockers appeared.
 
 **Additional useful terms:**
-- **checklist** (n) - short list of required steps
-- **FAQ** (n) - common questions and answers
-- **diagram** (n) - visual explanation of system flow
-- **template** (n) - reusable document structure
-- **handover note** (n) - context shared during ownership transfer
+- **checklist** /ˈtʃɛkˌlɪst/ (n) - short list of required steps
+- **FAQ** /ˌɛf eɪ ˈkjuː/ (n) - common questions and answers
+- **diagram** /ˈdaɪəˌɡræm/ (n) - visual explanation of system flow
+- **template** /ˈtɛmˌplət/ (n) - reusable document structure
+- **handover note** /ˈhændˌoʊvər noʊt/ (n) - context shared during ownership transfer
 
 </details>
 
@@ -102,6 +122,10 @@ description: Treat documentation as a product by focusing on user needs, clear s
 - standardize troubleshooting steps
 - support non-technical readers
 
+**Examples (real work):**
+- In one release week, we had to write clear runbooks while still trying to reduce support tickets.
+- In retro, we agreed to speed up onboarding earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - We treat docs as a product because...
 - The target reader is...
@@ -111,6 +135,10 @@ description: Treat documentation as a product by focusing on user needs, clear s
 - One trade-off is...
 - To keep quality, we...
 - We measure impact with...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **write down** -> We write down incident steps right after resolution.

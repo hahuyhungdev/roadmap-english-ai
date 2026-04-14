@@ -15,42 +15,62 @@ description: Explain how you use AI tools in daily engineering work, where they 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **code assistant** (n) - AI tool that suggests code  
-  _Example:_ I use a code assistant for boilerplate and test drafts.
+- **code assistant** /koʊd əˈsɪstənt/ (n) - AI tool that suggests code  
+  _Example 1:_ I use a code assistant to scaffold React form components.  
+  _Example 2:_ During release week, code assistant helped us make a safer decision.  
+  _Example 3:_ After QA feedback, code assistant was added to our rollout checklist.
 
-- **boilerplate** (n) - repeated code patterns  
-  _Example:_ AI is helpful for boilerplate, but I review every line.
+- **boilerplate** /ˈbɔɪlərˌpleɪt/ (n) - repeated code patterns  
+  _Example 1:_ AI is helpful for boilerplate, but I review every line before commit.  
+  _Example 2:_ In a recent sprint, boilerplate became a key point in our planning discussion.  
+  _Example 3:_ This quarter, boilerplate helped us reduce repeated support requests.
 
-- **unit test** (n) - small test for one function or component  
-  _Example:_ We ask AI for unit test ideas, then adjust edge cases.
+- **unit test** /ˈjuːnɪt tɛst/ (n) - small test for one function or component  
+  _Example 1:_ We ask AI for unit test ideas, then adjust edge cases manually.  
+  _Example 2:_ For one customer case, unit test changed how we prioritized tasks.  
+  _Example 3:_ In one incident review, unit test explained why the bug happened.
 
-- **debugging** (n) - finding and fixing problems  
-  _Example:_ AI helps me read logs faster during debugging.
+- **debugging** /diˈbʌɡɪŋ/ (n) - finding and fixing problems  
+  _Example 1:_ AI helps me read logs faster during debugging.  
+  _Example 2:_ For one customer case, debugging changed how we prioritized tasks.  
+  _Example 3:_ After QA feedback, debugging was added to our rollout checklist.
 
-- **prompt** (n) - instruction given to an AI tool  
-  _Example:_ A clear prompt gives better output.
+- **prompt** /prɑːmpt/ (n) - instruction given to an AI tool  
+  _Example 1:_ A clear prompt gives better output and fewer random suggestions.  
+  _Example 2:_ For one customer case, prompt changed how we prioritized tasks.  
+  _Example 3:_ This quarter, prompt helped us reduce repeated support requests.
 
-- **hallucination** (n) - incorrect AI output that sounds confident  
-  _Example:_ We saw hallucination in API usage, so we verified docs.
+- **hallucination** /həˌluːsəˈneɪʃən/ (n) - incorrect AI output that sounds confident  
+  _Example 1:_ We saw hallucination in API usage, so we verified docs first.  
+  _Example 2:_ In a recent sprint, hallucination became a key point in our planning discussion.  
+  _Example 3:_ We mentioned hallucination in stand-up when blockers appeared.
 
-- **security-critical** (adj) - related to sensitive security logic  
-  _Example:_ We never paste security-critical code into external tools.
+- **security-critical** /sɪˈkjʊrəti ˈkrɪtɪkəl/ (adj) - related to sensitive security logic  
+  _Example 1:_ We never paste security-critical code into external tools.  
+  _Example 2:_ From a business view, this risk was clearly security-critical.  
+  _Example 3:_ Later, stakeholders said the safer option was less security-critical.
 
-- **compliance** (n) - following legal or company rules  
-  _Example:_ Compliance rules limit what data we can share with AI tools.
+- **compliance** /kəmˈplaɪəns/ (n) - following legal or company rules  
+  _Example 1:_ Compliance rules limit what data we can share with AI tools.  
+  _Example 2:_ In a recent sprint, compliance became a key point in our planning discussion.  
+  _Example 3:_ After QA feedback, compliance was added to our rollout checklist.
 
-- **review** (n/v) - checking code quality and correctness  
-  _Example:_ Human review is still mandatory before merge.
+- **review** /rɪˈvjuː/ (n/v) - checking code quality and correctness  
+  _Example 1:_ Human review is still mandatory before merge.  
+  _Example 2:_ In a recent sprint, review became a key point in our planning discussion.  
+  _Example 3:_ We mentioned review in stand-up when blockers appeared.
 
-- **regression** (n) - new change breaks old behavior  
-  _Example:_ AI suggestions can cause regression if we skip tests.
+- **regression** /rɪˈɡrɛʃən/ (n) - new change breaks old behavior  
+  _Example 1:_ AI suggestions can cause regression if we skip tests.  
+  _Example 2:_ For one customer case, regression changed how we prioritized tasks.  
+  _Example 3:_ After QA feedback, regression was added to our rollout checklist.
 
 **Additional useful terms:**
-- **context window** (n) - amount of text AI can process at once
-- **autocomplete** (n) - automatic code suggestions
-- **false positive** (n) - warning that looks real but is not
-- **policy** (n) - internal rule for tool usage
-- **fallback plan** (n) - backup process when AI output is wrong
+- **context window** /ˈkɑːntɛkst ˈwɪndoʊ/ (n) - amount of text AI can process at once
+- **autocomplete** /ˌɔːtoʊkəmˈpliːt/ (n) - automatic code suggestions
+- **false positive** /ˌfɔːls ˈpɑːzətɪv/ (n) - warning that looks real but is not
+- **policy** /ˈpɑːləsi/ (n) - internal rule for tool usage
+- **fallback plan** /ˈfɔːlbæk plæn/ (n) - backup process when AI output is wrong
 
 </details>
 
@@ -102,6 +122,10 @@ description: Explain how you use AI tools in daily engineering work, where they 
 - prevent security regressions
 - set clear usage boundaries
 
+**Examples (real work):**
+- In one release week, we had to generate test drafts while still trying to speed up debugging.
+- In retro, we agreed to review AI output earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In my daily workflow, I use AI to...
 - A good use case is...
@@ -111,6 +135,10 @@ description: Explain how you use AI tools in daily engineering work, where they 
 - The trade-off is speed versus...
 - To stay safe, we...
 - In production code, I always...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **speed up** -> AI can speed up test setup.

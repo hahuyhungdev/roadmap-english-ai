@@ -15,42 +15,62 @@ description: Discuss the pressure to build a personal brand and how to stay auth
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **digital identity** (n) - how you appear online  
-  _Example:_ My digital identity is more polished than my daily work reality.
+- **digital identity** /dˈɪdʒətəl aɪdˈɛntɪtˌi/ (n) - how you appear online  
+  _Example 1:_ My digital identity is more polished than my daily work reality.  
+  _Example 2:_ In our weekly review, digital identity was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added digital identity to our checklist for future releases.
 
-- **personal brand** (n) - public professional image you build  
-  _Example:_ Personal brand can help with job opportunities.
+- **personal brand** /pˈɝsɪnəl brˈænd/ (n) - public professional image you build  
+  _Example 1:_ Personal brand can help with job opportunities.  
+  _Example 2:_ In one sprint, personal brand came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how personal brand affects both speed and stability.
 
-- **authenticity** (n) - being genuine, not fake  
-  _Example:_ I try to keep authenticity in my posts.
+- **authenticity** /ˌɔθəntˈɪsɪti/ (n) - being genuine, not fake  
+  _Example 1:_ I try to keep authenticity in my posts.  
+  _Example 2:_ In one sprint, authenticity came up when we investigated a production issue.  
+  _Example 3:_ After that case, we added authenticity to our checklist for future releases.
 
-- **self-promotion** (n) - sharing achievements publicly  
-  _Example:_ Self-promotion is useful, but too much can feel forced.
+- **self-promotion** /sˈɛlf prəmˈoʊʃən/ (n) - sharing achievements publicly  
+  _Example 1:_ Self-promotion is useful, but too much can feel forced.  
+  _Example 2:_ In one sprint, self-promotion came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected self-promotion with one clear lesson learned.
 
-- **signal vs noise** (n) - useful content compared with low-value content  
-  _Example:_ I focus on signal vs noise when posting online.
+- **useful vs noisy content** /jˈusfəl vˈiˈɛs nˈɔɪzi kˈɑntɛnt/ (n) - useful content compared with low-value content  
+  _Example 1:_ I focus on signal vs noise when posting online.  
+  _Example 2:_ For a customer-facing bug, useful vs noisy content guided what we fixed first.  
+  _Example 3:_ That experience showed how useful vs noisy content affects both speed and stability.
 
-- **online persona** (n) - character someone shows online  
-  _Example:_ My online persona is more confident than I feel sometimes.
+- **online persona** /ˈɔnlˌaɪn pɚsˈoʊnə/ (n) - character someone shows online  
+  _Example 1:_ My online persona is more confident than I feel sometimes.  
+  _Example 2:_ For a customer-facing bug, online persona guided what we fixed first.  
+  _Example 3:_ In retro, we connected online persona with one clear lesson learned.
 
-- **credibility** (n) - trust people have in your expertise  
-  _Example:_ Credibility grows when posts match real work experience.
+- **credibility** /krˌɛdəbˈɪlɪti/ (n) - trust people have in your expertise  
+  _Example 1:_ Credibility grows when posts match real work experience.  
+  _Example 2:_ On a real project, credibility helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added credibility to our checklist for future releases.
 
-- **tech influencer culture** (n) - trend of building audience in tech  
-  _Example:_ Tech influencer culture can create unrealistic pressure.
+- **tech influencer culture** /tɛk ˈɪnfluənsər ˈkʌltʃər/ (n) - trend of building audience in tech  
+  _Example 1:_ Tech influencer culture can create unrealistic pressure.  
+  _Example 2:_ In one sprint, tech influencer culture came up when we investigated a production issue.  
+  _Example 3:_ Later, tech influencer culture became part of our standard way of reporting issues.
 
-- **visibility** (n) - how often people see your work  
-  _Example:_ Visibility helped me connect with hiring managers.
+- **visibility** /vˌɪzəbˈɪlɪti/ (n) - how often people see your work  
+  _Example 1:_ Visibility helped me connect with hiring managers.  
+  _Example 2:_ During planning, we used visibility to make a safer release decision.  
+  _Example 3:_ In retro, we connected visibility with one clear lesson learned.
 
-- **impression management** (n) - controlling how others see you  
-  _Example:_ Too much impression management can feel exhausting.
+- **image control** /ˈɪmədʒ kəntrˈoʊl/ (n) - controlling how others see you  
+  _Example 1:_ Too much impression management can feel exhausting.  
+  _Example 2:_ For a customer-facing bug, image control guided what we fixed first.  
+  _Example 3:_ I used image control in a stakeholder update so non-technical teams could follow.
 
 **Additional useful terms:**
-- **portfolio signal** (n) - clear proof of your work quality
-- **public reputation** (n) - how people view you professionally
-- **performative behavior** (n) - acting for image, not real value
-- **content fatigue** (n) - stress from constant posting pressure
-- **professional presence** (n) - healthy and consistent online profile
+- **portfolio signal** /pɔrtfˈoʊliˌoʊ sˈɪɡnəl/ (n) - clear proof of your work quality
+- **public reputation** /pˈʌblɪk rˌɛpjətˈeɪʃən/ (n) - how people view you professionally
+- **posting for attention** /pˈoʊstɪŋ fˈɔr ətˈɛnʃən/ (n) - acting for image, not real value
+- **content fatigue** /kˈɑntɛnt fətˈiɡ/ (n) - stress from constant posting pressure
+- **professional presence** /prəfˈɛʃənəl prˈɛzəns/ (n) - healthy and consistent online profile
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss the pressure to build a personal brand and how to stay auth
 - attract career opportunities
 - protect personal boundaries
 
+**Examples (real work):**
+- In one release week, we had to build personal brand while still trying to maintain authenticity.
+- In retro, we agreed to share real experience earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In tech, online presence can...
 - A benefit of visibility is...
@@ -111,6 +135,10 @@ description: Discuss the pressure to build a personal brand and how to stay auth
 - I changed my approach after...
 - For job search, it helps to...
 - My current rule is...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **show up** -> I try to show up consistently with useful content.

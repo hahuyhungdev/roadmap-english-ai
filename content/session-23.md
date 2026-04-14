@@ -15,42 +15,62 @@ description: Discuss layoffs, project changes, and uncertain markets with practi
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **layoff** (n) - job loss due to business reasons  
-  _Example:_ Our team faced layoffs after budget cuts.
+- **layoff** /lˈeɪˌɔf/ (n) - job loss due to business reasons  
+  _Example 1:_ Our team faced layoffs after budget cuts.  
+  _Example 2:_ On a real project, layoff helped us explain the trade-off to product.  
+  _Example 3:_ I used layoff in a stakeholder update so non-technical teams could follow.
 
-- **restructuring** (n) - major organizational change  
-  _Example:_ Restructuring changed project priorities overnight.
+- **restructuring** /ristrˈʌktʃɚɪŋ/ (n) - major organizational change  
+  _Example 1:_ Restructuring changed project priorities overnight.  
+  _Example 2:_ In our weekly review, restructuring was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how restructuring affects both speed and stability.
 
-- **project cancellation** (n) - project stopped before completion  
-  _Example:_ Our product initiative ended after strategy change.
+- **project cancellation** /prˈɑdʒɛkt kˌænsəlˈeɪʃən/ (n) - project stopped before completion  
+  _Example 1:_ Our product initiative ended after strategy change.  
+  _Example 2:_ In our weekly review, project cancellation was tied to delivery quality and risk.  
+  _Example 3:_ I used project cancellation in a stakeholder update so non-technical teams could follow.
 
-- **adaptability** (n) - ability to adjust to new conditions  
-  _Example:_ Adaptability helped me stay productive during uncertainty.
+- **adaptability** /ədˌæptəbˈɪləti/ (n) - ability to adjust to new conditions  
+  _Example 1:_ Adaptability helped me stay productive during uncertainty.  
+  _Example 2:_ During planning, we used adaptability to make a safer release decision.  
+  _Example 3:_ In retro, we connected adaptability with one clear lesson learned.
 
-- **upskilling** (n) - learning skills for changing market needs  
-  _Example:_ I did upskilling in cloud and system design.
+- **upskilling** /ʌpˈskɪlɪŋ/ (n) - learning skills for changing market needs  
+  _Example 1:_ I did upskilling in cloud and system design.  
+  _Example 2:_ In our weekly review, upskilling was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how upskilling affects both speed and stability.
 
-- **networking** (n) - building professional connections  
-  _Example:_ Networking helped me find new opportunities quickly.
+- **networking** /nˈɛtwˌɝkɪŋ/ (n) - building professional connections  
+  _Example 1:_ Networking helped me find new opportunities quickly.  
+  _Example 2:_ For a customer-facing bug, networking guided what we fixed first.  
+  _Example 3:_ That experience showed how networking affects both speed and stability.
 
-- **financial buffer** (n) - savings for unstable periods  
-  _Example:_ A financial buffer reduced panic during layoffs.
+- **financial buffer** /fənˈænʃəl bˈʌfɚ/ (n) - savings for unstable periods  
+  _Example 1:_ A financial buffer reduced panic during layoffs.  
+  _Example 2:_ During planning, we used financial buffer to make a safer release decision.  
+  _Example 3:_ After that case, we added financial buffer to our checklist for future releases.
 
-- **career resilience** (n) - ability to recover from setbacks  
-  _Example:_ Career resilience comes from skills and mindset.
+- **career resilience** /kɚˈɪr rɪzˈɪliəns/ (n) - ability to recover from setbacks  
+  _Example 1:_ Career resilience comes from skills and mindset.  
+  _Example 2:_ In one sprint, career resilience came up when we investigated a production issue.  
+  _Example 3:_ After that case, we added career resilience to our checklist for future releases.
 
-- **transferable skills** (n) - skills useful in many roles  
-  _Example:_ Communication and debugging are transferable skills.
+- **transferable skills** /trænsfˈɝəbəl skˈɪlz/ (n) - skills useful in many roles  
+  _Example 1:_ Communication and debugging are transferable skills.  
+  _Example 2:_ During planning, we used transferable skills to make a safer release decision.  
+  _Example 3:_ After that case, we added transferable skills to our checklist for future releases.
 
-- **market shift** (n) - change in industry demand  
-  _Example:_ AI tools created a market shift in hiring priorities.
+- **market shift** /mˈɑrkət ʃˈɪft/ (n) - change in industry demand  
+  _Example 1:_ AI tools created a market shift in hiring priorities.  
+  _Example 2:_ In our weekly review, market shift was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added market shift to our checklist for future releases.
 
 **Additional useful terms:**
-- **plan B** (n) - backup career plan
-- **skill inventory** (n) - list of your current capabilities
-- **job search pipeline** (n) - active list of opportunities
-- **recovery timeline** (n) - period needed to stabilize again
-- **mindset reset** (n) - mental adjustment after disruption
+- **plan B** /plˈæn bˈi/ (n) - backup career plan
+- **skill inventory** /skˈɪl ˌɪnvəntˈɔri/ (n) - list of your current capabilities
+- **job search pipeline** /dʒˈɑb sˈɝtʃ pˈaɪplˌaɪn/ (n) - active list of opportunities
+- **recovery timeline** /rɪkˈʌvri tˈaɪmlaɪn/ (n) - period needed to stabilize again
+- **mindset reset** /mˈaɪndsˌɛt risˈɛt/ (n) - mental adjustment after disruption
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss layoffs, project changes, and uncertain markets with practi
 - manage emotional stress
 - plan next career steps
 
+**Examples (real work):**
+- In one release week, we had to handle career uncertainty while still trying to adapt to market shifts.
+- In retro, we agreed to build financial buffer earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - When uncertainty hit,...
 - At first, I felt..., but...
@@ -111,6 +135,10 @@ description: Discuss layoffs, project changes, and uncertain markets with practi
 - This helped me..., but...
 - The biggest lesson was...
 - Now I prepare by...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **bounce back** -> I bounced back by building a clear job plan.

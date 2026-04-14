@@ -15,42 +15,62 @@ description: Discuss technical debt in simple language and explain how you align
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **technical debt** (n) - old code problems caused by past shortcuts  
-  _Example:_ We spend too much time fixing old code in this module.
+- **technical debt** /ˈtɛknɪkəl dɛt/ (n) - old code problems caused by past shortcuts  
+  _Example 1:_ We spend too much time fixing old code in this module.  
+  _Example 2:_ During release week, technical debt helped us make a safer decision.  
+  _Example 3:_ We mentioned technical debt in stand-up when blockers appeared.
 
-- **legacy code** (n) - older code still in use  
-  _Example:_ The login flow still depends on legacy code.
+- **legacy code** /ˈlɛɡəsi koʊd/ (n) - older code still in use  
+  _Example 1:_ The login flow still depends on legacy code.  
+  _Example 2:_ In retro, we linked legacy code to one real production issue.  
+  _Example 3:_ After QA feedback, legacy code was added to our rollout checklist.
 
-- **refactor** (v/n) - improve structure without changing feature behavior  
-  _Example:_ We planned a refactor before adding more features.
+- **refactor** /ˌriːˈfæktər/ (v/n) - improve structure without changing feature behavior  
+  _Example 1:_ We planned a refactor before adding more features.  
+  _Example 2:_ During release week, refactor helped us make a safer decision.  
+  _Example 3:_ In one incident review, refactor explained why the bug happened.
 
-- **maintenance** (n) - ongoing fixes and updates  
-  _Example:_ Maintenance cost became too high for this service.
+- **maintenance** /ˈmeɪntənəns/ (n) - ongoing fixes and updates  
+  _Example 1:_ Maintenance cost became too high for this service.  
+  _Example 2:_ For one customer case, maintenance changed how we prioritized tasks.  
+  _Example 3:_ We mentioned maintenance in stand-up when blockers appeared.
 
-- **hotfix** (n) - quick fix for urgent production issues  
-  _Example:_ We shipped a hotfix during on-call.
+- **hotfix** /ˈhɑːtˌfɪks/ (n) - quick fix for urgent production issues  
+  _Example 1:_ We shipped a hotfix during on-call.  
+  _Example 2:_ In a recent sprint, hotfix became a key point in our planning discussion.  
+  _Example 3:_ This quarter, hotfix helped us reduce repeated support requests.
 
-- **regression** (n) - old behavior breaks after a change  
-  _Example:_ We added tests to catch regression early.
+- **regression** /rɪˈɡrɛʃən/ (n) - old behavior breaks after a change  
+  _Example 1:_ We added tests to catch regression early.  
+  _Example 2:_ In a recent sprint, regression became a key point in our planning discussion.  
+  _Example 3:_ I used regression in a stakeholder update so everyone could follow.
 
-- **backlog** (n) - list of future work items  
-  _Example:_ We tracked refactor tasks in our backlog.
+- **backlog** /ˈbækˌlɔːɡ/ (n) - list of future work items  
+  _Example 1:_ We tracked refactor tasks in our backlog.  
+  _Example 2:_ Our team used backlog to explain the trade-off to product.  
+  _Example 3:_ This quarter, backlog helped us reduce repeated support requests.
 
-- **risk** (n) - chance of a negative outcome  
-  _Example:_ Releasing without cleanup increased risk.
+- **risk** /rɪsk/ (n) - chance of a negative outcome  
+  _Example 1:_ Releasing without cleanup increased risk.  
+  _Example 2:_ In a recent sprint, risk became a key point in our planning discussion.  
+  _Example 3:_ I used risk in a stakeholder update so everyone could follow.
 
-- **downtime** (n) - period when system is unavailable  
-  _Example:_ Legacy bugs caused downtime twice last month.
+- **downtime** /ˈdaʊnˌtaɪm/ (n) - period when system is unavailable  
+  _Example 1:_ Legacy bugs caused downtime twice last month.  
+  _Example 2:_ For one customer case, downtime changed how we prioritized tasks.  
+  _Example 3:_ After QA feedback, downtime was added to our rollout checklist.
 
-- **change plan** (n) - step-by-step approach for updates  
-  _Example:_ We proposed a change plan with small weekly steps.
+- **change plan** /tʃeɪndʒ plæn/ (n) - step-by-step approach for updates  
+  _Example 1:_ We proposed a change plan with small weekly steps.  
+  _Example 2:_ In retro, we linked change plan to one real production issue.  
+  _Example 3:_ After QA feedback, change plan was added to our rollout checklist.
 
 **Additional useful terms:**
-- **code review** (n) - peer check before merge
-- **test coverage** (n) - amount of code protected by tests
-- **rollback** (n/v) - return to previous stable version
-- **cleanup sprint** (n) - sprint focused on fixes and refactor
-- **stability** (n) - reliability over time
+- **code review** /koʊd rɪˈvjuː/ (n) - peer check before merge
+- **test coverage** /tɛst ˈkʌvərɪdʒ/ (n) - amount of code protected by tests
+- **rollback** /ˈroʊlˌbæk/ (n/v) - return to previous stable version
+- **cleanup sprint** /ˈkliːnˌʌp sprɪnt/ (n) - sprint focused on fixes and refactor
+- **stability** /stəˈbɪləti/ (n) - reliability over time
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss technical debt in simple language and explain how you align
 - avoid repeated hotfixes
 - align engineering and product
 
+**Examples (real work):**
+- In one release week, we had to manage technical debt while still trying to refactor legacy code.
+- In retro, we agreed to reduce regression risk earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - We saw the same bug again and again...
 - The main issue was...
@@ -111,6 +135,10 @@ description: Discuss technical debt in simple language and explain how you align
 - One risk we could not ignore was...
 - After cleanup, we noticed...
 - If we had skipped this, ...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **clean up** -> We cleaned up the oldest part of the checkout code.

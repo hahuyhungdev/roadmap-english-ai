@@ -15,42 +15,62 @@ description: Discuss real ethical dilemmas in tech where doing the right thing h
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **ethical dilemma** (n) - situation with difficult moral choices  
-  _Example:_ Shipping with known flaws created an ethical dilemma.
+- **ethical dilemma** /ˈɛθɪkəl dɪlˈɛmə/ (n) - situation with difficult moral choices  
+  _Example 1:_ Shipping with known flaws created an ethical dilemma.  
+  _Example 2:_ In one sprint, ethical dilemma came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected ethical dilemma with one clear lesson learned.
 
-- **known flaw** (n) - problem you are aware of before release  
-  _Example:_ We knew about a data edge case before deployment.
+- **known flaw** /nˈoʊn flˈɔ/ (n) - problem you are aware of before release  
+  _Example 1:_ We knew about a data edge case before deployment.  
+  _Example 2:_ For a customer-facing bug, known flaw guided what we fixed first.  
+  _Example 3:_ I used known flaw in a stakeholder update so non-technical teams could follow.
 
-- **user harm** (n) - negative impact on users  
-  _Example:_ Ignoring this issue could cause user harm.
+- **user harm** /jˈuzɚ hˈɑrm/ (n) - negative impact on users  
+  _Example 1:_ Ignoring this issue could cause user harm.  
+  _Example 2:_ In our weekly review, user harm was tied to delivery quality and risk.  
+  _Example 3:_ Later, user harm became part of our standard way of reporting issues.
 
-- **speak up** (v phrase) - raise concerns clearly  
-  _Example:_ I decided to speak up in the release meeting.
+- **speak up** /spˈik ˈʌp/ (v phrase) - raise concerns clearly  
+  _Example 1:_ I decided to speak up in the release meeting.  
+  _Example 2:_ For one risky release, we decided to speak up to avoid rework.  
+  _Example 3:_ That change helped us speak up without slowing delivery too much.
 
-- **whistleblowing** (n) - reporting serious wrongdoing  
-  _Example:_ Whistleblowing may be needed in extreme cases.
+- **whistleblowing** /ˈwɪsəlˌbloʊɪŋ/ (n) - reporting serious wrongdoing  
+  _Example 1:_ Whistleblowing may be needed in extreme cases.  
+  _Example 2:_ For a customer-facing bug, whistleblowing guided what we fixed first.  
+  _Example 3:_ I used whistleblowing in a stakeholder update so non-technical teams could follow.
 
-- **conflict of values** (n) - clash between goals and principles  
-  _Example:_ We had a conflict of values between speed and safety.
+- **conflict of values** /kˈɑnflɪkt ˈʌv vˈæljuz/ (n) - clash between goals and principles  
+  _Example 1:_ We had a conflict of values between speed and safety.  
+  _Example 2:_ In one sprint, conflict of values came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected conflict of values with one clear lesson learned.
 
-- **professional integrity** (n) - acting honestly and responsibly  
-  _Example:_ Professional integrity means not hiding serious risk.
+- **professional integrity** /prəfˈɛʃənəl ˌɪntˈɛɡrəti/ (n) - acting honestly and responsibly  
+  _Example 1:_ Professional integrity means not hiding serious risk.  
+  _Example 2:_ In one sprint, professional integrity came up when we investigated a production issue.  
+  _Example 3:_ I used professional integrity in a stakeholder update so non-technical teams could follow.
 
-- **pressure from leadership** (n) - strong push from management  
-  _Example:_ There was pressure from leadership to ship quickly.
+- **pressure from leadership** /prˈɛʃɚ frˈʌm lˈidɚʃˌɪp/ (n) - strong push from management  
+  _Example 1:_ There was pressure from leadership to ship quickly.  
+  _Example 2:_ On a real project, pressure from leadership helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected pressure from leadership with one clear lesson learned.
 
-- **responsible escalation** (n) - raising concern through proper channels  
-  _Example:_ I used responsible escalation with clear evidence.
+- **responsible escalation** /rispˈɑnsəbəl ˌɛskəlˈeɪʃən/ (n) - raising concern through proper channels  
+  _Example 1:_ I used responsible escalation with clear evidence.  
+  _Example 2:_ In one sprint, responsible escalation came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected responsible escalation with one clear lesson learned.
 
-- **long-term trust** (n) - confidence built over time through actions  
-  _Example:_ One risky release can damage long-term trust.
+- **long-term trust** /lˈɔŋ tˈɝm trˈʌst/ (n) - confidence built over time through actions  
+  _Example 1:_ One risky release can damage long-term trust.  
+  _Example 2:_ During planning, we used long-term trust to make a safer release decision.  
+  _Example 3:_ That experience showed how long-term trust affects both speed and stability.
 
 **Additional useful terms:**
-- **red line** (n) - limit you will not cross
-- **risk disclosure** (n) - transparent communication of known risks
-- **consent** (n) - user agreement with full information
-- **accountability chain** (n) - who is responsible at each level
-- **moral cost** (n) - personal impact of a difficult decision
+- **red line** /rˈɛd lˈaɪn/ (n) - limit you will not cross
+- **risk disclosure** /rˈɪsk dɪsklˈoʊʒɚ/ (n) - transparent communication of known risks
+- **consent** /kənsˈɛnt/ (n) - user agreement with full information
+- **who owns what** /hˈu ˈoʊnz wˈʌt/ (n) - who is responsible at each level
+- **moral cost** /mˈɔrəl kˈɑst/ (n) - personal impact of a difficult decision
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss real ethical dilemmas in tech where doing the right thing h
 - document decision rationale
 - accept personal cost
 
+**Examples (real work):**
+- In one release week, we had to face ethical pressure while still trying to disclose known risks.
+- In retro, we agreed to protect user safety earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - A difficult situation I faced was...
 - The pressure came from...
@@ -111,6 +135,10 @@ description: Discuss real ethical dilemmas in tech where doing the right thing h
 - The trade-off was...
 - My main principle is...
 - In future, I would...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **speak up** -> I spoke up about a risky release decision.

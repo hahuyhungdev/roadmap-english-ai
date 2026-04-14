@@ -15,42 +15,62 @@ description: Describe how you handle production incidents under time pressure, i
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **outage** (n) - period when service is down  
-  _Example:_ We had a major outage during a marketing campaign.
+- **outage** /ˈaʊtədʒ/ (n) - period when service is down  
+  _Example 1:_ We had a major outage during a marketing campaign.  
+  _Example 2:_ On a real project, outage helped us explain the trade-off to product.  
+  _Example 3:_ I used outage in a stakeholder update so non-technical teams could follow.
 
-- **on-call** (adj/n) - engineer responsible for urgent issues  
-  _Example:_ I was on-call when the alerts started.
+- **on-call** /ˈɑn kˈɔl/ (adj/n) - engineer responsible for urgent issues  
+  _Example 1:_ I was on-call when the alerts started.  
+  _Example 2:_ For production systems, this would be considered on-call.  
+  _Example 3:_ That incident taught me not to ignore anything on-call.
 
-- **escalation** (n) - raising issue to higher support level  
-  _Example:_ We escalated to database team within 10 minutes.
+- **escalation** /ˌɛskəlˈeɪʃən/ (n) - raising issue to higher support level  
+  _Example 1:_ We escalated to database team within 10 minutes.  
+  _Example 2:_ On a real project, escalation helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added escalation to our checklist for future releases.
 
-- **war room** (n) - focused channel/meeting during incident  
-  _Example:_ We opened a war room to coordinate quickly.
+- **war room** /wˈɔr rˈum/ (n) - focused channel/meeting during incident  
+  _Example 1:_ We opened a war room to coordinate quickly.  
+  _Example 2:_ For a customer-facing bug, war room guided what we fixed first.  
+  _Example 3:_ In retro, we connected war room with one clear lesson learned.
 
-- **status update** (n) - clear progress message during incident  
-  _Example:_ We sent status updates every 15 minutes.
+- **status update** /stˈætəs əpdˈeɪt/ (n) - clear progress message during incident  
+  _Example 1:_ We sent status updates every 15 minutes.  
+  _Example 2:_ On a real project, status update helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how status update affects both speed and stability.
 
-- **containment** (n) - action to stop issue from getting worse  
-  _Example:_ First containment step was disabling one faulty job.
+- **containment** /kəntˈeɪnmənt/ (n) - action to stop issue from getting worse  
+  _Example 1:_ First containment step was disabling one faulty job.  
+  _Example 2:_ For a customer-facing bug, containment guided what we fixed first.  
+  _Example 3:_ In retro, we connected containment with one clear lesson learned.
 
-- **rollback** (n/v) - return to previous stable version  
-  _Example:_ We rolled back the release to restore service.
+- **rollback** /rˈoʊlbˌæk/ (n/v) - return to previous stable version  
+  _Example 1:_ We rolled back the release to restore service.  
+  _Example 2:_ On a real project, rollback helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected rollback with one clear lesson learned.
 
-- **blast radius** (n) - how widely an issue spreads  
-  _Example:_ Feature flags helped reduce blast radius.
+- **blast radius** /blˈæst rˈeɪdiəs/ (n) - how widely an issue spreads  
+  _Example 1:_ Feature flags helped reduce blast radius.  
+  _Example 2:_ For a customer-facing bug, blast radius guided what we fixed first.  
+  _Example 3:_ After that case, we added blast radius to our checklist for future releases.
 
-- **post-mortem** (n) - review after incident  
-  _Example:_ Our post-mortem focused on process gaps, not blame.
+- **post-mortem** /pˈoʊst mˈɔrtəm/ (n) - review after incident  
+  _Example 1:_ Our post-mortem focused on process gaps, not blame.  
+  _Example 2:_ On a real project, post-mortem helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added post-mortem to our checklist for future releases.
 
-- **runbook** (n) - predefined incident handling guide  
-  _Example:_ The runbook gave us clear first-response steps.
+- **runbook** /ˈrʌnˌbʊk/ (n) - predefined incident handling guide  
+  _Example 1:_ The runbook gave us clear first-response steps.  
+  _Example 2:_ During planning, we used runbook to make a safer release decision.  
+  _Example 3:_ In retro, we connected runbook with one clear lesson learned.
 
 **Additional useful terms:**
-- **incident commander** (n) - person leading incident response
-- **handover** (n) - transfer of incident context
-- **ETA** (n) - estimated time to recovery
-- **service degradation** (n) - service works but with poor quality
-- **communication channel** (n) - place for updates and coordination
+- **incident commander** /ˈɪnsədənt kəmˈændɚ/ (n) - person leading incident response
+- **handover** /hˈændoʊvɚ/ (n) - transfer of incident context
+- **ETA** /i ti eɪ/ (n) - estimated time to recovery
+- **service degradation** /sˈɝvəs dˌɛɡrədˈeɪʃən/ (n) - service works but with poor quality
+- **communication channel** /kəmjˌunəkˈeɪʃən tʃˈænəl/ (n) - place for updates and coordination
 
 </details>
 
@@ -102,6 +122,10 @@ description: Describe how you handle production incidents under time pressure, i
 - close communication gaps
 - prevent repeat failures
 
+**Examples (real work):**
+- In one release week, we had to handle production outage while still trying to coordinate incident response.
+- In retro, we agreed to send regular status updates earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - As soon as alerts fired,...
 - My first priority was...
@@ -111,6 +135,10 @@ description: Describe how you handle production incidents under time pressure, i
 - The team stayed aligned by...
 - After recovery, we...
 - The key lesson was...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **jump in** -> I jumped in to coordinate updates.

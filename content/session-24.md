@@ -15,42 +15,62 @@ description: Practice salary negotiation and feedback conversations with clear, 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **compensation** (n) - total pay package  
-  _Example:_ I evaluate compensation as salary plus benefits.
+- **compensation** /kˌɑmpənsˈeɪʃən/ (n) - total pay package  
+  _Example 1:_ I evaluate compensation as salary plus benefits.  
+  _Example 2:_ In our weekly review, compensation was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added compensation to our checklist for future releases.
 
-- **salary range** (n) - minimum and maximum expected pay  
-  _Example:_ I prepared a realistic salary range before negotiation.
+- **salary range** /sˈælɚi rˈeɪndʒ/ (n) - minimum and maximum expected pay  
+  _Example 1:_ I prepared a realistic salary range before negotiation.  
+  _Example 2:_ For a customer-facing bug, salary range guided what we fixed first.  
+  _Example 3:_ After that case, we added salary range to our checklist for future releases.
 
-- **negotiation** (n) - discussion to reach agreement  
-  _Example:_ Negotiation worked better when I used market data.
+- **negotiation** /nɪɡˌoʊʃiˈeɪʃən/ (n) - discussion to reach agreement  
+  _Example 1:_ Negotiation worked better when I used market data.  
+  _Example 2:_ For a customer-facing bug, negotiation guided what we fixed first.  
+  _Example 3:_ After that case, we added negotiation to our checklist for future releases.
 
-- **market benchmark** (n) - salary data from similar roles  
-  _Example:_ I checked market benchmarks on levels.fyi and Glassdoor.
+- **market benchmark** /mˈɑrkət bˈɛntʃmˌɑrk/ (n) - salary data from similar roles  
+  _Example 1:_ I checked market benchmarks on levels.fyi and Glassdoor.  
+  _Example 2:_ For a customer-facing bug, market benchmark guided what we fixed first.  
+  _Example 3:_ I used market benchmark in a stakeholder update so non-technical teams could follow.
 
-- **non-salary benefits** (n) - value beyond base pay  
-  _Example:_ Non-salary benefits like remote flexibility mattered to me.
+- **non-salary benefits** /nˈɑn sˈælɚi bˈɛnəfɪts/ (n) - value beyond base pay  
+  _Example 1:_ Non-salary benefits like remote flexibility mattered to me.  
+  _Example 2:_ During planning, we used non-salary benefits to make a safer release decision.  
+  _Example 3:_ After that case, we added non-salary benefits to our checklist for future releases.
 
-- **constructive feedback** (n) - useful feedback focused on improvement  
-  _Example:_ I gave constructive feedback with specific examples.
+- **constructive feedback** /kənstrˈʌktɪv fˈidbˌæk/ (n) - useful feedback focused on improvement  
+  _Example 1:_ I gave constructive feedback with specific examples.  
+  _Example 2:_ In one sprint, constructive feedback came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected constructive feedback with one clear lesson learned.
 
-- **defensive reaction** (n) - emotional resistance to feedback  
-  _Example:_ I try to avoid defensive reactions during review.
+- **defensive reaction** /dɪfˈɛnsɪv riˈækʃən/ (n) - emotional resistance to feedback  
+  _Example 1:_ I try to avoid defensive reactions during review.  
+  _Example 2:_ On a real project, defensive reaction helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected defensive reaction with one clear lesson learned.
 
-- **action plan** (n) - clear steps after feedback  
-  _Example:_ I created an action plan after performance review.
+- **action plan** /ˈækʃən plˈæn/ (n) - clear steps after feedback  
+  _Example 1:_ I created an action plan after performance review.  
+  _Example 2:_ For a customer-facing bug, action plan guided what we fixed first.  
+  _Example 3:_ I used action plan in a stakeholder update so non-technical teams could follow.
 
-- **follow-up** (n) - checking progress after changes  
-  _Example:_ I scheduled follow-up with my manager in four weeks.
+- **follow-up** /fˈɑloʊ ˈʌp/ (n) - checking progress after changes  
+  _Example 1:_ I scheduled follow-up with my manager in four weeks.  
+  _Example 2:_ On a real project, follow-up helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected follow-up with one clear lesson learned.
 
-- **visible improvement** (n) - clear progress others can see  
-  _Example:_ I showed visible improvement in communication and delivery.
+- **visible improvement** /vˈɪzəbəl ˌɪmprˈuvmənt/ (n) - clear progress others can see  
+  _Example 1:_ I showed visible improvement in communication and delivery.  
+  _Example 2:_ During planning, we used visible improvement to make a safer release decision.  
+  _Example 3:_ After that case, we added visible improvement to our checklist for future releases.
 
 **Additional useful terms:**
-- **offer package** (n) - full job offer details
-- **negotiation timing** (n) - best moment to discuss compensation
-- **feedback loop** (n) - cycle of feedback and action
-- **performance evidence** (n) - proof of your impact
-- **growth area** (n) - skill you need to improve
+- **offer package** /ˈɔfɚ pˈækədʒ/ (n) - full job offer details
+- **negotiation timing** /nɪɡˌoʊʃiˈeɪʃən tˈaɪmɪŋ/ (n) - best moment to discuss compensation
+- **feedback loop** /fˈidbˌæk lˈup/ (n) - cycle of feedback and action
+- **performance evidence** /pɚfˈɔrməns ˈɛvədəns/ (n) - proof of your impact
+- **growth area** /ɡrˈoʊθ ˈɛriə/ (n) - skill you need to improve
 
 </details>
 
@@ -102,6 +122,10 @@ description: Practice salary negotiation and feedback conversations with clear, 
 - balance confidence and humility
 - maintain professional tone
 
+**Examples (real work):**
+- In one release week, we had to negotiate compensation professionally while still trying to prepare salary benchmarks.
+- In retro, we agreed to discuss total package earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - Before negotiation, I...
 - A fair range for this role is...
@@ -111,6 +135,10 @@ description: Practice salary negotiation and feedback conversations with clear, 
 - We reviewed progress by...
 - The result was...
 - Next time, I will...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **bring up** -> I brought up compensation after discussing role scope.

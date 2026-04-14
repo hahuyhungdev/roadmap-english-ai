@@ -15,42 +15,62 @@ description: Discuss AI adoption in software teams with balanced reasoning about
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **AI adoption** (n) - introducing AI tools into team workflow  
-  _Example:_ AI adoption improved coding speed in our team.
+- **AI adoption** /ˈaɪ ədˈɑpʃən/ (n) - introducing AI tools into team workflow  
+  _Example 1:_ AI adoption improved coding speed in our team.  
+  _Example 2:_ In one sprint, ai adoption came up when we investigated a production issue.  
+  _Example 3:_ After that case, we added ai adoption to our checklist for future releases.
 
-- **over-reliance** (n) - depending too much on a tool  
-  _Example:_ Over-reliance can weaken debugging skills.
+- **over-reliance** /ˈoʊvɚ rɪlˈaɪəns/ (n) - depending too much on a tool  
+  _Example 1:_ Over-reliance can weaken debugging skills.  
+  _Example 2:_ In one sprint, over-reliance came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how over-reliance affects both speed and stability.
 
-- **accountability** (n) - clear responsibility for outcomes  
-  _Example:_ Engineers still keep accountability for final code.
+- **accountability** /əkˈaʊntəbˌɪlɪti/ (n) - clear responsibility for outcomes  
+  _Example 1:_ Engineers still keep accountability for final code.  
+  _Example 2:_ For a customer-facing bug, accountability guided what we fixed first.  
+  _Example 3:_ I used accountability in a stakeholder update so non-technical teams could follow.
 
-- **data leak** (n) - private data exposed by mistake  
-  _Example:_ Poor prompt handling can cause data leaks.
+- **data leak** /dˈeɪtə lˈik/ (n) - private data exposed by mistake  
+  _Example 1:_ Poor prompt handling can cause data leaks.  
+  _Example 2:_ In our weekly review, data leak was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected data leak with one clear lesson learned.
 
-- **insecure code** (n) - code with security weaknesses  
-  _Example:_ AI sometimes suggests insecure code patterns.
+- **insecure code** /ˈɪnsəkjɚ kˈoʊd/ (n) - code with security weaknesses  
+  _Example 1:_ AI sometimes suggests insecure code patterns.  
+  _Example 2:_ For a customer-facing bug, insecure code guided what we fixed first.  
+  _Example 3:_ Later, insecure code became part of our standard way of reporting issues.
 
-- **critical thinking** (n) - careful reasoning instead of blind trust  
-  _Example:_ Critical thinking is still required with AI output.
+- **critical thinking** /krˈɪtɪkəl θˈɪŋkɪŋ/ (n) - careful reasoning instead of blind trust  
+  _Example 1:_ Critical thinking is still required with AI output.  
+  _Example 2:_ On a real project, critical thinking helped us explain the trade-off to product.  
+  _Example 3:_ Later, critical thinking became part of our standard way of reporting issues.
 
-- **compliance rule** (n) - legal or internal requirement  
-  _Example:_ Compliance rules limit what data we can share.
+- **compliance rule** /kəmplˈaɪəns rˈul/ (n) - legal or internal requirement  
+  _Example 1:_ Compliance rules limit what data we can share.  
+  _Example 2:_ In one sprint, compliance rule came up when we investigated a production issue.  
+  _Example 3:_ After that case, we added compliance rule to our checklist for future releases.
 
-- **human review** (n) - manual check by engineers  
-  _Example:_ Human review caught logic errors before deployment.
+- **human review** /hjˈumən rˌivjˈu/ (n) - manual check by engineers  
+  _Example 1:_ Human review caught logic errors before deployment.  
+  _Example 2:_ For a customer-facing bug, human review guided what we fixed first.  
+  _Example 3:_ In retro, we connected human review with one clear lesson learned.
 
-- **ownership** (n) - responsibility for decisions and results  
-  _Example:_ Tool support is helpful, but ownership stays with the team.
+- **ownership** /ˈoʊnɚʃˌɪp/ (n) - responsibility for decisions and results  
+  _Example 1:_ Tool support is helpful, but ownership stays with the team.  
+  _Example 2:_ In one sprint, ownership came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how ownership affects both speed and stability.
 
-- **governance** (n) - policy for safe and consistent tool usage  
-  _Example:_ We created AI governance guidelines for all repos.
+- **governance** /ɡˈʌvɚnəns/ (n) - policy for safe and consistent tool usage  
+  _Example 1:_ We created AI governance guidelines for all repos.  
+  _Example 2:_ In our weekly review, governance was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected governance with one clear lesson learned.
 
 **Additional useful terms:**
-- **privacy risk** (n) - chance of exposing sensitive data
-- **audit trail** (n) - record of decisions and changes
-- **policy guardrail** (n) - rule that prevents unsafe actions
-- **quality gate** (n) - required checks before release
-- **responsible use** (n) - careful use with clear limits
+- **privacy risk** /prˈaɪvəsi rˈɪsk/ (n) - chance of exposing sensitive data
+- **audit trail** /ˈɔdɪt trˈeɪl/ (n) - record of decisions and changes
+- **policy guardrail** /pˈɑləsi ɡˈɑrdrˌeɪl/ (n) - rule that prevents unsafe actions
+- **quality gate** /kwˈɑləti ɡˈeɪt/ (n) - required checks before release
+- **responsible use** /rispˈɑnsəbəl jˈus/ (n) - careful use with clear limits
 
 </details>
 
@@ -102,6 +122,10 @@ description: Discuss AI adoption in software teams with balanced reasoning about
 - improve engineering productivity
 - balance speed and responsibility
 
+**Examples (real work):**
+- In one release week, we had to adopt AI responsibly while still trying to protect sensitive data.
+- In retro, we agreed to enforce quality gates earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In our team, AI is useful for...
 - We do not allow AI for...
@@ -111,6 +135,10 @@ description: Discuss AI adoption in software teams with balanced reasoning about
 - We keep accountability by...
 - From a leadership view,...
 - A good policy should...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **lean on** -> We lean on AI for drafts, not final decisions.

@@ -15,42 +15,62 @@ description: Explain incidents in a structured way and quantify business impact 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **root cause** (n) - the main reason a problem happened  
-  _Example:_ The root cause was a missing validation check.
+- **root cause** /rˈut kˈɑz/ (n) - the main reason a problem happened  
+  _Example 1:_ The root cause was a missing validation check.  
+  _Example 2:_ In retro, we linked root cause to one real production issue.  
+  _Example 3:_ After QA feedback, root cause was added to our rollout checklist.
 
-- **incident** (n) - serious production problem  
-  _Example:_ We had an incident during peak payment hours.
+- **incident** /ˈɪnsədənt/ (n) - serious production problem  
+  _Example 1:_ We had an incident during peak payment hours.  
+  _Example 2:_ In retro, we linked incident to one real production issue.  
+  _Example 3:_ I used incident in a stakeholder update so everyone could follow.
 
-- **timeline** (n) - sequence of events over time  
-  _Example:_ We created a timeline to understand what failed first.
+- **timeline** /tˈaɪmlaɪn/ (n) - sequence of events over time  
+  _Example 1:_ We created a timeline to understand what failed first.  
+  _Example 2:_ For one customer case, timeline changed how we prioritized tasks.  
+  _Example 3:_ After QA feedback, timeline was added to our rollout checklist.
 
-- **log analysis** (n) - reading logs to find patterns and errors  
-  _Example:_ Log analysis showed repeated timeout errors.
+- **log analysis** /lˈɔɡ ənˈæləsəs/ (n) - reading logs to find patterns and errors  
+  _Example 1:_ Log analysis showed repeated timeout errors.  
+  _Example 2:_ In a recent sprint, log analysis became a key point in our planning discussion.  
+  _Example 3:_ This quarter, log analysis helped us reduce repeated support requests.
 
-- **5 Whys** (n) - method of asking why several times  
-  _Example:_ We used 5 Whys to avoid shallow conclusions.
+- **5 Whys** /fˈaɪv wˈaɪz/ (n) - method of asking why several times  
+  _Example 1:_ We used 5 Whys to avoid shallow conclusions.  
+  _Example 2:_ For one customer case, 5 whys changed how we prioritized tasks.  
+  _Example 3:_ I used 5 whys in a stakeholder update so everyone could follow.
 
-- **downtime** (n) - period when service is unavailable  
-  _Example:_ Downtime lasted about 45 minutes.
+- **downtime** /dˈaʊntˌaɪm/ (n) - period when service is unavailable  
+  _Example 1:_ Downtime lasted about 45 minutes.  
+  _Example 2:_ Our team used downtime to explain the trade-off to product.  
+  _Example 3:_ In one incident review, downtime explained why the bug happened.
 
-- **affected users** (n) - users impacted by the issue  
-  _Example:_ Around 2,000 users were affected.
+- **affected users** /əfˈɛktɪd jˈuzɚz/ (n) - users impacted by the issue  
+  _Example 1:_ Around 2,000 users were affected.  
+  _Example 2:_ In a recent sprint, affected users became a key point in our planning discussion.  
+  _Example 3:_ I used affected users in a stakeholder update so everyone could follow.
 
-- **lost transactions** (n) - payments/orders that failed  
-  _Example:_ The bug caused lost transactions for three hours.
+- **lost transactions** /lˈɔst trænzˈækʃənz/ (n) - payments/orders that failed  
+  _Example 1:_ The bug caused lost transactions for three hours.  
+  _Example 2:_ In retro, we linked lost transactions to one real production issue.  
+  _Example 3:_ In one incident review, lost transactions explained why the bug happened.
 
-- **mitigation** (n) - short-term action to reduce damage  
-  _Example:_ Our first mitigation was to disable one unstable endpoint.
+- **mitigation** /mˌɪtɪɡˈeɪʃən/ (n) - short-term action to reduce damage  
+  _Example 1:_ Our first mitigation was to disable one unstable endpoint.  
+  _Example 2:_ In retro, we linked mitigation to one real production issue.  
+  _Example 3:_ In one incident review, mitigation explained why the bug happened.
 
-- **post-mortem** (n) - review after incident  
-  _Example:_ We wrote a post-mortem and tracked follow-up tasks.
+- **post-mortem** /pˈoʊst mˈɔrtəm/ (n) - review after incident  
+  _Example 1:_ We wrote a post-mortem and tracked follow-up tasks.  
+  _Example 2:_ Our team used post-mortem to explain the trade-off to product.  
+  _Example 3:_ I used post-mortem in a stakeholder update so everyone could follow.
 
 **Additional useful terms:**
-- **alert fatigue** (n) - too many alerts reduce response quality
-- **detection gap** (n) - delay between issue start and detection
-- **containment** (n) - actions to stop issue spread
-- **permanent fix** (n) - long-term solution
-- **owner** (n) - person responsible for follow-up
+- **alert fatigue** /əlˈɝt fətˈiɡ/ (n) - too many alerts reduce response quality
+- **detection gap** /dɪtˈɛkʃən ɡˈæp/ (n) - delay between issue start and detection
+- **containment** /kəntˈeɪnmənt/ (n) - actions to stop issue spread
+- **permanent fix** /pˈɝmənənt fˈɪks/ (n) - long-term solution
+- **owner** /ˈoʊnɚ/ (n) - person responsible for follow-up
 
 </details>
 
@@ -102,6 +122,10 @@ description: Explain incidents in a structured way and quantify business impact 
 - track reliability metrics
 - communicate status updates
 
+**Examples (real work):**
+- In one release week, we had to identify root cause while still trying to quantify business impact.
+- In retro, we agreed to analyze production logs earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - At first, we thought...
 - After log analysis, we found...
@@ -110,7 +134,10 @@ description: Explain incidents in a structured way and quantify business impact 
 - The permanent fix was...
 - A key lesson was...
 - Next time, we will...
-- We tracked action items in backlog.
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **track down** -> We tracked down the failing query.

@@ -15,42 +15,62 @@ description: Run a final full interview simulation, identify top strengths and g
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **gap analysis** (n) - review of strengths and weaknesses  
-  _Example:_ Gap analysis helped me focus on two priority skills.
+- **gap analysis** /ɡˈæp ənˈæləsəs/ (n) - review of strengths and weaknesses  
+  _Example 1:_ Gap analysis helped me focus on two priority skills.  
+  _Example 2:_ On a real project, gap analysis helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how gap analysis affects both speed and stability.
 
-- **consistency** (n) - stable performance across many questions  
-  _Example:_ Consistency is more important than one perfect answer.
+- **consistency** /kənsˈɪstənsi/ (n) - stable performance across many questions  
+  _Example 1:_ Consistency is more important than one perfect answer.  
+  _Example 2:_ During planning, we used consistency to make a safer release decision.  
+  _Example 3:_ In retro, we connected consistency with one clear lesson learned.
 
-- **performance baseline** (n) - current level used for improvement tracking  
-  _Example:_ Mock 1 gave me a performance baseline.
+- **performance baseline** /pɚfˈɔrməns bˈeɪslˌaɪn/ (n) - current level used for improvement tracking  
+  _Example 1:_ Mock 1 gave me a performance baseline.  
+  _Example 2:_ In one sprint, performance baseline came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how performance baseline affects both speed and stability.
 
-- **improvement roadmap** (n) - step-by-step development plan  
-  _Example:_ I created a four-week improvement roadmap.
+- **improvement roadmap** /ˌɪmprˈuvmənt rˈoʊdmˌæp/ (n) - step-by-step development plan  
+  _Example 1:_ I created a four-week improvement roadmap.  
+  _Example 2:_ For a customer-facing bug, improvement roadmap guided what we fixed first.  
+  _Example 3:_ That experience showed how improvement roadmap affects both speed and stability.
 
-- **priority gap** (n) - weakness with highest improvement value  
-  _Example:_ My priority gap was answer structure under pressure.
+- **priority gap** /praɪˈɔrəti ɡˈæp/ (n) - weakness with highest improvement value  
+  _Example 1:_ My priority gap was answer structure under pressure.  
+  _Example 2:_ In our weekly review, priority gap was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected priority gap with one clear lesson learned.
 
-- **strength signal** (n) - behavior showing clear competency  
-  _Example:_ Strong examples were my main strength signal.
+- **strength signal** /strˈɛŋkθ sˈɪɡnəl/ (n) - behavior showing clear competency  
+  _Example 1:_ Strong examples were my main strength signal.  
+  _Example 2:_ On a real project, strength signal helped us explain the trade-off to product.  
+  _Example 3:_ That experience showed how strength signal affects both speed and stability.
 
-- **band target** (n) - communication level goal  
-  _Example:_ My band target is stable B2+/IELTS 7 style speaking.
+- **band target** /bˈænd tˈɑrɡət/ (n) - communication level goal  
+  _Example 1:_ My band target is stable B2+/IELTS 7 style speaking.  
+  _Example 2:_ On a real project, band target helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added band target to our checklist for future releases.
 
-- **post-mortem review** (n) - structured reflection after a major practice session  
-  _Example:_ We used post-mortem review after the mock.
+- **post-mortem review** /pˈoʊst mˈɔrtəm rˌivjˈu/ (n) - structured reflection after a major practice session  
+  _Example 1:_ We used post-mortem review after the mock.  
+  _Example 2:_ In our weekly review, post-mortem review was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added post-mortem review to our checklist for future releases.
 
-- **practice cadence** (n) - regular training schedule  
-  _Example:_ Weekly practice cadence kept my progress steady.
+- **practice cadence** /prˈæktəs kˈeɪdəns/ (n) - regular training schedule  
+  _Example 1:_ Weekly practice cadence kept my progress steady.  
+  _Example 2:_ In our weekly review, practice cadence was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected practice cadence with one clear lesson learned.
 
-- **actionable feedback** (n) - feedback you can apply directly  
-  _Example:_ Actionable feedback helped me improve fast.
+- **actionable feedback** /ˈækʃənəbəl fˈidbˌæk/ (n) - feedback you can apply directly  
+  _Example 1:_ Actionable feedback helped me improve fast.  
+  _Example 2:_ For a customer-facing bug, actionable feedback guided what we fixed first.  
+  _Example 3:_ After that case, we added actionable feedback to our checklist for future releases.
 
 **Additional useful terms:**
-- **confidence dip** (n) - moment when confidence drops
-- **response quality** (n) - usefulness and clarity of an answer
-- **tracking metric** (n) - measurable indicator of progress
-- **review loop** (n) - cycle of practice, review, and adjustment
-- **next-step commitment** (n) - clear action promise after review
+- **confidence dip** /kˈɑnfədəns dˈɪp/ (n) - moment when confidence drops
+- **response quality** /rɪspˈɑns kwˈɑləti/ (n) - usefulness and clarity of an answer
+- **tracking metric** /trˈækɪŋ mˈɛtrɪk/ (n) - measurable indicator of progress
+- **review loop** /rˌivjˈu lˈup/ (n) - cycle of practice, review, and adjustment
+- **next-step commitment** /nˈɛkst stˈɛp kəmˈɪtmənt/ (n) - clear action promise after review
 
 </details>
 
@@ -102,6 +122,10 @@ description: Run a final full interview simulation, identify top strengths and g
 - maintain calm under pressure
 - convert feedback into action
 
+**Examples (real work):**
+- In one release week, we had to run final mock interview while still trying to evaluate speaking consistency.
+- In retro, we agreed to identify key performance gaps earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In this final mock,...
 - My strongest answer was...
@@ -111,6 +135,10 @@ description: Run a final full interview simulation, identify top strengths and g
 - My measurable goal is...
 - Over the next two weeks,...
 - I will review progress by...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **look back** -> Looking back, my structure is much better now.

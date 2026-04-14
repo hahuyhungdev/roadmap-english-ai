@@ -15,42 +15,62 @@ description: Handle conflicts with emotionally difficult people while staying ca
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **de-escalation** (n) - reducing emotional tension in conflict  
-  _Example:_ I focused on de-escalation before discussing technical details.
+- **de-escalation** /dˈi ˌɛskəlˈeɪʃən/ (n) - reducing emotional tension in conflict  
+  _Example 1:_ I focused on de-escalation before discussing technical details.  
+  _Example 2:_ For a customer-facing bug, de-escalation guided what we fixed first.  
+  _Example 3:_ After that case, we added de-escalation to our checklist for future releases.
 
-- **toxic behavior** (n) - harmful behavior like disrespect or blame  
-  _Example:_ Repeated toxic behavior damaged team morale.
+- **toxic behavior** /tˈɑksɪk bɪhˈeɪvjɚ/ (n) - harmful behavior like disrespect or blame  
+  _Example 1:_ Repeated toxic behavior damaged team morale.  
+  _Example 2:_ In our weekly review, toxic behavior was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how toxic behavior affects both speed and stability.
 
-- **boundary** (n) - clear limit on acceptable behavior  
-  _Example:_ I set a boundary around disrespectful comments.
+- **boundary** /bˈaʊndɚi/ (n) - clear limit on acceptable behavior  
+  _Example 1:_ I set a boundary around disrespectful comments.  
+  _Example 2:_ During planning, we used boundary to make a safer release decision.  
+  _Example 3:_ That experience showed how boundary affects both speed and stability.
 
-- **passive-aggressive** (adj) - indirect hostility  
-  _Example:_ Passive-aggressive feedback made collaboration harder.
+- **passive-aggressive** /pˈæsɪv əɡrˈɛsɪv/ (adj) - indirect hostility  
+  _Example 1:_ Passive-aggressive feedback made collaboration harder.  
+  _Example 2:_ From a business view, the plan looked too passive-aggressive to approve.  
+  _Example 3:_ That incident taught me not to ignore anything passive-aggressive.
 
-- **escalation** (n) - involving manager/HR when needed  
-  _Example:_ We used escalation after multiple failed conversations.
+- **escalation** /ˌɛskəlˈeɪʃən/ (n) - involving manager/HR when needed  
+  _Example 1:_ We used escalation after multiple failed conversations.  
+  _Example 2:_ In one sprint, escalation came up when we investigated a production issue.  
+  _Example 3:_ I used escalation in a stakeholder update so non-technical teams could follow.
 
-- **professional tone** (n) - calm and respectful communication style  
-  _Example:_ I kept a professional tone even when the other person was upset.
+- **professional tone** /prəfˈɛʃənəl tˈoʊn/ (n) - calm and respectful communication style  
+  _Example 1:_ I kept a professional tone even when the other person was upset.  
+  _Example 2:_ During planning, we used professional tone to make a safer release decision.  
+  _Example 3:_ That experience showed how professional tone affects both speed and stability.
 
-- **conflict trigger** (n) - event that starts conflict  
-  _Example:_ Timeline pressure was the main conflict trigger.
+- **conflict trigger** /kˈɑnflɪkt trˈɪɡɚ/ (n) - event that starts conflict  
+  _Example 1:_ Timeline pressure was the main conflict trigger.  
+  _Example 2:_ During planning, we used conflict trigger to make a safer release decision.  
+  _Example 3:_ I used conflict trigger in a stakeholder update so non-technical teams could follow.
 
-- **working agreement** (n) - shared rules for collaboration  
-  _Example:_ We created a working agreement for code review behavior.
+- **working agreement** /wˈɝkɪŋ əɡrˈimənt/ (n) - shared rules for collaboration  
+  _Example 1:_ We created a working agreement for code review behavior.  
+  _Example 2:_ In our weekly review, working agreement was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how working agreement affects both speed and stability.
 
-- **psychological safety** (n) - feeling safe to speak up  
-  _Example:_ Toxic comments reduced psychological safety.
+- **psychological safety** /sˌaɪkəlˈɑdʒɪkəl sˈeɪfti/ (n) - feeling safe to speak up  
+  _Example 1:_ Toxic comments reduced psychological safety.  
+  _Example 2:_ In our weekly review, psychological safety was tied to delivery quality and risk.  
+  _Example 3:_ In retro, we connected psychological safety with one clear lesson learned.
 
-- **resolution path** (n) - planned way to resolve conflict  
-  _Example:_ Our resolution path started with 1:1 discussion.
+- **resolution path** /rˌɛzəlˈuʃən pˈæθ/ (n) - planned way to resolve conflict  
+  _Example 1:_ Our resolution path started with 1:1 discussion.  
+  _Example 2:_ On a real project, resolution path helped us explain the trade-off to product.  
+  _Example 3:_ After that case, we added resolution path to our checklist for future releases.
 
 **Additional useful terms:**
-- **active listening** (n) - showing you understand the other side
-- **neutral language** (n) - words that avoid blame
-- **repeat pattern** (n) - behavior that happens many times
-- **impact statement** (n) - clear explanation of behavior effects
-- **safe escalation** (n) - responsible escalation without drama
+- **active listening** /ˈæktɪv lˈɪsənɪŋ/ (n) - showing you understand the other side
+- **neutral language** /nˈutrəl lˈæŋɡwədʒ/ (n) - words that avoid blame
+- **repeat pattern** /rɪpˈit pˈætɚn/ (n) - behavior that happens many times
+- **impact statement** /ˌɪmpˈækt stˈeɪtmənt/ (n) - clear explanation of behavior effects
+- **safe escalation** /sˈeɪf ˌɛskəlˈeɪʃən/ (n) - responsible escalation without drama
 
 </details>
 
@@ -102,6 +122,10 @@ description: Handle conflicts with emotionally difficult people while staying ca
 - avoid personal attacks
 - focus on shared goals
 
+**Examples (real work):**
+- In one release week, we had to handle difficult behavior while still trying to de-escalate team conflict.
+- In retro, we agreed to set clear boundaries earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - A difficult situation I faced was...
 - The behavior pattern was...
@@ -111,6 +135,10 @@ description: Handle conflicts with emotionally difficult people while staying ca
 - A clear boundary I set was...
 - The trade-off was...
 - In the end, we...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **calm down** -> I paused the meeting to calm down the discussion.

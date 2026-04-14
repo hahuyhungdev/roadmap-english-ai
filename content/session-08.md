@@ -15,42 +15,62 @@ description: Explain how to make practical trade-offs under time, budget, and qu
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **rewrite** (n/v) - building a system part again from zero  
-  _Example:_ A full rewrite looked clean but too risky for our timeline.
+- **rewrite** /rirˈaɪt/ (n/v) - building a system part again from zero  
+  _Example 1:_ A full rewrite looked clean but too risky for our timeline.  
+  _Example 2:_ For a customer-facing bug, rewrite guided what we fixed first.  
+  _Example 3:_ Later, rewrite became part of our standard way of reporting issues.
 
-- **refactor** (n/v) - improve existing code structure  
-  _Example:_ We chose refactor to keep shipping features.
+- **refactor** /ˌriːˈfæktər/ (n/v) - improve existing code structure  
+  _Example 1:_ We chose refactor to keep shipping features.  
+  _Example 2:_ During planning, we used refactor to make a safer release decision.  
+  _Example 3:_ That experience showed how refactor affects both speed and stability.
 
-- **technical debt** (n) - future cost from current shortcuts  
-  _Example:_ We accepted some technical debt to meet contract deadline.
+- **technical debt** /tˈɛknɪkəl dˈɛt/ (n) - future cost from current shortcuts  
+  _Example 1:_ We accepted some technical debt to meet contract deadline.  
+  _Example 2:_ In one sprint, technical debt came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how technical debt affects both speed and stability.
 
-- **good enough** (adj phrase) - acceptable quality for current goal  
-  _Example:_ The first version was good enough for pilot users.
+- **good enough** /ɡˈʊd ɪnˈʌf/ (adj phrase) - acceptable quality for current goal  
+  _Example 1:_ The first version was good enough for pilot users.  
+  _Example 2:_ Under deadline pressure, we avoided choices that were good enough.  
+  _Example 3:_ I now flag it early when a solution seems good enough.
 
-- **scope cut** (n) - removing low-priority items  
-  _Example:_ We made a scope cut to protect release stability.
+- **scope cut** /skˈoʊp kˈʌt/ (n) - removing low-priority items  
+  _Example 1:_ We made a scope cut to protect release stability.  
+  _Example 2:_ In our weekly review, scope cut was tied to delivery quality and risk.  
+  _Example 3:_ That experience showed how scope cut affects both speed and stability.
 
-- **timeline pressure** (n) - pressure from short deadlines  
-  _Example:_ Timeline pressure pushed us to simplify implementation.
+- **timeline pressure** /tˈaɪmlaɪn prˈɛʃɚ/ (n) - pressure from short deadlines  
+  _Example 1:_ Timeline pressure pushed us to simplify implementation.  
+  _Example 2:_ In our weekly review, timeline pressure was tied to delivery quality and risk.  
+  _Example 3:_ After that case, we added timeline pressure to our checklist for future releases.
 
-- **risk appetite** (n) - level of risk a team can accept  
-  _Example:_ Our risk appetite was low because of enterprise clients.
+- **risk appetite** /rˈɪsk ˈæpətˌaɪt/ (n) - level of risk a team can accept  
+  _Example 1:_ Our risk appetite was low because of enterprise clients.  
+  _Example 2:_ On a real project, risk appetite helped us explain the trade-off to product.  
+  _Example 3:_ I used risk appetite in a stakeholder update so non-technical teams could follow.
 
-- **cost of delay** (n) - business loss when release is late  
-  _Example:_ Cost of delay was high, so we avoided a full rewrite.
+- **cost of delay** /kˈɑst ˈʌv dɪlˈeɪ/ (n) - business loss when release is late  
+  _Example 1:_ Cost of delay was high, so we avoided a full rewrite.  
+  _Example 2:_ On a real project, cost of delay helped us explain the trade-off to product.  
+  _Example 3:_ I used cost of delay in a stakeholder update so non-technical teams could follow.
 
-- **workaround** (n) - temporary solution  
-  _Example:_ We used a workaround and planned cleanup in backlog.
+- **workaround** /wˈɝkɚˈaʊnd/ (n) - temporary solution  
+  _Example 1:_ We used a workaround and planned cleanup in backlog.  
+  _Example 2:_ On a real project, workaround helped us explain the trade-off to product.  
+  _Example 3:_ In retro, we connected workaround with one clear lesson learned.
 
-- **quality gate** (n) - required checks before release  
-  _Example:_ We kept quality gates even under deadline pressure.
+- **quality gate** /kwˈɑləti ɡˈeɪt/ (n) - required checks before release  
+  _Example 1:_ We kept quality gates even under deadline pressure.  
+  _Example 2:_ For a customer-facing bug, quality gate guided what we fixed first.  
+  _Example 3:_ In retro, we connected quality gate with one clear lesson learned.
 
 **Additional useful terms:**
-- **trade-off analysis** (n) - structured comparison of options
-- **constraint** (n) - limit such as budget or time
-- **MVP** (n) - minimum viable product
-- **rollback plan** (n) - safe recovery if release fails
-- **follow-up task** (n) - action planned after release
+- **trade-off analysis** /trˈeɪd ˈɔf ənˈæləsəs/ (n) - structured comparison of options
+- **constraint** /kənstrˈeɪnt/ (n) - limit such as budget or time
+- **MVP** /ɛm vi pi/ (n) - minimum viable product
+- **rollback plan** /rˈoʊlbˌæk plˈæn/ (n) - safe recovery if release fails
+- **follow-up task** /fˈɑloʊ ˈʌp tˈæsk/ (n) - action planned after release
 
 </details>
 
@@ -102,6 +122,10 @@ description: Explain how to make practical trade-offs under time, budget, and qu
 - estimate cost of delay
 - keep quality gates
 
+**Examples (real work):**
+- In one release week, we had to evaluate technical options while still trying to balance speed and quality.
+- In retro, we agreed to accept short-term debt earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - We had to decide between...
 - The business goal was...
@@ -111,6 +135,10 @@ description: Explain how to make practical trade-offs under time, budget, and qu
 - To control that risk, we...
 - This was good enough for now because...
 - Later, we plan to...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **cut back** -> We cut back non-essential features for this release.

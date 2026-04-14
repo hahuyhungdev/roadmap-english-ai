@@ -15,42 +15,62 @@ description: Explain how you grow as an engineer through independent learning, p
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **self-directed learning** (n) - learning driven by your own plan  
-  _Example:_ Self-directed learning helped me move into system design tasks.
+- **self-directed learning** /sˈɛlf dɚˈɛktəd lˈɝnɪŋ/ (n) - learning driven by your own plan  
+  _Example 1:_ Self-directed learning helped me move into system design tasks.  
+  _Example 2:_ For a customer-facing bug, self-directed learning guided what we fixed first.  
+  _Example 3:_ After that case, we added self-directed learning to our checklist for future releases.
 
-- **upskilling** (n) - building new skills for current or future roles  
-  _Example:_ I did upskilling in cloud deployment last year.
+- **upskilling** /ʌpˈskɪlɪŋ/ (n) - building new skills for current or future roles  
+  _Example 1:_ I did upskilling in cloud deployment last year.  
+  _Example 2:_ In one sprint, upskilling came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected upskilling with one clear lesson learned.
 
-- **side project** (n) - personal project for learning or experimentation  
-  _Example:_ My side project improved my API design skills.
+- **side project** /sˈaɪd prˈɑdʒɛkt/ (n) - personal project for learning or experimentation  
+  _Example 1:_ My side project improved my API design skills.  
+  _Example 2:_ For a customer-facing bug, side project guided what we fixed first.  
+  _Example 3:_ Later, side project became part of our standard way of reporting issues.
 
-- **code reading** (n) - learning by studying real codebases  
-  _Example:_ I learned architecture patterns through code reading.
+- **code reading** /kˈoʊd rˈidɪŋ/ (n) - learning by studying real codebases  
+  _Example 1:_ I learned architecture patterns through code reading.  
+  _Example 2:_ In one sprint, code reading came up when we investigated a production issue.  
+  _Example 3:_ In retro, we connected code reading with one clear lesson learned.
 
-- **mentorship** (n) - guidance from more experienced engineers  
-  _Example:_ Mentorship helped me avoid common design mistakes.
+- **mentorship** /mˈɛntɚʃˌɪp/ (n) - guidance from more experienced engineers  
+  _Example 1:_ Mentorship helped me avoid common design mistakes.  
+  _Example 2:_ In one sprint, mentorship came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how mentorship affects both speed and stability.
 
-- **feedback loop** (n) - cycle of action, feedback, and improvement  
-  _Example:_ I use a weekly feedback loop with my manager.
+- **feedback loop** /fˈidbˌæk lˈup/ (n) - cycle of action, feedback, and improvement  
+  _Example 1:_ I use a weekly feedback loop with my manager.  
+  _Example 2:_ During planning, we used feedback loop to make a safer release decision.  
+  _Example 3:_ After that case, we added feedback loop to our checklist for future releases.
 
-- **impact growth** (n) - increasing business and team contribution  
-  _Example:_ I track impact growth, not just technical skill growth.
+- **impact growth** /ˌɪmpˈækt ɡrˈoʊθ/ (n) - increasing business and team contribution  
+  _Example 1:_ I track impact growth, not just technical skill growth.  
+  _Example 2:_ On a real project, impact growth helped us explain the trade-off to product.  
+  _Example 3:_ I used impact growth in a stakeholder update so non-technical teams could follow.
 
-- **learning roadmap** (n) - clear plan for what to learn next  
-  _Example:_ I review my learning roadmap every quarter.
+- **learning roadmap** /lˈɝnɪŋ rˈoʊdmˌæp/ (n) - clear plan for what to learn next  
+  _Example 1:_ I review my learning roadmap every quarter.  
+  _Example 2:_ During planning, we used learning roadmap to make a safer release decision.  
+  _Example 3:_ Later, learning roadmap became part of our standard way of reporting issues.
 
-- **production reality** (n) - challenges in real systems, not theory  
-  _Example:_ Some design patterns fail in production reality.
+- **production reality** /prədˈʌkʃən rˌiˈælətˌi/ (n) - challenges in real systems, not theory  
+  _Example 1:_ Some design patterns fail in production reality.  
+  _Example 2:_ In one sprint, production reality came up when we investigated a production issue.  
+  _Example 3:_ That experience showed how production reality affects both speed and stability.
 
-- **knowledge gap** (n) - missing skill or understanding  
-  _Example:_ I identified a knowledge gap in observability.
+- **knowledge gap** /nˈɑlədʒ ɡˈæp/ (n) - missing skill or understanding  
+  _Example 1:_ I identified a knowledge gap in observability.  
+  _Example 2:_ During planning, we used knowledge gap to make a safer release decision.  
+  _Example 3:_ In retro, we connected knowledge gap with one clear lesson learned.
 
 **Additional useful terms:**
-- **deliberate practice** (n) - focused practice with clear goals
-- **career plateau** (n) - period with little visible growth
-- **learning sprint** (n) - short, focused skill-building period
-- **transferable skill** (n) - skill useful across roles
-- **reflection note** (n) - written learning summary
+- **deliberate practice** /dɪlˈɪbɚət prˈæktəs/ (n) - focused practice with clear goals
+- **career plateau** /kɚˈɪr plætˈoʊ/ (n) - period with little visible growth
+- **learning sprint** /lˈɝnɪŋ sprˈɪnt/ (n) - short, focused skill-building period
+- **transferable skill** /trænsfˈɝəbəl skˈɪl/ (n) - skill useful across roles
+- **reflection note** /rɪflˈɛkʃən nˈoʊt/ (n) - written learning summary
 
 </details>
 
@@ -102,6 +122,10 @@ description: Explain how you grow as an engineer through independent learning, p
 - contribute beyond coding
 - improve long-term impact
 
+**Examples (real work):**
+- In one release week, we had to drive personal growth while still trying to build learning habits.
+- In retro, we agreed to close skill gaps earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - Early in my career, I...
 - I noticed a gap in...
@@ -111,6 +135,10 @@ description: Explain how you grow as an engineer through independent learning, p
 - In production, I learned that...
 - For long-term growth,...
 - My next step is...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **pick up** -> I picked up cloud basics through a side project.

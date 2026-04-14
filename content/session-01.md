@@ -15,42 +15,62 @@ description: Explain your role in simple business language, with real examples a
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **business impact** (n) - the effect your work has on company results  
-  _Example:_ This feature had clear business impact because support tickets dropped.
+- **business impact** /ˈbɪznəs ˈɪmpækt/ (n) - the effect your work has on company results  
+  _Example 1:_ This feature had clear business impact because support tickets dropped.  
+  _Example 2:_ In a recent sprint, business impact became a key point in our planning discussion.  
+  _Example 3:_ After QA feedback, business impact was added to our rollout checklist.
 
-- **user retention** (n) - how many users keep using the product  
-  _Example:_ Faster page load improved user retention.
+- **user retention** /ˈjuːzər rɪˈtɛnʃən/ (n) - how many users keep using the product  
+  _Example 1:_ Faster page load improved user retention on mobile devices.  
+  _Example 2:_ For one customer case, user retention changed how we prioritized tasks.  
+  _Example 3:_ We mentioned user retention in stand-up when blockers appeared.
 
-- **conversion** (n) - when a user completes a goal, like buying or signing up  
-  _Example:_ We improved conversion by simplifying the checkout form.
+- **conversion** /kənˈvɝːʒən/ (n) - when a user completes a goal, like buying or signing up  
+  _Example 1:_ We improved conversion by simplifying the checkout form.  
+  _Example 2:_ For one customer case, conversion changed how we prioritized tasks.  
+  _Example 3:_ This quarter, conversion helped us reduce repeated support requests.
 
-- **latency** (n) - delay before a system responds  
-  _Example:_ We reduced API latency and users stopped leaving the page.
+- **latency** /ˈleɪtənsi/ (n) - delay before a system responds  
+  _Example 1:_ We reduced API latency and users stopped leaving the page.  
+  _Example 2:_ Our team used latency to explain the trade-off to product.  
+  _Example 3:_ We mentioned latency in stand-up when blockers appeared.
 
-- **ownership** (n) - being responsible for an area end to end  
-  _Example:_ I take ownership of the payment flow.
+- **ownership** /ˈoʊnərˌʃɪp/ (n) - being responsible for an area end to end  
+  _Example 1:_ I take ownership of the payment flow from UI to monitoring.  
+  _Example 2:_ Our team used ownership to explain the trade-off to product.  
+  _Example 3:_ This quarter, ownership helped us reduce repeated support requests.
 
-- **release** (n) - a new version of software sent to users  
-  _Example:_ We planned the release in small steps to reduce risk.
+- **release** /rɪˈliːs/ (n) - a new version of software sent to users  
+  _Example 1:_ We planned the release in small steps to reduce risk.  
+  _Example 2:_ For one customer case, release changed how we prioritized tasks.  
+  _Example 3:_ In one incident review, release explained why the bug happened.
 
-- **bug** (n) - an error in software  
-  _Example:_ We had a lot of bugs here, so we fixed them before adding new features.
+- **bug** /bʌɡ/ (n) - an error in software  
+  _Example 1:_ We had a lot of bugs here, so we fixed them before adding features.  
+  _Example 2:_ In retro, we linked bug to one real production issue.  
+  _Example 3:_ I used bug in a stakeholder update so everyone could follow.
 
-- **backlog** (n) - a list of planned tasks and problems  
-  _Example:_ We tracked it in our backlog and prioritized it for next sprint.
+- **backlog** /ˈbækˌlɔːɡ/ (n) - a list of planned tasks and problems  
+  _Example 1:_ We tracked it in our backlog and prioritized it for next sprint.  
+  _Example 2:_ For one customer case, backlog changed how we prioritized tasks.  
+  _Example 3:_ After QA feedback, backlog was added to our rollout checklist.
 
-- **trade-off** (n) - a choice where you gain one thing and lose another  
-  _Example:_ We shipped faster, but we accepted a smaller feature scope.
+- **trade-off** /ˈtreɪd ɔːf/ (n) - a choice where you gain one thing and lose another  
+  _Example 1:_ We shipped faster, but we accepted a smaller feature scope.  
+  _Example 2:_ For one customer case, trade-off changed how we prioritized tasks.  
+  _Example 3:_ I used trade-off in a stakeholder update so everyone could follow.
 
-- **stakeholder** (n) - a person affected by your work  
-  _Example:_ I explained the timeline to stakeholders in plain language.
+- **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - a person affected by your work  
+  _Example 1:_ I explained the timeline to stakeholders in plain language.  
+  _Example 2:_ In retro, we linked stakeholder to one real production issue.  
+  _Example 3:_ After QA feedback, stakeholder was added to our rollout checklist.
 
 **Additional useful terms:**
-- **KPI** (n) - key number used to measure success
-- **churn** (n) - users who stop using a product
-- **roadmap** (n) - high-level plan of upcoming work
-- **scope** (n) - what is included in a task
-- **deadline** (n) - final date for completion
+- **KPI** /ˌkeɪ piː ˈaɪ/ (n) - key number used to measure success
+- **churn** /tʃɝːn/ (n) - users who stop using a product
+- **roadmap** /ˈroʊdˌmæp/ (n) - high-level plan of upcoming work
+- **scope** /skoʊp/ (n) - what is included in a task
+- **deadline** /ˈdɛdˌlaɪn/ (n) - final date for completion
 
 </details>
 
@@ -102,6 +122,10 @@ description: Explain your role in simple business language, with real examples a
 - communicate trade-offs clearly
 - meet a release deadline
 
+**Examples (real work):**
+- In one release week, we had to deliver business value while still trying to reduce user churn.
+- In retro, we agreed to improve conversion rate earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - In my current role, I mainly...
 - A big part of my job is...
@@ -111,6 +135,10 @@ description: Explain your role in simple business language, with real examples a
 - To keep quality, we...
 - From a business side,...
 - If I explain it simply,...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **work on** -> I work on billing and account settings.

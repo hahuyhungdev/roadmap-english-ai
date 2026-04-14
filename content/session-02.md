@@ -15,42 +15,62 @@ description: Describe your system at a high level and explain how you work with 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **architecture** (n) - overall system structure  
-  _Example:_ Our architecture is simple for users but modular for developers.
+- **architecture** /ˈɑːrkəˌtɛktʃər/ (n) - overall system structure  
+  _Example 1:_ Our architecture is simple for users but modular for developers.  
+  _Example 2:_ For one customer case, architecture changed how we prioritized tasks.  
+  _Example 3:_ We mentioned architecture in stand-up when blockers appeared.
 
-- **monolith** (n) - one large application with many parts  
-  _Example:_ We still use a monolith for admin features.
+- **monolith** /ˈmɑːnəlɪθ/ (n) - one large application with many parts  
+  _Example 1:_ We still use a monolith for admin features.  
+  _Example 2:_ In retro, we linked monolith to one real production issue.  
+  _Example 3:_ In one incident review, monolith explained why the bug happened.
 
-- **microservice** (n) - small service focused on one job  
-  _Example:_ Payment is handled by a separate microservice.
+- **microservice** /ˈmaɪkroʊˌsɝːvɪs/ (n) - small service focused on one job  
+  _Example 1:_ Payment is handled by a separate microservice.  
+  _Example 2:_ For one customer case, microservice changed how we prioritized tasks.  
+  _Example 3:_ This quarter, microservice helped us reduce repeated support requests.
 
-- **data pipeline** (n) - flow of data from source to destination  
-  _Example:_ The data pipeline updates dashboards every hour.
+- **data pipeline** /ˈdeɪtə ˈpaɪpˌlaɪn/ (n) - flow of data from source to destination  
+  _Example 1:_ The data pipeline updates dashboards every hour.  
+  _Example 2:_ For one customer case, data pipeline changed how we prioritized tasks.  
+  _Example 3:_ I used data pipeline in a stakeholder update so everyone could follow.
 
-- **stakeholder** (n) - person or team affected by system results  
-  _Example:_ Product and support are key stakeholders for our release.
+- **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - person or team affected by system results  
+  _Example 1:_ Product and support are key stakeholders for our release.  
+  _Example 2:_ During release week, stakeholder helped us make a safer decision.  
+  _Example 3:_ I used stakeholder in a stakeholder update so everyone could follow.
 
-- **requirement** (n) - what the product must do  
-  _Example:_ We clarified requirements before writing code.
+- **requirement** /rɪˈkwaɪrmənt/ (n) - what the product must do  
+  _Example 1:_ We clarified requirements before writing code.  
+  _Example 2:_ For one customer case, requirement changed how we prioritized tasks.  
+  _Example 3:_ I used requirement in a stakeholder update so everyone could follow.
 
-- **handoff** (n) - passing work between teams  
-  _Example:_ Clear handoff notes reduced delays with QA.
+- **handoff** /ˈhændˌɔːf/ (n) - passing work between teams  
+  _Example 1:_ Clear handoff notes reduced delays with QA.  
+  _Example 2:_ In a recent sprint, handoff became a key point in our planning discussion.  
+  _Example 3:_ In one incident review, handoff explained why the bug happened.
 
-- **dependency** (n) - another team or system you need  
-  _Example:_ We were blocked by an API dependency.
+- **dependency** /dɪˈpɛndənsi/ (n) - another team or system you need  
+  _Example 1:_ We were blocked by an API dependency from the billing team.  
+  _Example 2:_ In retro, we linked dependency to one real production issue.  
+  _Example 3:_ We mentioned dependency in stand-up when blockers appeared.
 
-- **incident** (n) - unexpected production problem  
-  _Example:_ During an incident, we gave updates every 30 minutes.
+- **incident** /ˈɪnsɪdənt/ (n) - unexpected production problem  
+  _Example 1:_ During an incident, we gave updates every 30 minutes.  
+  _Example 2:_ In a recent sprint, incident became a key point in our planning discussion.  
+  _Example 3:_ In one incident review, incident explained why the bug happened.
 
-- **SLA** (n) - expected response or uptime target  
-  _Example:_ We monitor SLA because enterprise clients care about uptime.
+- **SLA** /ˌɛs ɛl ˈeɪ/ (n) - expected response or uptime target  
+  _Example 1:_ We monitor SLA because enterprise clients care about uptime.  
+  _Example 2:_ In a recent sprint, sla became a key point in our planning discussion.  
+  _Example 3:_ After QA feedback, sla was added to our rollout checklist.
 
 **Additional useful terms:**
-- **owner** (n) - person responsible for a system area
-- **scope** (n) - boundaries of a project
-- **timeline** (n) - schedule of work
-- **constraint** (n) - limit like time or budget
-- **alignment** (n) - shared understanding across teams
+- **owner** /ˈoʊnər/ (n) - person responsible for a system area
+- **scope** /skoʊp/ (n) - boundaries of a project
+- **timeline** /ˈtaɪmˌlaɪn/ (n) - schedule of work
+- **constraint** /kənˈstreɪnt/ (n) - limit like time or budget
+- **alignment** /əˈlaɪnmənt/ (n) - shared understanding across teams
 
 </details>
 
@@ -102,6 +122,10 @@ description: Describe your system at a high level and explain how you work with 
 - avoid scope confusion
 - improve team alignment
 
+**Examples (real work):**
+- In one release week, we had to explain system architecture while still trying to map stakeholder needs.
+- In retro, we agreed to align product requirements earlier so the same issue would not repeat.
+
 ### Useful Chunking & Sentence Starters
 - At a high level, the system...
 - From the user side,...
@@ -111,6 +135,10 @@ description: Describe your system at a high level and explain how you work with 
 - A real issue we faced was...
 - We solved it by...
 - The main lesson was...
+
+**Examples (using starters):**
+- "A real issue we faced was repeated timeout errors, so we paused rollout and checked logs first."
+- "To reduce risk, we shipped to 10% of users first, then expanded after QA sign-off."
 
 ### Useful Phrasal Verbs
 - **depend on** -> This release depends on backend API changes.
