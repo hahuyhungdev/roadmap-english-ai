@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import LayoutNav from "@/components/LayoutNav";
 import AppSidebar from "@/components/AppSidebar";
-import NotePanel from "@/components/NotePanel";
+import NotePanel from "@/features/notes/NotePanel";
 
 const SIDEBAR_COLLAPSED_KEY = "sidebar-collapsed";
 
