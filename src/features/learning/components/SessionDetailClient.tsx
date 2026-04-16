@@ -12,6 +12,7 @@ import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import LessonAssistant from "./LessonAssistant";
 import PracticeCoach from "./PracticeCoach";
+import AnswerPractice from "./AnswerPractice";
 
 export default function SessionDetailClient({
   session,
@@ -146,6 +147,11 @@ export default function SessionDetailClient({
         lessonContent={session.content}
       />
       <PracticeCoach
+        lessonTitle={session.meta.title}
+        lessonContent={session.content}
+      />
+      <AnswerPractice
+        sessionSlug={session.id}
         lessonTitle={session.meta.title}
         lessonContent={session.content}
       />

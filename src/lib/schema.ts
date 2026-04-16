@@ -114,3 +114,32 @@ export const lessonNotes = pgTable("lesson_notes", {
   content: text("content").notNull().default(""),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
+
+// ─── Practice Question Sets ───────────────────────────────────────────────────
+// One generated question set per session (single-user). Questions are cached
+// after first generation so subsequent opens are instant.
+export const practiceQuestionSets = pgTable("practice_question_sets", {
+  sessionSlug: varchar("session_slug", { length: 100 }).primaryKey(),
+  // [{id, text, group, order}]
+  questions: jsonb("questions").notNull().default("[]"),
+  generatedAt: timestamp("generated_at").defaultNow().notNull(),
+});
+
+// ─── Practice Answers ─────────────────────────────────────────────────────────
+// Stores every coaching exchange the learner has for a specific question.
+export const practiceAnswers = pgTable(
+  "practice_answers",
+  {
+    id: serial("id").primaryKey(),
+    sessionSlug: varchar("session_slug", { length: 100 }).notNull(),
+    // Matches the `id` field inside practiceQuestionSets.questions[]
+    questionId: varchar("question_id", { length: 50 }).notNull(),
+    transcript: text("transcript").notNull(),
+    // {corrected_version, explanation, better_alternatives}
+    feedback: jsonb("feedback"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("pa_session_question_idx").on(table.sessionSlug, table.questionId),
+  ],
+);
