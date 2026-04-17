@@ -4,107 +4,310 @@ title: Documentation as a Product
 topic: Frontend Docs That Reduce Rework
 phase: PHASE 1 - TECH & BUSINESS
 level: B1-B2
-description: Talk about practical team docs that reduce repeated questions, rework, and QA confusion.
+description: Explain how practical documentation reduces confusion, rework, and delivery risk.
 ---
 
 # Session 6: Documentation as a Product
 
-**Level:** B1-B2  
-**Focus:** Docs create value: faster onboarding, fewer QA loops, and clearer team decisions.
-**Scope:** Talk about practical docs teams use every sprint: setup guides, API reference, release checklist, troubleshooting notes, and changelog updates.
+**Level:** B1-B2
+**Focus:** Treat documentation as part of product quality, not optional extra work.
 
 <details open>
-<summary><strong>1) Vocabulary </strong></summary>
+<summary><strong>1) Vocabulary</strong></summary>
 
-- **component guideline** /kəmˈpoʊnənt ˈɡaɪdˌlaɪn/ (n) - document explaining when and how to use a UI component  
-  _Example 1:_ We wrote a component guideline for our button variants before redesign work.  
-  _Example 2:_ New frontend engineers now choose components faster with fewer mistakes.  
-  _Example 3:_ PM and QA also use the guideline to understand expected behavior.
+## 🔍 component guideline
 
-- **onboarding** /ˈɑːnˌbɔːrdɪŋ/ (n) - process to help new team members become productive  
-  _Example 1:_ Better frontend docs reduced onboarding time from four days to two.  
-  _Example 2:_ Our onboarding checklist includes local setup, component structure, and naming rules.  
-  _Example 3:_ It reduced repeated "which component should I use?" messages.
+> **Pronunciation:** /kəmˈpoʊnənt ˈɡaɪdˌlaɪn/ — American English accent
+> **Part of Speech:** noun phrase
 
-- **API reference** /ˌeɪ piː ˈaɪ ˈrɛfərəns/ (n) - documentation for endpoint behavior, parameters, and responses  
-  _Example 1:_ We updated the API reference before integrating the new payment endpoint.  
-  _Example 2:_ Clear request and response examples reduced backend questions.  
-  _Example 3:_ QA used the API reference to verify error cases.
+**Definition:**
+A short document that explains when and how to use a UI component.
 
-- **release checklist** /rɪˈliːs ˈtʃɛkˌlɪst/ (n) - short list of checks before deployment  
-  _Example 1:_ We added a release checklist for smoke tests and rollback steps.  
-  _Example 2:_ The checklist helped us catch one missing migration before launch.  
-  _Example 3:_ It made release day calmer for both engineering and QA.
+**Example Sentences:**
 
-- **troubleshooting guide** /ˈtrʌbəlˌʃuːtɪŋ ɡaɪd/ (n) - document with common issues and quick fixes  
-  _Example 1:_ We wrote a troubleshooting guide for login and token refresh errors.  
-  _Example 2:_ Support resolved basic issues without waiting for engineers.  
-  _Example 3:_ New team members used it during on-call shadowing.
+- We wrote a component guideline for button variants.
+- The guideline helped designers and engineers align faster.
+- New hires used the guideline in their first week.
 
-- **setup guide** /ˈsɛtˌʌp ɡaɪd/ (n) - step-by-step instructions to run the project locally  
-  _Example 1:_ We improved the setup guide for Mac and Linux developers.  
-  _Example 2:_ New hires now run the app successfully on day one.  
-  _Example 3:_ It reduced repeated environment setup questions.
+**Relationships:**
 
-- **UI state note** /ˌjuːˈaɪ steɪt noʊt/ (n) - short note for loading, empty, error, and success cases  
-  _Example 1:_ We added UI state notes so error and empty pages were not missed.  
-  _Example 2:_ QA coverage improved after these states were written clearly.  
-  _Example 3:_ It reduced last-minute UI bug fixes.
+- **Synonyms:** component standard, usage guide
+- **Antonyms:** ad-hoc usage, undocumented component
 
-- **accessibility check** /əkˌsɛsəˈbɪləti tʃɛk/ (n) - quick check for keyboard, labels, and screen-reader support  
-  _Example 1:_ We added an accessibility check before merging the checkout modal.  
-  _Example 2:_ This helped us catch missing aria-label values before QA.  
-  _Example 3:_ Accessibility issues dropped in later releases.
+**Usage Notes:**
 
-- **changelog** /ˈtʃeɪndʒˌlɔɡ/ (n) - short list of what changed in a release  
-  _Example 1:_ We updated the changelog after changing login flow and API behavior.  
-  _Example 2:_ Product and QA used it to verify expected UI updates.  
-  _Example 3:_ It reduced confusion after deployment.
+- **Collocations:** write guidelines, update guidelines, guideline example
+- **Register:** Professional
 
-- **doc owner** /dɑːk ˈoʊnər/ (n) - person responsible for keeping one doc accurate  
-  _Example 1:_ Each key frontend doc has one doc owner.  
-  _Example 2:_ The owner updates docs when component behavior changes.  
-  _Example 3:_ This prevents outdated examples from spreading.
+## 🔍 UI state spec
+
+> **Pronunciation:** /ˌjuːˈaɪ steɪt spɛk/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A clear list of loading, empty, success, and error behaviors for one screen.
+
+**Example Sentences:**
+
+- We added UI state specs before implementation.
+- QA used the spec to test edge cases.
+- Missing state specs caused rework in sprint review.
+
+**Relationships:**
+
+- **Synonyms:** state document, screen behavior spec
+- **Antonyms:** undefined state behavior, unclear UI logic
+
+**Usage Notes:**
+
+- **Collocations:** document UI states, state spec review, state coverage
+- **Register:** Technical
+
+## 🔍 Storybook page
+
+> **Pronunciation:** /ˈstɔːriˌbʊk peɪdʒ/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A visual documentation page showing component variants and usage examples.
+
+**Example Sentences:**
+
+- We updated the Storybook page for the new form field.
+- Storybook pages reduced repeated UI questions.
+- I demoed Storybook in one interview.
+
+**Relationships:**
+
+- **Synonyms:** component showcase, UI doc page
+- **Antonyms:** hidden component behavior, no visual docs
+
+**Usage Notes:**
+
+- **Collocations:** publish Storybook page, Storybook update, Storybook notes
+- **Register:** Technical, Professional
+
+## 🔍 wireframe note
+
+> **Pronunciation:** /ˈwaɪərˌfreɪm noʊt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A short clarification note attached to a design wireframe.
+
+**Example Sentences:**
+
+- I added wireframe notes for mobile error behavior.
+- Wireframe notes prevented design misunderstandings.
+- One missing note created a scope debate.
+
+**Relationships:**
+
+- **Synonyms:** design annotation, handoff note
+- **Antonyms:** unannotated wireframe, unclear design
+
+**Usage Notes:**
+
+- **Collocations:** add wireframe notes, note detail, handoff notes
+- **Register:** Neutral
+
+## 🔍 API example
+
+> **Pronunciation:** /ˌeɪ piː ˈaɪ ɪɡˈzæmpəl/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A sample request and response used to clarify backend behavior.
+
+**Example Sentences:**
+
+- We included one API example for each error type.
+- API examples reduced integration questions from frontend.
+- Clear examples saved QA time during validation.
+
+**Relationships:**
+
+- **Synonyms:** sample payload, endpoint example
+- **Antonyms:** abstract API description, missing examples
+
+**Usage Notes:**
+
+- **Collocations:** add API examples, example payload, endpoint examples
+- **Register:** Technical
+
+## 🔍 release checklist
+
+> **Pronunciation:** /rɪˈliːs ˈʧɛkˌlɪst/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A list of required checks before launching a feature.
+
+**Example Sentences:**
+
+- Our release checklist includes smoke tests and rollback steps.
+- The checklist caught one missing migration.
+- We review checklist items in launch calls.
+
+**Relationships:**
+
+- **Synonyms:** launch checklist, release gate list
+- **Antonyms:** unplanned release, no checks
+
+**Usage Notes:**
+
+- **Collocations:** run checklist, checklist owner, checklist pass
+- **Register:** Professional
+
+## 🔍 doc ownership
+
+> **Pronunciation:** /dɑːk ˈoʊnərˌʃɪp/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Clear responsibility for keeping documentation accurate.
+
+**Example Sentences:**
+
+- We assigned doc ownership by feature area.
+- Without doc ownership, examples became outdated.
+- Ownership improved documentation consistency.
+
+**Relationships:**
+
+- **Synonyms:** documentation responsibility, doc accountability
+- **Antonyms:** shared confusion, no owner
+
+**Usage Notes:**
+
+- **Collocations:** assign ownership, ownership model, doc owner
+- **Register:** Professional
+
+## 🔍 onboarding guide
+
+> **Pronunciation:** /ˈɑːnˌbɔːrdɪŋ ɡaɪd/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Step-by-step instructions for helping new team members become productive.
+
+**Example Sentences:**
+
+- We improved the onboarding guide for local setup.
+- Better onboarding guides reduced repeated support questions.
+- New engineers finished setup in one day.
+
+**Relationships:**
+
+- **Synonyms:** new hire guide, setup guide
+- **Antonyms:** unclear onboarding, no setup docs
+
+**Usage Notes:**
+
+- **Collocations:** write onboarding guide, guide update, onboarding checklist
+- **Register:** Neutral, Professional
+
+## 🔍 troubleshooting note
+
+> **Pronunciation:** /ˈtrʌbəlˌʃuːtɪŋ noʊt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A short fix-oriented note for common errors and recovery steps.
+
+**Example Sentences:**
+
+- We created troubleshooting notes for login failures.
+- Support used the notes before escalating to engineers.
+- Good notes reduced repeated Slack questions.
+
+**Relationships:**
+
+- **Synonyms:** fix note, issue guide
+- **Antonyms:** undocumented issue, unknown fix
+
+**Usage Notes:**
+
+- **Collocations:** write troubleshooting notes, note template, issue notes
+- **Register:** Neutral
+
+## 🔍 changelog habit
+
+> **Pronunciation:** /ˈʧeɪndʒˌlɔːɡ ˈhæbɪt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+The routine of documenting release changes clearly and consistently.
+
+**Example Sentences:**
+
+- Changelog habit improved cross-team visibility.
+- We kept changelog entries short and specific.
+- This habit made post-release support easier.
+
+**Relationships:**
+
+- **Synonyms:** release log routine, update logging habit
+- **Antonyms:** undocumented releases, inconsistent logging
+
+**Usage Notes:**
+
+- **Collocations:** keep changelog habit, changelog update, release log
+- **Register:** Professional
 
 **Additional useful terms:**
 
-- **checklist** /ˈtʃɛkˌlɪst/ (n) - short list of required steps
-- **known issue** /noʊn ˈɪʃuː/ (n) - problem documented but not fixed yet
-- **sample request** /ˈsæmpəl rɪˈkwɛst/ (n) - example API request for developers
-- **acceptance criteria** /əkˈsɛptəns kraɪˈtɪriə/ (n) - clear conditions for completed work
-- **doc update** /dɑːk ˈʌpdeɪt/ (n) - quick update when behavior changes
+**acceptance criteria** _(noun phrase)_ — clear conditions for task completion.
+Example: QA validated acceptance criteria before launch.
+Collocations: define acceptance criteria, criteria review
+
+**doc bundle** _(noun phrase)_ — small set of linked docs for one feature.
+Example: We prepared a doc bundle before handoff.
+Collocations: create doc bundle, bundle coverage
+
+**known issue** _(noun phrase)_ — documented problem not fixed yet.
+Example: We listed one known issue in release notes.
+Collocations: known issue list, issue disclosure
+
+**example snippet** _(noun phrase)_ — short practical code or text sample.
+Example: Example snippets made usage clearer for new hires.
+Collocations: add snippet, snippet library
+
+**handoff quality** _(noun phrase)_ — how clear and complete team transfer is.
+Example: Better handoff quality reduced QA ping-pong.
+Collocations: improve handoff quality, handoff review
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Simple for process**  
-  We document every component change so implementation stays consistent.
+- **Present Simple for documentation routines**
+  We update docs after each major release.
 
-- **Present Perfect for outcomes**  
-  Better frontend docs have reduced repeated QA clarification messages.
+- **Cause and result**
+  Because docs were outdated, QA rework increased.
 
-- **Passive voice for standards**  
-  Each component guideline is reviewed at the end of every sprint.
+- **Purpose language**
+  We write short specs so non-engineers can follow.
 
-- **Purpose language**  
-  We keep docs concise so frontend and non-frontend teammates can align quickly.
+- **Contrast language**
+  Writing docs takes time, but it saves more time later.
 
-- **Conditionals for risk**  
-  If UI state docs are outdated, teams can implement inconsistent behavior.
+- **Conditionals for quality control**
+  If doc ownership is unclear, documentation quality drops.
 
-- **Comparison language**  
-  After we added clearer setup and API examples, onboarding became much easier.
+- **Reflection language**
+  If we had documented edge cases earlier, launch would be smoother.
 
 ### Useful Sentence Patterns
 
-- We treat documentation as...
-- This document is for..., so...
-- A useful doc should include...
-- We improved it by adding...
-- It saved time because...
-- The trade-off is writing time versus...
+- This document is for...
+- The most useful section is...
+- We improved doc quality by...
+- One missing detail was...
+- The trade-off was...
+- The measurable result was...
 
 </details>
 
@@ -114,90 +317,79 @@ description: Talk about practical team docs that reduce repeated questions, rewo
 ### Strong Collocations
 
 - write component guidelines
-- update API reference
 - document UI states
-- maintain setup guide
-- write troubleshooting guide
-- use release checklist
-- include accessibility checks
-- keep docs up to date
-- update the changelog
-- reduce QA ping-pong
-- speed up onboarding
-- align backend and frontend
-
-**Examples (real work):**
-
-- In one release week, we documented UI states and API examples before coding, so QA found fewer edge-case bugs.
-- We also updated the setup guide early, and onboarding time dropped for new teammates.
+- update Storybook pages
+- attach wireframe notes
+- add API examples
+- run release checklist
+- assign doc ownership
+- improve onboarding guide
+- publish troubleshooting notes
+- maintain changelog entries
+- reduce QA rework
+- speed up team handoff
 
 ### Useful Chunking & Sentence Starters
 
-- We treat docs as a product because...
-- The target reader for this doc is...
-- A common documentation gap is...
-- We fixed that by adding...
-- The biggest benefit was...
-- One trade-off is writing time now versus...
-- To keep quality, we run...
-- We measure impact with...
-
-**Examples (using starters):**
-
-- "A common documentation gap was outdated setup steps, so we rewrote them after each release."
-- "To keep quality, we review docs after each sprint and assign one clear owner."
+- We treated docs as...
+- The documentation gap was...
+- We fixed this by...
+- The highest-value doc was...
+- One trade-off we accepted was...
+- This reduced confusion for...
+- The impact metric was...
+- Next, we want to improve...
 
 ### Useful Phrasal Verbs
 
-- **write down** -> We write down edge cases before final component implementation.
-- **point out** -> QA points out missing states before release.
-- **fill in** -> We fill in missing API examples before integration starts.
-- **clean up** -> We clean up outdated docs at the end of each sprint.
-- **look up** -> New developers can look up prop behavior in the docs quickly.
+- **write up** -> I wrote up the API examples after integration.
+- **fill in** -> We filled in missing error-state details.
+- **hand over** -> We handed over docs to QA before release.
+- **clean up** -> We cleaned up outdated setup steps.
+- **look up** -> New members can look up component behavior quickly.
 
 </details>
 
 <details open>
 <summary><strong>4) Dialogues</strong></summary>
 
-### Dialogue 1 - Why Docs Matter
+### Dialogue 1
 
-**Interviewer:** Why do you care about documentation?
+**Interviewer:** Why do you treat documentation as part of delivery?
 
-**You:**  
-Because docs save real team time. We had repeated confusion about API behavior and UI states, so I wrote a short component guideline with example requests.
+**You:**
+Because docs reduce repeated confusion. In one release, clear UI state specs helped QA catch edge cases early.
 
-Onboarding became faster in one sprint. Writing docs took effort upfront, but QA loops dropped later.
+We spent extra time writing docs, but saved much more in rework.
 
-### Dialogue 2 - API and UI States
+### Dialogue 2
 
-**Interviewer:** How do you use docs when design and backend are not aligned?
+**Interviewer:** What documentation gave your team the biggest value?
 
-**You:**  
-I start with UI state notes for loading, empty, and error states. Then I update API reference examples so frontend and backend read the same contract.
+**You:**
+A small doc bundle worked best: wireframe notes, API examples, and release checklist. It connected design, engineering, and QA clearly.
 
-This takes extra time early, but it reduces rework during implementation and QA.
+That reduced Slack questions and shortened release meetings.
 
-### Dialogue 3 - Keeping Docs Updated
+### Dialogue 3
 
-**Interviewer:** What is the hardest part of documentation in real projects?
+**Interviewer:** How do you keep docs from becoming outdated?
 
-**You:**  
-The hardest part is keeping docs updated after fast releases. We now assign one doc owner and review key pages at the end of each sprint.
+**You:**
+We assign one owner per key document and review updates every sprint. Changelog habit also helps us track what changed.
 
-It takes extra discipline, but outdated docs dropped a lot.
+Without ownership, docs become unreliable quickly.
 
 </details>
-
 
 <details open>
 <summary><strong>5) Debate Prompt</strong></summary>
 
-**Is writing documentation really part of an engineer's job, or is it someone else's responsibility?**
+**Should engineers spend significant time on documentation, or focus mainly on coding and let others document?**
 
-**Side A:** Engineers write the code, so only they understand it well enough to document it correctly. If they skip docs, onboarding takes longer and bugs are harder to fix. It's part of the job.
+**Side A:** Engineers should focus on coding because delivery speed matters most. Writing detailed docs can slow sprint progress.
 
-**Side B:** Good engineers should spend their time solving hard technical problems, not writing text. That's what technical writers and PMs are for. Documentation takes time away from what engineers do best.
+**Side B:** Engineers need to document key decisions and behavior. Without practical docs, teams waste time on rework and misalignment.
 
 _Your turn: Which side do you agree with more? Why?_
 
@@ -206,11 +398,11 @@ _Your turn: Which side do you agree with more? Why?_
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
-Many teams treat documentation as extra work. In reality, it is part of delivery quality. A practical flow starts with a setup guide, clear API examples, and short notes for important UI states.
+Good documentation is not long. It is clear, practical, and easy to use in real delivery work. Teams need docs for setup, UI states, API examples, and release checks.
 
-Good documentation is practical and specific. It includes setup steps, common errors, API examples, release checks, and ownership. If no one owns the doc, it becomes outdated and creates rework.
+When docs are missing, people ask the same questions again and again. This slows development and increases QA loops. A simple doc bundle can prevent many of these problems.
 
-In interviews, share one real case where docs reduced repeated questions or QA loops, and include one measurable result.
+In interviews, documentation stories show maturity. If you can explain how docs reduced rework, you sound like an engineer who thinks beyond writing code.
 
 </details>
 
@@ -219,35 +411,33 @@ In interviews, share one real case where docs reduced repeated questions or QA l
 
 ### Core Questions (must-practice)
 
-1. Why do you treat frontend documentation as part of delivery, not extra work?
-2. How do you create a practical doc bundle: setup guide, API reference, and release checklist?
-3. How do clear state notes and API examples help your team in real projects?
-4. How do you keep docs updated when releases are fast?
+1. Which document in your team saves the most time, and why?
+2. How do you decide what must be documented before release?
+3. What is one example of rework caused by unclear docs?
+4. How do you assign documentation ownership in a practical way?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of writing short docs versus detailed docs?
-6. When do simple UI state notes prevent rework, and when are they still not enough?
-7. How does frontend documentation quality affect onboarding speed and long-term team learning?
+5. What are the benefits and limits of short docs versus detailed docs?
+6. How do documentation habits differ between beginner and experienced engineers?
+7. When should teams prioritize docs over feature speed?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You said short docs are better. What important context could be lost?
-9. If API docs are updated but teams still misunderstand behavior, what is missing?
-10. If a doc is technically correct but too long, why might people still ignore it?
+8. You said short docs are better. What important context may be lost?
+9. You said docs reduce QA issues. What if QA still reports confusion?
+10. If deadlines are tight, which docs are non-negotiable?
 
 ### Reflection Questions
 
-11. Which doc type is hardest for you to write clearly in English right now?
-12. What review habit improved your documentation quality the most?
-13. In the future, will engineers be judged partly by documentation quality, like code quality?
+11. Which documentation phrase is hardest for you to use naturally in English?
+12. What one documentation habit will you start this week?
+13. In your future role, will documentation quality influence your career growth?
 
 **Tips for speaking practice:**
 
-- Use one real doc artifact in each answer (setup guide, API example, or release checklist).
-- Include one trade-off: upfront writing time vs lower rework later.
-- Add one measurable result (QA cycle count, onboarding time, or bug-fix time).
-
----
+- Use one real document and one measurable impact.
+- Keep flow: problem -> doc change -> team impact.
+- Practice one 60-90 second answer on documentation value.
 
 </details>

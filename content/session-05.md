@@ -4,106 +4,310 @@ title: AI Tools and the Changing Developer Role
 topic: Daily AI Usage, Limits, and Practical Trade-offs
 phase: PHASE 1 - TECH & BUSINESS
 level: B1-B2
-description: Explain how you use AI tools in daily engineering work, where they help, and where you still rely on human checks.
+description: Explain where AI tools help in daily work, where they fail, and how you keep quality and accountability.
 ---
 
 # Session 5: AI Tools and the Changing Developer Role
 
-**Level:** B1-B2  
-**Focus:** Speak clearly about practical AI usage in software teams, including speed gains, risks, and clear boundaries.
+**Level:** B1-B2
+**Focus:** Describe practical AI usage with clear boundaries, verification habits, and honest trade-offs.
 
 <details open>
-<summary><strong>1) Vocabulary </strong></summary>
+<summary><strong>1) Vocabulary</strong></summary>
 
-- **code assistant** /koʊd əˈsɪstənt/ (n) - AI tool that suggests code  
-  _Example 1:_ I use a code assistant to scaffold React form components and test stubs.  
-  _Example 2:_ We reduced setup time, but still reviewed every suggestion before merge.  
-  _Example 3:_ In interviews, I explain code assistant as support, not replacement.
+## 🔍 prompt quality
 
-- **boilerplate** /ˈbɔɪlərˌpleɪt/ (n) - repeated code patterns  
-  _Example 1:_ AI is useful for boilerplate in API handlers and validation schemas.  
-  _Example 2:_ Boilerplate generation saved time during sprint kickoff.  
-  _Example 3:_ We still enforce lint and review to keep boilerplate quality consistent.
+> **Pronunciation:** /prɑːmpt ˈkwɑːləti/ — American English accent
+> **Part of Speech:** noun phrase
 
-- **unit test** /ˈjuːnɪt tɛst/ (n) - small test for one function or component  
-  _Example 1:_ We ask AI for unit test drafts, then add edge cases manually.  
-  _Example 2:_ Missing unit tests caused a pricing bug to reach staging last month.  
-  _Example 3:_ Better unit test coverage reduced rework in code review.
+**Definition:**
+How clear and useful your instruction is when asking AI for help.
 
-- **debugging** /diˈbʌɡɪŋ/ (n) - finding and fixing problems  
-  _Example 1:_ AI helps me summarize long logs during debugging.  
-  _Example 2:_ It speeds up hypothesis generation, but root cause still needs human checks.  
-  _Example 3:_ I use debugging notes to explain issues clearly in stand-up.
+**Example Sentences:**
 
-- **prompt** /prɑːmpt/ (n) - instruction given to an AI tool  
-  _Example 1:_ A clear prompt gives better output and fewer random suggestions.  
-  _Example 2:_ Our prompt template includes context, expected format, and constraints.  
-  _Example 3:_ Better prompts reduced time spent rewriting AI output.
+- Prompt quality improved after I added constraints.
+- Better prompt quality reduced rewrite time in code review.
+- I now prepare prompts before meetings.
 
-- **hallucination** /həˌluːsəˈneɪʃən/ (n) - incorrect AI output that sounds confident  
-  _Example 1:_ We saw hallucination in an authentication snippet, so we checked official docs.  
-  _Example 2:_ One hallucinated function name caused integration delay for half a day.  
-  _Example 3:_ Now we mark uncertain AI output before using it in production code.
+**Relationships:**
 
-- **security-critical** /sɪˈkjʊrəti ˈkrɪtɪkəl/ (adj) - related to sensitive security logic  
-  _Example 1:_ We never paste security-critical code or customer tokens into external AI tools.  
-  _Example 2:_ Security-critical modules always require senior review and threat checks.  
-  _Example 3:_ This rule slows us down, but protects production systems.
+- **Synonyms:** prompt clarity, instruction quality
+- **Antonyms:** vague prompt, noisy input
 
-- **compliance** /kəmˈplaɪəns/ (n) - following legal or company rules  
-  _Example 1:_ Compliance rules limit what customer data can appear in prompts.  
-  _Example 2:_ We anonymize logs before AI-assisted analysis to stay compliant.  
-  _Example 3:_ Compliance checks are part of our pull request template.
+**Usage Notes:**
 
-- **review** /rɪˈvjuː/ (n/v) - checking code quality and correctness  
-  _Example 1:_ Human review is still mandatory before merge.  
-  _Example 2:_ Review catches logic gaps that AI-generated tests may miss.  
-  _Example 3:_ We require one reviewer to check maintainability, not only correctness.
+- **Collocations:** improve prompt quality, prompt template, high-quality prompt
+- **Register:** Neutral
 
-- **regression** /rɪˈɡrɛʃən/ (n) - new change breaks old behavior  
-  _Example 1:_ AI suggestions can cause regression if we skip domain-specific tests.  
-  _Example 2:_ One regression passed unit tests but failed in real checkout flow.  
-  _Example 3:_ Regression prevention now includes contract tests and manual smoke checks.
+## 🔍 context packaging
+
+> **Pronunciation:** /ˈkɑːntɛkst ˈpækɪdʒɪŋ/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Providing AI with the right background information before asking for output.
+
+**Example Sentences:**
+
+- Context packaging made AI answers more relevant.
+- We used context packaging for API bug triage.
+- Poor context packaging caused wrong suggestions.
+
+**Relationships:**
+
+- **Synonyms:** context setup, input framing
+- **Antonyms:** missing context, context-free prompt
+
+**Usage Notes:**
+
+- **Collocations:** package context, context bundle, context-first workflow
+- **Register:** Professional
+
+## 🔍 AI draft
+
+> **Pronunciation:** /ˌeɪ ˈaɪ dræft/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+An initial output from AI that still needs human review.
+
+**Example Sentences:**
+
+- I treat every AI draft as a starting point.
+- The AI draft saved time for test case setup.
+- We never merge AI drafts without checks.
+
+**Relationships:**
+
+- **Synonyms:** machine draft, generated first pass
+- **Antonyms:** final approved output, verified result
+
+**Usage Notes:**
+
+- **Collocations:** review AI draft, improve draft, draft quality check
+- **Register:** Neutral
+
+## 🔍 verification checklist
+
+> **Pronunciation:** /ˌvɛrəfəˈkeɪʃən ˈʧɛkˌlɪst/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A short list of checks used to validate AI-generated output.
+
+**Example Sentences:**
+
+- Our verification checklist includes tests and docs.
+- The checklist caught one critical logic error.
+- I use a checklist even for small snippets.
+
+**Relationships:**
+
+- **Synonyms:** validation checklist, quality checklist
+- **Antonyms:** blind trust, no-check workflow
+
+**Usage Notes:**
+
+- **Collocations:** run checklist, checklist step, verification pass
+- **Register:** Professional
+
+## 🔍 hallucinated output
+
+> **Pronunciation:** /həˈluːsəˌneɪtəd ˈaʊtˌpʊt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+AI output that sounds correct but is factually wrong.
+
+**Example Sentences:**
+
+- We found hallucinated output in auth code.
+- Hallucinated output delayed integration testing.
+- I now cross-check every unfamiliar function.
+
+**Relationships:**
+
+- **Synonyms:** fabricated output, false generation
+- **Antonyms:** accurate output, verified answer
+
+**Usage Notes:**
+
+- **Collocations:** detect hallucinated output, output check, high-risk output
+- **Register:** Technical
+
+## 🔍 human judgment
+
+> **Pronunciation:** /ˈhjuːmən ˈdʒʌdʒmənt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Critical thinking by engineers to evaluate quality, risk, and context.
+
+**Example Sentences:**
+
+- Human judgment is still core in production decisions.
+- We use AI for speed, but human judgment for final approval.
+- Interviewers value this balance.
+
+**Relationships:**
+
+- **Synonyms:** engineer judgment, critical evaluation
+- **Antonyms:** blind automation, auto-acceptance
+
+**Usage Notes:**
+
+- **Collocations:** apply human judgment, judgment call, judgment gap
+- **Register:** Professional
+
+## 🔍 privacy boundary
+
+> **Pronunciation:** /ˈpraɪvəsi ˈbaʊndəri/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A clear limit on what data can and cannot be shared with AI tools.
+
+**Example Sentences:**
+
+- We set a strict privacy boundary for customer data.
+- Privacy boundaries were documented in team policy.
+- This boundary protected trust during audits.
+
+**Relationships:**
+
+- **Synonyms:** privacy limit, data boundary
+- **Antonyms:** open data sharing, uncontrolled input
+
+**Usage Notes:**
+
+- **Collocations:** define boundary, enforce boundary, boundary policy
+- **Register:** Professional
+
+## 🔍 skill atrophy
+
+> **Pronunciation:** /skɪl ˈætrəfi/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Gradual weakening of engineering skills from over-reliance on automation.
+
+**Example Sentences:**
+
+- Skill atrophy became a concern in junior onboarding.
+- We added manual exercises to prevent skill atrophy.
+- I balance AI help with regular problem-solving practice.
+
+**Relationships:**
+
+- **Synonyms:** skill decline, capability decay
+- **Antonyms:** skill growth, active practice
+
+**Usage Notes:**
+
+- **Collocations:** prevent skill atrophy, atrophy risk, skill maintenance
+- **Register:** Neutral
+
+## 🔍 review accountability
+
+> **Pronunciation:** /rɪˈvjuː əˌkaʊntəˈbɪləti/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Clear responsibility for checking and approving AI-assisted code.
+
+**Example Sentences:**
+
+- Review accountability stayed with the feature owner.
+- This rule improved code quality in AI-heavy tasks.
+- Accountability avoids blame-shifting later.
+
+**Relationships:**
+
+- **Synonyms:** review ownership, approval responsibility
+- **Antonyms:** unclear ownership, review gap
+
+**Usage Notes:**
+
+- **Collocations:** assign accountability, review owner, accountability rule
+- **Register:** Professional
+
+## 🔍 speed-quality balance
+
+> **Pronunciation:** /spiːd ˈkwɑːləti ˈbæləns/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A practical balance between moving faster and keeping acceptable quality.
+
+**Example Sentences:**
+
+- We discuss speed-quality balance in sprint planning.
+- AI improved speed, but quality checks still took time.
+- Strong balance prevents rework and burnout.
+
+**Relationships:**
+
+- **Synonyms:** delivery-quality trade-off, pace-quality balance
+- **Antonyms:** reckless speed, over-slow perfection
+
+**Usage Notes:**
+
+- **Collocations:** keep balance, balance decision, quality threshold
+- **Register:** Neutral, Professional
 
 **Additional useful terms:**
 
-- **context window** /ˈkɑːntɛkst ˈwɪndoʊ/ (n) - amount of text AI can process at once
-- **autocomplete** /ˌɔːtoʊkəmˈpliːt/ (n) - automatic code suggestions
-- **false positive** /ˌfɔːls ˈpɑːzətɪv/ (n) - warning that looks real but is not
-- **policy** /ˈpɑːləsi/ (n) - internal rule for tool usage
-- **fallback plan** /ˈfɔːlbæk plæn/ (n) - backup process when AI output is wrong
+**autocomplete** _(noun)_ — automatic code suggestion while typing.
+Example: Autocomplete helped me draft utility functions quickly.
+Collocations: use autocomplete, autocomplete suggestion
+
+**unit test draft** _(noun phrase)_ — first version of tests generated quickly.
+Example: AI produced a unit test draft, then I added edge cases.
+Collocations: generate draft, refine test draft
+
+**compliance rule** _(noun phrase)_ — policy requirement for legal or security safety.
+Example: One compliance rule blocked raw log sharing.
+Collocations: follow compliance rules, rule violation
+
+**false positive** _(noun phrase)_ — warning that looks like an issue but is not.
+Example: We ignored one false positive after manual review.
+Collocations: false positive rate, filter false positives
+
+**fallback workflow** _(noun phrase)_ — manual process when AI output is weak.
+Example: Our fallback workflow is pair review and manual coding.
+Collocations: trigger fallback workflow, fallback process
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Simple for routine use**  
-  I use AI tools for first drafts and repetitive coding tasks.
+- **Present Simple for routine use**
+  I use AI for repetitive tasks, not final decisions.
 
-- **Present Perfect for change over time**  
-  AI tools have reduced time spent on basic setup.
+- **Contrast language**
+  AI is fast, but it can generate confident mistakes.
 
-- **Contrast language (but / however)**  
-  AI is fast, but I never trust output without checks.
+- **Conditionals for risk control**
+  If the output touches security logic, we review manually.
 
-- **Rules and boundaries (must / should not)**  
-  We must review AI-generated code before deployment.
+- **Modal verbs for policy**
+  We must remove private data before prompt submission.
 
-- **Conditionals for risk**  
-  If we copy code blindly, we can introduce security bugs.
+- **Past examples for credibility**
+  Last month, AI saved time in test generation.
 
-- **Past case explanation**  
-  Last sprint, AI helped us generate tests, but we rewrote many assertions.
+- **Reflection language**
+  If I used AI less carefully, bug risk would increase.
 
 ### Useful Sentence Patterns
 
-- I use AI mostly for..., not for...
-- It saves time, but...
-- A real example is...
-- We still rely on human review because...
-- Our team policy says...
-- The best use case for me is...
+- I use AI mainly for...
+- I do not use AI for...
+- One risk we saw was...
+- We controlled that risk by...
+- The trade-off was...
+- My final rule is...
 
 </details>
 
@@ -112,91 +316,80 @@ description: Explain how you use AI tools in daily engineering work, where they 
 
 ### Strong Collocations
 
-- generate test drafts
-- speed up debugging
-- review AI output
-- catch logic errors
-- avoid blind copy-paste
-- protect sensitive code
-- follow compliance rules
-- validate against documentation
-- reduce repetitive work
-- improve developer workflow
-- prevent security regressions
-- set clear usage boundaries
-
-**Examples (real work):**
-
-- In one sprint, AI helped us draft tests quickly, but manual review removed several risky assumptions.
-- We saved coding time overall, yet added stricter verification before production deployment.
+- improve prompt quality
+- package context clearly
+- generate AI drafts
+- run verification checks
+- detect hallucinated output
+- enforce privacy boundaries
+- maintain review accountability
+- prevent skill atrophy
+- balance speed and quality
+- document usage policy
+- validate generated tests
+- escalate risky suggestions
 
 ### Useful Chunking & Sentence Starters
 
 - In my daily workflow, I use AI to...
-- A good use case is...
-- One bad use case is...
-- We got faster results when...
-- We still had to check...
-- The trade-off is speed versus...
-- To stay safe, we...
-- In production code, I always...
-
-**Examples (using starters):**
-
-- "A good use case is generating initial test cases, then adapting them to real business rules."
-- "To stay safe, we never copy AI output directly into security-sensitive modules."
+- The biggest benefit for me is...
+- The biggest risk is...
+- We avoid this by...
+- A real example was...
+- The trade-off we accepted was...
+- Our team policy says...
+- In interviews, I explain this as...
 
 ### Useful Phrasal Verbs
 
-- **speed up** -> AI can speed up test setup.
 - **check over** -> I always check over generated code.
-- **leave out** -> Sometimes AI leaves out edge cases.
-- **lock down** -> We lock down access for sensitive repositories.
-- **fall back** -> If output is weak, we fall back to manual coding.
+- **filter out** -> We filter out sensitive data before prompts.
+- **fall back on** -> We fall back on manual debugging when needed.
+- **build up** -> I build up my own skills with manual practice.
+- **sign off on** -> Only reviewers can sign off on AI-assisted changes.
 
 </details>
 
 <details open>
 <summary><strong>4) Dialogues</strong></summary>
 
-### Dialogue 1 - Daily Use
+### Dialogue 1
 
-**Interviewer:** How do you use AI tools at work?
+**Interviewer:** How do you use AI tools in your daily work?
 
-**You:**  
-I use them for repetitive tasks like test templates, simple refactor suggestions, and writing commit message drafts. In one sprint, this saved me about two to three hours.
+**You:**
+I use AI for drafting tests, summarizing logs, and writing first-pass documentation. It saves time in repetitive tasks.
 
-It helps speed, but I still verify logic and run tests before merge.
+But final code decisions are reviewed by engineers.
 
-### Dialogue 2 - Clear Boundaries
+### Dialogue 2
 
-**Interviewer:** What do you never use AI for?
+**Interviewer:** What is one AI risk your team faced?
 
-**You:**  
-I do not use AI for security-critical code or compliance-sensitive business logic. We also avoid sharing private customer data in prompts.
+**You:**
+We once accepted hallucinated output in a helper function. It passed basic checks but failed in real edge cases.
 
-AI is useful for support tasks, but ownership stays with the engineer.
+After that, we added a verification checklist for all generated logic.
 
-### Dialogue 3 - Trade-off Case
+### Dialogue 3
 
-**Interviewer:** Has AI ever caused problems in your team?
+**Interviewer:** Where do you set strict boundaries for AI?
 
-**You:**  
-Yes. We accepted a generated helper function too quickly, and it caused a regression in edge cases. We found it in QA and fixed it before release.
+**You:**
+We never share customer-sensitive data or secret tokens with external AI tools. For security-critical code, we require manual review only.
 
-So now we move faster with AI, but quality checks are stricter.
+The trade-off is slower speed, but much lower risk.
 
 </details>
-
 
 <details open>
 <summary><strong>5) Debate Prompt</strong></summary>
 
-**Do AI coding tools make engineers more productive, or do they make engineers weaker over time?**
+**Should engineering teams use AI aggressively for speed, or carefully for quality and skill growth?**
 
-**Side A:** AI tools help engineers skip the boring parts and focus on harder problems. A developer who uses AI well can do more in a day than one who refuses to use it.
+**Side A:** Aggressive AI usage boosts delivery speed and helps teams do more with fewer resources. In fast markets, this can be a major advantage.
 
-**Side B:** When you rely on AI to write your code, you stop training your own problem-solving skills. Over time, you lose the ability to work without it, and that's a real risk.
+**Side B:** Overuse can reduce core engineering skills and increase hidden quality risk. Careful adoption with clear boundaries is safer long term.
 
 _Your turn: Which side do you agree with more? Why?_
 
@@ -205,11 +398,11 @@ _Your turn: Which side do you agree with more? Why?_
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
-AI tools are now part of many developer workflows. They help with boilerplate, test ideas, and quick debugging support. This can reduce routine work and let engineers focus on harder tasks.
+AI tools are now part of normal engineering work. They help with repetitive tasks and can reduce setup time. This is useful, especially when teams move fast.
 
-But teams still need clear rules. AI output can be wrong, outdated, or insecure. That is why strong teams treat AI output as a draft, not as final code. Review, testing, and documentation checks are still required.
+But speed alone is not enough. Teams still need clear review accountability, privacy boundaries, and verification steps. Without these, AI output can create expensive mistakes.
 
-In interviews, practical answers are best: explain where AI saves time, where it creates risk, and how your team controls that risk.
+In interviews, strong answers show balance. Explain where AI helps you, where you do not trust it, and how you keep quality high.
 
 </details>
 
@@ -218,35 +411,33 @@ In interviews, practical answers are best: explain where AI saves time, where it
 
 ### Core Questions (must-practice)
 
-1. How do you use AI in one real daily workflow from start to finish?
-2. Which tasks do you still do manually, and why?
-3. How do you package context before writing a prompt?
-4. What verification steps do you run before accepting AI output?
+1. Which AI tasks save you the most time in real work?
+2. Where do you avoid AI completely, and why?
+3. What should be in a practical verification checklist?
+4. How do you explain AI trade-offs to non-technical stakeholders?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of prompt-based coding support?
-6. How do speed gains from AI compare with quality and security risks?
-7. How does heavy AI usage change learning paths for beginners vs experienced engineers?
+5. What are the benefits and limits of AI-generated code in team workflows?
+6. How does AI usage differ for beginner versus experienced engineers?
+7. When should quality be prioritized over speed in AI-assisted delivery?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You said AI saves time. Where did rework increase later?
-9. If a prompt gives clean code but wrong logic, what failed in your process?
-10. If AI output passes tests but hurts maintainability, should you still merge it?
+8. You said AI improved speed. How do you prove quality did not drop?
+9. You said manual review is enough. What if reviewers are overloaded?
+10. If AI becomes more reliable, should boundaries be relaxed?
 
 ### Reflection Questions
 
-11. Which part of your workflow became better because of AI, and which part got worse?
-12. What personal rule helps you stay responsible when using AI?
-13. In the long term, will prompt quality become as important as coding quality?
+11. Which AI-related phrase feels least natural when you speak English?
+12. What one policy change could improve your AI workflow this month?
+13. In the long term, will engineers be valued more for coding speed or judgment quality?
 
 **Tips for speaking practice:**
 
-- Use one concrete prompt example and explain your context clearly.
-- Always include one risk-control step (review, test, or security check).
-- Keep answers grounded in decisions, not tool hype.
-
----
+- Use one real AI success and one real AI failure case.
+- Keep answer flow: use case -> risk -> safeguard -> result.
+- Practice one 60-90 second answer on AI limits.
 
 </details>

@@ -4,106 +4,310 @@ title: System and Stakeholders
 topic: Explaining Architecture and Team Communication
 phase: PHASE 1 - TECH & BUSINESS
 level: B1-B2
-description: Describe your system at a high level and explain how you work with different stakeholders.
+description: Describe system flow clearly and adjust communication for different stakeholders.
 ---
 
 # Session 2: System and Stakeholders
 
-**Level:** B1-B2  
-**Focus:** Explain your system clearly without deep technical details, and show how communication changes by stakeholder.
+**Level:** B1-B2
+**Focus:** Explain how your system works at a high level and how you align with PM, QA, support, and leadership.
 
 <details open>
-<summary><strong>1) Vocabulary </strong></summary>
+<summary><strong>1) Vocabulary</strong></summary>
 
-- **architecture** /ˈɑːrkəˌtɛktʃər/ (n) - overall system structure  
-  _Example 1:_ Our architecture has one web app, one API layer, and one async worker queue.  
-  _Example 2:_ I explain architecture differently to PMs and to backend engineers.  
-  _Example 3:_ In interviews, I use a simple flow instead of deep implementation details.
+## 🔍 system flow
 
-- **user flow** /ˈjuːzər floʊ/ (n) - step-by-step path a user takes in the product  
-  _Example 1:_ We simplified the checkout user flow from five steps to three.  
-  _Example 2:_ Product and design reviewed the same flow before development started.  
-  _Example 3:_ In interviews, I explain user flow first, then technical details.
+> **Pronunciation:** /ˈsɪstəm floʊ/ — American English accent
+> **Part of Speech:** noun phrase
 
-- **API contract** /ˌeɪ piː ˈaɪ ˈkɑntrækt/ (n) - clear agreement on request, response, and error format  
-  _Example 1:_ We updated the API contract before frontend implementation.  
-  _Example 2:_ Clear contract examples reduced integration bugs in QA.  
-  _Example 3:_ When the contract changed late, we flagged risk immediately.
+**Definition:**
+How actions and data move through the product from user input to final output.
 
-- **UI state** /ˌjuːˈaɪ steɪt/ (n) - visual state like loading, empty, success, or error  
-  _Example 1:_ We documented each UI state before coding the checkout page.  
-  _Example 2:_ QA used state notes to test edge cases earlier.  
-  _Example 3:_ Missing one error state caused confusion in the first release.
+**Example Sentences:**
 
-- **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - person or team affected by system results  
-  _Example 1:_ Product, QA, support, and sales were key stakeholders in this release.  
-  _Example 2:_ Each stakeholder cared about different risks and timelines.  
-  _Example 3:_ We reduced confusion by tailoring updates for each group.
+- I explained system flow with one simple diagram.
+- Clear system flow helped QA plan better test cases.
+- System flow language makes interviews easier.
 
-- **requirement** /rɪˈkwaɪrmənt/ (n) - what the product must do  
-  _Example 1:_ We clarified requirements before coding the coupon validation logic.  
-  _Example 2:_ One missing requirement caused rework in both frontend and backend.  
-  _Example 3:_ Now we confirm acceptance criteria before development starts.
+**Relationships:**
 
-- **handoff** /ˈhændˌɔːf/ (n) - passing work between teams  
-  _Example 1:_ Clear handoff notes helped QA test edge cases without waiting for engineers.  
-  _Example 2:_ We added wireframe annotations to improve design-to-engineering handoff.  
-  _Example 3:_ Better handoff reduced last-day release surprises.
+- **Synonyms:** process flow, end-to-end path
+- **Antonyms:** broken flow, unclear path
 
-- **dependency** /dɪˈpɛndənsi/ (n) - another team or system you need  
-  _Example 1:_ We were blocked by a dependency on billing API authentication changes.  
-  _Example 2:_ To avoid delay, we built with a mock endpoint first.  
-  _Example 3:_ We tracked dependency risk in weekly planning, not only daily stand-up.
+**Usage Notes:**
 
-- **incident** /ˈɪnsɪdənt/ (n) - unexpected production problem  
-  _Example 1:_ During an incident, one frontend route failed after deployment.  
-  _Example 2:_ Clear incident updates helped support answer users faster.  
-  _Example 3:_ Our review focused on root cause and communication gaps.
+- **Collocations:** map system flow, explain system flow, flow diagram
+- **Register:** Neutral, Technical
 
-- **release note** /rɪˈliːs noʊt/ (n) - short summary of what changed in a release  
-  _Example 1:_ We wrote a release note with new features and known limitations.  
-  _Example 2:_ QA and support used the note to prepare for launch day.  
-  _Example 3:_ Clear release notes reduced repeated stakeholder questions.
+## 🔍 stakeholder alignment
+
+> **Pronunciation:** /ˈsteɪkˌhoʊldər əˈlaɪnmənt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Shared understanding between teams about goals, timeline, and risks.
+
+**Example Sentences:**
+
+- We held a quick call for stakeholder alignment.
+- Better alignment reduced rework in sprint two.
+- I use alignment language in interviews to show collaboration.
+
+**Relationships:**
+
+- **Synonyms:** cross-team agreement, shared direction
+- **Antonyms:** misalignment, conflicting expectations
+
+**Usage Notes:**
+
+- **Collocations:** align stakeholders, alignment update, alignment gap
+- **Register:** Professional
+
+## 🔍 API contract
+
+> **Pronunciation:** /ˌeɪ piː ˈaɪ ˈkɑntrækt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A clear agreement about request format, response shape, and error behavior.
+
+**Example Sentences:**
+
+- We confirmed the API contract before frontend coding.
+- API contract changes were shared with QA immediately.
+- A stable API contract reduces integration stress.
+
+**Relationships:**
+
+- **Synonyms:** interface agreement, endpoint spec
+- **Antonyms:** unclear API behavior, ad-hoc responses
+
+**Usage Notes:**
+
+- **Collocations:** define API contract, contract change, contract mismatch
+- **Register:** Technical
+
+## 🔍 dependency risk
+
+> **Pronunciation:** /dɪˈpɛndənsi rɪsk/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+The chance of delay or failure caused by teams or systems you rely on.
+
+**Example Sentences:**
+
+- Our biggest dependency risk was payment API delivery.
+- I flagged dependency risk in weekly planning.
+- Good risk language prevents last-minute panic.
+
+**Relationships:**
+
+- **Synonyms:** external risk, blocked-work risk
+- **Antonyms:** independent delivery, low dependency
+
+**Usage Notes:**
+
+- **Collocations:** flag dependency risk, risk mitigation, dependency owner
+- **Register:** Professional
+
+## 🔍 handoff note
+
+> **Pronunciation:** /ˈhændˌɔːf noʊt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A short document that transfers context from one team to another.
+
+**Example Sentences:**
+
+- We used handoff notes for design-to-engineering transitions.
+- QA requested one extra handoff note for edge cases.
+- Better handoff notes reduced Slack back-and-forth.
+
+**Relationships:**
+
+- **Synonyms:** transfer note, context brief
+- **Antonyms:** missing context, silent handoff
+
+**Usage Notes:**
+
+- **Collocations:** write handoff notes, handoff checklist, handoff quality
+- **Register:** Neutral
+
+## 🔍 UI state
+
+> **Pronunciation:** /ˌjuːˈaɪ steɪt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A visible condition in the interface such as loading, empty, success, or error.
+
+**Example Sentences:**
+
+- We listed all UI states before implementation.
+- QA found missing UI state handling in checkout.
+- UI states are easy to explain to non-technical teachers.
+
+**Relationships:**
+
+- **Synonyms:** interface state, screen condition
+- **Antonyms:** undefined behavior, inconsistent state
+
+**Usage Notes:**
+
+- **Collocations:** document UI states, state transition, missing state
+- **Register:** Technical, Neutral
+
+## 🔍 status message
+
+> **Pronunciation:** /ˈsteɪtəs ˈmɛsɪdʒ/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A short update that explains progress, blockers, and next step.
+
+**Example Sentences:**
+
+- I sent one status message at the end of each day.
+- Support team used the status message for customer replies.
+- Concise status messages build trust fast.
+
+**Relationships:**
+
+- **Synonyms:** progress update, team update
+- **Antonyms:** silence, unclear communication
+
+**Usage Notes:**
+
+- **Collocations:** send status messages, status format, daily status
+- **Register:** Neutral, Professional
+
+## 🔍 escalation path
+
+> **Pronunciation:** /ˌɛskəˈleɪʃən pæθ/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+The agreed process for raising urgent issues to the right owner.
+
+**Example Sentences:**
+
+- We created an escalation path for payment failures.
+- A clear escalation path reduced incident response time.
+- I include escalation path in system explanations.
+
+**Relationships:**
+
+- **Synonyms:** escalation route, urgent process
+- **Antonyms:** no owner, unclear route
+
+**Usage Notes:**
+
+- **Collocations:** define escalation path, follow escalation path, escalation owner
+- **Register:** Professional
+
+## 🔍 audience-aware language
+
+> **Pronunciation:** /ˈɔːdiəns əˈwɛr ˈlæŋɡwɪdʒ/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Using different words based on who is listening.
+
+**Example Sentences:**
+
+- I use audience-aware language in cross-team meetings.
+- With PM, I focus on impact, not low-level code.
+- This skill improved my interview communication.
+
+**Relationships:**
+
+- **Synonyms:** adapted communication, listener-focused language
+- **Antonyms:** one-style communication, technical overload
+
+**Usage Notes:**
+
+- **Collocations:** adapt language, audience-aware update, communication style
+- **Register:** Neutral
+
+## 🔍 risk visibility
+
+> **Pronunciation:** /rɪsk ˌvɪzəˈbɪləti/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Making key risks visible early so teams can act before release.
+
+**Example Sentences:**
+
+- We improved risk visibility with a weekly risk board.
+- PM appreciated early risk visibility during launch week.
+- Risk visibility helps avoid surprise delays.
+
+**Relationships:**
+
+- **Synonyms:** risk transparency, early warning
+- **Antonyms:** hidden risk, late surprises
+
+**Usage Notes:**
+
+- **Collocations:** increase risk visibility, risk log, visibility meeting
+- **Register:** Professional
 
 **Additional useful terms:**
 
-- **owner** /ˈoʊnər/ (n) - person responsible for a system area
-- **scope** /skoʊp/ (n) - boundaries of a project
-- **timeline** /ˈtaɪmˌlaɪn/ (n) - schedule of work
-- **constraint** /kənˈstreɪnt/ (n) - limit like time or budget
-- **alignment** /əˈlaɪnmənt/ (n) - shared understanding across teams
+**owner** _(noun)_ — person responsible for one part of work.
+Example: We assigned one owner for API integration.
+Collocations: assign owner, clear owner
+
+**timeline** _(noun)_ — schedule of key milestones.
+Example: We adjusted timeline after one dependency delay.
+Collocations: timeline update, timeline risk
+
+**constraint** _(noun)_ — limit like budget, people, or time.
+Example: Our main constraint was backend capacity.
+Collocations: key constraint, constraint planning
+
+**release note** _(noun phrase)_ — summary of changes in a launch.
+Example: Release notes helped support answer users faster.
+Collocations: write release notes, release note summary
+
+**brief doc** _(noun phrase)_ — short doc with context and decisions.
+Example: I wrote a brief doc before kickoff.
+Collocations: brief doc format, share brief doc
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Simple for system overview**  
-  Our platform handles user accounts, billing, and analytics.
+- **Present Simple for architecture explanations**
+  The request goes through API gateway, then reaches payment service.
 
-- **There is / There are for structure**  
-  There are three main services: auth, payments, and reporting.
+- **Sequencing language**
+  First we validate input, then we call the API, then we render the result.
 
-- **Passive voice for process**  
-  Tickets are reviewed by QA before release.
+- **Contrast language**
+  Engineers need technical detail, but PM needs impact and timeline.
 
-- **Purpose language (so that / in order to)**  
-  We use weekly syncs so that sales gets accurate timeline updates.
+- **Conditionals for dependency planning**
+  If backend delivery slips, frontend release also moves.
 
-- **Contrast (while / but)**  
-  Product focuses on speed, while QA focuses on risk.
+- **Passive voice for process clarity**
+  Risks are reviewed every Friday with all stakeholders.
 
-- **Conditionals for risk**  
-  If we skip alignment, we usually get rework later.
+- **Reflection language**
+  If I repeated this project, I would align earlier with support.
 
 ### Useful Sentence Patterns
 
-- At a high level, our system...
-- The main users are..., and they care about...
-- I communicate with... mainly about...
-- We keep it simple by...
-- One common issue is..., so we...
-- This helps us avoid...
+- At a high level, the system works like this...
+- The key stakeholders were...
+- One important dependency was...
+- The biggest communication risk was...
+- We solved this by...
+- The main lesson was...
 
 </details>
 
@@ -112,91 +316,80 @@ description: Describe your system at a high level and explain how you work with 
 
 ### Strong Collocations
 
-- explain system architecture
-- map user flow
-- clarify API contract
+- explain system flow
+- align key stakeholders
+- clarify API contracts
+- track dependency risks
+- write handoff notes
 - document UI states
-- map stakeholder needs
-- align product requirements
-- reduce handoff delays
-- manage cross-team dependencies
-- escalate production incidents
-- track timeline risks
-- avoid scope confusion
-- improve team alignment
-
-**Examples (real work):**
-
-- In one release, we used one user-flow diagram and one API contract summary to align product, QA, and support.
-- When one backend dependency slipped, we updated timeline and scope early, so no team was surprised at the end.
+- send status updates
+- escalate urgent blockers
+- improve risk visibility
+- adapt communication style
+- confirm release readiness
+- share concise summaries
 
 ### Useful Chunking & Sentence Starters
 
-- At a high level, the system...
-- From the user side,...
-- From the business side,...
-- Product cares about..., while QA cares about...
-- To keep everyone aligned,...
-- A real issue we faced was...
-- We solved it by...
-- The main lesson was...
-
-**Examples (using starters):**
-
-- "From the business side, support needed clear error behavior before launch, not deep service details."
-- "A real issue we faced was unclear wireframe ownership, so we added annotations before sprint planning."
+- At a high level, we had...
+- The user flow started with...
+- One dependency we tracked was...
+- For PM, I explained...
+- For engineering, I focused on...
+- The risk became clear when...
+- We aligned teams by...
+- The outcome was...
 
 ### Useful Phrasal Verbs
 
-- **depend on** -> This release depends on backend API changes.
-- **hand over** -> We hand over test notes to QA before release.
-- **sync up** -> I sync up with product twice a week.
-- **follow through** -> We follow through on action items after meetings.
-- **step in** -> I step in when communication between teams breaks down.
+- **hand off to** -> We handed off design notes to engineering.
+- **sync up with** -> I synced up with QA before release.
+- **flag up** -> We flagged up one major dependency risk.
+- **follow through on** -> I followed through on each stakeholder action item.
+- **map out** -> We mapped out the flow in one page.
 
 </details>
 
 <details open>
 <summary><strong>4) Dialogues</strong></summary>
 
-### Dialogue 1 - Explain the System
+### Dialogue 1
 
-**Interviewer:** Can you describe the system you work on?
+**Interviewer:** How do you explain system architecture to non-engineers?
 
-**You:**  
-At a high level, we have a frontend web app, a backend API, and one analytics service. Users browse products, add items to cart, and complete checkout in three clear steps.
+**You:**
+I start from user flow, not code. I explain what users do, what service responds, and where errors can happen.
 
-I keep this explanation simple because non-technical stakeholders care more about flow and risk than implementation details.
+Then I connect that flow to business impact, like checkout reliability.
 
-### Dialogue 2 - Working with Stakeholders
+### Dialogue 2
 
-**Interviewer:** How do you communicate with different teams?
+**Interviewer:** How do you handle stakeholder communication during delivery?
 
-**You:**  
-With product, I discuss scope and deadlines. With QA, I discuss bug risk and test plans. With sales, I share what is ready for clients and what is still in backlog.
+**You:**
+I send short weekly updates with three parts: progress, risk, and next step. I use different wording for PM, QA, and support.
 
-It takes extra time, but it reduces confusion and last-minute changes.
+The trade-off is spending more time on communication now, but avoiding confusion later.
 
-### Dialogue 3 - Handling Dependency Risk
+### Dialogue 3
 
-**Interviewer:** Tell me about a dependency problem.
+**Interviewer:** What did you do when one dependency was delayed?
 
-**You:**  
-We were waiting for a backend endpoint, and frontend work was blocked. I proposed a mock API so we could continue UI work and testing.
+**You:**
+In one release, backend API was delayed by one week. We used a mock API to continue frontend work and updated timeline early.
 
-We moved faster, but we still rechecked everything when the real API arrived to avoid regression.
+Because we escalated quickly, final launch delay was minimal.
 
 </details>
-
 
 <details open>
 <summary><strong>5) Debate Prompt</strong></summary>
 
-**When talking to non-engineers, should you simplify the technical details or keep them accurate?**
+**For system communication, is it better to share full technical detail with everyone or tailor the message by audience?**
 
-**Side A:** If you oversimplify, people make wrong decisions because they don't understand the real constraints. It's better to spend more time explaining things correctly than to be misunderstood.
+**Side A:** Sharing full detail with everyone avoids information gaps. If all teams see the same technical facts, decisions are more transparent.
 
-**Side B:** Most non-engineers don't need every detail. If you keep it simple and focused on impact, they understand faster and trust you more. Too many technical terms just confuse people.
+**Side B:** Tailored communication is more practical. Different stakeholders need different detail levels, and too much technical depth can slow decisions.
 
 _Your turn: Which side do you agree with more? Why?_
 
@@ -205,11 +398,11 @@ _Your turn: Which side do you agree with more? Why?_
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
-Engineers often explain systems to people who are not technical. In that case, clear language is more important than deep detail. You can describe the system as a flow: input, process, output, and business result.
+Strong engineers do not only build systems. They also explain systems clearly to different people. PM needs scope and timeline. QA needs edge cases. Support needs customer-facing risks.
 
-Stakeholder communication is also part of engineering work. Product needs timeline clarity. QA needs risk details. Sales needs release confidence. If these groups are not aligned, teams lose time in rework and urgent fixes.
+When communication is unclear, even good code can fail in delivery. That is why simple system flow diagrams, short handoff notes, and regular status updates are so useful.
 
-A strong answer in interviews shows both technical understanding and communication skill. Keep it practical and use one real case.
+In interviews, if you can explain one system and one stakeholder challenge clearly, your answers sound practical and mature.
 
 </details>
 
@@ -218,35 +411,33 @@ A strong answer in interviews shows both technical understanding and communicati
 
 ### Core Questions (must-practice)
 
-1. How do you describe your system in 60-90 seconds to a non-engineer?
-2. Which stakeholders were critical in your last release, and what did each one need?
-3. How do you turn a wireframe into clear engineering questions?
-4. How do you summarize a brief doc before planning starts?
+1. How would you explain your current system flow in under 90 seconds?
+2. Which stakeholder is hardest for you to communicate with, and why?
+3. What dependency risk have you faced in a real project?
+4. What should a good status update include?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of one shared project brief?
-6. When is async communication better than meetings, and when is it risky?
-7. How does stakeholder communication quality affect engineering learning and decision speed?
+5. What are the benefits and limits of one communication style for all stakeholders?
+6. How does stakeholder communication differ between beginner and experienced engineers?
+7. When should teams escalate risk early, even before full evidence exists?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You prefer async updates. How do you prevent misunderstandings from growing?
-9. If PM and engineering read the same wireframe differently, who should resolve scope first?
-10. If your architecture is correct but stakeholders are confused, what did you miss?
+8. You said short updates are better. What important detail might be missed?
+9. You said mock APIs help. What quality risks can this create?
+10. If stakeholders disagree on priority, how do you choose the final direction?
 
 ### Reflection Questions
 
-11. Which stakeholder is hardest for you to communicate with, and why?
-12. What communication habit improved your project outcomes the most?
-13. In the future, will strong engineers be defined more by coding skill or alignment skill?
+11. Which part of system explanation is hardest for you in English?
+12. What communication habit will you improve this month?
+13. In the future, will technical depth or stakeholder clarity matter more in senior roles?
 
 **Tips for speaking practice:**
 
-- Start with one real project handoff instead of abstract theory.
-- Name the trade-off clearly: detail depth vs decision speed.
-- Use plain language first, then add one technical term if needed.
-
----
+- Use one real flow and one real dependency case.
+- Keep speaking structure: flow -> risk -> action -> result.
+- Practice one 60-90 second stakeholder update aloud.
 
 </details>
