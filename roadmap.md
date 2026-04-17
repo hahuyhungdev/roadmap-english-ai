@@ -104,12 +104,13 @@
 - Out of scope: Live outage communication.
 - Required output: 1 RCA timeline + 1 impact statement with numbers.
 
-### Session 09 - Incident Under Pressure
+### Session 09 - Scaling Systems Under Real Constraints
 
-- Focus: Communication quality during outages.
-- In scope: Real-time updates, coordination, escalation, rollback messaging.
-- Out of scope: Deep technical diagnosis.
-- Required output: 3 status updates for engineers, PM/support, and leadership.
+- Focus: Explain how to scale reliably under budget, timeline, and team limits.
+- In scope: Bottleneck identification, capacity planning, cost-performance trade-offs,
+  phased scaling, and stakeholder alignment.
+- Out of scope: Live outage war-room communication.
+- Required output: 1 scaling constraint map + 1 phased scaling plan + 1 90-second interview answer.
 
 ### Session 10 - Defending Decisions
 
@@ -137,12 +138,13 @@
 - Out of scope: Identity crisis and life meaning.
 - Required output: 7-day energy log + 3 boundary phrases.
 
-### Session 13 - Comparison, Jealousy & Self-Worth
+### Session 13 - Career Comparison & Imposter Syndrome
 
-- Focus: Imposter feelings in peer comparison.
-- In scope: Jealousy triggers, confidence repair, realistic self-evaluation.
-- Out of scope: Online personal branding.
-- Required output: 90-second honest answer to "I felt behind my peers".
+- Focus: Handle career comparison pressure without losing direction.
+- In scope: Imposter triggers, confidence repair, realistic benchmarks,
+  and healthier progress framing.
+- Out of scope: Personal branding strategy.
+- Required output: 90-second honest answer to "I felt behind my peers" + 1 personal benchmark reset note.
 
 ### Session 14 - Fake Identity & Authentic Personal Brand
 
@@ -172,19 +174,21 @@
 - Out of scope: Burnout diagnostics.
 - Required output: 1 distraction audit + 1 weekly deep-work plan.
 
-### Session 18 - Loneliness & Human Connection vs Tech
+### Session 18 - Human Connection in Remote Work
 
-- Focus: Isolation in remote/digital life.
-- In scope: Social drift, connection habits, meaningful conversation.
-- Out of scope: Cross-cultural async communication tactics.
-- Required output: 1 weekly connection routine + 1 honest check-in script.
+- Focus: Build real connection and belonging in remote teams.
+- In scope: Isolation signals in remote work, trust rituals,
+  meaningful check-ins, and team belonging habits.
+- Out of scope: Deep async process design.
+- Required output: 1 weekly human-connection routine + 1 team check-in script.
 
-### Session 19 - Moral Gray Areas, Crime & Punishment
+### Session 19 - Environmental Responsibility in Software Engineering
 
-- Focus: Rule-bending, ethical lines, and consequences.
-- In scope: Data misuse, falsified reporting, pressure to hide mistakes, escalation.
-- Out of scope: Generic motivational talk.
-- Required output: 1 red-line checklist + 1 decision tree for escalation.
+- Focus: Balance product delivery with environmental impact.
+- In scope: Energy-efficient design choices, cloud/resource usage,
+  performance vs carbon trade-offs, and practical green engineering habits.
+- Out of scope: Broad climate policy debates without engineering action.
+- Required output: 1 engineering sustainability checklist + 1 green trade-off decision note.
 
 ---
 
@@ -245,13 +249,13 @@
 
 - Core IT-business foundation (Sessions 01-05): explicit and no longer implicit
 - Mental health: Session 12
-- Jealousy/comparison: Session 13
+- Career comparison + imposter syndrome: Session 13
 - Fake identity: Session 14
 - Bullying/exclusion: Session 15
 - Success pressure: Session 16
 - Attention/distraction: Session 17
-- Loneliness + connection vs tech: Session 18
-- Moral gray areas + crime/punishment: Session 19
+- Human connection in remote work: Session 18
+- Environmental responsibility in software engineering: Session 19
 - Interview-ready developer language and trade-offs: Sessions 07-11, 20-24
 
 ---
@@ -267,8 +271,8 @@
 - Session 13 != Session 14: inner comparison vs external persona.
 - Session 15 != Session 20: bullying safety/escalation vs normal conflict handling.
 - Session 16 != Session 24: life pressure vs workplace compensation/feedback.
-- Session 18 != Session 23: loneliness/connection habits vs motivation/value fit.
-- Session 19 != Session 21: ethical red lines vs proactive ownership.
+- Session 18 != Session 23: remote connection/belonging habits vs motivation/value fit.
+- Session 19 != Session 21: sustainability trade-offs vs proactive ownership.
 
 ---
 

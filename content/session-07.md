@@ -1,110 +1,385 @@
 ---
 sessionNumber: 7
-title: Project Walkthrough (NEW)
-topic: Explain One Project End-to-End: Problem, System, Role, Impact
+title: Privacy-Aware Product Decisions & Algorithmic Influence
+topic: Data Privacy vs Product Innovation + Social Media Algorithm Impact
 phase: PHASE 1 - TECH & BUSINESS
 level: B1-B2
-description: Cover one real project only: business problem, system flow, your ownership, trade-off, measurable result, and lesson learned.
+description: Explain how you make product decisions that use data for growth while protecting user privacy and social trust.
 ---
 
-# Session 7: Project Walkthrough (NEW)
+# Session 7: Privacy-Aware Product Decisions & Algorithmic Influence
 
-**Level:** B1-B2  
-**Focus:** Explain one project end-to-end: problem -> system -> role -> impact.
-**Scope:** Cover one real project only: business problem, system flow, your ownership, trade-off, measurable result, and lesson learned.
+**Level:** B1-B2
+**Focus:** Speak clearly about product growth decisions, privacy boundaries, and how recommendation algorithms affect people.
 
 <details open>
-<summary><strong>1) Vocabulary </strong></summary>
+<summary><strong>1) Vocabulary</strong></summary>
 
-- **project scope** /ˈprɑːdʒɛkt skoʊp/ (n) - what is included and excluded in the project  
-  _Example 1:_ We kept project scope small for the first checkout release.  
-  _Example 2:_ Scope was documented in a short brief before sprint planning.  
-  _Example 3:_ In interviews, I explain both what we built and what we postponed.
+## 🔍 data minimization
 
-- **business problem** /ˈbɪznəs ˈprɑːbləm/ (n) - the real company or user issue to solve  
-  _Example 1:_ The business problem was high checkout drop-off on mobile devices.  
-  _Example 2:_ We validated the problem with funnel metrics before coding.  
-  _Example 3:_ A clear business problem made stakeholder decisions faster.
+> **Pronunciation:** /ˈdeɪtə ˌmɪnəməˈzeɪʃən/ — American English accent
+> **Part of Speech:** noun phrase
 
-- **system flow** /ˈsɪstəm floʊ/ (n) - how data or actions move through the system  
-  _Example 1:_ I used one simple diagram to explain system flow from UI to payment API.  
-  _Example 2:_ This helped QA identify missing edge cases earlier.  
-  _Example 3:_ I now include system flow in every major project walkthrough.
+**Definition:**
+Collect only the data you truly need for one clear purpose.
 
-- **my role** /maɪ roʊl/ (n phrase) - your specific responsibility in the project  
-  _Example 1:_ My role was frontend lead for checkout and form validation logic.  
-  _Example 2:_ I coordinated weekly with backend on API contract changes.  
-  _Example 3:_ In interviews, I separate my role from team-wide decisions.
+**Example Sentences:**
 
-- **constraint** /kənˈstreɪnt/ (n) - a limit such as time, budget, or resources  
-  _Example 1:_ The main constraint was a six-week deadline before a campaign launch.  
-  _Example 2:_ We also had one backend engineer shared across two projects.  
-  _Example 3:_ I mention constraints early so interview stories sound realistic.
+- We used data minimization and removed two fields from signup.
+- In our app, data minimization reduced legal and security risk.
+- I now apply data minimization to personal finance apps I use.
 
-- **trade-off** /ˈtreɪd ɔːf/ (n) - a choice where you gain one thing and lose another  
-  _Example 1:_ We accepted a smaller feature set to reduce release risk.  
-  _Example 2:_ We launched core validation first and delayed advanced coupon rules.  
-  _Example 3:_ This trade-off improved stability but postponed one marketing request.
+**Relationships:**
 
-- **execution plan** /ˌɛksɪˈkjuːʃən plæn/ (n) - step-by-step approach to deliver work  
-  _Example 1:_ Our execution plan had three milestones and clear owners.  
-  _Example 2:_ Each milestone had acceptance criteria and release risk checks.  
-  _Example 3:_ A clear execution plan reduced cross-team confusion during launch.
+- **Synonyms:** limited collection, minimal data use
+- **Antonyms:** data hoarding, over-collection
 
-- **impact metric** /ˈɪmpækt ˈmɛtrɪk/ (n) - a number that shows business result  
-  _Example 1:_ Conversion rate was our main impact metric after release.  
-  _Example 2:_ We also tracked failed payment rate and support ticket volume.  
-  _Example 3:_ Impact metrics made our project story more credible in interviews.
+**Usage Notes:**
 
-- **stakeholder update** /ˈsteɪkˌhoʊldər ˈʌpˌdeɪt/ (n) - progress message shared with key people  
-  _Example 1:_ I sent a stakeholder update every Friday with status, risk, and next step.  
-  _Example 2:_ PM used those updates to align launch communication with sales.  
-  _Example 3:_ Good updates prevented last-minute scope changes.
+- **Collocations:** data minimization policy, apply data minimization, practice data minimization
+- **Register:** Neutral, Professional
 
-- **lesson learned** /ˈlɛsən lɝːnd/ (n) - practical takeaway after project completion  
-  _Example 1:_ One lesson learned was to involve QA earlier in API change reviews.  
-  _Example 2:_ Another lesson was to keep brief docs updated after scope changes.  
-  _Example 3:_ I end project answers with one lesson learned and one next action.
+## 🔍 user consent
+
+> **Pronunciation:** /ˈjuːzər kənˈsɛnt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Permission from users before collecting or using their personal data.
+
+**Example Sentences:**
+
+- We ask for user consent before enabling personalized feed ranking.
+- Our team rewrote the popup so user consent language became clearer.
+- I usually check if apps let me change consent settings later.
+
+**Relationships:**
+
+- **Synonyms:** user permission, opt-in approval
+- **Antonyms:** forced tracking, silent collection
+
+**Usage Notes:**
+
+- **Collocations:** ask for consent, withdraw consent, consent banner
+- **Register:** Neutral, Legal-Professional
+
+## 🔍 default settings
+
+> **Pronunciation:** /dɪˈfɔːlt ˈsɛtɪŋz/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+The pre-selected options users get before they change anything.
+
+**Example Sentences:**
+
+- We changed default settings so tracking was off for optional analytics.
+- Bad default settings can increase growth short term but hurt trust later.
+- I prefer tools with privacy-friendly default settings.
+
+**Relationships:**
+
+- **Synonyms:** preset options, preselected choices
+- **Antonyms:** custom settings, manual configuration
+
+**Usage Notes:**
+
+- **Collocations:** privacy-friendly defaults, review default settings, change defaults
+- **Register:** Neutral
+
+## 🔍 recommendation engine
+
+> **Pronunciation:** /ˌrɛkəmenˈdeɪʃən ˈɛn.dʒən/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A system that suggests content based on user behavior and signals.
+
+**Example Sentences:**
+
+- Our recommendation engine increased watch time in the first month.
+- The recommendation engine also created a narrow content loop for some users.
+- News apps use a recommendation engine to keep people engaged longer.
+
+**Relationships:**
+
+- **Synonyms:** ranking system, suggestion system
+- **Antonyms:** chronological feed, random feed
+
+**Usage Notes:**
+
+- **Collocations:** tune the engine, engine output, recommendation quality
+- **Register:** Technical, Neutral
+
+## 🔍 engagement metric
+
+> **Pronunciation:** /ɛnˈɡeɪdʒmənt ˈmɛtrɪk/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A number that shows how actively users interact with a product.
+
+**Example Sentences:**
+
+- Time-on-feed was our main engagement metric.
+- We paired each engagement metric with one trust metric.
+- I learned that one high engagement metric can hide user frustration.
+
+**Relationships:**
+
+- **Synonyms:** activity metric, interaction metric
+- **Antonyms:** inactivity signal, drop-off signal
+
+**Usage Notes:**
+
+- **Collocations:** track engagement metrics, engagement trend, key engagement metric
+- **Register:** Professional
+
+## 🔍 guardrail metric
+
+> **Pronunciation:** /ˈɡɑːrdˌreɪl ˈmɛtrɪk/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A safety metric that prevents harmful side effects while optimizing growth.
+
+**Example Sentences:**
+
+- We used mute-rate as a guardrail metric for recommendation quality.
+- A good guardrail metric helped us stop one risky experiment.
+- Even in daily life, I use simple guardrails like screen-time limits.
+
+**Relationships:**
+
+- **Synonyms:** safety metric, protection metric
+- **Antonyms:** vanity metric, unchecked metric
+
+**Usage Notes:**
+
+- **Collocations:** set guardrail metrics, monitor guardrails, guardrail threshold
+- **Register:** Professional
+
+## 🔍 filter bubble
+
+> **Pronunciation:** /ˈfɪltər ˈbʌbəl/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A situation where users mostly see content similar to their current views.
+
+**Example Sentences:**
+
+- Our team discussed filter bubble risk during feed redesign.
+- A strong filter bubble can increase retention but reduce viewpoint diversity.
+- I noticed my own filter bubble when I stopped seeing opposite opinions.
+
+**Relationships:**
+
+- **Synonyms:** echo chamber, narrow feed
+- **Antonyms:** diverse feed, balanced exposure
+
+**Usage Notes:**
+
+- **Collocations:** create a filter bubble, bubble effect, reduce bubble risk
+- **Register:** Neutral, Discussion
+
+## 🔍 trust erosion
+
+> **Pronunciation:** /trʌst ɪˈroʊʒən/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+The gradual loss of user confidence in a product or platform.
+
+**Example Sentences:**
+
+- Hidden tracking can cause trust erosion over time.
+- We accepted slower growth to avoid trust erosion.
+- After one privacy scandal, trust erosion affected how I choose apps.
+
+**Relationships:**
+
+- **Synonyms:** trust decline, confidence loss
+- **Antonyms:** trust building, confidence growth
+
+**Usage Notes:**
+
+- **Collocations:** prevent trust erosion, signs of trust erosion, erosion risk
+- **Register:** Professional
+
+## 🔍 transparency note
+
+> **Pronunciation:** /trænsˈpɛrənsi noʊt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A short message that explains what data is used and why.
+
+**Example Sentences:**
+
+- We added a transparency note under the recommendation toggle.
+- The transparency note reduced support questions about tracking.
+- I appreciate apps that give a plain-language transparency note.
+
+**Relationships:**
+
+- **Synonyms:** clear notice, plain-language disclosure
+- **Antonyms:** vague message, hidden policy
+
+**Usage Notes:**
+
+- **Collocations:** write a transparency note, clear transparency note, user-facing note
+- **Register:** Neutral
+
+## 🔍 surveillance capitalism
+
+> **Pronunciation:** /sərˈveɪləns ˈkæpɪtəˌlɪzəm/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A business model where companies profit by collecting and using large amounts of behavior data.
+
+**Example Sentences:**
+
+- In class, we debated whether surveillance capitalism is sustainable.
+- Critics say surveillance capitalism weakens public trust in tech companies.
+- Many users only notice surveillance capitalism after a major data leak.
+
+**Relationships:**
+
+- **Synonyms:** data extraction model, behavior-data economy
+- **Antonyms:** privacy-first model, subscription-first model
+
+**Usage Notes:**
+
+- **Collocations:** critique surveillance capitalism, model of surveillance capitalism, surveillance capitalism debate
+- **Register:** Formal, Discussion
+
+## 🔍 responsible rollout
+
+> **Pronunciation:** /rɪˈspɑːnsəbəl ˈroʊlˌaʊt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Launching a feature gradually while checking privacy and social impact.
+
+**Example Sentences:**
+
+- We planned a responsible rollout for personalized ranking.
+- A responsible rollout included holdout groups and trust checks.
+- In interviews, I mention responsible rollout to show balanced thinking.
+
+**Relationships:**
+
+- **Synonyms:** careful launch, phased release
+- **Antonyms:** rushed launch, blind release
+
+**Usage Notes:**
+
+- **Collocations:** responsible rollout plan, run a responsible rollout, rollout safeguards
+- **Register:** Professional
+
+## 🔍 meaningful choice
+
+> **Pronunciation:** /ˈmiːnɪŋfəl tʃɔɪs/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+An option that users can understand and control without confusion.
+
+**Example Sentences:**
+
+- We redesigned privacy controls to give users meaningful choice.
+- Without meaningful choice, consent looks legal but feels unfair.
+- I stay with products that give me meaningful choice, not forced options.
+
+**Relationships:**
+
+- **Synonyms:** real control, clear option
+- **Antonyms:** dark pattern, fake choice
+
+**Usage Notes:**
+
+- **Collocations:** provide meaningful choice, meaningful choice design, preserve choice
+- **Register:** Neutral, Product
+
+## 🔍 social spillover
+
+> **Pronunciation:** /ˈsoʊʃəl ˈspɪlˌoʊvər/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+When product decisions in an app affect behavior outside the app.
+
+**Example Sentences:**
+
+- We discussed social spillover when ranking angry content higher.
+- Social spillover can include offline arguments and misinformation spread.
+- At home, I saw social spillover when my relatives shared low-quality posts.
+
+**Relationships:**
+
+- **Synonyms:** outside effect, societal side effect
+- **Antonyms:** isolated impact, contained effect
+
+**Usage Notes:**
+
+- **Collocations:** social spillover effect, monitor spillover, reduce spillover risk
+- **Register:** Discussion, Professional
 
 **Additional useful terms:**
 
-- **milestone** /ˈmaɪlˌstoʊn/ (n) - key checkpoint in a project timeline
-- **timeline risk** /ˈtaɪmˌlaɪn rɪsk/ (n) - chance the project schedule slips
-- **handoff** /ˈhændˌɔːf/ (n) - transfer of work across teams
-- **rollout plan** /ˈroʊlˌaʊt plæn/ (n) - staged release approach
-- **success criteria** /səkˈsɛs kraɪˈtɪriə/ (n) - clear conditions for success
+**opt-out** _(verb/noun)_ — choose not to join data collection.
+Example: We made it easy to opt out of personalized ads.
+Collocations: opt out, opt-out option
+
+**ranking signal** _(noun)_ — input used to decide what content appears first.
+Example: Watch time is one ranking signal, but it is not enough alone.
+Collocations: ranking signal weight, add ranking signals
+
+**privacy-by-design** _(noun phrase)_ — include privacy thinking from the first product draft.
+Example: Privacy-by-design helped us avoid rework before launch.
+Collocations: privacy-by-design approach, apply privacy-by-design
+
+**content moderation** _(noun phrase)_ — reviewing and controlling harmful or false content.
+Example: Better content moderation lowered abusive comments in one quarter.
+Collocations: content moderation policy, moderation queue
+
+**public trust** _(noun phrase)_ — confidence that society has in a platform or company.
+Example: Public trust dropped after unclear data-sharing news.
+Collocations: build public trust, lose public trust
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Past Simple for project timeline**  
-  We launched the first version in June.
+- **Contrast for trade-offs (while / whereas)**
+  We improved engagement, while keeping optional tracking off by default.
 
-- **Cause and result**  
-  Because checkout was slow, conversion dropped.
+- **Conditionals for consequences (if / unless)**
+  If we maximize watch time only, we may increase harmful content exposure.
 
-- **Contrast language**  
-  We wanted full scope, but we had a hard deadline.
+- **Purpose language (so that / in order to)**
+  We added plain consent text so that users understand what they accept.
 
-- **Sequence language**  
-  First we validated assumptions, then we built, then we measured impact.
+- **Hedging for responsible claims (can / may / might)**
+  This ranking change may improve retention, but it might reduce content diversity.
 
-- **Ownership language**  
-  I led the frontend implementation and coordinated with backend.
+- **Cause and effect with nouns**
+  Higher personalization led to stronger engagement but also more filter-bubble risk.
 
-- **Reflection language**  
-  If I did it again, I would involve support team earlier.
+- **Reflection language for interviews**
+  Looking back, I would add guardrail metrics earlier in the experiment.
 
 ### Useful Sentence Patterns
 
-- The project started because...
-- The main problem was...
-- My role in this project was...
-- The biggest constraint was...
-- We chose... instead of... because...
-- The measurable impact was...
+- We decided to collect... because...
+- To protect user trust, we...
+- The growth benefit was..., but the privacy risk was...
+- One guardrail we used was...
+- If I had to redesign it, I would...
+- In interviews, I explain this as a balance between... and...
 
 </details>
 
@@ -113,91 +388,80 @@ description: Cover one real project only: business problem, system flow, your ow
 
 ### Strong Collocations
 
-- define project scope
-- explain business problem
-- map system flow
-- align cross-team work
-- manage delivery risk
-- prioritize core features
-- communicate progress clearly
-- execute rollout plan
-- measure business impact
-- report key metrics
-- summarize lessons learned
-- present end-to-end story
-
-**Examples (real work):**
-
-- In one project, we aligned brief doc, wireframe notes, and API contract before implementation.
-- This reduced rework during QA and made final impact reporting much clearer.
+- protect user privacy
+- ask for consent clearly
+- reduce data collection
+- tune ranking signals
+- monitor guardrail metrics
+- prevent trust erosion
+- avoid dark patterns
+- explain data usage
+- measure social impact
+- balance growth and safety
+- launch with holdout groups
+- review default settings
 
 ### Useful Chunking & Sentence Starters
 
-- Let me walk you through one project...
-- The business problem we saw was...
-- At a high level, the system worked like this...
-- My role was mainly...
-- A key constraint was...
-- The trade-off we accepted was...
-- The measurable result was...
-- The biggest lesson for me was...
-
-**Examples (using starters):**
-
-- "Let me walk you through one project: we reduced checkout failures by simplifying validation flow."
-- "The trade-off we accepted was delaying one advanced feature so we could launch stable core flow first."
+- In this feature, the core trade-off was...
+- We chose a smaller data scope because...
+- From a business view, this helped...
+- From a user-trust view, this was risky because...
+- One thing we did to reduce risk was...
+- The algorithm performed well on..., but weakly on...
+- The long-term concern is...
+- My final decision was...
 
 ### Useful Phrasal Verbs
 
-- **walk through** -> Let me walk through the project from problem to result.
-- **line up** -> We lined up QA and support before rollout.
-- **roll out** -> We rolled out the change to 20% of users first.
-- **follow up** -> I followed up with product after launch metrics came in.
-- **wrap up** -> I wrapped up the project with a short lesson-learned note.
+- **opt out** -> Users can opt out of personalized ranking anytime.
+- **cut down on** -> We cut down on tracking fields in the onboarding flow.
+- **phase in** -> We phased in the new recommendation model by user segment.
+- **call out** -> Our PM called out trust risk in the weekly review.
+- **push back on** -> I pushed back on collecting contact lists without clear value.
 
 </details>
 
 <details open>
 <summary><strong>4) Dialogues</strong></summary>
 
-### Dialogue 1 - End-to-End Story
+### Dialogue 1 - Product Design Decision
 
-**Interviewer:** Can you walk me through one project you are proud of?
+**Interviewer:** How do you balance product growth with user privacy?
 
-**You:**  
-Sure. We had a business problem: too many users dropped at checkout. At a high level, our system had a frontend form, payment API, and fraud check service.
+**You:**
+In one feed project, we wanted better engagement, but we avoided collecting location history because it was not essential. We only used in-app behavior and gave users a clear opt-out option.
 
-My role was to redesign the frontend flow and coordinate with backend on validation. We launched in phases and conversion improved by 11% in six weeks.
+Growth was slightly slower in week one, but complaint volume dropped and trust scores stayed stable.
 
-### Dialogue 2 - Role and Trade-off
+### Dialogue 2 - Algorithm Impact Discussion
 
-**Interviewer:** What trade-off did your team make?
+**Interviewer:** What social risk do you consider when working with recommendation systems?
 
-**You:**  
-We wanted to release all improvements at once, but the deadline was tight. We chose a smaller scope with lower risk first.
+**You:**
+I watch for filter-bubble risk. If users only see one type of content, short-term watch time can rise, but social understanding can get worse.
 
-It was not perfect, but we delivered on time and avoided major regressions.
+So we added a diversity guardrail metric and tested a mixed-content strategy before full rollout.
 
-### Dialogue 3 - Reflection
+### Dialogue 3 - Stakeholder Pushback
 
-**Interviewer:** What did you learn from this project?
+**Interviewer:** What if leadership asks for aggressive tracking to hit quarterly targets?
 
-**You:**  
-I learned that clear weekly updates reduce confusion and speed up decisions. I also learned to involve QA earlier for edge cases.
+**You:**
+I would not reject it emotionally. I would show two options: fast growth with higher privacy risk, or moderate growth with lower risk and better long-term trust.
 
-So next time, I would keep the same rollout strategy but improve cross-team alignment from week one.
+In a past case, leadership accepted the second option after we showed churn risk from trust loss.
 
 </details>
-
 
 <details open>
 <summary><strong>5) Debate Prompt</strong></summary>
 
-**In an interview walkthrough, should you focus more on your technical decisions or the business impact?**
+**Should software companies prioritize engagement growth even if algorithmic personalization increases privacy and social risks?**
 
-**Side A:** Interviewers at tech companies care most about how you think technically — your architecture choices, how you handled edge cases, and why you made certain tradeoffs. Business impact is secondary.
+**Side A:** Without strong engagement, products cannot survive. If the company fails, there is no product to improve. Controlled personalization is acceptable if users can opt out.
 
-**Side B:** Hundreds of candidates can describe their architecture. If you connect your work to a real business result — fewer errors, faster load time, higher conversion — your story stands out and is easier to remember.
+**Side B:** If engagement growth depends on heavy tracking and addictive ranking, society pays the cost. People may lose trust, and public conversation becomes more extreme over time.
 
 _Your turn: Which side do you agree with more? Why?_
 
@@ -206,11 +470,11 @@ _Your turn: Which side do you agree with more? Why?_
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
-A strong project walkthrough is not a long technical explanation. It is a simple story with four parts: problem, system, role, and impact.
+Many product teams say they need more data to improve user experience. That is often true. Better signals can help ranking, search, and personalization feel more useful.
 
-Interviewers want to see how you think, how you work with others, and how your work creates business value. That is why one clear metric is often better than ten technical details.
+But data decisions are never only technical. The same feature that improves engagement can also create privacy risk, filter bubbles, or user fatigue. That is why strong teams track both growth metrics and trust metrics.
 
-When you practice, keep it practical. Use one real project, one real trade-off, and one clear lesson learned.
+In interviews, a strong answer is practical: explain what data you collected, what you rejected, what guardrails you used, and what happened after launch. This shows business thinking and ethical judgment at the same time.
 
 </details>
 
@@ -219,35 +483,33 @@ When you practice, keep it practical. Use one real project, one real trade-off, 
 
 ### Core Questions (must-practice)
 
-1. Walk me through one project from problem to impact in 2 minutes.
-2. What was your exact ownership, and what decisions were yours?
-3. How did brief docs, wireframes, or API contracts shape project execution?
-4. Which metric best showed that your project worked?
+1. In a real product you know, what data is necessary and what data feels excessive?
+2. How would you explain a privacy trade-off to a non-technical teacher or PM?
+3. Which default privacy settings should be on from day one, and why?
+4. What is one simple guardrail metric you would add for a recommendation feature?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of using one structured story format in interviews?
-6. When does technical depth help your project story, and when does it confuse listeners?
-7. How does storytelling quality affect career growth for beginners vs experienced engineers?
+5. What are the benefits and limits of personalization for beginner users versus experienced users?
+6. When does engagement optimization improve user value, and when does it become manipulation?
+7. How can companies measure social impact without making product decisions too slow?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You said the project succeeded. Which trade-off created hidden long-term cost?
-9. If your metric improved but user complaints still increased, how would you explain that?
-10. If another teammate describes the project differently, whose version is more reliable and why?
+8. You said users can opt out, but what if the option is hard to find?
+9. You said watch time improved. How do you know this is real value, not addiction?
+10. If privacy-safe design reduces short-term revenue, should a startup still choose it?
 
 ### Reflection Questions
 
-11. Which part of your project story sounds weakest in English right now?
-12. What changed in how you present impact after practicing this framework?
-13. In future interviews, will decision quality matter more than technical detail?
+11. Which part is hardest for you to explain in English: consent, risk, or social impact?
+12. How has this topic changed the way you evaluate apps you use every day?
+13. In five years, will engineers be judged more by growth outcomes or by trust outcomes?
 
 **Tips for speaking practice:**
 
-- Keep the flow simple: problem -> constraints -> decision -> impact.
-- Add one artifact reference (brief, wireframe, or API contract) to sound concrete.
-- End with one lesson that changed your next project behavior.
-
----
+- Use one real feature example and one real trade-off in every answer.
+- Keep your structure simple: goal -> data choice -> risk -> safeguard -> result.
+- Practice one 60-90 second answer that includes both business value and user trust.
 
 </details>

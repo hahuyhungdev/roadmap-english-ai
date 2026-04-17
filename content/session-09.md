@@ -1,110 +1,313 @@
 ---
 sessionNumber: 9
-title: Incident Under Pressure
-topic: Real-Time Outage Handling and Team Coordination
+title: Scaling Systems Under Real Constraints
+topic: Scaling Reliability Under Budget, Timeline, and Team Limits
 phase: PHASE 2 - ANALYTICAL THINKING IN IT
 level: B1-B2
-description: Talk about real-time response: role in outage, coordination, status updates, escalation, rollback, and post-incident follow-up.
+description: Explain how you scale systems with limited budget, strict deadlines, and realistic team capacity.
 ---
 
-# Session 9: Incident Under Pressure
+# Session 9: Scaling Systems Under Real Constraints
 
-**Level:** B1-B2  
-**Focus:** Handling outages + clear communication under stress.
-**Scope:** Talk about real-time response: role in outage, coordination, status updates, escalation, rollback, and post-incident follow-up.
+**Level:** B1-B2
+**Focus:** Explain practical scaling decisions when money, time, and people are limited.
 
 <details open>
-<summary><strong>1) Vocabulary </strong></summary>
+<summary><strong>1) Vocabulary</strong></summary>
 
-- **outage** /ˈaʊtədʒ/ (n) - period when service is down  
-  _Example 1:_ We had a major outage during a seasonal campaign launch.  
-  _Example 2:_ My first task was opening a response channel and assigning roles.  
-  _Example 3:_ In interviews, I describe outage handling in time order.
+## 🔍 bottleneck
 
-- **on-call** /ˈɑn kˈɔl/ (adj/n) - engineer responsible for urgent issues  
-  _Example 1:_ I was on-call when alerts fired at 2:10 AM.  
-  _Example 2:_ On-call ownership included triage, coordination, and clear updates.  
-  _Example 3:_ We improved on-call handover to reduce response delays.
+> **Pronunciation:** /ˈbɑːtəlˌnɛk/ — American English accent
+> **Part of Speech:** noun
 
-- **incident commander** /ˈɪnsədənt kəmˈændɚ/ (n) - person coordinating incident response  
-  _Example 1:_ The incident commander assigned one owner for each response stream.  
-  _Example 2:_ This reduced duplicate messages and confusion in the first 20 minutes.  
-  _Example 3:_ Clear command structure lowered stress for the whole team.
+**Definition:**
+The slowest part of a system that limits overall performance.
 
-- **bridge call** /bɹˈɪdʒ kˈɔl/ (n) - live call for incident coordination  
-  _Example 1:_ We started a bridge call for engineering, support, and product leads.  
-  _Example 2:_ One person spoke to customers, while engineers focused on service restore.  
-  _Example 3:_ Bridge calls work best with short, structured updates.
+**Example Sentences:**
 
-- **update frequency** /ˈʌpdeɪt ˈfriːkwənsi/ (n) - how often you send status messages during an incident  
-  _Example 1:_ We agreed on a 15-minute update frequency during the outage.  
-  _Example 2:_ Regular updates kept stakeholders calm and stopped interruptions.  
-  _Example 3:_ Update frequency matters more than length — short and on-time wins.
+- Our main bottleneck was the database write queue.
+- We removed one API bottleneck by adding caching for repeated requests.
+- Traffic got worse at night because one hidden bottleneck was never fixed.
 
-- **status update** /ˈsteɪtəs ˈʌpdeɪt/ (n) - short message telling non-technical teams what is happening and what comes next  
-  _Example 1:_ We posted a status update with impact scope, current action, and ETA.  
-  _Example 2:_ Support used the message to answer customer tickets consistently.  
-  _Example 3:_ One clear status update prevented conflicting messages across teams.
+**Relationships:**
 
-- **escalation** /ˌɛskəlˈeɪʃən/ (n) - raising an issue to a higher support level  
-  _Example 1:_ We escalated to database team within 12 minutes.  
-  _Example 2:_ Escalation worked because ownership boundaries were clear.  
-  _Example 3:_ I explain escalation timing when describing incident communication quality.
+- **Synonyms:** weak point, limiting factor
+- **Antonyms:** throughput boost, performance gain
 
-- **rollback decision** /rˈoʊlbˌæk dəsˈɪʒən/ (n) - explicit choice to revert release under pressure  
-  _Example 1:_ We made a rollback decision after error rate passed 20%.  
-  _Example 2:_ Rolling back fast restored service but delayed one planned feature launch.  
-  _Example 3:_ Good rollback decisions are based on thresholds, not panic.
+**Usage Notes:**
 
-- **ETA** /ˌi ti ˈeɪ/ (n) - estimated time to recovery  
-  _Example 1:_ We updated ETA every cycle as evidence changed.  
-  _Example 2:_ Honest ETA updates built trust even before full recovery.  
-  _Example 3:_ I avoid fake-precise ETAs when uncertainty is high.
+- **Collocations:** identify bottlenecks, remove a bottleneck, bottleneck analysis
+- **Register:** Neutral, Technical
 
-- **service recovery** /ˈsɝvəs rɪˈkʌvəri/ (n) - process of bringing a system back to a stable, working state  
-  _Example 1:_ Service recovery happened in two steps: partial traffic restored first, then full rollout.  
-  _Example 2:_ We confirmed stability before announcing full recovery to users.  
-  _Example 3:_ Recovery communication was as important as the technical fix itself.
+## 🔍 throughput
+
+> **Pronunciation:** /ˈθruːˌpʊt/ — American English accent
+> **Part of Speech:** noun
+
+**Definition:**
+The amount of work a system can process in a period of time.
+
+**Example Sentences:**
+
+- We doubled throughput after moving image processing to a queue.
+- Checkout throughput dropped during the campaign launch.
+- Better laptop specs improved my local test throughput.
+
+**Relationships:**
+
+- **Synonyms:** processing rate, output rate
+- **Antonyms:** slowdown, low capacity
+
+**Usage Notes:**
+
+- **Collocations:** increase throughput, throughput limit, peak throughput
+- **Register:** Technical
+
+## 🔍 latency budget
+
+> **Pronunciation:** /ˈleɪtənsi ˈbʌdʒət/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+The maximum response time you allow for each part of a request flow.
+
+**Example Sentences:**
+
+- We set a latency budget of 300 ms for product search.
+- The frontend team used a latency budget to decide which calls to preload.
+- My internet plan changed, so my personal latency budget for calls became tighter.
+
+**Relationships:**
+
+- **Synonyms:** response target, timing limit
+- **Antonyms:** unlimited wait time, no SLA target
+
+**Usage Notes:**
+
+- **Collocations:** define latency budget, exceed latency budget, allocate latency budget
+- **Register:** Professional, Technical
+
+## 🔍 capacity planning
+
+> **Pronunciation:** /kəˈpæsəti ˈplænɪŋ/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Estimating future load and preparing resources before demand spikes.
+
+**Example Sentences:**
+
+- Capacity planning helped us avoid downtime on Black Friday.
+- We reviewed capacity planning with PM and infra every sprint.
+- I use simple capacity planning for weekly study goals too.
+
+**Relationships:**
+
+- **Synonyms:** load planning, resource planning
+- **Antonyms:** reactive scaling, last-minute fixes
+
+**Usage Notes:**
+
+- **Collocations:** do capacity planning, capacity forecast, capacity gap
+- **Register:** Professional
+
+## 🔍 cost ceiling
+
+> **Pronunciation:** /kɔːst ˈsiːlɪŋ/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+The highest amount of money the team can spend for a solution.
+
+**Example Sentences:**
+
+- We had a strict cost ceiling for cloud usage this quarter.
+- The team chose a cheaper storage option because of the cost ceiling.
+- At home, my travel plan also had a cost ceiling.
+
+**Relationships:**
+
+- **Synonyms:** budget cap, spending limit
+- **Antonyms:** open budget, unlimited spending
+
+**Usage Notes:**
+
+- **Collocations:** set a cost ceiling, stay under the ceiling, ceiling constraint
+- **Register:** Neutral, Business
+
+## 🔍 phased rollout
+
+> **Pronunciation:** /feɪzd ˈroʊlˌaʊt/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Releasing changes in stages instead of launching to all users at once.
+
+**Example Sentences:**
+
+- We used a phased rollout to reduce scaling risk.
+- A 10 percent rollout let us test real traffic safely.
+- I apply a phased rollout mindset when changing personal routines.
+
+**Relationships:**
+
+- **Synonyms:** gradual release, staged launch
+- **Antonyms:** big bang release, full launch
+
+**Usage Notes:**
+
+- **Collocations:** run a phased rollout, rollout stages, rollback during rollout
+- **Register:** Professional
+
+## 🔍 failure mode
+
+> **Pronunciation:** /ˈfeɪljər moʊd/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A specific way a system can break or produce wrong results.
+
+**Example Sentences:**
+
+- One failure mode was cache stampede during peak traffic.
+- We documented each failure mode before scaling the queue workers.
+- In daily life, phone battery drain is one failure mode when maps run all day.
+
+**Relationships:**
+
+- **Synonyms:** break pattern, risk scenario
+- **Antonyms:** stable behavior, normal operation
+
+**Usage Notes:**
+
+- **Collocations:** analyze failure modes, failure mode checklist, high-risk failure mode
+- **Register:** Technical
+
+## 🔍 graceful degradation
+
+> **Pronunciation:** /ˈɡreɪsfəl ˌdɛɡrəˈdeɪʃən/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Keeping core features working when the system is under stress by reducing non-critical features.
+
+**Example Sentences:**
+
+- Graceful degradation kept checkout running when recommendation service failed.
+- The app hid heavy animations during peak load as graceful degradation.
+- During travel, I use low-data mode as graceful degradation for maps.
+
+**Relationships:**
+
+- **Synonyms:** partial service mode, safe fallback
+- **Antonyms:** full outage, hard failure
+
+**Usage Notes:**
+
+- **Collocations:** apply graceful degradation, degradation strategy, degrade non-core features
+- **Register:** Professional, Technical
+
+## 🔍 operational overhead
+
+> **Pronunciation:** /ˌɑːpəˈreɪʃənəl ˌoʊvərˈhɛd/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+Extra maintenance work needed to run and support a solution.
+
+**Example Sentences:**
+
+- The microservice split improved speed but increased operational overhead.
+- We rejected one design because operational overhead was too high for a small team.
+- I avoid tools with heavy overhead for personal note-taking.
+
+**Relationships:**
+
+- **Synonyms:** maintenance burden, running cost
+- **Antonyms:** low-maintenance setup, lightweight operation
+
+**Usage Notes:**
+
+- **Collocations:** reduce operational overhead, overhead cost, overhead trade-off
+- **Register:** Professional
+
+## 🔍 scaling trade-off
+
+> **Pronunciation:** /ˈskeɪlɪŋ ˈtreɪd ɔːf/ — American English accent
+> **Part of Speech:** noun phrase
+
+**Definition:**
+A choice where improving one scaling goal creates cost or risk in another area.
+
+**Example Sentences:**
+
+- Our scaling trade-off was faster reads versus higher infra cost.
+- I explained the scaling trade-off clearly to PM before implementation.
+- In life, moving closer to work is a trade-off between time and rent.
+
+**Relationships:**
+
+- **Synonyms:** cost-benefit choice, performance compromise
+- **Antonyms:** win-win case, no-compromise change
+
+**Usage Notes:**
+
+- **Collocations:** explain trade-offs, evaluate trade-offs, accept a trade-off
+- **Register:** Neutral, Professional
 
 **Additional useful terms:**
 
-- **handover note** /hˈændoʊvɚ nˈoʊt/ (n) - summary when incident ownership shifts
-- **severity level** /səvˈɛɹəti lˈɛvəl/ (n) - incident urgency classification
-- **customer update** /kˈʌstəmɚ ˈʌpdeɪt/ (n) - external status message for users
-- **comms owner** /kˈɑmz ˈoʊnɚ/ (n) - person responsible for communication stream
-- **health check** /hɛlθ tʃɛk/ (n) - quick test to confirm a system is running correctly after changes
+**traffic spike** _(noun phrase)_ — sudden large increase in requests.
+Example: We prepared queue workers for a traffic spike after marketing launch.
+Collocations: handle traffic spikes, spike alert
+
+**hot path** _(noun phrase)_ — the most frequently used and performance-critical flow.
+Example: Payment submit is the hot path in our checkout.
+Collocations: optimize hot path, hot-path latency
+
+**read replica** _(noun phrase)_ — database copy used for read-heavy traffic.
+Example: We added a read replica to reduce query load on primary DB.
+Collocations: add read replica, replica lag
+
+**rate limiting** _(noun phrase)_ — controlling request volume per user or client.
+Example: Rate limiting protected our API during bot traffic.
+Collocations: apply rate limiting, limit threshold
+
+**fallback plan** _(noun phrase)_ — backup behavior when primary plan fails.
+Example: Our fallback plan was static recommendations when ranking timed out.
+Collocations: prepare fallback plan, trigger fallback
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Past Continuous for real-time actions**  
-  We were investigating logs while support was informing customers.
+- **Cause and result for system behavior**
+  Because query volume doubled, our API latency increased.
 
-- **Past Simple for key events**  
-  We detected the issue at 2:10 PM and rolled back at 2:22 PM.
+- **Conditionals for risk planning**
+  If we scale too fast without testing, costs may grow faster than value.
 
-- **Time sequencing**  
-  First we contained, then we diagnosed, and finally we recovered service.
+- **Contrast language for trade-offs**
+  We improved throughput, but operational overhead also increased.
 
-- **Responsibility language**  
-  I took ownership of communication with product during the outage.
+- **Sequencing for decision flow**
+  First we measured bottlenecks, then we designed options, then we rolled out in phases.
 
-- **Contrast language**  
-  We moved fast, but we still followed runbook checks.
+- **Modal verbs for constraint language**
+  We had to stay under budget, so we could not add more managed services.
 
-- **Future prevention language**  
-  We will improve alert rules to detect this earlier.
+- **Reflection language for interviews**
+  If I did this again, I would add stronger guardrails before launch.
 
 ### Useful Sentence Patterns
 
-- During the incident, my role was...
-- The first thing we did was...
-- We kept everyone updated by...
-- We had to choose between... and...
-- We recovered service in...
-- Afterward, we improved...
+- The biggest bottleneck was...
+- Under this budget, we chose to...
+- Our main trade-off was... versus...
+- To reduce risk, we rolled out...
+- One failure mode we planned for was...
+- The measurable result after scaling was...
 
 </details>
 
@@ -113,91 +316,80 @@ description: Talk about real-time response: role in outage, coordination, status
 
 ### Strong Collocations
 
-- handle production outage
-- coordinate bridge call
-- assign incident roles
-- send status broadcasts
-- escalate to right team
-- make rollback decision
-- publish realistic ETA
-- protect communication clarity
-- reduce stakeholder panic
-- run health checks
-- hand over context cleanly
-- confirm service recovery
-
-**Examples (real work):**
-
-- During one outage, engineering fixed service while comms owner posted updates every 15 minutes.
-- This split kept technical work focused and reduced confusion across product and support.
+- identify system bottlenecks
+- increase request throughput
+- stay within budget limits
+- set latency targets
+- run capacity planning
+- reduce peak load
+- apply rate limiting
+- stage a rollout
+- monitor scaling metrics
+- manage operational overhead
+- protect critical paths
+- design fallback behavior
 
 ### Useful Chunking & Sentence Starters
 
-- As soon as alerts fired,...
-- My first priority was...
-- We quickly set up...
-- Under pressure, we still...
-- One hard decision was...
-- The team stayed aligned by...
-- After recovery, we...
-- The key lesson was...
-
-**Examples (using starters):**
-
-- "As soon as alerts fired, we opened a bridge call and assigned one incident commander."
-- "One hard decision was rolling back fast even though it delayed the campaign feature."
+- Under real constraints, we had to...
+- Our first priority was...
+- The cheapest option was not...
+- We accepted this trade-off because...
+- To protect reliability, we...
+- We scaled in phases by...
+- The risky assumption was...
+- The outcome was better in... but weaker in...
 
 ### Useful Phrasal Verbs
 
-- **jump in** -> I jumped in to coordinate updates.
-- **lock down** -> We locked down deployments while restoration was in progress.
-- **roll back** -> We rolled back the newest release after threshold breach.
-- **hand off** -> I handed off clean context to the next on-call engineer.
-- **speak up** -> I spoke up when ETA confidence was too low.
+- **scale up** -> We scaled up workers only during peak traffic windows.
+- **cut back on** -> We cut back on non-critical features to save cost.
+- **slow down** -> We slowed down rollout after seeing error spikes.
+- **carry out** -> We carried out load tests before launch day.
+- **fall back to** -> We fell back to cached responses during DB pressure.
 
 </details>
 
 <details open>
 <summary><strong>4) Dialogues</strong></summary>
 
-### Dialogue 1 - Real-Time Response
+### Dialogue 1 - Cost vs Performance
 
-**Interviewer:** Tell me about an outage you handled under pressure.
+**Interviewer:** Tell me about a scaling decision under budget pressure.
 
-**You:**  
-I was on-call when checkout started failing. We opened a war room, assigned roles, and sent updates every 15 minutes.
+**You:**
+In one project, traffic grew quickly after a campaign, but we had a strict cloud cost cap. We found the hottest path was product search, so we added caching and a read replica instead of moving everything to a new architecture.
 
-We rolled back quickly to restore service. It reduced downtime, but we delayed two planned deployments.
+The trade-off was less flexibility short term, but we stayed stable and under budget.
 
-### Dialogue 2 - Communication Under Stress
+### Dialogue 2 - Team Capacity Constraint
 
-**Interviewer:** How did you communicate during the incident?
+**Interviewer:** How did team size affect your scaling approach?
 
-**You:**  
-I posted short updates for product and support: impact, current action, and ETA. This helped them answer customer questions.
+**You:**
+We were only four engineers, so we avoided solutions that needed heavy maintenance. We chose phased rollout and simple monitoring first, then improved automation later.
 
-Technical work was urgent, but clear communication prevented panic.
+This was slower than a full redesign, but realistic for our team.
 
-### Dialogue 3 - Post-Mortem Mindset
+### Dialogue 3 - Timeline Constraint
 
-**Interviewer:** What happened after service recovered?
+**Interviewer:** What if you have only two weeks before a traffic event?
 
-**You:**  
-We ran a blameless post-mortem, reviewed timeline, and created follow-up tasks for monitoring and runbook updates.
+**You:**
+I would focus on risk reduction, not perfection. I would set rate limits, prepare fallback responses, and test one failure mode per critical flow.
 
-It took extra team time, but future incidents became easier to handle.
+After the event, we can improve architecture. Before the event, reliability is the priority.
 
 </details>
-
 
 <details open>
 <summary><strong>5) Debate Prompt</strong></summary>
 
-**During a production incident, should you send status updates every few minutes, or focus on fixing and explain later?**
+**When systems need to scale fast, should teams choose quick fixes first or invest in long-term architecture immediately?**
 
-**Side A:** Stakeholders and teammates need to know what is happening. Regular updates — even short ones — prevent panic, stop people from interrupting you, and show you have control of the situation.
+**Side A:** Quick fixes are practical under deadline pressure. If core flows stay stable and users are not blocked, the business survives. You can refactor later with better data.
 
-**Side B:** Sending updates every few minutes during an active incident wastes critical time and can spread the wrong information before you fully understand what is wrong. Fix it first, explain it clearly after.
+**Side B:** Shortcuts create technical debt and repeated incidents. Investing in stronger architecture early can save money and stress over time, even if delivery is slower now.
 
 _Your turn: Which side do you agree with more? Why?_
 
@@ -206,11 +398,11 @@ _Your turn: Which side do you agree with more? Why?_
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
-Production incidents test both technical skills and communication skills. During pressure, teams need simple priorities: contain damage, restore service, and keep stakeholders informed.
+Scaling is not only a technical problem. Most teams face real limits: fixed budget, short deadlines, and small engineering headcount. Good scaling decisions come from clear priorities, not from perfect architecture diagrams.
 
-A common mistake is focusing only on technical fixes and ignoring communication. In real business environments, product, support, and leadership need clear status updates to make decisions.
+A practical approach is simple: find bottlenecks, protect the hottest path, roll out in stages, and define fallback behavior. This helps teams stay reliable during growth without overbuilding too early.
 
-After recovery, post-mortem work is critical. Without it, teams repeat the same outages and on-call stress stays high.
+In interviews, strong answers include one real trade-off. Explain what you improved, what you postponed, and why that choice made sense under real constraints.
 
 </details>
 
@@ -219,35 +411,33 @@ After recovery, post-mortem work is critical. Without it, teams repeat the same 
 
 ### Core Questions (must-practice)
 
-1. What are your first 10-minute actions during a production outage?
-2. How do you assign roles across incident commander, responders, and comms owner?
-3. How do you keep update frequency clear for product and support teams?
-4. When do you decide rollback instead of continuing investigation?
+1. In your experience, what was the first bottleneck when traffic increased?
+2. How would you scale a feature if budget is limited this quarter?
+3. Which metrics would you track first during phased scaling?
+4. What fallback plan would you prepare before a major campaign launch?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of strict communication cadence during outages?
-6. When does fast rollback protect the business, and when can it hide deeper risks?
-7. How should outage communication expectations differ for beginners vs experienced engineers?
+5. What are the benefits and risks of phased rollout versus full launch for scaling?
+6. How do scaling priorities differ between beginner engineers and experienced engineers?
+7. When should a team accept higher cloud cost for better reliability?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You said communication went well. Which audience still felt uncertain, and why?
-9. If ETA keeps changing, how do you maintain trust without overpromising?
-10. If engineers want more diagnosis time but leadership wants immediate rollback, how do you resolve it?
+8. You said caching solves the issue. What if data freshness becomes critical?
+9. You said you postponed architecture changes. How do you prevent delay from becoming permanent?
+10. If management asks for both lower cost and lower latency, what do you push back on first?
 
 ### Reflection Questions
 
-11. Which incident-communication skill is hardest for you in English?
-12. What personal habit helps you stay calm and clear under pressure?
-13. In the long term, will teams value technical recovery more or communication quality more?
+11. Which scaling topic is hardest for you to explain clearly in English?
+12. How has your view of good engineering changed after facing real constraints?
+13. In the long run, is a great engineer the one who builds fast or the one who chooses trade-offs well?
 
 **Tips for speaking practice:**
 
-- Speak in timeline order with timestamps.
-- Include one communication artifact: status update or status update.
-- Show one trade-off decision and its consequence.
-
----
+- Use one concrete system example and one measurable metric in each answer.
+- Keep your structure clear: constraint -> decision -> trade-off -> result.
+- Practice a 60-90 second answer for one real scaling case from your past work.
 
 </details>
