@@ -1,6 +1,23 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+:root {
+  --app-body-bg: #f9fafb;
+  --app-body-fg: #111827;
+  --app-backdrop-base: #e5e7eb;
+  --app-backdrop-start: #ffffff;
+  --app-backdrop-end: #f59e0b;
+}
+
+.theme-dark {
+  --app-body-bg: #0f172a;
+  --app-body-fg: #e5e7eb;
+  --app-backdrop-base: #0b1220;
+  --app-backdrop-start: #111827;
+  --app-backdrop-end: #0f766e;
+  color-scheme: dark;
+}
+
 @layer base {
   body {
     font-family:
@@ -9,13 +26,155 @@
       BlinkMacSystemFont,
       "Segoe UI",
       sans-serif;
-    background-color: #f9fafb;
-    color: #111827;
+    background-color: var(--app-body-bg);
+    color: var(--app-body-fg);
     -webkit-font-smoothing: antialiased;
   }
 }
 
 @layer utilities {
+  .app-backdrop {
+    background-image: radial-gradient(
+      125% 125% at 50% 10%,
+      var(--app-backdrop-start) 40%,
+      var(--app-backdrop-end) 100%
+    );
+    background-size: 100% 100%;
+    background-color: var(--app-backdrop-base);
+  }
+
+  /* Global dark-theme remap for existing Tailwind utility-heavy UI */
+  .theme-dark .bg-white {
+    background-color: #111827 !important;
+  }
+  .theme-dark .bg-white\/95 {
+    background-color: rgb(17 24 39 / 0.95) !important;
+  }
+  .theme-dark .bg-white\/90 {
+    background-color: rgb(17 24 39 / 0.9) !important;
+  }
+  .theme-dark .bg-white\/80 {
+    background-color: rgb(17 24 39 / 0.8) !important;
+  }
+  .theme-dark .bg-gray-50 {
+    background-color: #1f2937 !important;
+  }
+  .theme-dark .bg-gray-50\/60 {
+    background-color: rgb(31 41 55 / 0.6) !important;
+  }
+  .theme-dark .bg-gray-50\/70 {
+    background-color: rgb(31 41 55 / 0.7) !important;
+  }
+  .theme-dark .bg-gray-100 {
+    background-color: #374151 !important;
+  }
+  .theme-dark .bg-gray-200 {
+    background-color: #4b5563 !important;
+  }
+  .theme-dark .bg-gray-300 {
+    background-color: #6b7280 !important;
+  }
+  .theme-dark .bg-indigo-50 {
+    background-color: #1e1b4b !important;
+  }
+  .theme-dark .bg-indigo-100 {
+    background-color: #312e81 !important;
+  }
+
+  .theme-dark .text-gray-900 {
+    color: #ffffff !important;
+  }
+  .theme-dark .text-gray-800 {
+    color: #f8fafc !important;
+  }
+  .theme-dark .text-gray-700 {
+    color: #f1f5f9 !important;
+  }
+  .theme-dark .text-gray-600 {
+    color: #e2e8f0 !important;
+  }
+  .theme-dark .text-gray-500 {
+    color: #cbd5e1 !important;
+  }
+
+  .theme-dark .border-gray-100 {
+    border-color: #374151 !important;
+  }
+  .theme-dark .border-gray-200 {
+    border-color: #4b5563 !important;
+  }
+  .theme-dark .border-gray-300 {
+    border-color: #6b7280 !important;
+  }
+  .theme-dark .border-gray-400 {
+    border-color: #9ca3af !important;
+  }
+
+  .theme-dark .hover\:bg-gray-50:hover {
+    background-color: #374151 !important;
+  }
+  .theme-dark .hover\:bg-gray-100:hover {
+    background-color: #4b5563 !important;
+  }
+  .theme-dark .hover\:text-gray-700:hover {
+    color: #f3f4f6 !important;
+  }
+  .theme-dark .hover\:text-gray-600:hover {
+    color: #e5e7eb !important;
+  }
+  .theme-dark .hover\:text-gray-800:hover {
+    color: #f8fafc !important;
+  }
+
+  .theme-dark .lesson-prose {
+    --tw-prose-body: #e5e7eb;
+    --tw-prose-headings: #f9fafb;
+    --tw-prose-lead: #d1d5db;
+    --tw-prose-links: #a5b4fc;
+    --tw-prose-bold: #f9fafb;
+    --tw-prose-counters: #9ca3af;
+    --tw-prose-bullets: #9ca3af;
+    --tw-prose-hr: #4b5563;
+    --tw-prose-quotes: #e5e7eb;
+    --tw-prose-quote-borders: #6b7280;
+    --tw-prose-captions: #9ca3af;
+    --tw-prose-code: #93c5fd;
+    --tw-prose-pre-code: #e5e7eb;
+    --tw-prose-pre-bg: #111827;
+    --tw-prose-th-borders: #4b5563;
+    --tw-prose-td-borders: #374151;
+  }
+
+  .theme-dark .lesson-prose {
+    background-color: rgb(15 23 42 / 0.6);
+    border-color: #4b5563 !important;
+  }
+  .theme-dark .lesson-prose,
+  .theme-dark .lesson-prose :is(p, li, ul, ol, td, th, blockquote, h1, h2, h3, h4, h5, h6, summary, strong, em) {
+    color: #f8fafc !important;
+  }
+  .theme-dark .lesson-prose a {
+    color: #c4b5fd !important;
+  }
+  .theme-dark .lesson-prose details {
+    background-color: rgb(31 41 55 / 0.7) !important;
+    border-color: #4b5563 !important;
+  }
+  .theme-dark .lesson-prose summary {
+    color: #f3f4f6 !important;
+  }
+  .theme-dark .lesson-prose summary:hover {
+    background-color: rgb(55 65 81 / 0.8) !important;
+  }
+  .theme-dark .lesson-prose code {
+    background-color: rgb(30 41 59 / 0.9) !important;
+    color: #93c5fd !important;
+  }
+  .theme-dark .lesson-prose blockquote {
+    background-color: rgb(30 41 59 / 0.65) !important;
+    border-color: #6366f1 !important;
+  }
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

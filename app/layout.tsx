@@ -13,6 +13,27 @@ export const metadata: Metadata = {
   },
 };
 
+const THEME_BOOTSTRAP_SCRIPT = `
+(() => {
+  try {
+    const key = "theme-mode";
+    const saved = window.localStorage.getItem(key);
+    const dark =
+      saved === "dark" ||
+      (saved !== "light" &&
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.classList.toggle("theme-dark", dark);
+    document.documentElement.setAttribute(
+      "data-mantine-color-scheme",
+      dark ? "dark" : "light",
+    );
+  } catch {
+    // ignore
+  }
+})();
+`;
+
 export default function RootLayout({
   children,
 }: {
@@ -20,18 +41,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP_SCRIPT }} />
+      </head>
       <body suppressHydrationWarning>
         <MantineProviderClient>
           <div className="min-h-screen relative">
-            <div
-              className="absolute inset-0 z-0"
-              style={{
-                backgroundImage: `
-        radial-gradient(125% 125% at 50% 10%, #ffffff 40%, #f59e0b 100%)
-      `,
-                backgroundSize: "100% 100%",
-              }}
-            />
+            <div className="app-backdrop absolute inset-0 z-0" />
             <AppChrome>{children}</AppChrome>
           </div>
         </MantineProviderClient>

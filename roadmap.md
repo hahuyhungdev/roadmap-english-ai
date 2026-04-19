@@ -1,27 +1,56 @@
-# English for IT & Business - Personalized Curriculum (No-Overlap V3)
+# English for IT & Business - Personalized Curriculum (No-Overlap V4)
 
 > Target: Interview-ready English for foreign tech companies
 > Learner profile: 25-27-year-old Vietnamese software engineer (B1-B2)
 > Format: 1-on-1 with teacher + self-study
-> Total: 26 sessions + 2 mock interviews
+> Total: 26 sessions (including 2 mock interviews)
 
 ---
 
 ## What This Version Improves
 
 - Keeps the interview and IT core from the previous version.
-- Adds missing deep topics you prioritized after Session 05:
+- Adds high-impact modern topics after Session 05:
+  privacy-aware product decisions, algorithmic influence,
   mental health, fake identity, jealousy/comparison, bullying,
-  success pressure, moral gray areas, crime/punishment,
-  loneliness, human connection vs tech, attention/distraction.
+  success pressure, human connection in remote work,
+  attention/distraction, and environmental responsibility.
 - Adds strict session boundaries and required output artifacts to reduce overlap.
 - Keeps language practical for real developer scenarios and interview follow-ups.
 - Adds modern, practical knowledge targets in Phase 1
   (OpenAPI/Swagger, brief docs, wireframe handoff, prompt workflows).
+- Adds phase-level success criteria so the teacher can measure real speaking progress.
+- Makes the two mock interviews more concrete with interview rounds, scoring,
+  and answer-bank follow-up.
+
+---
+
+## How Progress Is Measured
+
+- Each phase must produce reusable speaking artifacts, not only vocabulary notes.
+- Every major answer should be recorded once, corrected once, and spoken again.
+- Teacher scoring should use a simple 1-5 scale for:
+  clarity, structure, natural vocabulary, specific examples, and follow-up handling.
+- By the end of the course, the learner should have a personal interview answer bank
+  covering self-introduction, project walkthrough, trade-offs, failure, conflict,
+  uncertainty, motivation, salary, and post-interview questions.
 
 ---
 
 ## PHASE 1 - TECH & BUSINESS FOUNDATION (FRONTEND + GENERAL)
+
+### Phase 1 Success Criteria
+
+By the end of Phase 1, the learner can:
+
+- Explain their frontend role, system flow, tech choices, debt, AI usage,
+  documentation habits, and privacy/product trade-offs in 60-90 seconds each.
+- Translate technical work into clear language for PMs, QA, designers,
+  and non-technical interviewers.
+- Support answers with one concrete example, one trade-off, and one measurable result.
+- Complete a Phase 1 checkpoint in Session 07 by cleaning up the first answer-bank set.
+- Build a basic project walkthrough answer from role, system flow, trade-off,
+  and impact pieces.
 
 ### Phase 1 Practical Knowledge Stack (Applied)
 
@@ -45,9 +74,9 @@
 - Focus: Explain system flow and communication with non-engineering partners.
 - In scope: User flow, dependency flow, stakeholder expectations, alignment updates, risk visibility.
 - Out of scope: Personal career motivation.
-- Required output: 1 system walkthrough + 1 stakeholder update message.
+- Required output: 1 system/project walkthrough + 1 stakeholder update message.
 - Practical knowledge targets: brief doc summary, wireframe-to-system explanation,
-  stakeholder-friendly technical language.
+  stakeholder-friendly technical language, project context -> flow -> impact structure.
 
 ### Session 03 - Tech Stack and Trade-offs
 
@@ -85,17 +114,31 @@
 - Required output: 1 docs-impact statement with concrete metrics +
   1 mini doc bundle (component guideline + wireframe note + Storybook/props reference).
 
-### Session 07 - Project Walkthrough
+### Session 07 - Privacy-Aware Growth Decisions & Algorithmic Influence
 
-- Focus: Explain one project end-to-end (problem -> flow -> role -> impact).
-- In scope: Business problem, system flow, ownership, trade-off, measurable result.
-- Out of scope: Multi-project comparison.
-- Required output: 2-minute project story + 3 follow-up interviewer answers.
-- Practical knowledge targets: connect handoff -> implementation -> QA -> final impact story.
+- Focus: Explain growth vs user trust decisions using privacy and recommendation examples.
+- In scope: Data minimization, consent/default choices, recommendation metrics,
+  guardrail thinking, engagement vs trust trade-offs, and Phase 1 speaking review.
+- Out of scope: Broad ethics debates and end-to-end project walkthrough narrative.
+- Required output: 1 product decision note (growth vs privacy) +
+  1 interview answer on algorithm impact + Phase 1 answer-bank cleanup.
+- Practical knowledge targets: privacy-first product language,
+  guardrail metrics, and ethical trade-off communication.
 
 ---
 
 ## PHASE 2 - ANALYTICAL THINKING IN IT (FRONTEND-READY, TRANSFERABLE)
+
+### Phase 2 Success Criteria
+
+By the end of Phase 2, the learner can:
+
+- Explain an incident, scaling problem, decision conflict, and failure story
+  without sounding defensive or vague.
+- Use numbers, timelines, assumptions, and business impact naturally.
+- Handle follow-up questions that challenge the cause, trade-off, or ownership.
+- Complete a Phase 2 checkpoint in Session 11 by turning one weak technical story
+  into a stronger interview answer.
 
 ### Session 08 - Root Cause Analysis & Impact
 
@@ -125,11 +168,24 @@
 - Focus: Accountability and trust recovery.
 - In scope: Honest failure narrative, response, prevention, trust rebuild.
 - Out of scope: Repeating RCA mechanics from Sessions 08-09.
-- Required output: 1 STAR failure answer + 1 prevention plan + 1 trust-rebuild follow-up message.
+- Required output: 1 STAR failure answer + 1 prevention plan +
+  1 trust-rebuild follow-up message + Phase 2 answer-bank review.
 
 ---
 
 ## PHASE 3 - MODERN SOCIETY TOPICS (PERSONALIZED)
+
+### Phase 3 Success Criteria
+
+By the end of Phase 3, the learner can:
+
+- Talk about personal pressure, comparison, identity, attention, and connection
+  in calm, natural English without becoming too abstract.
+- Connect personal topics back to work behavior, teamwork, career decisions,
+  or interview context.
+- Use honest but professional language for sensitive topics.
+- Complete a Phase 3 checkpoint in Session 19 by summarizing three personal lessons
+  that affect work and career choices.
 
 ### Session 12 - Mental Health, Burnout & Recovery
 
@@ -186,13 +242,26 @@
 
 - Focus: Balance product delivery with environmental impact.
 - In scope: Energy-efficient design choices, cloud/resource usage,
-  performance vs carbon trade-offs, and practical green engineering habits.
+  performance vs carbon trade-offs, practical green engineering habits,
+  and Phase 3 speaking synthesis.
 - Out of scope: Broad climate policy debates without engineering action.
-- Required output: 1 engineering sustainability checklist + 1 green trade-off decision note.
+- Required output: 1 engineering sustainability checklist +
+  1 green trade-off decision note + Phase 3 personal-work bridge summary.
 
 ---
 
 ## PHASE 4 - BEHAVIORAL & INTERVIEW EXECUTION
+
+### Phase 4 Success Criteria
+
+By the end of Phase 4, the learner can:
+
+- Give structured interview answers for conflict, ownership, uncertainty,
+  motivation, negotiation, and feedback.
+- Stay specific under pressure instead of giving generic "I am hardworking" answers.
+- Close answers with learning, business impact, or next action.
+- Complete a Phase 4 checkpoint in Session 24 by finalizing the answer bank
+  before mock interviews.
 
 ### Session 20 - Conflict with Difficult People
 
@@ -215,7 +284,7 @@
 - Out of scope: Defending a decision after alignment is already set.
 - Required output: 1 uncertainty decision matrix + 1 interview answer.
 
-### Session 23 - Motivation, Values & Long-Term Fit
+### Session 23 - Motivation & Personal Values
 
 - Focus: What drives you and where you fit.
 - In scope: Value conflicts, role fit, realistic long-term direction.
@@ -227,27 +296,46 @@
 - Focus: Salary discussion + feedback conversations.
 - In scope: Evidence-based negotiation, giving/receiving feedback, alignment close.
 - Out of scope: Personal finance habits and family pressure.
-- Required output: 1 salary script + 1 feedback conversation script.
+- Required output: 1 salary script + 1 feedback conversation script +
+  final pre-mock answer-bank review.
 
 ---
 
 ## PHASE 5 - MOCK INTERVIEW
 
-### Session 25 - Mock Interview 1
+### Phase 5 Success Criteria
 
-- Focus: Full simulation under pressure (behavioral + practical discussion + Q&A).
-- Required output: Self-diagnosis report with top 3 speaking gaps.
+By the end of Phase 5, the learner can:
 
-### Session 26 - Final Mock Interview & Gap Closure
+- Complete a realistic foreign-company interview simulation with clear,
+  specific, and natural answers.
+- Recover when the interviewer asks a difficult follow-up question.
+- Identify their top speaking gaps and turn them into a 30-day practice plan.
 
-- Focus: Final performance check + targeted correction.
-- Required output: 30-day post-course speaking plan.
+### Session 25 - Mock Interview 1: Baseline Simulation
+
+- Focus: Full simulation under pressure with realistic follow-up questions.
+- Rounds: self-introduction, project walkthrough, technical trade-off,
+  behavioral story, practical workplace discussion, and candidate Q&A.
+- Scoring: clarity, structure, natural vocabulary, specific examples,
+  and follow-up handling.
+- Required output: Scorecard + self-diagnosis report with top 3 speaking gaps +
+  rewrite of 2 weak answers.
+
+### Session 26 - Final Mock Interview & Gap Analysis
+
+- Focus: Final performance check + targeted correction + post-course plan.
+- Rounds: company-fit answer, system explanation, failure/conflict story,
+  uncertainty decision, salary/feedback discussion, and final candidate questions.
+- Scoring: compare against Session 25 and identify the biggest improvement area.
+- Required output: Final scorecard + 30-day post-course speaking plan +
+  personal answer-bank maintenance plan.
 
 ---
 
 ## Coverage Map Against Your Requirements
 
-- Core IT-business foundation (Sessions 01-05): explicit and no longer implicit
+- Core IT-business foundation (Sessions 01-07): explicit and no longer implicit
 - Mental health: Session 12
 - Career comparison + imposter syndrome: Session 13
 - Fake identity: Session 14
@@ -265,7 +353,8 @@
 - Session 01 != Session 02: role-value narrative vs system-stakeholder communication.
 - Session 03 != Session 04: upfront tech choice trade-offs vs legacy debt/change planning.
 - Session 04 != Session 05: debt remediation strategy vs AI-assisted daily execution.
-- Session 08 != Session 09: diagnosis vs live communication.
+- Session 07 != Session 19: privacy/trust product choices vs environmental engineering choices.
+- Session 08 != Session 09: incident diagnosis and impact vs scaling under business constraints.
 - Session 10 != Session 22: persuasion vs uncertainty decision logic.
 - Session 12 != Session 17: recovery/energy vs attention control.
 - Session 13 != Session 14: inner comparison vs external persona.

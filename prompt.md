@@ -6,9 +6,10 @@ preparing for foreign-company interviews.
 This curriculum has 5 phases:
 
 - Phase 1–2: IT and business topics (technical, analytical)
-- Phase 3: Mixed topics — IT + real life (mental health, fake identity,
-  jealousy/comparison, bullying, success pressure, loneliness,
-  attention/distraction, morality, crime/punishment)
+- Phase 3: Modern society topics for engineers (mental health/burnout,
+  career comparison, fake identity, bullying/exclusion,
+  success pressure, attention/distraction, remote human connection,
+  environmental responsibility)
 - Phase 4: Behavioral and interview topics
 - Phase 5: Mock interviews
 
@@ -43,6 +44,11 @@ PERSONALIZATION PRIORITIES (FIXED):
   online identity, digital distraction).
 - Avoid overlap between adjacent sessions: each session must have
   one unique core tension.
+- Treat every lesson as part of a speaking answer bank. The learner should
+  leave each session with at least one answer they can reuse in interviews,
+  team discussions, or self-reflection.
+- Questions in Section 7 are used by the app for click-to-open answer guidance.
+  Write each question as one clean, speakable question sentence.
 
 TARGET LEVEL:
 
@@ -105,6 +111,18 @@ CRITICAL RULES:
     frontend-first examples, plus transferable cross-team language.
 30. Prefer words learners can use immediately in daily standups,
     code reviews, QA discussions, and interviews.
+31. For every Section 7 question, provide hidden answer-guidance JSON after
+    the visible questions and tips. The app will use this for popup coaching.
+32. Answer guidance must teach mindset, answer pattern, key points,
+    starter lines, common mistakes, and about 5 example answers. Each example
+    answer must use a different idea but follow the same answer pattern.
+33. Each example answer must be 4-10 sentences, not one-liners.
+34. Example answers must sound like spoken interview practice:
+    concrete, structured, and easy to say out loud.
+35. The hidden JSON must be valid JSON and must repeat the exact question text
+    from the visible list so the app can match it.
+36. Do not show answer guidance visibly in the lesson body. It belongs only in
+    the hidden HTML comment block.
 
 ---
 
@@ -129,7 +147,7 @@ description: [ONE CLEAR SENTENCE]
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-Generate 10-15 main terms + 5 additional useful terms for this session topic.
+Generate 8-12 main terms + 5 additional useful terms for this session topic.
 
 For each MAIN term, use this exact format:
 
@@ -180,7 +198,7 @@ RULES FOR VOCABULARY SECTION:
 - For non-IT sessions: choose vocabulary relevant to that topic,
   do not force IT terms
 - Do not repeat more than 30% of main vocabulary items from Session N-1 and N-2
-  (max 4 repeated terms if you generate 15 main terms)
+  (max 3 repeated terms if you generate 10 main terms)
 
 </details>
 
@@ -287,6 +305,26 @@ _Your turn: Which side do you agree with more? Why?_
 
 - 3 short, practical tips specific to this session topic
 
+<!-- answerGuidance
+[
+  {
+    "question": "[exact visible question text]",
+    "mindset": "[how the learner should think before answering, 1 short sentence]",
+    "pattern": "[answer structure, e.g. Point -> Reason -> Example -> Result]",
+    "keyPoints": ["[point 1]", "[point 2]", "[point 3]"],
+    "starterLines": ["[natural starter sentence 1]", "[natural starter sentence 2]"],
+    "commonMistakes": ["[mistake to avoid 1]", "[mistake to avoid 2]"],
+    "exampleAnswers": [
+      "[example answer 1 using one concrete idea and the taught pattern, 4-10 sentences]",
+      "[example answer 2 using a different idea and the same pattern, 4-10 sentences]",
+      "[example answer 3 using another realistic frontend/software-engineer case, 4-10 sentences]",
+      "[example answer 4 with a stronger interview-style example and trade-off, 4-10 sentences]",
+      "[example answer 5 as a safe fallback when the learner has no perfect real example, 4-10 sentences]"
+    ]
+  }
+]
+-->
+
 </details>
 
 ---
@@ -305,6 +343,11 @@ FINAL QUALITY CHECK before output:
 - Core lesson angle is unique vs Session N-1 and Session N-2
 - No copy-paste sentence patterns from nearby sessions
 - Section 7 question flow is: practical -> analytical -> follow-up -> future-oriented
+- Section 7 hidden answerGuidance JSON is valid and every question field
+  exactly matches one visible question
+- Section 7 exampleAnswers sound like the learner's real frontend/software
+  engineering experience, use different ideas, and follow the taught pattern
+- Every example answer is 4-10 sentences and can be spoken naturally in practice
 
 ---
 

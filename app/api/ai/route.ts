@@ -18,6 +18,7 @@ export async function POST(req: NextRequest) {
   const userMessages: ChatMessage[] = Array.isArray(body.messages)
     ? body.messages
     : [];
+  const shouldStream = body.stream === true;
 
   if (userMessages.length === 0) {
     return NextResponse.json(
@@ -59,6 +60,7 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
         temperature: 0.6,
+        stream: shouldStream,
         messages: [
           { role: "system", content: systemPrompt },
           ...(lessonContext
@@ -68,6 +70,70 @@ export async function POST(req: NextRequest) {
         ],
       }),
     });
+
+    if (shouldStream) {
+      if (!upstream.ok || !upstream.body) {
+        const data = await upstream.json().catch(() => null);
+        return NextResponse.json(
+          { error: data?.error?.message || "DeepSeek API request failed" },
+          { status: upstream.status },
+        );
+      }
+
+      const encoder = new TextEncoder();
+      const decoder = new TextDecoder();
+
+      const stream = new ReadableStream({
+        async start(controller) {
+          const reader = upstream.body!.getReader();
+          let buffer = "";
+
+          try {
+            while (true) {
+              const { done, value } = await reader.read();
+              if (done) break;
+
+              buffer += decoder.decode(value, { stream: true });
+              const lines = buffer.split("\n");
+              buffer = lines.pop() ?? "";
+
+              for (const rawLine of lines) {
+                const line = rawLine.trim();
+                if (!line.startsWith("data:")) continue;
+
+                const payload = line.slice(5).trim();
+                if (!payload || payload === "[DONE]") continue;
+
+                try {
+                  const parsed = JSON.parse(payload);
+                  const delta = parsed?.choices?.[0]?.delta?.content;
+                  if (typeof delta === "string" && delta.length > 0) {
+                    controller.enqueue(encoder.encode(delta));
+                  }
+                } catch {
+                  // Ignore malformed SSE chunks from upstream.
+                }
+              }
+            }
+          } catch (error) {
+            controller.error(error);
+            return;
+          } finally {
+            reader.releaseLock();
+          }
+
+          controller.close();
+        },
+      });
+
+      return new Response(stream, {
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+          "Cache-Control": "no-cache, no-transform",
+          "X-Accel-Buffering": "no",
+        },
+      });
+    }
 
     const data = await upstream.json();
     if (!upstream.ok) {
