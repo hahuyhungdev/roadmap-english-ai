@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import type { PhraseGroup } from "@/lib/sessions.server";
 import { useProgressStore } from "@/store/useProgressStore";
 import type { Session } from "@/types";
@@ -12,7 +12,61 @@ import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import LessonAssistant from "./LessonAssistant";
 import PracticeCoach from "./PracticeCoach";
-import AnswerPractice from "./AnswerPractice";
+import AnswerGuideInline, { type AnswerGuideItem } from "./AnswerGuideInline";
+
+const ANSWER_GUIDE_SLOT = "\n\n[[ANSWER_GUIDE_SLOT]]\n\n";
+
+function extractJsonAnswerGuides(content: string): AnswerGuideItem[] {
+  const match = content.match(/<!--\s*answerGuidance\s*([\s\S]*?)-->/i);
+  if (!match) return [];
+  try {
+    const parsed = JSON.parse(match[1]) as AnswerGuideItem[];
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter((item) => typeof item?.question === "string");
+  } catch {
+    return [];
+  }
+}
+
+function extractMarkdownAnswerGuide(content: string): string {
+  const match = content.match(/<!--\s*answerGuideMarkdown\s*([\s\S]*?)-->/i);
+  return match?.[1]?.trim() ?? "";
+}
+
+function parseMarkdownAnswerGuides(markdown: string): AnswerGuideItem[] {
+  const headings = [
+    ...markdown.matchAll(/^###\s+\d+\.\s+(.+?)\s*$/gm),
+  ];
+
+  return headings
+    .map((match, index) => {
+      const start = (match.index ?? 0) + match[0].length;
+      const end =
+        index < headings.length - 1
+          ? (headings[index + 1].index ?? markdown.length)
+          : markdown.length;
+      return {
+        question: match[1].trim(),
+        bodyMarkdown: markdown.slice(start, end).trim(),
+      };
+    })
+    .filter((item) => item.question && item.bodyMarkdown);
+}
+
+function extractAnswerGuides(content: string): AnswerGuideItem[] {
+  const markdownGuides = parseMarkdownAnswerGuides(
+    extractMarkdownAnswerGuide(content),
+  );
+  if (markdownGuides.length) return markdownGuides;
+  return extractJsonAnswerGuides(content);
+}
+
+function removeGuidePayloads(content: string): string {
+  return content
+    .replace(/<!--\s*answerGuidance[\s\S]*?-->/gi, "")
+    .replace(/<!--\s*answerGuideMarkdown[\s\S]*?-->/gi, "")
+    .trim();
+}
 
 export default function SessionDetailClient({
   session,
@@ -23,6 +77,30 @@ export default function SessionDetailClient({
 }) {
   const { completedSessions, toggleCompleted, syncFromDB } = useProgressStore();
   const [mounted, setMounted] = useState(false);
+  const answerGuides = useMemo(
+    () => extractAnswerGuides(session.content),
+    [session.content],
+  );
+  const baseLessonContent = useMemo(
+    () => removeGuidePayloads(session.content),
+    [session.content],
+  );
+  const visibleLessonContent = useMemo(() => {
+    if (!answerGuides.length) return baseLessonContent;
+
+    const sectionSevenPattern =
+      /<details[^>]*>\s*<summary>\s*<strong>\s*7\)\s*Questions\s*&\s*Practice\s*Ideas\s*<\/strong>\s*<\/summary>[\s\S]*?<\/details>/i;
+
+    if (sectionSevenPattern.test(baseLessonContent)) {
+      return baseLessonContent.replace(sectionSevenPattern, ANSWER_GUIDE_SLOT);
+    }
+
+    return `${baseLessonContent}${ANSWER_GUIDE_SLOT}`;
+  }, [answerGuides.length, baseLessonContent]);
+  const lessonParts = useMemo(
+    () => visibleLessonContent.split(ANSWER_GUIDE_SLOT),
+    [visibleLessonContent],
+  );
 
   useEffect(() => {
     setMounted(true);
@@ -32,7 +110,7 @@ export default function SessionDetailClient({
   const completed = mounted && completedSessions.includes(session.id);
 
   return (
-    <div className="max-w-6xl mx-auto overflow-x-scroll h-[calc(100vh-4rem)]">
+    <div className="max-w-6xl mx-auto overflow-x-hidden h-[calc(100vh-4rem)]">
       <div className="flex items-center justify-between mb-6">
         <Link
           href={`/phase/${phase.id}`}
@@ -87,73 +165,78 @@ export default function SessionDetailClient({
 
       <article
         className={[
-          "border border-gray-200 rounded-2xl p-6 md:p-8 prose prose-gray max-w-none",
-          "prose-p:text-gray-700 prose-p:leading-7 prose-p:my-4",
+          "lesson-prose border border-gray-200 rounded-2xl p-4 md:p-5 prose prose-gray max-w-none",
+          "prose-p:text-gray-700 prose-p:leading-6 prose-p:my-1.5",
           "prose-headings:text-gray-900 prose-headings:font-semibold",
-          "prose-h1:text-2xl prose-h1:mb-4 prose-h1:mt-0",
-          "prose-h2:text-xl prose-h2:mt-8 prose-h2:mb-3 prose-h2:pb-2 prose-h2:border-b prose-h2:border-gray-100",
-          "prose-h3:text-lg prose-h3:mt-6 prose-h3:mb-2",
-          "prose-li:text-gray-700 prose-li:my-1",
+          "prose-h1:text-2xl prose-h1:mb-2 prose-h1:mt-0",
+          "prose-h2:text-xl prose-h2:mt-4 prose-h2:mb-2 prose-h2:pb-1 prose-h2:border-b prose-h2:border-gray-100",
+          "prose-h3:text-lg prose-h3:mt-3 prose-h3:mb-1",
+          "prose-ul:my-1.5 prose-ol:my-1.5",
+          "prose-li:text-gray-700 prose-li:my-0.5",
           "prose-a:text-indigo-600 hover:prose-a:text-indigo-500 prose-a:font-medium",
           "prose-strong:text-gray-900",
           "prose-code:text-indigo-700 prose-code:bg-indigo-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded",
           "prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl",
           "prose-blockquote:border-l-4 prose-blockquote:border-indigo-400 prose-blockquote:bg-indigo-50/70",
-          "prose-blockquote:rounded-r-lg prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:not-italic prose-blockquote:text-gray-700",
+          "prose-blockquote:my-2 prose-blockquote:rounded-r-lg prose-blockquote:px-3 prose-blockquote:py-1.5 prose-blockquote:not-italic prose-blockquote:text-gray-700",
           "prose-table:text-sm prose-th:text-gray-700 prose-td:text-gray-700",
-          "prose-details:my-4 prose-details:border prose-details:border-gray-200 prose-details:rounded-xl prose-details:bg-gray-50/70 prose-details:overflow-hidden",
-          "prose-summary:cursor-pointer prose-summary:list-none prose-summary:font-semibold prose-summary:text-gray-900 prose-summary:px-4 prose-summary:py-3 prose-summary:select-none prose-summary:hover:bg-indigo-50 prose-summary:transition-colors prose-summary:[&::-webkit-details-marker]:hidden",
+          "prose-details:my-1.5 prose-details:border prose-details:border-gray-200 prose-details:rounded-lg prose-details:bg-gray-50/70 prose-details:overflow-hidden",
+          "prose-summary:cursor-pointer prose-summary:list-none prose-summary:font-semibold prose-summary:text-gray-900 prose-summary:px-2.5 prose-summary:py-1.5 prose-summary:select-none prose-summary:hover:bg-indigo-50 prose-summary:transition-colors prose-summary:[&::-webkit-details-marker]:hidden",
         ].join(" ")}
       >
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
-          rehypePlugins={[rehypeRaw]}
-          components={{
-            details: ({ children, open: _open, ...props }) => (
-              <details {...props} className="group mb-2">
-                {children}
-              </details>
-            ),
-            summary: ({ children, ...props }) => (
-              <summary
-                {...props}
-                className="flex items-center justify-between gap-3 cursor-pointer [&_*]:cursor-pointer"
-                title="Click to expand or collapse"
+        {lessonParts.map((part, index) => (
+          <Fragment key={`${index}-${part.slice(0, 16)}`}>
+            {part.trim() ? (
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeRaw]}
+                components={{
+                  details: ({ children, open: _open, ...props }) => (
+                    <details {...props} className="group mb-2">
+                      {children}
+                    </details>
+                  ),
+                  summary: ({ children, ...props }) => (
+                    <summary
+                      {...props}
+                      className="flex items-center justify-between gap-3 cursor-pointer [&_*]:cursor-pointer"
+                      title="Click to expand or collapse"
+                    >
+                      <span className="flex items-center gap-2">
+                        <ChevronRight
+                          size={14}
+                          className="shrink-0 text-indigo-500 transition-transform duration-200 group-open:rotate-90"
+                        />
+                        <span>{children}</span>
+                      </span>
+                      <ChevronRight
+                        size={12}
+                        className="shrink-0 text-gray-400 transition-transform duration-200 group-open:hidden"
+                      />
+                      <span className="hidden text-xs text-indigo-600 font-medium group-open:inline">
+                        Collapse
+                      </span>
+                    </summary>
+                  ),
+                }}
               >
-                <span className="flex items-center gap-2">
-                  <ChevronRight
-                    size={14}
-                    className="shrink-0 text-indigo-500 transition-transform duration-200 group-open:rotate-90"
-                  />
-                  <span>{children}</span>
-                </span>
-                <ChevronRight
-                  size={12}
-                  className="shrink-0 text-gray-400 transition-transform duration-200 group-open:hidden"
-                />
-                <span className="hidden text-xs text-indigo-600 font-medium group-open:inline">
-                  Collapse
-                </span>
-              </summary>
-            ),
-          }}
-        >
-          {session.content}
-        </ReactMarkdown>
+                {part}
+              </ReactMarkdown>
+            ) : null}
+            {index < lessonParts.length - 1 ? (
+              <AnswerGuideInline guides={answerGuides} />
+            ) : null}
+          </Fragment>
+        ))}
       </article>
 
       <LessonAssistant
         lessonTitle={session.meta.title}
-        lessonContent={session.content}
+        lessonContent={baseLessonContent}
       />
       <PracticeCoach
         lessonTitle={session.meta.title}
-        lessonContent={session.content}
-      />
-      <AnswerPractice
-        sessionSlug={session.id}
-        lessonTitle={session.meta.title}
-        lessonContent={session.content}
+        lessonContent={baseLessonContent}
       />
     </div>
   );

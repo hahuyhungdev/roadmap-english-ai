@@ -175,6 +175,57 @@
     border-color: #6366f1 !important;
   }
 
+  .theme-dark .guide-markdown,
+  .theme-dark .guide-markdown :is(p, li, ul, ol) {
+    color: #f1f5f9 !important;
+  }
+  .theme-dark .guide-markdown strong {
+    color: #ffffff !important;
+  }
+  .theme-dark .guide-markdown code {
+    background-color: rgb(30 41 59 / 0.9) !important;
+    color: #93c5fd !important;
+    border-radius: 4px;
+    padding: 0.05rem 0.25rem;
+  }
+
+  .theme-dark .ai-assistant-markdown {
+    --tw-prose-body: #f1f5f9;
+    --tw-prose-headings: #ffffff;
+    --tw-prose-links: #c4b5fd;
+    --tw-prose-bold: #ffffff;
+    --tw-prose-counters: #cbd5e1;
+    --tw-prose-bullets: #cbd5e1;
+    --tw-prose-quotes: #f1f5f9;
+    --tw-prose-code: #93c5fd;
+    --tw-prose-pre-code: #f8fafc;
+    --tw-prose-pre-bg: #020617;
+  }
+  .theme-dark .ai-assistant-markdown,
+  .theme-dark .ai-assistant-markdown :is(p, li, ul, ol, h1, h2, h3, strong, em, blockquote) {
+    color: #f1f5f9 !important;
+  }
+  .theme-dark .ai-assistant-markdown a {
+    color: #c4b5fd !important;
+  }
+  .theme-dark .ai-assistant-markdown code {
+    background-color: rgb(30 41 59 / 0.9) !important;
+    color: #93c5fd !important;
+  }
+  .theme-dark .ai-assistant-markdown blockquote {
+    background-color: rgb(30 41 59 / 0.65) !important;
+    border-color: #6366f1 !important;
+  }
+
+  .theme-dark .ai-assistant-bubble {
+    background-color: rgb(51 65 85 / 0.9) !important;
+    border-color: #475569 !important;
+    color: #f8fafc !important;
+  }
+  .theme-dark .ai-assistant-bubble :is(p, span, li, ul, ol, strong, em, h1, h2, h3) {
+    color: #f8fafc !important;
+  }
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }

@@ -9,6 +9,30 @@ export interface PhraseGroup {
 }
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
+const ANSWER_GUIDES_DIR = path.join(CONTENT_DIR, "answer-guides");
+
+function wrapGuideMarkdown(raw: string): string {
+  return `<!-- answerGuideMarkdown\n${raw.trim().replace(/-->/g, "-- >")}\n-->`;
+}
+
+function resolveGuidePath(sessionId: string): string | null {
+  const match = sessionId.match(/session-(\d+)/i);
+  const number = match ? Number.parseInt(match[1], 10) : null;
+
+  const candidates = [
+    `${sessionId}.md`,
+    number ? `s${number}.md` : null,
+    number ? `session-${String(number).padStart(2, "0")}.md` : null,
+    number ? `session-${number}.md` : null,
+  ].filter(Boolean) as string[];
+
+  for (const fileName of candidates) {
+    const candidate = path.join(ANSWER_GUIDES_DIR, fileName);
+    if (fs.existsSync(candidate)) return candidate;
+  }
+
+  return null;
+}
 
 function parseFrontmatter(raw: string): {
   meta: Partial<SessionMeta>;
@@ -92,7 +116,15 @@ export function loadSessions(): Session[] {
     .map((file) => {
       const id = file.replace(".md", "");
       const raw = fs.readFileSync(path.join(CONTENT_DIR, file), "utf-8");
-      return buildSession(id, raw);
+      const guidePath = resolveGuidePath(id);
+      const guideRaw =
+        guidePath && fs.existsSync(guidePath)
+          ? fs.readFileSync(guidePath, "utf-8")
+          : "";
+      const mergedRaw = guideRaw
+        ? `${raw.trim()}\n\n${wrapGuideMarkdown(guideRaw)}\n`
+        : raw;
+      return buildSession(id, mergedRaw);
     })
     .sort((a, b) => a.meta.sessionNumber - b.meta.sessionNumber);
 }

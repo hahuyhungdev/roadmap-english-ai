@@ -11,7 +11,7 @@ import {
 import { Textarea } from "@mantine/core";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import type { AiChatMessage, AiResponse } from "@/types/ai";
+import type { AiChatMessage } from "@/types/ai";
 
 interface LessonAssistantProps {
   lessonTitle: string;
@@ -43,6 +43,10 @@ export default function LessonAssistant({
   const MODE_KEY = "ai_lesson_mode";
   const bottomRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+  const isStreamingText =
+    loading &&
+    messages.at(-1)?.role === "assistant" &&
+    (messages.at(-1)?.content.length ?? 0) > 0;
 
   // Load saved mode
   useEffect(() => {
@@ -93,6 +97,7 @@ export default function LessonAssistant({
           lessonTitle,
           lessonContent,
           mode,
+          stream: true,
           messages: nextMessages.map((m) => ({
             role: m.role,
             content: m.content,
@@ -100,27 +105,63 @@ export default function LessonAssistant({
         }),
       });
 
-      const data = (await res.json()) as AiResponse & { error?: string };
       if (!res.ok) {
+        const data = (await res.json().catch(() => null)) as {
+          error?: string;
+        } | null;
         if (res.status === 404) {
           throw new Error(
             "API endpoint not found. For local dev, run: npm run dev:vercel",
           );
         }
-        throw new Error(data.error || `API Error: ${res.status}`);
+        throw new Error(data?.error || `API Error: ${res.status}`);
       }
 
-      const reply = data.reply?.trim();
-      if (!reply) {
+      if (!res.body) {
         throw new Error("Empty response from AI");
       }
 
-      setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let reply = "";
+
+      setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        reply += decoder.decode(value, { stream: true });
+        setMessages((prev) => {
+          const copy = [...prev];
+          const lastIndex = copy.length - 1;
+          if (copy[lastIndex]?.role === "assistant") {
+            copy[lastIndex] = { role: "assistant", content: reply };
+          }
+          return copy;
+        });
+      }
+
+      const finalChunk = decoder.decode();
+      if (finalChunk) {
+        reply += finalChunk;
+        setMessages((prev) => {
+          const copy = [...prev];
+          const lastIndex = copy.length - 1;
+          if (copy[lastIndex]?.role === "assistant") {
+            copy[lastIndex] = { role: "assistant", content: reply };
+          }
+          return copy;
+        });
+      }
+      if (!reply.trim()) {
+        throw new Error("Empty response from AI");
+      }
     } catch (err) {
       const message =
         err instanceof Error ? err.message : "Failed to get AI response";
       setError(message);
-      setMessages((prev) => prev.slice(0, -1));
+      setMessages(messages);
       setInput(question);
     } finally {
       setLoading(false);
@@ -247,12 +288,44 @@ export default function LessonAssistant({
               className={`max-w-[85%] text-sm px-3 py-2.5 leading-relaxed ${
                 m.role === "user"
                   ? "bg-indigo-600 text-white rounded-2xl rounded-br-md"
-                  : "bg-gray-100 text-gray-800 rounded-2xl rounded-bl-md border border-gray-100"
+                  : "ai-assistant-bubble bg-gray-100 text-gray-800 rounded-2xl rounded-bl-md border border-gray-100"
               }`}
             >
               {m.role === "assistant" ? (
-                <div className="prose prose-sm prose-gray max-w-none prose-p:my-0 prose-p:leading-relaxed prose-p:text-gray-800 prose-headings:my-1 prose-headings:font-semibold prose-h1:text-sm prose-h2:text-sm prose-h3:text-sm prose-li:my-0 prose-li:text-gray-800 prose-a:text-indigo-600 prose-a:font-medium prose-strong:font-semibold prose-strong:text-gray-900 prose-code:text-indigo-600 prose-code:bg-indigo-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-xs prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:text-xs prose-pre:p-2 prose-pre:rounded-lg prose-blockquote:border-l-2 prose-blockquote:border-indigo-400 prose-blockquote:bg-indigo-50/60 prose-blockquote:rounded-r prose-blockquote:px-3 prose-blockquote:py-1.5 prose-blockquote:not-italic prose-blockquote:text-gray-700">
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                <div className="ai-assistant-markdown max-w-none text-inherit">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      p: ({ children }) => (
+                        <p className="mb-2 leading-relaxed text-inherit last:mb-0">
+                          {children}
+                        </p>
+                      ),
+                      ul: ({ children }) => (
+                        <ul className="mb-2 list-disc pl-5 text-inherit">
+                          {children}
+                        </ul>
+                      ),
+                      ol: ({ children }) => (
+                        <ol className="mb-2 list-decimal pl-5 text-inherit">
+                          {children}
+                        </ol>
+                      ),
+                      li: ({ children }) => (
+                        <li className="mb-1 text-inherit">{children}</li>
+                      ),
+                      strong: ({ children }) => (
+                        <strong className="font-semibold text-inherit">
+                          {children}
+                        </strong>
+                      ),
+                      code: ({ children }) => (
+                        <code className="rounded bg-indigo-50 px-1 py-0.5 text-xs text-indigo-600">
+                          {children}
+                        </code>
+                      ),
+                    }}
+                  >
                     {m.content}
                   </ReactMarkdown>
                 </div>
@@ -263,7 +336,7 @@ export default function LessonAssistant({
           </div>
         ))}
 
-        {loading && (
+        {loading && !isStreamingText && (
           <div className="inline-flex items-center gap-2 text-xs text-gray-500 bg-gray-100 rounded-2xl px-3 py-2.5 rounded-bl-md">
             <Loader2 size={12} className="animate-spin" />
             <span>Thinking…</span>
