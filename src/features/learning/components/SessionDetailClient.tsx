@@ -71,9 +71,11 @@ function removeGuidePayloads(content: string): string {
 export default function SessionDetailClient({
   session,
   phase,
+  canViewAnswerGuides,
 }: {
   session: Session;
   phase: PhraseGroup;
+  canViewAnswerGuides: boolean;
 }) {
   const { completedSessions, toggleCompleted, syncFromDB } = useProgressStore();
   const [mounted, setMounted] = useState(false);
@@ -86,7 +88,7 @@ export default function SessionDetailClient({
     [session.content],
   );
   const visibleLessonContent = useMemo(() => {
-    if (!answerGuides.length) return baseLessonContent;
+    if (!canViewAnswerGuides || !answerGuides.length) return baseLessonContent;
 
     const sectionSevenPattern =
       /<details[^>]*>\s*<summary>\s*<strong>\s*7\)\s*Questions\s*&\s*Practice\s*Ideas\s*<\/strong>\s*<\/summary>[\s\S]*?<\/details>/i;
@@ -96,7 +98,7 @@ export default function SessionDetailClient({
     }
 
     return `${baseLessonContent}${ANSWER_GUIDE_SLOT}`;
-  }, [answerGuides.length, baseLessonContent]);
+  }, [answerGuides.length, baseLessonContent, canViewAnswerGuides]);
   const lessonParts = useMemo(
     () => visibleLessonContent.split(ANSWER_GUIDE_SLOT),
     [visibleLessonContent],
@@ -223,7 +225,7 @@ export default function SessionDetailClient({
                 {part}
               </ReactMarkdown>
             ) : null}
-            {index < lessonParts.length - 1 ? (
+            {canViewAnswerGuides && index < lessonParts.length - 1 ? (
               <AnswerGuideInline guides={answerGuides} />
             ) : null}
           </Fragment>
