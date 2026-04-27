@@ -17,54 +17,54 @@ description: Explain privacy, tracking, consent, personalized feeds, ads, recomm
 <summary><strong>1) Vocabulary</strong></summary>
 
 - **personal data** /ˈpɝːsənəl ˈdeɪtə/ (n) - information about a user, such as identity, location, behavior, or device data
-  _Example 1:_ A delivery app needs address data, but not necessarily the user's contact list.
-  _Example 2:_ Personal data should match the feature, not every future business idea.
-  _Example 3:_ Collecting more data increases breach and misuse risk.
+  - _Example 1:_ A delivery app needs address data, but not necessarily the user's contact list.
+  - _Example 2:_ Personal data should match the feature, not every future business idea.
+  - _Example 3:_ Collecting more data increases breach and misuse risk.
 
 - **data minimization** /ˈdeɪtə ˌmɪnəməˈzeɪʃən/ (n) - collecting only the data needed for a clear purpose
-  _Example 1:_ Data minimization means asking for location only when the feature needs it.
-  _Example 2:_ It protects trust because users see that the product has restraint.
-  _Example 3:_ A product can still be useful without collecting everything.
+  - _Example 1:_ Data minimization means asking for location only when the feature needs it.
+  - _Example 2:_ It protects trust because users see that the product has restraint.
+  - _Example 3:_ A product can still be useful without collecting everything.
 
 - **tracking** /ˈtrækɪŋ/ (n) - recording user behavior across actions, sessions, or platforms
-  _Example 1:_ Tracking may include clicks, searches, watch time, purchases, and location.
-  _Example 2:_ Hidden tracking can make users feel uncomfortable.
-  _Example 3:_ Tracking should be explained in plain language.
+  - _Example 1:_ Tracking may include clicks, searches, watch time, purchases, and location.
+  - _Example 2:_ Hidden tracking can make users feel uncomfortable.
+  - _Example 3:_ Tracking should be explained in plain language.
 
 - **consent popup** /kənˈsɛnt ˈpɑːpˌʌp/ (n) - popup that asks whether users allow data collection or use
-  _Example 1:_ A fair consent popup is short, balanced, and easy to reject.
-  _Example 2:_ A confusing consent popup may be legal but still feel dishonest.
-  _Example 3:_ Consent design affects user trust.
+  - _Example 1:_ A fair consent popup is short, balanced, and easy to reject.
+  - _Example 2:_ A confusing consent popup may be legal but still feel dishonest.
+  - _Example 3:_ Consent design affects user trust.
 
 - **opt in** /ɑːpt ɪn/ (phr v) - actively choose to allow something
-  _Example 1:_ Personalized ads should be opt-in when the data is sensitive.
-  _Example 2:_ Opt-in flows feel more respectful because users make an active choice.
-  _Example 3:_ Users should know what they are opting into.
+  - _Example 1:_ Personalized ads should be opt-in when the data is sensitive.
+  - _Example 2:_ Opt-in flows feel more respectful because users make an active choice.
+  - _Example 3:_ Users should know what they are opting into.
 
 - **opt out** /ɑːpt aʊt/ (phr v) - choose not to allow or join something
-  _Example 1:_ Users should be able to opt out without searching through many menus.
-  _Example 2:_ A hidden opt-out is not a meaningful choice.
-  _Example 3:_ Easy opt-out protects long-term trust.
+  - _Example 1:_ Users should be able to opt out without searching through many menus.
+  - _Example 2:_ A hidden opt-out is not a meaningful choice.
+  - _Example 3:_ Easy opt-out protects long-term trust.
 
 - **default setting** /dɪˈfɔːlt ˈsɛtɪŋ/ (n) - setting users get before they change anything
-  _Example 1:_ Privacy-friendly defaults are important because many users never change settings.
-  _Example 2:_ Defaults are product strategy, not a neutral detail.
-  _Example 3:_ A default should be easy to explain in a product review.
+  - _Example 1:_ Privacy-friendly defaults are important because many users never change settings.
+  - _Example 2:_ Defaults are product strategy, not a neutral detail.
+  - _Example 3:_ A default should be easy to explain in a product review.
 
 - **personalized feed** /ˈpɝːsənəlaɪzd fiːd/ (n) - feed shaped by user behavior or profile
-  _Example 1:_ TikTok and YouTube use personalized feeds to keep content relevant.
-  _Example 2:_ A personalized feed can become too narrow over time.
-  _Example 3:_ Users need controls like not interested, reset feed, and show less.
+  - _Example 1:_ TikTok and YouTube use personalized feeds to keep content relevant.
+  - _Example 2:_ A personalized feed can become too narrow over time.
+  - _Example 3:_ Users need controls like not interested, reset feed, and show less.
 
 - **dark pattern** /dɑːrk ˈpætɚn/ (n) - design that pushes users into choices they may not really want
-  _Example 1:_ Hiding the reject button is a dark pattern.
-  _Example 2:_ Dark patterns may increase conversion but damage trust.
-  _Example 3:_ A fair product should not make privacy controls hard to find.
+  - _Example 1:_ Hiding the reject button is a dark pattern.
+  - _Example 2:_ Dark patterns may increase conversion but damage trust.
+  - _Example 3:_ A fair product should not make privacy controls hard to find.
 
 - **user trust** /ˈjuːzɚ trʌst/ (n) - user's belief that a product is safe, fair, and honest
-  _Example 1:_ Clear privacy settings build user trust.
-  _Example 2:_ Hidden tracking can damage trust quickly.
-  _Example 3:_ Trust is a long-term product asset.
+  - _Example 1:_ Clear privacy settings build user trust.
+  - _Example 2:_ Hidden tracking can damage trust quickly.
+  - _Example 3:_ Trust is a long-term product asset.
 
 **Additional useful terms:**
 

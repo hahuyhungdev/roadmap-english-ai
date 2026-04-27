@@ -17,54 +17,54 @@ description: Discuss pressure from family and society, fear of disappointing oth
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **social pressure** /ˈsoʊʃəl ˈprɛʃər/ (n) - stress caused by expectations from family, friends, or society
-  _Example 1:_ Social pressure from relatives made me question my career choices every holiday.
-  _Example 2:_ Once I named the pressure clearly, I could respond more calmly.
-  _Example 3:_ Social pressure is real, but it should inform decisions, not make them.
+  - _Example 1:_ Social pressure from relatives made me question my career choices every holiday.
+  - _Example 2:_ Once I named the pressure clearly, I could respond more calmly.
+  - _Example 3:_ Social pressure is real, but it should inform decisions, not make them.
 
 - **family expectation** /ˈfæməli ˌekspɛkˈteɪʃən/ (n) - what your family hopes or requires you to achieve
-  _Example 1:_ Family expectation in my case was a stable salary and early house ownership.
-  _Example 2:_ I explained my actual timeline honestly instead of pretending to agree.
-  _Example 3:_ Managing expectations early prevents bigger conflicts later.
+  - _Example 1:_ Family expectation in my case was a stable salary and early house ownership.
+  - _Example 2:_ I explained my actual timeline honestly instead of pretending to agree.
+  - _Example 3:_ Managing expectations early prevents bigger conflicts later.
 
 - **status pressure** /ˈsteɪtəs ˈprɛʃɚ/ (n) - stress caused by social comparison of success symbols
-  _Example 1:_ Status pressure increased during holiday gatherings with relatives.
-  _Example 2:_ I felt behind even when my real progress was strong.
-  _Example 3:_ Naming status pressure helped me respond calmly instead of reacting emotionally.
+  - _Example 1:_ Status pressure increased during holiday gatherings with relatives.
+  - _Example 2:_ I felt behind even when my real progress was strong.
+  - _Example 3:_ Naming status pressure helped me respond calmly instead of reacting emotionally.
 
 - **sense of guilt** /sɛns əv ɡɪlt/ (n) - feeling that you have let someone down or failed a duty
-  _Example 1:_ I felt a strong sense of guilt when I chose a lower-salary role my parents did not support.
-  _Example 2:_ That guilt was valid, but it was not a good reason to make the wrong career move.
-  _Example 3:_ I reduced it by explaining the decision clearly and showing a realistic growth plan.
+  - _Example 1:_ I felt a strong sense of guilt when I chose a lower-salary role my parents did not support.
+  - _Example 2:_ That guilt was valid, but it was not a good reason to make the wrong career move.
+  - _Example 3:_ I reduced it by explaining the decision clearly and showing a realistic growth plan.
 
 - **fear of disappointing** /fɪr əv ˌdɪsəˈpɔɪntɪŋ/ (n) - anxiety about failing others expectations
-  _Example 1:_ Fear of disappointing made me hide stress and overpromise.
-  _Example 2:_ Later, I used honest updates with family about my real timeline.
-  _Example 3:_ That honesty improved trust, even without full agreement.
+  - _Example 1:_ Fear of disappointing made me hide stress and overpromise.
+  - _Example 2:_ Later, I used honest updates with family about my real timeline.
+  - _Example 3:_ That honesty improved trust, even without full agreement.
 
 - **financial pressure** /faɪˈnænʃəl ˈprɛʃər/ (n) - stress around earning enough money to meet your own and family's needs
-  _Example 1:_ Financial pressure made me take a high-paying role I was not ready for.
-  _Example 2:_ I balance financial pressure by tracking my actual monthly costs, not imagined ones.
-  _Example 3:_ In interviews, I discuss financial pressure honestly when asked about career motivation.
+  - _Example 1:_ Financial pressure made me take a high-paying role I was not ready for.
+  - _Example 2:_ I balance financial pressure by tracking my actual monthly costs, not imagined ones.
+  - _Example 3:_ In interviews, I discuss financial pressure honestly when asked about career motivation.
 
 - **reputation burden** /ˌrɛpjəˈteɪʃən ˈbɝdən/ (n) - stress of maintaining an image of success
-  _Example 1:_ Reputation burden was heavy when I acted "fine" but felt exhausted.
-  _Example 2:_ I reduced it by sharing realistic plans, not perfect images.
-  _Example 3:_ Less image pressure improved my decisions.
+  - _Example 1:_ Reputation burden was heavy when I acted "fine" but felt exhausted.
+  - _Example 2:_ I reduced it by sharing realistic plans, not perfect images.
+  - _Example 3:_ Less image pressure improved my decisions.
 
 - **expectation gap** /ˌɛkspɛkˈteɪʃən ɡæp/ (n) - mismatch between what others expect and what you can sustain
-  _Example 1:_ Expectation gap became clear when family expected instant promotion.
-  _Example 2:_ I used a six-month plan to show realistic growth steps.
-  _Example 3:_ Concrete timelines reduced emotional arguments.
+  - _Example 1:_ Expectation gap became clear when family expected instant promotion.
+  - _Example 2:_ I used a six-month plan to show realistic growth steps.
+  - _Example 3:_ Concrete timelines reduced emotional arguments.
 
 - **priority list** /praɪˈɔrəti lɪst/ (n) - a clear ranking of what matters most when making a decision
-  _Example 1:_ My priority list before accepting any role is: learning quality, health, income, and stability — in that order.
-  _Example 2:_ Writing out a priority list stopped me from making emotional decisions under family pressure.
-  _Example 3:_ I update the list every six months as life conditions change.
+  - _Example 1:_ My priority list before accepting any role is: learning quality, health, income, and stability — in that order.
+  - _Example 2:_ Writing out a priority list stopped me from making emotional decisions under family pressure.
+  - _Example 3:_ I update the list every six months as life conditions change.
 
 - **self-defined success** /sɛlf dɪˈfaɪnd səkˈsɛs/ (n) - personal definition of success based on your own values
-  _Example 1:_ Self-defined success for me is stable health plus meaningful technical growth.
-  _Example 2:_ It does not reject money; it places money inside a wider system.
-  _Example 3:_ This definition makes pressure easier to manage.
+  - _Example 1:_ Self-defined success for me is stable health plus meaningful technical growth.
+  - _Example 2:_ It does not reject money; it places money inside a wider system.
+  - _Example 3:_ This definition makes pressure easier to manage.
 
 **Additional useful terms:**
 

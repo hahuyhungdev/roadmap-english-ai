@@ -17,54 +17,54 @@ description: Explain stack choices with practical trade-offs around speed, maint
 <summary><strong>1) Vocabulary</strong></summary>
 
 - **tech stack** /tɛk stæk/ (n) - the main technologies used to build and run a product
-  _Example 1:_ Our stack includes Next.js, PostgreSQL, and a managed auth provider.
-  _Example 2:_ We chose the stack based on product needs, not only popularity.
-  _Example 3:_ A good stack is something the team can actually maintain.
+  - _Example 1:_ Our stack includes Next.js, PostgreSQL, and a managed auth provider.
+  - _Example 2:_ We chose the stack based on product needs, not only popularity.
+  - _Example 3:_ A good stack is something the team can actually maintain.
 
 - **maintainability** /meɪnˌteɪnəˈbɪləti/ (n) - how easy code is to update, debug, and extend
-  _Example 1:_ We chose a boring library because maintainability mattered more than novelty.
-  _Example 2:_ Maintainability improved after we removed custom one-off patterns.
-  _Example 3:_ A tool is not maintainable if only one engineer understands it.
+  - _Example 1:_ We chose a boring library because maintainability mattered more than novelty.
+  - _Example 2:_ Maintainability improved after we removed custom one-off patterns.
+  - _Example 3:_ A tool is not maintainable if only one engineer understands it.
 
 - **time-to-market** /ˌtaɪm tə ˈmɑːrkɪt/ (n) - how quickly a team can ship a usable product
-  _Example 1:_ Managed auth improved time-to-market for the first release.
-  _Example 2:_ Faster time-to-market helped us validate demand before building too much.
-  _Example 3:_ Speed is useful when the team also protects critical quality.
+  - _Example 1:_ Managed auth improved time-to-market for the first release.
+  - _Example 2:_ Faster time-to-market helped us validate demand before building too much.
+  - _Example 3:_ Speed is useful when the team also protects critical quality.
 
 - **integration risk** /ˌɪntəˈɡreɪʃən rɪsk/ (n) - risk that separate systems may not work together correctly
-  _Example 1:_ Integration risk increased after the payment API changed its error format.
-  _Example 2:_ We reduced integration risk with contract tests.
-  _Example 3:_ Frontend decisions should include API behavior, not only UI code.
+  - _Example 1:_ Integration risk increased after the payment API changed its error format.
+  - _Example 2:_ We reduced integration risk with contract tests.
+  - _Example 3:_ Frontend decisions should include API behavior, not only UI code.
 
 - **vendor lock-in** /ˈvɛndər lɑːk ɪn/ (n) - dependence on one provider that is costly to leave later
-  _Example 1:_ The managed service was fast, but vendor lock-in was a real concern.
-  _Example 2:_ We isolated provider-specific code to reduce lock-in.
-  _Example 3:_ Lock-in is acceptable only when the benefit is clear and the exit path is understood.
+  - _Example 1:_ The managed service was fast, but vendor lock-in was a real concern.
+  - _Example 2:_ We isolated provider-specific code to reduce lock-in.
+  - _Example 3:_ Lock-in is acceptable only when the benefit is clear and the exit path is understood.
 
 - **proof of concept** /pruːf əv ˈkɑːnsɛpt/ (n) - small test build used to check whether an idea works
-  _Example 1:_ We ran a proof of concept before adopting the charting library.
-  _Example 2:_ The POC exposed one performance issue on low-end mobile devices.
-  _Example 3:_ A POC gives evidence without full commitment.
+  - _Example 1:_ We ran a proof of concept before adopting the charting library.
+  - _Example 2:_ The POC exposed one performance issue on low-end mobile devices.
+  - _Example 3:_ A POC gives evidence without full commitment.
 
 - **migration path** /maɪˈɡreɪʃən pæθ/ (n) - plan for moving from the current system to a new one safely
-  _Example 1:_ We needed a migration path before replacing the old checkout flow.
-  _Example 2:_ A clear migration path included rollback, monitoring, and staged rollout.
-  _Example 3:_ Without a migration path, a stack decision becomes risky.
+  - _Example 1:_ We needed a migration path before replacing the old checkout flow.
+  - _Example 2:_ A clear migration path included rollback, monitoring, and staged rollout.
+  - _Example 3:_ Without a migration path, a stack decision becomes risky.
 
 - **backward compatibility** /ˈbækwərd kəmˌpætəˈbɪləti/ (n) - keeping new changes working with older clients or systems
-  _Example 1:_ We preserved backward compatibility for older mobile app versions.
-  _Example 2:_ Breaking compatibility caused login failures in a previous release.
-  _Example 3:_ Compatibility checks are part of release safety.
+  - _Example 1:_ We preserved backward compatibility for older mobile app versions.
+  - _Example 2:_ Breaking compatibility caused login failures in a previous release.
+  - _Example 3:_ Compatibility checks are part of release safety.
 
 - **bundle size** /ˈbʌndəl saɪz/ (n) - total JavaScript/CSS size sent to users in a frontend app
-  _Example 1:_ We rejected one UI library because it increased bundle size too much.
-  _Example 2:_ Bundle size affected users on slow networks and low-end phones.
-  _Example 3:_ Smaller bundles can improve first-load experience.
+  - _Example 1:_ We rejected one UI library because it increased bundle size too much.
+  - _Example 2:_ Bundle size affected users on slow networks and low-end phones.
+  - _Example 3:_ Smaller bundles can improve first-load experience.
 
 - **decision record** /dɪˈsɪʒən ˈrɛkərd/ (n) - short note explaining why a technical choice was made
-  _Example 1:_ The decision record listed options, trade-offs, risk, and fallback.
-  _Example 2:_ New teammates used the record to understand why we chose the tool.
-  _Example 3:_ Decision records prevent the same debate from repeating.
+  - _Example 1:_ The decision record listed options, trade-offs, risk, and fallback.
+  - _Example 2:_ New teammates used the record to understand why we chose the tool.
+  - _Example 3:_ Decision records prevent the same debate from repeating.
 
 **Additional useful terms:**
 

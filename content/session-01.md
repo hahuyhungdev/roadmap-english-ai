@@ -17,54 +17,54 @@ description: Explain your role with clear ownership, user value, business impact
 <summary><strong>1) Vocabulary</strong></summary>
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - responsibility for a specific area from planning to result
-  _Example 1:_ I owned the frontend checkout flow, including validation, loading states, and error messages.
-  _Example 2:_ Clear ownership helped QA know who to ask when the behavior was unclear.
-  _Example 3:_ Ownership does not mean doing everything alone; it means being accountable for your part.
+  - _Example 1:_ I owned the frontend checkout flow, including validation, loading states, and error messages.
+  - _Example 2:_ Clear ownership helped QA know who to ask when the behavior was unclear.
+  - _Example 3:_ Ownership does not mean doing everything alone; it means being accountable for your part.
 
 - **business impact** /ˈbɪznəs ˈɪmpækt/ (n) - measurable effect on users, revenue, cost, risk, or team speed
-  _Example 1:_ The business impact was fewer failed checkouts and fewer support tickets.
-  _Example 2:_ A small UI change can have business impact if it removes user friction.
-  _Example 3:_ I try to explain impact with one number and one user example.
+  - _Example 1:_ The business impact was fewer failed checkouts and fewer support tickets.
+  - _Example 2:_ A small UI change can have business impact if it removes user friction.
+  - _Example 3:_ I try to explain impact with one number and one user example.
 
 - **value statement** /ˈvæljuː ˈsteɪtmənt/ (n) - a short sentence explaining why your work mattered
-  _Example 1:_ My value statement was: "I helped reduce checkout confusion by making error states clearer."
-  _Example 2:_ A good value statement connects technical work to a real outcome.
-  _Example 3:_ "I built a modal" is weaker than "I helped users complete the flow with fewer mistakes."
+  - _Example 1:_ My value statement was: "I helped reduce checkout confusion by making error states clearer."
+  - _Example 2:_ A good value statement connects technical work to a real outcome.
+  - _Example 3:_ "I built a modal" is weaker than "I helped users complete the flow with fewer mistakes."
 
 - **primary metric** /ˈpraɪˌmeri ˈmɛtrɪk/ (n) - the main number used to judge whether a project worked
-  _Example 1:_ For onboarding, our primary metric was activation rate.
-  _Example 2:_ For performance work, our primary metric was first-load time on mobile.
-  _Example 3:_ A primary metric should match the user goal, not just look impressive.
+  - _Example 1:_ For onboarding, our primary metric was activation rate.
+  - _Example 2:_ For performance work, our primary metric was first-load time on mobile.
+  - _Example 3:_ A primary metric should match the user goal, not just look impressive.
 
 - **guardrail metric** /ˈɡɑrdˌreɪl ˈmɛtrɪk/ (n) - a second number that checks whether success created a hidden problem
-  _Example 1:_ Completion rate improved, but support tickets were our guardrail metric.
-  _Example 2:_ We tracked speed and error rate together so we did not optimize only one side.
-  _Example 3:_ Guardrail metrics make an impact story more honest.
+  - _Example 1:_ Completion rate improved, but support tickets were our guardrail metric.
+  - _Example 2:_ We tracked speed and error rate together so we did not optimize only one side.
+  - _Example 3:_ Guardrail metrics make an impact story more honest.
 
 - **conversion rate** /kənˈvɝːʒən reɪt/ (n) - percentage of users who complete a target action
-  _Example 1:_ We improved conversion rate after simplifying the mobile checkout form.
-  _Example 2:_ Product cared about conversion because it showed whether users finished the key flow.
-  _Example 3:_ Conversion is useful, but it should be checked with complaints and quality signals.
+  - _Example 1:_ We improved conversion rate after simplifying the mobile checkout form.
+  - _Example 2:_ Product cared about conversion because it showed whether users finished the key flow.
+  - _Example 3:_ Conversion is useful, but it should be checked with complaints and quality signals.
 
 - **drop-off** /ˈdrɑp ɔf/ (n) - the point where users leave a flow before completing it
-  _Example 1:_ We found the biggest drop-off on the address step.
-  _Example 2:_ Clearer validation reduced drop-off because users knew what to fix.
-  _Example 3:_ Drop-off language is useful because it describes user behavior, not code.
+  - _Example 1:_ We found the biggest drop-off on the address step.
+  - _Example 2:_ Clearer validation reduced drop-off because users knew what to fix.
+  - _Example 3:_ Drop-off language is useful because it describes user behavior, not code.
 
 - **scope** /skoʊp/ (n) - what is included and excluded in a piece of work
-  _Example 1:_ We reduced scope to protect release quality.
-  _Example 2:_ The first release focused on the main flow, not every nice-to-have.
-  _Example 3:_ Clear scope helps PM, QA, and engineering avoid last-minute confusion.
+  - _Example 1:_ We reduced scope to protect release quality.
+  - _Example 2:_ The first release focused on the main flow, not every nice-to-have.
+  - _Example 3:_ Clear scope helps PM, QA, and engineering avoid last-minute confusion.
 
 - **release risk** /rɪˈliːs rɪsk/ (n) - chance that a launch causes problems for users or the team
-  _Example 1:_ We used a feature flag to reduce release risk.
-  _Example 2:_ The release risk was high because the change touched payment and account creation.
-  _Example 3:_ Talking about release risk makes pushback sound practical, not negative.
+  - _Example 1:_ We used a feature flag to reduce release risk.
+  - _Example 2:_ The release risk was high because the change touched payment and account creation.
+  - _Example 3:_ Talking about release risk makes pushback sound practical, not negative.
 
 - **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - a person or team affected by the project result
-  _Example 1:_ PM, QA, support, and design were key stakeholders for the release.
-  _Example 2:_ I sent stakeholders a short update with progress, risk, and next step.
-  _Example 3:_ Stakeholder language helps you sound collaborative, not isolated.
+  - _Example 1:_ PM, QA, support, and design were key stakeholders for the release.
+  - _Example 2:_ I sent stakeholders a short update with progress, risk, and next step.
+  - _Example 3:_ Stakeholder language helps you sound collaborative, not isolated.
 
 **Additional useful terms:**
 

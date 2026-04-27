@@ -9,62 +9,62 @@ description: Practice salary conversation structure, evidence-based negotiation,
 
 # Session 24: Negotiation & Professional Feedback
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** Salary negotiation + giving/receiving feedback.
 **Scope:** Practice salary conversation structure, evidence-based negotiation, and giving/receiving feedback with clear follow-up actions.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **compensation** /kˌɑmpənsˈeɪʃən/ (n) - total pay package  
-  _Example 1:_ I evaluate compensation using base salary, bonus, equity, and growth support.  
-  _Example 2:_ This gave me a clearer comparison between two offers with different structures.  
-  _Example 3:_ Total compensation thinking prevented short-term decisions.
+- **compensation** /kˌɑmpənsˈeɪʃən/ (n) - total pay package
+  - _Example 1:_ I evaluate compensation using base salary, bonus, equity, and growth support.
+  - _Example 2:_ This gave me a clearer comparison between two offers with different structures.
+  - _Example 3:_ Total compensation thinking prevented short-term decisions.
 
-- **salary range** /sˈælɚi rˈeɪndʒ/ (n) - minimum and maximum expected pay  
-  _Example 1:_ I prepared a salary range based on market data and role scope.  
-  _Example 2:_ I communicated range confidently without sounding rigid.  
-  _Example 3:_ This improved negotiation quality on both sides.
+- **salary range** /sˈælɚi rˈeɪndʒ/ (n) - minimum and maximum expected pay
+  - _Example 1:_ I prepared a salary range based on market data and role scope.
+  - _Example 2:_ I communicated range confidently without sounding rigid.
+  - _Example 3:_ This improved negotiation quality on both sides.
 
-- **negotiation** /nɪɡˌoʊʃiˈeɪʃən/ (n) - discussion to reach agreement  
-  _Example 1:_ Negotiation was smoother when I connected my ask to measurable impact.  
-  _Example 2:_ I stayed flexible on package structure while protecting core expectations.  
-  _Example 3:_ This kept the tone professional and collaborative.
+- **negotiation** /nɪɡˌoʊʃiˈeɪʃən/ (n) - discussion to reach agreement
+  - _Example 1:_ Negotiation was smoother when I connected my ask to measurable impact.
+  - _Example 2:_ I stayed flexible on package structure while protecting core expectations.
+  - _Example 3:_ This kept the tone professional and collaborative.
 
-- **market benchmark** /mˈɑrkət bˈɛntʃmˌɑrk/ (n) - salary data from similar roles  
-  _Example 1:_ I used market benchmark data from three sources before discussing compensation.  
-  _Example 2:_ Benchmarks helped me avoid unrealistic requests.  
-  _Example 3:_ Data made the conversation objective.
+- **market benchmark** /mˈɑrkət bˈɛntʃmˌɑrk/ (n) - salary data from similar roles
+  - _Example 1:_ I used market benchmark data from three sources before discussing compensation.
+  - _Example 2:_ Benchmarks helped me avoid unrealistic requests.
+  - _Example 3:_ Data made the conversation objective.
 
-- **non-salary benefits** /nˈɑn sˈælɚi bˈɛnəfɪts/ (n) - value beyond base pay  
-  _Example 1:_ Non-salary benefits like learning budget and flexible hours improved long-term value.  
-  _Example 2:_ I traded a small base increase for stronger growth support.  
-  _Example 3:_ This choice matched my career priorities.
+- **non-salary benefits** /nˈɑn sˈælɚi bˈɛnəfɪts/ (n) - value beyond base pay
+  - _Example 1:_ Non-salary benefits like learning budget and flexible hours improved long-term value.
+  - _Example 2:_ I traded a small base increase for stronger growth support.
+  - _Example 3:_ This choice matched my career priorities.
 
-- **constructive feedback** /kənstrˈʌktɪv fˈidbˌæk/ (n) - useful feedback focused on improvement  
-  _Example 1:_ I gave constructive feedback by describing behavior, impact, and one alternative action.  
-  _Example 2:_ This made hard conversations clearer and less defensive.  
-  _Example 3:_ The teammate later adopted the new communication pattern.
+- **constructive feedback** /kənstrˈʌktɪv fˈidbˌæk/ (n) - useful feedback focused on improvement
+  - _Example 1:_ I gave constructive feedback by describing behavior, impact, and one alternative action.
+  - _Example 2:_ This made hard conversations clearer and less defensive.
+  - _Example 3:_ The teammate later adopted the new communication pattern.
 
-- **defensive reaction** /dɪfˈɛnsɪv riˈækʃən/ (n) - emotional resistance to feedback  
-  _Example 1:_ My first defensive reaction was to explain too much instead of listening.  
-  _Example 2:_ I learned to ask clarifying questions before responding.  
-  _Example 3:_ This improved feedback quality significantly.
+- **defensive reaction** /dɪfˈɛnsɪv riˈækʃən/ (n) - emotional resistance to feedback
+  - _Example 1:_ My first defensive reaction was to explain too much instead of listening.
+  - _Example 2:_ I learned to ask clarifying questions before responding.
+  - _Example 3:_ This improved feedback quality significantly.
 
-- **action plan** /ˈækʃən plˈæn/ (n) - clear steps after feedback  
-  _Example 1:_ I created an action plan with owner, deadline, and success metrics.  
-  _Example 2:_ This turned feedback from opinion into execution.  
-  _Example 3:_ Progress became visible in the next review cycle.
+- **action plan** /ˈækʃən plˈæn/ (n) - clear steps after feedback
+  - _Example 1:_ I created an action plan with owner, deadline, and success metrics.
+  - _Example 2:_ This turned feedback from opinion into execution.
+  - _Example 3:_ Progress became visible in the next review cycle.
 
-- **follow-up** /fˈɑloʊ ˈʌp/ (n) - checking progress after changes  
-  _Example 1:_ I scheduled follow-up every two weeks to review behavior changes.  
-  _Example 2:_ Frequent follow-up prevented old habits from returning.  
-  _Example 3:_ It also built trust with my manager.
+- **follow-up** /fˈɑloʊ ˈʌp/ (n) - checking progress after changes
+  - _Example 1:_ I scheduled follow-up every two weeks to review behavior changes.
+  - _Example 2:_ Frequent follow-up prevented old habits from returning.
+  - _Example 3:_ It also built trust with my manager.
 
-- **visible improvement** /vˈɪzəbəl ˌɪmprˈuvmənt/ (n) - clear progress others can see  
-  _Example 1:_ Visible improvement appeared when stakeholders said updates were finally clear.  
-  _Example 2:_ I supported that with metrics: fewer clarification messages and faster approvals.  
-  _Example 3:_ Evidence made feedback conversations more credible.
+- **visible improvement** /vˈɪzəbəl ˌɪmprˈuvmənt/ (n) - clear progress others can see
+  - _Example 1:_ Visible improvement appeared when stakeholders said updates were finally clear.
+  - _Example 2:_ I supported that with metrics: fewer clarification messages and faster approvals.
+  - _Example 3:_ Evidence made feedback conversations more credible.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Practice salary conversation structure, evidence-based negotiation,
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Polite negotiation language**  
+- **Polite negotiation language**
   Based on market data and role scope, I am targeting this range.
 
-- **Conditional negotiation language**  
+- **Conditional negotiation language**
   If base salary is fixed, we can discuss learning budget or remote setup.
 
-- **Concession language**  
+- **Concession language**
   I understand budget limits, but I would like to discuss total package.
 
-- **Feedback response language**  
+- **Feedback response language**
   Thank you for the feedback; here is how I plan to act on it.
 
-- **Evidence language**  
+- **Evidence language**
   In the last two quarters, I improved deployment stability and reduced bugs.
 
-- **Progress follow-up language**  
+- **Progress follow-up language**
   Let us review progress after one month.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Practice salary conversation structure, evidence-based negotiation,
 
 **Interviewer:** What are your salary expectations?
 
-**You:**  
+**You:**
 Based on market benchmarks, role scope, and my recent impact, I am targeting this range. I am open to discussing the full package, including learning budget and remote setup.
 
 I want a fair agreement for both sides, not only the highest number.
@@ -173,7 +173,7 @@ I want a fair agreement for both sides, not only the highest number.
 
 **Interviewer:** Tell me about a time you received tough feedback.
 
-**You:**  
+**You:**
 My manager said my status updates were too technical for product stakeholders. I asked for examples and changed my update format to include risk, timeline, and next steps.
 
 After one month, collaboration improved and fewer misunderstandings happened.
@@ -182,7 +182,7 @@ After one month, collaboration improved and fewer misunderstandings happened.
 
 **Interviewer:** How do you give feedback without damaging relationships?
 
-**You:**  
+**You:**
 I focus on behavior and impact, not personality. I share one specific example and one suggestion for improvement.
 
 This is direct but respectful. It may feel uncomfortable, but it keeps trust.

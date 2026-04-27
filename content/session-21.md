@@ -9,62 +9,62 @@ description: Talk about stepping up without title: spotting gaps, unblocking tea
 
 # Session 21: Ownership & Initiative
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** Taking responsibility beyond your role.
 **Scope:** Talk about stepping up without title: spotting gaps, unblocking teams, following through, and driving results proactively.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **initiative** /ɪˈnɪʃətɪv/ (n) - action you start without being told  
-  _Example 1:_ I took initiative and created a release-risk tracker before delays became critical.  
-  _Example 2:_ No one requested it, but the tracker exposed hidden dependencies fast.  
-  _Example 3:_ It later became a standard planning tool for the team.
+- **initiative** /ɪˈnɪʃətɪv/ (n) - action you start without being told
+  - _Example 1:_ I took initiative and created a release-risk tracker before delays became critical.
+  - _Example 2:_ No one requested it, but the tracker exposed hidden dependencies fast.
+  - _Example 3:_ It later became a standard planning tool for the team.
 
-- **ownership** /ˈoʊnərˌʃɪp/ (n) - full responsibility for result, not only task  
-  _Example 1:_ I took ownership of release quality even when part of the issue was outside my code area.  
-  _Example 2:_ Ownership included coordination, risk updates, and follow-through.  
-  _Example 3:_ This reduced blame and improved delivery trust.
+- **ownership** /ˈoʊnərˌʃɪp/ (n) - full responsibility for result, not only task
+  - _Example 1:_ I took ownership of release quality even when part of the issue was outside my code area.
+  - _Example 2:_ Ownership included coordination, risk updates, and follow-through.
+  - _Example 3:_ This reduced blame and improved delivery trust.
 
-- **step up** /stɛp ʌp/ (v phrase) - take responsibility in a difficult moment  
-  _Example 1:_ I stepped up when the project lead was unavailable during incident week.  
-  _Example 2:_ I ran daily syncs and kept everyone aligned on blockers.  
-  _Example 3:_ The release recovered without major scope loss.
+- **step up** /stɛp ʌp/ (v phrase) - take responsibility in a difficult moment
+  - _Example 1:_ I stepped up when the project lead was unavailable during incident week.
+  - _Example 2:_ I ran daily syncs and kept everyone aligned on blockers.
+  - _Example 3:_ The release recovered without major scope loss.
 
-- **drive execution** /draɪv ˌɛksɪˈkjuːʃən/ (v phrase) - keep work moving toward delivery  
-  _Example 1:_ I drove execution with milestone owners and explicit dependency dates.  
-  _Example 2:_ This prevented last-week surprises in QA and infra teams.  
-  _Example 3:_ Clear execution rhythm improved confidence across teams.
+- **drive execution** /draɪv ˌɛksɪˈkjuːʃən/ (v phrase) - keep work moving toward delivery
+  - _Example 1:_ I drove execution with milestone owners and explicit dependency dates.
+  - _Example 2:_ This prevented last-week surprises in QA and infra teams.
+  - _Example 3:_ Clear execution rhythm improved confidence across teams.
 
-- **unblock** /ʌnˈblɑːk/ (v) - remove barriers that stop progress  
-  _Example 1:_ I unblocked QA by clarifying one ambiguous API error behavior.  
-  _Example 2:_ That small fix saved two days of rework before launch.  
-  _Example 3:_ Unblocking often creates more impact than writing new code.
+- **unblock** /ʌnˈblɑːk/ (v) - remove barriers that stop progress
+  - _Example 1:_ I unblocked QA by clarifying one ambiguous API error behavior.
+  - _Example 2:_ That small fix saved two days of rework before launch.
+  - _Example 3:_ Unblocking often creates more impact than writing new code.
 
-- **proactive communication** /proʊˈæktɪv kəˌmjuːnəˈkeɪʃən/ (n) - sharing updates early before problems grow  
-  _Example 1:_ Proactive communication helped product adjust roadmap before dependency delay became critical.  
-  _Example 2:_ I shared risk status before people asked for updates.  
-  _Example 3:_ This reduced panic and improved decision quality.
+- **proactive communication** /proʊˈæktɪv kəˌmjuːnəˈkeɪʃən/ (n) - sharing updates early before problems grow
+  - _Example 1:_ Proactive communication helped product adjust roadmap before dependency delay became critical.
+  - _Example 2:_ I shared risk status before people asked for updates.
+  - _Example 3:_ This reduced panic and improved decision quality.
 
-- **follow-through** /ˈfɑːloʊ θruː/ (n) - finishing what you promised  
-  _Example 1:_ Follow-through meant closing each blocker, not just assigning tickets.  
-  _Example 2:_ I tracked completion until QA confirmed final behavior.  
-  _Example 3:_ Consistent follow-through built stakeholder trust.
+- **follow-through** /ˈfɑːloʊ θruː/ (n) - finishing what you promised
+  - _Example 1:_ Follow-through meant closing each blocker, not just assigning tickets.
+  - _Example 2:_ I tracked completion until QA confirmed final behavior.
+  - _Example 3:_ Consistent follow-through built stakeholder trust.
 
-- **cross-team alignment** /krɔːs tiːm əˈlaɪnmənt/ (n) - shared direction across teams  
-  _Example 1:_ Cross-team alignment improved after we defined one owner per dependency.  
-  _Example 2:_ Shared language prevented conflicting assumptions in daily updates.  
-  _Example 3:_ Alignment reduced release friction significantly.
+- **cross-team alignment** /krɔːs tiːm əˈlaɪnmənt/ (n) - shared direction across teams
+  - _Example 1:_ Cross-team alignment improved after we defined one owner per dependency.
+  - _Example 2:_ Shared language prevented conflicting assumptions in daily updates.
+  - _Example 3:_ Alignment reduced release friction significantly.
 
-- **raise a flag** /reɪz ə flæɡ/ (v phrase) - warn early about a risk or problem  
-  _Example 1:_ I raised a flag when migration tests failed in staging.  
-  _Example 2:_ Early warning helped us cut non-critical scope before rollout.  
-  _Example 3:_ This avoided emergency rollback.
+- **raise a flag** /reɪz ə flæɡ/ (v phrase) - warn early about a risk or problem
+  - _Example 1:_ I raised a flag when migration tests failed in staging.
+  - _Example 2:_ Early warning helped us cut non-critical scope before rollout.
+  - _Example 3:_ This avoided emergency rollback.
 
-- **ownership mindset** /ˈoʊnərˌʃɪp ˈmaɪndˌsɛt/ (n) - attitude of taking responsibility for outcomes  
-  _Example 1:_ Ownership mindset means solving the problem, not defending your task boundary.  
-  _Example 2:_ I use it to prioritize team outcome over personal comfort.  
-  _Example 3:_ This mindset improved both speed and reliability.
+- **ownership mindset** /ˈoʊnərˌʃɪp ˈmaɪndˌsɛt/ (n) - attitude of taking responsibility for outcomes
+  - _Example 1:_ Ownership mindset means solving the problem, not defending your task boundary.
+  - _Example 2:_ I use it to prioritize team outcome over personal comfort.
+  - _Example 3:_ This mindset improved both speed and reliability.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Talk about stepping up without title: spotting gaps, unblocking tea
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Past Simple for ownership story**  
+- **Past Simple for ownership story**
   I noticed the risk early and called a sync meeting.
 
-- **Cause and result**  
+- **Cause and result**
   Because we aligned dependencies early, we avoided a release delay.
 
-- **Contrast language**  
+- **Contrast language**
   I was not the project lead, but I still took responsibility for coordination.
 
-- **Conditionals for decision quality**  
+- **Conditionals for decision quality**
   If we wait too long to raise concerns, small issues become big blockers.
 
-- **Result framing**  
+- **Result framing**
   The result was fewer blockers and a smoother release.
 
-- **Reflection language**  
+- **Reflection language**
   Looking back, I should have raised the risk two days earlier.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Talk about stepping up without title: spotting gaps, unblocking tea
 
 **Interviewer:** Tell me about a time you showed initiative.
 
-**You:**  
+**You:**
 In one sprint, backend and QA were blocked by unclear API behavior. I was not the project owner, but I created a short issue list and set up a 20-minute sync.
 
 That helped the team unblock quickly and we shipped on time.
@@ -173,7 +173,7 @@ That helped the team unblock quickly and we shipped on time.
 
 **Interviewer:** How do you show ownership when things go wrong?
 
-**You:**  
+**You:**
 I avoid waiting for someone else to fix process issues. In one release, I noticed repeated handoff confusion, so I defined one checklist and assigned clear owners.
 
 It took extra effort, but incidents dropped in the next two releases.
@@ -182,7 +182,7 @@ It took extra effort, but incidents dropped in the next two releases.
 
 **Interviewer:** What trade-off did you make while taking initiative?
 
-**You:**  
+**You:**
 I spent less time on polishing one feature so I could coordinate blockers across teams. The trade-off was short-term feature depth versus delivery reliability.
 
 Looking back, that was the right decision for the release.

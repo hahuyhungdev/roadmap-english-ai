@@ -17,54 +17,54 @@ description: Explain practical documentation as product quality: UI states, API 
 <summary><strong>1) Vocabulary</strong></summary>
 
 - **component guideline** /kəmˈpoʊnənt ˈɡaɪdˌlaɪn/ (n) - short guide explaining when and how to use a UI component
-  _Example 1:_ The component guideline explained button variants, disabled states, and usage rules.
-  _Example 2:_ Designers and engineers used the guideline to avoid one-off UI decisions.
-  _Example 3:_ A good guideline prevents repeated questions.
+  - _Example 1:_ The component guideline explained button variants, disabled states, and usage rules.
+  - _Example 2:_ Designers and engineers used the guideline to avoid one-off UI decisions.
+  - _Example 3:_ A good guideline prevents repeated questions.
 
 - **UI state spec** /ˌjuːˈaɪ steɪt spɛk/ (n) - clear list of loading, empty, success, error, and permission states
-  _Example 1:_ QA used the UI state spec to test edge cases.
-  _Example 2:_ Missing error-state specs caused rework during checkout testing.
-  _Example 3:_ UI state docs are often more useful than long implementation notes.
+  - _Example 1:_ QA used the UI state spec to test edge cases.
+  - _Example 2:_ Missing error-state specs caused rework during checkout testing.
+  - _Example 3:_ UI state docs are often more useful than long implementation notes.
 
 - **Storybook page** /ˈstɔːriˌbʊk peɪdʒ/ (n) - visual page showing component variants and examples
-  _Example 1:_ The Storybook page showed default, loading, disabled, and error variants.
-  _Example 2:_ New engineers used Storybook to understand component behavior quickly.
-  _Example 3:_ Storybook is useful when it stays updated with real product usage.
+  - _Example 1:_ The Storybook page showed default, loading, disabled, and error variants.
+  - _Example 2:_ New engineers used Storybook to understand component behavior quickly.
+  - _Example 3:_ Storybook is useful when it stays updated with real product usage.
 
 - **wireframe note** /ˈwaɪərˌfreɪm noʊt/ (n) - clarification attached to a design or wireframe
-  _Example 1:_ I added wireframe notes for mobile error behavior.
-  _Example 2:_ One missing wireframe note created a scope debate.
-  _Example 3:_ Good notes explain unclear behavior before implementation starts.
+  - _Example 1:_ I added wireframe notes for mobile error behavior.
+  - _Example 2:_ One missing wireframe note created a scope debate.
+  - _Example 3:_ Good notes explain unclear behavior before implementation starts.
 
 - **API example** /ˌeɪ piː ˈaɪ ɪɡˈzæmpəl/ (n) - sample request, response, or error used to clarify backend behavior
-  _Example 1:_ We included API examples for success, validation error, and permission error.
-  _Example 2:_ Clear API examples reduced frontend integration questions.
-  _Example 3:_ API examples are easier to use than abstract descriptions.
+  - _Example 1:_ We included API examples for success, validation error, and permission error.
+  - _Example 2:_ Clear API examples reduced frontend integration questions.
+  - _Example 3:_ API examples are easier to use than abstract descriptions.
 
 - **handoff note** /ˈhændˌɔːf noʊt/ (n) - short doc that transfers context to QA, support, or another engineer
-  _Example 1:_ The handoff note included screenshots, expected states, and known issues.
-  _Example 2:_ Support used the note to answer users after launch.
-  _Example 3:_ Handoff notes are valuable when they are short and specific.
+  - _Example 1:_ The handoff note included screenshots, expected states, and known issues.
+  - _Example 2:_ Support used the note to answer users after launch.
+  - _Example 3:_ Handoff notes are valuable when they are short and specific.
 
 - **release checklist** /rɪˈliːs ˈtʃɛkˌlɪst/ (n) - list of checks before launching a feature
-  _Example 1:_ Our release checklist includes smoke tests, analytics, feature flags, and rollback steps.
-  _Example 2:_ The checklist caught one missing error state before release.
-  _Example 3:_ A checklist protects the team when launch pressure is high.
+  - _Example 1:_ Our release checklist includes smoke tests, analytics, feature flags, and rollback steps.
+  - _Example 2:_ The checklist caught one missing error state before release.
+  - _Example 3:_ A checklist protects the team when launch pressure is high.
 
 - **doc ownership** /dɑːk ˈoʊnərˌʃɪp/ (n) - clear responsibility for keeping documentation accurate
-  _Example 1:_ We assigned doc ownership by feature area.
-  _Example 2:_ Without ownership, examples became outdated.
-  _Example 3:_ The owner is not the only writer; the owner keeps the doc reliable.
+  - _Example 1:_ We assigned doc ownership by feature area.
+  - _Example 2:_ Without ownership, examples became outdated.
+  - _Example 3:_ The owner is not the only writer; the owner keeps the doc reliable.
 
 - **troubleshooting note** /ˈtrʌbəlˌʃuːtɪŋ noʊt/ (n) - short fix-oriented note for common issues
-  _Example 1:_ We created troubleshooting notes for login and payment failures.
-  _Example 2:_ Support used the notes before escalating to engineers.
-  _Example 3:_ Troubleshooting notes reduce repeated questions during incidents.
+  - _Example 1:_ We created troubleshooting notes for login and payment failures.
+  - _Example 2:_ Support used the notes before escalating to engineers.
+  - _Example 3:_ Troubleshooting notes reduce repeated questions during incidents.
 
 - **documentation drift** /ˌdɑːkjəmenˈteɪʃən drɪft/ (n) - when docs become different from real product behavior
-  _Example 1:_ Documentation drift happened after the component changed but the Storybook page did not.
-  _Example 2:_ Drift makes docs less trustworthy.
-  _Example 3:_ Regular ownership checks reduce drift.
+  - _Example 1:_ Documentation drift happened after the component changed but the Storybook page did not.
+  - _Example 2:_ Drift makes docs less trustworthy.
+  - _Example 3:_ Regular ownership checks reduce drift.
 
 **Additional useful terms:**
 

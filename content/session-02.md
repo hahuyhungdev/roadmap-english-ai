@@ -17,54 +17,54 @@ description: Explain system flow, dependencies, risk, and stakeholder updates in
 <summary><strong>1) Vocabulary</strong></summary>
 
 - **system flow** /ˈsɪstəm floʊ/ (n) - how actions and data move through a product
-  _Example 1:_ I explain system flow from the user journey first, then add technical layers.
-  _Example 2:_ The system flow starts with checkout, then moves through order validation and payment.
-  _Example 3:_ A clear flow helps QA test the right states.
+  - _Example 1:_ I explain system flow from the user journey first, then add technical layers.
+  - _Example 2:_ The system flow starts with checkout, then moves through order validation and payment.
+  - _Example 3:_ A clear flow helps QA test the right states.
 
 - **user journey** /ˈjuːzər ˈdʒɝːni/ (n) - the steps a user takes to complete a goal
-  _Example 1:_ The user journey starts when a customer selects a plan and clicks subscribe.
-  _Example 2:_ We found confusion in the journey after the payment step.
-  _Example 3:_ Starting with the journey makes architecture easier for non-engineers.
+  - _Example 1:_ The user journey starts when a customer selects a plan and clicks subscribe.
+  - _Example 2:_ We found confusion in the journey after the payment step.
+  - _Example 3:_ Starting with the journey makes architecture easier for non-engineers.
 
 - **API contract** /ˌeɪ piː ˈaɪ ˈkɑntrækt/ (n) - agreement about request data, response shape, and error behavior
-  _Example 1:_ We confirmed the API contract before connecting the frontend.
-  _Example 2:_ A contract mismatch caused the UI to show the wrong error message.
-  _Example 3:_ Stable contracts reduce integration stress.
+  - _Example 1:_ We confirmed the API contract before connecting the frontend.
+  - _Example 2:_ A contract mismatch caused the UI to show the wrong error message.
+  - _Example 3:_ Stable contracts reduce integration stress.
 
 - **dependency risk** /dɪˈpɛndənsi rɪsk/ (n) - risk caused by another team, service, or vendor you rely on
-  _Example 1:_ Our biggest dependency risk was the payment provider sandbox.
-  _Example 2:_ I flagged the risk before it became a release blocker.
-  _Example 3:_ Dependency risk should be visible early, not discovered during final QA.
+  - _Example 1:_ Our biggest dependency risk was the payment provider sandbox.
+  - _Example 2:_ I flagged the risk before it became a release blocker.
+  - _Example 3:_ Dependency risk should be visible early, not discovered during final QA.
 
 - **handoff note** /ˈhændˌɔːf noʊt/ (n) - short document that transfers context to another person or team
-  _Example 1:_ I wrote a handoff note with screenshots, expected behavior, and open questions.
-  _Example 2:_ Support used the note to answer users after release.
-  _Example 3:_ Good handoff notes reduce repeated Slack questions.
+  - _Example 1:_ I wrote a handoff note with screenshots, expected behavior, and open questions.
+  - _Example 2:_ Support used the note to answer users after release.
+  - _Example 3:_ Good handoff notes reduce repeated Slack questions.
 
 - **UI state** /ˌjuːˈaɪ steɪt/ (n) - visible condition in the interface such as loading, empty, success, or error
-  _Example 1:_ We documented loading, empty, error, and permission states.
-  _Example 2:_ Missing UI states are a common cause of frontend rework.
-  _Example 3:_ QA needs UI states more than implementation details.
+  - _Example 1:_ We documented loading, empty, error, and permission states.
+  - _Example 2:_ Missing UI states are a common cause of frontend rework.
+  - _Example 3:_ QA needs UI states more than implementation details.
 
 - **status update** /ˈsteɪtəs ˈʌpˌdeɪt/ (n) - short progress message with blockers, risk, and next step
-  _Example 1:_ My update includes done, blocked, risk, owner, and next action.
-  _Example 2:_ A good status update helps people know whether they need to act.
-  _Example 3:_ Silence creates more risk than an imperfect update.
+  - _Example 1:_ My update includes done, blocked, risk, owner, and next action.
+  - _Example 2:_ A good status update helps people know whether they need to act.
+  - _Example 3:_ Silence creates more risk than an imperfect update.
 
 - **risk visibility** /rɪsk ˌvɪzəˈbɪləti/ (n) - making important risks clear early
-  _Example 1:_ We improved risk visibility by tracking unresolved API questions.
-  _Example 2:_ PM appreciated seeing the timeline risk before release week.
-  _Example 3:_ Risk visibility is not panic; it is planning.
+  - _Example 1:_ We improved risk visibility by tracking unresolved API questions.
+  - _Example 2:_ PM appreciated seeing the timeline risk before release week.
+  - _Example 3:_ Risk visibility is not panic; it is planning.
 
 - **audience-aware language** /ˈɔːdiəns əˈwɛr ˈlæŋɡwɪdʒ/ (n) - choosing words based on what the listener needs
-  _Example 1:_ For PM, I talk about timeline and impact.
-  _Example 2:_ For QA, I talk about expected behavior and edge cases.
-  _Example 3:_ For support, I talk about what users see and what answer they can give.
+  - _Example 1:_ For PM, I talk about timeline and impact.
+  - _Example 2:_ For QA, I talk about expected behavior and edge cases.
+  - _Example 3:_ For support, I talk about what users see and what answer they can give.
 
 - **escalation path** /ˌɛskəˈleɪʃən pæθ/ (n) - agreed route for raising urgent issues to the right owner
-  _Example 1:_ We created an escalation path for payment failures.
-  _Example 2:_ A clear escalation path reduced confusion during launch.
-  _Example 3:_ Escalation should include evidence, impact, and next decision.
+  - _Example 1:_ We created an escalation path for payment failures.
+  - _Example 2:_ A clear escalation path reduced confusion during launch.
+  - _Example 3:_ Escalation should include evidence, impact, and next decision.
 
 **Additional useful terms:**
 

@@ -9,62 +9,62 @@ description: Final performance check with targeted gap analysis and concrete nex
 
 # Session 26: Final Mock Interview & Gap Analysis
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** Deliver consistent interview performance and finish with a clear, practical next-step plan.
 **Scope:** Final performance check with targeted gap analysis and concrete next-step practice plan.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **gap analysis** /ɡˈæp ənˈæləsəs/ (n) - review of strengths and weaknesses  
-  _Example 1:_ Gap analysis showed my strongest area was behavioral storytelling.  
-  _Example 2:_ It also showed weak follow-up handling under time pressure.  
-  _Example 3:_ This clarity made my final plan realistic.
+- **gap analysis** /ɡˈæp ənˈæləsəs/ (n) - review of strengths and weaknesses
+  - _Example 1:_ Gap analysis showed my strongest area was behavioral storytelling.
+  - _Example 2:_ It also showed weak follow-up handling under time pressure.
+  - _Example 3:_ This clarity made my final plan realistic.
 
-- **consistency** /kənsˈɪstənsi/ (n) - stable performance across many questions  
-  _Example 1:_ Consistency mattered more than one impressive but isolated answer.  
-  _Example 2:_ I aimed for stable B2 clarity across all sections.  
-  _Example 3:_ Stable performance increased confidence for real interviews.
+- **consistency** /kənsˈɪstənsi/ (n) - stable performance across many questions
+  - _Example 1:_ Consistency mattered more than one impressive but isolated answer.
+  - _Example 2:_ I aimed for stable B2 clarity across all sections.
+  - _Example 3:_ Stable performance increased confidence for real interviews.
 
-- **performance baseline** /pɚfˈɔrməns bˈeɪslˌaɪn/ (n) - current level used for improvement tracking  
-  _Example 1:_ Mock 1 gave me a baseline for filler count and answer length.  
-  _Example 2:_ Baseline metrics helped me track real progress, not feelings.  
-  _Example 3:_ Measured improvement was more motivating than guesswork.
+- **performance baseline** /pɚfˈɔrməns bˈeɪslˌaɪn/ (n) - current level used for improvement tracking
+  - _Example 1:_ Mock 1 gave me a baseline for filler count and answer length.
+  - _Example 2:_ Baseline metrics helped me track real progress, not feelings.
+  - _Example 3:_ Measured improvement was more motivating than guesswork.
 
-- **improvement roadmap** /ˌɪmprˈuvmənt rˈoʊdmˌæp/ (n) - step-by-step development plan  
-  _Example 1:_ My improvement roadmap includes daily timed drills and weekly review cycles.  
-  _Example 2:_ Each action has one measurable target.  
-  _Example 3:_ Roadmap structure keeps momentum after mock interviews end.
+- **improvement roadmap** /ˌɪmprˈuvmənt rˈoʊdmˌæp/ (n) - step-by-step development plan
+  - _Example 1:_ My improvement roadmap includes daily timed drills and weekly review cycles.
+  - _Example 2:_ Each action has one measurable target.
+  - _Example 3:_ Roadmap structure keeps momentum after mock interviews end.
 
-- **priority gap** /praɪˈɔrəti ɡˈæp/ (n) - weakness with highest improvement value  
-  _Example 1:_ My priority gap was vague opening sentences in discussion questions.  
-  _Example 2:_ Fixing this gap improved all answer types, not just one section.  
-  _Example 3:_ Choosing one gap at a time improved execution.
+- **priority gap** /praɪˈɔrəti ɡˈæp/ (n) - weakness with highest improvement value
+  - _Example 1:_ My priority gap was vague opening sentences in discussion questions.
+  - _Example 2:_ Fixing this gap improved all answer types, not just one section.
+  - _Example 3:_ Choosing one gap at a time improved execution.
 
-- **strength signal** /strˈɛŋkθ sˈɪɡnəl/ (n) - behavior showing clear competency  
-  _Example 1:_ My strength signal was calm structure during hard follow-up questions.  
-  _Example 2:_ I supported claims with metrics and decision logic.  
-  _Example 3:_ Interviewers responded better to that clarity.
+- **strength signal** /strˈɛŋkθ sˈɪɡnəl/ (n) - behavior showing clear competency
+  - _Example 1:_ My strength signal was calm structure during hard follow-up questions.
+  - _Example 2:_ I supported claims with metrics and decision logic.
+  - _Example 3:_ Interviewers responded better to that clarity.
 
-- **band target** /bˈænd tˈɑrɡət/ (n) - communication level goal  
-  _Example 1:_ My band target is stable B2+ with clear structure under pressure.  
-  _Example 2:_ I track target with weekly mock scores and transcript review.  
-  _Example 3:_ Consistency matters more than one perfect day.
+- **band target** /bˈænd tˈɑrɡət/ (n) - communication level goal
+  - _Example 1:_ My band target is stable B2+ with clear structure under pressure.
+  - _Example 2:_ I track target with weekly mock scores and transcript review.
+  - _Example 3:_ Consistency matters more than one perfect day.
 
-- **post-mortem review** /pˈoʊst mˈɔrtəm rˌivjˈu/ (n) - structured reflection after a major practice session  
-  _Example 1:_ My post-mortem review included top strengths, top gaps, and root causes.  
-  _Example 2:_ I used this to avoid repeating the same speaking mistakes.  
-  _Example 3:_ Post-mortem turned feedback into strategy.
+- **post-mortem review** /pˈoʊst mˈɔrtəm rˌivjˈu/ (n) - structured reflection after a major practice session
+  - _Example 1:_ My post-mortem review included top strengths, top gaps, and root causes.
+  - _Example 2:_ I used this to avoid repeating the same speaking mistakes.
+  - _Example 3:_ Post-mortem turned feedback into strategy.
 
-- **practice cadence** /prˈæktəs kˈeɪdəns/ (n) - regular training schedule  
-  _Example 1:_ My practice cadence is 20 minutes daily plus one full mock per week.  
-  _Example 2:_ Cadence consistency matters more than occasional long practice sessions.  
-  _Example 3:_ Regular cadence kept improvement stable.
+- **practice cadence** /prˈæktəs kˈeɪdəns/ (n) - regular training schedule
+  - _Example 1:_ My practice cadence is 20 minutes daily plus one full mock per week.
+  - _Example 2:_ Cadence consistency matters more than occasional long practice sessions.
+  - _Example 3:_ Regular cadence kept improvement stable.
 
-- **actionable feedback** /ˈækʃənəbəl fˈidbˌæk/ (n) - feedback you can apply directly  
-  _Example 1:_ Actionable feedback for me was: shorten opening to one sentence and add one metric.  
-  _Example 2:_ Specific feedback changed behavior faster than general comments.  
-  _Example 3:_ I now request feedback in this format intentionally.
+- **actionable feedback** /ˈækʃənəbəl fˈidbˌæk/ (n) - feedback you can apply directly
+  - _Example 1:_ Actionable feedback for me was: shorten opening to one sentence and add one metric.
+  - _Example 2:_ Specific feedback changed behavior faster than general comments.
+  - _Example 3:_ I now request feedback in this format intentionally.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Final performance check with targeted gap analysis and concrete nex
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Comparison with previous performance**  
+- **Comparison with previous performance**
   Compared with Mock 1, I gave clearer examples and better structure.
 
-- **Reflection language**  
+- **Reflection language**
   I performed well on behavioral stories, but I still need faster thinking in discussion questions.
 
-- **Future plan language**  
+- **Future plan language**
   I will practice two timed answers each day this week.
 
-- **Priority language**  
+- **Priority language**
   My top priority is reducing filler words under pressure.
 
-- **Conditional improvement language**  
+- **Conditional improvement language**
   If I practice follow-up handling daily, my confidence will improve.
 
-- **Commitment language**  
+- **Commitment language**
   I am committed to reviewing recorded answers every weekend.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Final performance check with targeted gap analysis and concrete nex
 
 **Interviewer:** How did your final mock go?
 
-**You:**  
+**You:**
 My structure was better than last time, especially in behavioral questions. I used clearer examples and showed business impact more often.
 
 But in abstract discussion questions, I still paused too long. I need faster idea framing.
@@ -173,7 +173,7 @@ But in abstract discussion questions, I still paused too long. I need faster ide
 
 **Interviewer:** What are your top two gaps now?
 
-**You:**  
+**You:**
 First, follow-up question handling under pressure. Second, reducing filler words in long answers.
 
 I will practice timed responses daily and review recordings twice a week.
@@ -182,7 +182,7 @@ I will practice timed responses daily and review recordings twice a week.
 
 **Interviewer:** What is your concrete next-step roadmap?
 
-**You:**  
+**You:**
 For the next four weeks, I will do three behavioral answers, two discussion answers, and one Q&A practice set each week. I will track answer length and filler count.
 
 This is structured and realistic. It takes time, but progress is visible.

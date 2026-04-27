@@ -9,62 +9,62 @@ description: Practice how to defend choices with cost/risk/timeline language whe
 
 # Session 10: Defending Decisions
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** Influence without authority.
 **Scope:** Practice how to defend choices with cost/risk/timeline language when PM, lead, or stakeholders disagree.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **influence** /ˈɪnfluəns/ (v/n) - change decisions without formal power  
-  _Example 1:_ I influenced the roadmap by showing incident cost and support impact.  
-  _Example 2:_ I had no title authority, so data quality was my main leverage.  
-  _Example 3:_ Influence works better when the goal is shared, not personal.
+- **influence** /ˈɪnfluəns/ (v/n) - change decisions without formal power
+  - _Example 1:_ I influenced the roadmap by showing incident cost and support impact.
+  - _Example 2:_ I had no title authority, so data quality was my main leverage.
+  - _Example 3:_ Influence works better when the goal is shared, not personal.
 
-- **pushback** /ˈpʊʃˌbæk/ (n) - disagreement or challenge  
-  _Example 1:_ I got pushback from product on reducing release scope.  
-  _Example 2:_ We handled pushback by comparing risk and timeline options side by side.  
-  _Example 3:_ Good pushback improved the final decision quality.
+- **pushback** /ˈpʊʃˌbæk/ (n) - disagreement or challenge
+  - _Example 1:_ I got pushback from product on reducing release scope.
+  - _Example 2:_ We handled pushback by comparing risk and timeline options side by side.
+  - _Example 3:_ Good pushback improved the final decision quality.
 
-- **decision criteria** /dəsˈɪʒən kɹaɪtˈɪɹiə/ (n) - explicit standards used to choose an option  
-  _Example 1:_ Our decision criteria were risk, delivery date, and user impact.  
-  _Example 2:_ Criteria prevented the discussion from becoming opinion-only.  
-  _Example 3:_ I state criteria early to keep meetings focused.
+- **decision criteria** /dəsˈɪʒən kɹaɪtˈɪɹiə/ (n) - explicit standards used to choose an option
+  - _Example 1:_ Our decision criteria were risk, delivery date, and user impact.
+  - _Example 2:_ Criteria prevented the discussion from becoming opinion-only.
+  - _Example 3:_ I state criteria early to keep meetings focused.
 
-- **risk** /rˈɪsk/ (n) - chance of negative result  
-  _Example 1:_ I explained the risk of shipping without integration tests.  
-  _Example 2:_ We quantified risk using incident history from similar releases.  
-  _Example 3:_ Clear risk language helped non-engineers support safer choices.
+- **risk** /rˈɪsk/ (n) - chance of negative result
+  - _Example 1:_ I explained the risk of shipping without integration tests.
+  - _Example 2:_ We quantified risk using incident history from similar releases.
+  - _Example 3:_ Clear risk language helped non-engineers support safer choices.
 
-- **timeline** /tˈaɪmlaɪn/ (n) - schedule and deadlines  
-  _Example 1:_ We adjusted timeline to include one extra QA day.  
-  _Example 2:_ That one-day change avoided a risky release on Friday evening.  
-  _Example 3:_ Timeline changes are easier to accept with clear trade-offs.
+- **timeline** /tˈaɪmlaɪn/ (n) - schedule and deadlines
+  - _Example 1:_ We adjusted timeline to include one extra QA day.
+  - _Example 2:_ That one-day change avoided a risky release on Friday evening.
+  - _Example 3:_ Timeline changes are easier to accept with clear trade-offs.
 
-- **scope cut** /skˈoʊp kˈʌt/ (n) - deliberate removal of lower-priority items  
-  _Example 1:_ We made a scope cut to protect core checkout reliability.  
-  _Example 2:_ Scope cut upset one stakeholder, but prevented larger release risk.  
-  _Example 3:_ I frame scope cuts as quality protection, not feature rejection.
+- **scope cut** /skˈoʊp kˈʌt/ (n) - deliberate removal of lower-priority items
+  - _Example 1:_ We made a scope cut to protect core checkout reliability.
+  - _Example 2:_ Scope cut upset one stakeholder, but prevented larger release risk.
+  - _Example 3:_ I frame scope cuts as quality protection, not feature rejection.
 
-- **compromise** /kˈɑmprəmˌaɪz/ (n/v) - agreement where both sides adjust  
-  _Example 1:_ We made a compromise: ship core flow now, advanced filters next sprint.  
-  _Example 2:_ This kept launch date while controlling complexity risk.  
-  _Example 3:_ Good compromise keeps principles while adjusting details.
+- **compromise** /kˈɑmprəmˌaɪz/ (n/v) - agreement where both sides adjust
+  - _Example 1:_ We made a compromise: ship core flow now, advanced filters next sprint.
+  - _Example 2:_ This kept launch date while controlling complexity risk.
+  - _Example 3:_ Good compromise keeps principles while adjusting details.
 
-- **option matrix** /ˈɑpʃən mˈeɪtɹɪks/ (n) - table comparing choices by criteria  
-  _Example 1:_ We used an option matrix to compare rewrite vs targeted refactor.  
-  _Example 2:_ The matrix exposed hidden costs that verbal discussion missed.  
-  _Example 3:_ I bring option matrix summaries to decision meetings.
+- **option matrix** /ˈɑpʃən mˈeɪtɹɪks/ (n) - table comparing choices by criteria
+  - _Example 1:_ We used an option matrix to compare rewrite vs targeted refactor.
+  - _Example 2:_ The matrix exposed hidden costs that verbal discussion missed.
+  - _Example 3:_ I bring option matrix summaries to decision meetings.
 
-- **decision log** /dəsˈɪʒən lˈɔɡ/ (n) - written record of options, choice, and reasons  
-  _Example 1:_ We stored key architecture choices in a decision log.  
-  _Example 2:_ Decision log prevented repeated debate in later sprints.  
-  _Example 3:_ In interviews, I mention decision logs to show ownership clarity.
+- **decision log** /dəsˈɪʒən lˈɔɡ/ (n) - written record of options, choice, and reasons
+  - _Example 1:_ We stored key architecture choices in a decision log.
+  - _Example 2:_ Decision log prevented repeated debate in later sprints.
+  - _Example 3:_ In interviews, I mention decision logs to show ownership clarity.
 
-- **escalation path** /ˌɛskəlˈeɪʃən pˈæθ/ (n) - process for unresolved disagreement  
-  _Example 1:_ We used escalation path when engineering and product could not align.  
-  _Example 2:_ Escalation was based on risk threshold, not personal conflict.  
-  _Example 3:_ A clear path keeps disagreement professional.
+- **escalation path** /ˌɛskəlˈeɪʃən pˈæθ/ (n) - process for unresolved disagreement
+  - _Example 1:_ We used escalation path when engineering and product could not align.
+  - _Example 2:_ Escalation was based on risk threshold, not personal conflict.
+  - _Example 3:_ A clear path keeps disagreement professional.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Practice how to defend choices with cost/risk/timeline language whe
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Polite disagreement**  
+- **Polite disagreement**
   I see your point, but this option has higher release risk.
 
-- **Evidence-based statements**  
+- **Evidence-based statements**
   Based on last quarter incidents, this path is safer.
 
-- **Conditional persuasion**  
+- **Conditional persuasion**
   If we reduce scope now, we can protect quality and still hit the date.
 
-- **Concession + recommendation**  
+- **Concession + recommendation**
   Although this approach is slower, it avoids costly regressions.
 
-- **Future impact language**  
+- **Future impact language**
   This decision will reduce support load in the next release cycle.
 
-- **Collaborative framing**  
+- **Collaborative framing**
   Let us compare options and pick the one with lowest business risk.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Practice how to defend choices with cost/risk/timeline language whe
 
 **Interviewer:** Tell me about a time you had to persuade a product manager.
 
-**You:**  
+**You:**
 Product wanted to ship a feature in one week, but we had unresolved regression risk. I showed bug trends from similar releases and explained likely support impact.
 
 We agreed to reduce scope and ship core functionality first. We moved a bit slower, but quality stayed stable.
@@ -173,7 +173,7 @@ We agreed to reduce scope and ship core functionality first. We moved a bit slow
 
 **Interviewer:** What if a senior engineer disagrees with you?
 
-**You:**  
+**You:**
 I focus on facts, not hierarchy. In one design review, I suggested a simpler solution with lower operational cost. A senior engineer preferred a complex architecture.
 
 We compared options in a decision log, and the team chose the simpler path for current scale.
@@ -182,7 +182,7 @@ We compared options in a decision log, and the team chose the simpler path for c
 
 **Interviewer:** How do you stay confident without being defensive?
 
-**You:**  
+**You:**
 I acknowledge other views first, then explain my reasoning with data. If I am wrong, I adjust quickly. If risk is serious, I hold my position clearly.
 
 This keeps discussion professional and focused on outcomes.

@@ -17,54 +17,54 @@ description: Discuss energy collapse signals, practical recovery routines, bound
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **burnout cycle** /ˈbɝnaʊt ˈsaɪkəl/ (n) - repeating pattern of overload, crash, and short recovery
-  _Example 1:_ My burnout cycle started with late nights and ended with low focus.
-  _Example 2:_ I broke that cycle by tracking sleep and refusing late-night non-urgent requests.
-  _Example 3:_ I now treat burnout cycle as a pattern I can interrupt early.
+  - _Example 1:_ My burnout cycle started with late nights and ended with low focus.
+  - _Example 2:_ I broke that cycle by tracking sleep and refusing late-night non-urgent requests.
+  - _Example 3:_ I now treat burnout cycle as a pattern I can interrupt early.
 
 - **emotional exhaustion** /ɪˈmoʊʃənəl ɪɡˈzɔstʃən/ (n) - feeling mentally drained and detached
-  _Example 1:_ Emotional exhaustion showed up when I could not focus even on small code reviews.
-  _Example 2:_ A close friend noticed it when my response style became short and defensive.
-  _Example 3:_ Naming emotional exhaustion early helped me adjust my routine before bigger damage.
+  - _Example 1:_ Emotional exhaustion showed up when I could not focus even on small code reviews.
+  - _Example 2:_ A close friend noticed it when my response style became short and defensive.
+  - _Example 3:_ Naming emotional exhaustion early helped me adjust my routine before bigger damage.
 
 - **sleep debt** /slip det/ (n) - accumulated lack of sleep over days or weeks
-  _Example 1:_ Two weeks of late-night screen time created serious sleep debt.
-  _Example 2:_ I reduced sleep debt by setting a fixed bedtime and muting non-urgent alerts.
-  _Example 3:_ My recovery started only after I treated sleep debt as a serious health risk.
+  - _Example 1:_ Two weeks of late-night screen time created serious sleep debt.
+  - _Example 2:_ I reduced sleep debt by setting a fixed bedtime and muting non-urgent alerts.
+  - _Example 3:_ My recovery started only after I treated sleep debt as a serious health risk.
 
 - **alert fatigue** /əˈlɝt fəˈtiɡ/ (n) - becoming less responsive because alerts are too frequent
-  _Example 1:_ Alert fatigue made me ignore reminders because my phone never stopped buzzing.
-  _Example 2:_ I disabled noisy notifications and kept only urgent ones.
-  _Example 3:_ This changed my evenings from panic mode to calmer focus.
+  - _Example 1:_ Alert fatigue made me ignore reminders because my phone never stopped buzzing.
+  - _Example 2:_ I disabled noisy notifications and kept only urgent ones.
+  - _Example 3:_ This changed my evenings from panic mode to calmer focus.
 
 - **boundary breach** /ˈbaʊndri britʃ/ (n) - violation of a limit protecting personal time or energy
-  _Example 1:_ Weekend messages for non-urgent issues became a regular boundary breach.
-  _Example 2:_ I fixed boundary breach by defining clear response windows for myself.
-  _Example 3:_ Clear boundaries improved both relationships and mental stability.
+  - _Example 1:_ Weekend messages for non-urgent issues became a regular boundary breach.
+  - _Example 2:_ I fixed boundary breach by defining clear response windows for myself.
+  - _Example 3:_ Clear boundaries improved both relationships and mental stability.
 
 - **recovery routine** /rɪˈkʌvəri ruˈtin/ (n) - repeatable set of actions to restore energy
-  _Example 1:_ My recovery routine includes one no-screen morning after stressful days.
-  _Example 2:_ My routine also includes a short walk and journaling before bed.
-  _Example 3:_ Routine works better than random breaks when pressure is high.
+  - _Example 1:_ My recovery routine includes one no-screen morning after stressful days.
+  - _Example 2:_ My routine also includes a short walk and journaling before bed.
+  - _Example 3:_ Routine works better than random breaks when pressure is high.
 
 - **workload spillover** /ˈwɝkloʊd ˈspɪloʊvɚ/ (n) - work pressure leaking into personal time
-  _Example 1:_ Workload spillover started when I kept saying yes to every request.
-  _Example 2:_ I reduced spillover by limiting after-hours messages to urgent cases only.
-  _Example 3:_ Lower spillover gave me better focus during actual working hours.
+  - _Example 1:_ Workload spillover started when I kept saying yes to every request.
+  - _Example 2:_ I reduced spillover by limiting after-hours messages to urgent cases only.
+  - _Example 3:_ Lower spillover gave me better focus during actual working hours.
 
 - **stress baseline** /stres ˈbeɪslaɪn/ (n) - normal level of stress a person can handle sustainably
-  _Example 1:_ My stress baseline dropped after months of poor sleep and no real breaks.
-  _Example 2:_ I now check baseline weekly instead of waiting for burnout symptoms.
-  _Example 3:_ Baseline tracking helps me notice warning signs before a crash.
+  - _Example 1:_ My stress baseline dropped after months of poor sleep and no real breaks.
+  - _Example 2:_ I now check baseline weekly instead of waiting for burnout symptoms.
+  - _Example 3:_ Baseline tracking helps me notice warning signs before a crash.
 
 - **weekly check-in** /ˈwikli tʃek ɪn/ (n) - short structured review of your workload and well-being
-  _Example 1:_ My weekly check-in includes sleep, mood, and energy score.
-  _Example 2:_ That format made it easier to discuss overload without self-judgment.
-  _Example 3:_ Regular check-ins prevented silent burnout from growing.
+  - _Example 1:_ My weekly check-in includes sleep, mood, and energy score.
+  - _Example 2:_ That format made it easier to discuss overload without self-judgment.
+  - _Example 3:_ Regular check-ins prevented silent burnout from growing.
 
 - **sustainable pace** /səˈsteɪnəbəl peɪs/ (n) - work rhythm that can be maintained over time
-  _Example 1:_ Sustainable pace means fewer extreme days and more stable weeks.
-  _Example 2:_ I accepted slower short-term progress to protect my health and consistency.
-  _Example 3:_ That trade-off gave me better focus over the long term.
+  - _Example 1:_ Sustainable pace means fewer extreme days and more stable weeks.
+  - _Example 2:_ I accepted slower short-term progress to protect my health and consistency.
+  - _Example 3:_ That trade-off gave me better focus over the long term.
 
 **Additional useful terms:**
 

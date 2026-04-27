@@ -17,54 +17,54 @@ description: Explain practical AI usage, verification habits, privacy boundaries
 <summary><strong>1) Vocabulary</strong></summary>
 
 - **prompt quality** /prɑːmpt ˈkwɑːləti/ (n) - how clear and useful your instruction to AI is
-  _Example 1:_ Prompt quality improved when I added constraints, examples, and project context.
-  _Example 2:_ A vague prompt created a generic answer that did not fit our codebase.
-  _Example 3:_ Better prompts reduce rewrite time, but they do not remove review.
+  - _Example 1:_ Prompt quality improved when I added constraints, examples, and project context.
+  - _Example 2:_ A vague prompt created a generic answer that did not fit our codebase.
+  - _Example 3:_ Better prompts reduce rewrite time, but they do not remove review.
 
 - **context packaging** /ˈkɑːntɛkst ˈpækɪdʒɪŋ/ (n) - giving AI the right background before asking for output
-  _Example 1:_ I package context with requirements, current code behavior, and constraints.
-  _Example 2:_ Poor context packaging caused the AI to suggest the wrong API shape.
-  _Example 3:_ Context is often more important than the model choice for everyday tasks.
+  - _Example 1:_ I package context with requirements, current code behavior, and constraints.
+  - _Example 2:_ Poor context packaging caused the AI to suggest the wrong API shape.
+  - _Example 3:_ Context is often more important than the model choice for everyday tasks.
 
 - **AI draft** /ˌeɪ ˈaɪ dræft/ (n) - AI output used as a starting point, not final approved work
-  _Example 1:_ The AI draft helped me start the release note faster.
-  _Example 2:_ I rewrote the AI draft so it matched our team's language.
-  _Example 3:_ I never treat an AI draft as production-ready by default.
+  - _Example 1:_ The AI draft helped me start the release note faster.
+  - _Example 2:_ I rewrote the AI draft so it matched our team's language.
+  - _Example 3:_ I never treat an AI draft as production-ready by default.
 
 - **verification checklist** /ˌvɛrəfəˈkeɪʃən ˈtʃɛkˌlɪst/ (n) - short set of checks for AI output
-  _Example 1:_ My checklist covers requirements, edge cases, tests, security, and style.
-  _Example 2:_ The checklist caught a wrong assumption in generated test code.
-  _Example 3:_ A checklist keeps AI usage practical instead of emotional.
+  - _Example 1:_ My checklist covers requirements, edge cases, tests, security, and style.
+  - _Example 2:_ The checklist caught a wrong assumption in generated test code.
+  - _Example 3:_ A checklist keeps AI usage practical instead of emotional.
 
 - **hallucinated output** /həˈluːsəˌneɪtəd ˈaʊtˌpʊt/ (n) - AI output that sounds correct but is false
-  _Example 1:_ The AI suggested a library option that did not exist in our version.
-  _Example 2:_ Hallucinated output is dangerous because it often sounds confident.
-  _Example 3:_ I cross-check unfamiliar APIs before trusting them.
+  - _Example 1:_ The AI suggested a library option that did not exist in our version.
+  - _Example 2:_ Hallucinated output is dangerous because it often sounds confident.
+  - _Example 3:_ I cross-check unfamiliar APIs before trusting them.
 
 - **privacy boundary** /ˈpraɪvəsi ˈbaʊndəri/ (n) - clear limit on what data can be shared with AI
-  _Example 1:_ We do not paste customer data, secrets, or private logs into external tools.
-  _Example 2:_ A privacy boundary protects users and the company.
-  _Example 3:_ Good AI workflow starts with knowing what cannot be shared.
+  - _Example 1:_ We do not paste customer data, secrets, or private logs into external tools.
+  - _Example 2:_ A privacy boundary protects users and the company.
+  - _Example 3:_ Good AI workflow starts with knowing what cannot be shared.
 
 - **review accountability** /rɪˈvjuː əˌkaʊntəˈbɪləti/ (n) - clear responsibility for checking and approving AI-assisted work
-  _Example 1:_ Accountability stays with the engineer who merges the code.
-  _Example 2:_ AI can draft, but reviewers must still understand the final change.
-  _Example 3:_ Review accountability prevents blame-shifting to the tool.
+  - _Example 1:_ Accountability stays with the engineer who merges the code.
+  - _Example 2:_ AI can draft, but reviewers must still understand the final change.
+  - _Example 3:_ Review accountability prevents blame-shifting to the tool.
 
 - **human judgment** /ˈhjuːmən ˈdʒʌdʒmənt/ (n) - engineer thinking used to evaluate context, risk, and quality
-  _Example 1:_ Human judgment decides whether the AI suggestion fits the product.
-  _Example 2:_ AI gave three options, but the engineer chose based on maintainability.
-  _Example 3:_ Judgment becomes more valuable as AI makes first drafts faster.
+  - _Example 1:_ Human judgment decides whether the AI suggestion fits the product.
+  - _Example 2:_ AI gave three options, but the engineer chose based on maintainability.
+  - _Example 3:_ Judgment becomes more valuable as AI makes first drafts faster.
 
 - **skill atrophy** /skɪl ˈætrəfi/ (n) - gradual weakening of skills from over-reliance on automation
-  _Example 1:_ Skill atrophy is a risk if juniors copy answers without reasoning.
-  _Example 2:_ I prevent skill atrophy by explaining AI-generated code before using it.
-  _Example 3:_ AI should support learning, not replace it.
+  - _Example 1:_ Skill atrophy is a risk if juniors copy answers without reasoning.
+  - _Example 2:_ I prevent skill atrophy by explaining AI-generated code before using it.
+  - _Example 3:_ AI should support learning, not replace it.
 
 - **speed-quality balance** /spiːd ˈkwɑːləti ˈbæləns/ (n) - practical balance between faster output and acceptable quality
-  _Example 1:_ AI improved speed, but verification still took time.
-  _Example 2:_ The speed-quality balance changes depending on risk.
-  _Example 3:_ For payment or privacy logic, quality must win.
+  - _Example 1:_ AI improved speed, but verification still took time.
+  - _Example 2:_ The speed-quality balance changes depending on risk.
+  - _Example 3:_ For payment or privacy logic, quality must win.
 
 **Additional useful terms:**
 

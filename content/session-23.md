@@ -9,62 +9,62 @@ description: Talk about personal drivers, value conflicts, meaningful work, and 
 
 # Session 23: Motivation & Personal Values
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** What truly drives you (real, not textbook).
 **Scope:** Talk about personal drivers, value conflicts, meaningful work, and real examples of choices guided by your values.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **motivation** /ˌmoʊtəˈveɪʃən/ (n) - reason you want to do work  
-  _Example 1:_ My strongest motivation is solving high-impact user pain, not only shipping features.  
-  _Example 2:_ I felt this clearly when checkout error fixes reduced support load.  
-  _Example 3:_ Impact-based motivation keeps me consistent in hard sprints.
+- **motivation** /ˌmoʊtəˈveɪʃən/ (n) - reason you want to do work
+  - _Example 1:_ My strongest motivation is solving high-impact user pain, not only shipping features.
+  - _Example 2:_ I felt this clearly when checkout error fixes reduced support load.
+  - _Example 3:_ Impact-based motivation keeps me consistent in hard sprints.
 
-- **core value** /kɔr ˈvæljuː/ (n) - principle that guides your decisions  
-  _Example 1:_ One core value for me is reliability under pressure.  
-  _Example 2:_ I choose projects where I can improve that value, even if visibility is lower.  
-  _Example 3:_ Values give direction when options look similar.
+- **core value** /kɔr ˈvæljuː/ (n) - principle that guides your decisions
+  - _Example 1:_ One core value for me is reliability under pressure.
+  - _Example 2:_ I choose projects where I can improve that value, even if visibility is lower.
+  - _Example 3:_ Values give direction when options look similar.
 
-- **autonomy** /ɔːˈtɑːnəmi/ (n) - freedom to make decisions in your work  
-  _Example 1:_ I value autonomy because it lets me solve problems end-to-end.  
-  _Example 2:_ Without autonomy, I become less proactive and less creative.  
-  _Example 3:_ Balanced autonomy with clear accountability works best for me.
+- **autonomy** /ɔːˈtɑːnəmi/ (n) - freedom to make decisions in your work
+  - _Example 1:_ I value autonomy because it lets me solve problems end-to-end.
+  - _Example 2:_ Without autonomy, I become less proactive and less creative.
+  - _Example 3:_ Balanced autonomy with clear accountability works best for me.
 
-- **purpose** /ˈpɝːpəs/ (n) - meaningful reason behind your work  
-  _Example 1:_ Purpose for me is building systems that reduce real friction for users.  
-  _Example 2:_ When purpose is clear, difficult tasks feel more manageable.  
-  _Example 3:_ Purpose protects motivation during repetitive maintenance work.
+- **purpose** /ˈpɝːpəs/ (n) - meaningful reason behind your work
+  - _Example 1:_ Purpose for me is building systems that reduce real friction for users.
+  - _Example 2:_ When purpose is clear, difficult tasks feel more manageable.
+  - _Example 3:_ Purpose protects motivation during repetitive maintenance work.
 
-- **culture fit** /ˈkʌltʃər fɪt/ (n) - how well your values match company culture  
-  _Example 1:_ Culture fit matters because values drive daily behavior under pressure.  
-  _Example 2:_ I look for teams where feedback is direct and respectful.  
-  _Example 3:_ Good culture fit improves both growth and retention.
+- **culture fit** /ˈkʌltʃər fɪt/ (n) - how well your values match company culture
+  - _Example 1:_ Culture fit matters because values drive daily behavior under pressure.
+  - _Example 2:_ I look for teams where feedback is direct and respectful.
+  - _Example 3:_ Good culture fit improves both growth and retention.
 
-- **self-awareness** /ˌsɛlf əˈwɛrnəs/ (n) - understanding your real strengths and limits  
-  _Example 1:_ Self-awareness helped me stop chasing roles that looked good but drained me.  
-  _Example 2:_ I now choose environments where my strengths create measurable value.  
-  _Example 3:_ Better awareness improved decision quality over time.
+- **self-awareness** /ˌsɛlf əˈwɛrnəs/ (n) - understanding your real strengths and limits
+  - _Example 1:_ Self-awareness helped me stop chasing roles that looked good but drained me.
+  - _Example 2:_ I now choose environments where my strengths create measurable value.
+  - _Example 3:_ Better awareness improved decision quality over time.
 
-- **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - mismatch between your values and your environment  
-  _Example 1:_ Value misalignment appeared when speed was rewarded but transparency was ignored.  
-  _Example 2:_ I stayed for one quarter, then changed teams to protect long-term motivation.  
-  _Example 3:_ Misalignment is expensive if ignored too long.
+- **misalignment** /ˌmɪsəˈlaɪnmənt/ (n) - mismatch between your values and your environment
+  - _Example 1:_ Value misalignment appeared when speed was rewarded but transparency was ignored.
+  - _Example 2:_ I stayed for one quarter, then changed teams to protect long-term motivation.
+  - _Example 3:_ Misalignment is expensive if ignored too long.
 
-- **intrinsic motivation** /ɪnˈtrɪnzɪk ˌmoʊtəˈveɪʃən/ (n) - internal motivation from the work itself  
-  _Example 1:_ Intrinsic motivation keeps me engaged in complex debugging work.  
-  _Example 2:_ External rewards matter, but they cannot replace meaningful daily tasks.  
-  _Example 3:_ This mindset reduced burnout risk in long projects.
+- **intrinsic motivation** /ɪnˈtrɪnzɪk ˌmoʊtəˈveɪʃən/ (n) - internal motivation from the work itself
+  - _Example 1:_ Intrinsic motivation keeps me engaged in complex debugging work.
+  - _Example 2:_ External rewards matter, but they cannot replace meaningful daily tasks.
+  - _Example 3:_ This mindset reduced burnout risk in long projects.
 
-- **career anchor** /kəˈrɪr ˈæŋkər/ (n) - stable priority in your career choices  
-  _Example 1:_ My career anchors are growth depth, ethical culture, and team trust.  
-  _Example 2:_ Anchors help me reject attractive but misaligned offers.  
-  _Example 3:_ They make long-term planning less reactive.
+- **career anchor** /kəˈrɪr ˈæŋkər/ (n) - stable priority in your career choices
+  - _Example 1:_ My career anchors are growth depth, ethical culture, and team trust.
+  - _Example 2:_ Anchors help me reject attractive but misaligned offers.
+  - _Example 3:_ They make long-term planning less reactive.
 
-- **reflection** /rɪˈflɛkʃən/ (n) - careful review of your experiences  
-  _Example 1:_ Weekly reflection helped me see which work gave energy and which work drained it.  
-  _Example 2:_ I adjusted my goals based on that pattern, not on external pressure.  
-  _Example 3:_ Reflection turned vague motivation into clear decisions.
+- **reflection** /rɪˈflɛkʃən/ (n) - careful review of your experiences
+  - _Example 1:_ Weekly reflection helped me see which work gave energy and which work drained it.
+  - _Example 2:_ I adjusted my goals based on that pattern, not on external pressure.
+  - _Example 3:_ Reflection turned vague motivation into clear decisions.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Talk about personal drivers, value conflicts, meaningful work, and 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Simple for values**  
+- **Present Simple for values**
   I value ownership, clear feedback, and meaningful work.
 
-- **Past reflection language**  
+- **Past reflection language**
   I thought I wanted promotion fast, but I realized I wanted autonomy.
 
-- **Contrast language**  
+- **Contrast language**
   Salary matters, but daily work quality matters more to me.
 
-- **Conditionals for fit**  
+- **Conditionals for fit**
   If team values are unclear, motivation usually drops.
 
-- **Evidence language**  
+- **Evidence language**
   One example that shows this is...
 
-- **Future alignment language**  
+- **Future alignment language**
   In my next role, I want stronger alignment with these values.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Talk about personal drivers, value conflicts, meaningful work, and 
 
 **Interviewer:** What motivates you?
 
-**You:**  
+**You:**
 I am most motivated when I can solve practical user problems and see clear impact. For example, we reduced checkout errors and support tickets dropped.
 
 Results like that give me more energy than title changes alone.
@@ -173,7 +173,7 @@ Results like that give me more energy than title changes alone.
 
 **Interviewer:** Have your priorities changed over time?
 
-**You:**  
+**You:**
 Yes. I used to focus mainly on promotion. Later I realized autonomy and learning matter more for my long-term growth.
 
 That change helped me choose projects better.
@@ -182,7 +182,7 @@ That change helped me choose projects better.
 
 **Interviewer:** What kind of company culture suits you?
 
-**You:**  
+**You:**
 I work best in teams with clear ownership, honest feedback, and low politics. I prefer direct communication and realistic planning.
 
 A fast team is good, but not if quality and trust are ignored.

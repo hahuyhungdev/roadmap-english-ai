@@ -9,62 +9,62 @@ description: Discuss how you decide with incomplete data: assumptions, downside 
 
 # Session 22: Decision Making Under Uncertainty
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** Acting without full information.
 **Scope:** Discuss how you decide with incomplete data: assumptions, downside planning, trade-offs, and final decision logic.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **calculated risk** /ˈkælkjəˌleɪtɪd rɪsk/ (n) - risk you take after thinking about possible outcomes  
-  _Example 1:_ I accepted a startup offer as a calculated risk after reviewing runway and team quality.  
-  _Example 2:_ I listed worst-case outcomes before signing.  
-  _Example 3:_ This made the decision stressful but rational.
+- **calculated risk** /ˈkælkjəˌleɪtɪd rɪsk/ (n) - risk you take after thinking about possible outcomes
+  - _Example 1:_ I accepted a startup offer as a calculated risk after reviewing runway and team quality.
+  - _Example 2:_ I listed worst-case outcomes before signing.
+  - _Example 3:_ This made the decision stressful but rational.
 
-- **uncertainty** /ʌnˈsɝtənti/ (n) - situation where future outcomes are unclear  
-  _Example 1:_ Uncertainty was high because both role scope and team stability were unclear.  
-  _Example 2:_ I stopped waiting for perfect certainty and built a decision framework instead.  
-  _Example 3:_ Structured thinking reduced emotional overreaction.
+- **uncertainty** /ʌnˈsɝtənti/ (n) - situation where future outcomes are unclear
+  - _Example 1:_ Uncertainty was high because both role scope and team stability were unclear.
+  - _Example 2:_ I stopped waiting for perfect certainty and built a decision framework instead.
+  - _Example 3:_ Structured thinking reduced emotional overreaction.
 
-- **opportunity cost** /ˌɑpɚˈtunəti kɔst/ (n) - value of what you give up by choosing one option  
-  _Example 1:_ The opportunity cost of staying was low learning exposure in distributed systems.  
-  _Example 2:_ I compared that cost against salary stability.  
-  _Example 3:_ Opportunity cost made hidden losses visible.
+- **opportunity cost** /ˌɑpɚˈtunəti kɔst/ (n) - value of what you give up by choosing one option
+  - _Example 1:_ The opportunity cost of staying was low learning exposure in distributed systems.
+  - _Example 2:_ I compared that cost against salary stability.
+  - _Example 3:_ Opportunity cost made hidden losses visible.
 
-- **comfort zone** /ˈkʌmfɚt zoʊn/ (n) - familiar situation with low stress and low change  
-  _Example 1:_ I stayed in my comfort zone where delivery was stable but growth slowed.  
-  _Example 2:_ Leaving it increased uncertainty, but expanded my technical range.  
-  _Example 3:_ Comfort is useful, but too much comfort can become career risk.
+- **comfort zone** /ˈkʌmfɚt zoʊn/ (n) - familiar situation with low stress and low change
+  - _Example 1:_ I stayed in my comfort zone where delivery was stable but growth slowed.
+  - _Example 2:_ Leaving it increased uncertainty, but expanded my technical range.
+  - _Example 3:_ Comfort is useful, but too much comfort can become career risk.
 
-- **downside scenario** /ˈdaʊnˌsaɪd səˈnɛrioʊ/ (n) - worst realistic result if a decision fails  
-  _Example 1:_ My downside scenario was probation failure and six months of financial stress.  
-  _Example 2:_ I planned mitigation steps before taking the role.  
-  _Example 3:_ This planning improved confidence under uncertainty.
+- **downside scenario** /ˈdaʊnˌsaɪd səˈnɛrioʊ/ (n) - worst realistic result if a decision fails
+  - _Example 1:_ My downside scenario was probation failure and six months of financial stress.
+  - _Example 2:_ I planned mitigation steps before taking the role.
+  - _Example 3:_ This planning improved confidence under uncertainty.
 
-- **backup plan** /ˈbækˌʌp plæn/ (n) - alternative plan if the first one fails  
-  _Example 1:_ My backup plan included emergency savings and part-time contract options.  
-  _Example 2:_ I treated backup planning as responsibility, not pessimism.  
-  _Example 3:_ It reduced decision fear significantly.
+- **backup plan** /ˈbækˌʌp plæn/ (n) - alternative plan if the first one fails
+  - _Example 1:_ My backup plan included emergency savings and part-time contract options.
+  - _Example 2:_ I treated backup planning as responsibility, not pessimism.
+  - _Example 3:_ It reduced decision fear significantly.
 
-- **decision fatigue** /dɪˈsɪʒən fəˈtiɡ/ (n) - mental tiredness from too many decisions  
-  _Example 1:_ Decision fatigue made me postpone a role decision for weeks.  
-  _Example 2:_ I solved this by defining criteria and a final decision date.  
-  _Example 3:_ Structure protected me from endless analysis.
+- **decision fatigue** /dɪˈsɪʒən fəˈtiɡ/ (n) - mental tiredness from too many decisions
+  - _Example 1:_ Decision fatigue made me postpone a role decision for weeks.
+  - _Example 2:_ I solved this by defining criteria and a final decision date.
+  - _Example 3:_ Structure protected me from endless analysis.
 
-- **risk tolerance** /rɪsk ˈtɑlərəns/ (n) - how much risk you can accept emotionally and financially  
-  _Example 1:_ My risk tolerance dropped after becoming a primary income earner in my family.  
-  _Example 2:_ I still take risks, but with stronger downside controls.  
-  _Example 3:_ Risk tolerance should reflect life context, not ego.
+- **risk tolerance** /rɪsk ˈtɑlərəns/ (n) - how much risk you can accept emotionally and financially
+  - _Example 1:_ My risk tolerance dropped after becoming a primary income earner in my family.
+  - _Example 2:_ I still take risks, but with stronger downside controls.
+  - _Example 3:_ Risk tolerance should reflect life context, not ego.
 
-- **regret minimization** /rɪˈɡrɛt ˌmɪnəməˈzeɪʃən/ (n) - choosing the option you are less likely to regret later  
-  _Example 1:_ I used regret minimization by asking what decision I would respect in five years.  
-  _Example 2:_ This shifted focus from fear to long-term direction.  
-  _Example 3:_ It improved clarity in uncertain moments.
+- **regret minimization** /rɪˈɡrɛt ˌmɪnəməˈzeɪʃən/ (n) - choosing the option you are less likely to regret later
+  - _Example 1:_ I used regret minimization by asking what decision I would respect in five years.
+  - _Example 2:_ This shifted focus from fear to long-term direction.
+  - _Example 3:_ It improved clarity in uncertain moments.
 
-- **career pivot** /kəˈrɪr ˈpɪvət/ (n) - meaningful change in role, domain, or direction  
-  _Example 1:_ My career pivot from QA automation to backend required a 12-month learning plan.  
-  _Example 2:_ The first months were uncertain, but progress was measurable.  
-  _Example 3:_ Pivot success came from disciplined execution, not luck alone.
+- **career pivot** /kəˈrɪr ˈpɪvət/ (n) - meaningful change in role, domain, or direction
+  - _Example 1:_ My career pivot from QA automation to backend required a 12-month learning plan.
+  - _Example 2:_ The first months were uncertain, but progress was measurable.
+  - _Example 3:_ Pivot success came from disciplined execution, not luck alone.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Discuss how you decide with incomplete data: assumptions, downside 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Conditionals for possible outcomes**  
+- **Conditionals for possible outcomes**
   If the role does not work out, I will use my backup plan.
 
-- **Past narrative for difficult choices**  
+- **Past narrative for difficult choices**
   I did not have full information, so I made a decision based on values and risk.
 
-- **Comparatives for evaluation**  
+- **Comparatives for evaluation**
   This option is riskier in the short term but stronger in long-term upside.
 
-- **Hedging language**  
+- **Hedging language**
   I cannot be 100 percent sure, but the evidence points to this direction.
 
-- **Modals for strategic advice**  
+- **Modals for strategic advice**
   You should define your downside before making a big move.
 
-- **Cause and effect**  
+- **Cause and effect**
   Because I had clear criteria, I avoided emotional overthinking.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Discuss how you decide with incomplete data: assumptions, downside 
 
 **Interviewer:** Tell me about a time you had to make a decision without complete information.
 
-**You:**  
+**You:**
 I had two offers at the same time — one at a stable company, one at an early-stage startup with stronger mentorship. I did not know how either would perform over the next year.
 
 I listed my decision criteria: learning speed, mentorship quality, and downside risk. The startup scored higher on the first two, so I chose it and built a six-month backup plan in case it did not work out.
@@ -175,7 +175,7 @@ It was stressful at first, but my technical range expanded much faster than it w
 
 **Interviewer:** How do you handle situations where leadership pushes for a clear answer but you do not have enough data yet?
 
-**You:**  
+**You:**
 I give them my best current estimate with explicit assumptions. I say something like: "Based on what I know now, I recommend option A. Here is what I am assuming, and here is the signal that would change my decision."
 
 That way I am not blocking the team, but I am also not pretending I have certainty I do not have. It keeps trust intact even when the answer changes later.
@@ -184,7 +184,7 @@ That way I am not blocking the team, but I am also not pretending I have certain
 
 **Interviewer:** How do you decide when to act fast and when to slow down?
 
-**You:**  
+**You:**
 I think about whether the decision is reversible. If I can undo it quickly, I move fast and adjust based on feedback. If the cost to reverse is high, I slow down, collect more data, and define a clear downside plan first.
 
 For example, choosing a new UI library for one feature is low-stakes — I can swap it. But choosing a new authentication approach affects all teams, so that needs proper review before we commit.

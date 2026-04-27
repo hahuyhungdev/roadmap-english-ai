@@ -17,54 +17,54 @@ description: Discuss technical debt with evidence and explain safe change plans 
 <summary><strong>1) Vocabulary</strong></summary>
 
 - **technical debt** /ˈtɛknɪkəl dɛt/ (n) - shortcuts or design problems that make future work slower or riskier
-  _Example 1:_ The technical debt was visible because small form changes kept creating bugs.
-  _Example 2:_ We accepted some debt to launch, but we documented the cleanup plan.
-  _Example 3:_ Debt is easier to discuss when it is connected to delivery pain.
+  - _Example 1:_ The technical debt was visible because small form changes kept creating bugs.
+  - _Example 2:_ We accepted some debt to launch, but we documented the cleanup plan.
+  - _Example 3:_ Debt is easier to discuss when it is connected to delivery pain.
 
 - **debt signal** /dɛt ˈsɪɡnəl/ (n) - visible symptom that debt is hurting the team
-  _Example 1:_ Repeated bugs in the same flow were a strong debt signal.
-  _Example 2:_ Slow QA sign-off can be a debt signal if the same area breaks often.
-  _Example 3:_ A debt signal is stronger than saying "the code feels ugly."
+  - _Example 1:_ Repeated bugs in the same flow were a strong debt signal.
+  - _Example 2:_ Slow QA sign-off can be a debt signal if the same area breaks often.
+  - _Example 3:_ A debt signal is stronger than saying "the code feels ugly."
 
 - **legacy module** /ˈlɛɡəsi ˈmɑːdʒuːl/ (n) - old system part still used in production
-  _Example 1:_ The legacy module worked, but nobody wanted to touch it before release.
-  _Example 2:_ We isolated the legacy module before changing the checkout flow.
-  _Example 3:_ Legacy code needs extra tests before refactor.
+  - _Example 1:_ The legacy module worked, but nobody wanted to touch it before release.
+  - _Example 2:_ We isolated the legacy module before changing the checkout flow.
+  - _Example 3:_ Legacy code needs extra tests before refactor.
 
 - **refactor scope** /riːˈfæktər skoʊp/ (n) - exact boundary of what a refactor will and will not change
-  _Example 1:_ We kept refactor scope limited to validation logic.
-  _Example 2:_ Clear scope stopped the cleanup from becoming a rewrite.
-  _Example 3:_ Small scope makes change easier to review and test.
+  - _Example 1:_ We kept refactor scope limited to validation logic.
+  - _Example 2:_ Clear scope stopped the cleanup from becoming a rewrite.
+  - _Example 3:_ Small scope makes change easier to review and test.
 
 - **regression risk** /rɪˈɡrɛʃən rɪsk/ (n) - chance that old behavior breaks after a change
-  _Example 1:_ Regression risk was high because the component was shared across five pages.
-  _Example 2:_ We added tests to reduce regression risk.
-  _Example 3:_ The riskiest refactor is one that changes behavior without tests.
+  - _Example 1:_ Regression risk was high because the component was shared across five pages.
+  - _Example 2:_ We added tests to reduce regression risk.
+  - _Example 3:_ The riskiest refactor is one that changes behavior without tests.
 
 - **maintenance burden** /ˈmeɪntənəns ˈbɝːdən/ (n) - ongoing effort needed to keep old or complex code working
-  _Example 1:_ The old validation layer created a high maintenance burden.
-  _Example 2:_ Maintenance burden slowed every new campaign launch.
-  _Example 3:_ Reducing burden can be a business benefit if it speeds delivery.
+  - _Example 1:_ The old validation layer created a high maintenance burden.
+  - _Example 2:_ Maintenance burden slowed every new campaign launch.
+  - _Example 3:_ Reducing burden can be a business benefit if it speeds delivery.
 
 - **change brief** /tʃeɪndʒ briːf/ (n) - short note explaining what changes, why, risk, tests, and rollback
-  _Example 1:_ The change brief listed affected screens and rollback triggers.
-  _Example 2:_ QA used the brief to focus on the riskiest paths.
-  _Example 3:_ A brief makes risky changes less emotional.
+  - _Example 1:_ The change brief listed affected screens and rollback triggers.
+  - _Example 2:_ QA used the brief to focus on the riskiest paths.
+  - _Example 3:_ A brief makes risky changes less emotional.
 
 - **rollout plan** /ˈroʊlˌaʊt plæn/ (n) - staged plan for releasing a change safely
-  _Example 1:_ The rollout plan started with 10% of users.
-  _Example 2:_ We paused the rollout when error rate increased.
-  _Example 3:_ A staged rollout is useful when impact is uncertain.
+  - _Example 1:_ The rollout plan started with 10% of users.
+  - _Example 2:_ We paused the rollout when error rate increased.
+  - _Example 3:_ A staged rollout is useful when impact is uncertain.
 
 - **rollback trigger** /ˈroʊlˌbæk ˈtrɪɡər/ (n) - agreed condition that tells the team to revert or disable a change
-  _Example 1:_ A 5% payment error increase was our rollback trigger.
-  _Example 2:_ Clear triggers prevent panic decisions.
-  _Example 3:_ Good rollback triggers use user impact, not only logs.
+  - _Example 1:_ A 5% payment error increase was our rollback trigger.
+  - _Example 2:_ Clear triggers prevent panic decisions.
+  - _Example 3:_ Good rollback triggers use user impact, not only logs.
 
 - **stability window** /stəˈbɪləti ˈwɪndoʊ/ (n) - period when risky changes are avoided before important traffic or events
-  _Example 1:_ We set a stability window before the holiday campaign.
-  _Example 2:_ During the window, only low-risk fixes were allowed.
-  _Example 3:_ Stability windows protect critical business periods.
+  - _Example 1:_ We set a stability window before the holiday campaign.
+  - _Example 2:_ During the window, only low-risk fixes were allowed.
+  - _Example 3:_ Stability windows protect critical business periods.
 
 **Additional useful terms:**
 

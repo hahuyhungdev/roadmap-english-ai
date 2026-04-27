@@ -17,54 +17,54 @@ description: Explain real production incidents with evidence, timeline, user imp
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **root cause** /rˈut kˈɑz/ (n) - the main reason a failure happened
-  _Example 1:_ The root cause was not "the API failed"; it was a validation change that rejected valid checkout requests.
-  _Example 2:_ We confirmed the root cause by comparing failed requests before and after the release.
-  _Example 3:_ A useful RCA explains the cause with evidence, not guesses.
+  - _Example 1:_ The root cause was not "the API failed"; it was a validation change that rejected valid checkout requests.
+  - _Example 2:_ We confirmed the root cause by comparing failed requests before and after the release.
+  - _Example 3:_ A useful RCA explains the cause with evidence, not guesses.
 
 - **timeline** /ˈtaɪmˌlaɪn/ (n) - clear sequence of what happened and when
-  _Example 1:_ We built a timeline from alerts, deploy logs, provider status pages, and support reports.
-  _Example 2:_ It showed the first failures started six minutes after a feature flag changed.
-  _Example 3:_ A clear timeline helped product understand when users were actually affected.
+  - _Example 1:_ We built a timeline from alerts, deploy logs, provider status pages, and support reports.
+  - _Example 2:_ It showed the first failures started six minutes after a feature flag changed.
+  - _Example 3:_ A clear timeline helped product understand when users were actually affected.
 
 - **log review** /lˈɔɡ rɪvjˈu/ (n) - checking logs to find patterns and errors
-  _Example 1:_ Log review showed that failed users all hit the same payment validation path.
-  _Example 2:_ We reviewed backend logs beside browser errors and provider response codes.
-  _Example 3:_ Shared logs reduced debate because frontend, backend, and platform teams used the same evidence.
+  - _Example 1:_ Log review showed that failed users all hit the same payment validation path.
+  - _Example 2:_ We reviewed backend logs beside browser errors and provider response codes.
+  - _Example 3:_ Shared logs reduced debate because frontend, backend, and platform teams used the same evidence.
 
 - **hypothesis** /haɪpˈɑθəsəs/ (n) - testable explanation of what might be wrong
-  _Example 1:_ Our first hypothesis was a model provider timeout, but traces showed the delay happened before the model call.
-  _Example 2:_ We tested each hypothesis with one clear piece of evidence.
-  _Example 3:_ Good debugging means changing your hypothesis when the data changes.
+  - _Example 1:_ Our first hypothesis was a model provider timeout, but traces showed the delay happened before the model call.
+  - _Example 2:_ We tested each hypothesis with one clear piece of evidence.
+  - _Example 3:_ Good debugging means changing your hypothesis when the data changes.
 
 - **reproduction steps** /rˌiprədˈʌkʃən stˈɛps/ (n) - repeatable steps to trigger the issue
-  _Example 1:_ QA wrote reproduction steps for one coupon, one browser, and one payment method.
-  _Example 2:_ These steps helped engineers verify that the rollback fixed the customer flow.
-  _Example 3:_ Reproduction steps are especially useful when the issue affects only one segment of users.
+  - _Example 1:_ QA wrote reproduction steps for one coupon, one browser, and one payment method.
+  - _Example 2:_ These steps helped engineers verify that the rollback fixed the customer flow.
+  - _Example 3:_ Reproduction steps are especially useful when the issue affects only one segment of users.
 
 - **impact window** /ˈɪmpækt wˈɪndoʊ/ (n) - exact time period users were affected
-  _Example 1:_ The impact window was from 10:12 to 10:54 AM.
-  _Example 2:_ This helped support answer customer complaints accurately.
-  _Example 3:_ Impact window is clearer than saying "about one hour".
+  - _Example 1:_ The impact window was from 10:12 to 10:54 AM.
+  - _Example 2:_ This helped support answer customer complaints accurately.
+  - _Example 3:_ Impact window is clearer than saying "about one hour".
 
 - **affected users** /əfˈɛktɪd ˈjuːzɚz/ (n) - number of users impacted by a failure
-  _Example 1:_ We estimated about 2,400 affected users during the incident window.
-  _Example 2:_ Product used this number to decide whether customer communication was needed.
-  _Example 3:_ I mention affected users because error rate alone does not show the human impact.
+  - _Example 1:_ We estimated about 2,400 affected users during the incident window.
+  - _Example 2:_ Product used this number to decide whether customer communication was needed.
+  - _Example 3:_ I mention affected users because error rate alone does not show the human impact.
 
 - **business impact** /ˈbɪznəs ˈɪmpækt/ (n) - measurable effect on users, revenue, or support load
-  _Example 1:_ Business impact included checkout drop, failed trials, and a spike in support tickets.
-  _Example 2:_ For an AI assistant issue, impact may be lower trust, not immediate lost revenue.
-  _Example 3:_ Even rough impact estimates improve decision quality when they are honest.
+  - _Example 1:_ Business impact included checkout drop, failed trials, and a spike in support tickets.
+  - _Example 2:_ For an AI assistant issue, impact may be lower trust, not immediate lost revenue.
+  - _Example 3:_ Even rough impact estimates improve decision quality when they are honest.
 
 - **mitigation** /mˌɪtɪɡˈeɪʃən/ (n) - short-term action to reduce damage fast
-  _Example 1:_ Our first mitigation was disabling the faulty feature flag.
-  _Example 2:_ Mitigation restored the main flow before the final fix was ready.
-  _Example 3:_ We separate mitigation from the final fix so temporary work does not become permanent.
+  - _Example 1:_ Our first mitigation was disabling the faulty feature flag.
+  - _Example 2:_ Mitigation restored the main flow before the final fix was ready.
+  - _Example 3:_ We separate mitigation from the final fix so temporary work does not become permanent.
 
 - **corrective action** /kɚˈɛktɪv ˈækʃən/ (n) - long-term change that removes the root weakness
-  _Example 1:_ Corrective action included better contract tests, provider-limit alerts, and safer rollout rules.
-  _Example 2:_ We assigned owners and due dates for each corrective action.
-  _Example 3:_ Corrective actions matter only if the team actually tracks them after the meeting.
+  - _Example 1:_ Corrective action included better contract tests, provider-limit alerts, and safer rollout rules.
+  - _Example 2:_ We assigned owners and due dates for each corrective action.
+  - _Example 3:_ Corrective actions matter only if the team actually tracks them after the meeting.
 
 **Additional useful terms:**
 

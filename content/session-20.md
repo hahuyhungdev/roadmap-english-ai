@@ -9,62 +9,62 @@ description: Practice handling toxic behavior calmly: de-escalation, boundary se
 
 # Session 20: Conflict with Difficult People
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** Emotional conflict, toxic situations.
 **Scope:** Practice handling toxic behavior calmly: de-escalation, boundary setting, documentation, and escalation path.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **de-escalation** /dˈi ˌɛskəlˈeɪʃən/ (n) - reducing emotional tension in conflict  
-  _Example 1:_ I used de-escalation language when a review meeting became personal.  
-  _Example 2:_ We paused blame discussion and returned to release facts and ownership.  
-  _Example 3:_ This prevented a people conflict from becoming a delivery failure.
+- **de-escalation** /dˈi ˌɛskəlˈeɪʃən/ (n) - reducing emotional tension in conflict
+  - _Example 1:_ I used de-escalation language when a review meeting became personal.
+  - _Example 2:_ We paused blame discussion and returned to release facts and ownership.
+  - _Example 3:_ This prevented a people conflict from becoming a delivery failure.
 
-- **toxic behavior** /tˈɑksɪk bɪhˈeɪvjɚ/ (n) - harmful behavior like disrespect or blame  
-  _Example 1:_ Repeated toxic behavior in stand-ups made juniors stop asking questions.  
-  _Example 2:_ We treated it as a delivery risk, not only a personality issue.  
-  _Example 3:_ Team confidence improved after behavior standards were enforced.
+- **toxic behavior** /tˈɑksɪk bɪhˈeɪvjɚ/ (n) - harmful behavior like disrespect or blame
+  - _Example 1:_ Repeated toxic behavior in stand-ups made juniors stop asking questions.
+  - _Example 2:_ We treated it as a delivery risk, not only a personality issue.
+  - _Example 3:_ Team confidence improved after behavior standards were enforced.
 
-- **boundary** /bˈaʊndɚi/ (n) - clear limit on acceptable behavior  
-  _Example 1:_ I set a boundary: challenge ideas, not people.  
-  _Example 2:_ Once the boundary was explicit, meeting tone changed quickly.  
-  _Example 3:_ Clear boundaries reduced repeated conflict in code reviews.
+- **boundary** /bˈaʊndɚi/ (n) - clear limit on acceptable behavior
+  - _Example 1:_ I set a boundary: challenge ideas, not people.
+  - _Example 2:_ Once the boundary was explicit, meeting tone changed quickly.
+  - _Example 3:_ Clear boundaries reduced repeated conflict in code reviews.
 
-- **passive-aggressive** /pˈæsɪv əɡrˈɛsɪv/ (adj) - indirect hostility  
-  _Example 1:_ Passive-aggressive comments in pull requests delayed decisions.  
-  _Example 2:_ I replied with neutral questions instead of emotional reactions.  
-  _Example 3:_ That approach surfaced real technical concerns faster.
+- **passive-aggressive** /pˈæsɪv əɡrˈɛsɪv/ (adj) - indirect hostility
+  - _Example 1:_ Passive-aggressive comments in pull requests delayed decisions.
+  - _Example 2:_ I replied with neutral questions instead of emotional reactions.
+  - _Example 3:_ That approach surfaced real technical concerns faster.
 
-- **escalation** /ˌɛskəlˈeɪʃən/ (n) - involving manager/HR when needed  
-  _Example 1:_ We used escalation after two documented conversations showed no behavior change.  
-  _Example 2:_ Escalation focused on patterns and project impact, not personal attacks.  
-  _Example 3:_ This kept the process fair and professional.
+- **escalation** /ˌɛskəlˈeɪʃən/ (n) - involving manager/HR when needed
+  - _Example 1:_ We used escalation after two documented conversations showed no behavior change.
+  - _Example 2:_ Escalation focused on patterns and project impact, not personal attacks.
+  - _Example 3:_ This kept the process fair and professional.
 
-- **professional tone** /prəfˈɛʃənəl tˈoʊn/ (n) - calm and respectful communication style  
-  _Example 1:_ I kept a professional tone even when someone interrupted me repeatedly.  
-  _Example 2:_ Calm wording helped the manager focus on facts.  
-  _Example 3:_ Professional tone protected both credibility and outcomes.
+- **professional tone** /prəfˈɛʃənəl tˈoʊn/ (n) - calm and respectful communication style
+  - _Example 1:_ I kept a professional tone even when someone interrupted me repeatedly.
+  - _Example 2:_ Calm wording helped the manager focus on facts.
+  - _Example 3:_ Professional tone protected both credibility and outcomes.
 
-- **conflict trigger** /kˈɑnflɪkt trˈɪɡɚ/ (n) - event that starts conflict  
-  _Example 1:_ Unclear ownership was the conflict trigger in our release week.  
-  _Example 2:_ Once we mapped responsibilities, tension dropped.  
-  _Example 3:_ Trigger analysis prevented the same conflict later.
+- **conflict trigger** /kˈɑnflɪkt trˈɪɡɚ/ (n) - event that starts conflict
+  - _Example 1:_ Unclear ownership was the conflict trigger in our release week.
+  - _Example 2:_ Once we mapped responsibilities, tension dropped.
+  - _Example 3:_ Trigger analysis prevented the same conflict later.
 
-- **working agreement** /wˈɝkɪŋ əɡrˈimənt/ (n) - shared rules for collaboration  
-  _Example 1:_ We created a working agreement on feedback tone and response time.  
-  _Example 2:_ The agreement reduced repeat arguments between frontend and backend.  
-  _Example 3:_ Team productivity improved after one sprint.
+- **working agreement** /wˈɝkɪŋ əɡrˈimənt/ (n) - shared rules for collaboration
+  - _Example 1:_ We created a working agreement on feedback tone and response time.
+  - _Example 2:_ The agreement reduced repeat arguments between frontend and backend.
+  - _Example 3:_ Team productivity improved after one sprint.
 
-- **psychological safety** /sˌaɪkəlˈɑdʒɪkəl sˈeɪfti/ (n) - feeling safe to speak up  
-  _Example 1:_ Psychological safety dropped when mistakes were mocked publicly.  
-  _Example 2:_ Leaders rebuilt safety by rewarding early risk reporting.  
-  _Example 3:_ Better safety led to fewer last-minute surprises.
+- **psychological safety** /sˌaɪkəlˈɑdʒɪkəl sˈeɪfti/ (n) - feeling safe to speak up
+  - _Example 1:_ Psychological safety dropped when mistakes were mocked publicly.
+  - _Example 2:_ Leaders rebuilt safety by rewarding early risk reporting.
+  - _Example 3:_ Better safety led to fewer last-minute surprises.
 
-- **resolution path** /rˌɛzəlˈuʃən pˈæθ/ (n) - planned way to resolve conflict  
-  _Example 1:_ Our resolution path was 1:1 feedback, written summary, then manager mediation.  
-  _Example 2:_ This structure prevented emotional escalation.  
-  _Example 3:_ It also gave clear checkpoints for follow-up.
+- **resolution path** /rˌɛzəlˈuʃən pˈæθ/ (n) - planned way to resolve conflict
+  - _Example 1:_ Our resolution path was 1:1 feedback, written summary, then manager mediation.
+  - _Example 2:_ This structure prevented emotional escalation.
+  - _Example 3:_ It also gave clear checkpoints for follow-up.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Practice handling toxic behavior calmly: de-escalation, boundary se
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Neutral reporting language**  
+- **Neutral reporting language**
   In meetings, the comments became personal and less productive.
 
-- **Boundary language**  
+- **Boundary language**
   I am happy to discuss ideas, but I am not okay with personal attacks.
 
-- **Cause and effect**  
+- **Cause and effect**
   Because feedback was hostile, collaboration slowed down.
 
-- **Past action sequence**  
+- **Past action sequence**
   First I tried direct conversation, then I documented patterns, then I escalated.
 
-- **Conditional language**  
+- **Conditional language**
   If behavior does not change, escalation is necessary.
 
-- **Outcome language**  
+- **Outcome language**
   After setting clear rules, meetings became more focused.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Practice handling toxic behavior calmly: de-escalation, boundary se
 
 **Interviewer:** Tell me about conflict with a difficult teammate.
 
-**You:**  
+**You:**
 A teammate often gave harsh comments in code reviews. I first talked privately and explained the impact on team morale.
 
 Some improvement happened, but the pattern returned. We then involved our manager and set review rules.
@@ -173,7 +173,7 @@ Some improvement happened, but the pattern returned. We then involved our manage
 
 **Interviewer:** How do you set boundaries without creating more conflict?
 
-**You:**  
+**You:**
 I use neutral language and specific examples. I say what behavior is a problem and what behavior I expect instead.
 
 This keeps it professional. It may feel uncomfortable, but it prevents bigger conflict later.
@@ -182,7 +182,7 @@ This keeps it professional. It may feel uncomfortable, but it prevents bigger co
 
 **Interviewer:** When do you escalate to management?
 
-**You:**  
+**You:**
 I escalate when direct discussion fails and team impact is clear. In one case, deadlines slipped because of repeated arguments.
 
 Escalation helped reset expectations and protect team productivity.

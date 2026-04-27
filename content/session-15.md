@@ -17,54 +17,54 @@ description: Discuss bullying and exclusion in groups, evidence-based response, 
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **public shaming** /ˈpʌblɪk ˈʃeɪmɪŋ/ (n) - humiliating someone in front of others
-  _Example 1:_ Public shaming happened when someone mocked a beginner in a group call.
-  _Example 2:_ Group silence made the behavior feel normal, which increased fear.
-  _Example 3:_ We addressed it by documenting incidents and setting meeting rules.
+  - _Example 1:_ Public shaming happened when someone mocked a beginner in a group call.
+  - _Example 2:_ Group silence made the behavior feel normal, which increased fear.
+  - _Example 3:_ We addressed it by documenting incidents and setting meeting rules.
 
 - **social exclusion** /ˈsoʊʃəl ɪkˈskluʒən/ (n) - repeatedly leaving someone out of communication or decisions
-  _Example 1:_ Social exclusion appeared when one person was repeatedly removed from important discussions.
-  _Example 2:_ Missing context later caused avoidable mistakes and blame.
-  _Example 3:_ Transparent meeting notes reduced exclusion risk.
+  - _Example 1:_ Social exclusion appeared when one person was repeatedly removed from important discussions.
+  - _Example 2:_ Missing context later caused avoidable mistakes and blame.
+  - _Example 3:_ Transparent meeting notes reduced exclusion risk.
 
 - **power imbalance** /ˈpaʊɚ ɪmˈbæləns/ (n) - unequal power making it hard for someone to defend themselves
-  _Example 1:_ Power imbalance made quieter people afraid to challenge disrespectful comments.
-  _Example 2:_ People in authority must account for this, not assume everyone can "just speak up."
-  _Example 3:_ Naming power imbalance changed how we handled complaints.
+  - _Example 1:_ Power imbalance made quieter people afraid to challenge disrespectful comments.
+  - _Example 2:_ People in authority must account for this, not assume everyone can "just speak up."
+  - _Example 3:_ Naming power imbalance changed how we handled complaints.
 
 - **humiliation incident** /hjuˌmɪliˈeɪʃən ˈɪnsədənt/ (n) - specific event where someone is intentionally embarrassed
-  _Example 1:_ We treated each humiliation incident as serious harm, not a personality issue.
-  _Example 2:_ Incident records helped people see a repeated pattern.
-  _Example 3:_ Pattern visibility led to formal intervention.
+  - _Example 1:_ We treated each humiliation incident as serious harm, not a personality issue.
+  - _Example 2:_ Incident records helped people see a repeated pattern.
+  - _Example 3:_ Pattern visibility led to formal intervention.
 
 - **witness responsibility** /ˈwɪtnəs rɪˌspɑnsəˈbɪləti/ (n) - duty to support a targeted person when you see abuse
-  _Example 1:_ Witness responsibility means not ignoring harmful jokes in group conversations.
-  _Example 2:_ One witness helped by confirming what happened in writing.
-  _Example 3:_ That support reduced fear of retaliation.
+  - _Example 1:_ Witness responsibility means not ignoring harmful jokes in group conversations.
+  - _Example 2:_ One witness helped by confirming what happened in writing.
+  - _Example 3:_ That support reduced fear of retaliation.
 
 - **incident record** /ˈɪnsədənt ˈrɛkɚd/ (n) - clear written notes of harmful events with date and context
-  _Example 1:_ My incident record included quote, channel, timestamp, and personal impact.
-  _Example 2:_ Specific records were more useful than emotional summaries.
-  _Example 3:_ Accurate records protected both fairness and credibility.
+  - _Example 1:_ My incident record included quote, channel, timestamp, and personal impact.
+  - _Example 2:_ Specific records were more useful than emotional summaries.
+  - _Example 3:_ Accurate records protected both fairness and credibility.
 
 - **safe escalation** /seɪf ˌɛskəˈleɪʃən/ (n) - reporting through proper channels while protecting personal safety
-  _Example 1:_ We used safe escalation through a trusted senior and formal support channel after direct feedback failed.
-  _Example 2:_ Safe escalation focused on behavior patterns, not personal attacks.
-  _Example 3:_ The process was slow, but it created clear accountability.
+  - _Example 1:_ We used safe escalation through a trusted senior and formal support channel after direct feedback failed.
+  - _Example 2:_ Safe escalation focused on behavior patterns, not personal attacks.
+  - _Example 3:_ The process was slow, but it created clear accountability.
 
 - **retaliation fear** /rɪˌtæliˈeɪʃən fɪr/ (n) - fear of punishment after reporting a problem
-  _Example 1:_ Retaliation fear stopped several people from reporting early.
-  _Example 2:_ Anonymous channels helped at first, but consistent follow-through mattered more.
-  _Example 3:_ Fear decreased when authority figures acted consistently.
+  - _Example 1:_ Retaliation fear stopped several people from reporting early.
+  - _Example 2:_ Anonymous channels helped at first, but consistent follow-through mattered more.
+  - _Example 3:_ Fear decreased when authority figures acted consistently.
 
 - **psychological safety** /ˌsaɪkəˈlɑdʒɪkəl ˈseɪfti/ (n) - feeling safe to ask questions and report concerns
-  _Example 1:_ Psychological safety dropped when sarcasm became normal in review comments.
-  _Example 2:_ It improved only after clear consequences for repeat behavior.
-  _Example 3:_ Safety is measured by behavior, not slogans.
+  - _Example 1:_ Psychological safety dropped when sarcasm became normal in review comments.
+  - _Example 2:_ It improved only after clear consequences for repeat behavior.
+  - _Example 3:_ Safety is measured by behavior, not slogans.
 
 - **support channel** /səˈpɔrt ˈtʃænəl/ (n) - trusted path for advice or reporting in sensitive situations
-  _Example 1:_ We created a support channel for private guidance before formal reports.
-  _Example 2:_ It helped people plan safe next steps with less panic.
-  _Example 3:_ Early support reduced long-term damage.
+  - _Example 1:_ We created a support channel for private guidance before formal reports.
+  - _Example 2:_ It helped people plan safe next steps with less panic.
+  - _Example 3:_ Early support reduced long-term damage.
 
 **Additional useful terms:**
 

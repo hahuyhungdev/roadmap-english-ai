@@ -17,54 +17,54 @@ description: Discuss attention loss, digital distraction patterns, deep-work rou
 <summary><strong>1) Vocabulary </strong></summary>
 
 - **attention residue** /əˈtɛnʃən ˈrɛzəˌdu/ (n) - leftover mental noise after switching tasks
-  _Example 1:_ Attention residue was high when I jumped between chat, browser tabs, and hard tasks.
-  _Example 2:_ Even after returning to one task, my reasoning quality stayed lower for 20 minutes.
-  _Example 3:_ Fewer context switches reduced residue and improved decision accuracy.
+  - _Example 1:_ Attention residue was high when I jumped between chat, browser tabs, and hard tasks.
+  - _Example 2:_ Even after returning to one task, my reasoning quality stayed lower for 20 minutes.
+  - _Example 3:_ Fewer context switches reduced residue and improved decision accuracy.
 
 - **context-switching cost** /ˈkɑntɛkst ˈswɪtʃɪŋ kɔst/ (n) - time and focus lost when moving between tasks
-  _Example 1:_ Context-switching cost doubled during busy weeks because of constant pings.
-  _Example 2:_ I grouped similar tasks into blocks to reduce that cost.
-  _Example 3:_ Progress improved even without longer working hours.
+  - _Example 1:_ Context-switching cost doubled during busy weeks because of constant pings.
+  - _Example 2:_ I grouped similar tasks into blocks to reduce that cost.
+  - _Example 3:_ Progress improved even without longer working hours.
 
 - **notification loop** /ˌnoʊtəfəˈkeɪʃən lup/ (n) - repeated checking cycle caused by alerts and messages
-  _Example 1:_ Notification loop made me check chat every few minutes automatically.
-  _Example 2:_ I broke it by muting non-urgent channels during deep-work windows.
-  _Example 3:_ That single change improved concentration more than expected.
+  - _Example 1:_ Notification loop made me check chat every few minutes automatically.
+  - _Example 2:_ I broke it by muting non-urgent channels during deep-work windows.
+  - _Example 3:_ That single change improved concentration more than expected.
 
 - **scroll reflex** /skroʊl ˈriflɛks/ (n) - automatic habit of opening feeds when attention drops
-  _Example 1:_ Scroll reflex appeared whenever a task felt hard or uncertain.
-  _Example 2:_ I replaced it with a two-minute reset routine: breathe, note blocker, return.
-  _Example 3:_ The reflex got weaker after consistent practice.
+  - _Example 1:_ Scroll reflex appeared whenever a task felt hard or uncertain.
+  - _Example 2:_ I replaced it with a two-minute reset routine: breathe, note blocker, return.
+  - _Example 3:_ The reflex got weaker after consistent practice.
 
 - **deep-work block** /dip wɝk blɑk/ (n) - protected time period for high-focus tasks
-  _Example 1:_ My deep-work block is 9:00-11:00 for my hardest tasks.
-  _Example 2:_ Personal boundaries protect this block from non-urgent interruptions.
-  _Example 3:_ Deep blocks increased quality of decisions.
+  - _Example 1:_ My deep-work block is 9:00-11:00 for my hardest tasks.
+  - _Example 2:_ Personal boundaries protect this block from non-urgent interruptions.
+  - _Example 3:_ Deep blocks increased quality of decisions.
 
 - **distraction audit** /dɪˈstrækʃən ˈɔdɪt/ (n) - review of what interrupts your focus and why
-  _Example 1:_ My distraction audit showed chat pings and unclear task scope were top triggers.
-  _Example 2:_ I solved one trigger by writing clearer task outcomes before starting.
-  _Example 3:_ Audit data made focus improvement measurable.
+  - _Example 1:_ My distraction audit showed chat pings and unclear task scope were top triggers.
+  - _Example 2:_ I solved one trigger by writing clearer task outcomes before starting.
+  - _Example 3:_ Audit data made focus improvement measurable.
 
 - **focus ritual** /ˈfoʊkəs ˈrɪtʃuəl/ (n) - repeatable pre-work routine to enter concentration mode
-  _Example 1:_ My focus ritual is planning one target, one metric, and one stop point.
-  _Example 2:_ This reduced random task jumping during complex implementation.
-  _Example 3:_ Rituals made attention less dependent on mood.
+  - _Example 1:_ My focus ritual is planning one target, one metric, and one stop point.
+  - _Example 2:_ This reduced random task jumping during complex implementation.
+  - _Example 3:_ Rituals made attention less dependent on mood.
 
 - **cognitive fragmentation** /ˈkɑɡnətɪv ˌfræɡmɛnˈteɪʃən/ (n) - broken thinking caused by constant interruptions
-  _Example 1:_ Cognitive fragmentation made my code correct but hard to maintain.
-  _Example 2:_ Long-form debugging improved only after I blocked interruption windows.
-  _Example 3:_ Fragmentation is invisible until quality starts falling.
+  - _Example 1:_ Cognitive fragmentation made my code correct but hard to maintain.
+  - _Example 2:_ Long-form debugging improved only after I blocked interruption windows.
+  - _Example 3:_ Fragmentation is invisible until quality starts falling.
 
 - **priority window** /praɪˈɔrəti ˈwɪndoʊ/ (n) - defined time slot for highest-value task each day
-  _Example 1:_ I reserve a priority window before opening chat and email.
-  _Example 2:_ This protects progress on difficult tasks before urgent noise appears.
-  _Example 3:_ Priority windows reduced end-of-day unfinished work.
+  - _Example 1:_ I reserve a priority window before opening chat and email.
+  - _Example 2:_ This protects progress on difficult tasks before urgent noise appears.
+  - _Example 3:_ Priority windows reduced end-of-day unfinished work.
 
 - **interruption tax** /ˌɪntəˈrʌpʃən tæks/ (n) - hidden productivity cost paid for each interruption
-  _Example 1:_ Interruption tax looked small per message, but huge across a week.
-  _Example 2:_ I measured this tax by tracking restart time after each disruption.
-  _Example 3:_ Quantifying this cost made focus rules easier to defend.
+  - _Example 1:_ Interruption tax looked small per message, but huge across a week.
+  - _Example 2:_ I measured this tax by tracking restart time after each disruption.
+  - _Example 3:_ Quantifying this cost made focus rules easier to defend.
 
 **Additional useful terms:**
 

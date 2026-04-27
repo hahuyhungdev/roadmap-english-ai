@@ -9,62 +9,62 @@ description: Talk about one failure story clearly: what happened, your responsib
 
 # Session 11: Owning Failure
 
-**Level:** B1-B2  
+**Level:** B1-B2
 **Focus:** Accountability + trust rebuilding.
 **Scope:** Talk about one failure story clearly: what happened, your responsibility, immediate fix, prevention action, and how you rebuilt trust.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **ownership** /ˈoʊnɚʃˌɪp/ (n) - accepting responsibility for outcomes  
-  _Example 1:_ I took ownership of the failed deployment in the team channel immediately.  
-  _Example 2:_ Ownership meant leading both recovery tasks and follow-up prevention work.  
-  _Example 3:_ In interviews, ownership sounds strongest when paired with actions.
+- **ownership** /ˈoʊnɚʃˌɪp/ (n) - accepting responsibility for outcomes
+  - _Example 1:_ I took ownership of the failed deployment in the team channel immediately.
+  - _Example 2:_ Ownership meant leading both recovery tasks and follow-up prevention work.
+  - _Example 3:_ In interviews, ownership sounds strongest when paired with actions.
 
-- **mistake** /mɪstˈeɪk/ (n) - action that causes a problem  
-  _Example 1:_ My configuration mistake caused API downtime for checkout traffic.  
-  _Example 2:_ I explained the mistake without blaming tooling or teammates.  
-  _Example 3:_ Naming the mistake clearly helped recovery coordination.
+- **mistake** /mɪstˈeɪk/ (n) - action that causes a problem
+  - _Example 1:_ My configuration mistake caused API downtime for checkout traffic.
+  - _Example 2:_ I explained the mistake without blaming tooling or teammates.
+  - _Example 3:_ Naming the mistake clearly helped recovery coordination.
 
-- **impact statement** /ˈɪmpækt stˈeɪtmənt/ (n) - concise summary of what was affected  
-  _Example 1:_ My impact statement included users affected, downtime, and support load.  
-  _Example 2:_ This made the incident update clearer for non-engineering teams.  
-  _Example 3:_ A strong impact statement avoids vague wording like "it was bad".
+- **impact statement** /ˈɪmpækt stˈeɪtmənt/ (n) - concise summary of what was affected
+  - _Example 1:_ My impact statement included users affected, downtime, and support load.
+  - _Example 2:_ This made the incident update clearer for non-engineering teams.
+  - _Example 3:_ A strong impact statement avoids vague wording like "it was bad".
 
-- **accountability** /əkˈaʊntəbˌɪlɪti/ (n) - being answerable for your actions  
-  _Example 1:_ Accountability means owning outcomes, not only intentions.  
-  _Example 2:_ I shared what I controlled and what I changed after the incident.  
-  _Example 3:_ Accountability improved trust faster than defensive explanations.
+- **accountability** /əkˈaʊntəbˌɪlɪti/ (n) - being answerable for your actions
+  - _Example 1:_ Accountability means owning outcomes, not only intentions.
+  - _Example 2:_ I shared what I controlled and what I changed after the incident.
+  - _Example 3:_ Accountability improved trust faster than defensive explanations.
 
-- **incident report** /ˈɪnsədənt ripˈɔrt/ (n) - written summary of failure and actions  
-  _Example 1:_ I wrote an incident report the same day with clear timeline and owners.  
-  _Example 2:_ Support and product used the report to answer external questions.  
-  _Example 3:_ Writing early reduced rumor and confusion.
+- **incident report** /ˈɪnsədənt ripˈɔrt/ (n) - written summary of failure and actions
+  - _Example 1:_ I wrote an incident report the same day with clear timeline and owners.
+  - _Example 2:_ Support and product used the report to answer external questions.
+  - _Example 3:_ Writing early reduced rumor and confusion.
 
-- **failure acknowledgment** /fˈeɪljɚ əknˈɑlədʒmənt/ (n) - direct statement admitting your part in failure  
-  _Example 1:_ My failure acknowledgment was short, direct, and specific.  
-  _Example 2:_ This reduced defensiveness and moved the team to recovery faster.  
-  _Example 3:_ Honest acknowledgment is the first step in trust rebuild.
+- **failure acknowledgment** /fˈeɪljɚ əknˈɑlədʒmənt/ (n) - direct statement admitting your part in failure
+  - _Example 1:_ My failure acknowledgment was short, direct, and specific.
+  - _Example 2:_ This reduced defensiveness and moved the team to recovery faster.
+  - _Example 3:_ Honest acknowledgment is the first step in trust rebuild.
 
-- **corrective action** /kɚˈɛktɪv ˈækʃən/ (n) - step to fix immediate problem  
-  _Example 1:_ Corrective action was rollback and guarded patch release.  
-  _Example 2:_ We tracked corrective actions with owner and deadline.  
-  _Example 3:_ Fast corrective action reduced customer-facing damage.
+- **corrective action** /kɚˈɛktɪv ˈækʃən/ (n) - step to fix immediate problem
+  - _Example 1:_ Corrective action was rollback and guarded patch release.
+  - _Example 2:_ We tracked corrective actions with owner and deadline.
+  - _Example 3:_ Fast corrective action reduced customer-facing damage.
 
-- **preventive action** /prɪvˈɛntɪv ˈækʃən/ (n) - step to stop future recurrence  
-  _Example 1:_ Preventive action was adding CI checks for risky config changes.  
-  _Example 2:_ We also required peer review for deployment scripts.  
-  _Example 3:_ Prevention mattered more than apologies over time.
+- **preventive action** /prɪvˈɛntɪv ˈækʃən/ (n) - step to stop future recurrence
+  - _Example 1:_ Preventive action was adding CI checks for risky config changes.
+  - _Example 2:_ We also required peer review for deployment scripts.
+  - _Example 3:_ Prevention mattered more than apologies over time.
 
-- **trust rebuild** /trˈʌst ribˈɪld/ (n) - process of restoring confidence  
-  _Example 1:_ Trust rebuild took four weeks of consistent delivery and transparent updates.  
-  _Example 2:_ One good week was not enough to rebuild confidence.  
-  _Example 3:_ I treat trust rebuild as a process, not one conversation.
+- **trust rebuild** /trˈʌst ribˈɪld/ (n) - process of restoring confidence
+  - _Example 1:_ Trust rebuild took four weeks of consistent delivery and transparent updates.
+  - _Example 2:_ One good week was not enough to rebuild confidence.
+  - _Example 3:_ I treat trust rebuild as a process, not one conversation.
 
-- **follow-through** /fˈɑloʊ θɹˈu/ (n) - finishing promised actions after a failure  
-  _Example 1:_ Follow-through meant closing every prevention task, not just creating tickets.  
-  _Example 2:_ Stakeholders trusted updates more when they saw real completion.  
-  _Example 3:_ Follow-through turned one failure into a growth story.
+- **follow-through** /fˈɑloʊ θɹˈu/ (n) - finishing promised actions after a failure
+  - _Example 1:_ Follow-through meant closing every prevention task, not just creating tickets.
+  - _Example 2:_ Stakeholders trusted updates more when they saw real completion.
+  - _Example 3:_ Follow-through turned one failure into a growth story.
 
 **Additional useful terms:**
 
@@ -79,22 +79,22 @@ description: Talk about one failure story clearly: what happened, your responsib
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Past Simple for failure story**  
+- **Past Simple for failure story**
   I merged a config change without one final check.
 
-- **Past Perfect for sequence**  
+- **Past Perfect for sequence**
   We had already deployed when the first alert appeared.
 
-- **Ownership language**  
+- **Ownership language**
   I made the decision, and I take responsibility for the result.
 
-- **Cause and effect**  
+- **Cause and effect**
   Because we skipped one validation step, deployment failed.
 
-- **Repair and prevention language**  
+- **Repair and prevention language**
   We fixed the issue quickly and added guardrails in CI.
 
-- **Reflection language**  
+- **Reflection language**
   If I faced the same case again, I would slow down and verify first.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Talk about one failure story clearly: what happened, your responsib
 
 **Interviewer:** Tell me about a mistake you made.
 
-**You:**  
+**You:**
 I deployed a config change that broke one API endpoint. I informed the team immediately and coordinated rollback.
 
 Service recovered in about 20 minutes. I took ownership and shared a clear fix plan.
@@ -173,7 +173,7 @@ Service recovered in about 20 minutes. I took ownership and shared a clear fix p
 
 **Interviewer:** How did you rebuild trust after that?
 
-**You:**  
+**You:**
 I provided transparent updates, completed all follow-up tasks, and improved pre-deploy checks. I also asked a teammate to review risky changes with me.
 
 It took extra time, but release confidence improved over the next month.
@@ -182,7 +182,7 @@ It took extra time, but release confidence improved over the next month.
 
 **Interviewer:** Did you blame anyone else?
 
-**You:**  
+**You:**
 No. Other factors existed, but I focused on what I controlled. I explained my part clearly and what I changed after the incident.
 
 That approach helped the team focus on prevention, not blame.
