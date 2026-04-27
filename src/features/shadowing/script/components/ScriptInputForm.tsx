@@ -34,7 +34,7 @@ export function ScriptInputForm({
     return (
       <UnstyledButton
         onClick={onExpand}
-        className="text-xs text-indigo-500 hover:text-indigo-700 flex items-center gap-1"
+        className="text-base text-indigo-500 hover:text-indigo-700 flex items-center gap-1"
       >
         <ChevronDown size={12} />
         Edit script
@@ -70,7 +70,7 @@ export function ScriptInputForm({
       <div className="flex gap-2">
         <Button
           type="submit"
-          size="sm"
+          size="md"
           variant="filled"
           color="violet"
           radius="xl"
@@ -80,7 +80,7 @@ export function ScriptInputForm({
         {hasSentences && (
           <Button
             type="button"
-            size="sm"
+            size="md"
             variant="subtle"
             color="gray"
             radius="xl"

@@ -78,7 +78,7 @@ export function SentenceCard({
       <div className="space-y-1">
         <Group justify="space-between" align="center">
           <Text
-            size="xs"
+            size="md"
             c="dimmed"
             className="uppercase tracking-widest font-semibold"
           >
@@ -91,7 +91,7 @@ export function SentenceCard({
                 <ActionIcon
                   variant="light"
                   color="teal"
-                  size="sm"
+                  size="md"
                   radius="xl"
                   onClick={handleSave}
                   disabled={!draftText.trim()}
@@ -103,7 +103,7 @@ export function SentenceCard({
                 <ActionIcon
                   variant="subtle"
                   color="gray"
-                  size="sm"
+                  size="md"
                   radius="xl"
                   onClick={() => {
                     setDraftText(text);
@@ -119,7 +119,7 @@ export function SentenceCard({
               <ActionIcon
                 variant="subtle"
                 color="indigo"
-                size="sm"
+                size="md"
                 radius="xl"
                 onClick={() => setIsEditing(true)}
               >
@@ -174,7 +174,7 @@ export function SentenceCard({
             className="flex-1"
           >
             {tts.loading ? (
-              <Loader size="xs" color="violet" />
+              <Loader size="md" color="violet" />
             ) : tts.playing ? (
               <Volume2 size={14} className="animate-pulse" />
             ) : (
@@ -243,7 +243,7 @@ export function SentenceCard({
       {isRecording && (
         <div className="flex items-center gap-2 text-red-500">
           <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-          <span className="text-xs font-medium">Recording…</span>
+          <span className="text-base font-medium">Recording…</span>
         </div>
       )}
     </div>

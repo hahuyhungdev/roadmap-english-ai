@@ -104,7 +104,7 @@ export function CelebrationOverlay({
           }}
         >
           <p className="text-2xl font-bold text-gray-900 mb-1">{message}</p>
-          <p className="text-sm text-gray-500">Great work! Keep going 🚀</p>
+          <p className="text-base text-gray-500">Great work! Keep going 🚀</p>
         </div>
       </div>
 

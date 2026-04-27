@@ -80,13 +80,13 @@ export function TTSSettingsPanel({
 
       {open && (
         <div className="bg-white absolute right-0 top-9 z-20 w-72 border border-gray-200 rounded-xl shadow-lg p-4">
-          <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider mb-3">
+          <p className="text-base font-semibold text-gray-500 uppercase tracking-wider mb-3">
             Voice Settings
           </p>
 
           {/* Provider */}
           <div className="mb-3">
-            <label className="text-[10px] text-gray-500 block mb-1">
+            <label className="text-base text-gray-500 block mb-1">
               TTS Provider
             </label>
             <div className="flex gap-1.5">
@@ -103,7 +103,7 @@ export function TTSSettingsPanel({
                     onAccentChange(first);
                   }}
                   className={clsx(
-                    "flex-1 py-1.5 text-xs rounded-lg border transition-colors font-medium",
+                    "flex-1 py-1.5 text-base rounded-lg border transition-colors font-medium",
                     provider === p
                       ? "bg-indigo-600 text-white border-indigo-600"
                       : " text-gray-600 border-gray-200 hover:border-indigo-400",
@@ -117,7 +117,7 @@ export function TTSSettingsPanel({
 
           {/* Accent */}
           <div className="mb-3">
-            <label className="text-[10px] text-gray-500 block mb-1">
+            <label className="text-base text-gray-500 block mb-1">
               Accent
             </label>
             <Select
@@ -129,14 +129,14 @@ export function TTSSettingsPanel({
                 value: a.value,
                 label: a.label,
               }))}
-              size="xs"
+              size="md"
               radius="md"
             />
           </div>
 
           {/* Speed */}
           <div className="mb-3">
-            <label className="text-[10px] text-gray-500 block mb-1">
+            <label className="text-base text-gray-500 block mb-1">
               Speed
             </label>
             <div className="flex gap-1">
@@ -145,7 +145,7 @@ export function TTSSettingsPanel({
                   key={s.value}
                   onClick={() => onSpeedChange(s.value)}
                   className={clsx(
-                    "flex-1 py-1 text-[11px] rounded-lg border transition-colors",
+                    "flex-1 py-1 text-base rounded-lg border transition-colors",
                     speed === s.value
                       ? "bg-indigo-600 text-white border-indigo-600"
                       : " text-gray-600 border-gray-200 hover:border-indigo-400",
@@ -160,7 +160,7 @@ export function TTSSettingsPanel({
           {/* Playback options (Script mode only) */}
           {onAutoPronounceSentenceChange !== undefined && (
             <>
-              <p className="text-[10px] font-semibold text-gray-500 uppercase tracking-wider mb-2">
+              <p className="text-base font-semibold text-gray-500 uppercase tracking-wider mb-2">
                 Playback
               </p>
               <div className="space-y-2">
@@ -169,16 +169,16 @@ export function TTSSettingsPanel({
                   onChange={(e) =>
                     onAutoPronounceSentenceChange(e.currentTarget.checked)
                   }
-                  label={<span className="text-xs text-gray-600">Auto-pronounce</span>}
-                  size="xs"
+                  label={<span className="text-base text-gray-600">Auto-pronounce</span>}
+                  size="md"
                   color="indigo"
                 />
                 {onLoopSentenceChange !== undefined && (
                   <Checkbox
                     checked={Boolean(loopSentence)}
                     onChange={(e) => onLoopSentenceChange(e.currentTarget.checked)}
-                    label={<span className="text-xs text-gray-600">Loop 3× (3s apart)</span>}
-                    size="xs"
+                    label={<span className="text-base text-gray-600">Loop 3× (3s apart)</span>}
+                    size="md"
                     color="indigo"
                   />
                 )}

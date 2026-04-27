@@ -176,11 +176,11 @@ export default function YouTubeShadowingClient(props: Props) {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold text-gray-900">YouTube Shadowing</h1>
-          <p className="text-xs text-gray-400 mt-0.5">
+          <p className="text-base text-gray-400 mt-0.5">
             Shadow native speakers sentence by sentence.
           </p>
         </div>
-        <span className="text-[11px] text-gray-400">
+        <span className="text-base text-gray-400">
           Shift+←/→ • ↓ pause • Space play/pause
         </span>
       </div>
@@ -188,7 +188,7 @@ export default function YouTubeShadowingClient(props: Props) {
       {/* Progress */}
       {s.sentences.length > 0 && (
         <div className="rounded-xl border border-gray-200 bg-white/80 px-4 py-3">
-          <div className="flex items-center justify-between text-xs mb-2">
+          <div className="flex items-center justify-between text-base mb-2">
             <span className="inline-flex items-center gap-1 text-gray-500">
               <BarChart3 size={13} /> Session Progress
             </span>
@@ -221,11 +221,11 @@ export default function YouTubeShadowingClient(props: Props) {
             <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100 bg-gray-50">
               <div className="flex items-center gap-2">
                 <FileText size={14} className="text-indigo-500" />
-                <span className="text-sm font-semibold text-gray-700">
+                <span className="text-base font-semibold text-gray-700">
                   Sentence List
                 </span>
                 {s.sentences.length > 0 && (
-                  <span className="text-[11px] text-gray-500 bg-gray-200 px-1.5 py-0.5 rounded-full">
+                  <span className="text-base text-gray-500 bg-gray-200 px-1.5 py-0.5 rounded-full">
                     {s.sentences.length}
                   </span>
                 )}
@@ -236,7 +236,7 @@ export default function YouTubeShadowingClient(props: Props) {
                     <button
                       onClick={handleTranslateToVietnamese}
                       disabled={translatingVi || !s.sentences.length}
-                      className="flex items-center gap-1 px-2.5 py-1 text-[11px] font-semibold text-emerald-700 border border-emerald-200 rounded-lg bg-emerald-50 hover:bg-emerald-100 disabled:opacity-40 transition-colors"
+                      className="flex items-center gap-1 px-2.5 py-1 text-base font-semibold text-emerald-700 border border-emerald-200 rounded-lg bg-emerald-50 hover:bg-emerald-100 disabled:opacity-40 transition-colors"
                       title="Translate EN transcript to Vietnamese"
                     >
                       {translatingVi ? (
@@ -250,7 +250,7 @@ export default function YouTubeShadowingClient(props: Props) {
                   {!!Object.keys(viByIdx).length && (
                     <button
                       onClick={() => setShowVietnamese((v) => !v)}
-                      className="px-2.5 py-1 text-[11px] font-semibold text-gray-600 border border-gray-200 rounded-lg bg-white hover:bg-gray-50 transition-colors"
+                      className="px-2.5 py-1 text-base font-semibold text-gray-600 border border-gray-200 rounded-lg bg-white hover:bg-gray-50 transition-colors"
                       title="Toggle Vietnamese line"
                     >
                       {showVietnamese ? "Hide VI" : "Show VI"}
@@ -274,7 +274,7 @@ export default function YouTubeShadowingClient(props: Props) {
 
             {/* Settings panel */}
             {showSettings && s.sentences.length > 0 && (
-              <div className="flex flex-wrap items-center gap-4 px-4 py-2.5 bg-indigo-50/60 border-b border-indigo-100 text-xs">
+              <div className="flex flex-wrap items-center gap-4 px-4 py-2.5 bg-indigo-50/60 border-b border-indigo-100 text-base">
                 {/* Speed */}
                 <div className="flex items-center gap-2">
                   <span className="text-gray-500 font-medium">Speed</span>
@@ -324,7 +324,7 @@ export default function YouTubeShadowingClient(props: Props) {
                           key={p}
                           onClick={() => setResegmentPace(p)}
                           className={clsx(
-                            "px-2 py-0.5 rounded-md text-[11px] font-semibold transition-colors",
+                            "px-2 py-0.5 rounded-md text-base font-semibold transition-colors",
                             resegmentPace === p
                               ? "bg-indigo-600 text-white"
                               : "bg-white border border-gray-200 text-gray-500 hover:border-indigo-300",
@@ -337,7 +337,7 @@ export default function YouTubeShadowingClient(props: Props) {
                     <button
                       onClick={handleRebuildSentences}
                       disabled={isRebuilding}
-                      className="flex items-center gap-1 px-2.5 py-0.5 text-[11px] font-semibold text-gray-600 border border-gray-200 rounded-md bg-white hover:bg-gray-50 disabled:opacity-40 transition-colors"
+                      className="flex items-center gap-1 px-2.5 py-0.5 text-base font-semibold text-gray-600 border border-gray-200 rounded-md bg-white hover:bg-gray-50 disabled:opacity-40 transition-colors"
                       title="Preview re-segmented sentences locally (not saved to DB)"
                     >
                       {isRebuilding ? (
@@ -353,11 +353,11 @@ export default function YouTubeShadowingClient(props: Props) {
             )}
 
             {s.sentences.length === 0 ? (
-              <div className="flex flex-col items-center justify-center h-24 px-4 text-xs text-gray-400 text-center gap-2">
+              <div className="flex flex-col items-center justify-center h-24 px-4 text-base text-gray-400 text-center gap-2">
                 <span>No sentences loaded for this session.</span>
                 <button
                   onClick={() => window.location.reload()}
-                  className="px-3 py-1 text-[11px] font-semibold text-indigo-600 border border-indigo-200 rounded-lg bg-indigo-50 hover:bg-indigo-100 transition-colors"
+                  className="px-3 py-1 text-base font-semibold text-indigo-600 border border-indigo-200 rounded-lg bg-indigo-50 hover:bg-indigo-100 transition-colors"
                 >
                   Reload
                 </button>
@@ -380,19 +380,19 @@ export default function YouTubeShadowingClient(props: Props) {
                     )}
                   >
                     <div className="flex items-center justify-between gap-3">
-                      <div className="text-xs font-semibold text-gray-500">
+                      <div className="text-base font-semibold text-gray-500">
                         #{i + 1}
                       </div>
-                      <div className="text-[11px] text-gray-400 inline-flex items-center gap-1">
+                      <div className="text-base text-gray-400 inline-flex items-center gap-1">
                         <Clock3 size={11} />
                         {fmtTime(sentence.startMs)}
                       </div>
                     </div>
-                    <p className="mt-1 text-sm text-gray-800 leading-relaxed">
+                    <p className="mt-1 text-base text-gray-800 leading-relaxed">
                       {sentence.text}
                     </p>
                     {showVietnamese && viByIdx[i] && (
-                      <p className="mt-1 text-[12px] text-emerald-700 leading-relaxed">
+                      <p className="mt-1 text-base text-emerald-700 leading-relaxed">
                         {viByIdx[i]}
                       </p>
                     )}
@@ -403,7 +403,7 @@ export default function YouTubeShadowingClient(props: Props) {
           </div>
 
           {translateError && (
-            <div className="mx-3 mb-3 px-3 py-2 bg-red-50 border border-red-100 rounded-xl text-xs text-red-600">
+            <div className="mx-3 mb-3 px-3 py-2 bg-red-50 border border-red-100 rounded-xl text-base text-red-600">
               {translateError}
             </div>
           )}
@@ -423,14 +423,14 @@ export default function YouTubeShadowingClient(props: Props) {
             s.activeSentenceIdx < s.sentences.length ? (
               <>
                 <div>
-                  <p className="text-[10px] uppercase tracking-widest text-indigo-400 font-semibold">
+                  <p className="text-base uppercase tracking-widest text-indigo-400 font-semibold">
                     Current Sentence {s.activeSentenceIdx + 1}
                   </p>
                   <p className="mt-1.5 text-lg leading-relaxed text-indigo-900 font-medium">
                     {s.sentences[s.activeSentenceIdx]?.text}
                   </p>
                   {showVietnamese && viByIdx[s.activeSentenceIdx] && (
-                    <p className="mt-2 text-sm leading-relaxed text-emerald-700">
+                    <p className="mt-2 text-base leading-relaxed text-emerald-700">
                       {viByIdx[s.activeSentenceIdx]}
                     </p>
                   )}
@@ -439,7 +439,7 @@ export default function YouTubeShadowingClient(props: Props) {
                 <button
                   onClick={s.onToggleRecording}
                   className={clsx(
-                    "w-full inline-flex items-center justify-center gap-2 py-2.5 text-sm font-semibold rounded-xl border transition-all",
+                    "w-full inline-flex items-center justify-center gap-2 py-2.5 text-base font-semibold rounded-xl border transition-all",
                     s.isRecording
                       ? "bg-red-50 text-red-600 border-red-200 hover:bg-red-100"
                       : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50",
@@ -460,7 +460,7 @@ export default function YouTubeShadowingClient(props: Props) {
               </>
             ) : (
               <div className="h-full flex items-center justify-center text-center px-3">
-                <p className="text-sm text-indigo-500">
+                <p className="text-base text-indigo-500">
                   Pick a sentence from the left panel to focus your shadowing
                   practice.
                 </p>
@@ -469,7 +469,7 @@ export default function YouTubeShadowingClient(props: Props) {
           </div>
 
           {s.scriptError && (
-            <div className="px-3 py-2 bg-red-50 border border-red-100 rounded-xl text-xs text-red-600">
+            <div className="px-3 py-2 bg-red-50 border border-red-100 rounded-xl text-base text-red-600">
               {s.scriptError}
             </div>
           )}

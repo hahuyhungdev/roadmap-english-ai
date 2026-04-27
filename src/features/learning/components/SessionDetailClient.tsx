@@ -116,14 +116,14 @@ export default function SessionDetailClient({
       <div className="flex items-center justify-between mb-6">
         <Link
           href={`/phase/${phase.id}`}
-          className="flex items-center gap-1 text-sm text-gray-500 hover:text-indigo-600 transition-colors"
+          className="flex items-center gap-1 text-base text-gray-500 hover:text-indigo-600 transition-colors"
         >
           <ChevronLeft size={16} /> {phase.title}
         </Link>
         <button
           onClick={() => toggleCompleted(session.id)}
           className={clsx(
-            "flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border transition-all",
+            "flex items-center gap-1.5 text-base font-medium px-3 py-1.5 rounded-full border transition-all",
             completed
               ? "bg-indigo-50 text-indigo-600 border-indigo-200"
               : " text-gray-500 border-gray-200 hover:border-indigo-400",
@@ -135,7 +135,7 @@ export default function SessionDetailClient({
       </div>
 
       <div className="mb-6">
-        <p className="text-xs text-indigo-500 font-semibold uppercase tracking-wide mb-1">
+        <p className="text-base text-indigo-500 font-semibold uppercase tracking-wide mb-1">
           Lesson {String(session.meta.sessionNumber).padStart(2, "0")} &middot;{" "}
           {session.meta.topic}
         </p>
@@ -143,18 +143,18 @@ export default function SessionDetailClient({
           {session.meta.title}
         </h1>
         {session.meta.description && (
-          <p className="text-sm text-gray-500 mt-2">
+          <p className="text-base text-gray-500 mt-2">
             {session.meta.description}
           </p>
         )}
         <div className="flex flex-wrap items-center gap-2 mt-2">
           {session.meta.level && (
-            <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-100">
+            <span className="text-base px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-600 border border-indigo-100">
               {session.meta.level}
             </span>
           )}
           {session.meta.date && (
-            <span className="text-xs text-gray-500">
+            <span className="text-base text-gray-500">
               {new Date(session.meta.date).toLocaleDateString("en-US", {
                 year: "numeric",
                 month: "long",
@@ -168,7 +168,7 @@ export default function SessionDetailClient({
       <article
         className={[
           "lesson-prose border border-gray-200 rounded-2xl p-4 md:p-6 prose prose-gray max-w-none",
-          "text-[16px] md:text-[17px] leading-7",
+          "text-[17px] md:text-[18px] leading-7",
           "prose-p:text-gray-700 prose-p:text-[1em] prose-p:leading-7 prose-p:my-2",
           "prose-headings:text-gray-900 prose-headings:font-semibold",
           "prose-h1:text-[1.65em] prose-h1:mb-3 prose-h1:mt-0",
@@ -178,11 +178,11 @@ export default function SessionDetailClient({
           "prose-li:text-gray-700 prose-li:text-[1em] prose-li:leading-7 prose-li:my-1",
           "prose-a:text-indigo-600 hover:prose-a:text-indigo-500 prose-a:font-medium",
           "prose-strong:text-gray-900",
-          "prose-code:text-indigo-700 prose-code:bg-indigo-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[0.92em]",
+          "prose-code:text-indigo-700 prose-code:bg-indigo-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[1em]",
           "prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl",
           "prose-blockquote:border-l-4 prose-blockquote:border-indigo-400 prose-blockquote:bg-indigo-50/70",
           "prose-blockquote:my-3 prose-blockquote:rounded-r-lg prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:not-italic prose-blockquote:text-gray-700",
-          "prose-table:text-[0.95em] prose-th:text-gray-700 prose-td:text-gray-700",
+          "prose-table:text-[1em] prose-th:text-gray-700 prose-td:text-gray-700",
           "prose-details:my-2 prose-details:border prose-details:border-gray-200 prose-details:rounded-lg prose-details:bg-gray-50/70 prose-details:overflow-hidden",
           "prose-summary:cursor-pointer prose-summary:list-none prose-summary:font-semibold prose-summary:text-gray-900 prose-summary:px-3 prose-summary:py-2 prose-summary:select-none prose-summary:hover:bg-indigo-50 prose-summary:transition-colors prose-summary:[&::-webkit-details-marker]:hidden",
         ].join(" ")}
@@ -216,7 +216,7 @@ export default function SessionDetailClient({
                         size={12}
                         className="shrink-0 text-gray-400 transition-transform duration-200 group-open:hidden"
                       />
-                      <span className="hidden text-xs text-indigo-600 font-medium group-open:inline">
+                      <span className="hidden text-base text-indigo-600 font-medium group-open:inline">
                         Collapse
                       </span>
                     </summary>

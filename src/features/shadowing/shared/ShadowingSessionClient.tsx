@@ -139,7 +139,7 @@ export function ShadowingSessionClient({ sessionId, modePath }: Props) {
           onClick={() =>
             router.push(`/shadowing/${modePath ?? ""}`.replace(/\/$/, ""))
           }
-          className="text-sm text-indigo-600 hover:underline"
+          className="text-base text-indigo-600 hover:underline"
         >
           Back to sessions
         </button>

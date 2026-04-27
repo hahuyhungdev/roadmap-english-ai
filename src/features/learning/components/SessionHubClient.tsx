@@ -35,7 +35,7 @@ export default function SessionHubClient({
             <BookOpen size={18} className="text-indigo-500" />
             <h1 className="text-2xl font-bold text-gray-900">English Phases</h1>
           </div>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-base">
             {totalLessons} lessons across {phrases.length} phases
           </p>
         </div>
@@ -43,7 +43,7 @@ export default function SessionHubClient({
 
       <div className=" border border-gray-200 rounded-2xl p-5 mb-7 flex items-center gap-5 shadow-sm">
         <div className="flex-1">
-          <div className="flex justify-between text-xs text-gray-500 mb-2">
+          <div className="flex justify-between text-base text-gray-500 mb-2">
             <span>Overall Progress</span>
             <span className="font-semibold text-indigo-600">
               {doneLessons} / {totalLessons} lessons
@@ -77,7 +77,7 @@ export default function SessionHubClient({
               className="group flex items-start gap-4  border border-gray-200 rounded-2xl p-4 hover:border-indigo-200 hover:shadow-sm transition-all"
             >
               <div
-                className={`shrink-0 w-10 h-10 rounded-xl flex items-center justify-center text-sm font-bold transition-colors ${
+                className={`shrink-0 w-10 h-10 rounded-xl flex items-center justify-center text-base font-bold transition-colors ${
                   isDone
                     ? "bg-indigo-100 text-indigo-600"
                     : "bg-gray-100 text-gray-500 group-hover:bg-indigo-50 group-hover:text-indigo-500"
@@ -88,7 +88,7 @@ export default function SessionHubClient({
 
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-0.5">
-                  <h2 className="text-sm font-semibold text-gray-900 group-hover:text-indigo-700 transition-colors">
+                  <h2 className="text-base font-semibold text-gray-900 group-hover:text-indigo-700 transition-colors">
                     {phase.title}
                   </h2>
                   {isDone && (
@@ -98,7 +98,7 @@ export default function SessionHubClient({
                     />
                   )}
                 </div>
-                <p className="text-xs text-gray-500 mb-3">
+                <p className="text-base text-gray-500 mb-3">
                   {done} of {total} lessons done
                 </p>
 

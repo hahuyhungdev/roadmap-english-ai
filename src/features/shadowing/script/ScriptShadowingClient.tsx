@@ -127,7 +127,7 @@ export default function ScriptShadowingClient(props: Props) {
             <h1 className="text-xl font-bold text-gray-900">
               Script Shadowing
             </h1>
-            <p className="text-xs text-gray-400 mt-0.5">
+            <p className="text-base text-gray-400 mt-0.5">
               Paste any text · practice sentence by sentence
             </p>
           </div>
@@ -155,7 +155,7 @@ export default function ScriptShadowingClient(props: Props) {
                 <ActionIcon
                   variant="subtle"
                   color="red"
-                  size="sm"
+                  size="md"
                   onClick={s.onClearSession}
                 >
                   <Trash2 size={13} />
@@ -186,7 +186,7 @@ export default function ScriptShadowingClient(props: Props) {
         >
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <Text size="sm" c="dimmed">
+              <Text size="md" c="dimmed">
                 Review and edit before starting practice.
               </Text>
               <Select
@@ -197,7 +197,7 @@ export default function ScriptShadowingClient(props: Props) {
                   { label: "Balanced", value: "balanced" },
                   { label: "Long", value: "long" },
                 ]}
-                size="xs"
+                size="md"
                 w={120}
               />
             </div>
@@ -205,7 +205,7 @@ export default function ScriptShadowingClient(props: Props) {
             <div className="max-h-[50vh] overflow-y-auto pr-1 space-y-2">
               {previewDrafts.map((draft, idx) => (
                 <div key={idx} className="space-y-1">
-                  <Text size="xs" c="dimmed">
+                  <Text size="md" c="dimmed">
                     Sentence {idx + 1}
                   </Text>
                   <Textarea
@@ -224,7 +224,7 @@ export default function ScriptShadowingClient(props: Props) {
             </div>
 
             {previewError && (
-              <Text size="xs" c="red">
+              <Text size="md" c="red">
                 {previewError}
               </Text>
             )}
@@ -250,11 +250,11 @@ export default function ScriptShadowingClient(props: Props) {
                 onJump={s.setActiveSentenceIdx}
               />
               <div className="flex items-center justify-between">
-                <p className="text-[10px] text-gray-400">
+                <p className="text-base text-gray-400">
                   A/D · ←/→ to navigate · R to record · S/Space to listen
                 </p>
                 {s.estimatedRemainingMs > 0 && (
-                  <p className="text-[10px] text-gray-400 shrink-0">
+                  <p className="text-base text-gray-400 shrink-0">
                     ~{Math.ceil(s.estimatedRemainingMs / 60000)} min remaining
                   </p>
                 )}
@@ -279,7 +279,7 @@ export default function ScriptShadowingClient(props: Props) {
               />
             ) : (
               <div className="rounded-2xl border border-gray-100 bg-gray-50 p-8 text-center">
-                <p className="text-sm text-gray-400">
+                <p className="text-base text-gray-400">
                   Select a sentence to start practicing.
                 </p>
               </div>
@@ -288,7 +288,7 @@ export default function ScriptShadowingClient(props: Props) {
         )}
 
         {s.sonioxError && (
-          <p className="text-[11px] text-red-500">{s.sonioxError}</p>
+          <p className="text-base text-red-500">{s.sonioxError}</p>
         )}
       </div>
     </>

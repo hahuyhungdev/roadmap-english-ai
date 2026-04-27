@@ -56,10 +56,10 @@ export default function AppSidebar() {
       <div className="px-2 mb-4 flex items-start justify-between gap-2">
         {!collapsed && (
           <div>
-            <Text fw={700} size="sm" c={isDark ? "teal.3" : "indigo"}>
+            <Text fw={700} size="md" c={isDark ? "teal.3" : "indigo"}>
               English System
             </Text>
-            <Text size="xs" c={isDark ? "gray.5" : "dimmed"}>
+            <Text size="md" c={isDark ? "gray.5" : "dimmed"}>
               Learning Dashboard
             </Text>
           </div>
@@ -73,7 +73,7 @@ export default function AppSidebar() {
               variant="subtle"
               color={isDark ? "teal" : "gray"}
               onClick={toggleTheme}
-              size="sm"
+              size="md"
               className="mt-0.5"
               aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
             >
@@ -88,7 +88,7 @@ export default function AppSidebar() {
               variant="subtle"
               color="gray"
               onClick={toggleCollapsed}
-              size="sm"
+              size="md"
               className="mt-0.5"
               aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}
             >

@@ -250,11 +250,11 @@ export default function NotePanel() {
                     minWidth: 0,
                   }}
                 >
-                  <Text size="sm" fw={600}>
+                  <Text size="md" fw={600}>
                     My Notes
                   </Text>
                   <Text
-                    size="xs"
+                    size="md"
                     c={
                       noteQuery.isError || saveMutation.isError
                         ? "red"
@@ -270,7 +270,7 @@ export default function NotePanel() {
               </Group>
               <Group gap="xs" wrap="nowrap">
                 <Button
-                  size="xs"
+                  size="md"
                   variant="light"
                   leftSection={<Save size={14} />}
                   onClick={() => void handleManualSave()}
@@ -279,7 +279,7 @@ export default function NotePanel() {
                 >
                   Save
                 </Button>
-                <CloseButton size="sm" onClick={() => setOpened(false)} />
+                <CloseButton size="md" onClick={() => setOpened(false)} />
               </Group>
             </Group>
 
@@ -311,10 +311,10 @@ export default function NotePanel() {
                   }}
                 >
                   <Group justify="space-between" mb={6}>
-                    <Text size="xs" fw={700} c="dimmed">
+                    <Text size="md" fw={700} c="dimmed">
                       {SECTION_LABELS[sectionKey]}
                     </Text>
-                    <Text size="xs" c="dimmed">
+                    <Text size="md" c="dimmed">
                       {getSectionLineCount(sectionNotes[sectionKey])} line
                       {getSectionLineCount(sectionNotes[sectionKey]) === 1
                         ? ""

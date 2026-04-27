@@ -154,14 +154,14 @@ export default function PhaseNotesReview({ phase }: { phase: PhraseGroup }) {
             <h2 className="text-base font-semibold text-gray-900 theme-dark:text-slate-50">
               Phase Notes Review
             </h2>
-            <p className="text-xs text-gray-500 mt-0.5 theme-dark:text-slate-400">
+            <p className="text-base text-gray-500 mt-0.5 theme-dark:text-slate-400">
               {summaryText}
             </p>
           </div>
         </div>
 
         <Button
-          size="xs"
+          size="md"
           variant="light"
           color="yellow"
           rightSection={
@@ -180,7 +180,7 @@ export default function PhaseNotesReview({ phase }: { phase: PhraseGroup }) {
       <Collapse expanded={opened}>
         <div className="pt-4 mt-4 border-t border-gray-100 theme-dark:border-slate-700">
           {noteSummaries.length === 0 ? (
-            <p className="text-sm text-gray-500 theme-dark:text-slate-400">
+            <p className="text-base text-gray-500 theme-dark:text-slate-400">
               No saved notes in this phase yet.
             </p>
           ) : (
@@ -188,10 +188,10 @@ export default function PhaseNotesReview({ phase }: { phase: PhraseGroup }) {
               {noteSummaries.map((summary) => (
                 <section key={summary.sessionSlug}>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs font-semibold text-gray-400 w-7 theme-dark:text-slate-500">
+                    <span className="text-base font-semibold text-gray-400 w-7 theme-dark:text-slate-500">
                       {String(summary.sessionNumber).padStart(2, "0")}
                     </span>
-                    <h3 className="text-sm font-semibold text-gray-800 theme-dark:text-slate-100">
+                    <h3 className="text-base font-semibold text-gray-800 theme-dark:text-slate-100">
                       {summary.title}
                     </h3>
                   </div>
@@ -199,7 +199,7 @@ export default function PhaseNotesReview({ phase }: { phase: PhraseGroup }) {
                     {summary.lines.map((line) => (
                       <li
                         key={`${summary.sessionSlug}-${normalizeNoteLine(line)}`}
-                        className="text-sm text-gray-600 leading-relaxed list-disc theme-dark:text-slate-300"
+                        className="text-base text-gray-600 leading-relaxed list-disc theme-dark:text-slate-300"
                       >
                         {line}
                       </li>

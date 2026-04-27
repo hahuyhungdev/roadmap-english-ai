@@ -2,6 +2,10 @@
 @plugin "@tailwindcss/typography";
 
 @layer base {
+  html {
+    font-size: 17px;
+  }
+
   body {
     font-family:
       "Inter",
@@ -36,4 +40,3 @@
     -webkit-box-orient: vertical;
   }
 }
-

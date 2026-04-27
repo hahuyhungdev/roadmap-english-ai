@@ -70,7 +70,7 @@ export function VideoPanel({
         ) : (
           <div className="aspect-video w-full flex flex-col items-center justify-center bg-gray-50 text-gray-500 gap-3">
             <PlayCircle size={48} strokeWidth={1} />
-            <p className="text-sm">Enter a YouTube URL above to start</p>
+            <p className="text-base">Enter a YouTube URL above to start</p>
           </div>
         )}
       </div>
@@ -79,10 +79,10 @@ export function VideoPanel({
         <div className="border border-gray-200 rounded-2xl p-4 shadow-sm space-y-4">
           <div>
             <div className="flex items-center justify-between mb-2">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
+              <p className="text-base font-semibold text-gray-500 uppercase tracking-wide">
                 A-B Loop
               </p>
-              <span className="text-[10px] text-gray-500">[ ] L keys</span>
+              <span className="text-base text-gray-500">[ ] L keys</span>
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <button
@@ -91,7 +91,7 @@ export function VideoPanel({
                   setLoopA(Math.floor(t * 10) / 10);
                   setLoopEnabled(false);
                 }}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium border rounded-lg transition-all border-gray-200 hover:border-indigo-400 hover:text-indigo-600 text-gray-600"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-base font-medium border rounded-lg transition-all border-gray-200 hover:border-indigo-400 hover:text-indigo-600 text-gray-600"
               >
                 <BookmarkPlus size={13} />
                 {loopA !== null ? (
@@ -108,7 +108,7 @@ export function VideoPanel({
                   const t = playerRef.current?.getCurrentTime() ?? 0;
                   setLoopB(Math.floor(t * 10) / 10);
                 }}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium border rounded-lg transition-all border-gray-200 hover:border-indigo-400 hover:text-indigo-600 text-gray-600"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-base font-medium border rounded-lg transition-all border-gray-200 hover:border-indigo-400 hover:text-indigo-600 text-gray-600"
               >
                 <BookmarkPlus size={13} />
                 {loopB !== null ? (
@@ -129,7 +129,7 @@ export function VideoPanel({
                 }}
                 disabled={loopA === null || loopB === null || loopA >= loopB}
                 className={clsx(
-                  "flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold border rounded-lg transition-all",
+                  "flex items-center gap-1.5 px-3 py-1.5 text-base font-semibold border rounded-lg transition-all",
                   loopEnabled
                     ? "bg-indigo-600 text-white border-indigo-600 shadow-sm"
                     : "border-gray-200 text-gray-600 hover:border-indigo-400 hover:text-indigo-600 disabled:opacity-40 disabled:cursor-not-allowed",
@@ -145,7 +145,7 @@ export function VideoPanel({
                     setLoopA(null);
                     setLoopB(null);
                   }}
-                  className="flex items-center gap-1 px-2.5 py-1.5 text-xs text-gray-500 hover:text-red-500 border border-gray-200 hover:border-red-200 rounded-lg transition-all"
+                  className="flex items-center gap-1 px-2.5 py-1.5 text-base text-gray-500 hover:text-red-500 border border-gray-200 hover:border-red-200 rounded-lg transition-all"
                 >
                   <BookmarkX size={13} /> Clear
                 </button>

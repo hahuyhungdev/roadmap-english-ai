@@ -177,7 +177,7 @@ export default function YouTubeShadowingHub() {
           <h1 className="text-2xl font-bold text-gray-900">
             YouTube Shadowing
           </h1>
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-base text-gray-500 mt-1">
             Create from a YouTube link and practice with auto-built transcript.
           </p>
         </div>
@@ -193,7 +193,7 @@ export default function YouTubeShadowingHub() {
       {usage && (
         <div
           className={clsx(
-            "rounded-xl border px-3 py-2 text-xs",
+            "rounded-xl border px-3 py-2 text-base",
             usage.shouldDisable
               ? "border-red-200 bg-red-50 text-red-600"
               : "border-amber-200 bg-amber-50 text-amber-700",
@@ -209,12 +209,12 @@ export default function YouTubeShadowingHub() {
 
       {loading ? (
         <div className="flex items-center justify-center py-16 text-gray-400">
-          <Loader size="sm" />
+          <Loader size="md" />
         </div>
       ) : sessions.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-gray-300 bg-white/80 p-10 text-center">
           <p className="text-gray-600 font-medium">No YouTube sessions yet</p>
-          <p className="text-sm text-gray-400 mt-1">
+          <p className="text-base text-gray-400 mt-1">
             Create one to start shadowing.
           </p>
         </div>
@@ -239,14 +239,14 @@ export default function YouTubeShadowingHub() {
                   <Video size={18} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-gray-900 truncate">
+                  <p className="text-base font-semibold text-gray-900 truncate">
                     {s.title}
                   </p>
                   <div className="flex items-center gap-3 mt-1">
-                    <span className="text-[11px] text-gray-500 inline-flex items-center gap-1">
+                    <span className="text-base text-gray-500 inline-flex items-center gap-1">
                       <Clock3 size={10} /> {fmtDate(s.updatedAt)}
                     </span>
-                    <span className="text-[11px] text-gray-500">
+                    <span className="text-base text-gray-500">
                       {Array.isArray(s.sentences) ? s.sentences.length : 0}{" "}
                       sentences
                     </span>
@@ -266,7 +266,7 @@ export default function YouTubeShadowingHub() {
                   }}
                 >
                   {deleting === s.id ? (
-                    <Loader size="xs" />
+                    <Loader size="md" />
                   ) : (
                     <Trash2 size={14} />
                   )}
@@ -303,12 +303,12 @@ export default function YouTubeShadowingHub() {
             <div className="rounded-lg border border-gray-200 bg-gray-50 px-3 py-2">
               {createStep && (
                 <>
-                  <p className="text-xs text-gray-600 mb-1">{createStep}...</p>
-                  <Progress value={progress} animated={creating} size="sm" />
+                  <p className="text-base text-gray-600 mb-1">{createStep}...</p>
+                  <Progress value={progress} animated={creating} size="md" />
                 </>
               )}
               {createError && (
-                <p className="text-xs text-red-600 mt-2">{createError}</p>
+                <p className="text-base text-red-600 mt-2">{createError}</p>
               )}
             </div>
           )}

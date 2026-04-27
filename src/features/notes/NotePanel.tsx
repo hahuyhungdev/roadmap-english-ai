@@ -114,11 +114,11 @@ export default function NotePanel() {
                     minWidth: 0,
                   }}
                 >
-                  <Text size="sm" fw={600}>
+                  <Text size="md" fw={600}>
                     My Notes
                   </Text>
                   <Text
-                    size="xs"
+                    size="md"
                     c={isError ? "red" : "dimmed"}
                     style={{ overflow: "hidden", textOverflow: "ellipsis" }}
                   >
@@ -129,7 +129,7 @@ export default function NotePanel() {
 
               <Group gap="xs" wrap="nowrap">
                 <Button
-                  size="xs"
+                  size="md"
                   variant="light"
                   leftSection={<Save size={14} />}
                   onClick={() => void handleSave()}
@@ -138,7 +138,7 @@ export default function NotePanel() {
                 >
                   Save
                 </Button>
-                <CloseButton size="sm" onClick={close} />
+                <CloseButton size="md" onClick={close} />
               </Group>
             </Group>
 

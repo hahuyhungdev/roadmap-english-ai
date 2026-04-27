@@ -84,7 +84,7 @@ export default function ScriptShadowingHub() {
       <div className="flex items-start justify-between gap-3">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Script Shadowing</h1>
-          <p className="text-sm text-gray-500 mt-1">
+          <p className="text-base text-gray-500 mt-1">
             Practice speaking from your own text, scripts, and lessons.
           </p>
         </div>
@@ -98,12 +98,12 @@ export default function ScriptShadowingHub() {
 
       {loading ? (
         <div className="flex items-center justify-center py-16 text-gray-400">
-          <Loader size="sm" />
+          <Loader size="md" />
         </div>
       ) : sessions.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-gray-300 bg-white/80 p-10 text-center">
           <p className="text-gray-600 font-medium">No Script sessions yet</p>
-          <p className="text-sm text-gray-400 mt-1">
+          <p className="text-base text-gray-400 mt-1">
             Create one to start practicing.
           </p>
         </div>
@@ -128,14 +128,14 @@ export default function ScriptShadowingHub() {
                   <FileText size={18} />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold text-gray-900 truncate">
+                  <p className="text-base font-semibold text-gray-900 truncate">
                     {s.title}
                   </p>
                   <div className="flex items-center gap-3 mt-1">
-                    <span className="text-[11px] text-gray-500 inline-flex items-center gap-1">
+                    <span className="text-base text-gray-500 inline-flex items-center gap-1">
                       <Clock3 size={10} /> {fmtDate(s.updatedAt)}
                     </span>
-                    <span className="text-[11px] text-gray-500">
+                    <span className="text-base text-gray-500">
                       {Array.isArray(s.sentences) ? s.sentences.length : 0}{" "}
                       sentences
                     </span>
@@ -155,7 +155,7 @@ export default function ScriptShadowingHub() {
                   }}
                 >
                   {deleting === s.id ? (
-                    <Loader size="xs" />
+                    <Loader size="md" />
                   ) : (
                     <Trash2 size={14} />
                   )}

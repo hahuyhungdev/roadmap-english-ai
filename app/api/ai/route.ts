@@ -27,10 +27,19 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const lessonContext = [
-    body.lessonTitle ? `Lesson title: ${body.lessonTitle}` : "",
-    body.lessonContent
-      ? `Lesson content:\n${body.lessonContent.slice(0, 6000)}`
+  const contextType = body.contextType === "phase" ? "phase" : "lesson";
+  const contextLabel = contextType === "phase" ? "Phase" : "Lesson";
+  const rawContextTitle = body.contextTitle ?? body.lessonTitle;
+  const rawContextContent = body.contextContent ?? body.lessonContent;
+  const contextTitle =
+    typeof rawContextTitle === "string" ? rawContextTitle.trim() : "";
+  const contextContent =
+    typeof rawContextContent === "string" ? rawContextContent.trim() : "";
+
+  const learningContext = [
+    contextTitle ? `${contextLabel} title: ${contextTitle}` : "",
+    contextContent
+      ? `${contextLabel} context:\n${contextContent.slice(0, 6000)}`
       : "",
   ]
     .filter(Boolean)
@@ -39,15 +48,20 @@ export async function POST(req: NextRequest) {
   const mode = body.mode || "practice";
 
   let systemPrompt =
-    "You are an English lesson assistant. Keep answers concise, practical, and learner-friendly. " +
+    `You are an English ${contextLabel.toLowerCase()} assistant. Keep answers concise, practical, and learner-friendly. ` +
     "When useful, provide: 1) simple explanation, 2) speaking examples, 3) short practice task.";
 
   if (mode === "idea") {
     systemPrompt =
-      "You are an idea generator for answering questions about lessons. Provide structured frameworks, patterns, and example answer outlines that help the learner produce complete responses. Focus on creative approaches, templates, and sample phrasing.";
+      `You are an idea generator for answering questions about this ${contextType}. Provide structured frameworks, patterns, and example answer outlines that help the learner produce complete responses. Focus on creative approaches, templates, and sample phrasing.`;
   } else if (mode === "concise") {
     systemPrompt =
-      "You are an English lesson assistant that gives short, concise, and focused answers. Keep responses under 2-3 sentences when possible and avoid extra examples unless requested.";
+      `You are an English ${contextLabel.toLowerCase()} assistant that gives short, concise, and focused answers. Keep responses under 2-3 sentences when possible and avoid extra examples unless requested.`;
+  }
+
+  if (contextType === "phase") {
+    systemPrompt +=
+      " Use the phase overview to connect lessons, suggest study order, compare session topics, and create phase-level speaking practice.";
   }
 
   try {
@@ -63,8 +77,8 @@ export async function POST(req: NextRequest) {
         stream: shouldStream,
         messages: [
           { role: "system", content: systemPrompt },
-          ...(lessonContext
-            ? [{ role: "system", content: lessonContext }]
+          ...(learningContext
+            ? [{ role: "system", content: learningContext }]
             : []),
           ...userMessages,
         ],

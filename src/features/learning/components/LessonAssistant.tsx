@@ -14,8 +14,11 @@ import remarkGfm from "remark-gfm";
 import type { AiChatMessage } from "@/types/ai";
 
 interface LessonAssistantProps {
-  lessonTitle: string;
-  lessonContent: string;
+  lessonTitle?: string;
+  lessonContent?: string;
+  contextTitle?: string;
+  contextContent?: string;
+  contextType?: "lesson" | "phase";
 }
 
 const MODE_LABELS: Record<string, string> = {
@@ -25,7 +28,7 @@ const MODE_LABELS: Record<string, string> = {
 };
 
 const PLACEHOLDER: Record<string, string> = {
-  practice: "Ask about this lesson…",
+  practice: "Ask a practice question…",
   idea: "Brainstorm ideas…",
   concise: "Quick question…",
 };
@@ -33,7 +36,15 @@ const PLACEHOLDER: Record<string, string> = {
 export default function LessonAssistant({
   lessonTitle,
   lessonContent,
+  contextTitle,
+  contextContent,
+  contextType = "lesson",
 }: LessonAssistantProps) {
+  const title = contextTitle ?? lessonTitle ?? "";
+  const content = contextContent ?? lessonContent ?? "";
+  const contextLabel = contextType === "phase" ? "phase" : "lesson";
+  const assistantTitle =
+    contextType === "phase" ? "AI Phase Assistant" : "AI Lesson Assistant";
   const [messages, setMessages] = useState<AiChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -94,8 +105,9 @@ export default function LessonAssistant({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          lessonTitle,
-          lessonContent,
+          contextType,
+          contextTitle: title,
+          contextContent: content,
           mode,
           stream: true,
           messages: nextMessages.map((m) => ({
@@ -191,7 +203,7 @@ export default function LessonAssistant({
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 w-14 h-14 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full flex items-center justify-center z-50 transition-all active:scale-95 cursor-pointer"
         aria-label="Open AI assistant"
-        title="AI Lesson Assistant"
+        title={assistantTitle}
       >
         <Sparkles size={20} />
       </button>
@@ -210,13 +222,11 @@ export default function LessonAssistant({
             <Sparkles size={13} className="text-indigo-500" />
           </div>
           <div>
-            <h2 className="text-sm font-semibold text-gray-900 leading-tight">
+            <h2 className="text-base font-semibold text-gray-900 leading-tight">
               AI Assistant
             </h2>
-            <p className="text-[10px] text-gray-500 leading-tight">
-              {lessonTitle.length > 40
-                ? lessonTitle.slice(0, 40) + "…"
-                : lessonTitle}
+            <p className="text-base text-gray-500 leading-tight">
+              {title.length > 40 ? title.slice(0, 40) + "…" : title}
             </p>
           </div>
         </div>
@@ -239,7 +249,7 @@ export default function LessonAssistant({
               onClick={() => {
                 setMode(m);
               }}
-              className={`flex-1 text-xs px-2 py-1.5 rounded-lg font-medium transition-all ${
+              className={`flex-1 text-base px-2 py-1.5 rounded-lg font-medium transition-all ${
                 mode === m
                   ? "bg-indigo-600 text-white shadow-sm"
                   : "text-gray-500  border border-gray-200 hover:border-indigo-200 hover:text-indigo-600"
@@ -258,9 +268,9 @@ export default function LessonAssistant({
             <div className="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center">
               <Sparkles size={16} className="text-indigo-500" />
             </div>
-            <p className="text-xs text-gray-500 leading-relaxed max-w-56">
-              Ask anything about this lesson — summary, examples, corrections,
-              or a quick quiz.
+            <p className="text-base text-gray-500 leading-relaxed max-w-56">
+              Ask anything about this {contextLabel} — summary, examples,
+              corrections, or a quick quiz.
             </p>
             <div className="flex flex-wrap gap-1 justify-center mt-1">
               {["Explain this", "Give examples", "Quiz me"].map((hint) => (
@@ -270,7 +280,7 @@ export default function LessonAssistant({
                     setInput(hint);
                     textareaRef.current?.focus();
                   }}
-                  className="text-[10px] px-2 py-1 rounded-full  border border-gray-200 text-gray-500 hover:border-indigo-200 hover:text-indigo-600 transition-colors"
+                  className="text-base px-2 py-1 rounded-full  border border-gray-200 text-gray-500 hover:border-indigo-200 hover:text-indigo-600 transition-colors"
                 >
                   {hint}
                 </button>
@@ -285,7 +295,7 @@ export default function LessonAssistant({
             className={`flex flex-col ${m.role === "user" ? "items-end" : "items-start"}`}
           >
             <div
-              className={`max-w-[85%] text-sm px-3 py-2.5 leading-relaxed ${
+              className={`max-w-[85%] text-base px-3 py-2.5 leading-relaxed ${
                 m.role === "user"
                   ? "bg-indigo-600 text-white rounded-2xl rounded-br-md"
                   : "ai-assistant-bubble bg-gray-100 text-gray-800 rounded-2xl rounded-bl-md border border-gray-100"
@@ -320,7 +330,7 @@ export default function LessonAssistant({
                         </strong>
                       ),
                       code: ({ children }) => (
-                        <code className="rounded bg-indigo-50 px-1 py-0.5 text-xs text-indigo-600">
+                        <code className="rounded bg-indigo-50 px-1 py-0.5 text-base text-indigo-600">
                           {children}
                         </code>
                       ),
@@ -337,14 +347,14 @@ export default function LessonAssistant({
         ))}
 
         {loading && !isStreamingText && (
-          <div className="inline-flex items-center gap-2 text-xs text-gray-500 bg-gray-100 rounded-2xl px-3 py-2.5 rounded-bl-md">
+          <div className="inline-flex items-center gap-2 text-base text-gray-500 bg-gray-100 rounded-2xl px-3 py-2.5 rounded-bl-md">
             <Loader2 size={12} className="animate-spin" />
             <span>Thinking…</span>
           </div>
         )}
 
         {error && (
-          <div className="text-xs text-red-500 bg-red-50 rounded-xl px-3 py-2 border border-red-100">
+          <div className="text-base text-red-500 bg-red-50 rounded-xl px-3 py-2 border border-red-100">
             {error}
           </div>
         )}
@@ -375,7 +385,7 @@ export default function LessonAssistant({
             className="flex-1"
             classNames={{
               input:
-                "border border-gray-200 rounded-xl px-3 py-2.5 text-sm text-gray-800 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 resize-none transition-all placeholder:text-gray-500",
+                "border border-gray-200 rounded-xl px-3 py-2.5 text-base text-gray-800 focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 resize-none transition-all placeholder:text-gray-500",
             }}
             style={{ maxHeight: "7rem" }}
           />
@@ -388,7 +398,7 @@ export default function LessonAssistant({
             <Send size={13} />
           </button>
         </div>
-        <p className="text-[10px] text-gray-500 mt-1.5 text-center">
+        <p className="text-base text-gray-500 mt-1.5 text-center">
           Enter to send · Shift+Enter for newline
         </p>
       </form>

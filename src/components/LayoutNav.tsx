@@ -44,7 +44,7 @@ export default function LayoutNav() {
           <Link
             href="/"
             className={clsx(
-              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors",
+              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-base font-medium transition-colors",
               isHome
                 ? isDark
                   ? "bg-emerald-950 text-emerald-200"
@@ -60,7 +60,7 @@ export default function LayoutNav() {
           <Link
             href="/shadowing/youtube"
             className={clsx(
-              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors",
+              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-base font-medium transition-colors",
               isYouTube
                 ? isDark
                   ? "bg-red-950 text-red-200"
@@ -76,7 +76,7 @@ export default function LayoutNav() {
           <Link
             href="/shadowing/script"
             className={clsx(
-              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors",
+              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-base font-medium transition-colors",
               isScript
                 ? isDark
                   ? "bg-emerald-950 text-emerald-200"

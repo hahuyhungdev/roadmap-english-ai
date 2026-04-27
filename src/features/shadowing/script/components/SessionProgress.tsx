@@ -31,7 +31,7 @@ export function SessionProgress({ total, current, onJump }: Props) {
     <div className="space-y-2">
       <Group justify="space-between" align="center" className="px-0.5">
         <Group gap="xs" align="center">
-          <span className="text-xs text-gray-500 font-medium">
+          <span className="text-base text-gray-500 font-medium">
             Sentence{" "}
             <span className="text-indigo-600 font-bold">{current + 1}</span>{" "}of{" "}
             <span className="font-semibold text-gray-700">{total}</span>
@@ -46,13 +46,13 @@ export function SessionProgress({ total, current, onJump }: Props) {
               onChange={(e) => setJumpValue(e.currentTarget.value)}
               onKeyDown={handleKey}
               placeholder="#"
-              size="xs"
+              size="md"
               w={52}
               styles={{ input: { textAlign: "center" } }}
             />
             <Button
               onClick={handleJump}
-              size="compact-xs"
+              size="compact-md"
               variant="light"
               color="indigo"
             >
@@ -63,7 +63,7 @@ export function SessionProgress({ total, current, onJump }: Props) {
       </Group>
       <Progress
         value={progressPct}
-        size="sm"
+        size="md"
         radius="xl"
         color={progressPct === 100 ? "green" : "violet"}
       />

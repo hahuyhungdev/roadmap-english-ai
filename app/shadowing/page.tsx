@@ -8,7 +8,7 @@ export default function ShadowingPage() {
   return (
     <div className="max-w-5xl mx-auto py-8">
       <h1 className="text-2xl font-bold text-gray-900">Shadowing Features</h1>
-      <p className="text-sm text-gray-500 mt-1">
+      <p className="text-base text-gray-500 mt-1">
         Choose a dedicated workspace. YouTube and Script are fully separated.
       </p>
 
@@ -27,7 +27,7 @@ export default function ShadowingPage() {
               </ThemeIcon>
               <Text fw={700}>YouTube Shadowing</Text>
             </Group>
-            <Text size="sm" c="dimmed">
+            <Text size="md" c="dimmed">
               Create from YouTube URL, auto-fetch transcript, and practice
               sentence by sentence.
             </Text>
@@ -48,7 +48,7 @@ export default function ShadowingPage() {
               </ThemeIcon>
               <Text fw={700}>Script Shadowing</Text>
             </Group>
-            <Text size="sm" c="dimmed">
+            <Text size="md" c="dimmed">
               Paste your own text and train speaking with full script controls.
             </Text>
           </Stack>

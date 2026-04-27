@@ -23,7 +23,7 @@ function MarkdownText({ content }: { content: string }) {
   const normalizedContent = normalizeGuideMarkdown(content);
 
   return (
-    <div className="guide-markdown text-[15.5px] leading-7 text-gray-700 md:text-base">
+    <div className="guide-markdown text-base leading-7 text-gray-700 md:text-base">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
@@ -68,7 +68,7 @@ export default function AnswerGuideInline({
           size={12}
           className="shrink-0 text-gray-400 transition-transform duration-200 group-open/answer-section:hidden"
         />
-        <span className="hidden text-xs font-medium text-indigo-600 group-open/answer-section:inline">
+        <span className="hidden text-base font-medium text-indigo-600 group-open/answer-section:inline">
           Collapse
         </span>
       </summary>
@@ -79,7 +79,7 @@ export default function AnswerGuideInline({
             key={`${questionIndex}-${guide.question}`}
             className="group/answer-question overflow-hidden rounded-md border border-gray-200 bg-white/80"
           >
-            <summary className="flex cursor-pointer items-center justify-between gap-2 px-3 py-2.5 text-[15px] font-semibold leading-6 text-gray-900 transition-colors hover:bg-gray-50">
+            <summary className="flex cursor-pointer items-center justify-between gap-2 px-3 py-2.5 text-base font-semibold leading-6 text-gray-900 transition-colors hover:bg-gray-50">
               <span className="flex items-center gap-2">
                 <ChevronRight
                   size={13}
@@ -89,7 +89,7 @@ export default function AnswerGuideInline({
                   {questionIndex + 1}. {guide.question}
                 </span>
               </span>
-              <span className="text-[11px] font-medium text-indigo-600">
+              <span className="text-base font-medium text-indigo-600">
                 {""}
               </span>
             </summary>
@@ -99,7 +99,7 @@ export default function AnswerGuideInline({
                 <MarkdownText content={guide.bodyMarkdown} />
               ) : (
                 <>
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-indigo-600">
+                  <p className="text-base font-semibold uppercase tracking-wide text-indigo-600">
                     Sample answers
                   </p>
                   {(guide.exampleAnswers ?? []).map((answer, answerIndex) => (
@@ -107,7 +107,7 @@ export default function AnswerGuideInline({
                       key={`${answerIndex}-${answer.slice(0, 20)}`}
                       className="rounded-md border border-gray-200 bg-white px-2.5 py-2"
                     >
-                      <p className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-gray-500">
+                      <p className="mb-1 text-base font-semibold uppercase tracking-wide text-gray-500">
                         Version {answerIndex + 1}
                       </p>
                       <MarkdownText content={answer} />

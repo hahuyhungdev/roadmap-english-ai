@@ -38,7 +38,7 @@ export const StatusBar: FC<{
   return (
     <div className="px-4 py-3 border-t border-gray-100 shrink-0">
       {/* Status line — fixed height to avoid layout shift */}
-      <div className="h-5 flex items-center justify-center gap-2 text-xs text-gray-500 mb-2">
+      <div className="h-5 flex items-center justify-center gap-2 text-base text-gray-500 mb-2">
         {busy ? (
           loading ? (
             <>
@@ -77,7 +77,7 @@ export const StatusBar: FC<{
           <>
             <button
               onClick={onStop}
-              className="py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-xl transition-colors flex items-center justify-center gap-1.5"
+              className="py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-base font-medium rounded-xl transition-colors flex items-center justify-center gap-1.5"
             >
               <Square size={12} />
               Stop
@@ -85,13 +85,13 @@ export const StatusBar: FC<{
             {canSend ? (
               <button
                 onClick={onSend}
-                className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-xl transition-colors flex items-center justify-center gap-2 active:scale-[0.98]"
+                className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-base font-medium rounded-xl transition-colors flex items-center justify-center gap-2 active:scale-[0.98]"
               >
                 <Send size={14} />
                 Send
               </button>
             ) : (
-              <div className="flex-1 py-2.5 text-gray-400 text-sm text-center rounded-xl border border-dashed border-gray-200 flex items-center justify-center">
+              <div className="flex-1 py-2.5 text-gray-400 text-base text-center rounded-xl border border-dashed border-gray-200 flex items-center justify-center">
                 Speak to send…
               </div>
             )}
@@ -100,13 +100,13 @@ export const StatusBar: FC<{
           <>
             <button
               onClick={onStart}
-              className="py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-medium rounded-xl transition-colors flex items-center justify-center gap-1.5"
+              className="py-2.5 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-base font-medium rounded-xl transition-colors flex items-center justify-center gap-1.5"
             >
               <Mic size={14} />
             </button>
             <button
               onClick={onSend}
-              className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-xl transition-colors flex items-center justify-center gap-2 active:scale-[0.98]"
+              className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-base font-medium rounded-xl transition-colors flex items-center justify-center gap-2 active:scale-[0.98]"
             >
               <Send size={14} />
               Send
@@ -115,7 +115,7 @@ export const StatusBar: FC<{
         ) : (
           <button
             onClick={onStart}
-            className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-xl transition-all flex items-center justify-center gap-2 active:scale-[0.98]"
+            className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-base font-medium rounded-xl transition-all flex items-center justify-center gap-2 active:scale-[0.98]"
           >
             <Mic size={16} />
             Start Speaking
@@ -157,7 +157,7 @@ export const PracticeCoachHeader: FC<{
         </div>
         <div className="min-w-0">
           <div className="flex items-center gap-1.5">
-            <h3 className="text-sm font-semibold text-gray-900 leading-tight">
+            <h3 className="text-base font-semibold text-gray-900 leading-tight">
               Practice Coach
             </h3>
             {isPlaying && (
@@ -168,7 +168,7 @@ export const PracticeCoachHeader: FC<{
             )}
           </div>
           {lessonTitle && (
-            <p className="text-[11px] text-gray-500 truncate leading-tight mt-0.5">
+            <p className="text-base text-gray-500 truncate leading-tight mt-0.5">
               {lessonTitle}
             </p>
           )}
@@ -239,23 +239,23 @@ export const ConversationArea: FC<{
             <Mic size={20} className="text-indigo-400" />
           </div>
           <div>
-            <p className="text-sm font-medium text-gray-700">
+            <p className="text-base font-medium text-gray-700">
               {isRecording ? "Listening…" : "Ready to practice"}
             </p>
-            <p className="text-xs text-gray-400 mt-1 max-w-[220px] leading-relaxed">
+            <p className="text-base text-gray-400 mt-1 max-w-[220px] leading-relaxed">
               {isRecording
                 ? "Speak naturally in English — your coach will give instant feedback"
                 : 'Tap "Start Speaking" to begin your practice session'}
             </p>
           </div>
           {lessonTitle && (
-            <span className="text-[11px] px-3 py-1 bg-indigo-50 text-indigo-500 rounded-full">
+            <span className="text-base px-3 py-1 bg-indigo-50 text-indigo-500 rounded-full">
               {lessonTitle}
             </span>
           )}
           {!isRecording && (
             <div className="mt-2">
-              <p className="text-[10px] text-gray-400 mb-1.5">
+              <p className="text-base text-gray-400 mb-1.5">
                 Try talking about:
               </p>
               <div className="flex flex-wrap gap-1.5 justify-center">
@@ -266,7 +266,7 @@ export const ConversationArea: FC<{
                 ].map((hint) => (
                   <span
                     key={hint}
-                    className="text-[10px] px-2.5 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100"
+                    className="text-base px-2.5 py-1 bg-gray-50 text-gray-500 rounded-full border border-gray-100"
                   >
                     {hint}
                   </span>
@@ -285,30 +285,30 @@ export const ConversationArea: FC<{
         >
           {turn.role === "user" ? (
             <div className="max-w-[82%] bg-indigo-600 text-white rounded-2xl rounded-br-md px-3.5 py-2.5">
-              <p className="text-[13px] leading-relaxed">{turn.text}</p>
+              <p className="text-base leading-relaxed">{turn.text}</p>
             </div>
           ) : (
             <div className="max-w-[90%] space-y-1.5">
               <div className="bg-white border border-gray-200 rounded-2xl rounded-bl-md px-3.5 py-2.5 shadow-sm">
-                <p className="text-[13px] text-gray-800 leading-relaxed whitespace-pre-wrap">
+                <p className="text-base text-gray-800 leading-relaxed whitespace-pre-wrap">
                   {turn.text || "…"}
                 </p>
               </div>
               {turn.review && (
                 <div className="bg-amber-50/80 border border-amber-200 rounded-xl px-3 py-2.5 space-y-2">
-                  <p className="text-[10px] font-bold text-amber-700 uppercase tracking-wide">
+                  <p className="text-base font-bold text-amber-700 uppercase tracking-wide">
                     Feedback
                   </p>
                   <div className="space-y-1">
-                    <p className="text-xs text-gray-400 line-through leading-relaxed">
+                    <p className="text-base text-gray-400 line-through leading-relaxed">
                       {turn.review.original_transcript}
                     </p>
-                    <p className="text-xs text-emerald-700 font-medium leading-relaxed">
+                    <p className="text-base text-emerald-700 font-medium leading-relaxed">
                       ✓ {turn.review.corrected_version}
                     </p>
                   </div>
                   {turn.review.explanation && (
-                    <p className="text-xs text-gray-600 leading-relaxed">
+                    <p className="text-base text-gray-600 leading-relaxed">
                       {turn.review.explanation}
                     </p>
                   )}
@@ -318,7 +318,7 @@ export const ConversationArea: FC<{
                         (alt: string, i: number) => (
                           <span
                             key={i}
-                            className="text-[11px] bg-white border border-amber-200 text-amber-700 px-2 py-0.5 rounded-full"
+                            className="text-base bg-white border border-amber-200 text-amber-700 px-2 py-0.5 rounded-full"
                           >
                             {alt}
                           </span>
@@ -337,7 +337,7 @@ export const ConversationArea: FC<{
       {isRecording && liveText && (
         <div className="flex justify-end">
           <div className="max-w-[82%] bg-indigo-100 text-indigo-800 rounded-2xl rounded-br-md px-3.5 py-2.5 border border-indigo-200/60">
-            <p className="text-[13px] leading-relaxed italic">
+            <p className="text-base leading-relaxed italic">
               {liveText}
               <span className="inline-block w-0.5 h-3.5 bg-indigo-400 animate-pulse ml-0.5 align-text-bottom rounded-full" />
             </p>
@@ -367,7 +367,7 @@ export const ConversationArea: FC<{
 export const ErrorBar: FC<{ error?: string }> = ({ error }) => {
   if (!error) return null;
   return (
-    <div className="px-4 py-2 text-xs text-red-600 bg-red-50 border-t border-red-100 shrink-0">
+    <div className="px-4 py-2 text-base text-red-600 bg-red-50 border-t border-red-100 shrink-0">
       {error}
     </div>
   );
@@ -401,7 +401,7 @@ export const CollapsedFAB: FC<{
       >
         <Mic size={20} />
         {turnCount > 0 && (
-          <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center shadow-sm">
+          <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-base font-bold rounded-full flex items-center justify-center shadow-sm">
             {turnCount > 9 ? "9+" : turnCount}
           </span>
         )}
