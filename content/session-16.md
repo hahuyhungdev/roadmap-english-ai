@@ -3,67 +3,67 @@ sessionNumber: 16
 title: Success Pressure & Family Expectations
 topic: Status Anxiety, Income Pressure, and Personal Trade-offs
 phase: PHASE 3 - PRACTICAL DISCUSSION
-level: B1-B2
+level: B2
 description: Discuss pressure from family and society, fear of disappointing others, and practical decisions balancing money, growth, health, and stability.
 ---
 
 # Session 16: Success Pressure & Family Expectations
 
-**Level:** B1-B2  
+**Level:** B2
 **Focus:** Handle external pressure without losing your own decision quality.
 **Scope:** Discuss family expectations, status anxiety, and practical coping choices in career and life.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **social pressure** /ˈsoʊʃəl ˈprɛʃər/ (n) - stress caused by expectations from family, friends, or society  
-  _Example 1:_ Social pressure from relatives made me question my career choices every holiday.  
-  _Example 2:_ Once I named the pressure clearly, I could respond more calmly.  
+- **social pressure** /ˈsoʊʃəl ˈprɛʃər/ (n) - stress caused by expectations from family, friends, or society
+  _Example 1:_ Social pressure from relatives made me question my career choices every holiday.
+  _Example 2:_ Once I named the pressure clearly, I could respond more calmly.
   _Example 3:_ Social pressure is real, but it should inform decisions, not make them.
 
-- **family expectation** /ˈfæməli ˌekspɛkˈteɪʃən/ (n) - what your family hopes or requires you to achieve  
-  _Example 1:_ Family expectation in my case was a stable salary and early house ownership.  
-  _Example 2:_ I explained my actual timeline honestly instead of pretending to agree.  
+- **family expectation** /ˈfæməli ˌekspɛkˈteɪʃən/ (n) - what your family hopes or requires you to achieve
+  _Example 1:_ Family expectation in my case was a stable salary and early house ownership.
+  _Example 2:_ I explained my actual timeline honestly instead of pretending to agree.
   _Example 3:_ Managing expectations early prevents bigger conflicts later.
 
-- **status pressure** /ˈsteɪtəs ˈprɛʃɚ/ (n) - stress caused by social comparison of success symbols  
-  _Example 1:_ Status pressure increased during holiday gatherings with relatives.  
-  _Example 2:_ I felt behind even when my real progress was strong.  
+- **status pressure** /ˈsteɪtəs ˈprɛʃɚ/ (n) - stress caused by social comparison of success symbols
+  _Example 1:_ Status pressure increased during holiday gatherings with relatives.
+  _Example 2:_ I felt behind even when my real progress was strong.
   _Example 3:_ Naming status pressure helped me respond calmly instead of reacting emotionally.
 
-- **sense of guilt** /sɛns əv ɡɪlt/ (n) - feeling that you have let someone down or failed a duty  
-  _Example 1:_ I felt a strong sense of guilt when I chose a lower-salary role my parents did not support.  
-  _Example 2:_ That guilt was valid, but it was not a good reason to make the wrong career move.  
+- **sense of guilt** /sɛns əv ɡɪlt/ (n) - feeling that you have let someone down or failed a duty
+  _Example 1:_ I felt a strong sense of guilt when I chose a lower-salary role my parents did not support.
+  _Example 2:_ That guilt was valid, but it was not a good reason to make the wrong career move.
   _Example 3:_ I reduced it by explaining the decision clearly and showing a realistic growth plan.
 
-- **fear of disappointing** /fɪr əv ˌdɪsəˈpɔɪntɪŋ/ (n) - anxiety about failing others expectations  
-  _Example 1:_ Fear of disappointing made me hide stress and overpromise.  
-  _Example 2:_ Later, I used honest updates with family about my real timeline.  
+- **fear of disappointing** /fɪr əv ˌdɪsəˈpɔɪntɪŋ/ (n) - anxiety about failing others expectations
+  _Example 1:_ Fear of disappointing made me hide stress and overpromise.
+  _Example 2:_ Later, I used honest updates with family about my real timeline.
   _Example 3:_ That honesty improved trust, even without full agreement.
 
-- **financial pressure** /faɪˈnænʃəl ˈprɛʃər/ (n) - stress around earning enough money to meet your own and family's needs  
-  _Example 1:_ Financial pressure made me take a high-paying role I was not ready for.  
-  _Example 2:_ I balance financial pressure by tracking my actual monthly costs, not imagined ones.  
+- **financial pressure** /faɪˈnænʃəl ˈprɛʃər/ (n) - stress around earning enough money to meet your own and family's needs
+  _Example 1:_ Financial pressure made me take a high-paying role I was not ready for.
+  _Example 2:_ I balance financial pressure by tracking my actual monthly costs, not imagined ones.
   _Example 3:_ In interviews, I discuss financial pressure honestly when asked about career motivation.
 
-- **reputation burden** /ˌrɛpjəˈteɪʃən ˈbɝdən/ (n) - stress of maintaining an image of success  
-  _Example 1:_ Reputation burden was heavy when I acted "fine" but felt exhausted.  
-  _Example 2:_ I reduced it by sharing realistic plans, not perfect images.  
+- **reputation burden** /ˌrɛpjəˈteɪʃən ˈbɝdən/ (n) - stress of maintaining an image of success
+  _Example 1:_ Reputation burden was heavy when I acted "fine" but felt exhausted.
+  _Example 2:_ I reduced it by sharing realistic plans, not perfect images.
   _Example 3:_ Less image pressure improved my decisions.
 
-- **expectation gap** /ˌɛkspɛkˈteɪʃən ɡæp/ (n) - mismatch between what others expect and what you can sustain  
-  _Example 1:_ Expectation gap became clear when family expected instant promotion.  
-  _Example 2:_ I used a six-month plan to show realistic growth steps.  
+- **expectation gap** /ˌɛkspɛkˈteɪʃən ɡæp/ (n) - mismatch between what others expect and what you can sustain
+  _Example 1:_ Expectation gap became clear when family expected instant promotion.
+  _Example 2:_ I used a six-month plan to show realistic growth steps.
   _Example 3:_ Concrete timelines reduced emotional arguments.
 
-- **priority list** /praɪˈɔrəti lɪst/ (n) - a clear ranking of what matters most when making a decision  
-  _Example 1:_ My priority list before accepting any role is: learning quality, health, income, and stability — in that order.  
-  _Example 2:_ Writing out a priority list stopped me from making emotional decisions under family pressure.  
+- **priority list** /praɪˈɔrəti lɪst/ (n) - a clear ranking of what matters most when making a decision
+  _Example 1:_ My priority list before accepting any role is: learning quality, health, income, and stability — in that order.
+  _Example 2:_ Writing out a priority list stopped me from making emotional decisions under family pressure.
   _Example 3:_ I update the list every six months as life conditions change.
 
-- **self-defined success** /sɛlf dɪˈfaɪnd səkˈsɛs/ (n) - personal definition of success based on your own values  
-  _Example 1:_ Self-defined success for me is stable health plus meaningful technical growth.  
-  _Example 2:_ It does not reject money; it places money inside a wider system.  
+- **self-defined success** /sɛlf dɪˈfaɪnd səkˈsɛs/ (n) - personal definition of success based on your own values
+  _Example 1:_ Self-defined success for me is stable health plus meaningful technical growth.
+  _Example 2:_ It does not reject money; it places money inside a wider system.
   _Example 3:_ This definition makes pressure easier to manage.
 
 **Additional useful terms:**
@@ -79,22 +79,22 @@ description: Discuss pressure from family and society, fear of disappointing oth
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for changing priorities**  
+- **Present Perfect for changing priorities**
   I have changed my priorities from external status to long-term sustainability.
 
-- **Past narrative for pressure moments**  
+- **Past narrative for pressure moments**
   I accepted one role for reputation reasons, then realized the cost to my health.
 
-- **Concession language**  
+- **Concession language**
   I respect my family goals, but I still need a path I can sustain.
 
-- **Decision language with trade-offs**  
+- **Decision language with trade-offs**
   I chose slower income growth because the learning environment was stronger.
 
-- **Conditionals for pressure risk**  
+- **Conditionals for pressure risk**
   If I chase social timelines only, I make low-quality decisions.
 
-- **Boundary language**  
+- **Boundary language**
   I can discuss goals openly, but I cannot commit to unrealistic timelines.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Discuss pressure from family and society, fear of disappointing oth
 
 **Teacher:** How do you respond when family asks about salary and status?
 
-**Learner:**  
+**Learner:**
 I answer with respect, then share my trade-off map. I explain my current goal is strong skill depth and stable health, not only fast income growth.
 
 That keeps the conversation practical instead of emotional.
@@ -173,7 +173,7 @@ That keeps the conversation practical instead of emotional.
 
 **Teacher:** Do you feel behind compared with friends life milestones?
 
-**Learner:**  
+**Learner:**
 Sometimes, yes. Social timeline pressure is real, especially online and during family events.
 
 I remind myself that a good timeline is one I can sustain, not one that looks impressive.
@@ -182,7 +182,7 @@ I remind myself that a good timeline is one I can sustain, not one that looks im
 
 **Teacher:** What does success mean to you now?
 
-**Learner:**  
+**Learner:**
 Success means stable health, meaningful work, and financial progress without constant panic.
 
 I still care about income, but I no longer use income as the only success metric.
@@ -219,12 +219,12 @@ Healthy response is not rebellion or blind obedience. It is clear decision logic
 
 1. What success pressure do you feel most from family or society?
 2. How do you explain your career choices when others expect faster status growth?
-3. What trade-offs do you consider between money, health, and learning?
+3. What trade-offs do you consider between money, health, learning, and market uncertainty?
 4. What does self-defined success look like for you now?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of family expectations in career decisions?
+5. What are the benefits and limits of family expectations in modern career decisions?
 6. When does status pressure motivate growth, and when does it cause damage?
 7. How should success expectations differ between beginners and experienced professionals?
 
@@ -232,7 +232,7 @@ Healthy response is not rebellion or blind obedience. It is clear decision logic
 
 8. You said pressure helped you. Which hidden cost did it create in your life?
 9. If your family disagrees with your timeline, how do you keep both respect and autonomy?
-10. If a high salary role harms your health, is accepting it still rational?
+10. If a high salary role harms your health or learning, is accepting it still rational?
 
 ### Reflection Questions
 

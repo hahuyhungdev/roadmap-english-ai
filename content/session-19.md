@@ -3,13 +3,13 @@ sessionNumber: 19
 title: Environmental Responsibility in Software Engineering
 topic: Sustainable Engineering Decisions, Carbon-Aware Trade-offs, and Product Impact
 phase: PHASE 3 - PRACTICAL DISCUSSION
-level: B1-B2
+level: B2
 description: Discuss how software decisions affect energy use and emissions, and how teams balance sustainability with delivery pressure.
 ---
 
 # Session 19: Environmental Responsibility in Software Engineering
 
-**Level:** B1-B2
+**Level:** B2
 **Focus:** Explain practical engineering choices that reduce environmental impact while still shipping real product value.
 
 <details open>
@@ -413,7 +413,7 @@ This topic also matters in career conversations. In interviews, if you can expla
 
 1. In your recent work, where do you think compute waste happens most?
 2. What simple sustainable default can be added to one product you use?
-3. How would you explain a green trade-off to PM or leadership?
+3. How would you explain a green trade-off to PM or leadership without sounding symbolic?
 4. Which metric can show sustainability progress without heavy new tooling?
 
 ### High-Value Discussion Questions

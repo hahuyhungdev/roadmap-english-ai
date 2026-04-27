@@ -3,67 +3,67 @@ sessionNumber: 12
 title: Mental Health, Burnout & Recovery
 topic: Early Warning Signals and Sustainable Recovery Habits
 phase: PHASE 3 - PRACTICAL DISCUSSION
-level: B1-B2
+level: B2
 description: Discuss energy collapse signals, practical recovery routines, boundary scripts, and personal habits for long-term well-being.
 ---
 
 # Session 12: Mental Health, Burnout & Recovery
 
-**Level:** B1-B2  
+**Level:** B2
 **Focus:** Notice burnout early and recover before performance and health collapse.
 **Scope:** Discuss overload signals, recovery systems, and personal habits that protect sustainable output.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **burnout cycle** /ˈbɝnaʊt ˈsaɪkəl/ (n) - repeating pattern of overload, crash, and short recovery  
-  _Example 1:_ My burnout cycle started with late nights and ended with low focus.  
-  _Example 2:_ I broke that cycle by tracking sleep and refusing late-night non-urgent requests.  
+- **burnout cycle** /ˈbɝnaʊt ˈsaɪkəl/ (n) - repeating pattern of overload, crash, and short recovery
+  _Example 1:_ My burnout cycle started with late nights and ended with low focus.
+  _Example 2:_ I broke that cycle by tracking sleep and refusing late-night non-urgent requests.
   _Example 3:_ I now treat burnout cycle as a pattern I can interrupt early.
 
-- **emotional exhaustion** /ɪˈmoʊʃənəl ɪɡˈzɔstʃən/ (n) - feeling mentally drained and detached  
-  _Example 1:_ Emotional exhaustion showed up when I could not focus even on small code reviews.  
-  _Example 2:_ A close friend noticed it when my response style became short and defensive.  
+- **emotional exhaustion** /ɪˈmoʊʃənəl ɪɡˈzɔstʃən/ (n) - feeling mentally drained and detached
+  _Example 1:_ Emotional exhaustion showed up when I could not focus even on small code reviews.
+  _Example 2:_ A close friend noticed it when my response style became short and defensive.
   _Example 3:_ Naming emotional exhaustion early helped me adjust my routine before bigger damage.
 
-- **sleep debt** /slip det/ (n) - accumulated lack of sleep over days or weeks  
-  _Example 1:_ Two weeks of late-night screen time created serious sleep debt.  
-  _Example 2:_ I reduced sleep debt by setting a fixed bedtime and muting non-urgent alerts.  
+- **sleep debt** /slip det/ (n) - accumulated lack of sleep over days or weeks
+  _Example 1:_ Two weeks of late-night screen time created serious sleep debt.
+  _Example 2:_ I reduced sleep debt by setting a fixed bedtime and muting non-urgent alerts.
   _Example 3:_ My recovery started only after I treated sleep debt as a serious health risk.
 
-- **alert fatigue** /əˈlɝt fəˈtiɡ/ (n) - becoming less responsive because alerts are too frequent  
-  _Example 1:_ Alert fatigue made me ignore reminders because my phone never stopped buzzing.  
-  _Example 2:_ I disabled noisy notifications and kept only urgent ones.  
+- **alert fatigue** /əˈlɝt fəˈtiɡ/ (n) - becoming less responsive because alerts are too frequent
+  _Example 1:_ Alert fatigue made me ignore reminders because my phone never stopped buzzing.
+  _Example 2:_ I disabled noisy notifications and kept only urgent ones.
   _Example 3:_ This changed my evenings from panic mode to calmer focus.
 
-- **boundary breach** /ˈbaʊndri britʃ/ (n) - violation of a limit protecting personal time or energy  
-  _Example 1:_ Weekend messages for non-urgent issues became a regular boundary breach.  
-  _Example 2:_ I fixed boundary breach by defining clear response windows for myself.  
+- **boundary breach** /ˈbaʊndri britʃ/ (n) - violation of a limit protecting personal time or energy
+  _Example 1:_ Weekend messages for non-urgent issues became a regular boundary breach.
+  _Example 2:_ I fixed boundary breach by defining clear response windows for myself.
   _Example 3:_ Clear boundaries improved both relationships and mental stability.
 
-- **recovery routine** /rɪˈkʌvəri ruˈtin/ (n) - repeatable set of actions to restore energy  
-  _Example 1:_ My recovery routine includes one no-screen morning after stressful days.  
-  _Example 2:_ My routine also includes a short walk and journaling before bed.  
+- **recovery routine** /rɪˈkʌvəri ruˈtin/ (n) - repeatable set of actions to restore energy
+  _Example 1:_ My recovery routine includes one no-screen morning after stressful days.
+  _Example 2:_ My routine also includes a short walk and journaling before bed.
   _Example 3:_ Routine works better than random breaks when pressure is high.
 
-- **workload spillover** /ˈwɝkloʊd ˈspɪloʊvɚ/ (n) - work pressure leaking into personal time  
-  _Example 1:_ Workload spillover started when I kept saying yes to every request.  
-  _Example 2:_ I reduced spillover by limiting after-hours messages to urgent cases only.  
+- **workload spillover** /ˈwɝkloʊd ˈspɪloʊvɚ/ (n) - work pressure leaking into personal time
+  _Example 1:_ Workload spillover started when I kept saying yes to every request.
+  _Example 2:_ I reduced spillover by limiting after-hours messages to urgent cases only.
   _Example 3:_ Lower spillover gave me better focus during actual working hours.
 
-- **stress baseline** /stres ˈbeɪslaɪn/ (n) - normal level of stress a person can handle sustainably  
-  _Example 1:_ My stress baseline dropped after months of poor sleep and no real breaks.  
-  _Example 2:_ I now check baseline weekly instead of waiting for burnout symptoms.  
+- **stress baseline** /stres ˈbeɪslaɪn/ (n) - normal level of stress a person can handle sustainably
+  _Example 1:_ My stress baseline dropped after months of poor sleep and no real breaks.
+  _Example 2:_ I now check baseline weekly instead of waiting for burnout symptoms.
   _Example 3:_ Baseline tracking helps me notice warning signs before a crash.
 
-- **weekly check-in** /ˈwikli tʃek ɪn/ (n) - short structured review of your workload and well-being  
-  _Example 1:_ My weekly check-in includes sleep, mood, and energy score.  
-  _Example 2:_ That format made it easier to discuss overload without self-judgment.  
+- **weekly check-in** /ˈwikli tʃek ɪn/ (n) - short structured review of your workload and well-being
+  _Example 1:_ My weekly check-in includes sleep, mood, and energy score.
+  _Example 2:_ That format made it easier to discuss overload without self-judgment.
   _Example 3:_ Regular check-ins prevented silent burnout from growing.
 
-- **sustainable pace** /səˈsteɪnəbəl peɪs/ (n) - work rhythm that can be maintained over time  
-  _Example 1:_ Sustainable pace means fewer extreme days and more stable weeks.  
-  _Example 2:_ I accepted slower short-term progress to protect my health and consistency.  
+- **sustainable pace** /səˈsteɪnəbəl peɪs/ (n) - work rhythm that can be maintained over time
+  _Example 1:_ Sustainable pace means fewer extreme days and more stable weeks.
+  _Example 2:_ I accepted slower short-term progress to protect my health and consistency.
   _Example 3:_ That trade-off gave me better focus over the long term.
 
 **Additional useful terms:**
@@ -79,22 +79,22 @@ description: Discuss energy collapse signals, practical recovery routines, bound
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for gradual decline**  
+- **Present Perfect for gradual decline**
   I have felt less focused since I started sleeping too late most nights.
 
-- **Past Simple for intervention point**  
+- **Past Simple for intervention point**
   I reset my schedule after two weekends of continuous work spillover.
 
-- **Cause and consequence language**  
+- **Cause and consequence language**
   Because alert noise was too high, my concentration dropped.
 
-- **Boundary scripts**  
+- **Boundary scripts**
   I can support urgent incidents tonight, but non-urgent items will wait until morning.
 
-- **Concession language**  
+- **Concession language**
   Fast progress matters, but not at the cost of constant exhaustion.
 
-- **Conditionals for prevention**  
+- **Conditionals for prevention**
   If we ignore stress signals early, recovery becomes much slower.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Discuss energy collapse signals, practical recovery routines, bound
 
 **Teacher:** What was your first burnout warning signal?
 
-**Learner:**  
+**Learner:**
 My first signal was emotional exhaustion, not missed deadlines. I was still delivering tasks, but my code review quality dropped and I felt detached.
 
 Once I noticed that pattern, I asked for workload rebalance before it became a crisis.
@@ -173,7 +173,7 @@ Once I noticed that pattern, I asked for workload rebalance before it became a c
 
 **Teacher:** How do you set boundaries without sounding uncooperative?
 
-**Learner:**  
+**Learner:**
 I separate urgent and non-urgent work. For urgent incidents, I respond immediately. For non-urgent requests, I set a clear next-day timeline.
 
 This keeps trust while protecting recovery time.
@@ -182,7 +182,7 @@ This keeps trust while protecting recovery time.
 
 **Teacher:** What personal change reduced burnout risk most?
 
-**Learner:**  
+**Learner:**
 I introduced one fixed sleep schedule and one weekly check-in with myself using a simple energy score. It felt unusual at first, but it made overload visible.
 
 After one month, my stress level dropped and my focus quality improved.
@@ -210,7 +210,7 @@ Burnout usually starts before people say they are burned out. Many people still 
 
 Practical prevention is simple but consistent: reduce alert noise, protect boundaries, create recovery windows, and review your real capacity honestly. These habits are not weak choices. They are long-term stability strategy.
 
-In interviews, strong answers include one warning signal, one intervention, and one measurable outcome.
+Strong answers include one warning signal, one intervention, and one real outcome. Avoid dramatic language; make the answer calm, specific, and useful.
 
 </details>
 
@@ -219,28 +219,28 @@ In interviews, strong answers include one warning signal, one intervention, and 
 
 ### Core Questions (must-practice)
 
-1. What early burnout signal have you seen in yourself recently?
-2. How do you protect recovery time during high-pressure periods?
-3. What boundary script works when non-urgent requests come late at night?
-4. Which personal habit helped you sustain performance over months, not days?
+1. What early burnout signal do you notice before your output actually drops?
+2. How do you protect recovery time when tools and chat apps make work feel always-on?
+3. What boundary script works for late non-urgent requests without damaging trust?
+4. Which habit helps you sustain performance for months instead of surviving one intense week?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of pushing hard during short crunch periods?
+5. What are the benefits and limits of short crunch periods in modern product teams?
 6. When should people trade short-term productivity for recovery and stability?
-7. How should personal responsibility and environment support mental health together?
+7. How can personal responsibility and team environment support mental health together?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You said pressure is manageable. Which hidden personal cost did you ignore at first?
-9. If you finish everything on time but feel exhausted, is that still success?
+8. You said pressure is manageable. Which hidden cost might not show up in delivery metrics?
+9. If AI helps you ship faster but expectations keep rising, how do you protect a sustainable pace?
 10. If someone never speaks up about overload, what gentle support could help first?
 
 ### Reflection Questions
 
-11. Which burnout signal is hardest for you to admit in English?
-12. What personal habit changed your stress baseline the most?
-13. In five years, will personal success be defined more by speed or by sustainable pace?
+11. Which burnout signal is hardest for you to express professionally in English?
+12. What personal routine has changed your stress baseline the most?
+13. In the next few years, will personal success be defined more by speed or by sustainable pace?
 
 **Tips for speaking practice:**
 

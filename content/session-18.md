@@ -3,13 +3,13 @@ sessionNumber: 18
 title: Human Connection in Remote Work
 topic: Remote Work Belonging, Trust, and Meaningful Human Connection
 phase: PHASE 3 - PRACTICAL DISCUSSION
-level: B1-B2
+level: B2
 description: Discuss isolation in remote teams and practical habits to build trust, belonging, and meaningful connection.
 ---
 
 # Session 18: Human Connection in Remote Work
 
-**Level:** B1-B2
+**Level:** B2
 **Focus:** Build stronger trust and belonging in remote work without forcing fake social energy.
 
 <details open>
@@ -413,7 +413,7 @@ For your career, this skill matters in interviews too. If you can explain how yo
 
 1. What signs of remote isolation have you seen in yourself or teammates?
 2. Which team ritual can improve belonging with low time cost?
-3. How would you improve check-in quality in a remote team?
+3. How would you improve check-in quality in a remote or hybrid team?
 4. What boundaries help you protect social energy while staying connected?
 
 ### High-Value Discussion Questions

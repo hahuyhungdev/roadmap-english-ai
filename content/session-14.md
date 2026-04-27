@@ -3,67 +3,67 @@ sessionNumber: 14
 title: Fake Identity & Authentic Personal Brand
 topic: Curated Online Persona vs Real Capability
 phase: PHASE 3 - PRACTICAL DISCUSSION
-level: B1-B2
+level: B2
 description: Discuss online image pressure, authenticity in LinkedIn/GitHub, credibility risks, and practical ways to present yourself honestly.
 ---
 
 # Session 14: Fake Identity & Authentic Personal Brand
 
-**Level:** B1-B2  
+**Level:** B2
 **Focus:** Build a credible professional image without pretending to be someone else.
 **Scope:** Talk about online persona, credibility gaps, and practical authenticity in public profiles and interviews.
 
 <details open>
 <summary><strong>1) Vocabulary </strong></summary>
 
-- **curated identity** /ˈkjʊreɪtəd aɪˈdɛntəti/ (n) - carefully selected version of yourself shown online  
-  _Example 1:_ My curated identity looked impressive, but it ignored projects where I struggled.  
-  _Example 2:_ Recruiters asked deep questions, and the gap became obvious.  
+- **curated identity** /ˈkjʊreɪtəd aɪˈdɛntəti/ (n) - carefully selected version of yourself shown online
+  _Example 1:_ My curated identity looked impressive, but it ignored projects where I struggled.
+  _Example 2:_ Recruiters asked deep questions, and the gap became obvious.
   _Example 3:_ I now keep my profile polished but more honest.
 
-- **signal boosting** /ˈsɪɡnəl ˈbustɪŋ/ (n) - making achievements look bigger through wording or repetition  
-  _Example 1:_ Signal boosting made one small side project sound like a major product launch.  
-  _Example 2:_ It attracted attention quickly but weakened trust in interviews.  
+- **signal boosting** /ˈsɪɡnəl ˈbustɪŋ/ (n) - making achievements look bigger through wording or repetition
+  _Example 1:_ Signal boosting made one small side project sound like a major product launch.
+  _Example 2:_ It attracted attention quickly but weakened trust in interviews.
   _Example 3:_ I switched to concrete scope statements instead.
 
-- **credibility gap** /ˌkrɛdəˈbɪləti ɡæp/ (n) - mismatch between claims and real ability  
-  _Example 1:_ Credibility gap appears when profile claims "expert" but examples are shallow.  
-  _Example 2:_ I reduced the gap by adding clear project context and role boundaries.  
+- **credibility gap** /ˌkrɛdəˈbɪləti ɡæp/ (n) - mismatch between claims and real ability
+  _Example 1:_ Credibility gap appears when profile claims "expert" but examples are shallow.
+  _Example 2:_ I reduced the gap by adding clear project context and role boundaries.
   _Example 3:_ Honest positioning made conversations easier.
 
-- **portfolio truth** /pɔrtˈfoʊlioʊ truθ/ (n) - accurate story of what you actually built and learned  
-  _Example 1:_ Portfolio truth means showing bugs, trade-offs, and unfinished parts too.  
-  _Example 2:_ That level of honesty helped me answer tough follow-up questions calmly.  
+- **portfolio truth** /pɔrtˈfoʊlioʊ truθ/ (n) - accurate story of what you actually built and learned
+  _Example 1:_ Portfolio truth means showing bugs, trade-offs, and unfinished parts too.
+  _Example 2:_ That level of honesty helped me answer tough follow-up questions calmly.
   _Example 3:_ It also improved trust with interviewers and peers.
 
-- **performative posting** /pɚˈfɔrmətɪv ˈpoʊstɪŋ/ (n) - posting mainly to look successful, not to share real value  
-  _Example 1:_ I used performative posting when I wanted validation more than growth.  
-  _Example 2:_ The posts looked strong, but they did not improve my skill depth.  
+- **performative posting** /pɚˈfɔrmətɪv ˈpoʊstɪŋ/ (n) - posting mainly to look successful, not to share real value
+  _Example 1:_ I used performative posting when I wanted validation more than growth.
+  _Example 2:_ The posts looked strong, but they did not improve my skill depth.
   _Example 3:_ Now I post less often but with useful technical detail.
 
-- **authenticity statement** /ˌɔθənˈtɪsəti ˈsteɪtmənt/ (n) - short honest line describing your current level  
-  _Example 1:_ My authenticity statement is: "Mid-level engineer improving backend design communication."  
-  _Example 2:_ It sounds less flashy but more believable.  
+- **authenticity statement** /ˌɔθənˈtɪsəti ˈsteɪtmənt/ (n) - short honest line describing your current level
+  _Example 1:_ My authenticity statement is: "Mid-level engineer improving backend design communication."
+  _Example 2:_ It sounds less flashy but more believable.
   _Example 3:_ This statement helps me stay consistent across profile and interview.
 
-- **proof of work** /pruf əv wɝk/ (n) - concrete evidence of what you can do  
-  _Example 1:_ Proof of work in my profile includes project notes and before/after examples, not only screenshots.  
-  _Example 2:_ Recruiters trusted this more than broad claims.  
+- **proof of work** /pruf əv wɝk/ (n) - concrete evidence of what you can do
+  _Example 1:_ Proof of work in my profile includes project notes and before/after examples, not only screenshots.
+  _Example 2:_ Recruiters trusted this more than broad claims.
   _Example 3:_ Clear proof of work reduces interview anxiety.
 
-- **reputation risk** /ˌrɛpjəˈteɪʃən rɪsk/ (n) - danger of losing trust because of exaggerated image  
-  _Example 1:_ Reputation risk increased when people noticed mismatch between my profile and real ability.  
-  _Example 2:_ I fixed it by updating role descriptions with realistic scope.  
+- **reputation risk** /ˌrɛpjəˈteɪʃən rɪsk/ (n) - danger of losing trust because of exaggerated image
+  _Example 1:_ Reputation risk increased when people noticed mismatch between my profile and real ability.
+  _Example 2:_ I fixed it by updating role descriptions with realistic scope.
   _Example 3:_ Long-term trust matters more than short-term attention.
 
-- **narrative consistency** /ˈnærətɪv kənˈsɪstənsi/ (n) - keeping the same truthful story across channels  
-  _Example 1:_ Narrative consistency means LinkedIn, CV, and interview answers all match.  
-  _Example 2:_ Inconsistent narratives create doubt even when skills are real.  
+- **narrative consistency** /ˈnærətɪv kənˈsɪstənsi/ (n) - keeping the same truthful story across channels
+  _Example 1:_ Narrative consistency means LinkedIn, CV, and interview answers all match.
+  _Example 2:_ Inconsistent narratives create doubt even when skills are real.
   _Example 3:_ Consistency made my interview performance smoother.
 
-- **public persona** /ˈpʌblɪk pɚˈsoʊnə/ (n) - version of yourself presented to public audience  
-  _Example 1:_ My public persona is professional, but still includes current learning goals.  
-  _Example 2:_ I avoid pretending to have mastery I do not yet have.  
+- **public persona** /ˈpʌblɪk pɚˈsoʊnə/ (n) - version of yourself presented to public audience
+  _Example 1:_ My public persona is professional, but still includes current learning goals.
+  _Example 2:_ I avoid pretending to have mastery I do not yet have.
   _Example 3:_ That balance protects confidence and credibility.
 
 **Additional useful terms:**
@@ -79,22 +79,22 @@ description: Discuss online image pressure, authenticity in LinkedIn/GitHub, cre
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Present Perfect for profile evolution**  
+- **Present Perfect for profile evolution**
   I have rewritten my profile to show real scope and learning goals.
 
-- **Past Simple for trust failure**  
+- **Past Simple for trust failure**
   I lost credibility once because I described a group outcome as my individual achievement.
 
-- **Contrast language**  
+- **Contrast language**
   A strong profile is polished, but it should still be truthful.
 
-- **Hedging for honest positioning**  
+- **Hedging for honest positioning**
   I am experienced in this area, but I am still developing advanced skills in that area.
 
-- **Cause and effect language**  
+- **Cause and effect language**
   Because my claims were specific, interview follow-up felt easier.
 
-- **Conditionals for reputation risk**  
+- **Conditionals for reputation risk**
   If public claims are exaggerated, trust drops quickly during technical interviews.
 
 ### Useful Sentence Patterns
@@ -164,7 +164,7 @@ description: Discuss online image pressure, authenticity in LinkedIn/GitHub, cre
 
 **Teacher:** Why did you rewrite your LinkedIn summary?
 
-**Learner:**  
+**Learner:**
 I realized my old summary sounded senior, but my examples were mid-level. That credibility gap made interviews stressful.
 
 I rewrote it with clear scope, real impact, and one honest learning target.
@@ -173,7 +173,7 @@ I rewrote it with clear scope, real impact, and one honest learning target.
 
 **Teacher:** How do you introduce yourself without underselling?
 
-**Learner:**  
+**Learner:**
 I use an authenticity statement: what I do well, what I am improving, and where I create value. It sounds balanced.
 
 It is less flashy, but people trust it faster.
@@ -182,7 +182,7 @@ It is less flashy, but people trust it faster.
 
 **Teacher:** Does social media push people to fake identity?
 
-**Learner:**  
+**Learner:**
 Yes, because success posts rarely show struggle. The pressure is real.
 
 My rule is simple: if I cannot defend a claim in an interview, I should not post it.
@@ -217,27 +217,27 @@ Authentic branding does not mean weak branding. It means clear claims, evidence,
 
 ### Core Questions (must-practice)
 
-1. How do you present yourself online without exaggerating your level?
-2. What credibility gap have you noticed in your own profile or interview story?
+1. How do you present yourself online without exaggerating your actual level?
+2. What credibility gap exists between your public profile and your real examples?
 3. How do you write an authenticity statement that is honest but still confident?
-4. Which proof of work best supports your public persona?
+4. Which proof of work best supports the reputation you want to build?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of personal branding for software engineers?
+5. How can personal branding help engineers without replacing real substance?
 6. When does curated identity become fake identity?
 7. How should personal branding differ between beginner and experienced engineers?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You said branding is necessary. What trust risk are you accepting when polishing your image?
-9. If an exaggerated profile gets more interviews, is that still wrong?
-10. If authenticity reduces visibility, would you still choose it?
+8. If AI makes it easy to polish a profile, what trust risk should you watch?
+9. If an exaggerated profile gets more opportunities, where is the long-term cost?
+10. If being authentic reduces visibility, how would you still stay discoverable?
 
 ### Reflection Questions
 
-11. Which part of your public persona feels least authentic today?
-12. What sentence in your profile would you rewrite after this lesson?
+11. Which part of your public persona feels least aligned with your real voice?
+12. What sentence in your profile would you rewrite to make it more concrete?
 13. In the long term, what matters more for career growth: visibility or credibility?
 
 **Tips for speaking practice:**

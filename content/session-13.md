@@ -3,13 +3,13 @@ sessionNumber: 13
 title: Career Comparison & Imposter Syndrome
 topic: Career Comparison Pressure, Imposter Syndrome, and Confidence Recovery
 phase: PHASE 3 - PRACTICAL DISCUSSION
-level: B1-B2
+level: B2
 description: Talk about career comparison pressure, imposter syndrome triggers, and practical methods to rebuild confidence.
 ---
 
 # Session 13: Career Comparison & Imposter Syndrome
 
-**Level:** B1-B2
+**Level:** B2
 **Focus:** Speak honestly about feeling behind others while keeping a realistic long-term growth direction.
 
 <details open>
@@ -412,26 +412,26 @@ In interviews, people trust honest answers. If you can explain how you handled i
 ### Core Questions (must-practice)
 
 1. What usually triggers career comparison for you in daily life?
-2. How do you know when comparison is useful and when it becomes harmful?
-3. Which benchmark in your career needs a reset right now?
+2. How do you know when comparison gives useful data versus harmful noise?
+3. Which benchmark in your career needs a reset in 2026?
 4. What confidence evidence can you collect this month?
 
 ### High-Value Discussion Questions
 
-5. What are the benefits and limits of using peer comparison as motivation?
+5. How can peer comparison motivate growth without turning into identity pressure?
 6. How is comparison pressure different for beginner engineers versus experienced engineers?
-7. When should you prioritize role fit over title or salary growth?
+7. When should role fit matter more than title, salary, or company logo?
 
 ### Follow-up Questions (Challenge Assumptions)
 
-8. You said pressure helps you improve. How do you prevent burnout from that pressure?
-9. You said you trust your own timeline. What if your timeline is actually too comfortable?
-10. If your peers grow faster for two years, how do you avoid panic decisions?
+8. You said pressure helps you improve. How do you prevent it from becoming your whole identity?
+9. You trust your timeline. How do you check that it is not just comfort?
+10. If your peers grow faster for two years, how do you avoid panic career moves?
 
 ### Reflection Questions
 
-11. Which sentence about imposter syndrome feels most natural for you to say in English?
-12. What changed in your behavior after this lesson: mindset only, or concrete actions too?
+11. Which sentence about imposter syndrome sounds natural and honest for you?
+12. What concrete action will you take after this lesson, not just a mindset change?
 13. In ten years, what will matter more for your self-worth: public status or private growth quality?
 
 **Tips for speaking practice:**
