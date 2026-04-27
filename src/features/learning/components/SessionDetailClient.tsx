@@ -167,23 +167,24 @@ export default function SessionDetailClient({
 
       <article
         className={[
-          "lesson-prose border border-gray-200 rounded-2xl p-4 md:p-5 prose prose-gray max-w-none",
-          "prose-p:text-gray-700 prose-p:leading-6 prose-p:my-1.5",
+          "lesson-prose border border-gray-200 rounded-2xl p-4 md:p-6 prose prose-gray max-w-none",
+          "text-[16px] md:text-[17px] leading-7",
+          "prose-p:text-gray-700 prose-p:text-[1em] prose-p:leading-7 prose-p:my-2",
           "prose-headings:text-gray-900 prose-headings:font-semibold",
-          "prose-h1:text-2xl prose-h1:mb-2 prose-h1:mt-0",
-          "prose-h2:text-xl prose-h2:mt-4 prose-h2:mb-2 prose-h2:pb-1 prose-h2:border-b prose-h2:border-gray-100",
-          "prose-h3:text-lg prose-h3:mt-3 prose-h3:mb-1",
-          "prose-ul:my-1.5 prose-ol:my-1.5",
-          "prose-li:text-gray-700 prose-li:my-0.5",
+          "prose-h1:text-[1.65em] prose-h1:mb-3 prose-h1:mt-0",
+          "prose-h2:text-[1.35em] prose-h2:mt-5 prose-h2:mb-3 prose-h2:pb-1.5 prose-h2:border-b prose-h2:border-gray-100",
+          "prose-h3:text-[1.15em] prose-h3:mt-4 prose-h3:mb-2",
+          "prose-ul:my-2 prose-ol:my-2",
+          "prose-li:text-gray-700 prose-li:text-[1em] prose-li:leading-7 prose-li:my-1",
           "prose-a:text-indigo-600 hover:prose-a:text-indigo-500 prose-a:font-medium",
           "prose-strong:text-gray-900",
-          "prose-code:text-indigo-700 prose-code:bg-indigo-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded",
+          "prose-code:text-indigo-700 prose-code:bg-indigo-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-[0.92em]",
           "prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-xl",
           "prose-blockquote:border-l-4 prose-blockquote:border-indigo-400 prose-blockquote:bg-indigo-50/70",
-          "prose-blockquote:my-2 prose-blockquote:rounded-r-lg prose-blockquote:px-3 prose-blockquote:py-1.5 prose-blockquote:not-italic prose-blockquote:text-gray-700",
-          "prose-table:text-sm prose-th:text-gray-700 prose-td:text-gray-700",
-          "prose-details:my-1.5 prose-details:border prose-details:border-gray-200 prose-details:rounded-lg prose-details:bg-gray-50/70 prose-details:overflow-hidden",
-          "prose-summary:cursor-pointer prose-summary:list-none prose-summary:font-semibold prose-summary:text-gray-900 prose-summary:px-2.5 prose-summary:py-1.5 prose-summary:select-none prose-summary:hover:bg-indigo-50 prose-summary:transition-colors prose-summary:[&::-webkit-details-marker]:hidden",
+          "prose-blockquote:my-3 prose-blockquote:rounded-r-lg prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:not-italic prose-blockquote:text-gray-700",
+          "prose-table:text-[0.95em] prose-th:text-gray-700 prose-td:text-gray-700",
+          "prose-details:my-2 prose-details:border prose-details:border-gray-200 prose-details:rounded-lg prose-details:bg-gray-50/70 prose-details:overflow-hidden",
+          "prose-summary:cursor-pointer prose-summary:list-none prose-summary:font-semibold prose-summary:text-gray-900 prose-summary:px-3 prose-summary:py-2 prose-summary:select-none prose-summary:hover:bg-indigo-50 prose-summary:transition-colors prose-summary:[&::-webkit-details-marker]:hidden",
         ].join(" ")}
       >
         {lessonParts.map((part, index) => (

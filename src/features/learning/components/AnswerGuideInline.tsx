@@ -12,16 +12,16 @@ export interface AnswerGuideItem {
 
 function MarkdownText({ content }: { content: string }) {
   return (
-    <div className="guide-markdown text-sm leading-relaxed text-gray-700">
+    <div className="guide-markdown text-[15.5px] leading-7 text-gray-700 md:text-base">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-          p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
-          ul: ({ children }) => <ul className="mb-2 list-disc pl-5">{children}</ul>,
+          p: ({ children }) => <p className="mb-3 last:mb-0">{children}</p>,
+          ul: ({ children }) => <ul className="mb-3 list-disc pl-5">{children}</ul>,
           ol: ({ children }) => (
-            <ol className="mb-2 list-decimal pl-5">{children}</ol>
+            <ol className="mb-3 list-decimal pl-5">{children}</ol>
           ),
-          li: ({ children }) => <li className="mb-1">{children}</li>,
+          li: ({ children }) => <li className="mb-1.5">{children}</li>,
           strong: ({ children }) => (
             <strong className="font-semibold text-gray-900">{children}</strong>
           ),
@@ -68,7 +68,7 @@ export default function AnswerGuideInline({
             key={`${questionIndex}-${guide.question}`}
             className="group/answer-question overflow-hidden rounded-md border border-gray-200 bg-white/80"
           >
-            <summary className="flex cursor-pointer items-center justify-between gap-2 px-2.5 py-2 text-sm font-semibold text-gray-900 transition-colors hover:bg-gray-50">
+            <summary className="flex cursor-pointer items-center justify-between gap-2 px-3 py-2.5 text-[15px] font-semibold leading-6 text-gray-900 transition-colors hover:bg-gray-50">
               <span className="flex items-center gap-2">
                 <ChevronRight
                   size={13}
@@ -83,7 +83,7 @@ export default function AnswerGuideInline({
               </span>
             </summary>
 
-            <div className="space-y-2 border-t border-gray-200 px-2.5 py-2">
+            <div className="space-y-3 border-t border-gray-200 px-3 py-3">
               {guide.bodyMarkdown ? (
                 <MarkdownText content={guide.bodyMarkdown} />
               ) : (
