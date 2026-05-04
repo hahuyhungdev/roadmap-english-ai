@@ -12,6 +12,11 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: production
+    env:
+      APP_DIR: /var/www/marcus-app/roadmap-english
+      PM2_APP_NAME: roadmap-english
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -69,8 +74,6 @@ jobs:
           envs: DEEPSEEK_API_KEY,SUPADATA_API_KEY,SONIOX_API_KEY,GOOGLE_TTS_API_KEY,DATABASE_URL
           script: |
             set -e
-            APP_DIR=/var/www/marcus-app/roadmap-english
-            PM2_APP_NAME=roadmap-english
 
             for var in DEEPSEEK_API_KEY SUPADATA_API_KEY SONIOX_API_KEY GOOGLE_TTS_API_KEY DATABASE_URL; do
               if [ -z "$(printenv "$var")" ]; then
@@ -78,6 +81,15 @@ jobs:
                 exit 1
               fi
             done
+
+            # Ensure legacy systemd service does not fight PM2 for port 3000.
+            if systemctl list-unit-files | grep -q '^roadmap-english.service'; then
+              systemctl stop roadmap-english.service || true
+              systemctl disable roadmap-english.service || true
+            fi
+
+            # Clean stale standalone process that can keep port 3000 occupied.
+            pkill -f "next-server" || true
 
             # Clean previous build and extract new one
             rm -rf "$APP_DIR"
@@ -139,10 +151,30 @@ jobs:
             sleep 2
 
             # Smoke test
-            status_code=$(curl -sS -o /tmp/roadmap-health.out -w "%{http_code}" "http://127.0.0.1:3000/")
-            if [ "$status_code" != "200" ]; then
-              echo "Health check failed: HTTP $status_code"
-              head -c 500 /tmp/roadmap-health.out || true
+            for i in 1 2 3 4 5; do
+              status_code=$(curl -sS -o /tmp/roadmap-health.out -w "%{http_code}" "http://127.0.0.1:3000/")
+              if [ "$status_code" = "200" ]; then
+                break
+              fi
+              if [ "$i" -eq 5 ]; then
+                echo "Health check failed: HTTP $status_code"
+                head -c 500 /tmp/roadmap-health.out || true
+                exit 1
+              fi
+              sleep 2
+            done
+
+            new_phase_code=$(curl -sS -o /tmp/roadmap-phase.out -w "%{http_code}" "http://127.0.0.1:3000/phase/phase-3-the-strategic-psychological-engine")
+            if [ "$new_phase_code" != "200" ]; then
+              echo "Phase route check failed: HTTP $new_phase_code"
+              head -c 500 /tmp/roadmap-phase.out || true
+              exit 1
+            fi
+
+            redirect_code=$(curl -sS -o /tmp/roadmap-legacy-redirect.out -w "%{http_code}" "http://127.0.0.1:3000/phase/phase-3-practical-discussion")
+            if [ "$redirect_code" != "307" ] && [ "$redirect_code" != "308" ]; then
+              echo "Legacy redirect check failed: HTTP $redirect_code"
+              head -c 500 /tmp/roadmap-legacy-redirect.out || true
               exit 1
             fi
 
