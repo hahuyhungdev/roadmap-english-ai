@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     environment: production
+    permissions:
+      contents: read
     env:
       APP_DIR: /var/www/marcus-app/roadmap-english
       PM2_APP_NAME: roadmap-english
@@ -25,6 +27,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -40,14 +43,30 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      - name: Verify build artifacts
+        run: |
+          set -euo pipefail
+          test -f .next/standalone/server.js
+          test -d .next/static
+          test -d content
+          find .next/static -type f | head -n 1 >/dev/null
+          find .next/static -type f -name "*.css" | head -n 1 >/dev/null
+
       - name: Package standalone build
         run: |
-          cp -r .next/static .next/standalone/.next/static
-          cp -r public .next/standalone/public
-          cp -r content .next/standalone/content
-          mkdir -p .next/standalone/src/lib
-          cp src/lib/schema.ts .next/standalone/src/lib/schema.ts
-          tar -czf deploy.tar.gz -C .next/standalone .
+          set -euo pipefail
+          rm -rf deploy_bundle deploy.tar.gz
+          mkdir -p deploy_bundle
+          cp -a .next/standalone/. deploy_bundle/
+          mkdir -p deploy_bundle/.next
+          cp -a .next/static deploy_bundle/.next/static
+          if [ -d public ]; then cp -a public deploy_bundle/public; fi
+          cp -a content deploy_bundle/content
+          mkdir -p deploy_bundle/src/lib
+          cp src/lib/schema.ts deploy_bundle/src/lib/schema.ts
+          test -d deploy_bundle/.next/static
+          find deploy_bundle/.next/static -type f -name "*.css" | head -n 1 >/dev/null
+          tar -czf deploy.tar.gz -C deploy_bundle .
 
       - name: Upload build to VPS
         uses: appleboy/scp-action@v0.1.7
@@ -73,7 +92,7 @@ jobs:
           command_timeout: 10m
           envs: DEEPSEEK_API_KEY,SUPADATA_API_KEY,SONIOX_API_KEY,GOOGLE_TTS_API_KEY,DATABASE_URL
           script: |
-            set -e
+            set -euo pipefail
 
             for var in DEEPSEEK_API_KEY SUPADATA_API_KEY SONIOX_API_KEY GOOGLE_TTS_API_KEY DATABASE_URL; do
               if [ -z "$(printenv "$var")" ]; then
@@ -91,11 +110,18 @@ jobs:
             # Clean stale standalone process that can keep port 3000 occupied.
             pkill -f "next-server" || true
 
-            # Clean previous build and extract new one
+            # Extract to temp and verify required artifacts before replacing app dir.
+            TMP_RELEASE_DIR="$(mktemp -d /tmp/roadmap-release.XXXXXX)"
+            tar -xzf /tmp/deploy.tar.gz -C "$TMP_RELEASE_DIR"
+            rm -f /tmp/deploy.tar.gz
+            test -f "$TMP_RELEASE_DIR/server.js"
+            test -d "$TMP_RELEASE_DIR/.next/static"
+            find "$TMP_RELEASE_DIR/.next/static" -type f -name "*.css" | head -n 1 >/dev/null
+
             rm -rf "$APP_DIR"
             mkdir -p "$APP_DIR"
-            tar -xzf /tmp/deploy.tar.gz -C "$APP_DIR"
-            rm -f /tmp/deploy.tar.gz
+            cp -a "$TMP_RELEASE_DIR"/. "$APP_DIR"/
+            rm -rf "$TMP_RELEASE_DIR"
 
             # Write .env.local from secrets
             printf '%s\n' \
@@ -168,6 +194,18 @@ jobs:
             if [ "$new_phase_code" != "200" ]; then
               echo "Phase route check failed: HTTP $new_phase_code"
               head -c 500 /tmp/roadmap-phase.out || true
+              exit 1
+            fi
+
+            css_path=$(curl -fsS "http://127.0.0.1:3000/" | grep -Eo 'href="/_next/static[^"]+\.css"' | head -n 1 | cut -d'"' -f2 || true)
+            if [ -z "$css_path" ]; then
+              echo "Asset check failed: no CSS reference found in homepage HTML"
+              exit 1
+            fi
+            css_status=$(curl -sS -o /tmp/roadmap-css.out -w "%{http_code}" "http://127.0.0.1:3000$css_path")
+            if [ "$css_status" != "200" ]; then
+              echo "Asset check failed: CSS $css_path returned HTTP $css_status"
+              head -c 300 /tmp/roadmap-css.out || true
               exit 1
             fi
 

@@ -48,15 +48,30 @@ echo "== Sync database schema =="
 pnpm run db:push
 pnpm run build
 
+echo "== Verify build artifacts =="
+test -f .next/standalone/server.js
+test -d .next/static
+find .next/static -type f -name "*.css" | head -n 1 >/dev/null
+
 echo "== Package standalone build =="
-cp -r .next/static .next/standalone/.next/static
-if [[ -d public ]]; then cp -r public .next/standalone/public; fi
-cp -r content .next/standalone/content
+rm -rf deploy_bundle
+mkdir -p deploy_bundle
+cp -a .next/standalone/. deploy_bundle/
+mkdir -p deploy_bundle/.next
+cp -a .next/static deploy_bundle/.next/static
+if [[ -d public ]]; then cp -a public deploy_bundle/public; fi
+cp -a content deploy_bundle/content
+find deploy_bundle/.next/static -type f -name "*.css" | head -n 1 >/dev/null
 
 echo "== Deploy standalone to $APP_DIR =="
+TMP_RELEASE_DIR="$(mktemp -d /tmp/roadmap-release.XXXXXX)"
+cp -a deploy_bundle/. "$TMP_RELEASE_DIR/"
+test -f "$TMP_RELEASE_DIR/server.js"
+test -d "$TMP_RELEASE_DIR/.next/static"
 rm -rf "$APP_DIR"
 mkdir -p "$APP_DIR"
-cp -a .next/standalone/. "$APP_DIR/"
+cp -a "$TMP_RELEASE_DIR"/. "$APP_DIR/"
+rm -rf "$TMP_RELEASE_DIR" deploy_bundle
 
 # Preserve existing .env.local (manual deploy keeps VPS env file)
 if [[ -f "$SRC_DIR/.env.local" ]]; then
@@ -76,6 +91,19 @@ status_code=$(curl -sS -o /tmp/roadmap-health.out -w "%{http_code}" "$APP_URL")
 if [[ "$status_code" != "200" ]]; then
   echo "Health check failed: HTTP $status_code"
   head -c 500 /tmp/roadmap-health.out || true
+  echo
+  exit 1
+fi
+
+css_path=$(curl -fsS "$APP_URL" | grep -Eo 'href="/_next/static[^"]+\.css"' | head -n 1 | cut -d'"' -f2 || true)
+if [[ -z "$css_path" ]]; then
+  echo "Asset check failed: no CSS reference found in homepage HTML"
+  exit 1
+fi
+css_status=$(curl -sS -o /tmp/roadmap-css.out -w "%{http_code}" "http://127.0.0.1:3000$css_path")
+if [[ "$css_status" != "200" ]]; then
+  echo "Asset check failed: CSS $css_path returned HTTP $css_status"
+  head -c 300 /tmp/roadmap-css.out || true
   echo
   exit 1
 fi
