@@ -105,10 +105,6 @@ jobs:
               systemctl stop roadmap-english.service || true
               systemctl disable roadmap-english.service || true
             fi
-
-            # Clean stale standalone process that can keep port 3000 occupied.
-            pkill -f "next-server" || true
-
             # Extract to temp and verify required artifacts before replacing app dir.
             TMP_RELEASE_DIR="$(mktemp -d /tmp/roadmap-release.XXXXXX)"
             tar -xzf /tmp/deploy.tar.gz -C "$TMP_RELEASE_DIR"
