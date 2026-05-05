@@ -92,6 +92,8 @@ jobs:
           envs: DEEPSEEK_API_KEY,SUPADATA_API_KEY,SONIOX_API_KEY,GOOGLE_TTS_API_KEY,DATABASE_URL
           script: |
             set -euo pipefail
+            APP_DIR="${APP_DIR:-/var/www/marcus-app/roadmap-english}"
+            PM2_APP_NAME="${PM2_APP_NAME:-roadmap-english}"
 
             for var in DEEPSEEK_API_KEY SUPADATA_API_KEY SONIOX_API_KEY GOOGLE_TTS_API_KEY DATABASE_URL; do
               if [ -z "$(printenv "$var")" ]; then
