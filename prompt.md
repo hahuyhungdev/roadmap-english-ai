@@ -284,23 +284,21 @@ For every question, use:
 **Version 1 (Clear B2):**
 [Answer]
 
-**Version 2 (Real situation):**
-[Answer]
-
-**Version 3 (2026 context):**
+**Version 2 (Expanded natural answer):**
 [Answer]
 ```
 
 Version rules:
 
-- Each question has exactly 3 answer versions.
-- The 3 versions must use different ideas or angles.
-- Version 1: simple, clear B2.
-- Version 2: realistic personal/work situation.
-- Version 3: recent or 2026-aware context where relevant.
+- Each question has exactly 2 answer versions.
+- The 2 versions must express different depth or angles, not the same idea with different length.
+- Version 1: clear B2 plus. It should be compact, speakable, and complete, with a clear point and useful logic. It should not sound childish, flat, or like a vocabulary exercise.
+- Version 2: expanded natural answer. It should sound like a real person explaining the idea in recent work or life context, with one practical example, trade-off, limitation, or current-context angle where useful.
+- Use recent or 2026-aware context only when it naturally improves the answer. Do not force it into every question.
 - Do not default to interview framing.
-- Answers should be 4-8 sentences.
-- Use short paragraphs if an answer has two ideas.
+- Version 1 should usually be 4-6 sentences.
+- Version 2 should usually be 7-10 sentences and may use two short paragraphs.
+- Use short paragraphs if an answer has two connected ideas.
 - Include trade-offs naturally where useful.
 - Avoid repeating the same sentence pattern across many answers.
 
@@ -347,11 +345,11 @@ Before finishing, verify:
 - Lesson file has `level: B2` and `**Level:** B2`.
 - Section 7 has exactly 13 questions.
 - Answer guide has exactly 13 question headings.
-- Answer guide has exactly 39 version headings.
+- Answer guide has exactly 26 version headings.
 - Answer guide has 13 `Common ideas`, 13 `Useful language`, and 13 `Pattern to apply`.
 - Question texts match between session and answer guide.
 - No duplicate questions in the same phase.
-- No `Version 3 (Interview)` unless explicitly requested.
+- No `Version 3` unless explicitly requested for a special format.
 - No `B1-B2` in newly refined sessions.
 - No old vocabulary format like `  _Example 1:_`; examples must be nested bullets.
 - `git diff --check` passes.
@@ -361,7 +359,7 @@ Useful local checks:
 ```bash
 git diff --check -- content/session-XX.md content/answer-guides/sX.md
 rg -n "^  _Example [0-9]+:_" content/session-*.md
-rg -n "Version 3 \\(Interview\\)|B1-B2|non-tech|non-technical" content/session-XX.md content/answer-guides/sX.md
+rg -n "Version 3|B1-B2|non-tech|non-technical" content/session-XX.md content/answer-guides/sX.md
 ```
 
 ## Tone Summary
