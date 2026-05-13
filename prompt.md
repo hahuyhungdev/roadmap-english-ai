@@ -16,7 +16,7 @@ Your job is to create practical B2 lesson content and answer guides that sound l
 
 - Phase 1: Tech and business communication.
 - Phase 2: Analytical thinking in IT.
-- Phase 3: Modern society topics for engineers.
+- Phase 3: People, life, and real conversations.
 - Phase 4: Behavioral and career topics.
 - Phase 5: Mock interviews and performance practice.
 
@@ -228,6 +228,143 @@ Questions should be the most common and useful speaking prompts, not a full exha
 
 Do not include a Debate Prompt in Phase 1-2 lessons by default. Use `Context Flows` instead.
 
+## Phase 3 Lesson Style - People, Life & Real Conversations
+
+Phase 3 is NOT workplace strategy training, interview preparation, psychology coaching, corporate communication practice, or debate-club speaking.
+
+Phase 3 IS modern adult conversation training: social and emotional fluency, nuanced opinion building, calm natural discussion, and real-life communication for modern adults.
+
+Phase 3 lessons should train the learner to:
+
+- speak naturally outside work topics
+- express opinions with nuance
+- discuss relationships and modern life comfortably
+- build longer connected answers
+- sound thoughtful without sounding dramatic
+- handle emotionally complex topics calmly
+
+### Phase 3 Preferred Lesson Structure
+
+Use this structure for Phase 3 lessons:
+
+```md
+<details open>
+<summary><strong>1) Vocabulary</strong></summary>
+
+[Reusable real-life communication blocks]
+
+</details>
+
+<details open>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
+
+[Natural opinion, nuance, and reflection patterns]
+
+</details>
+
+<details open>
+<summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
+
+[Spoken chunks for deeper real conversations]
+
+</details>
+
+<details open>
+<summary><strong>4) Dialogues</strong></summary>
+
+[3-4 realistic dialogues with friends, couples, siblings, parents, coworkers, or online/offline situations]
+
+</details>
+
+<details open>
+<summary><strong>5) Context Flows</strong></summary>
+
+[4-6 connected adult conversation flows]
+
+</details>
+
+<details open>
+<summary><strong>6) Reading Text</strong></summary>
+
+[3-5 short reflective readings plus pattern absorption]
+
+</details>
+
+<details open>
+<summary><strong>7) Questions & Practice Ideas</strong></summary>
+
+[10 natural discussion questions]
+
+</details>
+```
+
+### Phase 3 Vocabulary Rules
+
+Vocabulary should focus on high-frequency real-life discussion language, emotional nuance, boundaries and expectations, relationships and communication, modern lifestyle trade-offs, social behavior and connection, identity, and self-expression.
+
+Avoid corporate jargon, therapy terminology, abstract sociology vocabulary, and overly technical language.
+
+Each main vocabulary item should function as a reusable communication block. Include pronunciation, meaning, function, collocations, chunks, patterns, compact examples, expansion paths, short context flows, and native upgrades when useful.
+
+Examples must be compact, spoken, and varied by idea direction. Avoid repetitive examples that all point to the same meaning.
+
+### Phase 3 Context Flow Rules
+
+Context Flows are the highest-value section in Phase 3.
+
+They should teach connected speaking, simulate real conversations, and combine emotional nuance with modern life discussion. Good flows should sound like podcast discussions, thoughtful adult conversations, calm personal reflections, or modern social discussions.
+
+Do not make flows sound like textbook examples, motivational writing, therapy sessions, or formal speeches.
+
+Each flow should:
+
+- contain 2-4 connected sentences
+- focus on one tension or discussion angle
+- feel natural when spoken aloud
+- avoid repetitive structures
+
+Useful tensions include connection vs isolation, freedom vs stability, kindness vs boundaries, ambition vs peace, online vs real identity, independence vs family expectations, health awareness vs obsession, and convenience vs depth.
+
+### Phase 3 Reading Format
+
+Use 3-5 short reflective readings about modern life, relationship dynamics, social behavior, communication quality, online culture, adulthood transitions, and emotional boundaries.
+
+Tone should be reflective but grounded, emotionally intelligent, discussion-friendly, and easy to read aloud naturally.
+
+End the reading section with `Useful Patterns Noticed` and one `Reusable discussion idea`.
+
+### Phase 3 Questions Format
+
+Use exactly 10 questions for Phase 3 lessons as one simple numbered list. Do not split them into `Core Questions`, `High-Value Discussion Questions`, `Debate Questions`, or `Reflection Questions`.
+
+Questions should flow naturally across personal experience, modern social behavior, trade-offs, nuanced opinions, assumptions, and future thinking. They should feel natural, discussion-friendly, podcast-like, and realistic for modern adults.
+
+Avoid yes/no questions, academic debate framing, overly emotional questions, and therapy-style prompts.
+
+### Phase 3 Answer Guide Rules
+
+Keep `Common ideas`, `Useful language`, `Pattern to apply`, `Version 1`, and `Version 2`.
+
+Version 1 is a compact, natural, speakable, calm B2 answer.
+
+Version 2 is a deeper reflection with nuance, tension, trade-off, modern context, or emotionally intelligent but grounded reasoning.
+
+Answers should sound like real conversations, podcast discussions, or thoughtful adult reflections. They should not sound like essays, motivational speeches, therapy sessions, or corporate communication.
+
+Good style: "I think the hard part is not that people do not care. Adult life just makes connection less automatic."
+
+Bad style: "This issue reflects broader societal dynamics in modern environments."
+
+### Official Phase 3 Session Plan
+
+12. Connection, Loneliness & Life Online
+13. Friendship in Adulthood - Why It Gets Harder
+14. Boundaries, Saying No & People-Pleasing
+15. Dating, Commitment & Modern Relationships
+16. Family Dynamics & Generational Differences
+17. Self-Care, Discipline & Modern Health Culture
+18. Final: Conversations That Actually Matter
+
 ## Vocabulary Format
 
 Use a render-safe markdown format. Do not rely on trailing spaces for line breaks.
@@ -312,6 +449,8 @@ The debate prompt must include:
 
 The arguments should sound like a real class discussion, not theory.
 
+Do not include a Debate Prompt in Phase 1-2 or Phase 3 unless the user explicitly asks for it.
+
 ## Reading Text
 
 Write 2-3 short paragraphs.
@@ -343,6 +482,8 @@ For Phase 1-2 lessons, use exactly 10 questions as one simple numbered list:
 ```
 
 Do not add category headings such as `Core Questions`, `High-Value Discussion Questions`, `Follow-up Questions`, or `Reflection Questions` for Phase 1-2.
+
+For Phase 3 lessons, use exactly 10 questions as one simple numbered list. Do not add category headings.
 
 For other lessons, use exactly 13 questions unless a phase-specific rule says otherwise:
 
@@ -388,7 +529,7 @@ Use this file:
 
 `content/answer-guides/sX.md`
 
-Each answer guide must match the exact 13 questions from the session file.
+Each answer guide must match the exact questions from the session file. Phase 1-2 and Phase 3 answer guides use 10 questions. Other phases use 13 questions unless a phase-specific rule says otherwise.
 
 For every question, use:
 
@@ -410,8 +551,8 @@ Version rules:
 
 - Each question has exactly 2 answer versions.
 - The 2 versions must express different depth or angles, not the same idea with different length.
-- Version 1: compact professional B2 answer.
-- Version 2: expanded reflective answer with trade-off, context, or nuance.
+- Version 1: compact B2 answer. For Phase 1-2, keep it professional. For Phase 3, keep it natural, calm, and conversational.
+- Version 2: expanded reflective answer with trade-off, context, or nuance. For Phase 3, make it deeper and more human without sounding like therapy or an essay.
 - The two versions should differ in depth, framing, reasoning style, and communication approach, not only in length.
 - Use recent or 2026-aware context only when it naturally improves the answer. Do not force it into every question.
 - Do not default to interview framing.
@@ -448,37 +589,15 @@ Good answer patterns:
 - old habit -> new habit -> result
 - short-term benefit -> long-term risk -> balanced position
 
-## Phase 3 Specific Standard
-
-Phase 3 topics should feel current, human, and practical.
-
-Use realistic 2026 context when relevant:
-
-- AI-speed pressure.
-- Always-on chat and remote tools.
-- Layoff or market uncertainty.
-- AI-generated profiles and portfolios.
-- Hybrid/remote trust problems.
-- Digital distraction and feeds.
-- Cloud and AI compute sustainability.
-
-Be careful with sensitive topics:
-
-- Do not sound like medical, legal, or HR advice.
-- Keep mental health language practical and non-diagnostic.
-- For bullying/exclusion, prioritize safety, documentation, power imbalance, and escalation boundaries.
-- For family pressure, keep respect and autonomy together.
-- For identity/branding, focus on credibility, proof, and honest scope.
-
 ## Final Quality Check
 
 Before finishing, verify:
 
 - Lesson file has `level: B2` and `**Level:** B2`.
-- Phase 1-2 Section 7 has exactly 10 questions; other lessons have exactly 13 unless a phase-specific rule says otherwise.
-- Phase 1-2 answer guides have exactly 10 question headings; other answer guides have exactly 13 unless a phase-specific rule says otherwise.
-- Phase 1-2 answer guides have exactly 20 version headings; other answer guides have exactly 26 unless a phase-specific rule says otherwise.
-- Phase 1-2 answer guides have 10 `Common ideas`, 10 `Useful language`, and 10 `Pattern to apply`; other answer guides have 13 of each unless a phase-specific rule says otherwise.
+- Phase 1-2 and Phase 3 Section 7 has exactly 10 questions; other lessons have exactly 13 unless a phase-specific rule says otherwise.
+- Phase 1-2 and Phase 3 answer guides have exactly 10 question headings; other answer guides have exactly 13 unless a phase-specific rule says otherwise.
+- Phase 1-2 and Phase 3 answer guides have exactly 20 version headings; other answer guides have exactly 26 unless a phase-specific rule says otherwise.
+- Phase 1-2 and Phase 3 answer guides have 10 `Common ideas`, 10 `Useful language`, and 10 `Pattern to apply`; other answer guides have 13 of each unless a phase-specific rule says otherwise.
 - Question texts match between session and answer guide.
 - No duplicate questions in the same phase.
 - No `Version 3` unless explicitly requested for a special format.
