@@ -1,9 +1,23 @@
 import type { NextConfig } from "next";
+import os from "node:os";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const projectRoot = path.dirname(fileURLToPath(import.meta.url));
+
+const localIPs = Object.values(os.networkInterfaces())
+  .flat()
+  .filter((iface) => iface && iface.family === "IPv4" && !iface.internal)
+  .map((iface) => iface!.address);
 
 const nextConfig: NextConfig = {
   // Content markdown files are in /content at project root
   reactCompiler: true,
   output: "standalone",
+  allowedDevOrigins: localIPs,
+  turbopack: {
+    root: projectRoot,
+  },
   async redirects() {
     return [
       {
