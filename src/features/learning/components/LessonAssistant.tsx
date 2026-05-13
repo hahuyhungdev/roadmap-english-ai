@@ -1,6 +1,14 @@
 "use client";
 
-import { Loader2, Send, Sparkles, X, Zap } from "lucide-react";
+import {
+  Loader2,
+  PanelRightClose,
+  PanelRightOpen,
+  Send,
+  Sparkles,
+  X,
+  Zap,
+} from "lucide-react";
 import {
   useState,
   useRef,
@@ -19,6 +27,9 @@ interface LessonAssistantProps {
   contextTitle?: string;
   contextContent?: string;
   contextType?: "lesson" | "phase";
+  desktopPresentation?: "sidebar" | "floating";
+  onCollapseSidebar?: () => void;
+  onRestoreSidebar?: () => void;
 }
 
 const MODE_LABELS: Record<string, string> = {
@@ -39,6 +50,9 @@ export default function LessonAssistant({
   contextTitle,
   contextContent,
   contextType = "lesson",
+  desktopPresentation = "sidebar",
+  onCollapseSidebar,
+  onRestoreSidebar,
 }: LessonAssistantProps) {
   const title = contextTitle ?? lessonTitle ?? "";
   const content = contextContent ?? lessonContent ?? "";
@@ -199,6 +213,16 @@ export default function LessonAssistant({
 
   const assistantSubtitle = title.length > 42 ? `${title.slice(0, 42)}…` : title;
 
+  function handleCollapseSidebar() {
+    setIsOpen(false);
+    onCollapseSidebar?.();
+  }
+
+  function handleRestoreSidebar() {
+    onRestoreSidebar?.();
+    setIsOpen(true);
+  }
+
   function renderClosedCard() {
     return (
       <div className="rounded-3xl border border-gray-200 bg-white/90 shadow-sm p-4 theme-dark:bg-slate-900/80 theme-dark:border-slate-700">
@@ -221,6 +245,14 @@ export default function LessonAssistant({
         >
           Open assistant
         </button>
+        {onCollapseSidebar && (
+          <button
+            onClick={handleCollapseSidebar}
+            className="mt-2 w-full rounded-2xl border border-gray-200 px-4 py-2.5 text-base font-semibold text-gray-600 hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50/60 active:scale-[0.99] transition-all theme-dark:border-slate-700"
+          >
+            Collapse sidebar
+          </button>
+        )}
       </div>
     );
   }
@@ -238,7 +270,7 @@ export default function LessonAssistant({
     );
   }
 
-  function renderPanel(className: string) {
+  function renderPanel(className: string, onClose: () => void) {
     return (
       <section className={className}>
         {/* Header */}
@@ -256,13 +288,34 @@ export default function LessonAssistant({
               </p>
             </div>
           </div>
-          <button
-            onClick={() => setIsOpen(false)}
-            className="w-7 h-7 flex items-center justify-center rounded-full text-gray-500 hover:text-gray-600 hover:bg-gray-100 transition-colors shrink-0"
-            aria-label="Close assistant"
-          >
-            <X size={14} />
-          </button>
+          <div className="flex items-center gap-1 shrink-0">
+            {desktopPresentation === "floating" && onRestoreSidebar && (
+              <button
+                onClick={handleRestoreSidebar}
+                className="hidden xl:inline-flex items-center gap-1 rounded-full border border-gray-200 px-2.5 py-1 text-base font-medium text-gray-500 hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50/60 transition-colors theme-dark:border-slate-700"
+              >
+                <PanelRightOpen size={13} />
+                Dock
+              </button>
+            )}
+            {desktopPresentation === "sidebar" && onCollapseSidebar && (
+              <button
+                onClick={handleCollapseSidebar}
+                className="hidden xl:flex w-7 h-7 items-center justify-center rounded-full text-gray-500 hover:text-indigo-600 hover:bg-indigo-50 transition-colors"
+                aria-label="Collapse assistant sidebar"
+                title="Collapse sidebar"
+              >
+                <PanelRightClose size={14} />
+              </button>
+            )}
+            <button
+              onClick={onClose}
+              className="w-7 h-7 flex items-center justify-center rounded-full text-gray-500 hover:text-gray-600 hover:bg-gray-100 transition-colors"
+              aria-label="Close assistant"
+            >
+              <X size={14} />
+            </button>
+          </div>
         </div>
 
         {/* Mode selector */}
@@ -434,13 +487,25 @@ export default function LessonAssistant({
 
   return (
     <>
-      <div className="hidden xl:block sticky top-4 self-start">
-        {isOpen
-          ? renderPanel(
+      {desktopPresentation === "sidebar" ? (
+        <div className="hidden xl:block sticky top-4 self-start">
+          {isOpen
+            ? renderPanel(
               "h-[calc(100vh-2rem)] max-h-[48rem] min-h-[34rem] border border-gray-200 rounded-3xl shadow-xl shadow-gray-200/60 flex flex-col overflow-hidden bg-white theme-dark:bg-slate-900 theme-dark:border-slate-700",
+              () => setIsOpen(false),
             )
-          : renderClosedCard()}
-      </div>
+            : renderClosedCard()}
+        </div>
+      ) : (
+        <div className="hidden xl:block">
+          {!isOpen
+            ? renderFloatingButton()
+            : renderPanel(
+                "fixed bottom-5 right-5 z-50 h-[min(82vh,42rem)] w-[24rem] border border-gray-200 rounded-3xl shadow-2xl shadow-gray-950/20 flex flex-col overflow-hidden bg-white theme-dark:bg-slate-900 theme-dark:border-slate-700",
+                () => setIsOpen(false),
+              )}
+        </div>
+      )}
 
       <div className="xl:hidden">
         {!isOpen ? (
@@ -455,6 +520,7 @@ export default function LessonAssistant({
             />
             {renderPanel(
               "fixed inset-x-3 bottom-3 z-50 h-[min(82vh,38rem)] border border-gray-200 rounded-3xl shadow-2xl shadow-gray-950/25 flex flex-col overflow-hidden bg-white theme-dark:bg-slate-900 theme-dark:border-slate-700",
+              () => setIsOpen(false),
             )}
           </>
         )}

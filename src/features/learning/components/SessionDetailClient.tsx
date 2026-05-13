@@ -15,6 +15,7 @@ import PracticeCoach from "./PracticeCoach";
 import AnswerGuideInline, { type AnswerGuideItem } from "./AnswerGuideInline";
 
 const ANSWER_GUIDE_SLOT = "\n\n[[ANSWER_GUIDE_SLOT]]\n\n";
+const ASSISTANT_SIDEBAR_VISIBLE_KEY = "ai-assistant-sidebar-visible";
 
 function extractJsonAnswerGuides(content: string): AnswerGuideItem[] {
   const match = content.match(/<!--\s*answerGuidance\s*([\s\S]*?)-->/i);
@@ -79,6 +80,7 @@ export default function SessionDetailClient({
 }) {
   const { completedSessions, toggleCompleted, syncFromDB } = useProgressStore();
   const [mounted, setMounted] = useState(false);
+  const [assistantSidebarVisible, setAssistantSidebarVisible] = useState(true);
   const answerGuides = useMemo(
     () => extractAnswerGuides(session.content),
     [session.content],
@@ -109,12 +111,45 @@ export default function SessionDetailClient({
     void syncFromDB();
   }, [syncFromDB]);
 
+  useEffect(() => {
+    try {
+      setAssistantSidebarVisible(
+        window.localStorage.getItem(ASSISTANT_SIDEBAR_VISIBLE_KEY) !== "0",
+      );
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  function updateAssistantSidebarVisible(next: boolean) {
+    setAssistantSidebarVisible(next);
+    try {
+      window.localStorage.setItem(
+        ASSISTANT_SIDEBAR_VISIBLE_KEY,
+        next ? "1" : "0",
+      );
+    } catch {
+      // ignore
+    }
+  }
+
   const completed = mounted && completedSessions.includes(session.id);
 
   return (
     <div className="max-w-[90rem] mx-auto overflow-x-hidden">
-      <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_24rem] gap-5 xl:gap-6 items-start">
-        <div className="min-w-0 max-w-6xl">
+      <div
+        className={clsx(
+          "grid grid-cols-1 gap-5 xl:gap-6 items-start",
+          assistantSidebarVisible &&
+            "xl:grid-cols-[minmax(0,1fr)_24rem]",
+        )}
+      >
+        <div
+          className={clsx(
+            "min-w-0 max-w-6xl",
+            !assistantSidebarVisible && "w-full mx-auto",
+          )}
+        >
       <div className="flex items-center justify-between mb-6">
         <Link
           href={`/phase/${phase.id}`}
@@ -243,6 +278,9 @@ export default function SessionDetailClient({
         <LessonAssistant
           lessonTitle={session.meta.title}
           lessonContent={baseLessonContent}
+          desktopPresentation={assistantSidebarVisible ? "sidebar" : "floating"}
+          onCollapseSidebar={() => updateAssistantSidebarVisible(false)}
+          onRestoreSidebar={() => updateAssistantSidebarVisible(true)}
         />
       </div>
     </div>

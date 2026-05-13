@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
@@ -16,9 +16,12 @@ import type { PhraseGroup } from "@/lib/sessions.server";
 import PhaseNotesReview from "./PhaseNotesReview";
 import LessonAssistant from "./LessonAssistant";
 
+const ASSISTANT_SIDEBAR_VISIBLE_KEY = "ai-assistant-sidebar-visible";
+
 export default function PhraseDetailClient({ phase }: { phase: PhraseGroup }) {
   const router = useRouter();
   const { completedSessions, toggleCompleted } = useProgressStore();
+  const [assistantSidebarVisible, setAssistantSidebarVisible] = useState(true);
 
   const total = phase.sessions.length;
   const done = phase.sessions.filter((s) =>
@@ -50,10 +53,43 @@ export default function PhraseDetailClient({ phase }: { phase: PhraseGroup }) {
     ].join("\n");
   }, [phase.id, phase.sessions, phase.title, total]);
 
+  useEffect(() => {
+    try {
+      setAssistantSidebarVisible(
+        window.localStorage.getItem(ASSISTANT_SIDEBAR_VISIBLE_KEY) !== "0",
+      );
+    } catch {
+      // ignore
+    }
+  }, []);
+
+  function updateAssistantSidebarVisible(next: boolean) {
+    setAssistantSidebarVisible(next);
+    try {
+      window.localStorage.setItem(
+        ASSISTANT_SIDEBAR_VISIBLE_KEY,
+        next ? "1" : "0",
+      );
+    } catch {
+      // ignore
+    }
+  }
+
   return (
     <div className="max-w-[84rem] mx-auto">
-      <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_24rem] gap-5 xl:gap-6 items-start">
-        <div className="min-w-0 max-w-4xl">
+      <div
+        className={clsx(
+          "grid grid-cols-1 gap-5 xl:gap-6 items-start",
+          assistantSidebarVisible &&
+            "xl:grid-cols-[minmax(0,1fr)_24rem]",
+        )}
+      >
+        <div
+          className={clsx(
+            "min-w-0 max-w-4xl",
+            !assistantSidebarVisible && "w-full mx-auto",
+          )}
+        >
       <div className="mb-5">
         <Link
           href="/"
@@ -183,6 +219,9 @@ export default function PhraseDetailClient({ phase }: { phase: PhraseGroup }) {
           contextType="phase"
           contextTitle={phase.title}
           contextContent={phaseAssistantContent}
+          desktopPresentation={assistantSidebarVisible ? "sidebar" : "floating"}
+          onCollapseSidebar={() => updateAssistantSidebarVisible(false)}
+          onRestoreSidebar={() => updateAssistantSidebarVisible(true)}
         />
       </div>
     </div>
