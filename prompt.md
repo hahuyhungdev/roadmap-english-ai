@@ -363,7 +363,7 @@ Bad style: "This issue reflects broader societal dynamics in modern environments
 15. Dating, Commitment & Modern Relationships
 16. Family Dynamics & Generational Differences
 17. Self-Care, Discipline & Modern Health Culture
-18. Final: Conversations That Actually Matter
+18. Success, Money & Choosing Your Own Path
 
 ## Vocabulary Format
 
