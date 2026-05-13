@@ -187,7 +187,7 @@ jobs:
               sleep 2
             done
 
-            new_phase_code=$(curl -sS -o /tmp/roadmap-phase.out -w "%{http_code}" "http://127.0.0.1:3000/phase/phase-3-the-strategic-psychological-engine")
+            new_phase_code=$(curl -sS -o /tmp/roadmap-phase.out -w "%{http_code}" "http://127.0.0.1:3000/phase/phase-3-people-life-real-conversations")
             if [ "$new_phase_code" != "200" ]; then
               echo "Phase route check failed: HTTP $new_phase_code"
               head -c 500 /tmp/roadmap-phase.out || true
