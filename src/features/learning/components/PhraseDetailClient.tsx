@@ -51,7 +51,9 @@ export default function PhraseDetailClient({ phase }: { phase: PhraseGroup }) {
   }, [phase.id, phase.sessions, phase.title, total]);
 
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-[84rem] mx-auto">
+      <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_24rem] gap-5 xl:gap-6 items-start">
+        <div className="min-w-0 max-w-4xl">
       <div className="mb-5">
         <Link
           href="/"
@@ -176,11 +178,13 @@ export default function PhraseDetailClient({ phase }: { phase: PhraseGroup }) {
         })}
       </div>
 
-      <LessonAssistant
-        contextType="phase"
-        contextTitle={phase.title}
-        contextContent={phaseAssistantContent}
-      />
+        </div>
+        <LessonAssistant
+          contextType="phase"
+          contextTitle={phase.title}
+          contextContent={phaseAssistantContent}
+        />
+      </div>
     </div>
   );
 }

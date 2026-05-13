@@ -112,7 +112,9 @@ export default function SessionDetailClient({
   const completed = mounted && completedSessions.includes(session.id);
 
   return (
-    <div className="max-w-6xl mx-auto overflow-x-hidden h-[calc(100vh-4rem)]">
+    <div className="max-w-[90rem] mx-auto overflow-x-hidden">
+      <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_24rem] gap-5 xl:gap-6 items-start">
+        <div className="min-w-0 max-w-6xl">
       <div className="flex items-center justify-between mb-6">
         <Link
           href={`/phase/${phase.id}`}
@@ -233,14 +235,16 @@ export default function SessionDetailClient({
         ))}
       </article>
 
-      <LessonAssistant
-        lessonTitle={session.meta.title}
-        lessonContent={baseLessonContent}
-      />
       <PracticeCoach
         lessonTitle={session.meta.title}
         lessonContent={baseLessonContent}
       />
+        </div>
+        <LessonAssistant
+          lessonTitle={session.meta.title}
+          lessonContent={baseLessonContent}
+        />
+      </div>
     </div>
   );
 }
