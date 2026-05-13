@@ -15,429 +15,676 @@ description: Explain how you scale systems with limited budget, strict deadlines
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-## 🔍 bottleneck
+## Core Vocabulary - High Reuse
 
-> **Pronunciation:** /ˈbɑːtəlˌnɛk/ — American English accent
-> **Part of Speech:** noun
+### constraint
 
-**Definition:**
-The slowest part of a system that limits overall performance.
+**Used for**
+- explaining limits around money, time, people, or architecture
+- making a decision sound realistic
+- showing why the ideal solution was not possible
 
-**Example Sentences:**
+**Collocations**
+- budget constraint
+- timeline constraint
+- team capacity constraint
+- work within constraints
 
-- Our main bottleneck was the database write queue.
-- We removed one API bottleneck by adding caching for repeated requests.
-- Traffic got worse at night because one hidden bottleneck was never fixed.
+**Chunks**
+- We had to work within a strict budget constraint.
+- The main constraint was not technology; it was timeline.
+- Under that constraint, we chose a smaller but safer option.
 
-**Relationships:**
+**Strong Example**
+> We had a strict timeline constraint, so we focused on the checkout flow instead of redesigning the whole system.
 
-- **Synonyms:** weak point, limiting factor
-- **Antonyms:** throughput boost, performance gain
+**Expansion**
+> Constraints helped us prioritize. We could not solve every performance issue, so we protected the highest-risk user journey first.
 
-**Usage Notes:**
+**Context Flow**
+> The main constraint was time. We had two weeks before the campaign, so we focused on the hot path, prepared a fallback, and postponed deeper architecture work.
 
-- **Collocations:** identify bottlenecks, remove a bottleneck, bottleneck analysis
-- **Register:** Neutral, Technical
+### bottleneck
 
-## 🔍 throughput
+**Used for**
+- identifying the slowest or weakest part of a system
+- explaining why performance gets worse under traffic
+- connecting technical pain to user impact
 
-> **Pronunciation:** /ˈθruːˌpʊt/ — American English accent
-> **Part of Speech:** noun
+**Collocations**
+- identify a bottleneck
+- remove a bottleneck
+- database bottleneck
+- frontend bottleneck
 
-**Definition:**
-The amount of work a system can process in a period of time.
+**Chunks**
+- The first bottleneck appeared in...
+- At low traffic, it looked fine, but at scale...
+- The bottleneck was not obvious until traffic increased.
 
-**Example Sentences:**
+**Strong Example**
+> The main bottleneck was the product search API because it handled too many repeated requests during peak traffic.
 
-- We doubled throughput after moving image processing to a queue.
-- Checkout throughput dropped during the campaign launch.
-- Better laptop specs improved my local test throughput.
+**Expansion**
+> Once we understood the bottleneck, the solution became more focused. We did not need a full rewrite; we needed to reduce unnecessary load on one critical flow.
 
-**Relationships:**
+**Context Flow**
+> The first bottleneck was product search. At normal traffic, it felt acceptable, but during the campaign latency increased quickly. We added caching and reduced repeated calls before considering bigger architecture changes.
 
-- **Synonyms:** processing rate, output rate
-- **Antonyms:** slowdown, low capacity
+### capacity
 
-**Usage Notes:**
+**Used for**
+- talking about system limits
+- discussing team bandwidth
+- explaining what the system or team can realistically handle
 
-- **Collocations:** increase throughput, throughput limit, peak throughput
-- **Register:** Technical
+**Collocations**
+- system capacity
+- team capacity
+- increase capacity
+- capacity limit
 
-## 🔍 latency budget
+**Chunks**
+- Our current capacity was enough for normal traffic, but not for peak events.
+- We had limited team capacity, so we avoided a high-maintenance solution.
+- The system reached its capacity limit during the launch window.
 
-> **Pronunciation:** /ˈleɪtənsi ˈbʌdʒət/ — American English accent
-> **Part of Speech:** noun phrase
+**Strong Example**
+> We had enough system capacity for daily traffic, but not enough for the expected campaign spike.
 
-**Definition:**
-The maximum response time you allow for each part of a request flow.
+**Expansion**
+> Capacity is not only technical. A solution can improve performance but still be unrealistic if the team does not have enough capacity to maintain it.
 
-**Example Sentences:**
+**Context Flow**
+> We looked at both system capacity and team capacity. The system needed more headroom, but the team was small, so we chose a simple phased rollout instead of a complex redesign.
 
-- We set a latency budget of 300 ms for product search.
-- The frontend team used a latency budget to decide which calls to preload.
-- My internet plan changed, so my personal latency budget for calls became tighter.
+### reliability
 
-**Relationships:**
+**Used for**
+- explaining stability under real user traffic
+- justifying extra cost or slower rollout
+- discussing trust, uptime, and critical flows
 
-- **Synonyms:** response target, timing limit
-- **Antonyms:** unlimited wait time, no SLA target
+**Collocations**
+- improve reliability
+- protect reliability
+- reliability risk
+- reliability target
 
-**Usage Notes:**
+**Chunks**
+- Reliability mattered more than feature completeness for this release.
+- We accepted higher cost to protect reliability during the campaign.
+- The goal was not perfect performance; it was reliable service under peak load.
 
-- **Collocations:** define latency budget, exceed latency budget, allocate latency budget
-- **Register:** Professional, Technical
+**Strong Example**
+> We accepted a temporary increase in cloud cost because checkout reliability was more important during the sales campaign.
 
-## 🔍 capacity planning
+**Expansion**
+> Reliability decisions are business decisions too. If a payment flow fails, the cost is not only technical; it affects revenue, support, and user trust.
 
-> **Pronunciation:** /kəˈpæsəti ˈplænɪŋ/ — American English accent
-> **Part of Speech:** noun phrase
+**Context Flow**
+> Reliability was the priority because the campaign depended on checkout. We spent more on capacity for one week, then planned a cost review after the traffic peak.
 
-**Definition:**
-Estimating future load and preparing resources before demand spikes.
+### trade-off
 
-**Example Sentences:**
+**Used for**
+- showing mature decision-making
+- explaining why a solution has both benefits and costs
+- discussing cost, speed, quality, and risk
 
-- Capacity planning helped us avoid downtime on Black Friday.
-- We reviewed capacity planning with PM and infra every sprint.
-- I use simple capacity planning for weekly study goals too.
+**Collocations**
+- accept a trade-off
+- explain the trade-off
+- cost-performance trade-off
+- speed-reliability trade-off
 
-**Relationships:**
+**Chunks**
+- The trade-off was...
+- We accepted that trade-off because...
+- The short-term trade-off was worth it because...
 
-- **Synonyms:** load planning, resource planning
-- **Antonyms:** reactive scaling, last-minute fixes
+**Strong Example**
+> The trade-off was higher cloud cost for two weeks, but it reduced the risk of checkout downtime.
 
-**Usage Notes:**
+**Expansion**
+> Strong scaling answers usually include one trade-off. It shows you understand the decision, not only the technology.
 
-- **Collocations:** do capacity planning, capacity forecast, capacity gap
-- **Register:** Professional
+**Context Flow**
+> We could lower cost or lower latency, but doing both was not realistic after the easy optimizations. The trade-off had to be discussed with product and leadership.
 
-## 🔍 cost ceiling
+### fallback
 
-> **Pronunciation:** /kɔːst ˈsiːlɪŋ/ — American English accent
-> **Part of Speech:** noun phrase
+**Used for**
+- describing backup behavior when the main system is under pressure
+- reducing risk before a launch
+- explaining graceful degradation
 
-**Definition:**
-The highest amount of money the team can spend for a solution.
+**Collocations**
+- prepare a fallback
+- trigger a fallback
+- fallback behavior
+- fallback plan
 
-**Example Sentences:**
+**Chunks**
+- If the service became unstable, we could fall back to...
+- The fallback protected the core user action.
+- We defined the fallback before the launch, not during the incident.
 
-- We had a strict cost ceiling for cloud usage this quarter.
-- The team chose a cheaper storage option because of the cost ceiling.
-- At home, my travel plan also had a cost ceiling.
+**Strong Example**
+> If recommendations timed out, we fell back to a static product list so users could still continue shopping.
 
-**Relationships:**
+**Expansion**
+> A good fallback is not a random backup. It protects the most important user action while reducing pressure on non-critical features.
 
-- **Synonyms:** budget cap, spending limit
-- **Antonyms:** open budget, unlimited spending
+**Context Flow**
+> Before the campaign, we prepared a fallback for recommendations. If the ranking service slowed down, users still saw a static list, and checkout stayed available.
 
-**Usage Notes:**
+### rollout
 
-- **Collocations:** set a cost ceiling, stay under the ceiling, ceiling constraint
-- **Register:** Neutral, Business
+**Used for**
+- explaining staged release decisions
+- reducing blast radius
+- showing how the team learns from real traffic
 
-## 🔍 phased rollout
+**Collocations**
+- phased rollout
+- gradual rollout
+- rollout stage
+- rollback during rollout
 
-> **Pronunciation:** /feɪzd ˈroʊlˌaʊt/ — American English accent
-> **Part of Speech:** noun phrase
+**Chunks**
+- We started with a small rollout.
+- We slowed down the rollout after error rates increased.
+- A phased rollout gave us room to learn before full launch.
 
-**Definition:**
-Releasing changes in stages instead of launching to all users at once.
+**Strong Example**
+> We used a phased rollout so we could monitor latency, error rate, and cost before exposing the change to all users.
 
-**Example Sentences:**
+**Expansion**
+> Rollout strategy is part of scaling. Even a good technical change can create risk if it reaches all users too quickly.
 
-- We used a phased rollout to reduce scaling risk.
-- A 10 percent rollout let us test real traffic safely.
-- I apply a phased rollout mindset when changing personal routines.
+**Context Flow**
+> We released the change to 10 percent of users first. Latency stayed stable, but cost increased more than expected, so we adjusted the caching strategy before expanding.
 
-**Relationships:**
+### priority
 
-- **Synonyms:** gradual release, staged launch
-- **Antonyms:** big bang release, full launch
+**Used for**
+- explaining what the team chose to protect first
+- aligning technical work with business needs
+- pushing back on unclear goals
 
-**Usage Notes:**
+**Collocations**
+- clear priority
+- top priority
+- business priority
+- prioritize the hot path
 
-- **Collocations:** run a phased rollout, rollout stages, rollback during rollout
-- **Register:** Professional
+**Chunks**
+- The top priority was keeping checkout stable.
+- We prioritized the user flow with the highest business risk.
+- Without a clear priority, the team could not choose the right trade-off.
 
-## 🔍 failure mode
+**Strong Example**
+> Our top priority was checkout stability, so we delayed non-critical performance improvements until after the campaign.
 
-> **Pronunciation:** /ˈfeɪljər moʊd/ — American English accent
-> **Part of Speech:** noun phrase
+**Expansion**
+> Scaling is easier to discuss when the priority is clear. Without priority, every team asks for different things: lower cost, lower latency, faster delivery, and less risk.
 
-**Definition:**
-A specific way a system can break or produce wrong results.
+**Context Flow**
+> Management wanted lower cost and lower latency. We first clarified the priority, then proposed one cost-focused option and one reliability-focused option.
 
-**Example Sentences:**
+### overhead
 
-- One failure mode was cache stampede during peak traffic.
-- We documented each failure mode before scaling the queue workers.
-- In daily life, phone battery drain is one failure mode when maps run all day.
+**Used for**
+- explaining extra maintenance work
+- evaluating whether a solution is realistic for the team
+- discussing long-term cost
 
-**Relationships:**
+**Collocations**
+- operational overhead
+- maintenance overhead
+- reduce overhead
+- overhead cost
 
-- **Synonyms:** break pattern, risk scenario
-- **Antonyms:** stable behavior, normal operation
+**Chunks**
+- The solution improved performance but added too much overhead.
+- For a small team, operational overhead matters a lot.
+- We rejected the design because it would be hard to maintain.
 
-**Usage Notes:**
+**Strong Example**
+> Splitting the service could improve scalability, but the operational overhead was too high for a four-person team.
 
-- **Collocations:** analyze failure modes, failure mode checklist, high-risk failure mode
-- **Register:** Technical
+**Expansion**
+> A solution can be technically strong but still wrong for the team. If nobody can monitor, deploy, and debug it safely, the overhead becomes a real risk.
 
-## 🔍 graceful degradation
+**Context Flow**
+> We considered splitting the service, but the team was small. The overhead would slow us down, so we chose caching, monitoring, and a phased rollout first.
 
-> **Pronunciation:** /ˈɡreɪsfəl ˌdɛɡrəˈdeɪʃən/ — American English accent
-> **Part of Speech:** noun phrase
+### risk
 
-**Definition:**
-Keeping core features working when the system is under stress by reducing non-critical features.
+**Used for**
+- discussing what could go wrong
+- explaining why rollout and fallback matter
+- balancing speed, cost, and reliability
 
-**Example Sentences:**
+**Collocations**
+- reduce risk
+- release risk
+- scaling risk
+- business risk
 
-- Graceful degradation kept checkout running when recommendation service failed.
-- The app hid heavy animations during peak load as graceful degradation.
-- During travel, I use low-data mode as graceful degradation for maps.
+**Chunks**
+- The main risk was...
+- To reduce risk, we...
+- We accepted some risk, but made it visible.
 
-**Relationships:**
+**Strong Example**
+> The main risk was not slow average latency; it was checkout failure during peak traffic.
 
-- **Synonyms:** partial service mode, safe fallback
-- **Antonyms:** full outage, hard failure
+**Expansion**
+> Risk language helps make technical decisions easier for non-technical stakeholders. Instead of saying a system is "bad", explain what could happen and who would be affected.
 
-**Usage Notes:**
+**Context Flow**
+> The risk was clear: if checkout slowed down during the campaign, revenue and support pressure would be affected. That is why we focused on reliability before adding new features.
 
-- **Collocations:** apply graceful degradation, degradation strategy, degrade non-core features
-- **Register:** Professional, Technical
+## High-Value Verbs & Chunks
 
-## 🔍 operational overhead
+### scale up
 
-> **Pronunciation:** /ˌɑːpəˈreɪʃənəl ˌoʊvərˈhɛd/ — American English accent
-> **Part of Speech:** noun phrase
+**Used for:** increasing capacity when demand grows.
 
-**Definition:**
-Extra maintenance work needed to run and support a solution.
+**Chunks**
+- scale up workers
+- scale up capacity
+- scale up gradually
 
-**Example Sentences:**
+**Strong Example**
+> We scaled up workers only during peak traffic windows to control cost.
 
-- The microservice split improved speed but increased operational overhead.
-- We rejected one design because operational overhead was too high for a small team.
-- I avoid tools with heavy overhead for personal note-taking.
+### cut back on
 
-**Relationships:**
+**Used for:** reducing non-critical features, cost, or scope.
 
-- **Synonyms:** maintenance burden, running cost
-- **Antonyms:** low-maintenance setup, lightweight operation
+**Chunks**
+- cut back on heavy features
+- cut back on scope
+- cut back on unnecessary calls
 
-**Usage Notes:**
+**Strong Example**
+> We cut back on non-critical analytics during the campaign to protect the main user flow.
 
-- **Collocations:** reduce operational overhead, overhead cost, overhead trade-off
-- **Register:** Professional
+### fall back to
 
-## 🔍 scaling trade-off
+**Used for:** switching to a safer backup behavior.
 
-> **Pronunciation:** /ˈskeɪlɪŋ ˈtreɪd ɔːf/ — American English accent
-> **Part of Speech:** noun phrase
+**Chunks**
+- fall back to cached data
+- fall back to a static list
+- fall back to manual review
 
-**Definition:**
-A choice where improving one scaling goal creates cost or risk in another area.
+**Strong Example**
+> If the ranking service timed out, we fell back to a static recommendation list.
 
-**Example Sentences:**
+### push back on
 
-- Our scaling trade-off was faster reads versus higher infra cost.
-- I explained the scaling trade-off clearly to PM before implementation.
-- In life, moving closer to work is a trade-off between time and rent.
+**Used for:** challenging unclear or unrealistic requests.
 
-**Relationships:**
+**Chunks**
+- push back on unclear priorities
+- push back on unrealistic timelines
+- push back on hidden cost
 
-- **Synonyms:** cost-benefit choice, performance compromise
-- **Antonyms:** win-win case, no-compromise change
+**Strong Example**
+> I would push back on the goal if leadership asked for lower cost, lower latency, and faster delivery without choosing a priority.
 
-**Usage Notes:**
+### prioritize
 
-- **Collocations:** explain trade-offs, evaluate trade-offs, accept a trade-off
-- **Register:** Neutral, Professional
+**Used for:** choosing what matters first under constraints.
 
-**Additional useful terms:**
+**Chunks**
+- prioritize the hot path
+- prioritize reliability
+- prioritize user impact
 
-**traffic spike** _(noun phrase)_ — sudden large increase in requests.
-Example: We prepared queue workers for a traffic spike after marketing launch.
-Collocations: handle traffic spikes, spike alert
+**Strong Example**
+> We prioritized checkout reliability because that flow had the highest business impact.
 
-**hot path** _(noun phrase)_ — the most frequently used and performance-critical flow.
-Example: Payment submit is the hot path in our checkout.
-Collocations: optimize hot path, hot-path latency
+### monitor
 
-**read replica** _(noun phrase)_ — database copy used for read-heavy traffic.
-Example: We added a read replica to reduce query load on primary DB.
-Collocations: add read replica, replica lag
+**Used for:** watching system behavior during rollout or traffic spikes.
 
-**rate limiting** _(noun phrase)_ — controlling request volume per user or client.
-Example: Rate limiting protected our API during bot traffic.
-Collocations: apply rate limiting, limit threshold
+**Chunks**
+- monitor latency
+- monitor error rate
+- monitor cost
 
-**fallback plan** _(noun phrase)_ — backup behavior when primary plan fails.
-Example: Our fallback plan was static recommendations when ranking timed out.
-Collocations: prepare fallback plan, trigger fallback
+**Strong Example**
+> During rollout, we monitored latency, error rate, throughput, and cloud cost.
+
+### postpone
+
+**Used for:** delaying deeper work while making the risk visible.
+
+**Chunks**
+- postpone the redesign
+- postpone non-critical work
+- postpone architecture changes
+
+**Strong Example**
+> We postponed the service split, but we documented the risk and set a review date.
+
+### protect
+
+**Used for:** keeping a critical flow stable.
+
+**Chunks**
+- protect checkout
+- protect reliability
+- protect the hot path
+
+**Strong Example**
+> The fallback was designed to protect checkout, not to preserve every feature.
+
+## Speaking Expansion Paths
+
+### bottleneck naturally connects to:
+- user impact
+- request volume
+- slow queries
+- repeated API calls
+- caching
+- monitoring
+
+### constraint naturally connects to:
+- budget
+- timeline
+- team capacity
+- scope
+- priority
+- trade-off
+
+### reliability naturally connects to:
+- downtime
+- trust
+- revenue risk
+- support pressure
+- fallback
+- rollout
+
+### trade-off naturally connects to:
+- cost
+- latency
+- delivery speed
+- maintainability
+- risk
+- stakeholder alignment
+
+### rollout naturally connects to:
+- blast radius
+- monitoring
+- rollback
+- feature flags
+- confidence
+- gradual learning
+
+## Secondary Vocabulary - Scaling & Infrastructure
+
+- **throughput** - how much work a system can process in a period of time.
+- **latency budget** - the response-time limit allowed for a request or part of a request.
+- **traffic spike** - a sudden large increase in user traffic or requests.
+- **hot path** - the most important and frequently used flow in a product.
+- **read replica** - a database copy used to handle read-heavy traffic.
+- **rate limiting** - controlling how many requests a user, client, or service can send.
+- **graceful degradation** - keeping core features working while reducing non-critical behavior.
+- **capacity planning** - estimating future load and preparing resources before traffic grows.
+- **rollback** - returning to a previous stable version after a risky release.
+- **saturation** - when a resource is close to its limit, such as CPU, memory, database, or queue capacity.
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Cause and result for system behavior**
-  Because query volume doubled, our API latency increased.
+## Speaking Frames
 
-- **Conditionals for risk planning**
-  If we scale too fast without testing, costs may grow faster than value.
+### Constraint -> Decision -> Trade-off
 
-- **Contrast language for trade-offs**
-  We improved throughput, but operational overhead also increased.
+> Because we had [constraint], we chose [decision]. The trade-off was [cost/risk], but it helped us [benefit].
 
-- **Sequencing for decision flow**
-  First we measured bottlenecks, then we designed options, then we rolled out in phases.
+**Example**
+> Because we had only two weeks before launch, we chose caching and fallback behavior. The trade-off was not solving the full architecture problem, but it helped us reduce release risk.
 
-- **Modal verbs for constraint language**
-  We had to stay under budget, so we could not add more managed services.
+### Bottleneck -> Evidence -> Action
 
-- **Reflection language for interviews**
-  If I did this again, I would add stronger guardrails before launch.
+> The bottleneck was [area]. We saw it through [metric/evidence], so we [action].
 
-### Useful Sentence Patterns
+**Example**
+> The bottleneck was product search. We saw it through high latency and repeated API calls, so we reduced payload size and added caching.
 
-- The biggest bottleneck was...
-- Under this budget, we chose to...
-- Our main trade-off was... versus...
+### Priority -> Scope Control
+
+> Our top priority was [priority], so we focused on [scope] and postponed [lower-priority work].
+
+**Example**
+> Our top priority was checkout reliability, so we focused on payment submit and postponed non-critical recommendation improvements.
+
+### Risk -> Fallback
+
+> The main risk was [risk]. To reduce that risk, we prepared [fallback].
+
+**Example**
+> The main risk was recommendation timeout during peak traffic. To reduce that risk, we prepared a static fallback list.
+
+### Pushback -> Options
+
+> I would push back on [unclear goal] and show [option A], [option B], and [balanced option].
+
+**Example**
+> I would push back on unclear priority and show a cost-focused option, a reliability-focused option, and a balanced option.
+
+## Useful Sentence Patterns
+
+- Under real constraints, we had to...
+- The main constraint was...
+- We prioritized... because...
+- The biggest bottleneck appeared in...
+- At low traffic, it looked fine, but at scale...
+- The trade-off was... versus...
+- We accepted that trade-off because...
 - To reduce risk, we rolled out...
-- One failure mode we planned for was...
-- The measurable result after scaling was...
+- If traffic exceeded our limit, we could fall back to...
+- We postponed... but documented the risk.
+- The measurable result was...
+- If I did this again, I would...
 
 </details>
 
 <details open>
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
-### Strong Collocations
+## Communication Blocks
 
-- identify system bottlenecks
-- increase request throughput
-- stay within budget limits
-- set latency targets
-- run capacity planning
-- reduce peak load
-- apply rate limiting
-- stage a rollout
-- monitor scaling metrics
-- manage operational overhead
-- protect critical paths
-- design fallback behavior
+### Explaining a Scaling Constraint
 
-### Useful Chunking & Sentence Starters
+- We had to work within a fixed budget and a short timeline.
+- The system was growing faster than the team could comfortably support.
+- The constraint changed the solution. We needed something reliable, not perfect.
+- A full redesign was possible, but not realistic for that release window.
 
-- Under real constraints, we had to...
-- Our first priority was...
-- The cheapest option was not...
-- We accepted this trade-off because...
-- To protect reliability, we...
-- We scaled in phases by...
-- The risky assumption was...
-- The outcome was better in... but weaker in...
+### Explaining Priority
 
-### Useful Phrasal Verbs
+- We protected the hot path first because that was where users felt the most pain.
+- Checkout was the highest-risk flow, so it became the top priority.
+- We did not try to optimize everything at once.
+- The goal was to protect the business-critical path under peak traffic.
 
-- **scale up** -> We scaled up workers only during peak traffic windows.
-- **cut back on** -> We cut back on non-critical features to save cost.
-- **slow down** -> We slowed down rollout after seeing error spikes.
-- **carry out** -> We carried out load tests before launch day.
-- **fall back to** -> We fell back to cached responses during DB pressure.
+### Explaining Trade-off
+
+- The trade-off was higher cost for better reliability.
+- The trade-off was faster delivery with some technical debt.
+- We accepted the short-term cost because the risk of failure was higher.
+- It was not the cleanest architecture, but it was the right decision for that moment.
+
+### Explaining Fallback
+
+- The fallback kept the core flow available.
+- We disabled non-critical features before they affected checkout.
+- If the service became unstable, users still had a simpler experience.
+- The fallback was planned before launch, so the team did not improvise under pressure.
+
+### Explaining Pushback
+
+- I would push back on unclear priorities first.
+- Lower cost and lower latency can both improve at the beginning, but later the trade-off becomes real.
+- I would ask which goal matters more this quarter.
+- Then I would show options with cost, timeline, and risk.
+
+## Useful Chunking & Sentence Starters
+
+- Under real constraints...
+- The first thing I would check is...
+- The highest-impact path was...
+- We chose this because...
+- The main risk was...
+- The business impact was...
+- The fallback plan was...
+- The rollout plan was...
+- The decision was temporary, but...
+- The review trigger was...
+- If the priority is reliability...
+- If the priority is cost...
+
+## Useful Phrasal Verbs
+
+- **scale up** -> We scaled up workers only during peak traffic.
+- **cut back on** -> We cut back on non-critical features to reduce pressure.
+- **slow down** -> We slowed down rollout after error rates increased.
+- **fall back to** -> We fell back to cached responses when the service timed out.
+- **roll back** -> We rolled back the release after latency crossed the threshold.
+- **rule out** -> We ruled out frontend rendering before focusing on the database.
+- **look into** -> We looked into queue delay and database saturation.
+- **hold off on** -> We held off on the service split until we had more evidence.
 
 </details>
 
 <details open>
 <summary><strong>4) Dialogues</strong></summary>
 
-### Dialogue 1 - Cost vs Performance
+### Dialogue 1 - Scaling Under Budget Pressure
 
 **Interviewer:** Tell me about a scaling decision under budget pressure.
 
 **You:**
-In one project, traffic grew quickly after a campaign, but we had a strict cloud cost cap. We found the hottest path was product search, so we added caching and a read replica instead of moving everything to a new architecture.
+In one project, traffic grew after a campaign, but we had a strict cloud cost limit. We found that product search was the hot path, so we focused there first.
 
-The trade-off was less flexibility short term, but we stayed stable and under budget.
+We reduced repeated API calls, added caching, and monitored latency and cost during rollout. The trade-off was that we postponed deeper architecture work, but the solution protected the user flow and stayed within budget.
 
 ### Dialogue 2 - Team Capacity Constraint
 
 **Interviewer:** How did team size affect your scaling approach?
 
 **You:**
-We were only four engineers, so we avoided solutions that needed heavy maintenance. We chose phased rollout and simple monitoring first, then improved automation later.
+We were a small team, so we avoided solutions with heavy operational overhead. Splitting the service looked attractive technically, but it would have created more deployment, monitoring, and debugging work.
 
-This was slower than a full redesign, but realistic for our team.
+Instead, we improved the existing path, added clearer alerts, and used a phased rollout. It was less ambitious, but it matched our real team capacity.
 
-### Dialogue 3 - Timeline Constraint
+### Dialogue 3 - Fallback Before a Campaign
 
-**Interviewer:** What if you have only two weeks before a traffic event?
+**Interviewer:** What would you prepare before a major campaign launch?
 
 **You:**
-I would focus on risk reduction, not perfection. I would set rate limits, prepare fallback responses, and test one failure mode per critical flow.
+I would prepare monitoring, alert thresholds, rollback steps, and fallback behavior for non-critical features. For example, if recommendations timed out, we could fall back to a static list while keeping checkout available.
 
-After the event, we can improve architecture. Before the event, reliability is the priority.
+The important part is deciding this before the launch. During peak traffic, the team should execute a plan, not invent one.
+
+### Dialogue 4 - Pushback on Conflicting Goals
+
+**Interviewer:** What if management asks for lower cost and lower latency at the same time?
+
+**You:**
+I would not reject the goal immediately because sometimes reducing waste improves both. But after the easy optimizations, the trade-off becomes real.
+
+I would push back on unclear priority and present options: a cost-focused option, a latency-focused option, and a balanced option. That makes the decision easier and more honest.
 
 </details>
 
 <details open>
-<summary><strong>5) Debate Prompt</strong></summary>
+<summary><strong>5) Context Flows</strong></summary>
 
-**When systems need to scale fast, should teams choose quick fixes first or invest in long-term architecture immediately?**
+## Context Flow - Constraint + Priority
 
-**Side A:** Quick fixes are practical under deadline pressure. If core flows stay stable and users are not blocked, the business survives. You can refactor later with better data.
+> We had only two weeks before the campaign, so the main constraint was timeline.
+> Instead of redesigning the whole system, we prioritized the checkout and search flows.
+> That decision was not perfect long term, but it reduced the highest business risk before launch.
 
-**Side B:** Shortcuts create technical debt and repeated incidents. Investing in stronger architecture early can save money and stress over time, even if delivery is slower now.
+## Context Flow - Bottleneck + Action
 
-_Your turn: Which side do you agree with more? Why?_
+> The first bottleneck appeared in product search.
+> At normal traffic, the page looked fine, but during peak hours it made too many repeated API calls.
+> We reduced the request volume, added caching, and monitored latency before expanding the rollout.
+
+## Context Flow - Reliability + Cost Trade-off
+
+> During the campaign week, reliability mattered more than cloud cost.
+> We temporarily scaled up capacity and accepted a higher bill to reduce downtime risk.
+> After the event, we reviewed usage and scaled back anything that was no longer necessary.
+
+## Context Flow - Fallback + Team Confidence
+
+> Before launch, we defined fallback behavior for non-critical features.
+> If recommendations became slow, users would see a static product list instead of a broken page.
+> That fallback gave the team more confidence because the core checkout flow could continue even under pressure.
 
 </details>
 
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
-Scaling is not only a technical problem. Most teams face real limits: fixed budget, short deadlines, and small engineering headcount. Good scaling decisions come from clear priorities, not from perfect architecture diagrams.
+## Reading 1 - Scaling Is a Constraint Problem
 
-A practical approach is simple: find bottlenecks, protect the hottest path, roll out in stages, and define fallback behavior. This helps teams stay reliable during growth without overbuilding too early.
+Scaling is not only about adding servers or choosing a better database. In real teams, scaling decisions are shaped by budget, timeline, team capacity, and business risk. A strong engineer does not only ask, "What is the best architecture?" They also ask, "What can we safely improve with the time and resources we have?"
 
-In interviews, strong answers include one real trade-off. Explain what you improved, what you postponed, and why that choice made sense under real constraints.
+## Reading 2 - Protect the Hot Path
+
+When traffic grows, teams should protect the most important user flow first. For an e-commerce product, that may be checkout. For a search product, it may be query response time. Optimizing a low-impact page can be technically satisfying, but it may not reduce the real business risk. Good scaling starts with clear priority.
+
+## Reading 3 - Fallbacks Reduce Pressure
+
+A fallback plan helps a product stay useful when the system is under stress. The goal is not to keep every feature perfect. The goal is to keep the core action available. For example, a product can disable recommendations, reduce image quality, or show cached content while protecting checkout or account access.
+
+## Reading 4 - Trade-offs Must Be Visible
+
+Temporary decisions are normal in scaling work. A team may postpone a service split, accept higher cloud cost, or ship a simpler fallback before a campaign. The problem is not the temporary decision itself. The problem is when the reason, owner, risk, and review date are not written down. Then a short-term choice becomes permanent technical debt.
+
+## Reading 5 - Useful Patterns Noticed
+
+### Useful patterns noticed
+
+- The main constraint was...
+- We prioritized... because...
+- The trade-off was... but...
+- To reduce risk, we prepared...
+- We postponed... but documented...
+- The measurable result was...
+
+### Reusable discussion idea
+
+Good scaling is not perfect architecture. It is choosing the right reliability, cost, and risk trade-off for the current situation.
 
 </details>
 
 <details open>
 <summary><strong>7) Questions & Practice Ideas</strong></summary>
 
-### Core Questions (must-practice)
-
-1. In your experience, what was the first bottleneck when traffic increased?
-2. How would you scale a feature if budget is limited this quarter?
-3. Which metrics would you track first during phased scaling?
+1. What is the first bottleneck you would check when traffic increases?
+2. How would you scale a feature if the budget is limited this quarter?
+3. Which metrics would you track during a phased rollout?
 4. What fallback plan would you prepare before a major campaign launch?
-
-### High-Value Discussion Questions
-
-5. What are the benefits and risks of phased rollout versus full launch for scaling?
-6. How do scaling priorities differ between beginner engineers and experienced engineers?
+5. What are the benefits and risks of phased rollout versus full launch?
+6. How do scaling priorities differ between beginner and experienced engineers?
 7. When should a team accept higher cloud cost for better reliability?
-
-### Follow-up Questions (Challenge Assumptions)
-
-8. You said caching solves the issue. What if data freshness becomes critical?
-9. You said you postponed architecture changes. How do you prevent delay from becoming permanent?
-10. If management asks for both lower cost and lower latency, what do you push back on first?
-
-### Reflection Questions
-
-11. Which scaling topic is hardest for you to explain clearly in English?
-12. How has your view of good engineering changed after facing real constraints?
-13. In the long run, is a great engineer the one who builds fast or the one who chooses trade-offs well?
-
-**Tips for speaking practice:**
-
-- Use one concrete system example and one measurable metric in each answer.
-- Keep your structure clear: constraint -> decision -> trade-off -> result.
-- Practice a 60-90 second answer for one real scaling case from your past work.
+8. If caching improves speed but hurts data freshness, how would you handle the trade-off?
+9. If you postpone architecture changes, how do you prevent the delay from becoming permanent?
+10. If management asks for lower cost and lower latency, what would you clarify first?
 
 </details>

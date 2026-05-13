@@ -127,6 +127,107 @@ description: [ONE CLEAR SENTENCE]
 </details>
 ```
 
+## Phase 1-2 Lesson Style - Professional Speaking Fluency
+
+For Phase 1 and Phase 2, optimize for speaking activation frequency, not only smart terminology.
+
+Phase 1-2 lessons should train the learner to:
+
+- explain role, responsibility, ownership, collaboration, impact, trade-offs, priorities, and decisions
+- speak naturally in PM, QA, backend, manager, stakeholder, interview, and team discussion contexts
+- connect technical work to user value, team efficiency, risk reduction, maintainability, and business outcomes
+- continue an answer for 30-60 seconds using connected thought flows, not isolated example sentences
+
+### Phase 1-2 Preferred Lesson Structure
+
+Use this structure for Phase 1-2 lessons:
+
+```md
+<details open>
+<summary><strong>1) Vocabulary</strong></summary>
+
+[Core vocabulary, verbs/chunks, expansion paths, and secondary terms]
+
+</details>
+
+<details open>
+<summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
+
+[Speaking patterns and reusable answer frames]
+
+</details>
+
+<details open>
+<summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
+
+[Communication blocks and connected chunks]
+
+</details>
+
+<details open>
+<summary><strong>4) Dialogues</strong></summary>
+
+[3-4 realistic dialogues]
+
+</details>
+
+<details open>
+<summary><strong>5) Context Flows</strong></summary>
+
+[3-5 connected professional thought flows]
+
+</details>
+
+<details open>
+<summary><strong>6) Reading Text</strong></summary>
+
+[3-5 short reading blocks plus pattern absorption]
+
+</details>
+
+<details open>
+<summary><strong>7) Questions & Practice Ideas</strong></summary>
+
+[10 high-value questions]
+
+</details>
+```
+
+### Phase 1-2 Vocabulary Format
+
+Vocabulary should be layered:
+
+- Core vocabulary: 12-18 high-frequency professional terms that the learner can reuse often.
+- High-value verbs and chunks: 12-20 verbs/chunks for real meetings and spoken explanations.
+- Speaking expansion paths: 3-5 short flows showing how one word expands into a longer answer.
+- Secondary vocabulary: 4-8 advanced/product/technical terms that support the topic but should not dominate.
+
+Core terms should usually include practical words such as responsibility, ownership, collaboration, impact, trade-off, scope, stakeholder, priority, alignment, decision, expectation, workflow, maintainability, efficiency, scalability, and constraint when relevant.
+
+Do not over-optimize Phase 1-2 vocabulary for low-frequency product analytics terms. Terms like guardrail metric, conversion rate, activation rate, latency budget, or capacity planning are useful, but they belong in the secondary layer unless the lesson topic is specifically about metrics or systems.
+
+### Phase 1-2 Reading Format
+
+Reading should provide speaking input, not only comprehension text.
+
+Use 3-5 short reading blocks. Each block should model one reusable professional thinking direction, such as:
+
+- task -> value
+- ownership -> boundary -> collaboration
+- problem -> decision -> trade-off
+- metric -> context -> honest conclusion
+- stakeholder pressure -> risk -> practical option
+
+End the reading section with `Useful Patterns Noticed` and one `Reusable discussion idea`.
+
+### Phase 1-2 Questions Format
+
+Use exactly 10 questions for Phase 1-2 lessons as one simple numbered list. Do not split them into `Core Questions`, `High-Value Discussion Questions`, `Follow-up Questions`, or `Reflection Questions`.
+
+Questions should be the most common and useful speaking prompts, not a full exhaustive curriculum. Prioritize questions the learner will actually meet in work discussions, interviews, and coaching practice.
+
+Do not include a Debate Prompt in Phase 1-2 lessons by default. Use `Context Flows` instead.
+
 ## Vocabulary Format
 
 Use a render-safe markdown format. Do not rely on trailing spaces for line breaks.
@@ -226,7 +327,24 @@ For Phase 3, end with a short bridge back to work, career, communication, or int
 
 ## Section 7 Questions
 
-Every lesson should have exactly 13 questions:
+For Phase 1-2 lessons, use exactly 10 questions as one simple numbered list:
+
+```md
+1. [Practical question]
+2. [Practical question]
+3. [Practical question]
+4. [Practical question]
+5. [Practical question]
+6. [Practical question]
+7. [Practical question]
+8. [Practical question]
+9. [Practical question]
+10. [Practical question]
+```
+
+Do not add category headings such as `Core Questions`, `High-Value Discussion Questions`, `Follow-up Questions`, or `Reflection Questions` for Phase 1-2.
+
+For other lessons, use exactly 13 questions unless a phase-specific rule says otherwise:
 
 ```md
 ### Core Questions (must-practice)
@@ -292,8 +410,9 @@ Version rules:
 
 - Each question has exactly 2 answer versions.
 - The 2 versions must express different depth or angles, not the same idea with different length.
-- Version 1: clear B2 plus. It should be compact, speakable, and complete, with a clear point and useful logic. It should not sound childish, flat, or like a vocabulary exercise.
-- Version 2: expanded natural answer. It should sound like a real person explaining the idea in recent work or life context, with one practical example, trade-off, limitation, or current-context angle where useful.
+- Version 1: compact professional B2 answer.
+- Version 2: expanded reflective answer with trade-off, context, or nuance.
+- The two versions should differ in depth, framing, reasoning style, and communication approach, not only in length.
 - Use recent or 2026-aware context only when it naturally improves the answer. Do not force it into every question.
 - Do not default to interview framing.
 - Version 1 should usually be 4-6 sentences.
@@ -301,6 +420,19 @@ Version rules:
 - Use short paragraphs if an answer has two connected ideas.
 - Include trade-offs naturally where useful.
 - Avoid repeating the same sentence pattern across many answers.
+
+Answer quality rules:
+
+- Answers must sound speakable, not essay-like.
+- Prefer shorter paragraphs with stronger information density.
+- Avoid over-explaining obvious transitions.
+- Prioritize reusable communication patterns over polished writing.
+
+Speaking realism rules:
+
+- Good answers should feel spoken, practical, reflective, and discussion-friendly.
+- Answers should not feel article-like, over-structured, overly polished, or like an AI-generated essay.
+- The target is real intelligent discussion: more speakable, more dense, more layered, less perfect writing.
 
 Answer guide notes:
 
@@ -343,10 +475,10 @@ Be careful with sensitive topics:
 Before finishing, verify:
 
 - Lesson file has `level: B2` and `**Level:** B2`.
-- Section 7 has exactly 13 questions.
-- Answer guide has exactly 13 question headings.
-- Answer guide has exactly 26 version headings.
-- Answer guide has 13 `Common ideas`, 13 `Useful language`, and 13 `Pattern to apply`.
+- Phase 1-2 Section 7 has exactly 10 questions; other lessons have exactly 13 unless a phase-specific rule says otherwise.
+- Phase 1-2 answer guides have exactly 10 question headings; other answer guides have exactly 13 unless a phase-specific rule says otherwise.
+- Phase 1-2 answer guides have exactly 20 version headings; other answer guides have exactly 26 unless a phase-specific rule says otherwise.
+- Phase 1-2 answer guides have 10 `Common ideas`, 10 `Useful language`, and 10 `Pattern to apply`; other answer guides have 13 of each unless a phase-specific rule says otherwise.
 - Question texts match between session and answer guide.
 - No duplicate questions in the same phase.
 - No `Version 3` unless explicitly requested for a special format.

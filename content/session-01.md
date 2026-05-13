@@ -16,96 +16,206 @@ description: Explain your role with clear ownership, user value, business impact
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-- **ownership** /ˈoʊnərˌʃɪp/ (n) - responsibility for a specific area from planning to result
-  - _Example 1:_ I owned the frontend checkout flow, including validation, loading states, and error messages.
-  - _Example 2:_ Clear ownership helped QA know who to ask when the behavior was unclear.
-  - _Example 3:_ Ownership does not mean doing everything alone; it means being accountable for your part.
+### Core Vocabulary - High Reuse
 
-- **business impact** /ˈbɪznəs ˈɪmpækt/ (n) - measurable effect on users, revenue, cost, risk, or team speed
-  - _Example 1:_ The business impact was fewer failed checkouts and fewer support tickets.
-  - _Example 2:_ A small UI change can have business impact if it removes user friction.
-  - _Example 3:_ I try to explain impact with one number and one user example.
+- **responsibility** /rɪˌspɑːnsəˈbɪləti/ (n) - the work or result you are expected to take care of
+  - _Common chunks:_ my main responsibility, take responsibility for, share responsibility with
+  - _Example:_ My main responsibility was to make sure the checkout UI handled errors clearly.
 
-- **value statement** /ˈvæljuː ˈsteɪtmənt/ (n) - a short sentence explaining why your work mattered
-  - _Example 1:_ My value statement was: "I helped reduce checkout confusion by making error states clearer."
-  - _Example 2:_ A good value statement connects technical work to a real outcome.
-  - _Example 3:_ "I built a modal" is weaker than "I helped users complete the flow with fewer mistakes."
+- **ownership** /ˈoʊnərˌʃɪp/ (n) - being accountable for a specific area from planning to result
+  - _Common chunks:_ clear ownership, ownership area, take ownership of
+  - _Example:_ I owned the frontend checkout flow, but backend owned the payment API.
 
-- **primary metric** /ˈpraɪˌmeri ˈmɛtrɪk/ (n) - the main number used to judge whether a project worked
-  - _Example 1:_ For onboarding, our primary metric was activation rate.
-  - _Example 2:_ For performance work, our primary metric was first-load time on mobile.
-  - _Example 3:_ A primary metric should match the user goal, not just look impressive.
+- **collaboration** /kəˌlæbəˈreɪʃən/ (n) - working with others to reach a shared result
+  - _Common chunks:_ close collaboration, cross-team collaboration, collaborate with QA/backend/design
+  - _Example:_ The project needed close collaboration with QA because the error cases were easy to miss.
 
-- **guardrail metric** /ˈɡɑrdˌreɪl ˈmɛtrɪk/ (n) - a second number that checks whether success created a hidden problem
-  - _Example 1:_ Completion rate improved, but support tickets were our guardrail metric.
-  - _Example 2:_ We tracked speed and error rate together so we did not optimize only one side.
-  - _Example 3:_ Guardrail metrics make an impact story more honest.
+- **impact** /ˈɪmpækt/ (n/v) - the real effect of your work on users, the team, or the business
+  - _Common chunks:_ user impact, business impact, have an impact on, measure the impact
+  - _Example:_ The impact was fewer failed checkouts and less confusion during support follow-up.
 
-- **conversion rate** /kənˈvɝːʒən reɪt/ (n) - percentage of users who complete a target action
-  - _Example 1:_ We improved conversion rate after simplifying the mobile checkout form.
-  - _Example 2:_ Product cared about conversion because it showed whether users finished the key flow.
-  - _Example 3:_ Conversion is useful, but it should be checked with complaints and quality signals.
-
-- **drop-off** /ˈdrɑp ɔf/ (n) - the point where users leave a flow before completing it
-  - _Example 1:_ We found the biggest drop-off on the address step.
-  - _Example 2:_ Clearer validation reduced drop-off because users knew what to fix.
-  - _Example 3:_ Drop-off language is useful because it describes user behavior, not code.
+- **trade-off** /ˈtreɪd ɔːf/ (n) - a choice where you gain one thing but give up another
+  - _Common chunks:_ make a trade-off, accept a trade-off, speed-quality trade-off
+  - _Example:_ The trade-off was a smaller first release, but lower QA risk.
 
 - **scope** /skoʊp/ (n) - what is included and excluded in a piece of work
-  - _Example 1:_ We reduced scope to protect release quality.
-  - _Example 2:_ The first release focused on the main flow, not every nice-to-have.
-  - _Example 3:_ Clear scope helps PM, QA, and engineering avoid last-minute confusion.
+  - _Common chunks:_ reduce scope, define the scope, outside the scope
+  - _Example:_ We reduced scope and focused only on the core payment flow.
 
-- **release risk** /rɪˈliːs rɪsk/ (n) - chance that a launch causes problems for users or the team
-  - _Example 1:_ We used a feature flag to reduce release risk.
-  - _Example 2:_ The release risk was high because the change touched payment and account creation.
-  - _Example 3:_ Talking about release risk makes pushback sound practical, not negative.
+- **priority** /praɪˈɔːrəti/ (n) - the thing that matters most in a situation
+  - _Common chunks:_ top priority, change priorities, prioritize the main flow
+  - _Example:_ Our priority was to protect the main checkout flow before adding extra options.
 
 - **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - a person or team affected by the project result
-  - _Example 1:_ PM, QA, support, and design were key stakeholders for the release.
-  - _Example 2:_ I sent stakeholders a short update with progress, risk, and next step.
-  - _Example 3:_ Stakeholder language helps you sound collaborative, not isolated.
+  - _Common chunks:_ align with stakeholders, update stakeholders, stakeholder expectation
+  - _Example:_ I sent stakeholders a short update with progress, risk, and next step.
 
-**Additional useful terms:**
+- **alignment** /əˈlaɪnmənt/ (n) - agreement on direction, priority, or expectations
+  - _Common chunks:_ team alignment, get alignment, create alignment around
+  - _Example:_ We got alignment on the release scope before development started.
 
-- **user friction** - anything that makes the user journey harder
+- **expectation** /ˌekspekˈteɪʃən/ (n) - what someone believes should happen
+  - _Common chunks:_ set expectations, manage expectations, unclear expectations
+  - _Example:_ I set expectations early so the PM knew which edge cases would move to the next release.
+
+- **decision** /dɪˈsɪʒən/ (n) - a choice about what to do
+  - _Common chunks:_ make a decision, explain a decision, decision reason
+  - _Example:_ The decision was to protect the main flow and delay the optional setting.
+
+- **workflow** /ˈwɝːkfloʊ/ (n) - the steps people or users follow to complete something
+  - _Common chunks:_ user workflow, team workflow, improve the workflow
+  - _Example:_ The new error messages made the checkout workflow easier to follow.
+
+- **efficiency** /ɪˈfɪʃənsi/ (n) - how well time or effort is used
+  - _Common chunks:_ improve efficiency, team efficiency, operational efficiency
+  - _Example:_ Better UI states improved QA efficiency because testers knew what to expect.
+
+- **maintainability** /meɪnˌteɪnəˈbɪləti/ (n) - how easy code or a system is to change safely later
+  - _Common chunks:_ improve maintainability, long-term maintainability, maintainability cost
+  - _Example:_ We accepted a small delay to improve maintainability before the next release.
+
+- **scalability** /ˌskeɪləˈbɪləti/ (n) - how well a system or process can handle growth
+  - _Common chunks:_ future scalability, scalability concern, design for scalability
+  - _Example:_ The first version was simple, but we kept the structure ready for future scalability.
+
+- **constraint** /kənˈstreɪnt/ (n) - a limit that affects what the team can do
+  - _Common chunks:_ time constraint, technical constraint, work within constraints
+  - _Example:_ Because of the time constraint, we focused on the highest-risk user path.
+
+### High-Value Verbs & Chunks
+
+- **clarify** - to make something clearer
+  - _Example:_ I clarified the edge cases with backend before QA started testing.
+
+- **align with** - to make your work or decision match another person, team, or goal
+  - _Example:_ I aligned with the PM on the release priority before changing the scope.
+
+- **push back on** - to disagree politely when something creates risk
+  - _Example:_ I pushed back on adding one more option because it increased release risk.
+
+- **prioritize** - to choose what should be handled first
+  - _Example:_ We prioritized validation and error messages because they affected completion.
+
+- **balance** - to manage two competing needs at the same time
+  - _Example:_ We had to balance speed with release quality.
+
+- **handle** - to deal with a situation, state, or problem
+  - _Example:_ My part was to handle loading states, validation, and payment errors.
+
+- **reduce** - to make a problem smaller
+  - _Example:_ Clearer messages helped reduce user friction.
+
+- **support** - to help a person, team, goal, or system work better
+  - _Example:_ The frontend changes supported QA by making expected behavior easier to test.
+
+- **focus on** - to give attention to the most important thing
+  - _Example:_ We focused on the core payment flow instead of every nice-to-have.
+
+- **follow up with** - to contact someone again after a decision, issue, or release
+  - _Example:_ I followed up with support after launch to check whether complaints decreased.
+
+- **break down** - to divide something complex into smaller parts
+  - _Example:_ I broke down the checkout flow into form input, validation, payment response, and success state.
+
+- **point out** - to mention something important, especially a risk or problem
+  - _Example:_ I pointed out that the new option would increase QA scope.
+
+- **measure** - to check results with data or evidence
+  - _Example:_ We measured the impact with completion rate and support tickets.
+
+- **improve** - to make something better
+  - _Example:_ We improved the error messages so users knew what to fix.
+
+- **protect** - to keep something safe from risk or damage
+  - _Example:_ We protected release quality by reducing scope.
+
+- **coordinate with** - to work with another person or team so the work fits together
+  - _Example:_ I coordinated with backend to make sure frontend states matched API responses.
+
+### Speaking Expansion Paths
+
+- **Responsibility** can connect to ownership, role boundaries, collaboration, and accountability.
+  - _Flow:_ My main responsibility was the checkout UI. I owned the frontend behavior, but I worked with backend on payment responses and with QA on edge cases.
+
+- **Impact** can connect to user behavior, team efficiency, business results, and risk reduction.
+  - _Flow:_ The impact was not only a cleaner screen. Users made fewer mistakes, QA had clearer test cases, and support had fewer repeated questions.
+
+- **Trade-off** can connect to scope, priority, release risk, and follow-up work.
+  - _Flow:_ The trade-off was a smaller first release. We gave up one optional setting, but we protected the main flow and reduced QA risk.
+
+- **Alignment** can connect to stakeholders, expectations, decision quality, and delivery confidence.
+  - _Flow:_ Before implementation, we aligned with PM, QA, and backend on the priority. That helped everyone understand what was in scope and what would move to the next release.
+
+### Secondary Vocabulary - Product Metrics
+
+- **primary metric** - the main number used to judge whether a project worked
+  - _Example:_ For checkout, our primary metric was completion rate.
+
+- **conversion rate** - percentage of users who complete a target action
+  - _Example:_ Conversion rate improved after we simplified the mobile form.
+
+- **guardrail metric** - a second number that checks whether success created a hidden problem
+  - _Example:_ Completion rate improved, but support tickets were our guardrail metric.
+
 - **activation rate** - percentage of new users who reach a meaningful first success
-- **support load** - amount of customer support work created by a product issue
-- **team velocity** - how quickly the team can deliver useful work
-- **quality threshold** - minimum quality level needed before release
+  - _Example:_ For onboarding, activation rate showed whether users reached the first useful moment.
+
+- **drop-off** - the point where users leave a flow before completing it
+  - _Example:_ We found the biggest drop-off on the address step.
+
+- **support load** - the amount of customer support work created by a product issue
+  - _Example:_ Clearer payment errors reduced support load after release.
+
+- **quality threshold** - the minimum quality level needed before release
+  - _Example:_ We agreed on a quality threshold before accepting the release date.
+
+- **release risk** - the chance that a launch creates problems for users or the team
+  - _Example:_ We used a feature flag to reduce release risk.
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
+### Speaking Frames
+
 - **Role clarity**
-  I am responsible for the frontend checkout flow, especially form behavior and user-facing error states.
+  My main responsibility was the frontend checkout flow, especially validation, loading states, and user-facing error messages.
 
-- **Problem to impact**
-  The problem was not only technical; users were leaving the flow because the error messages were unclear.
+- **Ownership boundary**
+  I owned the frontend behavior, while backend owned the payment API and QA owned the test plan.
 
-- **Metric language**
-  We measured success by checkout completion rate and support-ticket volume.
+- **Task to value**
+  The work looked small in code, but it mattered because unclear errors were causing users to leave the flow.
 
-- **Trade-off language**
-  We shipped a smaller first version to protect stability and reduce QA risk.
+- **Collaboration**
+  I worked with backend to clarify API responses and with QA to make sure the edge cases were testable.
 
-- **Scope boundary**
-  I did not own the payment API, but I owned how the frontend handled payment responses.
+- **Metric with context**
+  We measured success by completion rate, but we also checked support tickets to make sure users were not still confused.
 
-- **Balanced reflection**
-  The metric improved, but we still checked user complaints to make sure the experience felt better.
+- **Trade-off**
+  We reduced scope for the first release so we could protect the main flow and lower QA risk.
+
+- **Stakeholder alignment**
+  Before implementation, we aligned with PM and QA on what was in scope and what would move to the next release.
+
+- **Honest reflection**
+  The result was useful, but next time I would clarify the edge cases earlier to avoid late QA surprises.
 
 ### Useful Sentence Patterns
 
-- My role was to...
+- My main responsibility was...
 - I owned the part where...
+- I worked with [team] to...
 - The user problem was...
 - This mattered because...
+- The value came from...
 - We measured success by...
 - The trade-off was...
-- The result was...
+- We reduced scope because...
+- We aligned with stakeholders on...
+- The result was useful because...
 - One thing I would improve next time is...
 
 </details>
@@ -113,30 +223,51 @@ description: Explain your role with clear ownership, user value, business impact
 <details open>
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
-### Strong Collocations
+### Communication Blocks
 
-- define role boundaries
-- own the frontend flow
-- clarify edge cases
-- reduce user friction
-- improve completion rate
-- track a primary metric
-- monitor guardrail metrics
-- reduce support load
-- protect release quality
-- align with stakeholders
-- explain measurable impact
-- summarize project value
+- **Role and ownership**
+  - define role boundaries
+  - own the frontend flow
+  - take responsibility for error handling
+  - clarify who owns what
+
+- **Collaboration**
+  - coordinate with backend
+  - align with QA
+  - share context with support
+  - keep stakeholders updated
+
+- **Impact**
+  - reduce user friction
+  - improve completion rate
+  - reduce support load
+  - explain measurable impact
+
+- **Trade-offs and scope**
+  - reduce scope
+  - protect release quality
+  - accept a trade-off
+  - move a feature to the next release
+
+- **Technical quality**
+  - improve maintainability
+  - handle edge cases
+  - make behavior easier to test
+  - lower release risk
 
 ### Useful Chunking & Sentence Starters
 
 - My main ownership area was...
 - The business value came from...
 - From the user's side, the problem was...
+- The collaboration part was...
+- The decision we made was...
+- The reason we reduced scope was...
 - The metric we cared about most was...
 - To keep the release safe, we...
 - I worked with backend/QA/design to...
 - The result was not perfect, but it was useful because...
+- If I explained the value simply, I would say...
 
 ### Useful Phrasal Verbs
 
@@ -145,6 +276,8 @@ description: Explain your role with clear ownership, user value, business impact
 - **roll out** -> We rolled out the change gradually with a feature flag.
 - **cut down on** -> We cut down on optional fields to reduce user friction.
 - **point out** -> I pointed out the release risk before the deadline.
+- **push back on** -> I pushed back on the extra option because it touched the payment flow.
+- **line up with** -> The frontend behavior had to line up with the real API responses.
 
 </details>
 
@@ -178,65 +311,92 @@ We can, but it adds validation and QA risk because it touches the payment flow. 
 
 That keeps the launch safer while still giving us a clear follow-up item.
 
+### Dialogue 4 - Aligning With QA And Support
+
+**QA Lead:** What should we focus on before release?
+
+**You:**
+I think we should focus on the main payment flow, especially validation errors, loading states, and failed payment responses. Those are the states users actually see when something goes wrong.
+
+I can share a short UI state list with QA and support so everyone has the same expectation. That should make testing clearer and reduce confusion after launch.
+
 </details>
 
 <details open>
-<summary><strong>5) Debate Prompt</strong></summary>
+<summary><strong>5) Context Flows</strong></summary>
 
-**Should engineers explain their work mainly through technical quality or business value?**
+### Flow 1 - Role + Ownership + Collaboration
 
-**Side A:** Technical quality matters most. If the code is fragile, business value will not last.
+My main responsibility was the frontend checkout flow. I owned validation, loading states, and how payment errors appeared to users. Backend owned the payment API, so I worked with them to make sure the UI matched real API responses. That helped QA test the flow more clearly and gave support better context after release.
 
-**Side B:** Business value matters most. If the work does not help users or the company, technical quality alone is not enough.
+### Flow 2 - Task + User Problem + Impact
 
-_Your turn: How would you explain both without sounding too technical or too vague?_
+The task looked like a small UI improvement, but the user problem was real. People were leaving the checkout flow because the error messages did not tell them what to fix. We improved the validation messages and reduced confusion on the address step. The value came from helping users finish the flow with fewer mistakes.
+
+### Flow 3 - Priority + Scope + Trade-off
+
+During release planning, we had to choose between adding one more option and protecting the core payment flow. We reduced scope because the option touched validation and increased QA risk. The trade-off was fewer customization options in version one, but the main flow was safer. We kept the extra option as a clear follow-up item.
+
+### Flow 4 - Metric + Guardrail + Honest Result
+
+We measured success by checkout completion rate, but we did not rely on that number alone. We also checked support tickets because a faster flow is not useful if users still feel confused. The completion rate improved, and support questions went down, so the result felt more reliable. That made the impact story more honest.
 
 </details>
 
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
-Many engineers can explain what they built, but fewer can explain why it mattered. A stronger answer connects role, user problem, decision, and result.
+### Reading 1 - From Task To Value
+
+Many engineers can explain what they built, but fewer can explain why it mattered. A stronger answer connects role, user problem, decision, and result. Instead of saying, "I built the checkout form," you can say, "I improved the checkout flow so users made fewer mistakes and finished the payment step more easily."
 
 For frontend engineers, business value often comes from reducing friction. A clearer form, better loading state, simpler error message, or faster page can change how many users complete a flow. The work may look small in code, but the product impact can be real.
 
-Good impact communication also needs honesty. A metric can improve while user complaints still increase. A release can be fast but create technical debt. A strong engineer does not hide these trade-offs. They explain the value, the risk, and the follow-up plan in simple language.
+### Reading 2 - Explaining Ownership Clearly
+
+Good ownership does not mean pretending you did everything alone. In real product work, one result usually depends on frontend, backend, QA, design, product, and sometimes support. A stronger explanation shows the part you owned and the parts you coordinated with other people.
+
+For example, you might say, "I owned the frontend checkout behavior, especially validation, loading states, and payment errors. Backend owned the payment API, and QA owned the test plan. My job was to make sure the user experience matched the real API behavior." This sounds more mature than simply listing tasks because it shows responsibility, collaboration, and boundaries.
+
+### Reading 3 - Talking About Trade-offs
+
+Professional communication often improves when you can explain trade-offs calmly. A trade-off means the team gains something but gives up something else. For example, shipping a smaller first version may reduce release risk, but it may also delay a useful feature.
+
+The important part is to explain the reason, not only the choice. You can say, "We reduced scope because the new option touched payment validation and would increase QA risk. The trade-off was fewer customization options in version one, but the main flow was safer." That kind of answer sounds practical because it connects priority, risk, and follow-up work.
+
+### Reading 4 - Metrics With Context
+
+Metrics help make impact easier to understand, but they should not become the whole story. A completion rate can improve while users still complain. A page can become faster while the code becomes harder to maintain. Good communication uses metrics as evidence, then adds context from QA, support, user feedback, and technical risk.
+
+For a checkout improvement, a simple explanation might be: "Our primary metric was completion rate, but we also watched support tickets as a guardrail. The number improved, and support questions went down, so we had more confidence that the change was actually useful." This gives the listener both the result and the reasoning behind it.
+
+### Reading 5 - Useful Patterns Noticed
+
+- The value came from...
+- My main responsibility was...
+- I owned the part where...
+- The trade-off was...
+- We reduced scope because...
+- We measured success by...
+- We aligned with stakeholders on...
+- The work looked small, but the impact was real because...
+
+**Reusable discussion idea:** Good engineers do not only describe tasks. They explain responsibility, collaboration, trade-offs, and impact in a way other people can act on.
 
 </details>
 
 <details open>
 <summary><strong>7) Questions & Practice Ideas</strong></summary>
 
-### Core Questions (must-practice)
-
 1. What part of your role creates the most business value today?
-2. Which metric best shows your project worked?
-3. How do you explain your ownership without sounding like you did everything alone?
-4. What trade-off did you accept in your latest release?
-
-### High-Value Discussion Questions
-
-5. What are the benefits and limits of using metrics to describe engineer impact?
-6. How does impact communication differ between beginner and experienced engineers?
-7. When can business pressure hurt technical quality, and how should you respond?
-
-### Follow-up Questions (Challenge Assumptions)
-
-8. You said your metric improved. What if user complaints still increased?
-9. You said speed was important. What long-term cost might appear later?
-10. If stakeholders disagree on priorities, whose view should guide your decision?
-
-### Reflection Questions
-
-11. Which sentence about your value sounds weakest in English now?
-12. What changed in your confidence after practicing impact language?
-13. In the future, will engineers be judged more by code quality or business outcomes?
-
-**Tips for speaking practice:**
-
-- Use one real project and one realistic number.
-- Keep the flow simple: problem -> ownership -> action -> result -> trade-off.
-- Say what you owned and what other teams owned.
-- Mention one guardrail metric if the main metric sounds too clean.
+2. How do you explain your ownership without sounding like you did everything alone?
+3. Which metric best shows that your project worked?
+4. What trade-off did you accept in a recent release?
+5. How do you explain technical work in a way that connects to user or business impact?
+6. When can business pressure hurt technical quality, and how should you respond?
+7. What should you do if your main metric improves but user complaints increase?
+8. If stakeholders disagree on priorities, how would you guide the decision?
+9. How does impact communication differ between a beginner and an experienced engineer?
+10. How would you summarize your value to a PM or manager in one or two sentences?
 
 </details>

@@ -16,86 +16,166 @@ description: Explain privacy, tracking, consent, personalized feeds, ads, recomm
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-- **personal data** /ˈpɝːsənəl ˈdeɪtə/ (n) - information about a user, such as identity, location, behavior, or device data
-  - _Example 1:_ A delivery app needs address data, but not necessarily the user's contact list.
-  - _Example 2:_ Personal data should match the feature, not every future business idea.
-  - _Example 3:_ Collecting more data increases breach and misuse risk.
+### Core Vocabulary - High Reuse
 
-- **data minimization** /ˈdeɪtə ˌmɪnəməˈzeɪʃən/ (n) - collecting only the data needed for a clear purpose
-  - _Example 1:_ Data minimization means asking for location only when the feature needs it.
-  - _Example 2:_ It protects trust because users see that the product has restraint.
-  - _Example 3:_ A product can still be useful without collecting everything.
+- **privacy** /ˈpraɪvəsi/ (n) - control over personal information and how it is used
+  - _Common chunks:_ user privacy, protect privacy, privacy setting
+  - _Example:_ Privacy matters because users should understand what data the product collects.
+
+- **trust** /trʌst/ (n) - belief that a product is safe, fair, and honest
+  - _Common chunks:_ user trust, build trust, damage trust
+  - _Example:_ Hidden tracking may increase data volume, but it damages trust.
+
+- **personal data** /ˈpɝːsənəl ˈdeɪtə/ (n) - information about a user, such as identity, location, behavior, or device data
+  - _Common chunks:_ collect personal data, protect personal data, unnecessary personal data
+  - _Example:_ A delivery app needs address data, but not necessarily the user's contact list.
 
 - **tracking** /ˈtrækɪŋ/ (n) - recording user behavior across actions, sessions, or platforms
-  - _Example 1:_ Tracking may include clicks, searches, watch time, purchases, and location.
-  - _Example 2:_ Hidden tracking can make users feel uncomfortable.
-  - _Example 3:_ Tracking should be explained in plain language.
+  - _Common chunks:_ behavior tracking, cross-app tracking, turn off tracking
+  - _Example:_ Tracking should be explained in plain language, not hidden in settings.
 
-- **consent popup** /kənˈsɛnt ˈpɑːpˌʌp/ (n) - popup that asks whether users allow data collection or use
-  - _Example 1:_ A fair consent popup is short, balanced, and easy to reject.
-  - _Example 2:_ A confusing consent popup may be legal but still feel dishonest.
-  - _Example 3:_ Consent design affects user trust.
+- **consent** /kənˈsent/ (n) - permission given by the user
+  - _Common chunks:_ clear consent, ask for consent, meaningful consent
+  - _Example:_ Consent is not meaningful if the reject button is hidden.
 
-- **opt in** /ɑːpt ɪn/ (phr v) - actively choose to allow something
-  - _Example 1:_ Personalized ads should be opt-in when the data is sensitive.
-  - _Example 2:_ Opt-in flows feel more respectful because users make an active choice.
-  - _Example 3:_ Users should know what they are opting into.
+- **control** /kənˈtroʊl/ (n) - ability for users to choose or change settings
+  - _Common chunks:_ user control, privacy control, recommendation control
+  - _Example:_ Users should be able to reset their feed or turn personalization off.
 
-- **opt out** /ɑːpt aʊt/ (phr v) - choose not to allow or join something
-  - _Example 1:_ Users should be able to opt out without searching through many menus.
-  - _Example 2:_ A hidden opt-out is not a meaningful choice.
-  - _Example 3:_ Easy opt-out protects long-term trust.
+- **default** /dɪˈfɔːlt/ (n/adj) - what happens before users change anything
+  - _Common chunks:_ default setting, privacy-friendly default, default choice
+  - _Example:_ Defaults matter because many users never change settings.
 
-- **default setting** /dɪˈfɔːlt ˈsɛtɪŋ/ (n) - setting users get before they change anything
-  - _Example 1:_ Privacy-friendly defaults are important because many users never change settings.
-  - _Example 2:_ Defaults are product strategy, not a neutral detail.
-  - _Example 3:_ A default should be easy to explain in a product review.
+- **transparency** /trænsˈperənsi/ (n) - making the reason or process understandable
+  - _Common chunks:_ product transparency, transparency around data use, clear explanation
+  - _Example:_ Transparency helps users understand why they see a recommendation.
 
-- **personalized feed** /ˈpɝːsənəlaɪzd fiːd/ (n) - feed shaped by user behavior or profile
-  - _Example 1:_ TikTok and YouTube use personalized feeds to keep content relevant.
-  - _Example 2:_ A personalized feed can become too narrow over time.
-  - _Example 3:_ Users need controls like not interested, reset feed, and show less.
+- **personalization** /ˌpɝːsənələˈzeɪʃən/ (n) - adapting product experience based on user data or behavior
+  - _Common chunks:_ AI personalization, ad personalization, useful personalization
+  - _Example:_ Personalization can be helpful, but it can also feel invasive.
 
-- **dark pattern** /dɑːrk ˈpætɚn/ (n) - design that pushes users into choices they may not really want
-  - _Example 1:_ Hiding the reject button is a dark pattern.
-  - _Example 2:_ Dark patterns may increase conversion but damage trust.
-  - _Example 3:_ A fair product should not make privacy controls hard to find.
+- **recommendation** /ˌrekəmenˈdeɪʃən/ (n) - content or product suggested by a system
+  - _Common chunks:_ recommendation system, recommendation control, recommendation quality
+  - _Example:_ A good recommendation system should help users discover, not trap them.
 
-- **user trust** /ˈjuːzɚ trʌst/ (n) - user's belief that a product is safe, fair, and honest
-  - _Example 1:_ Clear privacy settings build user trust.
-  - _Example 2:_ Hidden tracking can damage trust quickly.
-  - _Example 3:_ Trust is a long-term product asset.
+- **fairness** /ˈfernəs/ (n) - whether a product choice feels balanced and respectful
+  - _Common chunks:_ fair design, fair consent, fair default
+  - _Example:_ A fair consent popup makes accept and reject equally clear.
 
-**Additional useful terms:**
+- **choice** /tʃɔɪs/ (n) - option users can understand and actually use
+  - _Common chunks:_ real choice, meaningful choice, user choice
+  - _Example:_ A hidden opt-out is technically a choice, but not a meaningful one.
+
+- **harm** /hɑːrm/ (n/v) - negative effect on users, trust, or society
+  - _Common chunks:_ user harm, reduce harm, potential harm
+  - _Example:_ High watch time can hide harm if users feel worse after using the product.
+
+- **guardrail** /ˈɡɑːrdˌreɪl/ (n) - safety signal or rule that prevents a bad outcome
+  - _Common chunks:_ guardrail metric, trust guardrail, safety guardrail
+  - _Example:_ Hide rate and reports can be guardrails for recommendation quality.
+
+### High-Value Verbs & Chunks
+
+- **collect** - to gather data
+  - _Example:_ I would collect only the data needed for the feature.
+
+- **explain** - to make the reason clear
+  - _Example:_ The product should explain why location is needed.
+
+- **opt in** - to actively choose to allow something
+  - _Example:_ Sensitive personalization should be opt-in.
+
+- **opt out** - to choose not to allow something
+  - _Example:_ Users should be able to opt out without searching through many menus.
+
+- **turn off** - to disable a feature or setting
+  - _Example:_ Users should be able to turn off tracking.
+
+- **push back on** - to disagree when a request feels risky or excessive
+  - _Example:_ I would push back on collecting contacts without a strong reason.
+
+- **limit** - to keep something within a smaller boundary
+  - _Example:_ I would limit sensitive targeting and repeated ads.
+
+- **reset** - to return something to a clean state
+  - _Example:_ Users should be able to reset their recommendation feed.
+
+- **hide** - to stop showing something
+  - _Example:_ Hide and not-interested actions are useful feedback signals.
+
+- **measure beyond** - to check more than one obvious metric
+  - _Example:_ We should measure beyond watch time and include satisfaction.
+
+- **make visible** - to show a control or explanation clearly
+  - _Example:_ Privacy controls should be visible, not buried in settings.
+
+- **cross the line** - to become unacceptable
+  - _Example:_ Tracking crosses the line when it is hidden, broad, and unrelated to the feature.
+
+### Speaking Expansion Paths
+
+- **Personal data** can connect to feature value, necessity, excessive collection, and trust.
+  - _Flow:_ A delivery app needs address and location, but not contacts. The data request should match the feature value.
+
+- **Consent** can connect to plain language, balanced buttons, easy rejection, and real choice.
+  - _Flow:_ A fair popup explains the data use clearly and makes reject as easy as accept.
+
+- **Recommendation systems** can connect to relevance, watch time, filter bubbles, and guardrail metrics.
+  - _Flow:_ Recommendations can help discovery, but watch time alone is not enough. We should also check hides, reports, satisfaction, and diversity.
+
+- **Trust** can connect to short-term growth, long-term brand value, and product restraint.
+  - _Flow:_ Extra tracking may improve targeting today, but if users feel watched, the product loses long-term trust.
+
+### Secondary Vocabulary - Privacy/Product Terms
+
+- **data minimization** - collecting only the data needed for a clear purpose
+  - _Example:_ Data minimization means asking for location only when the feature needs it.
+
+- **dark pattern** - design that pushes users into choices they may not really want
+  - _Example:_ Hiding the reject button is a dark pattern.
 
 - **filter bubble** - feed that shows too much of the same type of content
-- **misinformation** - false or misleading information
-- **guardrail metric** - metric used to detect harm, not only growth
+  - _Example:_ A filter bubble can make the feed feel narrow and repetitive.
+
 - **sensitive data** - data about health, identity, money, location, children, or private behavior
-- **recommendation control** - user tool for adjusting what the algorithm shows
+  - _Example:_ Sensitive data needs stronger consent and stricter defaults.
+
+- **personalized feed** - feed shaped by user behavior or profile
+  - _Example:_ A personalized feed should include controls like not interested and reset feed.
+
+- **misinformation** - false or misleading information
+  - _Example:_ Recommendation systems need guardrails for misinformation and low-quality content.
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Trade-off language**
-  Personalization can make the product more useful, but it can also feel invasive.
+### Speaking Frames
+
+- **Data necessity**
+  The app should collect only the data that clearly supports the feature.
 
 - **Proportionality**
-  The data request should be proportional to the feature value.
+  The data request should be proportional to the user value.
 
-- **Cause and effect**
-  If opt-out is hidden, users may feel manipulated.
+- **Trade-off**
+  Personalization can make the product more useful, but it can also feel invasive.
+
+- **Consent quality**
+  Real consent means the user can understand, accept, reject, and change the choice later.
+
+- **Control**
+  Users should be able to turn off tracking, reset recommendations, and delete unnecessary data.
 
 - **Guardrail thinking**
-  We should measure not only watch time, but also satisfaction and negative feedback.
+  We should measure not only watch time, but also satisfaction, hides, reports, and diversity.
 
-- **Practical recommendation**
-  I would collect less by default and ask again when the use case is clear.
-
-- **User trust framing**
+- **Trust framing**
   Short-term data volume is not worth long-term trust damage.
+
+- **Product recommendation**
+  I would collect less by default and ask again when the use case is clear.
 
 ### Useful Sentence Patterns
 
@@ -105,7 +185,11 @@ description: Explain privacy, tracking, consent, personalized feeds, ads, recomm
 - The benefit is..., but the risk is...
 - A fair design would...
 - Users should be able to...
-- I would add a guardrail like...
+- I would add a control like...
+- I would measure beyond...
+- The uncomfortable part is...
+- A trust-first choice would be...
+- The line is crossed when...
 - In real life, I see this when...
 
 </details>
@@ -113,20 +197,37 @@ description: Explain privacy, tracking, consent, personalized feeds, ads, recomm
 <details open>
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
-### Strong Collocations
+### Communication Blocks
 
-- collect personal data
-- minimize data collection
-- protect user privacy
-- ask for clear consent
-- make opt-out easy
-- set privacy-friendly defaults
-- personalize the feed
-- limit sensitive targeting
-- avoid dark patterns
-- add user controls
-- monitor guardrail metrics
-- protect user trust
+- **Data and consent**
+  - collect personal data
+  - minimize data collection
+  - ask for clear consent
+  - explain the purpose
+
+- **User controls**
+  - make opt-out easy
+  - set privacy-friendly defaults
+  - turn off tracking
+  - reset recommendations
+
+- **Trust and fairness**
+  - protect user trust
+  - avoid dark patterns
+  - make controls visible
+  - use plain language
+
+- **Recommendations**
+  - personalize the feed
+  - add user controls
+  - monitor guardrail metrics
+  - avoid narrow feeds
+
+- **Risk**
+  - limit sensitive targeting
+  - reduce misuse risk
+  - avoid hidden tracking
+  - measure user satisfaction
 
 ### Useful Chunking & Sentence Starters
 
@@ -138,6 +239,10 @@ description: Explain privacy, tracking, consent, personalized feeds, ads, recomm
 - The metric can be misleading because...
 - From a product point of view...
 - A trust-first choice would be...
+- The fair version would be...
+- The user should not need to...
+- I would push back if...
+- The guardrail I would add is...
 
 ### Useful Phrasal Verbs
 
@@ -146,6 +251,8 @@ description: Explain privacy, tracking, consent, personalized feeds, ads, recomm
 - **show up** -> Personalized ads show up after users search for something.
 - **scroll through** -> Users can scroll through short videos for hours.
 - **push back on** -> I would push back on collecting contacts without a strong reason.
+- **opt out of** -> Users should be able to opt out of personalized ads easily.
+- **dial down** -> Users should be able to dial down sensitive recommendations.
 
 </details>
 
@@ -179,65 +286,93 @@ It is fair only if users can understand the choice quickly and reject it easily.
 
 I would make both choices visible and explain what changes if users reject tracking.
 
+### Dialogue 4 - Product Growth vs Trust
+
+**Growth Lead:** More tracking could improve ad performance. Why not enable it by default?
+
+**You:**
+It may improve targeting, but the trust cost is real if users do not understand the data use. I would start with a narrower default and ask for consent when the value is clear.
+
+That protects growth without making the product feel sneaky.
+
 </details>
 
 <details open>
-<summary><strong>5) Debate Prompt</strong></summary>
+<summary><strong>5) Context Flows</strong></summary>
 
-**Should apps use personal data to improve the product, or collect as little data as possible by default?**
+### Flow 1 - Data + Feature Value + Boundary
 
-**Side A:** Personal data can make products more useful through delivery, safety, personalization, and fraud prevention.
+The right amount of data depends on the feature. A delivery app needs address and location because that directly supports the service. But a simple reading app asking for contacts or background location feels excessive. My rule is simple: if the feature works without that data, do not collect it by default.
 
-**Side B:** Products often collect more data than they need, and users do not fully understand the trade-off.
+### Flow 2 - Consent + Design Fairness
 
-_Your turn: What data is clearly necessary, and what data should stay optional?_
+A consent popup feels fair when users can understand the choice quickly and reject it easily. If Accept is bright and Reject is hidden, the design is pushing users. That may increase opt-in numbers, but it damages trust. Real consent should feel like a choice, not a trap.
+
+### Flow 3 - Recommendation + Watch Time + Guardrails
+
+If watch time goes up, I would not celebrate immediately. It may mean users enjoy the feed, but it may also mean the product is hard to leave. I would check satisfaction, hide rate, reports, diversity, and not-interested actions. Good recommendations should create useful engagement, not just more engagement.
+
+### Flow 4 - Startup Speed + Privacy Discipline
+
+Startups need speed, but they should still care about privacy early. They do not need a huge privacy program on day one. But they should avoid unnecessary data collection, hidden opt-outs, and vague consent. Bad data habits become expensive once the product grows.
 
 </details>
 
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
+### Reading 1 - Privacy Is Product Trust
+
 Privacy-aware product decisions are not only legal decisions. They are product trust decisions. A feature may improve growth, conversion, or personalization, but it can still feel unfair if users do not understand what data is collected or how to control it.
 
-Recommendation systems create similar trade-offs. They can help users discover useful content, but they can also narrow attention, increase unhealthy engagement, or spread low-quality information. A mature product team should measure more than clicks and watch time. It should also monitor satisfaction, diversity, reports, hides, opt-outs, and trust signals.
+The strongest product explanation is simple: what data is needed, why it is needed, what benefit users get, and what control they have later.
 
-In 2026, data can also be used for AI personalization, model improvement, fraud detection, and ad targeting. That makes plain-language explanation more important. Strong answers should explain what data is necessary, what feels excessive, what risk exists, and what fair design choice you would make.
+### Reading 2 - More Data Is Not Always Better
+
+More data can improve personalization, fraud detection, analytics, and ads. But more data also creates breach risk, misuse risk, and trust risk. A product team should not collect data only because it might be useful someday.
+
+Data minimization is not anti-product. It helps teams build features with restraint. Users are more likely to trust a product when the data request clearly matches the feature.
+
+### Reading 3 - Recommendation Systems Need Guardrails
+
+Recommendation systems can help users discover useful content. They can also narrow attention, increase unhealthy engagement, or spread low-quality information. The risk is that the system confuses attention with value.
+
+A mature product team should measure more than clicks and watch time. It should also monitor satisfaction, hides, reports, opt-outs, diversity, and trust signals.
+
+### Reading 4 - Fair Choice Must Be Usable
+
+A privacy choice is not meaningful if users cannot find it. A hidden opt-out may technically exist, but normal users may never reach it. That creates the appearance of control without the reality of control.
+
+Fair design makes important controls visible. Users should be able to accept, reject, change, and understand the choice without reading legal text.
+
+### Reading 5 - Useful Patterns Noticed
+
+- The app should collect only...
+- This data feels necessary because...
+- This feels excessive because...
+- A fair design would...
+- Users should be able to...
+- Watch time alone is not enough because...
+- The guardrail I would add is...
+- A trust-first choice would be...
+- The line is crossed when...
+
+**Reusable discussion idea:** A mature product decision balances usefulness, growth, user control, and long-term trust.
 
 </details>
 
 <details open>
 <summary><strong>7) Questions & Practice Ideas</strong></summary>
 
-### Core Questions (must-practice)
-
 1. What personal data does a normal app really need, and what feels excessive?
 2. What tracking behavior feels acceptable, and what crosses the line?
 3. What privacy setting should be easy to find in every app?
 4. What makes a consent popup feel fair or unfair?
-
-### High-Value Discussion Questions
-
 5. When are personalized ads useful, and when do they feel creepy?
 6. What is one problem with TikTok, YouTube, or Facebook recommendations?
 7. How can a product team improve recommendations without hurting user trust?
-
-### Follow-up Questions (Challenge Assumptions)
-
 8. If users can opt out, but the button is hidden, is that real choice?
 9. If watch time goes up, how do you know users are happy, not just addicted?
 10. Should startups care about privacy early, or only after they grow?
-
-### Reflection Questions
-
-11. Which app do you trust most with your data, and why?
-12. What privacy setting do you usually check first?
-13. Has a recommendation algorithm ever changed what you watch, buy, or believe?
-
-**Tips for speaking practice:**
-
-- Use real apps: TikTok, YouTube, Facebook, Shopee, Grab, Google Maps.
-- Keep answers simple: app -> data -> benefit -> risk -> fair choice.
-- Add one guardrail metric when discussing recommendation systems.
-- Do not overuse legal words; speak like a practical product-minded developer.
 
 </details>

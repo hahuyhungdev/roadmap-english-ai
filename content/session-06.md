@@ -16,83 +16,167 @@ description: Explain practical documentation as product quality: UI states, API 
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-- **component guideline** /kəmˈpoʊnənt ˈɡaɪdˌlaɪn/ (n) - short guide explaining when and how to use a UI component
-  - _Example 1:_ The component guideline explained button variants, disabled states, and usage rules.
-  - _Example 2:_ Designers and engineers used the guideline to avoid one-off UI decisions.
-  - _Example 3:_ A good guideline prevents repeated questions.
+### Core Vocabulary - High Reuse
 
-- **UI state spec** /ˌjuːˈaɪ steɪt spɛk/ (n) - clear list of loading, empty, success, error, and permission states
-  - _Example 1:_ QA used the UI state spec to test edge cases.
-  - _Example 2:_ Missing error-state specs caused rework during checkout testing.
-  - _Example 3:_ UI state docs are often more useful than long implementation notes.
+- **documentation** /ˌdɑːkjəmenˈteɪʃən/ (n) - written context that helps people understand, test, support, or change something
+  - _Common chunks:_ useful documentation, update documentation, documentation quality
+  - _Example:_ Good documentation helps QA and support act without asking the same question again.
 
-- **Storybook page** /ˈstɔːriˌbʊk peɪdʒ/ (n) - visual page showing component variants and examples
-  - _Example 1:_ The Storybook page showed default, loading, disabled, and error variants.
-  - _Example 2:_ New engineers used Storybook to understand component behavior quickly.
-  - _Example 3:_ Storybook is useful when it stays updated with real product usage.
+- **behavior** /bɪˈheɪvjər/ (n) - what the product or system does in a situation
+  - _Common chunks:_ expected behavior, user-facing behavior, behavior note
+  - _Example:_ The behavior note explained what users see when payment is pending.
 
-- **wireframe note** /ˈwaɪərˌfreɪm noʊt/ (n) - clarification attached to a design or wireframe
-  - _Example 1:_ I added wireframe notes for mobile error behavior.
-  - _Example 2:_ One missing wireframe note created a scope debate.
-  - _Example 3:_ Good notes explain unclear behavior before implementation starts.
+- **handoff** /ˈhændˌɔːf/ (n) - transferring context to another person or team
+  - _Common chunks:_ QA handoff, support handoff, handoff note
+  - _Example:_ The handoff note included screenshots, known issues, and escalation cases.
 
-- **API example** /ˌeɪ piː ˈaɪ ɪɡˈzæmpəl/ (n) - sample request, response, or error used to clarify backend behavior
-  - _Example 1:_ We included API examples for success, validation error, and permission error.
-  - _Example 2:_ Clear API examples reduced frontend integration questions.
-  - _Example 3:_ API examples are easier to use than abstract descriptions.
+- **rework** /ˌriːˈwɝːk/ (n) - extra work caused by unclear decisions, missing details, or late changes
+  - _Common chunks:_ reduce rework, avoid rework, QA rework
+  - _Example:_ A short UI state note prevented rework during release week.
 
-- **handoff note** /ˈhændˌɔːf noʊt/ (n) - short doc that transfers context to QA, support, or another engineer
-  - _Example 1:_ The handoff note included screenshots, expected states, and known issues.
-  - _Example 2:_ Support used the note to answer users after launch.
-  - _Example 3:_ Handoff notes are valuable when they are short and specific.
+- **clarity** /ˈklerəti/ (n) - how easy something is to understand
+  - _Common chunks:_ create clarity, improve clarity, lack of clarity
+  - _Example:_ The doc created clarity around error messages and retry behavior.
 
-- **release checklist** /rɪˈliːs ˈtʃɛkˌlɪst/ (n) - list of checks before launching a feature
-  - _Example 1:_ Our release checklist includes smoke tests, analytics, feature flags, and rollback steps.
-  - _Example 2:_ The checklist caught one missing error state before release.
-  - _Example 3:_ A checklist protects the team when launch pressure is high.
+- **ownership** /ˈoʊnərˌʃɪp/ (n) - clear responsibility for keeping information correct
+  - _Common chunks:_ doc ownership, clear ownership, ownership by area
+  - _Example:_ Without ownership, the Storybook examples became outdated.
 
-- **doc ownership** /dɑːk ˈoʊnərˌʃɪp/ (n) - clear responsibility for keeping documentation accurate
-  - _Example 1:_ We assigned doc ownership by feature area.
-  - _Example 2:_ Without ownership, examples became outdated.
-  - _Example 3:_ The owner is not the only writer; the owner keeps the doc reliable.
+- **source of truth** /sɔːrs əv truːθ/ (n) - the official place for the current answer
+  - _Common chunks:_ one source of truth, current source of truth, update the source of truth
+  - _Example:_ The release checklist became the source of truth for launch readiness.
 
-- **troubleshooting note** /ˈtrʌbəlˌʃuːtɪŋ noʊt/ (n) - short fix-oriented note for common issues
-  - _Example 1:_ We created troubleshooting notes for login and payment failures.
-  - _Example 2:_ Support used the notes before escalating to engineers.
-  - _Example 3:_ Troubleshooting notes reduce repeated questions during incidents.
+- **example** /ɪɡˈzæmpəl/ (n) - a sample that shows how something works
+  - _Common chunks:_ API example, code example, real example
+  - _Example:_ API examples were more useful than a long abstract description.
 
-- **documentation drift** /ˌdɑːkjəmenˈteɪʃən drɪft/ (n) - when docs become different from real product behavior
-  - _Example 1:_ Documentation drift happened after the component changed but the Storybook page did not.
-  - _Example 2:_ Drift makes docs less trustworthy.
-  - _Example 3:_ Regular ownership checks reduce drift.
+- **checklist** /ˈtʃekˌlɪst/ (n) - a short list of things to confirm
+  - _Common chunks:_ release checklist, QA checklist, checklist item
+  - _Example:_ The checklist caught one missing error state before release.
 
-**Additional useful terms:**
+- **gap** /ɡæp/ (n) - missing information or missing alignment
+  - _Common chunks:_ documentation gap, knowledge gap, fill the gap
+  - _Example:_ The documentation gap caused QA to test the wrong behavior.
 
-- **acceptance criteria** - conditions that define when a task is done
-- **known issue** - documented problem not fixed yet
-- **example snippet** - short practical code or text sample
-- **source of truth** - official place for the latest decision
+- **drift** /drɪft/ (n) - when documentation becomes different from the real product
+  - _Common chunks:_ documentation drift, reduce drift, prevent drift
+  - _Example:_ Drift happened when the component changed but the Storybook page did not.
+
+- **context** /ˈkɑːntekst/ (n) - background information needed to understand a decision
+  - _Common chunks:_ decision context, missing context, enough context
+  - _Example:_ The doc was short, but it included enough context for future engineers.
+
+- **update trigger** /ˈʌpˌdeɪt ˈtrɪɡər/ (n) - event that tells the team a doc needs to change
+  - _Common chunks:_ define an update trigger, trigger a doc update, update in the same PR
+  - _Example:_ A component behavior change should trigger a Storybook update.
+
+- **known issue** /noʊn ˈɪʃuː/ (n) - problem the team knows about but has not fixed yet
+  - _Common chunks:_ list known issues, known issue note, known limitation
+  - _Example:_ The handoff note listed known issues support should not escalate again.
+
+- **acceptance criteria** /əkˈseptəns kraɪˈtɪriə/ (n) - conditions that define when work is done
+  - _Common chunks:_ clear acceptance criteria, define acceptance criteria, meet criteria
+  - _Example:_ Clear acceptance criteria helped QA know when the behavior was correct.
+
+### High-Value Verbs & Chunks
+
+- **write up** - to write a short practical explanation
+  - _Example:_ I wrote up the payment error behavior before QA started.
+
+- **fill in** - to add missing information
+  - _Example:_ We filled in the missing empty-state details.
+
+- **hand over** - to pass context to another team
+  - _Example:_ We handed over behavior notes to support before release.
+
+- **look up** - to find information in docs
+  - _Example:_ New engineers can look up component behavior quickly.
+
+- **keep updated** - to keep docs aligned with real behavior
+  - _Example:_ We keep Storybook updated when component behavior changes.
+
+- **reduce confusion** - to make people ask fewer repeated questions
+  - _Example:_ The release note reduced confusion between QA and support.
+
+- **make visible** - to show a decision, risk, or rule clearly
+  - _Example:_ The doc made the fallback behavior visible before launch.
+
+- **confirm behavior** - to check the expected product behavior
+  - _Example:_ Product confirmed the retry behavior before QA sign-off.
+
+- **capture the decision** - to write down what was chosen and why
+  - _Example:_ We captured the decision so the team would not repeat the same debate.
+
+- **prevent drift** - to stop docs from becoming outdated
+  - _Example:_ Updating docs in the same pull request helps prevent drift.
+
+- **save back-and-forth** - to reduce repeated clarification messages
+  - _Example:_ One short API example saved a lot of back-and-forth with backend.
+
+- **keep it lightweight** - to make docs practical and easy to maintain
+  - _Example:_ We kept the doc lightweight: expected states, owner, and known issues.
+
+### Speaking Expansion Paths
+
+- **Documentation** can connect to QA, support, onboarding, and release confidence.
+  - _Flow:_ This doc is not for looking complete. It helps QA test the right cases, support answer users, and future engineers understand the behavior.
+
+- **Behavior note** can connect to UI states, edge cases, expected messages, and acceptance criteria.
+  - _Flow:_ I would document the success, loading, empty, error, and permission states so QA does not have to guess.
+
+- **Ownership** can connect to update triggers, source of truth, and documentation drift.
+  - _Flow:_ The owner is not the only writer. The owner makes sure the doc stays reliable when behavior changes.
+
+- **Short docs** can connect to speed, missing context, and risk-based depth.
+  - _Flow:_ I prefer short docs, but not vague docs. For risky behavior, I add the decision reason, owner, and edge cases.
+
+### Secondary Vocabulary - Documentation/Product Terms
+
+- **component guideline** - short guide explaining when and how to use a UI component
+  - _Example:_ The component guideline explained button variants and disabled states.
+
+- **UI state spec** - list of loading, empty, success, error, and permission states
+  - _Example:_ QA used the UI state spec to test edge cases.
+
+- **Storybook page** - visual page showing component variants and examples
+  - _Example:_ The Storybook page showed default, loading, disabled, and error variants.
+
+- **API example** - sample request, response, or error used to clarify backend behavior
+  - _Example:_ API examples reduced frontend integration questions.
+
+- **troubleshooting note** - short fix-oriented note for common issues
+  - _Example:_ Support used troubleshooting notes before escalating to engineers.
+
 - **doc bundle** - small set of linked docs for one feature
+  - _Example:_ The doc bundle included UI states, API examples, and a release checklist.
 
 </details>
 
 <details open>
 <summary><strong>2) Grammar & Useful Patterns (B2)</strong></summary>
 
-- **Purpose language**
+### Speaking Frames
+
+- **Purpose**
   We write UI state specs so QA can test edge cases without guessing.
 
 - **Cause and result**
   Because the error behavior was undocumented, QA reopened the ticket near release.
 
-- **Contrast**
-  Writing docs takes time, but it saves more time during handoff and testing.
+- **Practical contrast**
+  Writing the note takes time, but it saves more time during handoff and testing.
 
-- **Priority**
+- **Risk-based priority**
   We document high-risk behavior first, not every tiny implementation detail.
 
-- **Ownership**
+- **Ownership split**
   Frontend owns UI behavior notes, backend owns API examples, and product confirms business rules.
+
+- **Short but useful**
+  The doc does not need to be long, but it needs expected behavior, owner, and edge cases.
+
+- **Update trigger**
+  If the component behavior changes, the guideline should change in the same pull request.
 
 - **Reflection**
   If we had documented the edge cases earlier, the release would have been smoother.
@@ -102,31 +186,52 @@ description: Explain practical documentation as product quality: UI states, API 
 - This document is for...
 - The most useful section is...
 - The documentation gap was...
+- QA needed to know...
+- Support needed to know...
 - We reduced confusion by...
 - The owner of this doc is...
 - The non-negotiable part is...
 - The measurable impact was...
 - We keep it updated by...
+- It can be short, but it must include...
+- This saves time because...
 
 </details>
 
 <details open>
 <summary><strong>3) Collocations, Chunking & Phrasal Verbs</strong></summary>
 
-### Strong Collocations
+### Communication Blocks
 
-- document UI states
-- write component guidelines
-- update Storybook examples
-- attach wireframe notes
-- add API examples
-- create handoff notes
-- run release checklists
-- assign doc ownership
-- reduce documentation drift
-- publish troubleshooting notes
-- reduce QA rework
-- improve onboarding speed
+- **Behavior documentation**
+  - document UI states
+  - clarify expected behavior
+  - define acceptance criteria
+  - list known issues
+
+- **Examples and handoff**
+  - add API examples
+  - create handoff notes
+  - publish troubleshooting notes
+  - share user-facing wording
+
+- **Release support**
+  - run release checklists
+  - confirm rollback steps
+  - note feature flag behavior
+  - prepare support context
+
+- **Ownership**
+  - assign doc ownership
+  - keep one source of truth
+  - reduce documentation drift
+  - update docs in the same PR
+
+- **Team impact**
+  - reduce QA rework
+  - reduce repeated questions
+  - improve onboarding speed
+  - make decisions easier to find
 
 ### Useful Chunking & Sentence Starters
 
@@ -138,6 +243,10 @@ description: Explain practical documentation as product quality: UI states, API 
 - We kept the doc short by...
 - The trade-off was...
 - The result was fewer...
+- It does not need to be long, but...
+- The owner is not the only writer...
+- The doc should be updated when...
+- If this detail is missing...
 
 ### Useful Phrasal Verbs
 
@@ -146,6 +255,8 @@ description: Explain practical documentation as product quality: UI states, API 
 - **hand over** -> We handed over behavior notes to QA before release.
 - **clean up** -> We cleaned up outdated setup steps.
 - **look up** -> New engineers can look up component behavior quickly.
+- **keep up with** -> The docs need to keep up with product behavior.
+- **point back to** -> I point people back to the source of truth when the same question repeats.
 
 </details>
 
@@ -179,65 +290,93 @@ We need ownership and update triggers. If a component behavior changes, the Stor
 
 Otherwise the doc becomes less reliable, and people stop using it.
 
+### Dialogue 4 - Short Docs Under Deadline
+
+**Manager:** We are short on time. Do we really need documentation now?
+
+**You:**
+We do not need a long page. But we do need the risky behavior written down: expected states, known issues, owner, and rollback or support notes.
+
+That is the minimum doc that protects QA and support during release.
+
 </details>
 
 <details open>
-<summary><strong>5) Debate Prompt</strong></summary>
+<summary><strong>5) Context Flows</strong></summary>
 
-**Should engineers spend meaningful time on documentation, or focus mainly on coding?**
+### Flow 1 - Confusion + Doc + Team Impact
 
-**Side A:** Coding should come first because users need working features, not beautiful documents.
+The documentation gap was not about missing words. It created repeated questions between frontend, QA, and support. Once we wrote down the expected UI states and error messages, QA could test faster and support had clearer wording. That is why I see documentation as delivery support, not paperwork.
 
-**Side B:** Practical docs are part of delivery because they reduce rework, QA confusion, support pressure, and onboarding time.
+### Flow 2 - Short Doc + Risk-Based Detail
 
-_Your turn: Which documents are worth writing even when the deadline is tight?_
+I prefer short docs, but short does not mean vague. For low-risk UI changes, a few bullets may be enough. For payment, privacy, permissions, or AI fallback behavior, the doc needs decision reason, owner, expected states, and known limitations. The depth should match the risk.
+
+### Flow 3 - Ownership + Update Trigger + Drift
+
+The owner is not the only person who writes the doc. Product can confirm business rules, backend can confirm API examples, and QA can add test notes. But one owner should keep it reliable. If behavior changes, the doc should update in the same pull request.
+
+### Flow 4 - Deadline + Non-Negotiable Docs
+
+When deadlines are tight, I cut nice-to-have docs, not safety docs. The non-negotiable parts are expected behavior, edge cases, owner, and rollback or support notes. The doc can be short, but it cannot leave risky behavior to memory.
 
 </details>
 
 <details open>
 <summary><strong>6) Reading Text</strong></summary>
 
+### Reading 1 - Good Docs Reduce Rework
+
 Good documentation is not long. It is clear, practical, and used in real delivery work. A useful doc helps someone make a decision, test a scenario, answer a user, or change a feature safely.
 
-For frontend teams, high-value docs often include UI state specs, component guidelines, Storybook examples, wireframe notes, API examples, and release checklists. These docs reduce repeated questions and prevent late rework.
+For frontend teams, high-value docs often include UI state specs, component guidelines, Storybook examples, API examples, handoff notes, and release checklists. These docs reduce repeated questions and prevent late rework.
 
-In 2026, AI can help draft documentation, but it can also create generic or outdated content. Engineers still need to verify examples, remove sensitive data, and keep docs close to real product behavior. The best documentation is not written to look complete. It is written so the team can work with less confusion.
+### Reading 2 - Document Behavior, Not Only Implementation
+
+Many docs fail because they describe implementation but not behavior. QA does not always need the component internals. They need to know what the user sees in loading, empty, error, success, and permission states.
+
+Support needs a different layer: what users can try, what message they should receive, and when to escalate. A good behavior note makes the product easier to test and support.
+
+### Reading 3 - Short Docs Can Still Carry Context
+
+Short docs are easier to read and maintain, but they can become too thin. If a doc only says what happens but not why, future engineers may repeat the same discussion.
+
+The solution is not always a long page. A short decision context can be enough: what we chose, why we chose it, who owns it, and when it should be revisited.
+
+### Reading 4 - AI Can Draft Docs, But Engineers Keep Them Accurate
+
+AI can help draft documentation, but it can also produce generic or outdated content. Engineers still need to verify examples, remove sensitive data, and keep docs close to real product behavior.
+
+The best documentation is not written to look complete. It is written so the team can work with less confusion. Accuracy matters more than volume.
+
+### Reading 5 - Useful Patterns Noticed
+
+- This document is for...
+- The documentation gap was...
+- QA needed to know...
+- Support needed to know...
+- It does not need to be long, but...
+- The owner is not the only writer...
+- The doc should be updated when...
+- The non-negotiable parts are...
+- This saves time because...
+
+**Reusable discussion idea:** Practical documentation turns unclear behavior into shared context that QA, support, product, and engineers can actually use.
 
 </details>
 
 <details open>
 <summary><strong>7) Questions & Practice Ideas</strong></summary>
 
-### Core Questions (must-practice)
-
 1. Which document in your team saves the most time, and why?
 2. How do you decide what must be documented before release?
 3. What is one example of rework caused by unclear docs?
 4. How do you assign documentation ownership in a practical way?
-
-### High-Value Discussion Questions
-
 5. What are the benefits and limits of short docs versus detailed docs?
 6. How do documentation habits differ between beginner and experienced engineers?
 7. When should teams prioritize docs over feature speed?
-
-### Follow-up Questions (Challenge Assumptions)
-
-8. You said short docs are better. What important context may be lost?
-9. You said docs reduce QA issues. What if QA still reports confusion?
+8. What important context can be lost when docs are too short?
+9. What should you do if QA still feels confused after reading the doc?
 10. If deadlines are tight, which docs are non-negotiable?
-
-### Reflection Questions
-
-11. Which documentation phrase is hardest for you to use naturally in English?
-12. What one documentation habit will you start this week?
-13. In your future role, will documentation quality influence your career growth?
-
-**Tips for speaking practice:**
-
-- Use one real document and one measurable impact.
-- Keep flow: confusion -> doc change -> team impact.
-- Mention who uses the doc: QA, PM, support, design, backend, or future engineers.
-- Avoid saying "write more docs"; say what specific doc solves what problem.
 
 </details>
