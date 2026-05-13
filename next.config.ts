@@ -5,10 +5,19 @@ import { fileURLToPath } from "node:url";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
-const localIPs = Object.values(os.networkInterfaces())
-  .flat()
-  .filter((iface) => iface && iface.family === "IPv4" && !iface.internal)
-  .map((iface) => iface!.address);
+function getLocalIPs(): string[] {
+  try {
+    return Object.values(os.networkInterfaces())
+      .flat()
+      .filter((iface) => iface && iface.family === "IPv4" && !iface.internal)
+      .map((iface) => iface!.address);
+  } catch {
+    // Some CI/container environments can throw on networkInterfaces().
+    return [];
+  }
+}
+
+const localIPs = getLocalIPs();
 
 const nextConfig: NextConfig = {
   // Content markdown files are in /content at project root
