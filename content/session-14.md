@@ -15,116 +15,79 @@ description: Practice talking about boundaries, saying no, guilt, availability, 
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-### Core Vocabulary - Boundaries & Expectations
+### Core Vocabulary - High Reuse
 
 - **boundary** /ˈbaʊndəri/ (n) - a limit that protects your time, energy, comfort, or values
-  - _Function:_ explaining limits without blame
-  - _Collocations:_ clear boundary, healthy boundary, set a boundary, respect a boundary
-  - _Chunks:_ I need to set a boundary around..., That crosses a boundary for me.
-  - _Pattern:_ respect + limit + possible alternative
-  - _Example:_ A boundary can be kind if it is clear and respectful.
-  - _Another example:_ I need a boundary around late-night calls during workdays.
-  - _Native upgrade:_ I am not available for that, but I hope you understand.
+  - _Common chunks:_ clear boundary, healthy boundary, set a boundary, respect a boundary
+  - _Example 1:_ A boundary can be kind if it is clear and respectful.
+  - _Example 2:_ I need a boundary around late-night calls during workdays.
+  - _Example 3:_ I am not available for that, but I hope you understand.
 
 - **people-pleasing** /ˈpiːpəl ˌpliːzɪŋ/ (n) - saying yes too often to avoid disappointing others
-  - _Function:_ describing approval-seeking behavior without attacking yourself
-  - _Collocations:_ people-pleasing habit, people-pleasing pattern, stop people-pleasing
-  - _Chunks:_ I said yes from people-pleasing, not real willingness.
-  - _Pattern:_ fear of disappointing -> automatic yes -> resentment
-  - _Example:_ People-pleasing looks kind at first, but it can create quiet resentment.
-  - _Another example:_ I am learning to notice when my yes is not honest.
-  - _Native upgrade:_ I agreed because I felt guilty, not because I really wanted to.
+  - _Common chunks:_ people-pleasing habit, people-pleasing pattern, stop people-pleasing
+  - _Example 1:_ People-pleasing looks kind at first, but it can create quiet resentment.
+  - _Example 2:_ I am learning to notice when my yes is not honest.
+  - _Example 3:_ I agreed because I felt guilty, not because I really wanted to.
 
 - **say no** /seɪ noʊ/ (v phrase) - refuse a request, invitation, or expectation
-  - _Function:_ practicing direct but warm refusal
-  - _Collocations:_ say no clearly, say no politely, learn to say no, say no without guilt
-  - _Chunks:_ I cannot do that this time, I need to say no to...
-  - _Pattern:_ clear no + warmth + no long defense
-  - _Example:_ Saying no early is kinder than saying yes and becoming resentful.
-  - _Another example:_ A polite no does not need a long defense.
-  - _Native upgrade:_ I cannot make it, but I hope it goes well.
+  - _Common chunks:_ say no clearly, say no politely, learn to say no, say no without guilt
+  - _Example 1:_ Saying no early is kinder than saying yes and becoming resentful.
+  - _Example 2:_ A polite no does not need a long defense.
+  - _Example 3:_ I cannot make it, but I hope it goes well.
 
 - **over-explain** /ˌoʊvər ɪkˈspleɪn/ (v) - give too many reasons because you feel guilty or afraid
-  - _Function:_ describing anxious communication
-  - _Collocations:_ over-explain yourself, stop over-explaining, over-explain a decision
-  - _Chunks:_ I tend to over-explain when I feel guilty.
-  - _Pattern:_ guilt -> long explanation -> weaker boundary
-  - _Example:_ Over-explaining can make a simple boundary sound negotiable.
-  - _Another example:_ Sometimes a short honest answer is more respectful.
-  - _Native upgrade:_ I do not need to justify every limit.
+  - _Common chunks:_ over-explain yourself, stop over-explaining, over-explain a decision
+  - _Example 1:_ Over-explaining can make a simple boundary sound negotiable.
+  - _Example 2:_ Sometimes a short honest answer is more respectful.
+  - _Example 3:_ I do not need to justify every limit.
 
 - **resentment** /rɪˈzentmənt/ (n) - quiet anger from feeling used, ignored, or pressured
-  - _Function:_ explaining the hidden cost of weak boundaries
-  - _Collocations:_ build resentment, quiet resentment, avoid resentment, feel resentful
-  - _Chunks:_ If I keep saying yes, resentment builds.
-  - _Pattern:_ repeated yes + ignored need -> resentment
-  - _Example:_ Boundaries prevent resentment because people know what is actually okay.
-  - _Another example:_ I would rather disappoint someone honestly than agree and resent them later.
-  - _Native upgrade:_ I do not want to say yes and then feel bitter about it.
+  - _Common chunks:_ build resentment, quiet resentment, avoid resentment, feel resentful
+  - _Example 1:_ Boundaries prevent resentment because people know what is actually okay.
+  - _Example 2:_ I would rather disappoint someone honestly than agree and resent them later.
+  - _Example 3:_ I do not want to say yes and then feel bitter about it.
 
 - **guilt** /ɡɪlt/ (n) - the uncomfortable feeling that you are doing something wrong
-  - _Function:_ discussing emotional pressure without treating guilt as proof
-  - _Collocations:_ feel guilty, guilt pressure, guilt-driven decision, guilt trip
-  - _Chunks:_ I feel guilty saying no, but...
-  - _Pattern:_ guilt is a feeling, not always a signal
-  - _Example:_ Feeling guilty does not always mean you made the wrong decision.
-  - _Another example:_ Sometimes guilt just means you are changing an old pattern.
-  - _Native upgrade:_ The guilt is uncomfortable, but it does not mean I should say yes.
+  - _Common chunks:_ feel guilty, guilt pressure, guilt-driven decision, guilt trip
+  - _Example 1:_ Feeling guilty does not always mean you made the wrong decision.
+  - _Example 2:_ Sometimes guilt just means you are changing an old pattern.
+  - _Example 3:_ The guilt is uncomfortable, but it does not mean I should say yes.
 
 - **availability** /əˌveɪləˈbɪləti/ (n) - whether you have time, energy, or capacity for something
-  - _Function:_ separating care from capacity
-  - _Collocations:_ limited availability, emotional availability, check your availability
-  - _Chunks:_ I care, but I do not have the availability this week.
-  - _Pattern:_ care can exist without capacity
-  - _Example:_ My availability is low this month, so I cannot take on extra plans.
-  - _Another example:_ Being unavailable does not always mean being uncaring.
-  - _Native upgrade:_ I do not have the space for that right now.
+  - _Common chunks:_ limited availability, emotional availability, check your availability
+  - _Example 1:_ My availability is low this month, so I cannot take on extra plans.
+  - _Example 2:_ Being unavailable does not always mean being uncaring.
+  - _Example 3:_ I do not have the space for that right now.
 
 - **reasonable request** /ˈriːzənəbəl rɪˈkwest/ (n phrase) - a fair request that still may not fit your limits
-  - _Function:_ separating fairness from availability
-  - _Collocations:_ reasonable request, perfectly reasonable request, decline a reasonable request
-  - _Chunks:_ It is a reasonable request, but I still cannot do it.
-  - _Pattern:_ validate request + protect limit
-  - _Example:_ A request can be reasonable and still not be possible for me.
-  - _Another example:_ I do not need to make the other person wrong to say no.
-  - _Native upgrade:_ I get why you are asking, but I cannot take that on.
+  - _Common chunks:_ reasonable request, perfectly reasonable request, decline a reasonable request
+  - _Example 1:_ A request can be reasonable and still not be possible for me.
+  - _Example 2:_ I do not need to make the other person wrong to say no.
+  - _Example 3:_ I get why you are asking, but I cannot take that on.
 
 - **emotional pressure** /ɪˈmoʊʃənəl ˈpreʃər/ (n) - pressure created by guilt, expectation, fear, or relationship history
-  - _Function:_ naming pressure that is not always spoken directly
-  - _Collocations:_ feel emotional pressure, family pressure, pressure to say yes
-  - _Chunks:_ There is emotional pressure behind the request.
-  - _Pattern:_ request + relationship history = harder refusal
-  - _Example:_ Family requests can carry emotional pressure even when nobody says anything harsh.
-  - _Another example:_ Emotional pressure makes a simple no feel like a betrayal.
-  - _Native upgrade:_ The request sounds simple, but emotionally it feels heavy.
+  - _Common chunks:_ feel emotional pressure, family pressure, pressure to say yes
+  - _Example 1:_ Family requests can carry emotional pressure even when nobody says anything harsh.
+  - _Example 2:_ Emotional pressure makes a simple no feel like a betrayal.
+  - _Example 3:_ The request sounds simple, but emotionally it feels heavy.
 
 - **protect your energy** /prəˈtekt jʊr ˈenərdʒi/ (v phrase) - avoid commitments that leave you drained or resentful
-  - _Function:_ explaining limits in everyday language
-  - _Collocations:_ protect my energy, protect social energy, protect mental space
-  - _Chunks:_ I am trying to protect my energy this week.
-  - _Pattern:_ limited energy -> intentional choice
-  - _Example:_ Protecting your energy is not selfish if you still treat people with respect.
-  - _Another example:_ I cannot be helpful if I am always drained.
-  - _Native upgrade:_ I need to keep some space for myself.
+  - _Common chunks:_ protect my energy, protect social energy, protect mental space
+  - _Example 1:_ Protecting your energy is not selfish if you still treat people with respect.
+  - _Example 2:_ I cannot be helpful if I am always drained.
+  - _Example 3:_ I need to keep some space for myself.
 
 - **reset expectations** /ˌriːˈset ˌekspekˈteɪʃənz/ (v phrase) - change what people assume you can or will do
-  - _Function:_ talking about changing an old pattern
-  - _Collocations:_ reset expectations, change expectations, manage expectations
-  - _Chunks:_ I need to reset expectations around my availability.
-  - _Pattern:_ old pattern -> honest limit -> consistent new behavior
-  - _Example:_ After saying yes too often, I had to reset expectations with my family.
-  - _Another example:_ Resetting expectations takes repetition, not one perfect sentence.
-  - _Native upgrade:_ I cannot keep being the default person for this.
+  - _Common chunks:_ reset expectations, change expectations, manage expectations
+  - _Example 1:_ After saying yes too often, I had to reset expectations with my family.
+  - _Example 2:_ Resetting expectations takes repetition, not one perfect sentence.
+  - _Example 3:_ I cannot keep being the default person for this.
 
 - **respectful no** /rɪˈspektfəl noʊ/ (n phrase) - a refusal that is clear and warm
-  - _Function:_ giving language for mature refusal
-  - _Collocations:_ give a respectful no, hear a respectful no, respectful refusal
-  - _Chunks:_ A respectful no is still a no.
-  - _Pattern:_ appreciation + clear limit + no attack
-  - _Example:_ A respectful no can disappoint someone without disrespecting them.
-  - _Another example:_ The tone can be warm while the answer stays firm.
-  - _Native upgrade:_ I appreciate you asking, but that does not work for me.
-
+  - _Common chunks:_ give a respectful no, hear a respectful no, respectful refusal
+  - _Example 1:_ A respectful no can disappoint someone without disrespecting them.
+  - _Example 2:_ The tone can be warm while the answer stays firm.
+  - _Example 3:_ I appreciate you asking, but that does not work for me.
 ### High-Value Verbs & Chunks
 
 - **take on** - to accept a task, responsibility, or emotional load
@@ -182,28 +145,28 @@ description: Practice talking about boundaries, saying no, guilt, availability, 
 
 ### Secondary Vocabulary - Boundary Nuance
 
-- **soft no** _(noun phrase)_ - a gentle but clear refusal
+- **soft no** - a gentle but clear refusal
   - _Example:_ A soft no can still be firm if the message is clear.
 
-- **personal limit** _(noun phrase)_ - something you cannot or do not want to accept
+- **personal limit** - something you cannot or do not want to accept
   - _Example:_ Late-night calls are a personal limit for me during workdays.
 
-- **approval-seeking** _(noun)_ - trying too hard to be liked or accepted
+- **approval-seeking** - trying too hard to be liked or accepted
   - _Example:_ Approval-seeking can make people say yes before checking their real capacity.
 
-- **default person** _(noun phrase)_ - the person everyone expects to help or handle something
+- **default person** - the person everyone expects to help or handle something
   - _Example:_ I do not want to be the default person for every family problem.
 
-- **emotional labor** _(noun phrase)_ - the effort of managing feelings, support, and social harmony
+- **emotional labor** - the effort of managing feelings, support, and social harmony
   - _Example:_ Constant emotional labor can become exhausting when it is not shared.
 
-- **self-erasure** _(noun)_ - losing your own needs by always adjusting to others
+- **self-erasure** - losing your own needs by always adjusting to others
   - _Example:_ Kindness without boundaries can turn into self-erasure.
 
-- **capacity** _(noun)_ - the amount of energy, time, or attention you realistically have
+- **capacity** - the amount of energy, time, or attention you realistically have
   - _Example:_ I can care about someone and still not have the capacity to help.
 
-- **guilt trip** _(noun)_ - words or behavior that make someone feel guilty so they agree
+- **guilt trip** - words or behavior that make someone feel guilty so they agree
   - _Example:_ A guilt trip is not the same as an honest request.
 
 </details>

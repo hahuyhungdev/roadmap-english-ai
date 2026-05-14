@@ -15,116 +15,79 @@ description: Practice discussing adult friendship, changing priorities, mutual e
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-### Core Vocabulary - Friendship & Adulthood
+### Core Vocabulary - High Reuse
 
 - **drift apart** /drɪft əˈpɑːrt/ (v phrase) - become less close slowly, usually without conflict
-  - _Function:_ explaining distance without blaming either person
-  - _Collocations:_ slowly drift apart, naturally drift apart, drift apart after university
-  - _Chunks:_ We did not fall out; we just drifted apart.
-  - _Pattern:_ no conflict -> life changes -> distance
-  - _Example:_ We drifted apart after our schedules stopped matching.
-  - _Another example:_ Drifting apart can feel sad even when nobody did anything wrong.
-  - _Native upgrade:_ Life just pulled us in different directions.
+  - _Common chunks:_ slowly drift apart, naturally drift apart, drift apart after university
+  - _Example 1:_ We drifted apart after our schedules stopped matching.
+  - _Example 2:_ Drifting apart can feel sad even when nobody did anything wrong.
+  - _Example 3:_ Life just pulled us in different directions.
 
 - **make time** /meɪk taɪm/ (v phrase) - intentionally create time for someone
-  - _Function:_ talking about effort and priorities
-  - _Collocations:_ make time for friends, make proper time, make time consistently
-  - _Chunks:_ If it matters, I try to make time for it.
-  - _Pattern:_ care + intention + calendar reality
-  - _Example:_ Adult friendship often depends on making time, not just having time.
-  - _Another example:_ I do not need daily contact, but I value friends who make time sometimes.
-  - _Native upgrade:_ We have to be more intentional now.
+  - _Common chunks:_ make time for friends, make proper time, make time consistently
+  - _Example 1:_ Adult friendship often depends on making time, not just having time.
+  - _Example 2:_ I do not need daily contact, but I value friends who make time sometimes.
+  - _Example 3:_ We have to be more intentional now.
 
 - **mutual effort** /ˈmjuːtʃuəl ˈefərt/ (n) - effort from both people to keep a relationship alive
-  - _Function:_ describing friendship balance without demanding perfection
-  - _Collocations:_ need mutual effort, lack mutual effort, feel mutual
-  - _Chunks:_ I do not need equal effort every week, but I need it to feel mutual.
-  - _Pattern:_ not exact equality, but shared care over time
-  - _Example:_ Mutual effort can be small, like remembering details or planning a catch-up.
-  - _Another example:_ A friendship feels warmer when both people initiate sometimes.
-  - _Native upgrade:_ I do not want to feel like I am the only one keeping it alive.
+  - _Common chunks:_ need mutual effort, lack mutual effort, feel mutual
+  - _Example 1:_ Mutual effort can be small, like remembering details or planning a catch-up.
+  - _Example 2:_ A friendship feels warmer when both people initiate sometimes.
+  - _Example 3:_ I do not want to feel like I am the only one keeping it alive.
 
 - **social energy** /ˈsoʊʃəl ˈenərdʒi/ (n) - the energy you have for meeting, texting, or talking to people
-  - _Function:_ explaining why people care but still withdraw
-  - _Collocations:_ low social energy, limited social energy, protect social energy
-  - _Chunks:_ I care, but my social energy is low.
-  - _Pattern:_ emotional limit, not lack of love
-  - _Example:_ After work, I sometimes have low social energy even for people I like.
-  - _Another example:_ Good friends understand that silence is not always rejection.
-  - _Native upgrade:_ I am not avoiding people; I am just drained.
+  - _Common chunks:_ low social energy, limited social energy, protect social energy
+  - _Example 1:_ After work, I sometimes have low social energy even for people I like.
+  - _Example 2:_ Good friends understand that silence is not always rejection.
+  - _Example 3:_ I am not avoiding people; I am just drained.
 
 - **life stage** /laɪf steɪdʒ/ (n) - a period in life with different priorities and responsibilities
-  - _Function:_ explaining different rhythms without judgment
-  - _Collocations:_ different life stage, same life stage, enter a new life stage
-  - _Chunks:_ We are just in different life stages right now.
-  - _Pattern:_ different responsibilities -> different availability
-  - _Example:_ Friendships can become harder when people enter different life stages.
-  - _Another example:_ One friend may be building a career while another is starting a family.
-  - _Native upgrade:_ Our lives are running on different rhythms now.
+  - _Common chunks:_ different life stage, same life stage, enter a new life stage
+  - _Example 1:_ Friendships can become harder when people enter different life stages.
+  - _Example 2:_ One friend may be building a career while another is starting a family.
+  - _Example 3:_ Our lives are running on different rhythms now.
 
 - **shared history** /ʃerd ˈhɪstəri/ (n phrase) - memories and experiences that connect people from the past
-  - _Function:_ talking about old friendship warmth and its limits
-  - _Collocations:_ have shared history, value shared history, rely on shared history
-  - _Chunks:_ We have a lot of shared history, but...
-  - _Pattern:_ past closeness helps, but present effort still matters
-  - _Example:_ Shared history makes old friends feel familiar quickly.
-  - _Another example:_ Shared history is not enough if the current relationship feels empty.
-  - _Native upgrade:_ We know each other's old selves, but we still need to know who we are now.
+  - _Common chunks:_ have shared history, value shared history, rely on shared history
+  - _Example 1:_ Shared history makes old friends feel familiar quickly.
+  - _Example 2:_ Shared history is not enough if the current relationship feels empty.
+  - _Example 3:_ We know each other's old selves, but we still need to know who we are now.
 
 - **outgrow** /ˌaʊtˈɡroʊ/ (v) - change so much that an old relationship no longer fits well
-  - _Function:_ discussing change with respect
-  - _Collocations:_ outgrow a friendship, outgrow old habits, outgrow a social circle
-  - _Chunks:_ I do not think I am better; I just outgrew that dynamic.
-  - _Pattern:_ growth -> mismatch -> respectful distance
-  - _Example:_ Sometimes people outgrow the version of friendship they had at 20.
-  - _Another example:_ Outgrowing a group does not mean you look down on them.
-  - _Native upgrade:_ That friendship belonged to a different season of my life.
+  - _Common chunks:_ outgrow a friendship, outgrow old habits, outgrow a social circle
+  - _Example 1:_ Sometimes people outgrow the version of friendship they had at 20.
+  - _Example 2:_ Outgrowing a group does not mean you look down on them.
+  - _Example 3:_ That friendship belonged to a different season of my life.
 
 - **low-maintenance** /loʊ ˈmeɪntənəns/ (adj) - not needing constant contact to stay close
-  - _Function:_ describing stable adult friendship
-  - _Collocations:_ low-maintenance friend, low-maintenance friendship, feel low-maintenance
-  - _Chunks:_ We do not talk often, but it is low-maintenance in a good way.
-  - _Pattern:_ less contact, same warmth
-  - _Example:_ Some adult friendships survive because they are low-maintenance.
-  - _Another example:_ Low-maintenance is healthy when both people still feel valued.
-  - _Native upgrade:_ We can pick up where we left off.
+  - _Common chunks:_ low-maintenance friend, low-maintenance friendship, feel low-maintenance
+  - _Example 1:_ Some adult friendships survive because they are low-maintenance.
+  - _Example 2:_ Low-maintenance is healthy when both people still feel valued.
+  - _Example 3:_ We can pick up where we left off.
 
 - **emotional effort** /ɪˈmoʊʃənəl ˈefərt/ (n) - the care and attention needed to maintain closeness
-  - _Function:_ making invisible relationship work speakable
-  - _Collocations:_ require emotional effort, share emotional effort, lack emotional effort
-  - _Chunks:_ Friendship needs emotional effort, but it should not feel one-sided.
-  - _Pattern:_ care is active, not automatic
-  - _Example:_ Remembering important details is a small form of emotional effort.
-  - _Another example:_ A friendship becomes tiring when only one person carries the effort.
-  - _Native upgrade:_ I do not want to be the only one keeping it alive.
+  - _Common chunks:_ require emotional effort, share emotional effort, lack emotional effort
+  - _Example 1:_ Remembering important details is a small form of emotional effort.
+  - _Example 2:_ A friendship becomes tiring when only one person carries the effort.
+  - _Example 3:_ I do not want to be the only one keeping it alive.
 
 - **one-sided** /ˌwʌn ˈsaɪdɪd/ (adj) - mostly carried by one person
-  - _Function:_ talking about imbalance calmly
-  - _Collocations:_ one-sided effort, one-sided friendship, feel one-sided
-  - _Chunks:_ I do not need equal effort every week, but I do not want it to feel one-sided.
-  - _Pattern:_ imbalance -> quiet resentment
-  - _Example:_ Adult friendship gets hard when effort becomes one-sided for too long.
-  - _Another example:_ Sometimes you need to stop chasing and see if the other person also shows up.
-  - _Native upgrade:_ I got tired of always being the one to initiate.
+  - _Common chunks:_ one-sided effort, one-sided friendship, feel one-sided
+  - _Example 1:_ Adult friendship gets hard when effort becomes one-sided for too long.
+  - _Example 2:_ Sometimes you need to stop chasing and see if the other person also shows up.
+  - _Example 3:_ I got tired of always being the one to initiate.
 
 - **inner circle** /ˈɪnər ˈsɜːrkəl/ (n) - the small group of people closest to you
-  - _Function:_ discussing limited emotional capacity and chosen closeness
-  - _Collocations:_ close inner circle, small inner circle, protect your inner circle
-  - _Chunks:_ My inner circle is smaller now, but stronger.
-  - _Pattern:_ fewer people, deeper care
-  - _Example:_ As adults, many people have a smaller inner circle than before.
-  - _Another example:_ I do not need a huge social circle if my inner circle feels real.
-  - _Native upgrade:_ I would rather have fewer close people than many weak connections.
+  - _Common chunks:_ close inner circle, small inner circle, protect your inner circle
+  - _Example 1:_ As adults, many people have a smaller inner circle than before.
+  - _Example 2:_ I do not need a huge social circle if my inner circle feels real.
+  - _Example 3:_ I would rather have fewer close people than many weak connections.
 
 - **emotional rhythm** /ɪˈmoʊʃənəl ˈrɪðəm/ (n phrase) - the natural pace of contact and closeness between people
-  - _Function:_ explaining why friendships do not all need the same frequency
-  - _Collocations:_ different emotional rhythm, find a rhythm, respect the rhythm
-  - _Chunks:_ Our friendship has a different rhythm now.
-  - _Pattern:_ friendship adapts instead of disappearing
-  - _Example:_ Some friendships work better with long gaps and honest catch-ups.
-  - _Another example:_ A healthy rhythm feels flexible, not forced.
-  - _Native upgrade:_ We have found our own pace.
-
+  - _Common chunks:_ different emotional rhythm, find a rhythm, respect the rhythm
+  - _Example 1:_ Some friendships work better with long gaps and honest catch-ups.
+  - _Example 2:_ A healthy rhythm feels flexible, not forced.
+  - _Example 3:_ We have found our own pace.
 ### High-Value Verbs & Chunks
 
 - **catch up properly** - to talk with real attention after time apart
@@ -182,28 +145,28 @@ description: Practice discussing adult friendship, changing priorities, mutual e
 
 ### Secondary Vocabulary - Friendship Nuance
 
-- **social circle** _(noun phrase)_ - the wider group of people you know
+- **social circle** - the wider group of people you know
   - _Example:_ My social circle is smaller now, but the close friendships feel stronger.
 
-- **emotional maintenance** _(noun phrase)_ - small actions that keep a relationship warm
+- **emotional maintenance** - small actions that keep a relationship warm
   - _Example:_ Remembering birthdays and checking in are forms of emotional maintenance.
 
-- **friendship rhythm** _(noun phrase)_ - the usual pace and style of a friendship
+- **friendship rhythm** - the usual pace and style of a friendship
   - _Example:_ Every friendship has its own rhythm, and forcing daily contact can feel unnatural.
 
-- **quiet distance** _(noun phrase)_ - emotional distance that grows slowly without a direct conflict
+- **quiet distance** - emotional distance that grows slowly without a direct conflict
   - _Example:_ Quiet distance can be harder to talk about than a clear argument.
 
-- **mutual warmth** _(noun phrase)_ - the feeling that both people still care
+- **mutual warmth** - the feeling that both people still care
   - _Example:_ Mutual warmth matters more than constant messaging.
 
-- **season of life** _(noun phrase)_ - a period with its own priorities and relationships
+- **season of life** - a period with its own priorities and relationships
   - _Example:_ Some friendships belong to a different season of life.
 
-- **emotional capacity** _(noun phrase)_ - the amount of energy someone has for care and connection
+- **emotional capacity** - the amount of energy someone has for care and connection
   - _Example:_ Adult friendship gets easier when people respect emotional capacity.
 
-- **nostalgia** _(noun)_ - warm feeling about the past
+- **nostalgia** - warm feeling about the past
   - _Example:_ Nostalgia can keep a memory alive, but it cannot replace current effort.
 
 </details>

@@ -304,9 +304,11 @@ Vocabulary should focus on high-frequency real-life discussion language, emotion
 
 Avoid corporate jargon, therapy terminology, abstract sociology vocabulary, and overly technical language.
 
-Each main vocabulary item should function as a reusable communication block. Include pronunciation, meaning, function, collocations, chunks, patterns, compact examples, expansion paths, short context flows, and native upgrades when useful.
+Each main vocabulary item should function as a reusable communication block. Use the Lesson 1-style compact structure: pronunciation, simple meaning, `_Common chunks:_`, and `_Example 1/2/3:_`.
 
 Examples must be compact, spoken, and varied by idea direction. Avoid repetitive examples that all point to the same meaning.
+
+Use `12-16` core terms for Phase 3 when the topic is broad. Keep the per-word format clean; do not add `_Function:_`, `_Pattern:_`, `_Native upgrade:_`, or other extra labels inside core vocabulary.
 
 ### Phase 3 Context Flow Rules
 
@@ -357,13 +359,13 @@ Bad style: "This issue reflects broader societal dynamics in modern environments
 
 ### Official Phase 3 Session Plan
 
-12. Connection, Loneliness & Life Online
-13. Friendship in Adulthood - Why It Gets Harder
-14. Boundaries, Saying No & People-Pleasing
-15. Dating, Commitment & Modern Relationships
-16. Family Dynamics & Generational Differences
-17. Self-Care, Discipline & Modern Health Culture
-18. Success, Money & Choosing Your Own Path
+12. Small Talk, Deep Talk & Why Real Conversations Are Rare - surface connection vs. real understanding
+13. Friendship in Adulthood - Why It Gets Harder - closeness vs. time and energy
+14. Boundaries, Saying No & People-Pleasing - kindness vs. self-protection
+15. Family Dynamics & Generational Differences - independence vs. expectation
+16. Habits, Comfort Zones & Why Change Is Hard - wanting to change vs. staying the same
+17. Self-Care, Discipline & Modern Health Culture - health awareness vs. obsession
+18. Success, Money & Choosing Your Own Path - what society wants vs. what you actually want
 
 ## Vocabulary Format
 
@@ -373,6 +375,7 @@ Preferred compact format:
 
 ```md
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - responsibility for a specific area from planning to result
+  - _Common chunks:_ clear ownership, ownership area, take ownership of
   - _Example 1:_ I owned the frontend checkout flow, including validation, loading states, and error messages.
   - _Example 2:_ Clear ownership helped QA know who to ask when the behavior was unclear.
   - _Example 3:_ Ownership does not mean doing everything alone; it means being accountable for your part.
@@ -380,10 +383,10 @@ Preferred compact format:
 
 Rules:
 
-- The definition line and each example must render on separate lines.
-- Each example must be a nested bullet.
+- The definition line, common chunks line, and each example must render on separate lines.
+- Common chunks and each example must be nested bullets.
 - Do not use trailing spaces for markdown line breaks.
-- Use 8-12 main terms.
+- Use 12-16 main terms for broad speaking lessons; 8-12 is acceptable for narrow lessons.
 - Add 5 additional useful terms.
 - Main terms should be useful in real speech, standups, code reviews, QA discussions, career reflection, or interviews.
 - For non-IT sessions, choose topic-relevant vocabulary. Do not force frontend terms.

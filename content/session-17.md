@@ -15,116 +15,79 @@ description: Practice discussing health habits, discipline, rest, body image, an
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-### Core Vocabulary - Health, Routine & Balance
+### Core Vocabulary - High Reuse
 
 - **self-care** /self ker/ (n) - actions that help you stay healthy, steady, and functional
-  - _Function:_ defining care beyond the online version
-  - _Collocations:_ real self-care, basic self-care, practical self-care, self-care habit
-  - _Chunks:_ For me, self-care is less about luxury and more about...
-  - _Pattern:_ basic habit -> stable life -> better mood
-  - _Example:_ Sometimes self-care is just sleeping earlier and saying no to one extra plan.
-  - _Another example:_ Real self-care should make life more stable, not more performative.
-  - _Native upgrade:_ It is not glamorous, but it keeps me okay.
+  - _Common chunks:_ real self-care, basic self-care, practical self-care, self-care habit
+  - _Example 1:_ Sometimes self-care is just sleeping earlier and saying no to one extra plan.
+  - _Example 2:_ Real self-care should make life more stable, not more performative.
+  - _Example 3:_ It is not glamorous, but it keeps me okay.
 
 - **discipline** /DIS-uh-plin/ (n) - the ability to keep doing useful things even when motivation is low
-  - _Function:_ discussing consistency without sounding harsh
-  - _Collocations:_ build discipline, gentle discipline, strict discipline, healthy discipline
-  - _Chunks:_ Discipline helps, but it becomes unhealthy when...
-  - _Pattern:_ structure + repetition + self-respect
-  - _Example:_ Discipline matters most when the routine is realistic.
-  - _Another example:_ I prefer gentle discipline over extreme self-control.
-  - _Native upgrade:_ I need structure, not punishment.
+  - _Common chunks:_ build discipline, gentle discipline, strict discipline, healthy discipline
+  - _Example 1:_ Discipline matters most when the routine is realistic.
+  - _Example 2:_ I prefer gentle discipline over extreme self-control.
+  - _Example 3:_ I need structure, not punishment.
 
 - **routine** /roo-TEEN/ (n) - repeated habits or structure in daily life
-  - _Function:_ talking about stability and daily choices
-  - _Collocations:_ morning routine, realistic routine, maintain a routine, flexible routine
-  - _Chunks:_ A routine only works if it fits your real life.
-  - _Pattern:_ plan + friction + adjustment
-  - _Example:_ A simple routine can reduce decision fatigue.
-  - _Another example:_ If a routine is too perfect, I usually quit after a week.
-  - _Native upgrade:_ I need something I can actually stick to.
+  - _Common chunks:_ morning routine, realistic routine, maintain a routine, flexible routine
+  - _Example 1:_ A simple routine can reduce decision fatigue.
+  - _Example 2:_ If a routine is too perfect, I usually quit after a week.
+  - _Example 3:_ I need something I can actually stick to.
 
 - **consistency** /kun-SIS-tuhn-see/ (n) - doing something regularly enough to create progress
-  - _Function:_ explaining realistic improvement
-  - _Collocations:_ build consistency, stay consistent, long-term consistency, imperfect consistency
-  - _Chunks:_ Consistency beats intensity for me.
-  - _Pattern:_ small repeated action -> sustainable result
-  - _Example:_ I would rather walk daily than follow an extreme plan for one week.
-  - _Another example:_ Consistency needs a routine that survives normal life.
-  - _Native upgrade:_ Small and steady works better for me.
+  - _Common chunks:_ build consistency, stay consistent, long-term consistency, imperfect consistency
+  - _Example 1:_ I would rather walk daily than follow an extreme plan for one week.
+  - _Example 2:_ Consistency needs a routine that survives normal life.
+  - _Example 3:_ Small and steady works better for me.
 
 - **recovery** /ri-KUH-vuh-ree/ (n) - time or action that helps the body and mind restore energy
-  - _Function:_ explaining rest as part of discipline
-  - _Collocations:_ recovery time, active recovery, mental recovery, need recovery
-  - _Chunks:_ Recovery is part of the system, not a break from the system.
-  - _Pattern:_ effort -> recovery -> repeat
-  - _Example:_ If I never recover, I cannot stay consistent.
-  - _Another example:_ A lighter day can protect the routine instead of weakening it.
-  - _Native upgrade:_ Rest is maintenance, not failure.
+  - _Common chunks:_ recovery time, active recovery, mental recovery, need recovery
+  - _Example 1:_ If I never recover, I cannot stay consistent.
+  - _Example 2:_ A lighter day can protect the routine instead of weakening it.
+  - _Example 3:_ Rest is maintenance, not failure.
 
 - **burn out** /burn out/ (v phrase) - become exhausted from too much pressure or effort
-  - _Function:_ explaining limits without being dramatic
-  - _Collocations:_ burn out quickly, avoid burning out, feel burned out, burn yourself out
-  - _Chunks:_ If I push too hard, I burn out.
-  - _Pattern:_ intensity without recovery -> exhaustion
-  - _Example:_ Extreme routines can help for a short time, but they may burn you out.
-  - _Another example:_ Rest is part of consistency, not the opposite of it.
-  - _Native upgrade:_ I cannot run my life at maximum speed forever.
+  - _Common chunks:_ burn out quickly, avoid burning out, feel burned out, burn yourself out
+  - _Example 1:_ Extreme routines can help for a short time, but they may burn you out.
+  - _Example 2:_ Rest is part of consistency, not the opposite of it.
+  - _Example 3:_ I cannot run my life at maximum speed forever.
 
 - **body image** /BAH-dee IM-ij/ (n) - how someone feels about the way their body looks
-  - _Function:_ discussing fitness and appearance carefully
-  - _Collocations:_ body image pressure, healthy body image, negative body image, body image issues
-  - _Chunks:_ Health content can affect body image even when it looks positive.
-  - _Pattern:_ inspiration vs comparison
-  - _Example:_ Fitness content can motivate people, but it can also create body image pressure.
-  - _Another example:_ I try to follow health content that makes me feel grounded, not ashamed.
-  - _Native upgrade:_ I want health goals that do not make me hate myself.
+  - _Common chunks:_ body image pressure, healthy body image, negative body image, body image issues
+  - _Example 1:_ Fitness content can motivate people, but it can also create body image pressure.
+  - _Example 2:_ I try to follow health content that makes me feel grounded, not ashamed.
+  - _Example 3:_ I want health goals that do not make me hate myself.
 
 - **wellness pressure** /WEL-nuhs PRESH-er/ (n phrase) - pressure to look healthy, productive, balanced, and optimized all the time
-  - _Function:_ naming modern health culture without attacking health itself
-  - _Collocations:_ online wellness pressure, constant wellness pressure, feel wellness pressure
-  - _Chunks:_ Wellness pressure can make normal life feel lazy.
-  - _Pattern:_ positive message -> social comparison -> pressure
-  - _Example:_ A video about healthy habits can become wellness pressure if it makes everyone feel behind.
-  - _Another example:_ Sometimes the pressure is not to be healthy, but to look like a healthy person.
-  - _Native upgrade:_ It turns care into performance.
+  - _Common chunks:_ online wellness pressure, constant wellness pressure, feel wellness pressure
+  - _Example 1:_ A video about healthy habits can become wellness pressure if it makes everyone feel behind.
+  - _Example 2:_ Sometimes the pressure is not to be healthy, but to look like a healthy person.
+  - _Example 3:_ It turns care into performance.
 
 - **obsession** /ub-SESH-uhn/ (n) - thinking about something too much in a way that becomes unhealthy
-  - _Function:_ discussing when improvement becomes control
-  - _Collocations:_ health obsession, fitness obsession, become an obsession, obsessive tracking
-  - _Chunks:_ The habit is useful until it becomes an obsession.
-  - _Pattern:_ good goal -> too much control -> stress
-  - _Example:_ Tracking sleep can help, but tracking everything can become an obsession.
-  - _Another example:_ The line is crossed when health habits create constant anxiety.
-  - _Native upgrade:_ It stops helping and starts controlling you.
+  - _Common chunks:_ health obsession, fitness obsession, become an obsession, obsessive tracking
+  - _Example 1:_ Tracking sleep can help, but tracking everything can become an obsession.
+  - _Example 2:_ The line is crossed when health habits create constant anxiety.
+  - _Example 3:_ It stops helping and starts controlling you.
 
 - **all-or-nothing mindset** /awl or NUH-thing MIND-set/ (n phrase) - the belief that something is either perfect or a total failure
-  - _Function:_ explaining why habits collapse
-  - _Collocations:_ all-or-nothing mindset, all-or-nothing habit, all-or-nothing approach
-  - _Chunks:_ The all-or-nothing mindset makes one mistake feel like full failure.
-  - _Pattern:_ perfect plan -> normal interruption -> quit
-  - _Example:_ If one missed workout ruins the whole week, the habit is too fragile.
-  - _Another example:_ A realistic routine needs a restart plan.
-  - _Native upgrade:_ Missing one day should not turn into quitting for a month.
+  - _Common chunks:_ all-or-nothing mindset, all-or-nothing habit, all-or-nothing approach
+  - _Example 1:_ If one missed workout ruins the whole week, the habit is too fragile.
+  - _Example 2:_ A realistic routine needs a restart plan.
+  - _Example 3:_ Missing one day should not turn into quitting for a month.
 
 - **self-punishment** /self PUN-ish-muhnt/ (n) - treating yourself harshly to force discipline or compensate for mistakes
-  - _Function:_ separating discipline from shame
-  - _Collocations:_ turn into self-punishment, use self-punishment, avoid self-punishment
-  - _Chunks:_ Discipline should not become self-punishment.
-  - _Pattern:_ mistake -> shame -> extreme rule
-  - _Example:_ Exercising because you care about your body feels different from exercising to punish yourself.
-  - _Another example:_ Shame may create short-term action, but it usually damages consistency.
-  - _Native upgrade:_ A routine should support you, not attack you.
+  - _Common chunks:_ turn into self-punishment, use self-punishment, avoid self-punishment
+  - _Example 1:_ Exercising because you care about your body feels different from exercising to punish yourself.
+  - _Example 2:_ Shame may create short-term action, but it usually damages consistency.
+  - _Example 3:_ A routine should support you, not attack you.
 
 - **balanced lifestyle** /BAL-uhnst LIFE-style/ (n phrase) - a sustainable mix of health, work, relationships, rest, and enjoyment
-  - _Function:_ describing realistic health without perfectionism
-  - _Collocations:_ balanced lifestyle, maintain balance, find balance, lose balance
-  - _Chunks:_ Balance does not mean doing everything perfectly.
-  - _Pattern:_ stable habits + flexibility + wider identity
-  - _Example:_ Balance means I can care about health without making it my whole identity.
-  - _Another example:_ A healthy life should still have room for joy.
-  - _Native upgrade:_ I want to be healthy without becoming obsessive.
-
+  - _Common chunks:_ balanced lifestyle, maintain balance, find balance, lose balance
+  - _Example 1:_ Balance means I can care about health without making it my whole identity.
+  - _Example 2:_ A healthy life should still have room for joy.
+  - _Example 3:_ I want to be healthy without becoming obsessive.
 ### High-Value Verbs & Chunks
 
 - **stick to** - continue a habit or plan
@@ -182,28 +145,28 @@ description: Practice discussing health habits, discipline, rest, body image, an
 
 ### Secondary Vocabulary - Health Culture Nuance
 
-- **wellness culture** _(noun phrase)_ - social culture around health, fitness, beauty, productivity, and lifestyle improvement
+- **wellness culture** - social culture around health, fitness, beauty, productivity, and lifestyle improvement
   - _Example:_ Wellness culture can be useful, but it often sells a perfect lifestyle.
 
-- **habit tracking** _(noun phrase)_ - recording habits to notice patterns or build consistency
+- **habit tracking** - recording habits to notice patterns or build consistency
   - _Example:_ Habit tracking helps some people, but it can become pressure for others.
 
-- **decision fatigue** _(noun phrase)_ - tiredness from making too many choices
+- **decision fatigue** - tiredness from making too many choices
   - _Example:_ A simple routine reduces decision fatigue.
 
-- **recovery time** _(noun phrase)_ - time used to rest after effort or stress
+- **recovery time** - time used to rest after effort or stress
   - _Example:_ Recovery time is part of training, work, and mental health.
 
-- **fitness content** _(noun phrase)_ - online posts or videos about exercise, body goals, or training routines
+- **fitness content** - online posts or videos about exercise, body goals, or training routines
   - _Example:_ Fitness content can motivate people, but it can also damage body image.
 
-- **sleep debt** _(noun phrase)_ - tiredness built up from not sleeping enough over time
+- **sleep debt** - tiredness built up from not sleeping enough over time
   - _Example:_ You cannot fix months of sleep debt with one lazy Sunday.
 
-- **optimization** _(noun)_ - the habit of trying to improve every detail
+- **optimization** - the habit of trying to improve every detail
   - _Example:_ Optimization can be useful, but constant optimization makes life feel mechanical.
 
-- **sustainable habit** _(noun phrase)_ - a habit that can continue for a long time
+- **sustainable habit** - a habit that can continue for a long time
   - _Example:_ A sustainable habit is usually smaller and less dramatic than people expect.
 
 </details>

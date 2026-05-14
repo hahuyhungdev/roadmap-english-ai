@@ -1,7 +1,7 @@
 ---
 sessionNumber: 18
 title: Success, Money & Choosing Your Own Path
-topic: External Success vs Self-Owned Life
+topic: What Society Wants vs What You Actually Want
 phase: PHASE 3 - PEOPLE, LIFE & REAL CONVERSATIONS
 level: B2
 description: Practice discussing success, money, ambition, family expectations, and personal direction without sounding naive or materialistic.
@@ -15,116 +15,79 @@ description: Practice discussing success, money, ambition, family expectations, 
 <details open>
 <summary><strong>1) Vocabulary</strong></summary>
 
-### Core Vocabulary - Success, Money & Direction
+### Core Vocabulary - High Reuse
 
 - **success** /suk-SES/ (n) - achieving something meaningful, valuable, or respected
-  - _Function:_ defining achievement in a personal and realistic way
-  - _Collocations:_ define success, measure success, feel successful, external success
-  - _Chunks:_ Success is not only about..., but I also cannot ignore...
-  - _Pattern:_ external result + internal fit + real-life responsibility
-  - _Example:_ At this stage, success means having stability, growth, and a life I can actually live.
-  - _Another example:_ A person can look successful outside but feel disconnected from their own life.
-  - _Native upgrade:_ I want success that looks good on paper and still feels right in real life.
+  - _Common chunks:_ define success, measure success, feel successful, external success
+  - _Example 1:_ At this stage, success means having stability, growth, and a life I can actually live.
+  - _Example 2:_ A person can look successful outside but feel disconnected from their own life.
+  - _Example 3:_ I want success that looks good on paper and still feels right in real life.
 
 - **financial stability** /fai-NAN-shuhl stuh-BIL-uh-tee/ (n phrase) - having enough money to cover needs and feel reasonably secure
-  - _Function:_ talking about money without sounding greedy
-  - _Collocations:_ seek financial stability, build financial stability, lack financial stability
-  - _Chunks:_ Money matters because financial stability gives people choices.
-  - _Pattern:_ money -> safety -> options
-  - _Example:_ Financial stability is not shallow; it reduces stress and gives people more freedom.
-  - _Another example:_ I do not need to be rich, but I want enough stability to make calm decisions.
-  - _Native upgrade:_ Money is not everything, but money problems affect almost everything.
+  - _Common chunks:_ seek financial stability, build financial stability, lack financial stability
+  - _Example 1:_ Financial stability is not shallow; it reduces stress and gives people more freedom.
+  - _Example 2:_ I do not need to be rich, but I want enough stability to make calm decisions.
+  - _Example 3:_ Money is not everything, but money problems affect almost everything.
 
 - **ambition** /am-BISH-uhn/ (n) - the desire to grow, achieve, or build something better
-  - _Function:_ discussing drive without sounding obsessed
-  - _Collocations:_ healthy ambition, strong ambition, blind ambition, personal ambition
-  - _Chunks:_ Ambition is healthy when it gives direction, not constant pressure.
-  - _Pattern:_ desire to grow + boundaries + purpose
-  - _Example:_ Ambition helps me improve, but I do not want it to turn into permanent dissatisfaction.
-  - _Another example:_ Some ambition comes from excitement, and some comes from fear of falling behind.
-  - _Native upgrade:_ I want to grow without living like I am always behind.
+  - _Common chunks:_ healthy ambition, strong ambition, blind ambition, personal ambition
+  - _Example 1:_ Ambition helps me improve, but I do not want it to turn into permanent dissatisfaction.
+  - _Example 2:_ Some ambition comes from excitement, and some comes from fear of falling behind.
+  - _Example 3:_ I want to grow without living like I am always behind.
 
 - **comparison** /kum-PAIR-uh-suhn/ (n) - judging yourself against other people's progress, money, or lifestyle
-  - _Function:_ explaining social pressure and self-doubt
-  - _Collocations:_ constant comparison, social comparison, unfair comparison, comparison trap
-  - _Chunks:_ Comparison becomes dangerous when I compare my full life with someone's highlight.
-  - _Pattern:_ visible result -> hidden context -> unfair judgment
-  - _Example:_ Social media makes comparison easy because everyone shows the best part of their life.
-  - _Another example:_ A salary number does not show someone's stress, debt, family situation, or values.
-  - _Native upgrade:_ I am comparing my behind-the-scenes with their public version.
+  - _Common chunks:_ constant comparison, social comparison, unfair comparison, comparison trap
+  - _Example 1:_ Social media makes comparison easy because everyone shows the best part of their life.
+  - _Example 2:_ A salary number does not show someone's stress, debt, family situation, or values.
+  - _Example 3:_ I am comparing my behind-the-scenes with their public version.
 
 - **life path** /life path/ (n phrase) - the direction someone chooses for career, relationships, values, and lifestyle
-  - _Function:_ talking about adult direction without sounding abstract
-  - _Collocations:_ choose a life path, follow your own path, different life path, change your path
-  - _Chunks:_ Choosing my own path does not mean ignoring responsibility.
-  - _Pattern:_ personal values + practical constraints + ownership
-  - _Example:_ A good life path should fit your values, not only other people's timeline.
-  - _Another example:_ Sometimes the brave choice is not dramatic; it is simply choosing what actually fits.
-  - _Native upgrade:_ I need to live a life that makes sense for me, not just one that others understand.
+  - _Common chunks:_ choose a life path, follow your own path, different life path, change your path
+  - _Example 1:_ A good life path should fit your values, not only other people's timeline.
+  - _Example 2:_ Sometimes the brave choice is not dramatic; it is simply choosing what actually fits.
+  - _Example 3:_ I need to live a life that makes sense for me, not just one that others understand.
 
 - **social pressure** /SOH-shuhl PRESH-er/ (n phrase) - pressure from society, peers, family, or culture to follow a certain standard
-  - _Function:_ explaining why success can feel heavy
-  - _Collocations:_ feel social pressure, social pressure around success, social pressure to earn more
-  - _Chunks:_ Social pressure makes people feel late even when they are doing fine.
-  - _Pattern:_ expectation -> comparison -> anxiety
-  - _Example:_ In some cultures, success is measured by salary, marriage, property, and family approval.
-  - _Another example:_ Social pressure can make a normal career feel like a race.
-  - _Native upgrade:_ It feels like everyone has an invisible timeline for your life.
+  - _Common chunks:_ feel social pressure, social pressure around success, social pressure to earn more
+  - _Example 1:_ In some cultures, success is measured by salary, marriage, property, and family approval.
+  - _Example 2:_ Social pressure can make a normal career feel like a race.
+  - _Example 3:_ It feels like everyone has an invisible timeline for your life.
 
 - **status** /STAY-tus/ (n) - respect or position people attach to money, job title, lifestyle, or achievement
-  - _Function:_ discussing external recognition and image
-  - _Collocations:_ high status, social status, status symbol, chase status
-  - _Chunks:_ Status can be useful, but it can also become a performance.
-  - _Pattern:_ recognition + image + pressure
-  - _Example:_ A job title can bring status, but it does not always bring peace.
-  - _Another example:_ Some people choose things because they look successful, not because they fit.
-  - _Native upgrade:_ It looks impressive, but I am not sure it is the life I want.
+  - _Common chunks:_ high status, social status, status symbol, chase status
+  - _Example 1:_ A job title can bring status, but it does not always bring peace.
+  - _Example 2:_ Some people choose things because they look successful, not because they fit.
+  - _Example 3:_ It looks impressive, but I am not sure it is the life I want.
 
 - **self-worth** /self wurth/ (n) - the feeling that you have value as a person
-  - _Function:_ separating personal value from achievement
-  - _Collocations:_ base self-worth on, protect self-worth, tie self-worth to success
-  - _Chunks:_ I do not want to base my self-worth only on money or achievement.
-  - _Pattern:_ achievement + identity risk
-  - _Example:_ If self-worth depends only on performance, every failure feels personal.
-  - _Another example:_ Career progress matters, but it should not decide whether I respect myself.
-  - _Native upgrade:_ I want my work to matter, but I do not want it to own my whole identity.
+  - _Common chunks:_ base self-worth on, protect self-worth, tie self-worth to success
+  - _Example 1:_ If self-worth depends only on performance, every failure feels personal.
+  - _Example 2:_ Career progress matters, but it should not decide whether I respect myself.
+  - _Example 3:_ I want my work to matter, but I do not want it to own my whole identity.
 
 - **enough** /i-NUF/ (n/adj) - a point where something is sufficient for your needs, values, or peace
-  - _Function:_ discussing money and success boundaries
-  - _Collocations:_ enough money, good enough, know what is enough, never feel enough
-  - _Chunks:_ One hard question is knowing what is enough.
-  - _Pattern:_ more vs enough
-  - _Example:_ Without a sense of enough, success can keep moving further away.
-  - _Another example:_ Enough does not mean no ambition; it means ambition has limits.
-  - _Native upgrade:_ More is not always better if you do not know what you are trading away.
+  - _Common chunks:_ enough money, good enough, know what is enough, never feel enough
+  - _Example 1:_ Without a sense of enough, success can keep moving further away.
+  - _Example 2:_ Enough does not mean no ambition; it means ambition has limits.
+  - _Example 3:_ More is not always better if you do not know what you are trading away.
 
 - **trade-off** /TRAYD-awf/ (n) - what you give up when you choose one option over another
-  - _Function:_ making life choices sound realistic
-  - _Collocations:_ accept a trade-off, career trade-off, money-time trade-off, emotional trade-off
-  - _Chunks:_ Every version of success has a trade-off.
-  - _Pattern:_ gain + cost + honest choice
-  - _Example:_ A higher salary may come with less time, more stress, or less flexibility.
-  - _Another example:_ Choosing a slower path can cost status, but it may protect health and relationships.
-  - _Native upgrade:_ I want to be honest about what the choice will cost me.
+  - _Common chunks:_ accept a trade-off, career trade-off, money-time trade-off, emotional trade-off
+  - _Example 1:_ A higher salary may come with less time, more stress, or less flexibility.
+  - _Example 2:_ Choosing a slower path can cost status, but it may protect health and relationships.
+  - _Example 3:_ I want to be honest about what the choice will cost me.
 
 - **autonomy** /aw-TAH-nuh-mee/ (n) - the ability to make your own decisions and direct your own life
-  - _Function:_ explaining independence without rejecting responsibility
-  - _Collocations:_ personal autonomy, financial autonomy, need autonomy, protect autonomy
-  - _Chunks:_ Autonomy matters because I want to own my choices.
-  - _Pattern:_ choice + responsibility
-  - _Example:_ Money can support autonomy because it gives people more room to choose.
-  - _Another example:_ Autonomy does not mean doing whatever I want; it means taking responsibility for my path.
-  - _Native upgrade:_ I want to make my own call and live with the result.
+  - _Common chunks:_ personal autonomy, financial autonomy, need autonomy, protect autonomy
+  - _Example 1:_ Money can support autonomy because it gives people more room to choose.
+  - _Example 2:_ Autonomy does not mean doing whatever I want; it means taking responsibility for my path.
+  - _Example 3:_ I want to make my own call and live with the result.
 
 - **fulfillment** /fool-FIL-muhnt/ (n) - a sense that your life or work feels meaningful and aligned with your values
-  - _Function:_ discussing meaning without sounding idealistic
-  - _Collocations:_ personal fulfillment, find fulfillment, lack fulfillment, sense of fulfillment
-  - _Chunks:_ Fulfillment matters, but it has to meet real-life responsibilities too.
-  - _Pattern:_ meaning + contribution + sustainable life
-  - _Example:_ Fulfillment does not always mean loving every day; it means the path still feels worth it.
-  - _Another example:_ A job can pay well and still feel empty if it goes against your values for too long.
-  - _Native upgrade:_ I want a life that is not perfect, but still feels like mine.
-
+  - _Common chunks:_ personal fulfillment, find fulfillment, lack fulfillment, sense of fulfillment
+  - _Example 1:_ Fulfillment does not always mean loving every day; it means the path still feels worth it.
+  - _Example 2:_ A job can pay well and still feel empty if it goes against your values for too long.
+  - _Example 3:_ I want a life that is not perfect, but still feels like mine.
 ### High-Value Verbs & Chunks
 
 - **measure success by** - use something as the standard for success
@@ -182,28 +145,28 @@ description: Practice discussing success, money, ambition, family expectations, 
 
 ### Secondary Vocabulary - Success Nuance
 
-- **lifestyle inflation** _(noun phrase)_ - spending more as income increases, often making people feel trapped
+- **lifestyle inflation** - spending more as income increases, often making people feel trapped
   - _Example:_ Lifestyle inflation can make a higher salary feel less freeing than expected.
 
-- **career ladder** _(noun phrase)_ - the expected upward path in a career
+- **career ladder** - the expected upward path in a career
   - _Example:_ The career ladder is useful, but not everyone wants the same version of progress.
 
-- **status symbol** _(noun phrase)_ - an object, title, or lifestyle that signals success
+- **status symbol** - an object, title, or lifestyle that signals success
   - _Example:_ A luxury item can become a status symbol more than a real need.
 
-- **opportunity cost** _(noun phrase)_ - the value of what you give up when choosing something else
+- **opportunity cost** - the value of what you give up when choosing something else
   - _Example:_ The opportunity cost of a high-paying job might be time, health, or flexibility.
 
-- **personal values** _(noun phrase)_ - principles that guide what matters to you
+- **personal values** - principles that guide what matters to you
   - _Example:_ Personal values help you choose when two options both look good.
 
-- **external validation** _(noun phrase)_ - approval or recognition from others
+- **external validation** - approval or recognition from others
   - _Example:_ External validation feels good, but it cannot be the only source of confidence.
 
-- **financial pressure** _(noun phrase)_ - stress caused by money needs or expectations
+- **financial pressure** - stress caused by money needs or expectations
   - _Example:_ Financial pressure can make people choose stability before meaning.
 
-- **quiet success** _(noun phrase)_ - success that may not look impressive publicly but feels right personally
+- **quiet success** - success that may not look impressive publicly but feels right personally
   - _Example:_ Quiet success might be a stable life, good health, strong relationships, and work you respect.
 
 </details>
