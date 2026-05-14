@@ -20,67 +20,99 @@ description: Explain stack choices with practical trade-offs around speed, maint
 
 - **choice** /tʃɔɪs/ (n) - an option selected from several possibilities
   - _Common chunks:_ make a choice, practical choice, tool choice
-  - _Example:_ The tool choice was practical because the team could maintain it.
+  - _Example 1:_ The tool choice was practical because the team could maintain it.
+  - _Example 2:_ The choice made sense because it matched the team size and release timeline.
+  - _Example 3:_ I try to explain a tool choice with context, not personal taste.
 
 - **decision** /dɪˈsɪʒən/ (n) - a choice with a reason and consequence
   - _Common chunks:_ stack decision, decision reason, revisit a decision
-  - _Example:_ We documented the decision so new teammates could understand the trade-off.
+  - _Example 1:_ We documented the decision so new teammates could understand the trade-off.
+  - _Example 2:_ The decision was not perfect, but it reduced integration risk for the first release.
+  - _Example 3:_ A stack decision should include why other options were not chosen.
 
 - **trade-off** /ˈtreɪd ɔːf/ (n) - a choice where you gain one thing but give up another
   - _Common chunks:_ accept a trade-off, compare trade-offs, speed-control trade-off
-  - _Example:_ The trade-off was faster launch versus higher provider dependency.
+  - _Example 1:_ The trade-off was faster launch versus higher provider dependency.
+  - _Example 2:_ We accepted more provider dependency to reduce setup time.
+  - _Example 3:_ The trade-off was easier to defend because we had a fallback plan.
 
 - **constraint** /kənˈstreɪnt/ (n) - a real limit that affects the decision
   - _Common chunks:_ time constraint, budget constraint, team constraint
-  - _Example:_ Because of the timeline constraint, we chose the simpler migration path.
+  - _Example 1:_ Because of the timeline constraint, we chose the simpler migration path.
+  - _Example 2:_ The biggest constraint was that only two developers could maintain the new system.
+  - _Example 3:_ A constraint can make a boring tool the smarter choice.
 
 - **maintainability** /meɪnˌteɪnəˈbɪləti/ (n) - how easy code or a system is to change safely later
   - _Common chunks:_ long-term maintainability, improve maintainability, maintainability cost
-  - _Example:_ We chose a boring library because maintainability mattered more than novelty.
+  - _Example 1:_ We chose a boring library because maintainability mattered more than novelty.
+  - _Example 2:_ Maintainability depends on whether the whole team can debug the tool later.
+  - _Example 3:_ We rejected one option because it looked powerful but was hard to test.
 
 - **reliability** /rɪˌlaɪəˈbɪləti/ (n) - how consistently a system works under real conditions
   - _Common chunks:_ improve reliability, delivery reliability, reliability risk
-  - _Example:_ A slightly slower tool was acceptable because it improved release reliability.
+  - _Example 1:_ A slightly slower tool was acceptable because it improved release reliability.
+  - _Example 2:_ Reliability mattered more than customization because the flow touched payments.
+  - _Example 3:_ We checked reliability by testing failure cases, not only the happy path.
 
 - **cost** /kɔːst/ (n) - money, time, effort, or risk required by a decision
   - _Common chunks:_ hidden cost, migration cost, operational cost
-  - _Example:_ The hidden cost was that only one engineer understood the custom setup.
+  - _Example 1:_ The hidden cost was that only one engineer understood the custom setup.
+  - _Example 2:_ The real cost was not only the monthly fee; it was also migration and support time.
+  - _Example 3:_ A cheap tool can become expensive if it creates extra debugging work.
 
 - **speed** /spiːd/ (n) - how fast the team can build, test, or release
   - _Common chunks:_ delivery speed, launch speed, speed up development
-  - _Example:_ Managed auth improved delivery speed for the first release.
+  - _Example 1:_ Managed auth improved delivery speed for the first release.
+  - _Example 2:_ Speed was useful for the prototype, but we still needed a path to clean it up.
+  - _Example 3:_ We optimized for speed because the product needed feedback before investing more.
 
 - **control** /kənˈtroʊl/ (n) - ability to customize, change, or own the system
   - _Common chunks:_ more control, lose control, control over data
-  - _Example:_ Building in-house gave us more control, but it required more time.
+  - _Example 1:_ Building in-house gave us more control, but it required more time.
+  - _Example 2:_ With more control, we could customize edge cases, but we also owned every failure.
+  - _Example 3:_ We kept control over business rules even when using a managed service.
 
 - **risk** /rɪsk/ (n) - possible future problem from a decision
   - _Common chunks:_ integration risk, provider risk, reduce risk
-  - _Example:_ We reduced risk by starting with one real user flow.
+  - _Example 1:_ We reduced risk by starting with one real user flow.
+  - _Example 2:_ The main risk was not the library itself; it was our lack of experience with it.
+  - _Example 3:_ I try to reduce risk with a small proof of concept before a full migration.
 
 - **evidence** /ˈevədəns/ (n) - facts or results used to support a decision
   - _Common chunks:_ evidence-based decision, gather evidence, weak evidence
-  - _Example:_ We used a small proof of concept as evidence before switching tools.
+  - _Example 1:_ We used a small proof of concept as evidence before switching tools.
+  - _Example 2:_ Evidence from a real flow is more useful than a long tool comparison.
+  - _Example 3:_ We used bundle size, error handling, and review feedback as evidence.
 
 - **fallback** /ˈfɔːlbæk/ (n) - backup option if the first plan fails
   - _Common chunks:_ fallback option, fallback plan, prepare a fallback
-  - _Example:_ Our fallback was to keep the old checkout path behind a feature flag.
+  - _Example 1:_ Our fallback was to keep the old checkout path behind a feature flag.
+  - _Example 2:_ The fallback was to keep the old flow active until the new one was stable.
+  - _Example 3:_ A fallback gives the team confidence to try a safer migration.
 
 - **migration** /maɪˈɡreɪʃən/ (n) - moving from one system, tool, or structure to another
   - _Common chunks:_ migration path, migration risk, phased migration
-  - _Example:_ We planned the migration one section at a time instead of rewriting everything.
+  - _Example 1:_ We planned the migration one section at a time instead of rewriting everything.
+  - _Example 2:_ The migration worked better because we moved one route at a time.
+  - _Example 3:_ A migration plan should include monitoring, rollback, and an owner.
 
 - **team familiarity** /tiːm fəˌmɪliˈærəti/ (n) - how comfortable the team is with a tool or pattern
   - _Common chunks:_ low familiarity, team familiarity, familiar stack
-  - _Example:_ We stayed with the familiar stack because the deadline was tight.
+  - _Example 1:_ We stayed with the familiar stack because the deadline was tight.
+  - _Example 2:_ Team familiarity reduced review time because more people understood the patterns.
+  - _Example 3:_ If team familiarity is low, the decision needs stronger documentation and training.
 
 - **technical debt** /ˈteknɪkəl det/ (n) - future cost created by shortcuts or weak design
   - _Common chunks:_ accept debt, hidden debt, clean up debt
-  - _Example:_ We accepted small technical debt, but we documented the cleanup plan.
+  - _Example 1:_ We accepted small technical debt, but we documented the cleanup plan.
+  - _Example 2:_ A rushed stack choice can create technical debt that slows later features.
+  - _Example 3:_ The debt was acceptable only because we added a follow-up ticket with a clear owner.
 
 - **provider** /prəˈvaɪdər/ (n) - external service used by the product
   - _Common chunks:_ auth provider, payment provider, provider dependency
-  - _Example:_ The provider helped us move fast, but it created dependency risk.
+  - _Example 1:_ The provider helped us move fast, but it created dependency risk.
+  - _Example 2:_ The provider handled common auth behavior so the team could focus on product flow.
+  - _Example 3:_ We used the provider for speed, but we avoided putting core business logic inside it.
 
 ### High-Value Verbs & Chunks
 

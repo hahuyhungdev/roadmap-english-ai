@@ -20,59 +20,87 @@ description: Defend technical decisions with clear criteria, practical trade-off
 
 - **decision criteria** /dɪˈsɪʒən kraɪˈtɪriə/ (n) - the standards used to compare options and choose a direction
   - _Common chunks:_ clear decision criteria, agree on criteria, use criteria to compare options
-  - _Example:_ We agreed on decision criteria before comparing speed, risk, and user impact.
+  - _Example 1:_ We agreed on decision criteria before comparing speed, risk, and user impact.
+  - _Example 2:_ Decision criteria kept the discussion focused instead of turning it into tool preference.
+  - _Example 3:_ Good criteria should include user impact, delivery risk, cost, and maintenance effort.
 
 - **recommendation** /ˌrekəmenˈdeɪʃən/ (n) - the option you suggest after considering context and trade-offs
   - _Common chunks:_ make a recommendation, defend a recommendation, recommendation based on risk
-  - _Example:_ My recommendation was to release the core flow first and delay the optional filter.
+  - _Example 1:_ My recommendation was to release the core flow first and delay the optional filter.
+  - _Example 2:_ I made the recommendation after comparing risk, effort, and the release timeline.
+  - _Example 3:_ A strong recommendation explains the option, the trade-off, and the next step.
 
 - **trade-off** /ˈtreɪd ɔːf/ (n) - a choice where the team gains one thing but gives up another
   - _Common chunks:_ accept a trade-off, explain the trade-off, speed-quality trade-off
-  - _Example:_ The trade-off was a smaller release, but lower QA and rollback risk.
+  - _Example 1:_ The trade-off was a smaller release, but lower QA and rollback risk.
+  - _Example 2:_ We accepted the trade-off because the smaller release protected the critical path.
+  - _Example 3:_ A trade-off is easier to defend when the cost is visible, not hidden.
 
 - **constraint** /kənˈstreɪnt/ (n) - a real limit that affects what the team can do
   - _Common chunks:_ time constraint, QA constraint, work within constraints
-  - _Example:_ Because of the QA constraint, we focused on the highest-risk payment path.
+  - _Example 1:_ Because of the QA constraint, we focused on the highest-risk payment path.
+  - _Example 2:_ The main constraint was not development time; it was how much QA could safely cover.
+  - _Example 3:_ I used the constraint to explain why the team should not expand scope late.
 
 - **risk** /rɪsk/ (n) - something that could create a problem later
   - _Common chunks:_ release risk, business risk, reduce risk, make risk visible
-  - _Example:_ The risk was not the UI code itself, but the untested provider response.
+  - _Example 1:_ The risk was not the UI code itself, but the untested provider response.
+  - _Example 2:_ I made the risk specific by naming the user flow that could break.
+  - _Example 3:_ Risk language helped the discussion stay calm instead of becoming personal.
 
 - **scope** /skoʊp/ (n) - what is included and excluded in a release, task, or decision
   - _Common chunks:_ reduce scope, protect scope, out of scope, scope decision
-  - _Example:_ We reduced scope so the team could protect the main checkout flow.
+  - _Example 1:_ We reduced scope so the team could protect the main checkout flow.
+  - _Example 2:_ Clear scope helped us say yes to the core flow and no to late additions.
+  - _Example 3:_ The scope decision was about release safety, not avoiding work.
 
 - **priority** /praɪˈɔːrəti/ (n) - the thing that matters most in a specific situation
   - _Common chunks:_ top priority, competing priorities, prioritize stability
-  - _Example:_ The priority was not adding more UI options; it was keeping payment reliable.
+  - _Example 1:_ The priority was not adding more UI options; it was keeping payment reliable.
+  - _Example 2:_ The priority was user recovery, so we delayed a lower-value UI setting.
+  - _Example 3:_ When priorities are unclear, every decision feels like a conflict.
 
 - **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - a person or team affected by the decision or result
   - _Common chunks:_ stakeholder concern, stakeholder pressure, align with stakeholders
-  - _Example:_ The PM cared about timeline, while support cared about user confusion after release.
+  - _Example 1:_ The PM cared about timeline, while support cared about user confusion after release.
+  - _Example 2:_ Stakeholders needed to understand the business risk, not every implementation detail.
+  - _Example 3:_ I adjusted the explanation depending on whether I spoke to PM, QA, or leadership.
 
 - **alignment** /əˈlaɪnmənt/ (n) - shared understanding about goals, scope, risk, and next steps
   - _Common chunks:_ get alignment, create alignment, alignment on release scope
-  - _Example:_ We got alignment on what must ship now and what could move to the next sprint.
+  - _Example 1:_ We got alignment on what must ship now and what could move to the next sprint.
+  - _Example 2:_ Alignment meant everyone understood what we were optimizing for.
+  - _Example 3:_ We got alignment before implementation so the trade-off would not be reopened every day.
 
 - **pushback** /ˈpʊʃˌbæk/ (n) - disagreement or challenge, often when someone sees risk or a weak assumption
   - _Common chunks:_ give pushback, handle pushback, respectful pushback
-  - _Example:_ My pushback was not against the goal; it was against shipping without one more QA pass.
+  - _Example 1:_ My pushback was not against the goal; it was against shipping without one more QA pass.
+  - _Example 2:_ Good pushback offers a safer option instead of only saying the request is risky.
+  - _Example 3:_ I used pushback when the timeline changed but the quality expectation stayed the same.
 
 - **fallback plan** /ˈfɔːlˌbæk plæn/ (n) - a backup action if the preferred option fails
   - _Common chunks:_ define a fallback plan, fallback option, fallback owner
-  - _Example:_ We felt more confident after assigning a rollback owner and fallback plan.
+  - _Example 1:_ We felt more confident after assigning a rollback owner and fallback plan.
+  - _Example 2:_ The fallback plan made the decision easier because the team knew how to recover.
+  - _Example 3:_ A fallback plan should include the trigger, owner, and communication step.
 
 - **timeline pressure** /ˈtaɪmlaɪn ˈpreʃər/ (n) - pressure caused by a deadline or release date
   - _Common chunks:_ under timeline pressure, handle timeline pressure, timeline pressure from stakeholders
-  - _Example:_ Under timeline pressure, I try to separate urgency from actual release readiness.
+  - _Example 1:_ Under timeline pressure, I try to separate urgency from actual release readiness.
+  - _Example 2:_ Timeline pressure made scope control more important, not less important.
+  - _Example 3:_ I explained that pressure was real, but it did not remove the need for testing.
 
 - **rework cost** /ˌriːˈwɝːk kɔːst/ (n) - the time and effort needed to fix avoidable problems later
   - _Common chunks:_ reduce rework cost, hidden rework cost, high rework cost
-  - _Example:_ One more QA day was cheaper than two weeks of rework after a broken release.
+  - _Example 1:_ One more QA day was cheaper than two weeks of rework after a broken release.
+  - _Example 2:_ The rework cost would be higher if we rushed the API contract now.
+  - _Example 3:_ I used rework cost to explain why a slightly slower decision could save time later.
 
 - **decision owner** /dɪˈsɪʒən ˈoʊnər/ (n) - the person responsible for making or closing a decision
   - _Common chunks:_ assign a decision owner, clear decision owner, final decision owner
-  - _Example:_ The meeting became clearer once we named the decision owner and next action.
+  - _Example 1:_ The meeting became clearer once we named the decision owner and next action.
+  - _Example 2:_ The decision owner made the final call after hearing engineering and product concerns.
+  - _Example 3:_ Without a decision owner, the same debate kept returning in every meeting.
 
 ### High-Value Verbs & Chunks
 

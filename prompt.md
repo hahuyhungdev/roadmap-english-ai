@@ -202,6 +202,10 @@ Vocabulary should be layered:
 - Speaking expansion paths: 3-5 short flows showing how one word expands into a longer answer.
 - Secondary vocabulary: 4-8 advanced/product/technical terms that support the topic but should not dominate.
 
+Use the Lesson 1-style compact core vocabulary structure: pronunciation, simple meaning, `_Common chunks:_`, and `_Example 1/2/3:_`.
+
+Each core term should have three compact examples. The examples must give different speaking angles, such as role boundary, stakeholder update, user value, team workflow, risk, evidence, trade-off, or follow-up action. Avoid adding three examples that all say the same idea with slightly different wording.
+
 Core terms should usually include practical words such as responsibility, ownership, collaboration, impact, trade-off, scope, stakeholder, priority, alignment, decision, expectation, workflow, maintainability, efficiency, scalability, and constraint when relevant.
 
 Do not over-optimize Phase 1-2 vocabulary for low-frequency product analytics terms. Terms like guardrail metric, conversion rate, activation rate, latency budget, or capacity planning are useful, but they belong in the secondary layer unless the lesson topic is specifically about metrics or systems.

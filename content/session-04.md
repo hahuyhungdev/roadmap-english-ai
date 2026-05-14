@@ -20,67 +20,99 @@ description: Discuss technical debt with evidence and explain safe change plans 
 
 - **technical debt** /ˈteknɪkəl det/ (n) - future delivery cost created by shortcuts or weak design
   - _Common chunks:_ pay down debt, hidden debt, debt discussion
-  - _Example:_ We accepted some technical debt to launch faster, but we documented the cleanup plan.
+  - _Example 1:_ We accepted some technical debt to launch faster, but we documented the cleanup plan.
+  - _Example 2:_ Technical debt became visible when one small form change required too many manual checks.
+  - _Example 3:_ I explain technical debt as delivery cost, not just messy code.
 
 - **debt signal** /det ˈsɪɡnəl/ (n) - visible sign that debt is hurting the team
   - _Common chunks:_ clear debt signal, recurring debt signal, spot a debt signal
-  - _Example:_ Reopened bugs in the same flow were the clearest debt signal.
+  - _Example 1:_ Reopened bugs in the same flow were the clearest debt signal.
+  - _Example 2:_ Slow QA in the same area was a debt signal we could not ignore.
+  - _Example 3:_ A debt signal is useful because it turns a vague feeling into evidence.
 
 - **scope** /skoʊp/ (n) - clear boundary of what a change includes and excludes
   - _Common chunks:_ limit the scope, narrow the scope, scope the change
-  - _Example:_ We kept the scope limited to validation logic and error states.
+  - _Example 1:_ We kept the scope limited to validation logic and error states.
+  - _Example 2:_ We reduced the scope so the cleanup could be reviewed and tested in one sprint.
+  - _Example 3:_ A clear scope helped PM understand what would not change.
 
 - **regression** /rɪˈɡreʃən/ (n) - old behavior breaking after a new change
   - _Common chunks:_ catch regressions, repeated regressions, regression risk
-  - _Example:_ The shared component had caused two regressions in the previous sprint.
+  - _Example 1:_ The shared component had caused two regressions in the previous sprint.
+  - _Example 2:_ The regression happened because two screens shared hidden validation logic.
+  - _Example 3:_ We added tests around the regression before changing the component again.
 
 - **change brief** /tʃeɪndʒ briːf/ (n) - short note explaining the change, risk, tests, and rollback plan
   - _Common chunks:_ write a change brief, share the brief, brief the team
-  - _Example:_ The change brief helped QA focus on the highest-risk cases.
+  - _Example 1:_ The change brief helped QA focus on the highest-risk cases.
+  - _Example 2:_ The change brief made the risk, test plan, and rollback trigger visible.
+  - _Example 3:_ I use a change brief when a small change can affect a critical flow.
 
 - **rollout** /ˈroʊlˌaʊt/ (n) - staged release of a change to control risk
   - _Common chunks:_ staged rollout, rollout plan, pause the rollout
-  - _Example:_ We used a gradual rollout because the payment flow was too critical for a full release.
+  - _Example 1:_ We used a gradual rollout because the payment flow was too critical for a full release.
+  - _Example 2:_ The rollout started with a small user segment so we could watch the signal.
+  - _Example 3:_ A staged rollout gave support time to react if users reported problems.
 
 - **rollback** /ˈroʊlˌbæk/ (n) - action of reverting or disabling a risky change
   - _Common chunks:_ rollback trigger, rollback plan, immediate rollback
-  - _Example:_ A clear rollback plan made the release conversation much calmer.
+  - _Example 1:_ A clear rollback plan made the release conversation much calmer.
+  - _Example 2:_ The rollback plan was simple: disable the flag and return users to the old flow.
+  - _Example 3:_ A rollback should have a trigger, an owner, and a clear communication path.
 
 - **stability** /stəˈbɪləti/ (n) - condition where a system behaves consistently and safely
   - _Common chunks:_ protect stability, system stability, release stability
-  - _Example:_ The cleanup was necessary because the current setup was hurting release stability.
+  - _Example 1:_ The cleanup was necessary because the current setup was hurting release stability.
+  - _Example 2:_ Stability mattered more than adding another feature that week.
+  - _Example 3:_ We protected stability by freezing unrelated changes during the release.
 
 - **dependency** /dɪˈpendənsi/ (n) - another system, service, or module that affects your change
   - _Common chunks:_ hidden dependency, dependency risk, external dependency
-  - _Example:_ The analytics dependency made the small UI change more dangerous than expected.
+  - _Example 1:_ The analytics dependency made the small UI change more dangerous than expected.
+  - _Example 2:_ A hidden dependency made the cleanup riskier than the ticket title suggested.
+  - _Example 3:_ I check dependencies before estimating a technical debt task.
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - clear responsibility for planning, delivery, and follow-up
   - _Common chunks:_ clear ownership, ownership gap, assign ownership
-  - _Example:_ Clear ownership made it easier to decide who would monitor the rollout.
+  - _Example 1:_ Clear ownership made it easier to decide who would monitor the rollout.
+  - _Example 2:_ Ownership was clear because QA, frontend, and PM each knew their follow-up action.
+  - _Example 3:_ Without ownership, cleanup work often stops after the first patch.
 
 - **constraint** /kənˈstreɪnt/ (n) - real limit around time, people, or product pressure
   - _Common chunks:_ delivery constraint, time constraint, realistic constraint
-  - _Example:_ Because of the release constraint, we chose a small refactor instead of a rewrite.
+  - _Example 1:_ Because of the release constraint, we chose a small refactor instead of a rewrite.
+  - _Example 2:_ The main constraint was release timing, so we chose the smallest safe cleanup.
+  - _Example 3:_ Constraints helped us avoid proposing a rewrite that the team could not finish.
 
 - **maintainability** /meɪnˌteɪnəˈbɪləti/ (n) - how easy the code is to understand and change safely later
   - _Common chunks:_ long-term maintainability, maintainability cost, improve maintainability
-  - _Example:_ The cleanup improved maintainability because the validation rules were no longer duplicated.
+  - _Example 1:_ The cleanup improved maintainability because the validation rules were no longer duplicated.
+  - _Example 2:_ Good maintainability meant a new teammate could change the rule without reading three files.
+  - _Example 3:_ If maintainability is low, every future change becomes slower and riskier.
 
 - **rework** /ˌriːˈwɝːk/ (n) - extra work needed because the first version was unclear, fragile, or incomplete
   - _Common chunks:_ reduce rework, avoid rework, QA rework
-  - _Example:_ The cleanup reduced QA rework because the expected behavior became clearer.
+  - _Example 1:_ The cleanup reduced QA rework because the expected behavior became clearer.
+  - _Example 2:_ Rework increased because the same bug came back after every small fix.
+  - _Example 3:_ Good cleanup should reduce rework for both engineers and QA.
 
 - **friction** /ˈfrɪkʃən/ (n) - anything that slows people down or makes work harder
   - _Common chunks:_ delivery friction, team friction, reduce friction
-  - _Example:_ The debt created delivery friction every time we touched the checkout flow.
+  - _Example 1:_ The debt created delivery friction every time we touched the checkout flow.
+  - _Example 2:_ The friction was obvious when every release needed extra manual coordination.
+  - _Example 3:_ Removing friction is sometimes more valuable than adding a new feature.
 
 - **confidence** /ˈkɑːnfədəns/ (n) - how safe or certain the team feels about a change
   - _Common chunks:_ release confidence, team confidence, confidence level
-  - _Example:_ Better tests gave the team more confidence during release week.
+  - _Example 1:_ Better tests gave the team more confidence during release week.
+  - _Example 2:_ The team gained confidence after tests covered the most fragile path.
+  - _Example 3:_ Confidence should come from evidence, not from hoping the change is small.
 
 - **shortcut** /ˈʃɔːrtˌkʌt/ (n) - a faster path that may create future cost
   - _Common chunks:_ temporary shortcut, risky shortcut, accept a shortcut
-  - _Example:_ The shortcut was acceptable for the prototype, but not for the payment flow.
+  - _Example 1:_ The shortcut was acceptable for the prototype, but not for the payment flow.
+  - _Example 2:_ The shortcut helped us validate the idea quickly, but we should not leave it in a critical path.
+  - _Example 3:_ A shortcut is easier to accept when the team agrees how to remove it later.
 
 ### High-Value Verbs & Chunks
 

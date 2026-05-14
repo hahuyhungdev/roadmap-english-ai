@@ -20,67 +20,99 @@ description: Explain your role with clear ownership, user value, business impact
 
 - **responsibility** /rɪˌspɑːnsəˈbɪləti/ (n) - the work or result you are expected to take care of
   - _Common chunks:_ my main responsibility, take responsibility for, share responsibility with
-  - _Example:_ My main responsibility was to make sure the checkout UI handled errors clearly.
+  - _Example 1:_ My main responsibility was to make sure the checkout UI handled errors clearly.
+  - _Example 2:_ In my current team, my responsibility is to turn product requirements into reliable frontend behavior.
+  - _Example 3:_ I try to separate my responsibility from the whole project so the update sounds honest.
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - being accountable for a specific area from planning to result
   - _Common chunks:_ clear ownership, ownership area, take ownership of
-  - _Example:_ I owned the frontend checkout flow, but backend owned the payment API.
+  - _Example 1:_ I owned the frontend checkout flow, but backend owned the payment API.
+  - _Example 2:_ Clear ownership helped us avoid confusion when the payment error behavior changed.
+  - _Example 3:_ I can take ownership of the UI logic without pretending I controlled every backend decision.
 
 - **collaboration** /kəˌlæbəˈreɪʃən/ (n) - working with others to reach a shared result
   - _Common chunks:_ close collaboration, cross-team collaboration, collaborate with QA/backend/design
-  - _Example:_ The project needed close collaboration with QA because the error cases were easy to miss.
+  - _Example 1:_ The project needed close collaboration with QA because the error cases were easy to miss.
+  - _Example 2:_ Good collaboration means raising blockers early instead of waiting until the release meeting.
+  - _Example 3:_ I collaborated with design to keep the mobile flow simple and with backend to match API states.
 
 - **impact** /ˈɪmpækt/ (n/v) - the real effect of your work on users, the team, or the business
   - _Common chunks:_ user impact, business impact, have an impact on, measure the impact
-  - _Example:_ The impact was fewer failed checkouts and less confusion during support follow-up.
+  - _Example 1:_ The impact was fewer failed checkouts and less confusion during support follow-up.
+  - _Example 2:_ The biggest impact was that users could recover from mistakes without contacting support.
+  - _Example 3:_ I try to describe impact in terms of user behavior, team speed, or release confidence.
 
 - **trade-off** /ˈtreɪd ɔːf/ (n) - a choice where you gain one thing but give up another
   - _Common chunks:_ make a trade-off, accept a trade-off, speed-quality trade-off
-  - _Example:_ The trade-off was a smaller first release, but lower QA risk.
+  - _Example 1:_ The trade-off was a smaller first release, but lower QA risk.
+  - _Example 2:_ We accepted the trade-off because the smaller scope made the release safer.
+  - _Example 3:_ A trade-off is easier to explain when you mention both the benefit and the cost.
 
 - **scope** /skoʊp/ (n) - what is included and excluded in a piece of work
   - _Common chunks:_ reduce scope, define the scope, outside the scope
-  - _Example:_ We reduced scope and focused only on the core payment flow.
+  - _Example 1:_ We reduced scope and focused only on the core payment flow.
+  - _Example 2:_ The scope included validation and error states, but not a full redesign.
+  - _Example 3:_ When the deadline was tight, we narrowed the scope instead of lowering quality.
 
 - **priority** /praɪˈɔːrəti/ (n) - the thing that matters most in a situation
   - _Common chunks:_ top priority, change priorities, prioritize the main flow
-  - _Example:_ Our priority was to protect the main checkout flow before adding extra options.
+  - _Example 1:_ Our priority was to protect the main checkout flow before adding extra options.
+  - _Example 2:_ The top priority was making the main user path stable before improving secondary screens.
+  - _Example 3:_ Priorities changed after support showed us where users were getting stuck.
 
 - **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - a person or team affected by the project result
   - _Common chunks:_ align with stakeholders, update stakeholders, stakeholder expectation
-  - _Example:_ I sent stakeholders a short update with progress, risk, and next step.
+  - _Example 1:_ I sent stakeholders a short update with progress, risk, and next step.
+  - _Example 2:_ Different stakeholders needed different updates, but the facts stayed the same.
+  - _Example 3:_ I try to keep stakeholders informed before a risk becomes urgent.
 
 - **alignment** /əˈlaɪnmənt/ (n) - agreement on direction, priority, or expectations
   - _Common chunks:_ team alignment, get alignment, create alignment around
-  - _Example:_ We got alignment on the release scope before development started.
+  - _Example 1:_ We got alignment on the release scope before development started.
+  - _Example 2:_ Alignment was important because design, QA, and backend all had different concerns.
+  - _Example 3:_ Without alignment, small assumptions can turn into release problems.
 
 - **expectation** /ˌekspekˈteɪʃən/ (n) - what someone believes should happen
   - _Common chunks:_ set expectations, manage expectations, unclear expectations
-  - _Example:_ I set expectations early so the PM knew which edge cases would move to the next release.
+  - _Example 1:_ I set expectations early so the PM knew which edge cases would move to the next release.
+  - _Example 2:_ We managed expectations by saying which edge cases would be handled after launch.
+  - _Example 3:_ Clear expectations helped the team avoid last-minute arguments about scope.
 
 - **decision** /dɪˈsɪʒən/ (n) - a choice about what to do
   - _Common chunks:_ make a decision, explain a decision, decision reason
-  - _Example:_ The decision was to protect the main flow and delay the optional setting.
+  - _Example 1:_ The decision was to protect the main flow and delay the optional setting.
+  - _Example 2:_ I explained the decision with the user risk, not just my technical preference.
+  - _Example 3:_ A good decision includes a reason, an owner, and a follow-up if the result is uncertain.
 
 - **workflow** /ˈwɝːkfloʊ/ (n) - the steps people or users follow to complete something
   - _Common chunks:_ user workflow, team workflow, improve the workflow
-  - _Example:_ The new error messages made the checkout workflow easier to follow.
+  - _Example 1:_ The new error messages made the checkout workflow easier to follow.
+  - _Example 2:_ The team workflow became smoother after we documented the handoff points.
+  - _Example 3:_ A broken workflow can waste time even when the code itself is not difficult.
 
 - **efficiency** /ɪˈfɪʃənsi/ (n) - how well time or effort is used
   - _Common chunks:_ improve efficiency, team efficiency, operational efficiency
-  - _Example:_ Better UI states improved QA efficiency because testers knew what to expect.
+  - _Example 1:_ Better UI states improved QA efficiency because testers knew what to expect.
+  - _Example 2:_ We improved efficiency by removing repeated manual checks from the QA process.
+  - _Example 3:_ Efficiency should not mean rushing; it should mean reducing unnecessary work.
 
 - **maintainability** /meɪnˌteɪnəˈbɪləti/ (n) - how easy code or a system is to change safely later
   - _Common chunks:_ improve maintainability, long-term maintainability, maintainability cost
-  - _Example:_ We accepted a small delay to improve maintainability before the next release.
+  - _Example 1:_ We accepted a small delay to improve maintainability before the next release.
+  - _Example 2:_ Better maintainability made future changes less risky for new developers.
+  - _Example 3:_ I care about maintainability because unclear code slows the team after the release.
 
 - **scalability** /ˌskeɪləˈbɪləti/ (n) - how well a system or process can handle growth
   - _Common chunks:_ future scalability, scalability concern, design for scalability
-  - _Example:_ The first version was simple, but we kept the structure ready for future scalability.
+  - _Example 1:_ The first version was simple, but we kept the structure ready for future scalability.
+  - _Example 2:_ Scalability was not urgent on day one, but we avoided choices that would block growth.
+  - _Example 3:_ We designed the component structure for scalability because the same pattern would appear in more pages.
 
 - **constraint** /kənˈstreɪnt/ (n) - a limit that affects what the team can do
   - _Common chunks:_ time constraint, technical constraint, work within constraints
-  - _Example:_ Because of the time constraint, we focused on the highest-risk user path.
+  - _Example 1:_ Because of the time constraint, we focused on the highest-risk user path.
+  - _Example 2:_ The biggest constraint was QA time, so we avoided changes with a large testing surface.
+  - _Example 3:_ Constraints are useful to mention because they explain why the team chose a realistic option.
 
 ### High-Value Verbs & Chunks
 

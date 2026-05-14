@@ -20,63 +20,93 @@ description: Explain practical documentation as product quality: UI states, API 
 
 - **documentation** /ˌdɑːkjəmenˈteɪʃən/ (n) - written context that helps people understand, test, support, or change something
   - _Common chunks:_ useful documentation, update documentation, documentation quality
-  - _Example:_ Good documentation helps QA and support act without asking the same question again.
+  - _Example 1:_ Good documentation helps QA and support act without asking the same question again.
+  - _Example 2:_ I treat documentation as part of delivery because it keeps behavior clear after the meeting ends.
+  - _Example 3:_ Bad documentation makes small changes slower because people have to reconstruct old decisions.
 
 - **behavior** /bɪˈheɪvjər/ (n) - what the product or system does in a situation
   - _Common chunks:_ expected behavior, user-facing behavior, behavior note
-  - _Example:_ The behavior note explained what users see when payment is pending.
+  - _Example 1:_ The behavior note explained what users see when payment is pending.
+  - _Example 2:_ We documented the expected behavior for loading, success, empty, and error states.
+  - _Example 3:_ Clear behavior notes help QA test what users actually experience.
 
 - **handoff** /ˈhændˌɔːf/ (n) - transferring context to another person or team
   - _Common chunks:_ QA handoff, support handoff, handoff note
-  - _Example:_ The handoff note included screenshots, known issues, and escalation cases.
+  - _Example 1:_ The handoff note included screenshots, known issues, and escalation cases.
+  - _Example 2:_ A good handoff explains what changed, what is risky, and who owns the next step.
+  - _Example 3:_ The handoff was short, but it saved support from guessing how the feature should work.
 
 - **rework** /ˌriːˈwɝːk/ (n) - extra work caused by unclear decisions, missing details, or late changes
   - _Common chunks:_ reduce rework, avoid rework, QA rework
-  - _Example:_ A short UI state note prevented rework during release week.
+  - _Example 1:_ A short UI state note prevented rework during release week.
+  - _Example 2:_ Rework increased when the design, API, and QA notes described different behavior.
+  - _Example 3:_ Good documentation reduces rework because people can check the answer without another meeting.
 
 - **clarity** /ˈklerəti/ (n) - how easy something is to understand
   - _Common chunks:_ create clarity, improve clarity, lack of clarity
-  - _Example:_ The doc created clarity around error messages and retry behavior.
+  - _Example 1:_ The doc created clarity around error messages and retry behavior.
+  - _Example 2:_ Clarity matters more than a long document that nobody reads.
+  - _Example 3:_ The goal was clarity: what users see, what QA should test, and what support should say.
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - clear responsibility for keeping information correct
   - _Common chunks:_ doc ownership, clear ownership, ownership by area
-  - _Example:_ Without ownership, the Storybook examples became outdated.
+  - _Example 1:_ Without ownership, the Storybook examples became outdated.
+  - _Example 2:_ Clear ownership made it obvious who should update the doc after the API changed.
+  - _Example 3:_ Documentation without ownership becomes stale very quickly.
 
 - **source of truth** /sɔːrs əv truːθ/ (n) - the official place for the current answer
   - _Common chunks:_ one source of truth, current source of truth, update the source of truth
-  - _Example:_ The release checklist became the source of truth for launch readiness.
+  - _Example 1:_ The release checklist became the source of truth for launch readiness.
+  - _Example 2:_ The source of truth listed the final API fields and UI messages in one place.
+  - _Example 3:_ If there is no source of truth, every team may work from a different assumption.
 
 - **example** /ɪɡˈzæmpəl/ (n) - a sample that shows how something works
   - _Common chunks:_ API example, code example, real example
-  - _Example:_ API examples were more useful than a long abstract description.
+  - _Example 1:_ API examples were more useful than a long abstract description.
+  - _Example 2:_ A concrete example helped support understand the difference between pending and failed payment.
+  - _Example 3:_ Examples are useful because they turn abstract rules into real situations.
 
 - **checklist** /ˈtʃekˌlɪst/ (n) - a short list of things to confirm
   - _Common chunks:_ release checklist, QA checklist, checklist item
-  - _Example:_ The checklist caught one missing error state before release.
+  - _Example 1:_ The checklist caught one missing error state before release.
+  - _Example 2:_ The release checklist made the owner confirm analytics, error states, and support wording.
+  - _Example 3:_ A checklist is useful when the team repeats the same kind of release often.
 
 - **gap** /ɡæp/ (n) - missing information or missing alignment
   - _Common chunks:_ documentation gap, knowledge gap, fill the gap
-  - _Example:_ The documentation gap caused QA to test the wrong behavior.
+  - _Example 1:_ The documentation gap caused QA to test the wrong behavior.
+  - _Example 2:_ The biggest gap was that nobody had documented the retry behavior.
+  - _Example 3:_ Finding the gap early helped us avoid a confusing support handoff.
 
 - **drift** /drɪft/ (n) - when documentation becomes different from the real product
   - _Common chunks:_ documentation drift, reduce drift, prevent drift
-  - _Example:_ Drift happened when the component changed but the Storybook page did not.
+  - _Example 1:_ Drift happened when the component changed but the Storybook page did not.
+  - _Example 2:_ The doc drifted after the API response changed twice during implementation.
+  - _Example 3:_ Documentation drift is dangerous because people trust an answer that is no longer true.
 
 - **context** /ˈkɑːntekst/ (n) - background information needed to understand a decision
   - _Common chunks:_ decision context, missing context, enough context
-  - _Example:_ The doc was short, but it included enough context for future engineers.
+  - _Example 1:_ The doc was short, but it included enough context for future engineers.
+  - _Example 2:_ Context helped new teammates understand why the team chose a smaller release.
+  - _Example 3:_ I include enough context so people can make decisions without asking for the whole history.
 
 - **update trigger** /ˈʌpˌdeɪt ˈtrɪɡər/ (n) - event that tells the team a doc needs to change
   - _Common chunks:_ define an update trigger, trigger a doc update, update in the same PR
-  - _Example:_ A component behavior change should trigger a Storybook update.
+  - _Example 1:_ A component behavior change should trigger a Storybook update.
+  - _Example 2:_ An API change was the update trigger for the QA notes and support script.
+  - _Example 3:_ A clear update trigger prevents docs from becoming stale after small changes.
 
 - **known issue** /noʊn ˈɪʃuː/ (n) - problem the team knows about but has not fixed yet
   - _Common chunks:_ list known issues, known issue note, known limitation
-  - _Example:_ The handoff note listed known issues support should not escalate again.
+  - _Example 1:_ The handoff note listed known issues support should not escalate again.
+  - _Example 2:_ We documented the known issue so support could explain it calmly if users reported it.
+  - _Example 3:_ A known issue should include impact, workaround, owner, and expected follow-up.
 
 - **acceptance criteria** /əkˈseptəns kraɪˈtɪriə/ (n) - conditions that define when work is done
   - _Common chunks:_ clear acceptance criteria, define acceptance criteria, meet criteria
-  - _Example:_ Clear acceptance criteria helped QA know when the behavior was correct.
+  - _Example 1:_ Clear acceptance criteria helped QA know when the behavior was correct.
+  - _Example 2:_ Acceptance criteria made the story testable instead of only understandable.
+  - _Example 3:_ Good acceptance criteria help PM, QA, and engineers agree on what done means.
 
 ### High-Value Verbs & Chunks
 

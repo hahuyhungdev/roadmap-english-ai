@@ -20,59 +20,87 @@ description: Explain practical AI usage, verification habits, privacy boundaries
 
 - **draft** /dræft/ (n/v) - a first version that still needs review
   - _Common chunks:_ first draft, AI draft, draft a test case
-  - _Example:_ I use AI for first drafts, but I do not treat the draft as final.
+  - _Example 1:_ I use AI for first drafts, but I do not treat the draft as final.
+  - _Example 2:_ An AI draft helps me start faster, but I still rewrite it for our product context.
+  - _Example 3:_ I would not send the draft to review until I understand the logic myself.
 
 - **verification** /ˌverəfəˈkeɪʃən/ (n) - checking whether something is correct and safe
   - _Common chunks:_ verification step, verification checklist, verify the output
-  - _Example:_ Verification matters more when AI output touches user-facing behavior.
+  - _Example 1:_ Verification matters more when AI output touches user-facing behavior.
+  - _Example 2:_ My verification step includes tests, local behavior, and source checks when needed.
+  - _Example 3:_ Verification is what turns a fast AI answer into something the team can trust.
 
 - **judgment** /ˈdʒʌdʒmənt/ (n) - human ability to evaluate context, risk, and quality
   - _Common chunks:_ engineering judgment, human judgment, judgment quality
-  - _Example:_ AI can suggest options, but engineering judgment decides what is safe to ship.
+  - _Example 1:_ AI can suggest options, but engineering judgment decides what is safe to ship.
+  - _Example 2:_ Judgment means knowing when an answer is useful and when it is just confident.
+  - _Example 3:_ Good judgment is still needed to decide the trade-off, risk, and user impact.
 
 - **accountability** /əˌkaʊntəˈbɪləti/ (n) - responsibility for the final result
   - _Common chunks:_ review accountability, clear accountability, accountability stays with
-  - _Example:_ Accountability stays with the engineer who submits the pull request.
+  - _Example 1:_ Accountability stays with the engineer who submits the pull request.
+  - _Example 2:_ If AI suggests the code, accountability still belongs to the engineer who merges it.
+  - _Example 3:_ Clear accountability prevents people from blaming the tool for a weak review.
 
 - **boundary** /ˈbaʊndəri/ (n) - a clear limit on what is allowed
   - _Common chunks:_ privacy boundary, usage boundary, set a boundary
-  - _Example:_ My boundary is simple: no secrets, customer data, or private logs in external AI tools.
+  - _Example 1:_ My boundary is simple: no secrets, customer data, or private logs in external AI tools.
+  - _Example 2:_ The boundary changes depending on whether the tool is approved internally or external.
+  - _Example 3:_ I set boundaries based on risk, not on whether the tool feels convenient.
 
 - **quality** /ˈkwɑːləti/ (n) - how correct, reliable, and usable the work is
   - _Common chunks:_ quality bar, quality risk, protect quality
-  - _Example:_ AI can improve speed, but quality still needs tests and review.
+  - _Example 1:_ AI can improve speed, but quality still needs tests and review.
+  - _Example 2:_ Quality means the change works in real edge cases, not only in the generated example.
+  - _Example 3:_ Faster output is not useful if quality drops during review or production.
 
 - **review** /rɪˈvjuː/ (n/v) - checking work before approval
   - _Common chunks:_ code review, manual review, review capacity
-  - _Example:_ If reviewers are overloaded, AI-generated changes should stay smaller.
+  - _Example 1:_ If reviewers are overloaded, AI-generated changes should stay smaller.
+  - _Example 2:_ Review should be stricter when AI touches auth, payment, or personal data.
+  - _Example 3:_ I review AI output like work from a new teammate who lacks project context.
 
 - **context** /ˈkɑːntekst/ (n) - information needed to make an answer fit the situation
   - _Common chunks:_ project context, missing context, package context
-  - _Example:_ AI gave a generic answer because it did not have enough project context.
+  - _Example 1:_ AI gave a generic answer because it did not have enough project context.
+  - _Example 2:_ Good context helps AI produce a more relevant first draft.
+  - _Example 3:_ Missing context is dangerous because the answer may sound right but solve the wrong problem.
 
 - **assumption** /əˈsʌmpʃən/ (n) - something treated as true without proof
   - _Common chunks:_ wrong assumption, check assumptions, hidden assumption
-  - _Example:_ The AI made a wrong assumption about our API response shape.
+  - _Example 1:_ The AI made a wrong assumption about our API response shape.
+  - _Example 2:_ I check assumptions about API shape, library version, and expected user behavior.
+  - _Example 3:_ One hidden assumption can turn a clean AI answer into a production bug.
 
 - **workflow** /ˈwɝːkfloʊ/ (n) - the way work moves from idea to final result
   - _Common chunks:_ AI workflow, review workflow, team workflow
-  - _Example:_ A good AI workflow includes drafting, checking, testing, and ownership.
+  - _Example 1:_ A good AI workflow includes drafting, checking, testing, and ownership.
+  - _Example 2:_ Our workflow works best when AI supports drafting, not final approval.
+  - _Example 3:_ A safe AI workflow makes review easier because the evidence is already attached.
 
 - **risk** /rɪsk/ (n) - possible problem from using AI output incorrectly
   - _Common chunks:_ privacy risk, quality risk, reduce risk
-  - _Example:_ The risk is not AI itself; the risk is trusting output without verification.
+  - _Example 1:_ The risk is not AI itself; the risk is trusting output without verification.
+  - _Example 2:_ The biggest risk is trusting an answer because it sounds professional.
+  - _Example 3:_ I reduce risk by keeping AI-assisted changes small and easy to review.
 
 - **evidence** /ˈevədəns/ (n) - proof that supports a claim
   - _Common chunks:_ quality evidence, review evidence, evidence from tests
-  - _Example:_ Tests, review comments, and defect rates give evidence that quality did not drop.
+  - _Example 1:_ Tests, review comments, and defect rates give evidence that quality did not drop.
+  - _Example 2:_ Passing tests and source links give evidence that the answer is not just plausible.
+  - _Example 3:_ I prefer evidence from the local codebase over a generic AI explanation.
 
 - **confidence** /ˈkɑːnfədəns/ (n) - how safe or certain the team feels
   - _Common chunks:_ confidence level, release confidence, false confidence
-  - _Example:_ AI can create false confidence when the answer sounds correct but misses local rules.
+  - _Example 1:_ AI can create false confidence when the answer sounds correct but misses local rules.
+  - _Example 2:_ A confident answer can still be wrong if it ignores our package version or local pattern.
+  - _Example 3:_ Real confidence comes after I can explain, test, and defend the change.
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - responsibility for understanding and approving the final work
   - _Common chunks:_ own the change, final ownership, ownership stays with
-  - _Example:_ Even if AI writes the first draft, I still own the final change.
+  - _Example 1:_ Even if AI writes the first draft, I still own the final change.
+  - _Example 2:_ Ownership means I can explain why the generated code belongs in our project.
+  - _Example 3:_ Ownership also means rejecting an AI suggestion when it does not fit the codebase.
 
 ### High-Value Verbs & Chunks
 

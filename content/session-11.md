@@ -20,59 +20,87 @@ description: Explain failures with clear ownership, concrete impact, recovery st
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - being accountable for your part of a result, including recovery and follow-up
   - _Common chunks:_ take ownership, clear ownership, ownership of the mistake
-  - _Example:_ I took ownership of the release decision and helped coordinate the rollback.
+  - _Example 1:_ I took ownership of the release decision and helped coordinate the rollback.
+  - _Example 2:_ Ownership meant staying involved after the rollback, not only apologizing once.
+  - _Example 3:_ I took ownership of my part without pretending I caused every part of the incident.
 
 - **accountability** /əˌkaʊntəˈbɪləti/ (n) - responsibility that includes explaining actions and accepting consequences
   - _Common chunks:_ public accountability, real accountability, accountability without blame
-  - _Example:_ Accountability meant saying what I controlled and what I changed afterward.
+  - _Example 1:_ Accountability meant saying what I controlled and what I changed afterward.
+  - _Example 2:_ Real accountability means naming the decision, the evidence available, and the missed judgment.
+  - _Example 3:_ Accountability without blame helped the team focus on recovery and prevention.
 
 - **impact** /ˈɪmpækt/ (n) - the real effect of a mistake on users, teammates, or the business
   - _Common chunks:_ user impact, business impact, immediate impact, explain the impact
-  - _Example:_ The impact was a short checkout outage and extra work for support.
+  - _Example 1:_ The impact was a short checkout outage and extra work for support.
+  - _Example 2:_ I explained the impact in terms of failed actions, support load, and user trust.
+  - _Example 3:_ A mature failure update names the impact clearly instead of hiding behind vague wording.
 
 - **root cause** /ruːt kɔːz/ (n) - the deeper reason a problem happened
   - _Common chunks:_ identify the root cause, root cause analysis, real root cause
-  - _Example:_ The root cause was missing validation in one payment response path.
+  - _Example 1:_ The root cause was missing validation in one payment response path.
+  - _Example 2:_ We separated the root cause from the first visible symptom.
+  - _Example 3:_ A clear root cause helped us choose prevention actions instead of random cleanup.
 
 - **contributing factor** /kənˈtrɪbjətɪŋ ˈfæktər/ (n) - something that made a problem more likely or worse
   - _Common chunks:_ key contributing factor, list contributing factors, pressure as a contributing factor
-  - _Example:_ Timeline pressure was a contributing factor, but it did not remove my responsibility.
+  - _Example 1:_ Timeline pressure was a contributing factor, but it did not remove my responsibility.
+  - _Example 2:_ A missing checklist item was a contributing factor, but the release decision still needed ownership.
+  - _Example 3:_ Naming contributing factors helped us improve the process without blaming one person.
 
 - **incident timeline** /ˈɪnsɪdənt ˈtaɪmlaɪn/ (n) - the ordered story of what happened and when
   - _Common chunks:_ write the incident timeline, review the timeline, timeline of events
-  - _Example:_ The incident timeline showed that we missed the second warning signal.
+  - _Example 1:_ The incident timeline showed that we missed the second warning signal.
+  - _Example 2:_ The timeline also showed a gap between detection and escalation.
+  - _Example 3:_ A timeline is useful because it turns a messy incident into a sequence the team can learn from.
 
 - **containment** /kənˈteɪnmənt/ (n) - immediate action to stop a problem from spreading
   - _Common chunks:_ containment step, fast containment, contain the damage
-  - _Example:_ The first containment step was rolling back the release within ten minutes.
+  - _Example 1:_ The first containment step was rolling back the release within ten minutes.
+  - _Example 2:_ Containment came first because we needed to stop more users from being affected.
+  - _Example 3:_ The containment step was disabling the risky path while keeping the core flow available.
 
 - **recovery** /rɪˈkʌvəri/ (n) - restoring the system, users, or team process after a problem
   - _Common chunks:_ technical recovery, service recovery, recovery plan
-  - _Example:_ Technical recovery was fast, but team trust took longer to rebuild.
+  - _Example 1:_ Technical recovery was fast, but team trust took longer to rebuild.
+  - _Example 2:_ Recovery included restoring checkout and checking whether affected users needed follow-up.
+  - _Example 3:_ A recovery plan should explain what is fixed now and what still needs prevention work.
 
 - **prevention** /prɪˈvenʃən/ (n) - changes made to reduce the chance of the same failure happening again
   - _Common chunks:_ prevention action, prevention plan, prevent recurrence
-  - _Example:_ We added a prevention action to verify provider errors before release.
+  - _Example 1:_ We added a prevention action to verify provider errors before release.
+  - _Example 2:_ Prevention meant changing the checklist, not only fixing the broken condition.
+  - _Example 3:_ A prevention action should be specific, owned, and easy to verify later.
 
 - **follow-through** /ˈfɑːloʊ θruː/ (n) - completing promised actions after the conversation or incident
   - _Common chunks:_ visible follow-through, follow-through on action items, consistent follow-through
-  - _Example:_ Trust improved after people saw real follow-through on prevention tasks.
+  - _Example 1:_ Trust improved after people saw real follow-through on prevention tasks.
+  - _Example 2:_ Follow-through showed that the apology was not just words.
+  - _Example 3:_ Good follow-through means closing the action items and reporting what changed.
 
 - **trust** /trʌst/ (n/v) - confidence that someone or a system will act reliably
   - _Common chunks:_ rebuild trust, lose trust, earn trust back, stakeholder trust
-  - _Example:_ We lost some trust after the incident because support heard three different explanations.
+  - _Example 1:_ We lost some trust after the incident because support heard three different explanations.
+  - _Example 2:_ Trust improves when the team communicates clearly and does not minimize the problem.
+  - _Example 3:_ Rebuilding trust takes repeated evidence, not one confident message.
 
 - **review** /rɪˈvjuː/ (n/v) - a structured discussion to understand what happened and improve the process
   - _Common chunks:_ incident review, fair review, run a review, review quality
-  - _Example:_ A fair review focused on the decision, the system gap, and the prevention plan.
+  - _Example 1:_ A fair review focused on the decision, the system gap, and the prevention plan.
+  - _Example 2:_ The review focused on what happened, what we missed, and what we changed.
+  - _Example 3:_ A healthy review avoids blame but still names weak decisions clearly.
 
 - **signal** /ˈsɪɡnəl/ (n) - an early warning that something may be wrong
   - _Common chunks:_ warning signal, weak signal, missed signal, act on a signal
-  - _Example:_ The team noticed a weak signal, but we did not treat it seriously enough.
+  - _Example 1:_ The team noticed a weak signal, but we did not treat it seriously enough.
+  - _Example 2:_ The first signal was a small error spike right after the release window opened.
+  - _Example 3:_ A weak signal can still matter when it appears in a critical user flow.
 
 - **escalation path** /ˌeskəˈleɪʃən pæθ/ (n) - the route for raising urgent issues to the right person
   - _Common chunks:_ clear escalation path, use the escalation path, define escalation rules
-  - _Example:_ After the incident, we clarified the escalation path for release risks.
+  - _Example 1:_ After the incident, we clarified the escalation path for release risks.
+  - _Example 2:_ The escalation path was unclear, so the warning reached the decision owner too late.
+  - _Example 3:_ A good escalation path tells people who to contact when the impact crosses a threshold.
 
 ### High-Value Verbs & Chunks
 

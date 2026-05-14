@@ -20,51 +20,75 @@ description: Explain real production incidents with evidence, timeline, user imp
 
 - **incident** /ˈɪnsədənt/ (n) - production problem that affects users, systems, or business
   - _Common chunks:_ production incident, incident review, incident summary
-  - _Example:_ The incident affected checkout for 36 minutes.
+  - _Example 1:_ The incident affected checkout for 36 minutes.
+  - _Example 2:_ We treated it as an incident because users could not complete the main flow.
+  - _Example 3:_ A good incident summary explains what happened without blaming one person.
 
 - **symptom** /ˈsɪmptəm/ (n) - visible problem users or systems show
   - _Common chunks:_ user symptom, visible symptom, first symptom
-  - _Example:_ The symptom was payment failure, but the cause was a validation change.
+  - _Example 1:_ The symptom was payment failure, but the cause was a validation change.
+  - _Example 2:_ The symptom appeared in checkout, but the broken logic was in a shared validator.
+  - _Example 3:_ A symptom helps you start the investigation, but it is not always the cause.
 
 - **root cause** /ruːt kɔːz/ (n) - main reason the failure happened
   - _Common chunks:_ identify root cause, confirmed root cause, root cause analysis
-  - _Example:_ The root cause was duplicated validation logic, not the payment provider.
+  - _Example 1:_ The root cause was duplicated validation logic, not the payment provider.
+  - _Example 2:_ We confirmed the root cause only after ruling out provider latency and network errors.
+  - _Example 3:_ The root cause explanation should be specific enough to prevent the same failure.
 
 - **timeline** /ˈtaɪmˌlaɪn/ (n) - sequence of what happened and when
   - _Common chunks:_ build a timeline, incident timeline, shared timeline
-  - _Example:_ The timeline showed failures started six minutes after the feature flag changed.
+  - _Example 1:_ The timeline showed failures started six minutes after the feature flag changed.
+  - _Example 2:_ A clear timeline helped us see which deployment matched the first error spike.
+  - _Example 3:_ The timeline should include detection, mitigation, recovery, and follow-up actions.
 
 - **evidence** /ˈevədəns/ (n) - facts that support a conclusion
   - _Common chunks:_ evidence showed, evidence-based RCA, weak evidence
-  - _Example:_ Logs and traces gave us evidence that the delay happened before the provider call.
+  - _Example 1:_ Logs and traces gave us evidence that the delay happened before the provider call.
+  - _Example 2:_ Evidence from logs was stronger than guessing based on the first user report.
+  - _Example 3:_ We used evidence to separate what we knew from what we were still testing.
 
 - **hypothesis** /haɪˈpɑːθəsɪs/ (n) - testable explanation of what might be wrong
   - _Common chunks:_ test a hypothesis, rule out a hypothesis, first hypothesis
-  - _Example:_ Our first hypothesis was provider latency, but traces ruled it out.
+  - _Example 1:_ Our first hypothesis was provider latency, but traces ruled it out.
+  - _Example 2:_ Our second hypothesis was a cache issue, so we tested it against recent deploys.
+  - _Example 3:_ A useful hypothesis should be easy to prove or rule out quickly.
 
 - **impact** /ˈɪmpækt/ (n) - effect on users, revenue, trust, support, or operations
   - _Common chunks:_ user impact, business impact, impact window
-  - _Example:_ The impact was 620 failed checkout attempts during the incident window.
+  - _Example 1:_ The impact was 620 failed checkout attempts during the incident window.
+  - _Example 2:_ The impact included failed payments, support tickets, and lower release confidence.
+  - _Example 3:_ I explain impact in user terms first, then add business or operational cost.
 
 - **mitigation** /ˌmɪtəˈɡeɪʃən/ (n) - short-term action to reduce damage quickly
   - _Common chunks:_ immediate mitigation, short-term mitigation, apply mitigation
-  - _Example:_ The first mitigation was rolling back the feature flag.
+  - _Example 1:_ The first mitigation was rolling back the feature flag.
+  - _Example 2:_ Another mitigation was showing a clear fallback message while the provider response was unstable.
+  - _Example 3:_ Mitigation buys time, but it does not replace a real root cause fix.
 
 - **prevention** /prɪˈvenʃən/ (n) - action that reduces the chance of the same issue happening again
   - _Common chunks:_ prevention action, prevention plan, prevent recurrence
-  - _Example:_ Prevention included a contract test and a better alert.
+  - _Example 1:_ Prevention included a contract test and a better alert.
+  - _Example 2:_ Prevention meant adding a regression test and changing the release checklist.
+  - _Example 3:_ A prevention action should reduce the chance of the same incident happening again.
 
 - **confidence** /ˈkɑːnfədəns/ (n) - how certain the team is about the diagnosis
   - _Common chunks:_ confidence level, high confidence, low confidence
-  - _Example:_ I would state the confidence level if the impact estimate is rough.
+  - _Example 1:_ I would state the confidence level if the impact estimate is rough.
+  - _Example 2:_ Confidence improved after the fix passed the same scenario that failed in production.
+  - _Example 3:_ We did not claim full confidence until monitoring stayed stable after the rollback.
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - clear responsibility for follow-up actions
   - _Common chunks:_ action owner, clear ownership, assign ownership
-  - _Example:_ Each corrective action needs an owner and due date.
+  - _Example 1:_ Each corrective action needs an owner and due date.
+  - _Example 2:_ Ownership meant one person coordinated updates while others investigated the cause.
+  - _Example 3:_ Clear ownership helped the team avoid duplicated work during the incident.
 
 - **fallback** /ˈfɔːlbæk/ (n) - backup behavior when the normal path fails
   - _Common chunks:_ fallback path, fallback message, fallback behavior
-  - _Example:_ The AI assistant needed a fallback message when latency passed eight seconds.
+  - _Example 1:_ The AI assistant needed a fallback message when latency passed eight seconds.
+  - _Example 2:_ The fallback kept checkout available while we investigated the new flow.
+  - _Example 3:_ A fallback is useful only if the team knows when and how to use it.
 
 ### High-Value Verbs & Chunks
 

@@ -20,67 +20,99 @@ description: Explain system flow, dependencies, risk, and stakeholder updates in
 
 - **flow** /floʊ/ (n) - the order of steps in a user action, feature, or system
   - _Common chunks:_ user flow, system flow, checkout flow, explain the flow
-  - _Example:_ I usually explain the flow from the user's first action to the final UI state.
+  - _Example 1:_ I usually explain the flow from the user's first action to the final UI state.
+  - _Example 2:_ A clear flow helps PM understand where the user can get stuck.
+  - _Example 3:_ I describe the flow before I explain the database or API details.
 
 - **journey** /ˈdʒɝːni/ (n) - the full path a user takes to reach a goal
   - _Common chunks:_ user journey, map the journey, journey step
-  - _Example:_ Starting with the user journey helps non-engineers understand the system faster.
+  - _Example 1:_ Starting with the user journey helps non-engineers understand the system faster.
+  - _Example 2:_ The journey showed us that users needed confirmation after every payment step.
+  - _Example 3:_ Mapping the journey made the technical work easier to connect to user value.
 
 - **dependency** /dɪˈpendənsi/ (n) - something your work relies on
   - _Common chunks:_ external dependency, dependency risk, depend on backend/provider
-  - _Example:_ The main dependency was the payment API because the frontend could not test real errors without it.
+  - _Example 1:_ The main dependency was the payment API because the frontend could not test real errors without it.
+  - _Example 2:_ If a dependency changes late, frontend testing can become unreliable.
+  - _Example 3:_ I try to make dependency risks visible before they become blockers.
 
 - **stakeholder** /ˈsteɪkˌhoʊldər/ (n) - a person or team affected by the work or decision
   - _Common chunks:_ stakeholder update, stakeholder expectation, align with stakeholders
-  - _Example:_ PM, QA, support, and backend all needed different details from the same system update.
+  - _Example 1:_ PM, QA, support, and backend all needed different details from the same system update.
+  - _Example 2:_ Each stakeholder cared about a different part of the same release.
+  - _Example 3:_ A stakeholder update should explain impact, not every technical detail.
 
 - **update** /ˈʌpˌdeɪt/ (n/v) - a short message about progress, risk, or next steps
   - _Common chunks:_ send an update, status update, update the team
-  - _Example:_ A good update says what is done, what is risky, who owns it, and what happens next.
+  - _Example 1:_ A good update says what is done, what is risky, who owns it, and what happens next.
+  - _Example 2:_ My update was short: UI done, API still open, QA pass tomorrow.
+  - _Example 3:_ A vague update creates confusion because nobody knows what to do next.
 
 - **blocker** /ˈblɑːkər/ (n) - something that stops progress
   - _Common chunks:_ current blocker, release blocker, remove a blocker
-  - _Example:_ The frontend was not blocked, but real API testing was still waiting on backend.
+  - _Example 1:_ The frontend was not blocked, but real API testing was still waiting on backend.
+  - _Example 2:_ The blocker was not the UI code; it was missing confirmation from the provider.
+  - _Example 3:_ I try to name the blocker and the owner in the same sentence.
 
 - **risk** /rɪsk/ (n) - something that could create a problem later
   - _Common chunks:_ release risk, integration risk, make risk visible
-  - _Example:_ The risk was not urgent yet, but it could affect release readiness.
+  - _Example 1:_ The risk was not urgent yet, but it could affect release readiness.
+  - _Example 2:_ I flagged the risk early because the payment behavior was still untested.
+  - _Example 3:_ A risk can be small today but serious if the team ignores it until release.
 
 - **context** /ˈkɑːntekst/ (n) - information people need to understand a situation
   - _Common chunks:_ give context, missing context, enough context to act
-  - _Example:_ Support did not need the full API design, but they needed enough context to answer users.
+  - _Example 1:_ Support did not need the full API design, but they needed enough context to answer users.
+  - _Example 2:_ Without enough context, QA may test the wrong scenario.
+  - _Example 3:_ I gave support context about what users would see, not how the code worked.
 
 - **expectation** /ˌekspekˈteɪʃən/ (n) - what someone believes should happen
   - _Common chunks:_ set expectations, manage expectations, expected behavior
-  - _Example:_ We set expectations that payment failure testing needed one more QA pass.
+  - _Example 1:_ We set expectations that payment failure testing needed one more QA pass.
+  - _Example 2:_ Clear expectations helped QA know which cases were final and which were still changing.
+  - _Example 3:_ I set the expectation that mock data was useful but not release evidence.
 
 - **handoff** /ˈhændˌɔːf/ (n) - transferring context or responsibility to another person or team
   - _Common chunks:_ support handoff, QA handoff, handoff note
-  - _Example:_ I wrote a handoff note with screenshots, expected behavior, and escalation cases.
+  - _Example 1:_ I wrote a handoff note with screenshots, expected behavior, and escalation cases.
+  - _Example 2:_ A good handoff reduces repeated questions after the feature goes live.
+  - _Example 3:_ The handoff included screenshots, known limits, and who to contact if users complained.
 
 - **escalation** /ˌeskəˈleɪʃən/ (n) - raising an issue to the right person when it needs attention
   - _Common chunks:_ escalation path, escalate early, escalation rule
-  - _Example:_ We agreed on an escalation path for payment failures during launch.
+  - _Example 1:_ We agreed on an escalation path for payment failures during launch.
+  - _Example 2:_ Escalation is useful when the issue could affect release timing or customer trust.
+  - _Example 3:_ We did not escalate to blame anyone; we escalated so the right person could decide.
 
 - **source of truth** /sɔːrs əv truːθ/ (n) - the official place people use for the latest answer
   - _Common chunks:_ one source of truth, keep it updated, official source of truth
-  - _Example:_ We kept one source of truth for API fields, UI states, and open questions.
+  - _Example 1:_ We kept one source of truth for API fields, UI states, and open questions.
+  - _Example 2:_ The source of truth prevented three teams from using different API field names.
+  - _Example 3:_ If the source of truth is not updated, meetings become repetitive.
 
 - **edge case** /edʒ keɪs/ (n) - an unusual but possible situation the system should handle
   - _Common chunks:_ edge case, test edge cases, document edge cases
-  - _Example:_ QA needed the edge cases more than the internal implementation details.
+  - _Example 1:_ QA needed the edge cases more than the internal implementation details.
+  - _Example 2:_ One edge case was a successful payment with a delayed confirmation screen.
+  - _Example 3:_ Edge cases matter because real users rarely follow only the happy path.
 
 - **readiness** /ˈredinəs/ (n) - whether something is prepared enough for the next step
   - _Common chunks:_ release readiness, QA readiness, check readiness
-  - _Example:_ Release readiness depended on testing real payment failure states.
+  - _Example 1:_ Release readiness depended on testing real payment failure states.
+  - _Example 2:_ Readiness means the team has tested the risky paths, not only finished coding.
+  - _Example 3:_ I would not call the feature ready until QA checks the real provider response.
 
 - **ownership** /ˈoʊnərˌʃɪp/ (n) - clear accountability for a part of the system or decision
   - _Common chunks:_ clear ownership, risk ownership, ownership boundary
-  - _Example:_ Backend owned the API contract, and frontend owned the user-facing states.
+  - _Example 1:_ Backend owned the API contract, and frontend owned the user-facing states.
+  - _Example 2:_ Clear ownership helped us know who would answer the API question.
+  - _Example 3:_ Ownership boundaries are important when several teams touch the same user flow.
 
 - **alignment** /əˈlaɪnmənt/ (n) - shared understanding about direction, priority, or responsibility
   - _Common chunks:_ team alignment, get alignment, alignment with QA
-  - _Example:_ We got alignment on which error cases were required before release.
+  - _Example 1:_ We got alignment on which error cases were required before release.
+  - _Example 2:_ Alignment with QA reduced confusion about which failure states mattered most.
+  - _Example 3:_ We got alignment before launch so nobody discovered a missing case too late.
 
 ### High-Value Verbs & Chunks
 

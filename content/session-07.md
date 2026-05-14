@@ -20,59 +20,87 @@ description: Explain privacy, tracking, consent, personalized feeds, ads, recomm
 
 - **privacy** /ˈpraɪvəsi/ (n) - control over personal information and how it is used
   - _Common chunks:_ user privacy, protect privacy, privacy setting
-  - _Example:_ Privacy matters because users should understand what data the product collects.
+  - _Example 1:_ Privacy matters because users should understand what data the product collects.
+  - _Example 2:_ A privacy-aware product explains data use before users feel surprised.
+  - _Example 3:_ Privacy is also a product quality issue because it affects long-term trust.
 
 - **trust** /trʌst/ (n) - belief that a product is safe, fair, and honest
   - _Common chunks:_ user trust, build trust, damage trust
-  - _Example:_ Hidden tracking may increase data volume, but it damages trust.
+  - _Example 1:_ Hidden tracking may increase data volume, but it damages trust.
+  - _Example 2:_ Trust grows when users can see and change important settings easily.
+  - _Example 3:_ Once trust is damaged, a product may need more than a feature update to recover.
 
 - **personal data** /ˈpɝːsənəl ˈdeɪtə/ (n) - information about a user, such as identity, location, behavior, or device data
   - _Common chunks:_ collect personal data, protect personal data, unnecessary personal data
-  - _Example:_ A delivery app needs address data, but not necessarily the user's contact list.
+  - _Example 1:_ A delivery app needs address data, but not necessarily the user's contact list.
+  - _Example 2:_ We should collect personal data only when it clearly supports the user experience.
+  - _Example 3:_ Personal data becomes risky when the team cannot explain why it is needed.
 
 - **tracking** /ˈtrækɪŋ/ (n) - recording user behavior across actions, sessions, or platforms
   - _Common chunks:_ behavior tracking, cross-app tracking, turn off tracking
-  - _Example:_ Tracking should be explained in plain language, not hidden in settings.
+  - _Example 1:_ Tracking should be explained in plain language, not hidden in settings.
+  - _Example 2:_ Tracking can help product teams learn, but it should not feel hidden or excessive.
+  - _Example 3:_ If tracking is necessary, the user should understand the main purpose in simple words.
 
 - **consent** /kənˈsent/ (n) - permission given by the user
   - _Common chunks:_ clear consent, ask for consent, meaningful consent
-  - _Example:_ Consent is not meaningful if the reject button is hidden.
+  - _Example 1:_ Consent is not meaningful if the reject button is hidden.
+  - _Example 2:_ Good consent gives users a real choice, not only a confusing accept button.
+  - _Example 3:_ Consent should be specific enough for users to know what they are agreeing to.
 
 - **control** /kənˈtroʊl/ (n) - ability for users to choose or change settings
   - _Common chunks:_ user control, privacy control, recommendation control
-  - _Example:_ Users should be able to reset their feed or turn personalization off.
+  - _Example 1:_ Users should be able to reset their feed or turn personalization off.
+  - _Example 2:_ More control helps users feel that personalization is useful instead of invasive.
+  - _Example 3:_ A simple control, like reset feed, can reduce frustration with recommendations.
 
 - **default** /dɪˈfɔːlt/ (n/adj) - what happens before users change anything
   - _Common chunks:_ default setting, privacy-friendly default, default choice
-  - _Example:_ Defaults matter because many users never change settings.
+  - _Example 1:_ Defaults matter because many users never change settings.
+  - _Example 2:_ A risky default can create consent problems even when the settings page is technically available.
+  - _Example 3:_ A privacy-friendly default can protect users who do not read every option.
 
 - **transparency** /trænsˈperənsi/ (n) - making the reason or process understandable
   - _Common chunks:_ product transparency, transparency around data use, clear explanation
-  - _Example:_ Transparency helps users understand why they see a recommendation.
+  - _Example 1:_ Transparency helps users understand why they see a recommendation.
+  - _Example 2:_ Transparency means explaining the data use before it becomes a trust problem.
+  - _Example 3:_ A transparent product tells users why they are seeing a recommendation or ad.
 
 - **personalization** /ˌpɝːsənələˈzeɪʃən/ (n) - adapting product experience based on user data or behavior
   - _Common chunks:_ AI personalization, ad personalization, useful personalization
-  - _Example:_ Personalization can be helpful, but it can also feel invasive.
+  - _Example 1:_ Personalization can be helpful, but it can also feel invasive.
+  - _Example 2:_ Personalization is useful when it saves time, but annoying when it feels too aggressive.
+  - _Example 3:_ The team should test whether personalization improves the user goal, not only engagement.
 
 - **recommendation** /ˌrekəmenˈdeɪʃən/ (n) - content or product suggested by a system
   - _Common chunks:_ recommendation system, recommendation control, recommendation quality
-  - _Example:_ A good recommendation system should help users discover, not trap them.
+  - _Example 1:_ A good recommendation system should help users discover, not trap them.
+  - _Example 2:_ Recommendation quality should include satisfaction, not only click rate or watch time.
+  - _Example 3:_ Bad recommendations can make users feel the product does not understand them.
 
 - **fairness** /ˈfernəs/ (n) - whether a product choice feels balanced and respectful
   - _Common chunks:_ fair design, fair consent, fair default
-  - _Example:_ A fair consent popup makes accept and reject equally clear.
+  - _Example 1:_ A fair consent popup makes accept and reject equally clear.
+  - _Example 2:_ Fairness matters when the algorithm affects visibility, opportunity, or price.
+  - _Example 3:_ A fair product should not quietly punish users because of weak or biased signals.
 
 - **choice** /tʃɔɪs/ (n) - option users can understand and actually use
   - _Common chunks:_ real choice, meaningful choice, user choice
-  - _Example:_ A hidden opt-out is technically a choice, but not a meaningful one.
+  - _Example 1:_ A hidden opt-out is technically a choice, but not a meaningful one.
+  - _Example 2:_ Choice is stronger when users can say no without losing the core product value.
+  - _Example 3:_ Too many choices can also confuse users, so the design needs balance.
 
 - **harm** /hɑːrm/ (n/v) - negative effect on users, trust, or society
   - _Common chunks:_ user harm, reduce harm, potential harm
-  - _Example:_ High watch time can hide harm if users feel worse after using the product.
+  - _Example 1:_ High watch time can hide harm if users feel worse after using the product.
+  - _Example 2:_ Harm can be small at first, like annoying ads, or serious, like exposing private behavior.
+  - _Example 3:_ The team should discuss possible harm before optimizing only for engagement.
 
 - **guardrail** /ˈɡɑːrdˌreɪl/ (n) - safety signal or rule that prevents a bad outcome
   - _Common chunks:_ guardrail metric, trust guardrail, safety guardrail
-  - _Example:_ Hide rate and reports can be guardrails for recommendation quality.
+  - _Example 1:_ Hide rate and reports can be guardrails for recommendation quality.
+  - _Example 2:_ A guardrail metric can show whether growth is damaging trust or user wellbeing.
+  - _Example 3:_ We used complaint rate as a guardrail while testing a more personalized feed.
 
 ### High-Value Verbs & Chunks
 
