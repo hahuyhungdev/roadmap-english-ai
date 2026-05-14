@@ -117,7 +117,7 @@ export default function SessionDetailClient({
   const completed = mounted && completedSessions.includes(session.id);
 
   return (
-    <div className="max-w-[90rem] mx-auto overflow-x-hidden">
+    <div className="max-w-[90rem] mx-auto">
       <div
         className={clsx(
           "grid grid-cols-1 gap-5 xl:gap-6 items-start",
