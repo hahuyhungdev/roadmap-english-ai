@@ -15,7 +15,6 @@ import PracticeCoach from "./PracticeCoach";
 import AnswerGuideInline, { type AnswerGuideItem } from "./AnswerGuideInline";
 
 const ANSWER_GUIDE_SLOT = "\n\n[[ANSWER_GUIDE_SLOT]]\n\n";
-const ASSISTANT_SIDEBAR_VISIBLE_KEY = "ai-assistant-sidebar-visible";
 
 function extractJsonAnswerGuides(content: string): AnswerGuideItem[] {
   const match = content.match(/<!--\s*answerGuidance\s*([\s\S]*?)-->/i);
@@ -80,7 +79,7 @@ export default function SessionDetailClient({
 }) {
   const { completedSessions, toggleCompleted, syncFromDB } = useProgressStore();
   const [mounted, setMounted] = useState(false);
-  const [assistantSidebarVisible, setAssistantSidebarVisible] = useState(true);
+  const [assistantSidebarVisible, setAssistantSidebarVisible] = useState(false);
   const answerGuides = useMemo(
     () => extractAnswerGuides(session.content),
     [session.content],
@@ -111,26 +110,8 @@ export default function SessionDetailClient({
     void syncFromDB();
   }, [syncFromDB]);
 
-  useEffect(() => {
-    try {
-      setAssistantSidebarVisible(
-        window.localStorage.getItem(ASSISTANT_SIDEBAR_VISIBLE_KEY) !== "0",
-      );
-    } catch {
-      // ignore
-    }
-  }, []);
-
   function updateAssistantSidebarVisible(next: boolean) {
     setAssistantSidebarVisible(next);
-    try {
-      window.localStorage.setItem(
-        ASSISTANT_SIDEBAR_VISIBLE_KEY,
-        next ? "1" : "0",
-      );
-    } catch {
-      // ignore
-    }
   }
 
   const completed = mounted && completedSessions.includes(session.id);
@@ -279,6 +260,7 @@ export default function SessionDetailClient({
           lessonTitle={session.meta.title}
           lessonContent={baseLessonContent}
           desktopPresentation={assistantSidebarVisible ? "sidebar" : "floating"}
+          openFloatingAsSidebar
           onCollapseSidebar={() => updateAssistantSidebarVisible(false)}
           onRestoreSidebar={() => updateAssistantSidebarVisible(true)}
         />

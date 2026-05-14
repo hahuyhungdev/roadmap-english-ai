@@ -52,7 +52,7 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <MantineProviderClient>
           <div className="min-h-screen relative">
-            <div className="app-backdrop absolute inset-0 z-0" />
+            <div className="app-backdrop fixed inset-0 z-0" />
             <AppChrome>{children}</AppChrome>
           </div>
         </MantineProviderClient>

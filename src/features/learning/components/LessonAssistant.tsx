@@ -28,6 +28,7 @@ interface LessonAssistantProps {
   contextContent?: string;
   contextType?: "lesson" | "phase";
   desktopPresentation?: "sidebar" | "floating";
+  openFloatingAsSidebar?: boolean;
   onCollapseSidebar?: () => void;
   onRestoreSidebar?: () => void;
 }
@@ -51,6 +52,7 @@ export default function LessonAssistant({
   contextContent,
   contextType = "lesson",
   desktopPresentation = "sidebar",
+  openFloatingAsSidebar = false,
   onCollapseSidebar,
   onRestoreSidebar,
 }: LessonAssistantProps) {
@@ -223,6 +225,32 @@ export default function LessonAssistant({
     setIsOpen(true);
   }
 
+  function openAssistant() {
+    if (
+      openFloatingAsSidebar &&
+      desktopPresentation === "floating" &&
+      onRestoreSidebar
+    ) {
+      handleRestoreSidebar();
+      return;
+    }
+
+    setIsOpen(true);
+  }
+
+  function closeAssistant() {
+    if (
+      openFloatingAsSidebar &&
+      desktopPresentation === "sidebar" &&
+      onCollapseSidebar
+    ) {
+      handleCollapseSidebar();
+      return;
+    }
+
+    setIsOpen(false);
+  }
+
   function renderClosedCard() {
     return (
       <div className="rounded-3xl border border-gray-200 bg-white/90 shadow-sm p-4 theme-dark:bg-slate-900/80 theme-dark:border-slate-700">
@@ -240,7 +268,7 @@ export default function LessonAssistant({
           </div>
         </div>
         <button
-          onClick={() => setIsOpen(true)}
+          onClick={openAssistant}
           className="mt-4 w-full rounded-2xl bg-indigo-600 px-4 py-3 text-base font-semibold text-white hover:bg-indigo-700 active:scale-[0.99] transition-all"
         >
           Open assistant
@@ -260,7 +288,7 @@ export default function LessonAssistant({
   function renderFloatingButton() {
     return (
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={openAssistant}
         className="fixed bottom-5 right-5 w-14 h-14 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full flex items-center justify-center z-50 shadow-xl shadow-indigo-900/20 transition-all active:scale-95 cursor-pointer"
         aria-label="Open AI assistant"
         title={assistantTitle}
@@ -492,7 +520,7 @@ export default function LessonAssistant({
           {isOpen
             ? renderPanel(
               "h-[calc(100vh-2rem)] max-h-[48rem] min-h-[34rem] border border-gray-200 rounded-3xl shadow-xl shadow-gray-200/60 flex flex-col overflow-hidden bg-white theme-dark:bg-slate-900 theme-dark:border-slate-700",
-              () => setIsOpen(false),
+              closeAssistant,
             )
             : renderClosedCard()}
         </div>
@@ -502,7 +530,7 @@ export default function LessonAssistant({
             ? renderFloatingButton()
             : renderPanel(
                 "fixed bottom-5 right-5 z-50 h-[min(82vh,42rem)] w-[24rem] border border-gray-200 rounded-3xl shadow-2xl shadow-gray-950/20 flex flex-col overflow-hidden bg-white theme-dark:bg-slate-900 theme-dark:border-slate-700",
-                () => setIsOpen(false),
+                closeAssistant,
               )}
         </div>
       )}
@@ -515,12 +543,12 @@ export default function LessonAssistant({
             <button
               type="button"
               aria-label="Close assistant backdrop"
-              onClick={() => setIsOpen(false)}
+              onClick={closeAssistant}
               className="fixed inset-0 z-40 bg-gray-950/30 backdrop-blur-[1px]"
             />
             {renderPanel(
               "fixed inset-x-3 bottom-3 z-50 h-[min(82vh,38rem)] border border-gray-200 rounded-3xl shadow-2xl shadow-gray-950/25 flex flex-col overflow-hidden bg-white theme-dark:bg-slate-900 theme-dark:border-slate-700",
-              () => setIsOpen(false),
+              closeAssistant,
             )}
           </>
         )}
