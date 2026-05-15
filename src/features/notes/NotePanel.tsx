@@ -6,7 +6,6 @@ import {
   Tooltip,
   Paper,
   CloseButton,
-  Button,
   Group,
   Text,
   Textarea,
@@ -104,41 +103,47 @@ export default function NotePanel() {
               <Group
                 gap="xs"
                 className="drag-handle"
-                style={{ cursor: "grab", flex: 1 }}
+                style={{ cursor: "grab", flex: "1 1 auto", minWidth: 0 }}
+                wrap="nowrap"
               >
-                <GripHorizontal size={16} />
+                <GripHorizontal size={16} style={{ flex: "0 0 auto" }} />
                 <div
                   style={{
                     display: "flex",
                     flexDirection: "column",
+                    flex: "1 1 auto",
                     minWidth: 0,
                   }}
                 >
-                  <Text size="md" fw={600}>
+                  <Text size="md" fw={600} lh={1.2}>
                     My Notes
                   </Text>
                   <Text
                     size="md"
                     c={isError ? "red" : "dimmed"}
-                    style={{ overflow: "hidden", textOverflow: "ellipsis" }}
+                    lh={1.2}
+                    truncate
                   >
                     {sessionSlug ? `${sessionSlug} • ${statusText}` : statusText}
                   </Text>
                 </div>
               </Group>
 
-              <Group gap="xs" wrap="nowrap">
-                <Button
-                  size="md"
-                  variant="light"
-                  leftSection={<Save size={14} />}
-                  onClick={() => void handleSave()}
-                  loading={isSaving}
-                  disabled={!sessionSlug || isLoading || !isDirty}
-                >
-                  Save
-                </Button>
-                <CloseButton size="md" onClick={close} />
+              <Group gap={4} wrap="nowrap" style={{ flex: "0 0 auto" }}>
+                <Tooltip label="Save note" position="bottom">
+                  <ActionIcon
+                    size="lg"
+                    variant="light"
+                    color="blue"
+                    aria-label="Save note"
+                    onClick={() => void handleSave()}
+                    loading={isSaving}
+                    disabled={!sessionSlug || isLoading || !isDirty}
+                  >
+                    <Save size={16} />
+                  </ActionIcon>
+                </Tooltip>
+                <CloseButton size="lg" onClick={close} />
               </Group>
             </Group>
 
