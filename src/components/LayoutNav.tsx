@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, FileText, Moon, Sun, Video } from "lucide-react";
+import { BookOpen, FileText, GraduationCap, Moon, Sun, Video } from "lucide-react";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 import { useThemeMode } from "@/hooks/useThemeMode";
@@ -18,6 +18,7 @@ export default function LayoutNav() {
   }, []);
 
   const isHome = clientPath === "/" || !!clientPath?.startsWith("/phase");
+  const isIelts = !!clientPath && clientPath.startsWith("/ielts");
   const isYouTube = !!clientPath && clientPath.startsWith("/shadowing/youtube");
   const isScript = !!clientPath && clientPath.startsWith("/shadowing/script");
 
@@ -56,6 +57,22 @@ export default function LayoutNav() {
           >
             <BookOpen size={15} />
             English
+          </Link>
+          <Link
+            href="/ielts"
+            className={clsx(
+              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-base font-medium transition-colors",
+              isIelts
+                ? isDark
+                  ? "bg-emerald-950 text-emerald-200"
+                  : "bg-emerald-50 text-emerald-700"
+                : isDark
+                  ? "text-gray-300 hover:text-gray-100 hover:bg-gray-800"
+                  : "text-gray-500 hover:text-gray-700 hover:bg-gray-50",
+            )}
+          >
+            <GraduationCap size={15} />
+            IELTS
           </Link>
           <Link
             href="/shadowing/youtube"

@@ -7,6 +7,7 @@ import {
   BookOpen,
   Video,
   FileText,
+  GraduationCap,
   PanelLeftClose,
   PanelLeftOpen,
   Moon,
@@ -110,6 +111,15 @@ export default function AppSidebar() {
           description={collapsed ? undefined : "Phases and lessons"}
           leftSection={<BookOpen size={16} />}
           active={pathname === "/" || pathname.startsWith("/phase")}
+          variant="filled"
+        />
+        <NavLink
+          component={Link}
+          href="/ielts"
+          label={collapsed ? "" : "IELTS Speaking"}
+          description={collapsed ? undefined : "Topic modules"}
+          leftSection={<GraduationCap size={16} />}
+          active={pathname.startsWith("/ielts")}
           variant="filled"
         />
         <NavLink
