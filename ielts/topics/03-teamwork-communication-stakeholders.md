@@ -1,20 +1,11 @@
-# IELTS Speaking Lesson 03: Teamwork, Communication & Stakeholders
+# Lesson03: Teamwork, Communication & Stakeholders
 
-## Learner Profile
+## Source Alignment
 
-- **Mode:** self-study only, without a teacher
-- **Entry level:** IELTS Speaking band 5-6
-- **Target level:** IELTS Speaking band 6-7
-- **Main learner:** Vietnamese IT professional or software engineer
-- **Speaking style:** clear, natural, professional, not overly academic
-
-Source alignment:
-
-- `content/session-02.md`: System and Stakeholders
-- `content/session-06.md`: Documentation as a Product
-- `content/session-10.md`: Defending Decisions
-- `content/session-12.md`: Small Talk, Deep Talk & Why Real Conversations Are Rare
-- `ielts/topic-roadmap.md`: Topic 3 - Teamwork, Communication & Stakeholders
+- [Session 02: System and Stakeholders](/phase/phase-1-tech-business/session/session-02)
+- [Session 06: Documentation as a Product](/phase/phase-1-tech-business/session/session-06)
+- [Session 10: Defending Decisions](/phase/phase-2-analytical-thinking-in-it/session/session-10)
+- [Session 12: Small Talk, Deep Talk & Why Real Conversations Are Rare](/phase/phase-3-people-life-real-conversations/session/session-12)
 
 ---
 
@@ -38,7 +29,7 @@ What makes teamwork effective in your field?
 
 - **Idea problem:** I only said teamwork is important.
 - **Vocabulary problem:** I repeated communicate, team, help, good.
-- **Grammar problem:** I could not explain reason, contrast, or examples.
+- **Grammar problem:** I couldn't explain reason, contrast, or examples.
 - **Pronunciation problem:** stakeholder, expectation, documentation were unclear.
 - **Fluency problem:** I stopped when describing conflict or disagreement.
 
@@ -227,7 +218,7 @@ Clarity is important when people work under pressure.
 IT/professional sentence:
 
 ```text
-I clarify requirements before implementation so QA does not test the wrong behavior.
+I clarify requirements before implementation so QA doesn't test the wrong behavior.
 ```
 
 Common mistake:
@@ -428,14 +419,14 @@ Why: Use "disagreement" for a natural workplace tone.
 2. **I tailor the message depending on the audience.**
 3. **QA needs expected behavior, not every implementation detail.**
 4. **A handoff note should include screenshots, known issues, and owners.**
-5. **I raise risks early so they do not become release blockers.**
+5. **I raise risks early so they don't become release blockers.**
 6. **The goal is alignment, not winning an argument.**
 7. **I use documentation as a source of truth.**
 8. **Respectful pushback helps protect the main user flow.**
 
 ---
 
-## Part 3 - Core Idea Bank
+## Part 3 - Core Idea Bank + Reading Shadowing Checkpoints
 
 ### Idea 1: Teamwork Needs Clear Ownership
 
@@ -474,7 +465,7 @@ Different people need different information.
 Better spoken version:
 
 ```text
-Good communication is not about saying everything. It is about giving the right amount of context to the right person.
+Good communication isn't about saying everything. It's about giving the right amount of context to the right person.
 ```
 
 IT/professional example:
@@ -515,6 +506,47 @@ Useful language:
 source of truth / handoff note / reduce rework
 ```
 
+### Reading Shadowing Checkpoint A: Ownership, Audience, And Documentation
+
+#### Mini Reading
+
+```text
+Good teamwork doesn't happen just because people are friendly. It starts with clear ownership. Everyone needs to know who owns the decision, who owns the implementation, and who owns the follow-up. Without that clarity, teams can waste time repeating the same discussion.
+
+Communication also needs to fit the audience. A PM may care about timeline and risk, while QA needs expected behavior and edge cases. Support may need a user-facing explanation. That's why good communication isn't saying everything; it's giving the right context to the right person. Practical documentation helps too. A short handoff note with screenshots, edge cases, and known issues can reduce rework and save a lot of back-and-forth.
+```
+
+#### Comprehension
+
+1. Why does teamwork need clear ownership?
+2. Why should communication change by audience?
+3. How can documentation reduce rework?
+
+#### Find The Language
+
+1. Find a phrase that means "who is responsible for a decision".
+2. Find a phrase that means "change the message for the listener".
+3. Find a phrase that means "one trusted place for information".
+
+#### Shadowing Script
+
+```text
+Good teamwork starts with clear ownership.
+People need to know who owns the next step.
+Communication should fit the audience.
+Good communication isn't saying everything.
+It's giving the right context to the right person.
+Practical documentation reduces rework.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+clear ownership / tailor the message / enough context / source of truth / reduce rework
+```
+
 ### Idea 4: Feedback Should Be Specific And Respectful
 
 Simple version:
@@ -532,7 +564,7 @@ Useful feedback should be specific, respectful, and connected to the work rather
 IT/professional example:
 
 ```text
-In code review, it is better to say "this edge case may fail" than "this code is bad".
+In code review, it's better to say "this edge case may fail" than "this code is bad".
 ```
 
 Useful language:
@@ -578,7 +610,7 @@ Good communication needs listening.
 Better spoken version:
 
 ```text
-Communication is not only speaking clearly. It also means listening carefully, asking follow-up questions, and understanding the real concern behind someone's message.
+Communication isn't only speaking clearly. It also means listening carefully, asking follow-up questions, and understanding the real concern behind someone's message.
 ```
 
 IT/professional example:
@@ -591,6 +623,47 @@ Useful language:
 
 ```text
 full attention / follow-up question / real concern
+```
+
+### Reading Shadowing Checkpoint B: Feedback, Disagreement, And Listening
+
+#### Mini Reading
+
+```text
+Feedback works best when it's specific and respectful. In code review, it's more useful to say, "this edge case may fail" than "this code is bad." The first sentence focuses on the work; the second one can sound personal.
+
+Disagreement is normal in a team because people often have different priorities. Product may want speed, while QA wants safety. A healthy team doesn't avoid disagreement. It makes risk visible, discusses trade-offs calmly, and agrees on decision criteria. Listening is part of that process. If QA pushes back, the real concern may not be the task itself. It may be release confidence, missing evidence, or a risk the team hasn't seen clearly yet.
+```
+
+#### Comprehension
+
+1. What makes feedback useful?
+2. Why is disagreement normal in teams?
+3. Why is listening important when someone pushes back?
+
+#### Find The Language
+
+1. Find a phrase that means "feedback that helps without attacking".
+2. Find a phrase that means "show the risk clearly".
+3. Find a phrase that means "the deeper reason behind a message".
+
+#### Shadowing Script
+
+```text
+Useful feedback is specific and respectful.
+It focuses on the work, not the person.
+Disagreement is normal in a team.
+A healthy team makes risk visible.
+Listening is part of communication.
+The real concern may be deeper than the first message.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+constructive feedback / respectful pushback / decision criteria / make risk visible / real concern
 ```
 
 ### Idea 7: Small Talk Can Build Trust
@@ -630,7 +703,7 @@ Updates should be clear.
 Better spoken version:
 
 ```text
-A good update is short but actionable. It should say what is done, what is blocked, who owns the next step, and whether there is any risk.
+A good update is short but actionable. It should say what's done, what's blocked, who owns the next step, and whether there's any risk.
 ```
 
 IT/professional example:
@@ -643,6 +716,47 @@ Useful language:
 
 ```text
 status update / blocker / next step
+```
+
+### Reading Shadowing Checkpoint C: Small Talk And Actionable Updates
+
+#### Mini Reading
+
+```text
+Small talk may seem unimportant, but it can build trust. A short casual check-in before a meeting can break the ice and make later discussion less tense, especially in remote teams. It doesn't need to be deep. It just reminds people that they're working with humans, not only tasks and tickets.
+
+Clear updates are also important. A good update is short but actionable. Instead of saying "almost done," it's better to say what's done, what's blocked, who owns the next step, and whether there's any risk. This helps other people act instead of guessing. In a busy team, clear updates can save time and reduce confusion.
+```
+
+#### Comprehension
+
+1. Why can small talk help teamwork?
+2. What should a good update include?
+3. Why is "almost done" not very useful?
+
+#### Find The Language
+
+1. Find a phrase that means "make people comfortable at the beginning".
+2. Find a phrase that means "a problem stopping progress".
+3. Find a phrase that means "the next action someone must own".
+
+#### Shadowing Script
+
+```text
+Small talk can build trust.
+It breaks the ice before serious discussion.
+A good update is short but actionable.
+It says what's done and what's blocked.
+It also says who owns the next step.
+Clear updates reduce confusion.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+break the ice / remote team / status update / blocker / next step
 ```
 
 ---
@@ -704,7 +818,7 @@ Show audience awareness.
 Examples:
 
 ```text
-The way I explain it depends on who I am talking to.
+The way I explain it depends on who I'm talking to.
 The way I explain a risk depends on whether the listener is PM, QA, or support.
 ```
 
@@ -796,7 +910,7 @@ Better: Teams need to communicate clearly and set expectations early.
 Drill:
 
 ```text
-Use "should" to answer: What should teammates do when there is a problem?
+Use "should" to answer: What should teammates do when there's a problem?
 ```
 
 #### Grammar 2: Relative Clause
@@ -901,21 +1015,21 @@ Having said that, ...
 Examples:
 
 ```text
-Although meetings can be tiring, they are useful when the goal is clear.
+Although meetings can be tiring, they're useful when the goal is clear.
 I understand the deadline, but we still need a QA pass.
 ```
 
 IT example:
 
 ```text
-Having said that, I would reduce scope instead of lowering the quality bar.
+Having said that, I'd reduce scope instead of lowering the quality bar.
 ```
 
 Upgrade:
 
 ```text
 Basic: I disagree with PM.
-Better: I understand the PM's goal, but I would push back if the change creates release risk.
+Better: I understand the PM's goal, but I'd push back if the change creates release risk.
 ```
 
 Drill:
@@ -936,27 +1050,27 @@ Formula:
 
 ```text
 If + present simple, + will/can...
-If people do not..., they may...
+If people don't..., they may...
 ```
 
 Examples:
 
 ```text
-If people do not share context, others may make wrong assumptions.
+If people don't share context, others may make wrong assumptions.
 If the team has one source of truth, decisions become easier to follow.
 ```
 
 IT example:
 
 ```text
-If QA does not know the expected behavior, they may test the wrong cases.
+If QA doesn't know the expected behavior, they may test the wrong cases.
 ```
 
 Upgrade:
 
 ```text
 Basic: No document, team confused.
-Better: If there is no clear documentation, the team may become confused about expected behavior.
+Better: If there's no clear documentation, the team may become confused about expected behavior.
 ```
 
 Drill:
@@ -1008,7 +1122,7 @@ I don't agree.
 Say:
 
 ```text
-I understand the goal, but I would be careful about the release risk.
+I understand the goal, but I'd be careful about the release risk.
 ```
 
 Instead of:
@@ -1055,7 +1169,7 @@ In a software team, clear communication helps PM, QA, backend, frontend, and sup
 Let me explain that more simply.
 What I mean by stakeholder is...
 A practical example would be...
-I cannot remember the exact term, but...
+I can't remember the exact term, but...
 Let me separate the technical part from the communication part.
 ```
 
@@ -1108,7 +1222,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-A good teammate is someone who communicates clearly, takes ownership, and raises problems early. For example, if a feature has a risk, they do not hide it until the deadline. They explain the issue and help the team find a realistic next step.
+A good teammate is someone who communicates clearly, takes ownership, and raises problems early. For example, if a feature has a risk, they don't hide it until the deadline. They explain the issue and help the team find a realistic next step.
 ```
 
 Retry task:
@@ -1134,7 +1248,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-I usually communicate through Slack, meetings, and short documentation. For daily updates, I try to make the message specific: what is done, what is blocked, who owns the next step, and whether there is any risk.
+I usually communicate through Slack, meetings, and short documentation. For daily updates, I try to make the message specific: what's done, what's blocked, who owns the next step, and whether there's any risk.
 ```
 
 Retry task:
@@ -1174,7 +1288,7 @@ Answer again using "source of truth", "handoff note", and "reduce rework".
 Band 5.5 answer:
 
 ```text
-No, it is not easy. I do not want to make conflict.
+No, it's not easy. I don't wanna create conflict.
 ```
 
 Upgrade notes:
@@ -1186,7 +1300,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-It is not always easy, but I think respectful pushback is necessary. If a request creates release risk, I should not just stay silent. I can explain the concern calmly and suggest a safer option, like reducing scope or adding one more QA pass.
+It's not always easy, but I think respectful pushback is necessary. If a request creates release risk, I shouldn't just stay silent. I can explain the concern calmly and suggest a safer option, like reducing scope or adding one more QA pass.
 ```
 
 Retry task:
@@ -1212,7 +1326,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-Yes, to some extent. I do not want every conversation to stay at the surface level, but small talk is useful because it breaks the ice. In remote teams, a short casual check-in can make people feel more comfortable before discussing serious work.
+Yes, to some extent. I don't want every conversation to stay at the surface level, but small talk is useful because it breaks the ice. In remote teams, a short casual check-in can make people feel more comfortable before discussing serious work.
 ```
 
 Retry task:
@@ -1249,7 +1363,7 @@ Lesson: clear ownership and documentation matter
 #### 2-minute Model Answer
 
 ```text
-A time I worked with other people to finish a task was during a checkout-related feature release. The task was not only about building the frontend UI, but also making sure the payment flow was clear, testable, and understandable for other teams.
+A time I worked with other people to finish a task was during a checkout-related feature release. The task wasn't only about building the frontend UI, but also making sure the payment flow was clear, testable, and understandable for other teams.
 
 I worked with several people: backend engineers, QA, the PM, and support. Backend owned the API behavior, frontend owned the user-facing states, QA needed clear test cases, and support needed to know what users would see if something went wrong.
 
@@ -1257,7 +1371,7 @@ The most important part was communication. I tried to explain the flow from the 
 
 There were some risks because payment errors can be confusing. Instead of saying "almost done", we made the status more specific: what was finished, what was still blocked, who owned the next step, and when QA could test.
 
-I think the teamwork was successful because everyone had enough context to act. We did not need long meetings all the time; we needed clear ownership, practical documentation, and quick follow-up when something changed.
+I think the teamwork was successful because everyone had enough context to act. We didn't need long meetings all the time; we needed clear ownership, practical documentation, and quick follow-up when something changed.
 ```
 
 #### Stripped-down Answer Frame
@@ -1294,7 +1408,7 @@ quick follow-up
 A time I worked with other people
 was during a checkout-related feature release.
 
-The task was not only about
+The task wasn't only about
 building the frontend UI,
 but also making sure
 the payment flow was clear,
@@ -1326,7 +1440,7 @@ I think the teamwork was successful
 because everyone had enough context
 to act.
 
-We did not need long meetings all the time;
+We didn't need long meetings all the time;
 we needed clear ownership,
 practical documentation,
 and quick follow-up
@@ -1346,13 +1460,13 @@ General opinion -> reason -> example -> conclusion
 Model answer:
 
 ```text
-Teamwork is important because most modern work is too complex for one person to handle alone. Different people bring different knowledge, and they can catch risks that one person may miss. In software, for example, a feature may involve frontend, backend, QA, product, and support. If those teams do not communicate well, the final user experience can become confusing.
+Teamwork is important because most modern work is too complex for one person to handle alone. Different people bring different knowledge, and they can catch risks that one person may miss. In software, for example, a feature may involve frontend, backend, QA, product, and support. If those teams don't communicate well, the final user experience can become confusing.
 ```
 
 Simpler version:
 
 ```text
-Teamwork is important because modern work often needs different skills. One person cannot see every problem.
+Teamwork is important because modern work often needs different skills. One person can't see every problem.
 ```
 
 Retry prompt:
@@ -1372,13 +1486,13 @@ Main causes -> example -> effect -> solution
 Model answer:
 
 ```text
-Poor communication often comes from unclear ownership, vague updates, and missing context. For example, if someone says "almost done" but does not explain the blocker, other people cannot plan properly. This can lead to repeated questions, wrong assumptions, and rework. A simple solution is to make updates more specific: progress, blocker, owner, next step, and risk.
+Poor communication often comes from unclear ownership, vague updates, and missing context. For example, if someone says "almost done" but doesn't explain the blocker, other people can't plan properly. This can lead to repeated questions, wrong assumptions, and rework. A simple solution is to make updates more specific: progress, blocker, owner, next step, and risk.
 ```
 
 Simpler version:
 
 ```text
-Poor communication happens when people are vague or do not share enough context.
+Poor communication happens when people are vague or don't share enough context.
 ```
 
 Retry prompt:
@@ -1398,7 +1512,7 @@ Balanced answer -> healthy conflict -> unhealthy conflict -> conclusion
 Model answer:
 
 ```text
-No, I do not think people should always avoid conflict. Some disagreement is healthy because it can reveal risks, weak assumptions, or different priorities. The problem is when conflict becomes personal or emotional instead of focused on the work. In a good team, people can give respectful pushback and still move toward a shared decision.
+No, I don't think people should always avoid conflict. Some disagreement is healthy because it can reveal risks, weak assumptions, or different priorities. The problem is when conflict becomes personal or emotional instead of focused on the work. In a good team, people can give respectful pushback and still move toward a shared decision.
 ```
 
 Simpler version:
@@ -1593,4 +1707,3 @@ Natural enough for real conversation.
 Professional enough for an IT learner.
 Simple enough for self-study.
 ```
-

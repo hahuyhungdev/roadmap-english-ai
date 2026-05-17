@@ -1,18 +1,9 @@
-# IELTS Speaking Lesson 01: Work, Career & Professional Identity
+# Lesson01: Work, Career & Professional Identity
 
-## Learner Profile
+## Source Alignment
 
-- **Mode:** self-study only, without a teacher
-- **Entry level:** IELTS Speaking band 5-6
-- **Target level:** IELTS Speaking band 6-7
-- **Main learner:** Vietnamese IT professional or software engineer
-- **Speaking style:** clear, natural, professional, not overly academic
-
-Source alignment:
-
-- `content/session-01.md`: Role and Business Value
-- `content/session-18.md`: Success, Money & Choosing Your Own Path
-- `ielts/topic-roadmap.md`: Topic 1 - Work, Career & Professional Identity
+- [Session 01: Role and Business Value](/phase/phase-1-tech-business/session/session-01)
+- [Session 18: Success, Money & Choosing Your Own Path](/phase/phase-3-people-life-real-conversations/session/session-18)
 
 ---
 
@@ -40,7 +31,7 @@ Do not stop when you make a mistake. Keep speaking until the timer ends.
 
 After listening to your recording, choose the biggest problem:
 
-- **Idea problem:** I did not know what to say after the first sentence.
+- **Idea problem:** I didn't know what to say after the first sentence.
 - **Vocabulary problem:** I repeated simple words like work, good, hard, interesting.
 - **Grammar problem:** I made short or broken sentences.
 - **Pronunciation problem:** Some career words were unclear.
@@ -78,7 +69,7 @@ Common mistake:
 
 ```text
 Avoid: I responsible for frontend.
-Better: I am responsible for frontend. / I take responsibility for frontend work.
+Better: I'm responsible for frontend. / I take responsibility for frontend work.
 ```
 
 #### 2. ownership / own / owner
@@ -213,7 +204,7 @@ Common mistake:
 
 ```text
 Avoid: I need to satisfy expectation of everyone.
-Better: I need to manage expectations. / I cannot meet everyone's expectations.
+Better: I need to manage expectations. / I can't meet everyone's expectations.
 ```
 
 #### 7. stability / stable / stabilize
@@ -267,7 +258,7 @@ Common mistake:
 
 ```text
 Avoid: I want to growth.
-Better: I want to grow. / I want career growth.
+Better: I wanna grow. / I want career growth.
 ```
 
 #### 9. value / valuable / evaluate
@@ -314,14 +305,14 @@ Healthy ambition can help people improve without losing balance.
 IT/professional sentence:
 
 ```text
-I am ambitious about becoming better at system design and product thinking.
+I'm ambitious about becoming better at system design and product thinking.
 ```
 
 Common mistake:
 
 ```text
 Avoid: I have ambitious.
-Better: I am ambitious. / I have ambition.
+Better: I'm ambitious. / I have ambition.
 ```
 
 ### 2b. Collocations & Chunks
@@ -331,7 +322,7 @@ Better: I am ambitious. / I have ambition.
 1. **my main responsibility** - My main responsibility is building reliable frontend features.
 2. **take responsibility for** - I take responsibility for the parts I own.
 3. **clear ownership** - Clear ownership helps teams move faster.
-4. **own a product area** - I want to own a larger product area in the future.
+4. **own a product area** - I wanna own a larger product area in the future.
 5. **work closely with** - I work closely with backend and QA.
 6. **align with stakeholders** - We aligned with stakeholders before changing the scope.
 7. **clarify expectations** - I clarify expectations when the requirement is unclear.
@@ -345,17 +336,17 @@ Better: I am ambitious. / I have ambition.
 15. **work within constraints** - Engineers often have to work within time constraints.
 16. **build financial stability** - A good career can help people build financial stability.
 17. **define success** - I define success as stability, growth, and meaningful work.
-18. **career growth** - Career growth is not only about promotion.
+18. **career growth** - Career growth isn't only about promotion.
 19. **long-term fit** - I care about whether a role is a long-term fit.
 20. **meaningful work** - Meaningful work keeps me motivated.
 21. **healthy ambition** - Healthy ambition pushes me to improve without burning out.
 22. **family expectations** - Family expectations can shape career decisions.
 23. **professional identity** - Communication is part of my professional identity.
 24. **room to grow** - I prefer a role with room to grow.
-25. **explain impact clearly** - I want to explain impact clearly, not just list tasks.
+25. **explain impact clearly** - I wanna explain impact clearly, not just list tasks.
 26. **user-facing impact** - Frontend work has strong user-facing impact.
 27. **bridge the gap between X and Y** - Frontend helps bridge the gap between product logic and user experience.
-28. **master frontend first** - I want to master frontend first before expanding further.
+28. **master frontend first** - I wanna master frontend first before expanding further.
 29. **expand into fullstack** - My long-term plan is to expand into fullstack work.
 30. **end-to-end understanding** - I want better end-to-end understanding of how products work.
 
@@ -383,11 +374,11 @@ Sentence: We made a trade-off between speed and release quality.
    - IT/professional: We chose a smaller scope to reduce release risk.
 
 2. **build**
-   - Natural: I want to build a stable career.
+   - Natural: I wanna build a stable career.
    - IT/professional: I build frontend features that support the main user flow.
 
 3. **own**
-   - Natural: I want to own my career path instead of copying other people.
+   - Natural: I wanna own my career path instead of copying other people.
    - IT/professional: I owned the UI behavior for the checkout page.
 
 4. **collaborate**
@@ -403,7 +394,7 @@ Sentence: We made a trade-off between speed and release quality.
    - IT/professional: I clarified the edge cases before QA started testing.
 
 7. **improve**
-   - Natural: I want to improve my communication in English.
+   - Natural: I wanna improve my communication in English.
    - IT/professional: We improved error messages to reduce user confusion.
 
 8. **balance**
@@ -411,16 +402,16 @@ Sentence: We made a trade-off between speed and release quality.
    - IT/professional: Engineers often balance speed, quality, and maintainability.
 
 9. **measure**
-   - Natural: I do not measure success only by money.
+   - Natural: I don't measure success only by money.
    - IT/professional: We measured success by completion rate and support tickets.
 
 10. **explain**
-   - Natural: I want to explain my career choices more clearly.
+   - Natural: I wanna explain my career choices more clearly.
    - IT/professional: I explain technical decisions in terms of user impact and risk.
 
 ### 2d. Useful Adjectives & Adverbs
 
-1. **reliable** - I want to build reliable products.
+1. **reliable** - I wanna build reliable products.
 2. **practical** - IT is a practical field with many career options.
 3. **meaningful** - Meaningful work helps me stay motivated.
 4. **stable** - A stable income can reduce stress.
@@ -428,8 +419,8 @@ Sentence: We made a trade-off between speed and release quality.
 6. **challenging** - Software engineering is challenging but rewarding.
 7. **clear** - Clear communication saves time.
 8. **sustainable** - I want sustainable growth, not short-term success only.
-9. **professionally** - I want to explain my work professionally.
-10. **gradually** - I am gradually becoming more confident at work.
+9. **professionally** - I wanna explain my work professionally.
+10. **gradually** - I'm gradually becoming more confident at work.
 
 Use carefully:
 
@@ -437,7 +428,7 @@ Use carefully:
 indispensable / prestigious / sophisticated / substantial
 ```
 
-These words are useful to recognize, but they should not dominate your spoken answer.
+These words are useful to recognize, but they shouldn't dominate your spoken answer.
 
 ### 2e. Common Vietnamese Learner Mistakes
 
@@ -445,7 +436,7 @@ These words are useful to recognize, but they should not dominate your spoken an
 
 ```text
 Mistake: I am work as developer.
-Better: I work as a developer. / I am a developer.
+Better: I work as a developer. / I'm a developer.
 Why: Use "work as + job" or "be + job".
 ```
 
@@ -477,7 +468,7 @@ Why: "Very" does not modify verbs.
 
 ```text
 Mistake: I responsible for frontend.
-Better: I am responsible for frontend. / I take responsibility for frontend work.
+Better: I'm responsible for frontend. / I take responsibility for frontend work.
 Why: "Responsible" is an adjective, so it needs "be".
 ```
 
@@ -501,7 +492,7 @@ Why: "Affect" takes a direct object; "impact" needs "on" as a noun.
 
 ```text
 Mistake: I want to improve myself in career.
-Better: I want to improve my professional skills. / I want to grow in my career.
+Better: I wanna improve my professional skills. / I wanna grow in my career.
 Why: Say the specific thing you want to improve.
 ```
 
@@ -541,11 +532,11 @@ Why: "Money" is uncountable; use "much money" or "enough money".
 6. **We measured success by...**
    - We measured success by completion rate and support tickets.
 
-7. **My role was not only..., but also...**
-   - My role was not only coding, but also clarifying requirements and explaining risks.
+7. **My role wasn't only..., but also...**
+   - My role wasn't only coding, but also clarifying requirements and explaining risks.
 
-8. **If I explain the impact simply, I would say...**
-   - If I explain the impact simply, I would say the change helped users finish the payment flow with less confusion.
+8. **If I explain the impact simply, I'd say...**
+   - If I explain the impact simply, I'd say the change helped users finish the payment flow with less confusion.
 
 9. **Frontend is powerful because...**
    - Frontend is powerful because it turns technical logic into something users can actually understand and use.
@@ -557,20 +548,20 @@ Why: "Money" is uncountable; use "much money" or "enough money".
 
 ---
 
-## Part 3 - Core Idea Bank
+## Part 3 - Core Idea Bank + Reading Shadowing Checkpoints
 
 ### Idea 1: Your Role Is More Than Your Job Title
 
 Simple version:
 
 ```text
-I am a software developer. I write code and fix problems.
+I'm a software developer. I write code and fix problems.
 ```
 
 Better spoken version:
 
 ```text
-I work mainly as a frontend developer, but my role is not only writing UI code. I also need to understand user problems, discuss requirements, connect the product logic with the interface, and make sure users can complete tasks smoothly.
+I work mainly as a frontend developer, but my role isn't only writing UI code. I also need to understand user problems, discuss requirements, connect the product logic with the interface, and make sure users can complete tasks smoothly.
 ```
 
 IT/professional example:
@@ -622,7 +613,7 @@ Frontend work helps users interact with the product more easily.
 Better spoken version:
 
 ```text
-The strength of frontend is that it is very close to the user. A backend change may be powerful but invisible, while a frontend improvement can immediately make the product clearer, faster, or less frustrating for real people.
+The strength of frontend is that it's very close to the user. A backend change may be powerful but invisible, while a frontend improvement can immediately make the product clearer, faster, or less frustrating for real people.
 ```
 
 IT/professional example:
@@ -637,18 +628,59 @@ Useful language:
 close to the user / user-facing impact / make the flow smoother
 ```
 
+### Reading Shadowing Checkpoint A: Role, Career Choice, And Frontend Impact
+
+#### Mini Reading
+
+```text
+I don't see my role as only writing code. My main responsibility is to turn product ideas into user-facing behavior that people can actually understand and use. I started on the backend side, but I moved into frontend when my team needed support. After working with frontend for a while, I realized that it has a special strength: it's very close to the user.
+
+A backend change can be powerful but invisible, while a frontend improvement can make the product clearer immediately. For example, better validation, loading states, and error messages can reduce user friction during checkout. This is why I see frontend work as both technical and product-oriented. It connects code, design, business value, and real user experience.
+```
+
+#### Comprehension
+
+1. Why is the speaker's role more than writing code?
+2. Why did the speaker move from backend into frontend?
+3. What makes frontend powerful in product work?
+
+#### Find The Language
+
+1. Find a phrase that means "what I'm mainly responsible for".
+2. Find a phrase that means "behavior users can see or feel".
+3. Find a phrase that means "make the product less confusing for users".
+
+#### Shadowing Script
+
+```text
+My role isn't only writing code.
+My main responsibility is user-facing behavior.
+I started on the backend side.
+Later, I moved into frontend.
+Frontend is powerful because it's close to the user.
+It connects code, design, and real user experience.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+my main responsibility / moved into frontend / close to the user / user-facing impact / reduce user friction
+```
+
 ### Idea 4: Work Often Involves Trade-offs
 
 Simple version:
 
 ```text
-Sometimes we cannot do everything, so we choose what is most important.
+Sometimes we can't do everything, so we choose what's most important.
 ```
 
 Better spoken version:
 
 ```text
-In real work, there are always trade-offs between speed, quality, scope, and risk. A mature decision is not about choosing the perfect option; it is about choosing the option that fits the situation.
+In real work, there're always trade-offs between speed, quality, scope, and risk. A mature decision isn't about choosing the perfect option; it's about choosing the option that fits the situation.
 ```
 
 IT/professional example:
@@ -674,7 +706,7 @@ Developers need to communicate with teammates.
 Better spoken version:
 
 ```text
-For me, communication is a big part of being a professional developer. I need to explain progress, raise risks early, and make sure other people understand what is in scope.
+For me, communication is a big part of being a professional developer. I need to explain progress, raise risks early, and make sure other people understand what's in scope.
 ```
 
 IT/professional example:
@@ -700,13 +732,13 @@ I want a job where I can learn more.
 Better spoken version:
 
 ```text
-I prefer a career that gives me room to grow. Right now, I want to master frontend first because it is my strongest area, but I also want to gradually expand into fullstack work, cloud, AI, backend, and DevOps.
+I prefer a career that gives me room to grow. Right now, I wanna master frontend first because it's my strongest area, but I also want to gradually expand into fullstack work, cloud, AI, backend, and DevOps.
 ```
 
 IT/professional example:
 
 ```text
-I do not only want to finish frontend tickets. I want to understand the full path from user interface to API, infrastructure, deployment, and AI-assisted workflows.
+I don't only want to finish frontend tickets. I wanna understand the full path from user interface to API, infrastructure, deployment, and AI-assisted workflows.
 ```
 
 Useful language:
@@ -715,24 +747,66 @@ Useful language:
 master frontend first / expand into fullstack / understand the full path
 ```
 
+### Reading Shadowing Checkpoint B: Trade-offs, Communication, And Growth
+
+#### Mini Reading
+
+```text
+Real software work is full of trade-offs. A team may want to move fast, but it still needs to protect release quality. A product manager may want more features, but the engineering team may need to reduce scope when the risk is too high. In these situations, communication becomes part of professional identity.
+
+For me, a good developer doesn't only finish tickets. A good developer can raise risks early, clarify expectations, and explain why a decision makes sense. This is also connected to career growth. I wanna master frontend first because it's my strongest foundation, but I also want to expand into fullstack work, cloud, AI, backend, and DevOps. The goal isn't to know everything at once. The goal is to build an end-to-end understanding over time.
+```
+
+#### Comprehension
+
+1. Why do teams sometimes reduce scope?
+2. What communication skills does the speaker mention?
+3. Why does the speaker want to expand beyond frontend?
+
+#### Find The Language
+
+1. Find a phrase that means "talk about problems before they become serious".
+2. Find a phrase that means "make unclear expectations clearer".
+3. Find a phrase that means "understand the whole product path".
+
+#### Shadowing Script
+
+```text
+Real software work is full of trade-offs.
+Sometimes teams reduce scope to protect quality.
+Communication is part of professional identity.
+I need to raise risks early.
+I wanna master frontend first.
+Then I wanna expand into fullstack work.
+The goal is end-to-end understanding.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+make a trade-off / reduce scope / raise risks early / master frontend first / end-to-end understanding
+```
+
 ### Idea 7: Success Should Be Defined Carefully
 
 Simple version:
 
 ```text
-Success is not only money.
+Success isn't only money.
 ```
 
 Better spoken version:
 
 ```text
-I think success includes money and stability, but it also has to fit the life I want. A high salary is useful, but it should not cost my health, relationships, or self-respect.
+I think success includes money and stability, but it also has to fit the life I want. A high salary is useful, but it shouldn't cost my health, relationships, or self-respect.
 ```
 
 IT/professional example:
 
 ```text
-In tech, it is easy to compare salaries or titles, but those numbers do not show stress, learning, team culture, or long-term fit.
+In tech, it's easy to compare salaries or titles, but those numbers don't show stress, learning, team culture, or long-term fit.
 ```
 
 Useful language:
@@ -746,13 +820,13 @@ define success / financial stability / long-term fit
 Simple version:
 
 ```text
-I want to become a better developer in the future.
+I wanna become a better developer in the future.
 ```
 
 Better spoken version:
 
 ```text
-In the next few years, I want to become a stronger fullstack-oriented engineer, but my plan is to master frontend first. After that, I want to expand deeper into backend, AWS cloud, AI tools, and DevOps so I can understand products more end to end.
+In the next few years, I wanna become a stronger fullstack-oriented engineer, but my plan is to master frontend first. After that, I wanna expand deeper into backend, AWS cloud, AI tools, and DevOps so I can understand products more end to end.
 ```
 
 IT/professional example:
@@ -765,6 +839,47 @@ Useful language:
 
 ```text
 fullstack-oriented engineer / end to end / own larger product areas
+```
+
+### Reading Shadowing Checkpoint C: Success And Future Direction
+
+#### Mini Reading
+
+```text
+I think career success should be defined carefully. A high salary is useful, and financial stability matters, but success shouldn't cost my health, relationships, or self-respect. In tech, it's easy to compare salaries, titles, or company names, but those things don't show the whole picture. They don't show stress, team culture, learning, or long-term fit.
+
+For my own path, I wanna become a stronger fullstack-oriented engineer. My plan is to master frontend first, then gradually expand into backend, AWS cloud, AI tools, and DevOps. I don't need to rush into everything at once. I wanna move from owning frontend features to owning larger product areas, where I can understand user experience, system design, deployment, and business impact together.
+```
+
+#### Comprehension
+
+1. Why is salary not a complete definition of success?
+2. What does the speaker want to master first?
+3. What does owning a larger product area involve?
+
+#### Find The Language
+
+1. Find a phrase that means "money stability".
+2. Find a phrase that means "a career direction that fits over time".
+3. Find a phrase that means "a developer who understands more than one layer".
+
+#### Shadowing Script
+
+```text
+Success should be defined carefully.
+Financial stability matters, but it's not everything.
+I try not to compare only salaries or titles.
+My plan is to master frontend first.
+Then I wanna expand into backend, cloud, AI, and DevOps.
+I wanna own larger product areas over time.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+define success / financial stability / long-term fit / fullstack-oriented engineer / own larger product areas
 ```
 
 ---
@@ -859,7 +974,7 @@ Learner transformation task:
 Use this pattern to answer: Is your job difficult?
 ```
 
-#### Pattern 5: It is not only..., but also...
+#### Pattern 5: It's not only..., but also...
 
 Function:
 
@@ -870,18 +985,18 @@ Add depth and avoid a simple answer.
 Topic examples:
 
 ```text
-My job is not only building screens, but also understanding product logic and user behavior.
-My career plan is not only to become better at frontend, but also to expand into backend, cloud, AI, and DevOps.
+My job isn't only building screens, but also understanding product logic and user behavior.
+My career plan isn't only to become better at frontend, but also to expand into backend, cloud, AI, and DevOps.
 ```
 
 Learner transformation task:
 
 ```text
 Basic: My job is coding.
-Upgrade: My job is not only..., but also...
+Upgrade: My job isn't only..., but also...
 ```
 
-#### Pattern 6: In the next few years, I want to...
+#### Pattern 6: In the next few years, I wanna...
 
 Function:
 
@@ -892,8 +1007,8 @@ Talk about future plans clearly.
 Topic examples:
 
 ```text
-In the next few years, I want to master frontend and become more confident in technical communication.
-In the next few years, I want to move toward fullstack work with stronger cloud, AI, backend, and DevOps knowledge.
+In the next few years, I wanna master frontend and become more confident in technical communication.
+In the next few years, I wanna move toward fullstack work with stronger cloud, AI, backend, and DevOps knowledge.
 ```
 
 Learner transformation task:
@@ -936,7 +1051,7 @@ I usually work with frontend components, API responses, and user-facing error st
 Upgrade:
 
 ```text
-Basic: I am code website.
+Basic: I'm code website.
 Better: I work as a frontend developer, and my job involves building user-facing features.
 ```
 
@@ -1010,7 +1125,7 @@ Natural examples:
 
 ```text
 Although IT can be stressful, I still find it rewarding.
-Salary matters, but it is not the only thing I care about.
+Salary matters, but it's not the only thing I care about.
 ```
 
 IT/professional example:
@@ -1086,8 +1201,8 @@ Formula:
 
 ```text
 I need to + verb...
-I want to + verb...
-I would like to + verb...
+I wanna + verb...
+I'd like to + verb...
 I should + verb...
 ```
 
@@ -1095,7 +1210,7 @@ Natural examples:
 
 ```text
 I need to improve my English communication.
-I would like to become more confident when explaining technical decisions.
+I'd like to become more confident when explaining technical decisions.
 ```
 
 IT/professional example:
@@ -1107,8 +1222,8 @@ As I become more senior, I need to explain trade-offs more clearly to stakeholde
 Upgrade:
 
 ```text
-Basic: I will better English.
-Better: I want to improve my English so I can explain my work more professionally.
+Basic: I'll better English.
+Better: I wanna improve my English so I can explain my work more professionally.
 ```
 
 Speaking drill:
@@ -1185,13 +1300,13 @@ Money is part of success, but I also care about growth, health, and long-term fi
 Instead of:
 
 ```text
-I want to be senior.
+I wanna become a senior engineer.
 ```
 
 Say:
 
 ```text
-I want to master frontend first, then gradually expand into fullstack work so I can understand products more end to end.
+I wanna master frontend first, then gradually expand into fullstack work so I can understand products more end to end.
 ```
 
 ### 4e. Upgrade Patterns
@@ -1199,7 +1314,7 @@ I want to master frontend first, then gradually expand into fullstack work so I 
 Basic:
 
 ```text
-I am a developer. I code frontend.
+I'm a developer. I code frontend.
 ```
 
 Upgrade 1 - add role detail:
@@ -1223,7 +1338,7 @@ For example, I worked on checkout validation and error messages so users could u
 Full answer:
 
 ```text
-I work mainly as a frontend developer, and my job involves building user-facing features. My main responsibility is to make sure the interface is clear, reliable, and easy to use. For example, I worked on checkout validation and error messages so users could understand mistakes and finish the payment flow with less confusion. In the long run, I want to master frontend first and then expand into fullstack work.
+I work mainly as a frontend developer, and my job involves building user-facing features. My main responsibility is to make sure the interface is clear, reliable, and easy to use. For example, I worked on checkout validation and error messages so users could understand mistakes and finish the payment flow with less confusion. In the long run, I wanna master frontend first and then expand into fullstack work.
 ```
 
 ### 4f. Repair Strategies
@@ -1233,9 +1348,9 @@ Use these when you get stuck:
 ```text
 What I mean is...
 Let me put it another way.
-I cannot think of the exact word, but...
+I can't think of the exact word, but...
 A simple example would be...
-It is similar to...
+It's similar to...
 ```
 
 Practice:
@@ -1256,7 +1371,7 @@ If stuck, continue with: What I mean is...
 Band 5.5 answer:
 
 ```text
-I work. I am a developer. I write code for websites and fix bugs.
+I work. I'm a developer. I write code for websites and fix bugs.
 ```
 
 Upgrade notes:
@@ -1308,7 +1423,7 @@ Answer again using "backend side", "moved into frontend", and "user experience".
 Band 5.5 answer:
 
 ```text
-I like my job because it is interesting and I can learn many things.
+I like my job because it's interesting and I can learn many things.
 ```
 
 Upgrade notes:
@@ -1334,7 +1449,7 @@ Answer again using "What I like about my job is that...".
 Band 5.5 answer:
 
 ```text
-Yes, it is difficult because there are many tasks and sometimes I have stress.
+Yes, it's difficult because there're many tasks and sometimes I have stress.
 ```
 
 Upgrade notes:
@@ -1360,7 +1475,7 @@ Answer again using "Although..." and "balance speed with quality".
 Band 5.5 answer:
 
 ```text
-I want to improve English because it is important for my job.
+I wanna improve English because it's important for my job.
 ```
 
 Upgrade notes:
@@ -1372,7 +1487,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-I want to keep improving frontend first, especially architecture, performance, and user experience. At the same time, I want to improve my backend, AWS cloud, AI, and DevOps knowledge so I can become more fullstack-oriented and understand products more end to end.
+I wanna keep improving frontend first, especially architecture, performance, and user experience. At the same time, I wanna improve my backend, AWS cloud, AI, and DevOps knowledge so I can become more fullstack-oriented and understand products more end to end.
 ```
 
 Retry task:
@@ -1398,7 +1513,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-For me, success means having enough financial stability, but also having room to grow and a life that feels sustainable. Money matters because it gives people choices, but I do not want to measure success only by salary.
+For me, success means having enough financial stability, but also having room to grow and a life that feels sustainable. Money matters because it gives people choices, but I don't wanna measure success only by salary.
 ```
 
 Retry task:
@@ -1412,13 +1527,13 @@ Answer again using "financial stability", "room to grow", and "not only by salar
 Cue card:
 
 ```text
-Describe a job or career you are interested in.
+Describe a job or career you're interested in.
 
 You should say:
 - what the job or career is
-- why you are interested in it
+- why you're interested in it
 - what skills are needed for it
-- and explain whether you think it is a good long-term choice
+- and explain whether you think it's a good long-term choice
 ```
 
 #### 1-minute Planning Bullets
@@ -1435,13 +1550,13 @@ Long-term: master frontend first, then understand products end to end
 #### 2-minute Model Answer
 
 ```text
-A career I am interested in is software development, especially frontend engineering. My long-term direction is to become more fullstack-oriented, but for now I want to master frontend first because it is the area where I have built the most experience.
+A career I'm interested in is software development, especially frontend engineering. My long-term direction is to become more fullstack-oriented, but for now I wanna master frontend first because it's the area where I have built the most experience.
 
-Actually, I did not start with frontend as my main focus. Earlier in my career, I worked more on the backend side. Then at one point, my team was short on frontend people, so I moved over to support that area. After working on it for a while, I started to see the strengths of frontend. It is not just about making screens look nice. It is the layer where technical logic becomes something real users can understand and use.
+Actually, I didn't start with frontend as my main focus. Earlier in my career, I worked more on the backend side. Then at one point, my team was short on frontend people, so I moved over to support that area. After working on it for a while, I started to see the strengths of frontend. It's not just about making screens look nice. It's the layer where technical logic becomes something real users can understand and use.
 
-That is why I find frontend meaningful. A small improvement in validation, loading states, performance, or error messages can immediately make a product clearer and less frustrating. It also forces me to think about product logic, user behavior, design details, and backend constraints at the same time.
+That's why I find frontend meaningful. A small improvement in validation, loading states, performance, or error messages can immediately make a product clearer and less frustrating. It also forces me to think about product logic, user behavior, design details, and backend constraints at the same time.
 
-Over the last few years, after working mainly in frontend, I have gradually expanded my interests into AWS cloud, backend, AI tools, and DevOps. I do not want to jump randomly from one area to another, though. My plan is to build a strong frontend foundation first, then use that foundation to understand the product more end to end.
+Over the last few years, after working mainly in frontend, I have gradually expanded my interests into AWS cloud, backend, AI tools, and DevOps. I don't wanna jump randomly from one area to another, though. My plan is to build a strong frontend foundation first, then use that foundation to understand the product more end to end.
 
 As a long-term choice, I think this path is good because it gives me both depth and breadth. Frontend gives me user-facing impact, while fullstack knowledge can help me understand bigger technical decisions. Having said that, it can be demanding because technology changes quickly. So my goal is to keep growing in a sustainable way, not just chase every new tool.
 ```
@@ -1449,7 +1564,7 @@ As a long-term choice, I think this path is good because it gives me both depth 
 #### Stripped-down Answer Frame
 
 ```text
-A career I am interested in is...
+A career I'm interested in is...
 My long-term direction is...
 Earlier in my career, ...
 I moved into frontend because...
@@ -1480,17 +1595,17 @@ grow in a sustainable way
 #### Shadowing Version
 
 ```text
-A career I am interested in is software development,
+A career I'm interested in is software development,
 especially frontend engineering.
 
 My long-term direction is to become
 more fullstack-oriented,
-but for now I want to master frontend first
-because it is the area
+but for now I wanna master frontend first
+because it's the area
 where I have built the most experience.
 
 Actually,
-I did not start with frontend
+I didn't start with frontend
 as my main focus.
 
 Earlier in my career,
@@ -1505,14 +1620,14 @@ After working on it for a while,
 I started to see
 the strengths of frontend.
 
-It is not just about
+It's not just about
 making screens look nice.
 
-It is the layer
+It's the layer
 where technical logic becomes something
 real users can understand and use.
 
-That is why
+That's why
 I find frontend meaningful.
 
 A small improvement in validation,
@@ -1537,7 +1652,7 @@ backend,
 AI tools,
 and DevOps.
 
-I do not want to jump randomly
+I don't wanna jump randomly
 from one area to another, though.
 
 My plan is to build
@@ -1580,7 +1695,7 @@ General opinion -> reason -> example -> contrast -> conclusion
 Model answer:
 
 ```text
-I think a satisfying job usually has three things: fair pay, room to grow, and meaningful work. Fair pay matters because people need stability, but it is not enough by itself. For example, a developer may earn a good salary but still feel unhappy if the work is chaotic or the team culture is unhealthy. So in my view, job satisfaction comes from a balance between practical needs and personal growth.
+I think a satisfying job usually has three things: fair pay, room to grow, and meaningful work. Fair pay matters because people need stability, but it's not enough by itself. For example, a developer may earn a good salary but still feel unhappy if the work is chaotic or the team culture is unhealthy. So in my view, job satisfaction comes from a balance between practical needs and personal growth.
 ```
 
 Language breakdown:
@@ -1592,7 +1707,7 @@ fair pay / room to grow / meaningful work / team culture / balance between A and
 Simpler band 6 version:
 
 ```text
-A satisfying job should give people enough money, chances to learn, and a good working environment. Salary is important, but it is not the only thing.
+A satisfying job should give people enough money, chances to learn, and a good working environment. Salary is important, but it's not the only thing.
 ```
 
 Retry prompt:
@@ -1612,7 +1727,7 @@ Balanced opinion -> reason for salary -> limitation -> example -> conclusion
 Model answer:
 
 ```text
-I think salary should be one important factor, but not the only factor. It is practical to care about money because financial stability affects stress, family responsibility, and future choices. However, if young people choose a job only because it pays well, they may ignore whether the work fits their skills, values, or long-term goals. A better approach is to consider salary together with learning opportunities and lifestyle.
+I think salary should be one important factor, but not the only factor. It's practical to care about money because financial stability affects stress, family responsibility, and future choices. However, if young people choose a job only because it pays well, they may ignore whether the work fits their skills, values, or long-term goals. A better approach is to consider salary together with learning opportunities and lifestyle.
 ```
 
 Language breakdown:
@@ -1644,7 +1759,7 @@ General change -> reason -> IT example -> downside -> conclusion
 Model answer:
 
 ```text
-Technology has made careers more flexible, but also more demanding. On the positive side, people can learn online, work remotely, and use digital tools to become more productive. In software development, for example, a frontend developer can gradually expand into backend, cloud, AI tools, or DevOps because there are so many learning resources available. Having said that, technology also means people need to keep updating their skills, so the pressure to learn never really stops.
+Technology has made careers more flexible, but also more demanding. On the positive side, people can learn online, work remotely, and use digital tools to become more productive. In software development, for example, a frontend developer can gradually expand into backend, cloud, AI tools, or DevOps because there're so many learning resources available. Having said that, technology also means people need to keep updating their skills, so the pressure to learn never really stops.
 ```
 
 Language breakdown:
@@ -1676,7 +1791,7 @@ Direct opinion -> reason -> example -> result -> conclusion
 Model answer:
 
 ```text
-Yes, I think communication is important in almost every job, especially in team-based work. People do not only need to finish their own tasks; they also need to clarify expectations, share progress, and raise problems early. In a software team, unclear communication can lead to wrong requirements, repeated work, or release risk. So strong communication can save time and improve the quality of decisions.
+Yes, I think communication is important in almost every job, especially in team-based work. People don't only need to finish their own tasks; they also need to clarify expectations, share progress, and raise problems early. In a software team, unclear communication can lead to wrong requirements, repeated work, or release risk. So strong communication can save time and improve the quality of decisions.
 ```
 
 Language breakdown:
@@ -1708,7 +1823,7 @@ General opinion -> reason for stability -> reason for change -> example -> concl
 Model answer:
 
 ```text
-I do not think everyone needs to stay in one narrow role for their whole life. Stability is valuable, especially when people have family responsibilities or financial pressure. However, people also change over time, and sometimes a role naturally expands. For example, someone may start in backend, move into frontend because the team needs support, and later grow toward fullstack work. If the person has a realistic plan and transferable skills, that kind of shift can be a responsible choice, not just a risky one.
+I don't think everyone needs to stay in one narrow role for their whole life. Stability is valuable, especially when people have family responsibilities or financial pressure. However, people also change over time, and sometimes a role naturally expands. For example, someone may start in backend, move into frontend because the team needs support, and later grow toward fullstack work. If the person has a realistic plan and transferable skills, that kind of shift can be a responsible choice, not just a risky one.
 ```
 
 Language breakdown:

@@ -8,6 +8,36 @@
   --app-backdrop-base: #e5e7eb;
   --app-backdrop-start: #ffffff;
   --app-backdrop-end: #f59e0b;
+  --ielts-surface: #ffffff;
+  --ielts-surface-raised: rgb(255 255 255 / 0.9);
+  --ielts-surface-muted: #f8fafc;
+  --ielts-surface-header: rgb(255 255 255 / 0.95);
+  --ielts-border: #e5e7eb;
+  --ielts-border-strong: #cbd5e1;
+  --ielts-text: #111827;
+  --ielts-text-soft: #374151;
+  --ielts-muted: #64748b;
+  --ielts-accent: #4f46e5;
+  --ielts-accent-strong: #4338ca;
+  --ielts-accent-soft: rgb(79 70 229 / 0.06);
+  --ielts-accent-border: #c7d2fe;
+  --ielts-code-fg: #1e293b;
+  --ielts-pre-bg: #111827;
+  --ielts-pre-fg: #f8fafc;
+  --ielts-quote-bg: transparent;
+  --ielts-quote-border: #818cf8;
+  --ielts-lesson-bg: var(--ielts-surface-muted);
+  --ielts-lesson-fg: var(--ielts-text-soft);
+  --ielts-lesson-border: var(--ielts-border);
+  --ielts-roadmap-bg: var(--ielts-surface-muted);
+  --ielts-roadmap-fg: var(--ielts-text-soft);
+  --ielts-roadmap-border: var(--ielts-border);
+  --ielts-structure-bg: var(--ielts-surface-muted);
+  --ielts-structure-fg: var(--ielts-text-soft);
+  --ielts-structure-border: var(--ielts-border);
+  --ielts-reference-bg: #f8fafc;
+  --ielts-reference-fg: #475569;
+  --ielts-reference-border: #e2e8f0;
 }
 
 .theme-dark {
@@ -16,6 +46,36 @@
   --app-backdrop-base: #0b1220;
   --app-backdrop-start: #111827;
   --app-backdrop-end: #0f766e;
+  --ielts-surface: #111827;
+  --ielts-surface-raised: rgb(15 23 42 / 0.86);
+  --ielts-surface-muted: rgb(30 41 59 / 0.76);
+  --ielts-surface-header: rgb(15 23 42 / 0.94);
+  --ielts-border: #334155;
+  --ielts-border-strong: #475569;
+  --ielts-text: #f8fafc;
+  --ielts-text-soft: #e2e8f0;
+  --ielts-muted: #cbd5e1;
+  --ielts-accent: #a5b4fc;
+  --ielts-accent-strong: #c4b5fd;
+  --ielts-accent-soft: rgb(129 140 248 / 0.12);
+  --ielts-accent-border: rgb(129 140 248 / 0.58);
+  --ielts-code-fg: #e2e8f0;
+  --ielts-pre-bg: #020617;
+  --ielts-pre-fg: #e5e7eb;
+  --ielts-quote-bg: transparent;
+  --ielts-quote-border: #818cf8;
+  --ielts-lesson-bg: var(--ielts-surface-muted);
+  --ielts-lesson-fg: var(--ielts-text-soft);
+  --ielts-lesson-border: var(--ielts-border);
+  --ielts-roadmap-bg: var(--ielts-surface-muted);
+  --ielts-roadmap-fg: var(--ielts-text-soft);
+  --ielts-roadmap-border: var(--ielts-border);
+  --ielts-structure-bg: var(--ielts-surface-muted);
+  --ielts-structure-fg: var(--ielts-text-soft);
+  --ielts-structure-border: var(--ielts-border);
+  --ielts-reference-bg: rgb(30 41 59 / 0.7);
+  --ielts-reference-fg: #cbd5e1;
+  --ielts-reference-border: #475569;
   color-scheme: dark;
 }
 
@@ -253,6 +313,135 @@
   }
   .theme-dark .ai-assistant-bubble :is(p, span, li, ul, ol, strong, em, h1, h2, h3) {
     color: #f8fafc !important;
+  }
+
+  .ielts-panel {
+    background-color: var(--ielts-surface-raised);
+    border-color: var(--ielts-border);
+  }
+  .ielts-muted-panel {
+    background-color: var(--ielts-surface-muted);
+    border-color: var(--ielts-border);
+  }
+  .ielts-header {
+    background-color: var(--ielts-surface-header);
+    border-color: var(--ielts-border);
+  }
+  .ielts-input {
+    background-color: var(--ielts-surface);
+    border-color: var(--ielts-border);
+    color: var(--ielts-text);
+  }
+  .ielts-input:focus {
+    border-color: var(--ielts-accent);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--ielts-accent) 18%, transparent);
+  }
+  .ielts-tab-active,
+  .ielts-doc-active {
+    background-color: var(--ielts-accent-soft);
+    border-color: var(--ielts-accent-border);
+    color: var(--ielts-text);
+  }
+  .ielts-icon-active {
+    background-color: var(--ielts-surface);
+    border-color: var(--ielts-accent-border);
+    color: var(--ielts-text);
+  }
+  .ielts-badge-lesson {
+    background-color: var(--ielts-lesson-bg);
+    border-color: var(--ielts-lesson-border);
+    color: var(--ielts-lesson-fg);
+  }
+  .ielts-badge-roadmap {
+    background-color: var(--ielts-roadmap-bg);
+    border-color: var(--ielts-roadmap-border);
+    color: var(--ielts-roadmap-fg);
+  }
+  .ielts-badge-structure {
+    background-color: var(--ielts-structure-bg);
+    border-color: var(--ielts-structure-border);
+    color: var(--ielts-structure-fg);
+  }
+  .ielts-badge-reference {
+    background-color: var(--ielts-reference-bg);
+    border-color: var(--ielts-reference-border);
+    color: var(--ielts-reference-fg);
+  }
+  .ielts-prose {
+    --tw-prose-body: var(--ielts-text-soft);
+    --tw-prose-headings: var(--ielts-text);
+    --tw-prose-links: var(--ielts-accent-strong);
+    --tw-prose-bold: var(--ielts-text);
+    --tw-prose-counters: var(--ielts-muted);
+    --tw-prose-bullets: var(--ielts-muted);
+    --tw-prose-hr: var(--ielts-border);
+    --tw-prose-quotes: var(--ielts-text-soft);
+    --tw-prose-quote-borders: var(--ielts-quote-border);
+    --tw-prose-captions: var(--ielts-muted);
+    --tw-prose-code: var(--ielts-code-fg);
+    --tw-prose-pre-code: var(--ielts-pre-fg);
+    --tw-prose-pre-bg: var(--ielts-pre-bg);
+    --tw-prose-th-borders: var(--ielts-border-strong);
+    --tw-prose-td-borders: var(--ielts-border);
+    color: var(--ielts-text-soft);
+    background-color: transparent;
+  }
+  .ielts-prose :is(p, li, td, th) {
+    color: var(--ielts-text-soft);
+  }
+  .ielts-prose :is(h1, h2, h3, h4, h5, h6, strong) {
+    color: var(--ielts-text);
+  }
+  .ielts-prose a {
+    color: var(--ielts-accent-strong);
+  }
+  .ielts-prose a:hover {
+    color: var(--ielts-accent);
+  }
+  .ielts-prose code {
+    background-color: transparent;
+    color: var(--ielts-code-fg);
+    border-radius: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+  .ielts-prose pre {
+    background-color: var(--ielts-pre-bg);
+    color: var(--ielts-pre-fg);
+  }
+  .ielts-prose pre code {
+    color: inherit;
+    font-weight: inherit;
+  }
+  .ielts-prose blockquote {
+    background-color: var(--ielts-quote-bg);
+    border-color: var(--ielts-quote-border);
+    color: var(--ielts-text-soft);
+  }
+  .theme-dark .ielts-prose {
+    background-color: transparent !important;
+  }
+  .theme-dark .ielts-prose code {
+    background-color: transparent !important;
+    color: var(--ielts-code-fg) !important;
+  }
+  .theme-dark .ielts-prose pre code {
+    color: inherit !important;
+  }
+  .theme-dark .ielts-prose blockquote {
+    background-color: transparent !important;
+    border-color: var(--ielts-quote-border) !important;
+  }
+  .ielts-toc-link {
+    color: var(--ielts-muted);
+  }
+  .ielts-toc-link:hover {
+    background-color: var(--ielts-surface);
+    color: var(--ielts-accent-strong);
+  }
+  .ielts-toc-link-active {
+    background-color: var(--ielts-accent-soft);
+    color: var(--ielts-text);
   }
 
   .scrollbar-hide::-webkit-scrollbar {

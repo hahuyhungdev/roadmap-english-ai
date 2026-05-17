@@ -20,13 +20,39 @@ The course should train learners to speak earlier and retry often. The goal is n
 2. **Natural professional English**
    Learners are IT professionals, so the language should sound clear and mature, not theatrical or overly academic. Prefer high-frequency B2 language over rare C1/C2 words.
 
-3. **Context before memorization**
+3. **Spoken contractions for mouth training**
+   In any learner-facing text that should be read aloud, prefer natural spoken contractions so learners get used to real mouth movement. This applies especially to mini readings, shadowing scripts, spoken retells, model answers, and retry answers.
+
+   Preferred spoken forms:
+
+   ```text
+   I am -> I'm
+   you are -> you're
+   it is -> it's
+   there is -> there's
+   there are -> there're
+   do not -> don't
+   does not -> doesn't
+   did not -> didn't
+   cannot -> can't
+   should not -> shouldn't
+   would not -> wouldn't
+   could not -> couldn't
+   I would say -> I'd say
+   I will -> I'll
+   I want to -> I wanna
+   I'm going to -> I'm gonna
+   ```
+
+   Use **wanna/gonna** only when the sentence is clearly spoken and personal, such as a model answer, shadowing line, or retell. Do not force them into grammar formulas, mistake-correction labels, headings, or formal explanations.
+
+4. **Context before memorization**
    Vocabulary should appear inside useful situations: work, daily life, technology, meetings, learning, problem solving, and personal experience.
 
-4. **Small input, repeated output**
+5. **Small input, repeated output**
    Each module should give enough input to speak better, then push the learner to record, review, and retry.
 
-5. **Self-study friendly**
+6. **Self-study friendly**
    Every activity must include enough guidance for a learner to complete it alone: examples, answer frames, checklists, and retry tasks.
 
 ---
@@ -38,13 +64,15 @@ Each topic module has 6 parts:
 ```text
 Part 1  Topic Activation
 Part 2  Vocabulary In Context
-Part 3  Core Idea Bank
+Part 3  Core Idea Bank + Reading Shadowing Checkpoints
 Part 4  Speaking Patterns, Grammar & Expression Tips
 Part 5  Guided Speaking Practice
 Part 6  Shadowing, Retry & Self-Review
 ```
 
-This is the **learner-facing order**. Learners should build usable words, chunks, and sentence material before reading the full idea bank. However, authors should still design the core ideas first internally, then build vocabulary from those ideas.
+This is the **learner-facing order**. Learners first activate the topic and build usable vocabulary. Then they enter the Core Idea Bank, but they should not only read isolated ideas. Inside Part 3, after every 2-3 ideas or at the end of the idea bank, they should get short reading-style passages to shadow and retell. This helps them reuse the vocabulary and ideas before moving into grammar patterns and full IELTS answers.
+
+Authors should still design the core ideas first internally, then build vocabulary and reading-shadowing checkpoints from those ideas.
 
 ---
 
@@ -199,11 +227,11 @@ Why:
 
 ---
 
-## Part 3 -- Core Idea Bank
+## Part 3 -- Core Idea Bank + Reading Shadowing Checkpoints
 
 Purpose: give the learner enough ideas to answer IELTS Speaking Part 1, Part 2, and Part 3 without memorizing essays.
 
-Learners should read this after the vocabulary section so the ideas feel easier to speak. Each idea should reuse chunks from Part 2.
+Learners should read this after the vocabulary section so the ideas feel easier to speak. Each idea should reuse chunks from Part 2. Before the idea bank ends, learners should complete a few short reading-shadowing checkpoints that summarize and recycle the ideas they have just learned.
 
 Each topic should include **6-8 core ideas**. Each idea should have:
 
@@ -211,6 +239,14 @@ Each topic should include **6-8 core ideas**. Each idea should have:
 - a better spoken version
 - an IT/professional example when relevant
 - one useful phrase or collocation connected to the idea
+
+Each topic should also include **2-3 reading-shadowing checkpoints** inside Part 3. A good pattern is:
+
+```text
+Ideas 1-3 -> Reading Shadowing Checkpoint A
+Ideas 4-6 -> Reading Shadowing Checkpoint B
+Ideas 7-8 -> Reading Shadowing Checkpoint C, optional for long topics
+```
 
 Recommended format:
 
@@ -241,11 +277,62 @@ Idea categories:
 - IT/professional example
 - balanced opinion for IELTS Speaking Part 3
 
+### 3a. Reading Shadowing Checkpoints
+
+Include:
+
+- 2-3 short reading-style passages, around 120-180 words each
+- 6-10 bolded chunks from Part 2 reused naturally
+- 2-3 comprehension questions per passage
+- 2-3 "find the language" tasks per passage
+- 1 short shadowing script split into easy lines
+- 1 spoken retell task in 45-60 seconds
+- 1 summary task using 4-5 required chunks
+
+Recommended format:
+
+```text
+Reading Checkpoint A:
+Many people think productivity is about doing more tasks, but this is not always true. A more useful approach is to set clear priorities, protect deep work time, and avoid context switching...
+
+Comprehension:
+1. What is the main point of the text?
+2. Why can context switching reduce productivity?
+3. What example connects this idea to work?
+
+Find the language:
+1. Find a phrase that means "choose what matters most".
+2. Find a phrase that means "avoid jumping between tasks".
+3. Find a phrase that means "keep working in a way you can continue".
+
+Upgrade:
+Weak: I am busy so I do many things.
+Better: When I have a lot on my plate, I set clear priorities and focus on one important task at a time.
+
+Shadowing script:
+Productivity is not only about doing more.
+It is about choosing the right task.
+When I set clear priorities, I make better progress.
+When I avoid context switching, I protect my focus.
+
+Spoken retell:
+Retell the passage in 45-60 seconds using:
+set clear priorities / avoid context switching / sustainable workflow / real progress
+```
+
+Rules:
+
+- Do not introduce many new words here.
+- Recycle language from Part 2 and the ideas immediately before the checkpoint.
+- Keep each passage practical and natural, not academic.
+- Make the text easy to shadow: short sentences, clear rhythm, no long essay-style clauses.
+- End each checkpoint with a spoken retell so the section still supports IELTS Speaking.
+
 ---
 
 ## Part 4 -- Speaking Patterns, Grammar & Expression Tips
 
-Purpose: help learners turn vocabulary into real answers quickly while reviewing the grammar structures that naturally fit the topic.
+Purpose: help learners turn vocabulary, ideas, and reading-shadowing checkpoints into real answers quickly while reviewing the grammar structures that naturally fit the topic.
 
 This part bridges input and output. It should teach sentence patterns, topic grammar, answer patterns, expression upgrades, and repair strategies.
 
@@ -475,7 +562,7 @@ These help fluency more than memorizing rare vocabulary.
 
 ## Part 5 -- Guided Speaking Practice
 
-Purpose: convert ideas, vocabulary, and patterns into IELTS-style answers.
+Purpose: convert ideas, vocabulary, reading-shadowing checkpoints, and patterns into IELTS-style answers.
 
 Include:
 
@@ -599,14 +686,15 @@ Do not write a topic module from Part 1 to Part 6 in order. The learner-facing o
 1. Choose the topic and IELTS question types.
 2. Write the Core Idea Bank first.
 3. Build Vocabulary In Context from those ideas.
-4. Choose the Topic Grammar In Use from the ideas and model answers.
-5. Create Speaking Patterns & Expression Tips from the vocabulary and grammar.
-6. Write Guided Speaking Practice answers.
-7. Split model answers into shadowing lines.
-8. Add self-review and retry tasks.
-9. Reorder the final module so learners see Vocabulary In Context before Core Idea Bank.
+4. Create 2-3 Reading Shadowing Checkpoints inside the Core Idea Bank.
+5. Choose the Topic Grammar In Use from the ideas and model answers.
+6. Create Speaking Patterns & Expression Tips from the vocabulary and grammar.
+7. Write Guided Speaking Practice answers.
+8. Split model answers into shadowing lines.
+9. Add self-review and retry tasks.
+10. Reorder the final module so learners see Vocabulary In Context before Core Idea Bank, and make the idea bank include reading-shadowing checkpoints before it ends.
 
-This keeps the module connected: ideas produce vocabulary, vocabulary produces patterns, patterns produce answers, and answers produce speaking practice.
+This keeps the module connected: ideas produce vocabulary, vocabulary supports the idea bank, reading-shadowing checkpoints recycle both, patterns produce answers, and answers produce speaking practice.
 
 ---
 
@@ -616,6 +704,7 @@ A topic module is ready only if a self-study learner can:
 
 - understand the main ideas without teacher explanation
 - learn vocabulary through phrases and examples, not isolated lists
+- reuse topic language in a short reading-style consolidation task
 - review grammar through topic examples and speaking drills
 - answer Part 1, Part 2, and Part 3 questions about the topic
 - record and retry their answer with a clear improvement goal

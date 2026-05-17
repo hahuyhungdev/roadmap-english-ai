@@ -1,4 +1,4 @@
-import IeltsDashboardClient from "@/features/ielts/components/IeltsDashboardClient";
+import IeltsDashboardClient from "@/features/ielts/pages/IeltsDashboardClient";
 import { loadIeltsDocuments } from "@/lib/ielts.server";
 
 export default function IeltsPage() {

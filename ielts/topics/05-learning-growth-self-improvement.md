@@ -1,19 +1,10 @@
-# IELTS Speaking Lesson 05: Learning, Growth & Self-Improvement
+# Lesson05: Learning, Growth & Self-Improvement
 
-## Learner Profile
+## Source Alignment
 
-- **Mode:** self-study only, without a teacher
-- **Entry level:** IELTS Speaking band 5-6
-- **Target level:** IELTS Speaking band 6-7
-- **Main learner:** Vietnamese IT professional or software engineer
-- **Speaking style:** clear, natural, professional, not overly academic
-
-Source alignment:
-
-- `content/session-05.md`: AI Tools and the Changing Developer Role
-- `content/session-06.md`: Documentation as a Product
-- `content/session-16.md`: Habits, Comfort Zones & Why Change Is Hard
-- `ielts/topic-roadmap.md`: Topic 5 - Learning, Growth & Self-Improvement
+- [Session 05: AI Tools and the Changing Developer Role](/phase/phase-1-tech-business/session/session-05)
+- [Session 06: Documentation as a Product](/phase/phase-1-tech-business/session/session-06)
+- [Session 16: Habits, Comfort Zones & Why Change Is Hard](/phase/phase-3-people-life-real-conversations/session/session-16)
 
 ---
 
@@ -37,7 +28,7 @@ What are you learning these days, and why is it important to you?
 
 - **Idea problem:** I only said learning is important.
 - **Vocabulary problem:** I repeated learn, improve, hard, good.
-- **Grammar problem:** I could not explain progress, cause, or habit.
+- **Grammar problem:** I couldn't explain progress, cause, or habit.
 - **Pronunciation problem:** consistency, motivation, accountability, discipline were unclear.
 - **Fluency problem:** I paused when explaining why change is difficult.
 
@@ -61,7 +52,7 @@ What are you learning these days, and why is it important to you?
 
 3. **motivation / motivate / motivated**
    - Meaning: reason or feeling that pushes action.
-   - Natural: Motivation helps people start, but it does not always last.
+   - Natural: Motivation helps people start, but it doesn't always last.
    - IT/pro: Career goals motivate me to improve English and fullstack skills.
    - Mistake: Avoid `I have motivate`; say `I feel motivated`.
 
@@ -72,10 +63,10 @@ What are you learning these days, and why is it important to you?
    - Mistake: Avoid `I need consistent`; say `I need consistency`.
 
 5. **discipline / disciplined / self-discipline**
-   - Meaning: ability to continue when it is not easy.
+   - Meaning: ability to continue when it's not easy.
    - Natural: Discipline should support progress, not become self-punishment.
-   - IT/pro: Self-discipline helps me learn after work even when I am tired.
-   - Mistake: Avoid `I am discipline`; say `I am disciplined`.
+   - IT/pro: Self-discipline helps me learn after work even when I'm tired.
+   - Mistake: Avoid `I'm discipline`; say `I'm disciplined`.
 
 6. **progress / progress / progressive**
    - Meaning: improvement over time.
@@ -97,7 +88,7 @@ What are you learning these days, and why is it important to you?
 
 9. **setback / set back / recover from a setback**
    - Meaning: problem that slows progress.
-   - Natural: A setback does not mean the whole plan failed.
+   - Natural: A setback doesn't mean the whole plan failed.
    - IT/pro: If I miss practice for a few days, I try to restart quickly.
    - Mistake: Avoid `I got setback`; say `I had a setback`.
 
@@ -134,6 +125,140 @@ What are you learning these days, and why is it important to you?
 23. improve my communication
 24. turn knowledge into practice
 25. long-term growth
+
+### 2b.1 Chunk Expansion Practice
+
+Use these chunks to make learning answers specific instead of generic.
+
+#### Chunk 1: turn knowledge into practice
+
+Meaning:
+
+```text
+use what you know in real speaking, coding, or daily action
+```
+
+Natural answer:
+
+```text
+I try to turn knowledge into practice because reading alone doesn't make me more fluent.
+```
+
+IT/professional answer:
+
+```text
+When I learn a new framework, I turn knowledge into practice by building a small feature instead of only watching tutorials.
+```
+
+Practice prompt:
+
+```text
+Answer in 20 seconds: How do you turn English knowledge into speaking practice?
+```
+
+#### Chunk 2: recover from a setback
+
+Meaning:
+
+```text
+restart after missing practice, failing, or losing momentum
+```
+
+Natural answer:
+
+```text
+The important thing isn't avoiding every setback, but recovering from a setback quickly.
+```
+
+IT/professional answer:
+
+```text
+If I miss a few English recordings because of work, I recover from the setback by restarting with a shorter task.
+```
+
+Practice prompt:
+
+```text
+Finish: When I have a setback, I usually...
+```
+
+#### Chunk 3: create accountability
+
+Meaning:
+
+```text
+create a system that helps you follow through
+```
+
+Natural answer:
+
+```text
+I create accountability by tracking my progress and reviewing my recordings.
+```
+
+IT/professional answer:
+
+```text
+A visible checklist creates accountability because I can see whether I actually practiced or only planned.
+```
+
+Practice prompt:
+
+```text
+Name one system that can create accountability for self-study.
+```
+
+#### Chunk 4: expand my comfort zone gradually
+
+Meaning:
+
+```text
+do slightly uncomfortable things step by step
+```
+
+Natural answer:
+
+```text
+I don't need to jump into very difficult practice immediately; I can expand my comfort zone gradually.
+```
+
+IT/professional answer:
+
+```text
+Speaking in small meetings first can help me expand my comfort zone before larger presentations.
+```
+
+Practice prompt:
+
+```text
+Give one small action that would expand your English comfort zone.
+```
+
+#### Chunk 5: learn at my own pace
+
+Meaning:
+
+```text
+learn at a speed that fits your life and current level
+```
+
+Natural answer:
+
+```text
+Self-study allows me to learn at my own pace, but it also requires discipline.
+```
+
+IT/professional answer:
+
+```text
+I can learn AWS, AI, backend, and English at my own pace, as long as I keep a realistic system.
+```
+
+Practice prompt:
+
+```text
+Explain one advantage and one risk of learning at your own pace.
+```
 
 ### 2c. Useful Topic Verbs
 
@@ -224,7 +349,7 @@ Why: Avoid repeating the same meaning.
 
 ---
 
-## Part 3 - Core Idea Bank
+## Part 3 - Core Idea Bank + Reading Shadowing Checkpoints
 
 ### Idea 1: Learning Needs A System
 
@@ -237,7 +362,7 @@ Learning is easier when I have a routine.
 Better spoken version:
 
 ```text
-I think learning needs a system because motivation changes from day to day. A simple routine helps me continue even when I do not feel excited.
+I think learning needs a system because motivation changes from day to day. A simple routine helps me continue even when I don't feel excited.
 ```
 
 IT/professional example:
@@ -269,7 +394,7 @@ Starting small is practical because a habit has to survive normal life, not only
 IT/professional example:
 
 ```text
-Instead of studying English for three hours once a week, I would rather do a focused 20-minute speaking task every day.
+Instead of studying English for three hours once a week, I'd rather do a focused 20-minute speaking task every day.
 ```
 
 Useful language:
@@ -304,6 +429,47 @@ Useful language:
 feedback / review mistakes / actual output
 ```
 
+### Reading Shadowing Checkpoint A: Systems, Small Starts, And Feedback
+
+#### Mini Reading
+
+```text
+Learning is easier when there's a simple system. Motivation changes from day to day, so I can't rely on motivation alone. A routine helps me continue even when I don't feel excited. For English, that might mean one short recording, one review, and one retry.
+
+Starting small also matters. If the habit is too heavy, it's easy to quit after a busy day. A small habit helps me stay consistent and build momentum. Feedback makes growth faster because it shows me what to fix next. In self-study, feedback can come from recordings, AI tools, checklists, or my own mistake notes. The point isn't to judge myself harshly. It's to notice one weak point and retry.
+```
+
+#### Comprehension
+
+1. Why does learning need a system?
+2. Why is starting small useful?
+3. How can feedback help a self-study learner?
+
+#### Find The Language
+
+1. Find a phrase that means "continue regularly".
+2. Find a phrase that means "gain energy by doing small actions".
+3. Find a phrase that means "try again after noticing mistakes".
+
+#### Shadowing Script
+
+```text
+Learning is easier when there's a system.
+I can't rely on motivation alone.
+A small habit helps me stay consistent.
+Feedback shows me what to fix next.
+The point isn't to judge myself.
+It's to notice one weak point and retry.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+simple system / stay consistent / build momentum / feedback / retry the same answer
+```
+
 ### Idea 4: Comfort Zones Are Not Always Bad
 
 Simple version:
@@ -315,7 +481,7 @@ People stay in comfort zones because they feel safe.
 Better spoken version:
 
 ```text
-A comfort zone is not always bad. It gives people stability, but it can limit growth if they never try anything uncomfortable.
+A comfort zone isn't always bad. It gives people stability, but it can limit growth if they never try anything uncomfortable.
 ```
 
 IT/professional example:
@@ -341,7 +507,7 @@ Sometimes people stop, but they can start again.
 Better spoken version:
 
 ```text
-Setbacks are normal. The important skill is not avoiding every bad day, but restarting quickly without turning one mistake into a whole month of giving up.
+Setbacks are normal. The important skill isn't avoiding every bad day, but restarting quickly without turning one mistake into a whole month of giving up.
 ```
 
 IT/professional example:
@@ -367,7 +533,7 @@ Self-study is hard without pressure.
 Better spoken version:
 
 ```text
-Self-study gives flexibility, but it also requires accountability because there is no teacher checking my progress every day.
+Self-study gives flexibility, but it also requires accountability because there's no teacher checking my progress every day.
 ```
 
 IT/professional example:
@@ -380,6 +546,47 @@ Useful language:
 
 ```text
 self-study / accountability / track progress
+```
+
+### Reading Shadowing Checkpoint B: Comfort Zones, Setbacks, And Accountability
+
+#### Mini Reading
+
+```text
+A comfort zone isn't always bad. It gives people stability and confidence. The problem starts when the comfort zone becomes too small and stops growth. I don't need to force myself into huge pressure immediately. I can expand my comfort zone gradually, for example by answering one English question out loud each day.
+
+Setbacks are also normal. Missing one practice day doesn't mean the whole plan has failed. What matters is how quickly I get back on track. Accountability helps here. If I track my recordings, review mistakes, and keep a visible checklist, it's harder to lie to myself. I can see whether I'm actually practicing or only planning.
+```
+
+#### Comprehension
+
+1. Why isn't a comfort zone always bad?
+2. What should a learner do after a setback?
+3. How does accountability help self-study?
+
+#### Find The Language
+
+1. Find a phrase that means "make discomfort bigger step by step".
+2. Find a phrase that means "restart after a problem".
+3. Find a phrase that means "measure whether I'm really practicing".
+
+#### Shadowing Script
+
+```text
+A comfort zone isn't always bad.
+But it shouldn't stop growth.
+I can expand it gradually.
+Setbacks are normal in self-study.
+Missing one day doesn't mean failure.
+Accountability helps me get back on track.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+comfort zone / expand gradually / recover from a setback / get back on track / create accountability
 ```
 
 ### Idea 7: AI Can Support Learning
@@ -434,18 +641,59 @@ Useful language:
 gradual growth / repeated practice / long-term consistency
 ```
 
+### Reading Shadowing Checkpoint C: AI Support And Long-term Growth
+
+#### Mini Reading
+
+```text
+AI can support learning, but it shouldn't replace thinking. I can use AI to explain examples, check grammar, suggest vocabulary, or create practice questions. But I still need to apply the language myself. If I only read AI answers, I won't build speaking fluency.
+
+Growth is long-term. I don't need a perfect routine, and I don't need to improve everything at once. What I need is a realistic system that survives busy workdays. For an IT learner, that might mean turning documentation into practice, recording short English answers, and using AI as an assistant instead of a final answer. Slow progress is still progress if the direction is right.
+```
+
+#### Comprehension
+
+1. How can AI support learning?
+2. Why shouldn't AI replace thinking?
+3. What kind of system supports long-term growth?
+
+#### Find The Language
+
+1. Find a phrase that means "use knowledge in real action".
+2. Find a phrase that means "a routine that survives busy days".
+3. Find a phrase that means "improvement over a long period".
+
+#### Shadowing Script
+
+```text
+AI can support learning.
+But it shouldn't replace thinking.
+I still need to apply the language myself.
+Growth is long-term.
+I don't need a perfect routine.
+I need a system that survives busy workdays.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+AI-assisted learning / turn knowledge into practice / long-term growth / realistic system / steady progress
+```
+
 ---
 
 ## Part 4 - Speaking Patterns, Grammar & Expression Tips
 
 ### 4a. Sentence Patterns
 
-1. **I am trying to improve... because...**
-   - I am trying to improve my speaking because I need clearer professional communication.
+1. **I'm trying to improve... because...**
+   - I'm trying to improve my speaking because I need clearer professional communication.
    - Task: answer what skill you want to improve.
 
-2. **The hard part is not..., but...**
-   - The hard part is not starting, but staying consistent.
+2. **The hard part isn't..., but...**
+   - The hard part isn't starting, but staying consistent.
    - Task: explain why habits are difficult.
 
 3. **I learn best when...**
@@ -516,7 +764,7 @@ This can lead to...
 Examples:
 
 ```text
-Because of a simple routine, I can study even when I am busy.
+Because of a simple routine, I can study even when I'm busy.
 Too much pressure can lead to giving up.
 ```
 
@@ -544,7 +792,7 @@ X is useful, but...
 Examples:
 
 ```text
-Motivation is useful, but it is not reliable every day.
+Motivation is useful, but it's not reliable every day.
 Although self-study is flexible, it requires discipline.
 ```
 
@@ -566,14 +814,14 @@ Formula:
 
 ```text
 If I + present simple, I can...
-If I did not..., I would...
+If I didn't..., I'd...
 ```
 
 Examples:
 
 ```text
 If I start small, I can stay consistent.
-If I did not track my progress, I would lose motivation more easily.
+If I didn't track my progress, I'd lose motivation more easily.
 ```
 
 Drill:
@@ -635,19 +883,19 @@ General opinion -> reason -> example -> condition -> conclusion
 Instead of:
 
 ```text
-I learn English because it is important.
+I learn English because it's important.
 ```
 
 Say:
 
 ```text
-I am improving my English so I can explain technical ideas more clearly.
+I'm improving my English so I can explain technical ideas more clearly.
 ```
 
 Instead of:
 
 ```text
-I am lazy.
+I'm lazy.
 ```
 
 Say:
@@ -661,13 +909,13 @@ I sometimes struggle with consistency, especially when work gets busy.
 Basic:
 
 ```text
-I want to improve English.
+I wanna improve English.
 ```
 
 Upgrade:
 
 ```text
-I want to improve my English speaking because I need to explain technical ideas more clearly. I am trying to build a small daily habit: record one answer, review one mistake, and retry once.
+I wanna improve my English speaking because I need to explain technical ideas more clearly. I'm trying to build a small daily habit: record one answer, review one mistake, and retry once.
 ```
 
 ### 4f. Repair Strategies
@@ -675,7 +923,7 @@ I want to improve my English speaking because I need to explain technical ideas 
 ```text
 What I mean is...
 Let me give a personal example.
-I cannot think of the exact word, but it is about consistency.
+I can't think of the exact word, but it's about consistency.
 The simple version is...
 ```
 
@@ -690,19 +938,19 @@ The simple version is...
 Band 5.5 answer:
 
 ```text
-Yes, I like learning new things because it is useful for my job.
+Yes, I like learning new things because it's useful for my job.
 ```
 
 Band 6.5-7 answer:
 
 ```text
-Yes, especially when I can apply the new skill in real work. For example, I enjoy learning English speaking because it helps me explain technical ideas more clearly. Having said that, I need a routine because motivation alone is not enough.
+Yes, especially when I can apply the new skill in real work. For example, I enjoy learning English speaking because it helps me explain technical ideas more clearly. Having said that, I need a routine because motivation alone isn't enough.
 ```
 
 Retry task:
 
 ```text
-Use "apply", "technical ideas", and "motivation alone is not enough".
+Use "apply", "technical ideas", and "motivation alone isn't enough".
 ```
 
 #### Question 2: What skill are you trying to improve?
@@ -710,13 +958,13 @@ Use "apply", "technical ideas", and "motivation alone is not enough".
 Band 5.5 answer:
 
 ```text
-I am trying to improve my English speaking.
+I'm trying to improve my English speaking.
 ```
 
 Band 6.5-7 answer:
 
 ```text
-I am trying to improve my English speaking, especially for professional communication. I want to explain my frontend work, product decisions, and technical trade-offs more naturally.
+I'm trying to improve my English speaking, especially for professional communication. I wanna explain my frontend work, product decisions, and technical trade-offs more naturally.
 ```
 
 Retry task:
@@ -736,7 +984,7 @@ I watch videos and think about my goal.
 Band 6.5-7 answer:
 
 ```text
-I do not rely only on motivation. I try to make the habit small enough to repeat, even on busy days. Tracking progress also helps because I can see that small practice is still moving me forward.
+I don't rely only on motivation. I try to make the habit small enough to repeat, even on busy days. Tracking progress also helps because I can see that small practice is still moving me forward.
 ```
 
 Retry task:
@@ -750,13 +998,13 @@ Use "small enough to repeat" and "tracking progress".
 Band 5.5 answer:
 
 ```text
-Yes, it is difficult because nobody teaches me.
+Yes, it's difficult because nobody teaches me.
 ```
 
 Band 6.5-7 answer:
 
 ```text
-Yes, self-study can be difficult because there is no teacher checking my progress every day. The good side is flexibility, but the hard part is accountability and consistency.
+Yes, self-study can be difficult because there's no teacher checking my progress every day. The good side is flexibility, but the hard part is accountability and consistency.
 ```
 
 Retry task:
@@ -770,7 +1018,7 @@ Use "flexibility", "accountability", and "consistency".
 Band 5.5 answer:
 
 ```text
-I prefer online learning because it is convenient.
+I prefer online learning because it's convenient.
 ```
 
 Band 6.5-7 answer:
@@ -796,7 +1044,7 @@ Learning is difficult because it takes time.
 Band 6.5-7 answer:
 
 ```text
-For me, the difficult part is consistency. It is easy to feel motivated for a few days, but real progress needs repetition, feedback, and the ability to restart after setbacks.
+For me, the difficult part is consistency. It's easy to feel motivated for a few days, but real progress needs repetition, feedback, and the ability to restart after setbacks.
 ```
 
 Retry task:
@@ -810,13 +1058,13 @@ Use "repetition", "feedback", and "restart after setbacks".
 Cue card:
 
 ```text
-Describe a skill you are trying to improve.
+Describe a skill you're trying to improve.
 
 You should say:
 - what the skill is
 - why you want to improve it
 - how you practice it
-- and explain what is difficult about improving it
+- and explain what's difficult about improving it
 ```
 
 #### 1-minute Planning Bullets
@@ -832,19 +1080,19 @@ Progress: clearer answers, more natural chunks
 #### 2-minute Model Answer
 
 ```text
-A skill I am trying to improve is English speaking, especially for professional communication. I do not want to use English only for simple daily conversation. I want to explain my work, my decisions, and technical ideas more clearly.
+A skill I'm trying to improve is English speaking, especially for professional communication. I don't wanna use English only for simple daily conversation. I wanna explain my work, my decisions, and technical ideas more clearly.
 
 The main reason is that I work in IT, and communication is becoming more important for my career. As I grow from frontend toward more fullstack work, I need to explain product logic, trade-offs, and problems to different people. English can help me do that more confidently.
 
-My current method is quite simple. I learn vocabulary in chunks, record short answers, listen back, choose one weak point, and retry the answer. I also use AI as a learning assistant, but I know I still need to speak by myself. Reading a good answer is not the same as producing one.
+My current method is quite simple. I learn vocabulary in chunks, record short answers, listen back, choose one weak point, and retry the answer. I also use AI as a learning assistant, but I know I still need to speak by myself. Reading a good answer isn't the same as producing one.
 
-The difficult part is consistency. Some days I feel motivated, but on busy workdays I can easily skip practice. So I try to keep the habit small enough to restart quickly. What I have learned is that progress does not come from one perfect study session. It comes from repeated practice and honest review.
+The difficult part is consistency. Some days I feel motivated, but on busy workdays I can easily skip practice. So I try to keep the habit small enough to restart quickly. What I have learned is that progress doesn't come from one perfect study session. It comes from repeated practice and honest review.
 ```
 
 #### Stripped-down Answer Frame
 
 ```text
-A skill I am trying to improve is...
+A skill I'm trying to improve is...
 The main reason is...
 My current method is...
 The difficult part is...
@@ -868,11 +1116,11 @@ honest review
 #### Shadowing Version
 
 ```text
-A skill I am trying to improve
+A skill I'm trying to improve
 is English speaking,
 especially for professional communication.
 
-I want to explain my work,
+I wanna explain my work,
 my decisions,
 and technical ideas
 more clearly.
@@ -905,7 +1153,7 @@ to restart quickly.
 Model answer:
 
 ```text
-Many people give up because they expect progress to be faster than it really is. At the beginning, motivation is high, but after a few weeks the routine becomes less exciting. If the habit is too difficult, one setback can make people stop completely. That is why a realistic system is more important than strong motivation.
+Many people give up because they expect progress to be faster than it really is. At the beginning, motivation is high, but after a few weeks the routine becomes less exciting. If the habit is too difficult, one setback can make people stop completely. That's why a realistic system is more important than strong motivation.
 ```
 
 Simpler version:
@@ -965,7 +1213,7 @@ Use "reduce friction", "existing routine", and "restart plan".
 Model answer:
 
 ```text
-Yes, definitely. Many students learn subjects, but they do not learn how to manage attention, review mistakes, or build study habits. If schools taught learning strategies, students could become more independent. This is important because people need to keep learning long after they leave school.
+Yes, definitely. Many students learn subjects, but they don't learn how to manage attention, review mistakes, or build study habits. If schools taught learning strategies, students could become more independent. This is important because people need to keep learning long after they leave school.
 ```
 
 Simpler version:
@@ -985,7 +1233,7 @@ Use "learning strategies" and "independent".
 Model answer:
 
 ```text
-I think discipline is more reliable than motivation, but they work best together. Motivation helps people start, while discipline helps them continue when the excitement disappears. However, discipline should not mean self-punishment. A healthy system should be realistic enough to survive normal life.
+I think discipline is more reliable than motivation, but they work best together. Motivation helps people start, while discipline helps them continue when the excitement disappears. However, discipline shouldn't mean self-punishment. A healthy system should be realistic enough to survive normal life.
 ```
 
 Simpler version:
@@ -1048,6 +1296,46 @@ Pronunciation:
   - discipline
   - comfort zone
   - professional communication
+
+### Band 6-7 Self-scoring Rubric
+
+Give yourself 0-2 points for each area.
+
+```text
+Fluency:
+0 = many long pauses
+1 = understandable, but some ideas stop early
+2 = mostly smooth with natural hesitation
+```
+
+```text
+Vocabulary:
+0 = repeated learn/improve/hard too much
+1 = used 2-4 learning chunks
+2 = used 5+ chunks naturally
+```
+
+```text
+Grammar:
+0 = many basic errors
+1 = mostly clear simple sentences
+2 = used present perfect, conditionals, or contrast accurately
+```
+
+```text
+Development:
+0 = only said learning is important
+1 = skill plus reason
+2 = skill, reason, method, difficulty, and progress
+```
+
+Score guide:
+
+```text
+0-3: Retry with a shorter skeleton.
+4-6: Add one concrete method and one setback.
+7-8: Strong self-study answer for this topic.
+```
 
 ### Retry Tasks
 
@@ -1128,4 +1416,3 @@ Natural enough for real conversation.
 Professional enough for an IT learner.
 Simple enough for self-study.
 ```
-

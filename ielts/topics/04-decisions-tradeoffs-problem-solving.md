@@ -1,22 +1,13 @@
-# IELTS Speaking Lesson 04: Decisions, Trade-offs & Problem Solving
+# Lesson04: Decisions, Trade-offs & Problem Solving
 
-## Learner Profile
+## Source Alignment
 
-- **Mode:** self-study only, without a teacher
-- **Entry level:** IELTS Speaking band 5-6
-- **Target level:** IELTS Speaking band 6-7
-- **Main learner:** Vietnamese IT professional or software engineer
-- **Speaking style:** clear, natural, professional, not overly academic
-
-Source alignment:
-
-- `content/session-03.md`: Tech Stack and Trade-offs
-- `content/session-04.md`: Technical Debt and Change Management
-- `content/session-08.md`: Root Cause Analysis & Impact
-- `content/session-09.md`: Scaling Systems Under Real Constraints
-- `content/session-10.md`: Defending Decisions
-- `content/session-11.md`: Owning Failure
-- `ielts/topic-roadmap.md`: Topic 4 - Decisions, Trade-offs & Problem Solving
+- [Session 03: Tech Stack and Trade-offs](/phase/phase-1-tech-business/session/session-03)
+- [Session 04: Technical Debt and Change Management](/phase/phase-1-tech-business/session/session-04)
+- [Session 08: Root Cause Analysis & Impact](/phase/phase-2-analytical-thinking-in-it/session/session-08)
+- [Session 09: Scaling Systems Under Real Constraints](/phase/phase-2-analytical-thinking-in-it/session/session-09)
+- [Session 10: Defending Decisions](/phase/phase-2-analytical-thinking-in-it/session/session-10)
+- [Session 11: Owning Failure](/phase/phase-2-analytical-thinking-in-it/session/session-11)
 
 ---
 
@@ -38,9 +29,9 @@ Describe how you usually make a difficult decision at work or in life.
 
 ### Quick Self-check
 
-- **Idea problem:** I could not explain the process.
+- **Idea problem:** I couldn't explain the process.
 - **Vocabulary problem:** I repeated problem, choose, good, bad.
-- **Grammar problem:** I could not compare options or explain consequences.
+- **Grammar problem:** I couldn't compare options or explain consequences.
 - **Pronunciation problem:** trade-off, constraint, evidence, mitigation were unclear.
 - **Fluency problem:** I paused when describing risk or failure.
 
@@ -101,7 +92,7 @@ Common mistake:
 
 ```text
 Avoid: It has many trade off.
-Better: It has many trade-offs. / There is a trade-off.
+Better: It has many trade-offs. / There's a trade-off.
 ```
 
 #### 3. constraint / constrain / constrained
@@ -128,7 +119,7 @@ Common mistake:
 
 ```text
 Avoid: We have constraint time.
-Better: We have a time constraint. / We are constrained by time.
+Better: We have a time constraint. / We're constrained by time.
 ```
 
 #### 4. risk / risky / reduce risk
@@ -283,7 +274,7 @@ Failure can teach people if they review it honestly.
 IT/professional sentence:
 
 ```text
-The failure was not only a bug; it also showed a gap in our release process.
+The failure wasn't only a bug; it also showed a gap in our release process.
 ```
 
 Common mistake:
@@ -317,7 +308,7 @@ Common mistake:
 
 ```text
 Avoid: I have confident.
-Better: I am confident. / I have confidence.
+Better: I'm confident. / I have confidence.
 ```
 
 ### 2b. Collocations & Chunks
@@ -414,7 +405,7 @@ Why: Use "prevent + object + from + verb-ing".
 
 ```text
 Mistake: I am confidence with this plan.
-Better: I am confident about this plan. / I have confidence in this plan.
+Better: I'm confident about this plan. / I have confidence in this plan.
 Why: "Confident" is adjective; "confidence" is noun.
 ```
 
@@ -426,9 +417,9 @@ Why: "Risk" is countable in this sentence.
 
 ### 2f. IT/Professional-use Phrases
 
-1. **I would compare the options by user impact, risk, and effort.**
+1. **I'd compare the options by user impact, risk, and effort.**
 2. **The trade-off is speed now versus quality later.**
-3. **This is not a reason to panic, but it is a reason to verify.**
+3. **This isn't a reason to panic, but it's a reason to verify.**
 4. **We should reduce scope rather than lower the quality bar.**
 5. **The first step is mitigation; the second step is prevention.**
 6. **The root cause should be specific enough to prevent recurrence.**
@@ -437,7 +428,7 @@ Why: "Risk" is countable in this sentence.
 
 ---
 
-## Part 3 - Core Idea Bank
+## Part 3 - Core Idea Bank + Reading Shadowing Checkpoints
 
 ### Idea 1: Good Decisions Need Criteria
 
@@ -496,13 +487,13 @@ accept a trade-off / protect quality / optional behavior
 Simple version:
 
 ```text
-We cannot do everything.
+We can't do everything.
 ```
 
 Better spoken version:
 
 ```text
-Constraints are not always negative. They help people choose a realistic solution instead of an ideal solution that the team cannot finish or maintain.
+Constraints aren't always negative. They help people choose a realistic solution instead of an ideal solution that the team can't finish or maintain.
 ```
 
 IT/professional example:
@@ -515,6 +506,47 @@ Useful language:
 
 ```text
 work within constraints / realistic solution / full rewrite
+```
+
+### Reading Shadowing Checkpoint A: Criteria, Trade-offs, And Constraints
+
+#### Mini Reading
+
+```text
+Good decisions are easier when people agree on decision criteria. Instead of arguing from personal preference, a team can compare options by impact, cost, risk, effort, and timeline. This doesn't make every decision easy, but it makes the discussion clearer.
+
+Most real decisions involve trade-offs. You may gain speed but lose control, or reduce risk but delay a useful feature. Constraints can actually help because they force the team to choose a realistic solution. For example, if there's a tight deadline, a small refactor may be safer than a full rewrite. The point isn't to find a perfect option. It's to choose an option that fits the real situation.
+```
+
+#### Comprehension
+
+1. Why do decision criteria help?
+2. What's a trade-off?
+3. How can constraints make decisions more realistic?
+
+#### Find The Language
+
+1. Find a phrase that means "standards for choosing an option".
+2. Find a phrase that means "accept losing one thing to gain another".
+3. Find a phrase that means "choose within real limits".
+
+#### Shadowing Script
+
+```text
+Good decisions need clear criteria.
+Most real decisions involve trade-offs.
+Constraints aren't always negative.
+They help teams choose realistic solutions.
+The goal isn't a perfect option.
+The goal is a decision that fits the situation.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+decision criteria / compare options / accept a trade-off / work within constraints / realistic solution
 ```
 
 ### Idea 4: Problem Solving Starts With Evidence
@@ -580,7 +612,7 @@ After a problem, we should stop it from happening again.
 Better spoken version:
 
 ```text
-Fixing a problem is not enough if the same issue can return next month. Prevention means changing tests, checklists, ownership, or monitoring.
+Fixing a problem isn't enough if the same issue can return next month. Prevention means changing tests, checklists, ownership, or monitoring.
 ```
 
 IT/professional example:
@@ -595,6 +627,47 @@ Useful language:
 prevention action / regression test / prevent recurrence
 ```
 
+### Reading Shadowing Checkpoint B: Evidence, Mitigation, And Prevention
+
+#### Mini Reading
+
+```text
+Good problem solving starts with evidence. The first symptom isn't always the real cause, so I try to check logs, user reports, recent changes, and examples before naming the root cause. If the problem affects users, the first goal is mitigation. A rollback, fallback, or temporary workaround can reduce damage while the team investigates.
+
+But mitigation isn't the end. After the urgent problem is under control, the team needs prevention. If the same issue can return next month, the fix isn't complete. Prevention might mean adding a regression test, improving monitoring, updating a checklist, or making ownership clearer. That's how a team turns one incident into a better system.
+```
+
+#### Comprehension
+
+1. Why shouldn't people trust the first symptom immediately?
+2. What's mitigation?
+3. What can prevention include after an incident?
+
+#### Find The Language
+
+1. Find a phrase that means "the deeper cause of a problem".
+2. Find a phrase that means "reduce urgent damage first".
+3. Find a phrase that means "stop the same issue from coming back".
+
+#### Shadowing Script
+
+```text
+Good problem solving starts with evidence.
+The first symptom isn't always the root cause.
+When users are affected, mitigation comes first.
+A rollback can reduce damage quickly.
+But mitigation isn't the end.
+Prevention makes the system better next time.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+evidence / symptom / root cause / short-term mitigation / prevention action
+```
+
 ### Idea 7: Owning Failure Builds Trust
 
 Simple version:
@@ -606,7 +679,7 @@ People should admit mistakes.
 Better spoken version:
 
 ```text
-Owning failure does not mean blaming yourself for everything. It means naming your part, explaining the impact, helping recovery, and following through on prevention.
+Owning failure doesn't mean blaming yourself for everything. It means naming your part, explaining the impact, helping recovery, and following through on prevention.
 ```
 
 IT/professional example:
@@ -632,7 +705,7 @@ If I disagree, I should give another option.
 Better spoken version:
 
 ```text
-Good pushback is not just saying no. It explains the risk and offers a safer compromise that still respects the original goal.
+Good pushback isn't just saying no. It explains the risk and offers a safer compromise that still respects the original goal.
 ```
 
 IT/professional example:
@@ -647,13 +720,54 @@ Useful language:
 respectful pushback / safer compromise / original goal
 ```
 
+### Reading Shadowing Checkpoint C: Owning Failure And Safer Pushback
+
+#### Mini Reading
+
+```text
+Owning failure doesn't mean blaming yourself for everything. It means naming your part, explaining the impact, helping recovery, and following through on prevention. If I approved a release too early, I should be honest about what I missed and what I'm gonna change in the process afterward.
+
+Good pushback is similar. It isn't just saying no. Strong pushback explains the risk and offers a safer path that still respects the original goal. For example, I might agree with the release goal but suggest shipping the core flow first and moving the risky option to the next sprint. That way, the team protects quality without ignoring the business need.
+```
+
+#### Comprehension
+
+1. What does owning failure really mean?
+2. Why is good pushback more than saying no?
+3. How can a safer compromise still respect the original goal?
+
+#### Find The Language
+
+1. Find a phrase that means "accept your part of the result".
+2. Find a phrase that means "keep doing the prevention work".
+3. Find a phrase that means "a less risky option".
+
+#### Shadowing Script
+
+```text
+Owning failure isn't blaming yourself for everything.
+It means naming your part and explaining the impact.
+Good pushback isn't just saying no.
+It explains the risk and offers a safer path.
+A safer compromise can still respect the goal.
+That's how teams protect quality.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+take ownership / explain the impact / follow-through / respectful pushback / safer compromise
+```
+
 ---
 
 ## Part 4 - Speaking Patterns, Grammar & Expression Tips
 
 ### 4a. Sentence Patterns
 
-#### Pattern 1: I would compare the options by...
+#### Pattern 1: I'd compare the options by...
 
 Function:
 
@@ -664,8 +778,8 @@ Explain decision criteria.
 Examples:
 
 ```text
-I would compare the options by cost, risk, and long-term value.
-I would compare technical options by maintainability, team familiarity, and release risk.
+I'd compare the options by cost, risk, and long-term value.
+I'd compare technical options by maintainability, team familiarity, and release risk.
 ```
 
 Task:
@@ -679,7 +793,7 @@ Use this pattern to describe a difficult decision.
 Function:
 
 ```text
-Explain what is gained and lost.
+Explain what's gained and lost.
 ```
 
 Examples:
@@ -727,8 +841,8 @@ Give respectful pushback.
 Examples:
 
 ```text
-I agree with the goal, but I am concerned about release risk.
-I agree with the deadline, but I would reduce scope to protect quality.
+I agree with the goal, but I'm concerned about release risk.
+I agree with the deadline, but I'd reduce scope to protect quality.
 ```
 
 Task:
@@ -862,7 +976,7 @@ Examples:
 
 ```text
 If we release without testing, we may create more support issues.
-If we had more time, I would test the edge cases more deeply.
+If we had more time, I'd test the edge cases more deeply.
 ```
 
 IT example:
@@ -960,7 +1074,7 @@ Upgrade:
 
 ```text
 Basic: Fast is good but risky.
-Better: Although a faster release helps the business, it becomes risky if the core flow is not tested.
+Better: Although a faster release helps the business, it becomes risky if the core flow isn't tested.
 ```
 
 Drill:
@@ -1050,15 +1164,15 @@ The decision was hard because the faster option protected the deadline, but the 
 Upgrade 3:
 
 ```text
-In the end, I would recommend a phased rollout because it protects the main user flow while still allowing the team to learn from real traffic.
+In the end, I'd recommend a phased rollout because it protects the main user flow while still allowing the team to learn from real traffic.
 ```
 
 ### 4f. Repair Strategies
 
 ```text
 Let me separate the symptom from the cause.
-The simpler way to explain it is...
-I cannot remember the exact metric, but the impact was...
+The simpler way to explain it's...
+I can't remember the exact metric, but the impact was...
 Let me frame the trade-off clearly.
 What I learned from that was...
 ```
@@ -1074,7 +1188,7 @@ What I learned from that was...
 Band 5.5 answer:
 
 ```text
-I think I am okay. I try to think carefully before I decide.
+I think I'm okay. I try to think carefully before I decide.
 ```
 
 Upgrade notes:
@@ -1086,7 +1200,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-I think I am becoming better at it. I usually try to compare options by risk, effort, and long-term impact before making a decision. At work, this helps me avoid choosing something just because it looks fast or popular.
+I think I'm becoming better at it. I usually try to compare options by risk, effort, and long-term impact before making a decision. At work, this helps me avoid choosing something just because it looks fast or popular.
 ```
 
 Retry task:
@@ -1112,7 +1226,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-First, I try to understand the symptom and collect evidence. Then I test possible causes instead of guessing too quickly. If the problem affects users, I would focus on mitigation first, and after that I would look for prevention so the same issue does not happen again.
+First, I try to understand the symptom and collect evidence. Then I test possible causes instead of guessing too quickly. If the problem affects users, I'd focus on mitigation first, and after that I'd look for prevention so the same issue doesn't happen again.
 ```
 
 Retry task:
@@ -1216,7 +1330,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-The most difficult problems are the ones with unclear causes and stakeholder pressure. For example, in a system incident, the first symptom may appear in one place, but the real root cause may be somewhere else. That is why evidence and a clear timeline are important.
+The most difficult problems are the ones with unclear causes and stakeholder pressure. For example, in a system incident, the first symptom may appear in one place, but the real root cause may be somewhere else. That's why evidence and a clear timeline are important.
 ```
 
 Retry task:
@@ -1253,13 +1367,13 @@ Lesson: trade-offs should be explicit
 #### 2-minute Model Answer
 
 ```text
-A difficult decision I helped make was whether to ship a full payment-related feature or reduce the scope for the first release. It was difficult because the business wanted to move quickly, but the feature touched a critical user flow, so the release risk was not small.
+A difficult decision I helped make was whether to ship a full payment-related feature or reduce the scope for the first release. It was difficult because the business wanted to move quickly, but the feature touched a critical user flow, so the release risk wasn't small.
 
 We had three main options. The first option was to ship everything on the planned date. That protected the timeline, but it created more QA and rollback risk. The second option was to delay the whole release, which was safer technically but not ideal for the business. The third option was a compromise: ship the core flow first and move the optional behavior to the next sprint.
 
 To make the decision less emotional, we compared the options using clear criteria: user impact, QA effort, rollback risk, and timeline. In the end, the compromise made the most sense. It protected the main value of the release while keeping the riskiest part out of the first version.
 
-What I learned from that decision was that reducing scope does not always mean reducing value. Sometimes it means protecting the value that matters most. I also learned that a decision is easier to defend when the trade-off is explicit and the next step is clear.
+What I learned from that decision was that reducing scope doesn't always mean reducing value. Sometimes it means protecting the value that matters most. I also learned that a decision is easier to defend when the trade-off is explicit and the next step is clear.
 ```
 
 #### Stripped-down Answer Frame
@@ -1284,7 +1398,7 @@ rollback risk
 ship the core flow first
 move optional behavior
 decision criteria
-reducing scope does not always mean reducing value
+reducing scope doesn't always mean reducing value
 the trade-off is explicit
 ```
 
@@ -1332,7 +1446,7 @@ and timeline.
 
 What I learned from that decision
 was that reducing scope
-does not always mean reducing value.
+doesn't always mean reducing value.
 ```
 
 ### 5c. Part 3 - Discussion
@@ -1348,7 +1462,7 @@ General opinion -> reason -> example -> conclusion
 Model answer:
 
 ```text
-A decision becomes difficult when every option has a real cost. For example, one option may be faster but riskier, while another option may be safer but slower. In that situation, people need clear criteria instead of just arguing from personal preference. In work, I would compare options by user impact, timeline, risk, and long-term cost.
+A decision becomes difficult when every option has a real cost. For example, one option may be faster but riskier, while another option may be safer but slower. In that situation, people need clear criteria instead of just arguing from personal preference. In work, I'd compare options by user impact, timeline, risk, and long-term cost.
 ```
 
 Simpler version:
@@ -1374,7 +1488,7 @@ Balanced view -> acceptable risk -> bad risk -> example
 Model answer:
 
 ```text
-Yes, but the risk should be understood and manageable. Some risk is necessary because people cannot wait for perfect certainty before every decision. However, taking risk blindly is different. In software, a phased rollout is a good example of a manageable risk because the team can monitor results and roll back if something goes wrong.
+Yes, but the risk should be understood and manageable. Some risk is necessary because people can't wait for perfect certainty before every decision. However, taking risk blindly is different. In software, a phased rollout is a good example of a manageable risk because the team can monitor results and roll back if something goes wrong.
 ```
 
 Simpler version:
@@ -1406,7 +1520,7 @@ People sometimes fail to solve problems because they jump to conclusions too qui
 Simpler version:
 
 ```text
-People fail when they guess too quickly and do not check the real cause.
+People fail when they guess too quickly and don't check the real cause.
 ```
 
 Retry prompt:
@@ -1426,7 +1540,7 @@ Balanced answer -> immediate cost -> learning value -> condition
 Model answer:
 
 ```text
-Failure is not pleasant, and it can create real cost, especially if users or teammates are affected. But failure is not always useless. It can reveal weak assumptions, missing checks, or process gaps. The important condition is follow-through. If people only apologize but do not change anything, the failure is wasted. If they add prevention actions, it can improve the system.
+Failure isn't pleasant, and it can create real cost, especially if users or teammates are affected. But failure isn't always useless. It can reveal weak assumptions, missing checks, or process gaps. The important condition is follow-through. If people only apologize but don't change anything, the failure is wasted. If they add prevention actions, it can improve the system.
 ```
 
 Simpler version:
@@ -1596,4 +1710,3 @@ Natural enough for real conversation.
 Professional enough for an IT learner.
 Simple enough for self-study.
 ```
-

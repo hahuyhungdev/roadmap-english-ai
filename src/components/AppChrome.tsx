@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import LayoutNav from "@/components/LayoutNav";
 import AppSidebar from "@/components/AppSidebar";
 import NotePanel from "@/features/notes/NotePanel";
@@ -9,6 +10,8 @@ const SIDEBAR_COLLAPSED_KEY = "sidebar-collapsed";
 
 export default function AppChrome({ children }: { children: React.ReactNode }) {
   const [collapsed, setCollapsed] = useState(false);
+  const pathname = usePathname();
+  const isWideRoute = pathname === "/ielts";
 
   useEffect(() => {
     try {
@@ -58,7 +61,12 @@ export default function AppChrome({ children }: { children: React.ReactNode }) {
         <div className="lg:hidden">
           <LayoutNav />
         </div>
-        <main className="flex-1 w-full px-2 sm:px-6 py-2 max-w-[96rem] mx-auto">
+        <main
+          className={[
+            "flex-1 w-full px-2 py-2",
+            isWideRoute ? "max-w-none" : "sm:px-6 max-w-[96rem] mx-auto",
+          ].join(" ")}
+        >
           {children}
         </main>
       </div>

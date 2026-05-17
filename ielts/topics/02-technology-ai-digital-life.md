@@ -1,20 +1,11 @@
-# IELTS Speaking Lesson 02: Technology, AI & Digital Life
+# Lesson02: Technology, AI & Digital Life
 
-## Learner Profile
+## Source Alignment
 
-- **Mode:** self-study only, without a teacher
-- **Entry level:** IELTS Speaking band 5-6
-- **Target level:** IELTS Speaking band 6-7
-- **Main learner:** Vietnamese IT professional or software engineer
-- **Speaking style:** clear, natural, professional, not overly academic
-
-Source alignment:
-
-- `content/session-03.md`: Tech Stack and Trade-offs
-- `content/session-05.md`: AI Tools and the Changing Developer Role
-- `content/session-07.md`: Privacy-Aware Product Decisions & Algorithmic Influence
-- `content/session-09.md`: Scaling Systems Under Real Constraints
-- `ielts/topic-roadmap.md`: Topic 2 - Technology, AI & Digital Life
+- [Session 03: Tech Stack and Trade-offs](/phase/phase-1-tech-business/session/session-03)
+- [Session 05: AI Tools and the Changing Developer Role](/phase/phase-1-tech-business/session/session-05)
+- [Session 07: Privacy-Aware Product Decisions & Algorithmic Influence](/phase/phase-1-tech-business/session/session-07)
+- [Session 09: Scaling Systems Under Real Constraints](/phase/phase-2-analytical-thinking-in-it/session/session-09)
 
 ---
 
@@ -42,7 +33,7 @@ Choose the biggest problem after listening:
 
 - **Idea problem:** I only said technology is useful.
 - **Vocabulary problem:** I repeated use, good, important, modern.
-- **Grammar problem:** I could not explain cause, comparison, or contrast.
+- **Grammar problem:** I couldn't explain cause, comparison, or contrast.
 - **Pronunciation problem:** AI, privacy, automation, reliability were unclear.
 - **Fluency problem:** I paused before every example.
 
@@ -333,7 +324,7 @@ Better: This is an innovative tool. / This tool is an innovation.
 7. **verify AI output** - I always verify AI output before using it in real work.
 8. **treat it as a draft** - I treat AI output as a draft, not a final answer.
 9. **protect personal data** - Apps should protect personal data more clearly.
-10. **privacy boundary** - My privacy boundary is not to share private logs with external tools.
+10. **privacy boundary** - My privacy boundary is that I don't share private logs with external tools.
 11. **user trust** - Hidden tracking can damage user trust.
 12. **recommendation system** - A recommendation system should help users, not trap them.
 13. **screen time** - Too much screen time can affect sleep and focus.
@@ -416,7 +407,7 @@ Why: "Convenient" is the adjective.
 
 ```text
 Mistake: Privacy is not safe.
-Better: My personal data is not safe. / The app does not protect privacy well.
+Better: My personal data isn't safe. / The app doesn't protect privacy well.
 Why: Privacy is a concept; data or users can be safe.
 ```
 
@@ -433,13 +424,13 @@ Why: "Answer" is countable; add a stronger condition.
 3. **The risk is trusting output without checking it.**
 4. **Privacy boundaries matter when prompts include logs or user data.**
 5. **AI helps me reduce blank-page time.**
-6. **Engineering judgment decides what is safe to ship.**
+6. **Engineering judgment decides what's safe to ship.**
 7. **A recommendation system should include user control.**
 8. **Technology is useful when it solves a real workflow problem.**
 
 ---
 
-## Part 3 - Core Idea Bank
+## Part 3 - Core Idea Bank + Reading Shadowing Checkpoints
 
 ### Idea 1: Technology Is Part Of Daily Work
 
@@ -519,6 +510,47 @@ Useful language:
 automate repetitive tasks / reduce manual work / higher-value thinking
 ```
 
+### Reading Shadowing Checkpoint A: Daily Tools, AI, And Saving Time
+
+#### Mini Reading
+
+```text
+Technology isn't separate from my daily work anymore. I rely heavily on digital tools like my laptop, GitHub, Slack, documentation sites, and cloud dashboards. AI tools are useful too, but I don't treat them as a final answer. I use them for first drafts, examples, summaries, or debugging ideas, and then I verify the output myself.
+
+For me, technology saves time when the task is clear. If something is repetitive, automation can reduce manual work and give me more time for higher-value thinking. But if the task is unclear, a tool can also give a fast but wrong answer. That's why the real skill isn't only using technology. It's knowing when to trust it, when to check it, and when to slow down.
+```
+
+#### Comprehension
+
+1. What digital tools does the speaker rely on?
+2. Why doesn't the speaker treat AI as a final answer?
+3. When does technology save the most time?
+
+#### Find The Language
+
+1. Find a phrase that means "depend on digital tools a lot".
+2. Find a phrase that means "check AI output carefully".
+3. Find a phrase that means "work that creates more value".
+
+#### Shadowing Script
+
+```text
+Technology isn't separate from my daily work.
+I rely heavily on digital tools.
+AI is useful, but I don't treat it as final.
+I still verify the output myself.
+Technology saves time when the task is clear.
+The real skill is knowing when to trust it.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+rely heavily on / verify AI output / reduce manual work / higher-value thinking / digital tools
+```
+
 ### Idea 4: Digital Life Can Be Distracting
 
 Simple version:
@@ -556,7 +588,7 @@ Apps should protect user data.
 Better spoken version:
 
 ```text
-Privacy is not only a legal topic. It is also part of product quality because users lose trust when they feel tracked or surprised by data collection.
+Privacy isn't only a legal topic. It's also part of product quality because users lose trust when they feel tracked or surprised by data collection.
 ```
 
 IT/professional example:
@@ -597,6 +629,47 @@ Useful language:
 keep updating skills / engineering judgment / own the final decision
 ```
 
+### Reading Shadowing Checkpoint B: Distraction, Privacy, And Career Skills
+
+#### Mini Reading
+
+```text
+Digital life is convenient, but it can also be distracting. Notifications, personalized feeds, and constant messages can break deep work very quickly. When I need to debug or design a solution, I sometimes turn off notifications so I can protect my focus.
+
+Privacy is another issue I take seriously. It isn't only a legal topic; it's part of product quality. If users feel tracked or surprised by data collection, they'll lose trust. That's why I avoid sharing private logs, secrets, customer data, or sensitive business context with AI tools. Technology also changes career skills. Repetitive tasks may become easier, but judgment, review, communication, and system understanding become more important.
+```
+
+#### Comprehension
+
+1. Why can digital life hurt deep work?
+2. Why is privacy part of product quality?
+3. What skills become more important when technology changes work?
+
+#### Find The Language
+
+1. Find a phrase that means "feeds chosen by algorithms".
+2. Find a phrase that means "a limit around personal or work data".
+3. Find a phrase that means "the engineer must make the final call".
+
+#### Shadowing Script
+
+```text
+Digital life is convenient, but it's distracting.
+Notifications can break deep work.
+Privacy isn't only a legal topic.
+It's part of product quality.
+Users lose trust when data use feels unclear.
+AI makes judgment more important, not less important.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+digital distraction / deep work / privacy boundary / user trust / engineering judgment
+```
+
 ### Idea 7: Technology Should Be Balanced With Human Control
 
 Simple version:
@@ -608,7 +681,7 @@ People should control technology, not depend on it too much.
 Better spoken version:
 
 ```text
-I do not think technology itself is the problem. The problem starts when people rely on it without boundaries, verification, or personal control.
+I don't think technology itself is the problem. The problem starts when people rely on it without boundaries, verification, or personal control.
 ```
 
 IT/professional example:
@@ -640,13 +713,54 @@ I think the future of work will be more AI-assisted, but not fully automated. Pe
 IT/professional example:
 
 ```text
-For engineers, the skill is not only using AI, but knowing how to ask better questions, verify answers, and apply them to real systems.
+For engineers, the skill isn't only using AI, but knowing how to ask better questions, verify answers, and apply them to real systems.
 ```
 
 Useful language:
 
 ```text
 AI-assisted work / combine tools with judgment / real systems
+```
+
+### Reading Shadowing Checkpoint C: Human Control And The AI-assisted Future
+
+#### Mini Reading
+
+```text
+I don't think technology itself is the problem. The problem starts when people rely on it without boundaries, verification, or personal control. A useful product should give people meaningful choices. For example, users should be able to reset a feed, hide content, or turn off some personalization.
+
+In the future, work is gonna become more AI-assisted, but I don't think it'll be fully automated. People who can combine tools with judgment will have an advantage. For engineers, the skill isn't only using AI. It's asking better questions, checking the answer, and applying it to a real system responsibly.
+```
+
+#### Comprehension
+
+1. When does technology become a problem?
+2. What choices should a good product give users?
+3. What skill will matter in an AI-assisted future?
+
+#### Find The Language
+
+1. Find a phrase that means "real control over the tool".
+2. Find a phrase that means "work supported by AI".
+3. Find a phrase that means "use tools and judgment together".
+
+#### Shadowing Script
+
+```text
+Technology itself isn't the problem.
+The problem is using it without boundaries.
+A useful product should give people control.
+The future is gonna be more AI-assisted.
+People still need judgment.
+Engineers need to verify and apply answers responsibly.
+```
+
+#### Spoken Retell
+
+Retell the reading in 45-60 seconds using:
+
+```text
+personal control / meaningful choice / AI-assisted work / combine tools with judgment / real systems
 ```
 
 ---
@@ -718,7 +832,7 @@ Task:
 Use this pattern to answer: Do people rely on technology too much?
 ```
 
-#### Pattern 4: I would not say X is perfect, but...
+#### Pattern 4: I'd not say X is perfect, but...
 
 Function:
 
@@ -729,8 +843,8 @@ Give a balanced opinion.
 Examples:
 
 ```text
-I would not say AI is perfect, but it is useful when the task is clear.
-I would not say social media is always harmful, but it can become distracting.
+I'd not say AI is perfect, but it's useful when the task is clear.
+I'd not say social media is always harmful, but it can become distracting.
 ```
 
 Task:
@@ -794,7 +908,7 @@ Upgrade:
 
 ```text
 Basic: People use phone too much.
-Better: People tend to use their phones too much, especially when they are bored.
+Better: People tend to use their phones too much, especially when they're bored.
 ```
 
 Drill:
@@ -829,7 +943,7 @@ Too many notifications can lead to distraction and stress.
 IT example:
 
 ```text
-AI tools can reduce blank-page time, but they can also lead to quality risk if output is not reviewed.
+AI tools can reduce blank-page time, but they can also lead to quality risk if output isn't reviewed.
 ```
 
 Upgrade:
@@ -898,14 +1012,14 @@ Formula:
 
 ```text
 I use an app that...
-It is a tool that allows me to...
+It's a tool that allows me to...
 ```
 
 Examples:
 
 ```text
 I use an app that helps me manage tasks.
-It is a tool that allows people to communicate remotely.
+It's a tool that allows people to communicate remotely.
 ```
 
 IT example:
@@ -938,14 +1052,14 @@ Talk about imagined situations.
 Formula:
 
 ```text
-If I did not have X, I would...
+If I didn't have X, I'd...
 If companies used X more carefully, they could...
 ```
 
 Examples:
 
 ```text
-If I did not have my laptop, I would find it hard to work remotely.
+If I didn't have my laptop, I'd find it hard to work remotely.
 If people set better boundaries, they could use technology more healthily.
 ```
 
@@ -958,14 +1072,14 @@ If teams used AI without review, they would probably create more hidden bugs.
 Upgrade:
 
 ```text
-Basic: Without internet, I cannot work.
-Better: If I did not have the internet, I would find it almost impossible to work effectively.
+Basic: Without internet, I can't work.
+Better: If I didn't have the internet, I'd find it almost impossible to work effectively.
 ```
 
 Drill:
 
 ```text
-Use "If I did not have..." to talk about a technology you need.
+Use "If I didn't have..." to talk about a technology you need.
 ```
 
 ### 4c. Answer Patterns
@@ -979,7 +1093,7 @@ Direct answer -> specific tool -> daily example -> small contrast
 Part 2:
 
 ```text
-What it is -> how you use it -> why it helps -> one risk -> final opinion
+What it's -> how you use it -> why it helps -> one risk -> final opinion
 ```
 
 Part 3:
@@ -1057,9 +1171,9 @@ As a developer, I use AI to draft tests or explore solutions, but I still verify
 ```text
 What I mean is...
 Let me give a simple example.
-I cannot think of the exact term, but it is related to...
+I can't think of the exact term, but it's related to...
 Let me put it another way.
-The safer way to say it is...
+The safer way to say it's...
 ```
 
 ---
@@ -1073,7 +1187,7 @@ The safer way to say it is...
 Band 5.5 answer:
 
 ```text
-I use my phone and laptop every day. They are useful for work and life.
+I use my phone and laptop every day. They're useful for work and life.
 ```
 
 Upgrade notes:
@@ -1151,7 +1265,7 @@ Answer again using "Compared to the past" and "keep updating my skills".
 Band 5.5 answer:
 
 ```text
-Yes, many people use phones too much. It is not good.
+Yes, many people use phones too much. It's not good.
 ```
 
 Upgrade notes:
@@ -1163,7 +1277,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-Yes, I think people tend to rely on technology too much, especially phones and social media. It is convenient, but constant notifications and personalized feeds can make people distracted. I would not blame technology completely, though; personal boundaries matter as well.
+Yes, I think people tend to rely on technology too much, especially phones and social media. It's convenient, but constant notifications and personalized feeds can make people distracted. I'd not blame technology completely, though; personal boundaries matter as well.
 ```
 
 Retry task:
@@ -1189,7 +1303,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-Yes, online learning is very useful because it gives people more flexibility. I can study at my own pace, review materials, and learn from different sources. Having said that, it requires discipline because there is no teacher pushing me every day.
+Yes, online learning is very useful because it gives people more flexibility. I can study at my own pace, review materials, and learn from different sources. Having said that, it requires discipline because there's no teacher pushing me every day.
 ```
 
 Retry task:
@@ -1215,7 +1329,7 @@ Upgrade notes:
 Band 6.5-7 answer:
 
 ```text
-Yes, I am a bit concerned because many apps collect personal data in ways users do not fully understand. For example, if an app tracks too much behavior without clear explanation, it can damage user trust. So I think products should explain data use in simple language.
+Yes, I'm a bit concerned because many apps collect personal data in ways users don't fully understand. For example, if an app tracks too much behavior without clear explanation, it can damage user trust. So I think products should explain data use in simple language.
 ```
 
 Retry task:
@@ -1232,7 +1346,7 @@ Cue card:
 Describe a piece of technology or digital tool you find useful.
 
 You should say:
-- what it is
+- what it's
 - how often you use it
 - what you use it for
 - and explain why you find it useful
@@ -1256,11 +1370,11 @@ A piece of technology I find very useful is my laptop, especially when I combine
 
 For work, my laptop is basically the center of my workflow. I use it to write code, check documentation, join online meetings, manage tasks, and communicate with my team. Recently, AI tools have also become part of that workflow. I use them to draft ideas, summarize information, and explore possible solutions when I get stuck.
 
-What I find useful is not just the speed, but the way technology helps me start from something concrete. For example, if I need to write a test case or understand a library option, AI can reduce blank-page time. However, I do not treat the output as final. I still need to verify it with local code, tests, or official documentation.
+What I find useful isn't just the speed, but the way technology helps me start from something concrete. For example, if I need to write a test case or understand a library option, AI can reduce blank-page time. However, I don't treat the output as final. I still need to verify it with local code, tests, or official documentation.
 
-There are some downsides as well. Technology can be distracting, and AI can create false confidence if the answer sounds correct but is actually wrong. So I think the key is to use technology with boundaries and judgment.
+There're some downsides as well. Technology can be distracting, and AI can create false confidence if the answer sounds correct but is actually wrong. So I think the key is to use technology with boundaries and judgment.
 
-Overall, I would say my laptop and digital tools make my work more flexible and efficient. They do not replace thinking, but they support it when I use them carefully.
+Overall, I'd say my laptop and digital tools make my work more flexible and efficient. They don't replace thinking, but they support it when I use them carefully.
 ```
 
 #### Stripped-down Answer Frame
@@ -1321,12 +1435,12 @@ and explore possible solutions
 when I get stuck.
 
 What I find useful
-is not just the speed,
+isn't just the speed,
 but the way technology helps me
 start from something concrete.
 
 However,
-I do not treat the output as final.
+I don't treat the output as final.
 
 I still need to verify it
 with local code,
@@ -1334,7 +1448,7 @@ tests,
 or official documentation.
 
 Overall,
-these tools do not replace thinking,
+these tools don't replace thinking,
 but they support it
 when I use them carefully.
 ```
@@ -1378,7 +1492,7 @@ General risk -> example -> effect -> balanced ending
 Model answer:
 
 ```text
-The biggest disadvantage is overdependence. If people rely on technology for every small task, they may lose patience, focus, or basic problem-solving skills. For example, constant notifications can make it hard to do deep work, and AI tools can make people accept answers without thinking. Having said that, the problem is not technology itself. The real issue is using it without boundaries.
+The biggest disadvantage is overdependence. If people rely on technology for every small task, they may lose patience, focus, or basic problem-solving skills. For example, constant notifications can make it hard to do deep work, and AI tools can make people accept answers without thinking. Having said that, the problem isn't technology itself. The real issue is using it without boundaries.
 ```
 
 Simpler version:
@@ -1404,13 +1518,13 @@ Conditional answer -> useful data -> privacy risk -> fair rule
 Model answer:
 
 ```text
-I think companies can collect user data if the data clearly supports the product experience. For example, a map app needs location data to give directions. But companies should not collect unnecessary personal data just because it may be useful later. A fair rule is data minimization: collect only what is needed, explain it clearly, and give users real control.
+I think companies can collect user data if the data clearly supports the product experience. For example, a map app needs location data to give directions. But companies shouldn't collect unnecessary personal data just because it may be useful later. A fair rule is data minimization: collect only what's needed, explain it clearly, and give users real control.
 ```
 
 Simpler version:
 
 ```text
-Companies can collect data when it is necessary for the feature, but they should explain it and avoid collecting too much.
+Companies can collect data when it's necessary for the feature, but they should explain it and avoid collecting too much.
 ```
 
 Retry prompt:
@@ -1430,7 +1544,7 @@ Positive change -> example -> limitation -> conclusion
 Model answer:
 
 ```text
-Technology has made education more flexible and accessible. People can learn from online courses, videos, AI tutors, and digital communities without being in a traditional classroom. This is especially useful for self-study learners. The limitation is that online learning requires discipline, because there is no teacher watching your progress every day. So technology gives access, but learners still need a system.
+Technology has made education more flexible and accessible. People can learn from online courses, videos, AI tutors, and digital communities without being in a traditional classroom. This is especially useful for self-study learners. The limitation is that online learning requires discipline, because there's no teacher watching your progress every day. So technology gives access, but learners still need a system.
 ```
 
 Simpler version:
@@ -1600,4 +1714,3 @@ Natural enough for real conversation.
 Professional enough for an IT learner.
 Simple enough for self-study.
 ```
-

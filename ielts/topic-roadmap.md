@@ -295,7 +295,7 @@ Each IELTS topic module should use the structure from `structure.md`:
 ```text
 1. Topic Activation
 2. Vocabulary In Context
-3. Core Idea Bank
+3. Core Idea Bank + Reading Shadowing Checkpoints
 4. Speaking Patterns, Grammar & Expression Tips
 5. Guided Speaking Practice
 6. Shadowing, Retry & Self-Review
@@ -303,7 +303,9 @@ Each IELTS topic module should use the structure from `structure.md`:
 
 Each topic should reuse existing phase lessons as source material, but should rewrite that material into IELTS Speaking practice.
 
-For authoring, design the core ideas first, then build vocabulary from those ideas. For learners, show vocabulary before the idea bank so they have chunks and collocations ready before reading and speaking the ideas.
+For authoring, design the core ideas first, then build vocabulary from those ideas. For learners, show vocabulary before the idea bank so they have chunks and collocations ready. Inside the Core Idea Bank, include 2-3 reading-shadowing checkpoints before the section ends, so learners meet the same language again and train their mouth before doing full IELTS Speaking answers.
+
+For learner-facing spoken material, use natural contractions by default, especially in mini readings, shadowing scripts, model answers, and spoken retells: `I'm`, `you're`, `it's`, `there's`, `there're`, `don't`, `doesn't`, `can't`, `shouldn't`, `wouldn't`, `I'd`, `I'll`. Use `wanna/gonna` when the sentence is clearly spoken and personal, but do not force them into grammar formulas or mistake-correction labels.
 
 Do not make answers too academic. The final speaking style should be:
 
