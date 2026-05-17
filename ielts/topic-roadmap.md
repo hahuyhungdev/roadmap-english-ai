@@ -246,6 +246,112 @@ This is common in IELTS Part 1. Treat it as a light practical topic, not a deep 
 
 ---
 
+### 13. Hobbies, Free Time & Entertainment
+
+Use for:
+
+- IELTS: hobbies, free time, weekends, movies, music, games, reading, sports, relaxation
+- real conversation: how people rest, recharge, enjoy life, and balance work with personal interests
+
+Related phase lessons:
+
+- Session 16: Habits, Comfort Zones & Why Change Is Hard
+- Session 17: Self-Care, Discipline & Modern Health Culture
+
+Why it matters:
+
+This is a high-frequency IELTS Part 1 topic and an easy place to sound natural. It helps the learner talk about personal interests without sounding childish or too simple.
+
+---
+
+### 14. Media, News & Advertising
+
+Use for:
+
+- IELTS: news, advertising, social media, online content, influencers, short videos
+- IT/business: recommendation systems, attention, misinformation, user behavior, platform design
+
+Related phase lessons:
+
+- Session 05: AI Tools and the Changing Developer Role
+- Session 07: Privacy-Aware Product Decisions & Algorithmic Influence
+
+Why it matters:
+
+This topic connects common IELTS questions with modern digital life. It is useful for Part 3 questions about trust, attention, influence, and how people consume information.
+
+---
+
+### 15. Objects, Gifts & Personal Possessions
+
+Use for:
+
+- IELTS: gifts, useful objects, things people buy, expensive items, lost items, meaningful possessions
+- real conversation: personal value, practicality, memory, quality, spending decisions
+
+Related phase lessons:
+
+- Session 18: Success, Money & Choosing Your Own Path
+
+Why it matters:
+
+IELTS Part 2 often asks learners to describe an object, gift, or possession. This topic gives practical language for describing things without overusing `good`, `beautiful`, or `important`.
+
+---
+
+### 16. Culture, Festivals & Traditions
+
+Use for:
+
+- IELTS: festivals, public holidays, traditions, culture, national identity, changes between generations
+- real conversation: family customs, Tet, local celebrations, respect for tradition, modern lifestyle
+
+Related phase lessons:
+
+- Session 15: Family Dynamics & Generational Differences
+
+Why it matters:
+
+This topic gives the learner easy personal examples from Vietnamese culture and supports Part 3 questions about whether traditions should change or be preserved.
+
+---
+
+### 17. Weather, Nature & Outdoor Activities
+
+Use for:
+
+- IELTS: weather, seasons, parks, nature, outdoor activities, beaches, mountains, green spaces
+- real conversation: mood, lifestyle, city life, relaxation, health, environment
+
+Related phase lessons:
+
+- Session 17: Self-Care, Discipline & Modern Health Culture
+
+Why it matters:
+
+This topic is common in IELTS Part 1 and helps learners handle everyday questions naturally. It can stay lighter than Society, Ethics & Environment.
+
+---
+
+### 18. Childhood, Memories & Personal Stories
+
+Use for:
+
+- IELTS: childhood memories, school memories, old friends, teachers, places from the past, life changes
+- real conversation: personal growth, family background, nostalgia, lessons learned
+
+Related phase lessons:
+
+- Session 13: Friendship in Adulthood - Why It Gets Harder
+- Session 15: Family Dynamics & Generational Differences
+- Session 16: Habits, Comfort Zones & Why Change Is Hard
+
+Why it matters:
+
+IELTS Part 2 often asks for personal stories. This topic helps the learner tell past experiences with clearer time markers, emotions, and lessons learned.
+
+---
+
 ## Priority Order
 
 Recommended learning order:
@@ -263,6 +369,12 @@ Recommended learning order:
 10. Society, Ethics & Environment
 11. Hometown, Places & Travel
 12. Food, Shopping & Daily Consumption
+13. Hobbies, Free Time & Entertainment
+14. Media, News & Advertising
+15. Objects, Gifts & Personal Possessions
+16. Culture, Festivals & Traditions
+17. Weather, Nature & Outdoor Activities
+18. Childhood, Memories & Personal Stories
 ```
 
 Tier 1:
@@ -285,6 +397,15 @@ Tier 3:
 
 - Hometown, Places & Travel
 - Food, Shopping & Daily Consumption
+- Hobbies, Free Time & Entertainment
+- Childhood, Memories & Personal Stories
+
+Tier 4:
+
+- Media, News & Advertising
+- Objects, Gifts & Personal Possessions
+- Culture, Festivals & Traditions
+- Weather, Nature & Outdoor Activities
 
 ---
 
