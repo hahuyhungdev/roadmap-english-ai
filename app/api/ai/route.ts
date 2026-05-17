@@ -2,8 +2,75 @@ import { NextRequest, NextResponse } from "next/server";
 
 type ChatRole = "system" | "user" | "assistant";
 type ChatMessage = { role: ChatRole; content: string };
+type ContextType = "lesson" | "phase" | "ielts";
+type AssistantMode = "practice" | "idea" | "vocab" | "sentence" | "concise";
 
 const DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions";
+
+function normalizeContextType(value: unknown): ContextType {
+  if (value === "phase" || value === "ielts") return value;
+  return "lesson";
+}
+
+function normalizeMode(value: unknown): AssistantMode {
+  if (
+    value === "practice" ||
+    value === "idea" ||
+    value === "vocab" ||
+    value === "sentence" ||
+    value === "concise"
+  ) {
+    return value;
+  }
+
+  return "practice";
+}
+
+function contextLabelFor(contextType: ContextType): string {
+  if (contextType === "phase") return "Phase";
+  if (contextType === "ielts") return "IELTS lesson";
+  return "Lesson";
+}
+
+function systemPromptFor(mode: AssistantMode, contextType: ContextType): string {
+  const contextLabel = contextLabelFor(contextType);
+  const base =
+    `You are an English ${contextLabel.toLowerCase()} assistant for a Vietnamese IT professional preparing for IELTS Speaking band 6-7. ` +
+    "Use natural professional spoken English, not essay-style academic writing. Keep answers practical, concise, and self-study friendly. " +
+    "When giving learner-facing sample answers, prefer natural contractions like I'm, it's, don't, I'd, and I'll.";
+
+  const prompts: Record<AssistantMode, string> = {
+    practice:
+      `${base} Create active speaking practice. Give IELTS-style questions, short answer frames, retry tasks, and quick feedback. ` +
+      "Push the learner to speak, record, review, and retry instead of only reading.",
+    idea:
+      `${base} Help the learner expand weak ideas into complete IELTS Speaking answers. Use simple idea -> better spoken idea -> useful chunks -> answer frame. ` +
+      "For Part 1, keep answers short. For Part 2, build a story frame. For Part 3, give balanced opinions with reasons and examples.",
+    vocab:
+      `${base} Act as a vocabulary coach. Focus on reusable chunks, collocations, word families, common Vietnamese learner mistakes, and IT/professional examples. ` +
+      "Avoid long word lists. Teach 5-10 usable items at a time with meaning, pattern, natural sentence, IT/pro sentence when relevant, and a micro drill.",
+    sentence:
+      `${base} Act as a sentence upgrade coach. Correct grammar, make sentences more natural for speaking, and keep the learner's original meaning. ` +
+      "Show: original sentence, corrected sentence, better spoken version, why it works, and one short shadowing line or retry drill.",
+    concise:
+      `${base} Give short, focused answers under 2-3 sentences when possible. Avoid extra examples unless requested.`,
+  };
+
+  let prompt = prompts[mode];
+
+  if (contextType === "phase") {
+    prompt +=
+      " Use the phase overview to connect lessons, suggest study order, compare session topics, and create phase-level speaking practice.";
+  }
+
+  if (contextType === "ielts") {
+    prompt +=
+      " Use the IELTS lesson structure: Topic Activation, Vocabulary In Context, Core Idea Bank, Speaking Patterns, Guided Speaking Practice, and Shadowing/Retry. " +
+      "Help the learner reuse lesson chunks in spoken answers and avoid memorizing full scripts.";
+  }
+
+  return prompt;
+}
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.DEEPSEEK_API_KEY;
@@ -27,8 +94,8 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const contextType = body.contextType === "phase" ? "phase" : "lesson";
-  const contextLabel = contextType === "phase" ? "Phase" : "Lesson";
+  const contextType = normalizeContextType(body.contextType);
+  const contextLabel = contextLabelFor(contextType);
   const rawContextTitle = body.contextTitle ?? body.lessonTitle;
   const rawContextContent = body.contextContent ?? body.lessonContent;
   const contextTitle =
@@ -45,24 +112,8 @@ export async function POST(req: NextRequest) {
     .filter(Boolean)
     .join("\n\n");
 
-  const mode = body.mode || "practice";
-
-  let systemPrompt =
-    `You are an English ${contextLabel.toLowerCase()} assistant. Keep answers concise, practical, and learner-friendly. ` +
-    "When useful, provide: 1) simple explanation, 2) speaking examples, 3) short practice task.";
-
-  if (mode === "idea") {
-    systemPrompt =
-      `You are an idea generator for answering questions about this ${contextType}. Provide structured frameworks, patterns, and example answer outlines that help the learner produce complete responses. Focus on creative approaches, templates, and sample phrasing.`;
-  } else if (mode === "concise") {
-    systemPrompt =
-      `You are an English ${contextLabel.toLowerCase()} assistant that gives short, concise, and focused answers. Keep responses under 2-3 sentences when possible and avoid extra examples unless requested.`;
-  }
-
-  if (contextType === "phase") {
-    systemPrompt +=
-      " Use the phase overview to connect lessons, suggest study order, compare session topics, and create phase-level speaking practice.";
-  }
+  const mode = normalizeMode(body.mode);
+  const systemPrompt = systemPromptFor(mode, contextType);
 
   try {
     const upstream = await fetch(DEEPSEEK_API_URL, {

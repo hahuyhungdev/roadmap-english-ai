@@ -21,28 +21,71 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { AiChatMessage } from "@/types/ai";
 
+type AssistantContextType = "lesson" | "phase" | "ielts";
+type AssistantMode = "practice" | "idea" | "vocab" | "sentence" | "concise";
+
 interface LessonAssistantProps {
   lessonTitle?: string;
   lessonContent?: string;
   contextTitle?: string;
   contextContent?: string;
-  contextType?: "lesson" | "phase";
+  contextType?: AssistantContextType;
   desktopPresentation?: "sidebar" | "floating";
   openFloatingAsSidebar?: boolean;
   onCollapseSidebar?: () => void;
   onRestoreSidebar?: () => void;
 }
 
-const MODE_LABELS: Record<string, string> = {
-  practice: "Practice",
+const ASSISTANT_MODES: AssistantMode[] = [
+  "vocab",
+  "idea",
+  "sentence",
+  "practice",
+  "concise",
+];
+
+const MODE_LABELS: Record<AssistantMode, string> = {
+  vocab: "Vocab",
   idea: "Ideas",
+  sentence: "Sentences",
+  practice: "Practice",
   concise: "Concise",
 };
 
-const PLACEHOLDER: Record<string, string> = {
-  practice: "Ask a practice question…",
+const PLACEHOLDER: Record<AssistantMode, string> = {
+  vocab: "Ask for chunks, collocations, or drills…",
   idea: "Brainstorm ideas…",
-  concise: "Quick question…",
+  sentence: "Paste a sentence to upgrade…",
+  practice: "Ask for IELTS speaking practice…",
+  concise: "Ask a quick question…",
+};
+
+const EMPTY_STATE_HINTS: Record<AssistantMode, string[]> = {
+  vocab: [
+    "Quiz me on chunks",
+    "Give 10 useful chunks",
+    "Explain this phrase",
+  ],
+  idea: [
+    "Expand this idea",
+    "Give Part 3 angles",
+    "Build a story frame",
+  ],
+  sentence: [
+    "Upgrade my sentence",
+    "Correct my grammar",
+    "Make it natural",
+  ],
+  practice: [
+    "Ask Part 1 questions",
+    "Give a cue card",
+    "Run a retry drill",
+  ],
+  concise: [
+    "Explain this",
+    "Give examples",
+    "Summarize",
+  ],
 };
 
 export default function LessonAssistant({
@@ -58,15 +101,26 @@ export default function LessonAssistant({
 }: LessonAssistantProps) {
   const title = contextTitle ?? lessonTitle ?? "";
   const content = contextContent ?? lessonContent ?? "";
-  const contextLabel = contextType === "phase" ? "phase" : "lesson";
+  const contextLabel =
+    contextType === "phase"
+      ? "phase"
+      : contextType === "ielts"
+        ? "IELTS lesson"
+        : "lesson";
   const assistantTitle =
-    contextType === "phase" ? "AI Phase Assistant" : "AI Lesson Assistant";
+    contextType === "phase"
+      ? "AI Phase Assistant"
+      : contextType === "ielts"
+        ? "AI IELTS Assistant"
+        : "AI Lesson Assistant";
   const [messages, setMessages] = useState<AiChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [mode, setMode] = useState<"practice" | "idea" | "concise">("concise");
+  const [mode, setMode] = useState<AssistantMode>(
+    contextType === "ielts" ? "vocab" : "concise",
+  );
   const MODE_KEY = "ai_lesson_mode";
   const bottomRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
@@ -79,7 +133,13 @@ export default function LessonAssistant({
   useEffect(() => {
     try {
       const saved = localStorage.getItem(MODE_KEY);
-      if (saved === "practice" || saved === "idea" || saved === "concise") {
+      if (
+        saved === "practice" ||
+        saved === "idea" ||
+        saved === "vocab" ||
+        saved === "sentence" ||
+        saved === "concise"
+      ) {
         setMode(saved);
       }
     } catch {
@@ -349,14 +409,14 @@ export default function LessonAssistant({
         {/* Mode selector */}
         <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-gray-100 bg-gray-50/60 shrink-0">
           <Zap size={11} className="text-indigo-500 shrink-0" />
-          <div className="flex gap-1 flex-1">
-            {(["practice", "idea", "concise"] as const).map((m) => (
+          <div className="flex gap-1 flex-1 overflow-x-auto scrollbar-hide">
+            {ASSISTANT_MODES.map((m) => (
               <button
                 key={m}
                 onClick={() => {
                   setMode(m);
                 }}
-                className={`flex-1 text-base px-2 py-1.5 rounded-lg font-medium transition-all ${
+                className={`shrink-0 text-base px-2 py-1.5 rounded-lg font-medium transition-all ${
                   mode === m
                     ? "bg-indigo-600 text-white shadow-sm"
                     : "text-gray-500 border border-gray-200 hover:border-indigo-200 hover:text-indigo-600"
@@ -376,11 +436,11 @@ export default function LessonAssistant({
                 <Sparkles size={16} className="text-indigo-500" />
               </div>
               <p className="text-base text-gray-500 leading-relaxed max-w-56">
-                Ask anything about this {contextLabel} — summary, examples,
-                corrections, or a quick quiz.
+                Ask anything about this {contextLabel}: vocab chunks, expanded
+                ideas, sentence upgrades, or speaking practice.
               </p>
               <div className="flex flex-wrap gap-1 justify-center mt-1">
-                {["Explain this", "Give examples", "Quiz me"].map((hint) => (
+                {EMPTY_STATE_HINTS[mode].map((hint) => (
                   <button
                     key={hint}
                     onClick={() => {
