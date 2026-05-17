@@ -336,36 +336,8 @@
     border-color: var(--ielts-accent);
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--ielts-accent) 18%, transparent);
   }
-  .ielts-tab-active,
-  .ielts-doc-active {
-    background-color: var(--ielts-accent-soft);
-    border-color: var(--ielts-accent-border);
-    color: var(--ielts-text);
-  }
-  .ielts-icon-active {
-    background-color: var(--ielts-surface);
-    border-color: var(--ielts-accent-border);
-    color: var(--ielts-text);
-  }
-  .ielts-badge-lesson {
-    background-color: var(--ielts-lesson-bg);
-    border-color: var(--ielts-lesson-border);
-    color: var(--ielts-lesson-fg);
-  }
-  .ielts-badge-roadmap {
-    background-color: var(--ielts-roadmap-bg);
-    border-color: var(--ielts-roadmap-border);
-    color: var(--ielts-roadmap-fg);
-  }
-  .ielts-badge-structure {
-    background-color: var(--ielts-structure-bg);
-    border-color: var(--ielts-structure-border);
-    color: var(--ielts-structure-fg);
-  }
-  .ielts-badge-reference {
-    background-color: var(--ielts-reference-bg);
-    border-color: var(--ielts-reference-border);
-    color: var(--ielts-reference-fg);
+  .ielts-secondary {
+    color: var(--ielts-muted);
   }
   .ielts-prose {
     --tw-prose-body: var(--ielts-text-soft);
@@ -441,6 +413,20 @@
   }
   .ielts-toc-link-active {
     background-color: var(--ielts-accent-soft);
+    color: var(--ielts-text);
+  }
+  .ielts-toc-trigger {
+    background-color: var(--ielts-surface);
+    border-color: var(--ielts-border);
+    color: var(--ielts-text);
+  }
+  .ielts-toc-icon-button {
+    color: var(--ielts-muted);
+  }
+  .ielts-toc-trigger:hover,
+  .ielts-toc-icon-button:hover,
+  .ielts-toc-trigger[aria-expanded="true"] {
+    background-color: var(--ielts-surface-muted);
     color: var(--ielts-text);
   }
 

@@ -1,13 +1,24 @@
 "use client";
 
-import type { RefObject } from "react";
-import ReactMarkdown from "react-markdown";
+import { useMemo } from "react";
+import type { ReactNode, RefObject } from "react";
+import ReactMarkdown, { type Components } from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import {
-  createHeadingIdGenerator,
+  extractHeadingAnchors,
+  headingId,
   plainText,
 } from "@/features/ielts/utils/markdown";
+import type { TocItem } from "@/features/ielts/types";
+
+type MarkdownHeadingNode = {
+  position?: {
+    start?: {
+      line?: number;
+    };
+  };
+};
 
 export function IeltsMarkdownArticle({
   articleRef,
@@ -16,13 +27,49 @@ export function IeltsMarkdownArticle({
   articleRef: RefObject<HTMLElement | null>;
   content: string;
 }) {
-  const getHeadingId = createHeadingIdGenerator();
+  const headingIdsByLine = useMemo(() => {
+    const ids = new Map<number, string>();
+
+    for (const anchor of extractHeadingAnchors(content)) {
+      ids.set(anchor.line, anchor.id);
+    }
+
+    return ids;
+  }, [content]);
+
+  const getHeadingId = (
+    node: MarkdownHeadingNode | undefined,
+    children: ReactNode,
+    level: TocItem["level"],
+  ) => {
+    const line = node?.position?.start?.line;
+    return line
+      ? (headingIdsByLine.get(line) ?? headingId(plainText(children), level))
+      : headingId(plainText(children), level);
+  };
+
+  const components: Components = {
+    h2: ({ children, node }) => (
+      <h2 id={getHeadingId(node, children, 2)}>{children}</h2>
+    ),
+    h3: ({ children, node }) => (
+      <h3 id={getHeadingId(node, children, 3)}>{children}</h3>
+    ),
+    h4: ({ children, node }) => (
+      <h4 id={getHeadingId(node, children, 4)}>{children}</h4>
+    ),
+    a: ({ href, children }) => (
+      <a href={href} target="_blank" rel="noreferrer">
+        {children}
+      </a>
+    ),
+  };
 
   return (
     <article
       ref={articleRef}
       className={[
-        "lesson-prose ielts-prose prose prose-gray max-w-none p-4 md:p-6 xl:min-h-0 xl:overflow-y-auto",
+        "lesson-prose ielts-prose prose prose-gray max-w-none p-4 md:p-6 xl:h-full xl:min-h-0 xl:flex-1 xl:overflow-y-auto",
         "text-[16px] md:text-[17px] leading-7",
         "prose-p:leading-7",
         "prose-headings:font-semibold prose-headings:scroll-mt-4",
@@ -39,25 +86,7 @@ export function IeltsMarkdownArticle({
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeRaw]}
-        components={{
-          h2: ({ children }) => {
-            const text = plainText(children);
-            return <h2 id={getHeadingId(text, 2)}>{children}</h2>;
-          },
-          h3: ({ children }) => {
-            const text = plainText(children);
-            return <h3 id={getHeadingId(text, 3)}>{children}</h3>;
-          },
-          h4: ({ children }) => {
-            const text = plainText(children);
-            return <h4 id={getHeadingId(text, 4)}>{children}</h4>;
-          },
-          a: ({ href, children }) => (
-            <a href={href} target="_blank" rel="noreferrer">
-              {children}
-            </a>
-          ),
-        }}
+        components={components}
       >
         {content}
       </ReactMarkdown>

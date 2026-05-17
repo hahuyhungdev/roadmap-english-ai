@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { IeltsDocument } from "@/lib/ielts.server";
-import type { TocItem } from "@/features/ielts/types";
+import type { HeadingAnchor, TocItem } from "@/features/ielts/types";
 
 export function statLabel(document: IeltsDocument): string {
   if (document.kind === "lesson") {
@@ -38,29 +38,46 @@ export function createHeadingIdGenerator() {
   };
 }
 
-export function extractToc(content: string): TocItem[] {
-  const items: TocItem[] = [];
+function lineNumberAt(content: string, index: number): number {
+  return content.slice(0, index).split("\n").length;
+}
+
+export function extractHeadingAnchors(content: string): HeadingAnchor[] {
+  const anchors: HeadingAnchor[] = [];
   const getHeadingId = createHeadingIdGenerator();
   let includeChildren = false;
 
-  for (const match of content.matchAll(/^(##|###)\s+(.+)$/gm)) {
+  for (const match of content.matchAll(/^(#{2,4})\s+(.+)$/gm)) {
     const level = match[1].length as TocItem["level"];
     const text = match[2].replace(/#+\s*$/, "").trim();
     const id = getHeadingId(text, level);
+    let includeInToc = false;
 
     if (level === 2) {
       includeChildren = /^Part\s+\d+/i.test(text) || text === "Source Alignment";
-      if (!includeChildren) continue;
+      includeInToc = includeChildren;
     }
 
-    if (level === 3 && !includeChildren) {
-      continue;
+    if (level === 3) {
+      includeInToc = includeChildren;
     }
 
-    items.push({ id, level, text });
+    anchors.push({
+      id,
+      includeInToc,
+      level,
+      line: lineNumberAt(content, match.index),
+      text,
+    });
   }
 
-  return items;
+  return anchors;
+}
+
+export function extractToc(content: string): TocItem[] {
+  return extractHeadingAnchors(content)
+    .filter((anchor) => anchor.includeInToc)
+    .map(({ id, level, text }) => ({ id, level, text }));
 }
 
 export function plainText(children: ReactNode): string {

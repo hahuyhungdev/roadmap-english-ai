@@ -1,31 +1,35 @@
 import { useMemo, useState } from "react";
 import type { IeltsDocument } from "@/lib/ielts.server";
-import type { IeltsKindFilter } from "@/features/ielts/types";
 import { extractToc } from "@/features/ielts/utils/markdown";
 
-export function useIeltsDocuments(documents: IeltsDocument[]) {
-  const [activeId, setActiveId] = useState(documents[0]?.id ?? "");
-  const [query, setQuery] = useState("");
-  const [kind, setKind] = useState<IeltsKindFilter>("all");
+function selectableDocumentOrder(document: IeltsDocument): number {
+  if (document.kind === "roadmap") return 0;
+  if (document.kind === "lesson") return 1;
+  return 2;
+}
 
-  const filteredDocuments = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-
-    return documents.filter((document) => {
-      const matchesKind = kind === "all" || document.kind === kind;
-      const matchesQuery =
-        !normalizedQuery ||
-        document.title.toLowerCase().includes(normalizedQuery) ||
-        document.relativePath.toLowerCase().includes(normalizedQuery) ||
-        document.content.toLowerCase().includes(normalizedQuery);
-
-      return matchesKind && matchesQuery;
+function toSelectableDocuments(documents: IeltsDocument[]): IeltsDocument[] {
+  return documents
+    .filter((document) => document.kind === "roadmap" || document.kind === "lesson")
+    .toSorted((a, b) => {
+      const orderDiff = selectableDocumentOrder(a) - selectableDocumentOrder(b);
+      if (orderDiff !== 0) return orderDiff;
+      return a.relativePath.localeCompare(b.relativePath);
     });
-  }, [documents, kind, query]);
+}
+
+export function useIeltsDocuments(documents: IeltsDocument[]) {
+  const [activeId, setActiveId] = useState(
+    () => toSelectableDocuments(documents)[0]?.id ?? documents[0]?.id ?? "",
+  );
+  const selectableDocuments = useMemo(
+    () => toSelectableDocuments(documents),
+    [documents],
+  );
 
   const activeDocument =
-    documents.find((document) => document.id === activeId) ??
-    filteredDocuments[0] ??
+    selectableDocuments.find((document) => document.id === activeId) ??
+    selectableDocuments[0] ??
     documents[0];
 
   const tocItems = useMemo(
@@ -36,13 +40,8 @@ export function useIeltsDocuments(documents: IeltsDocument[]) {
   return {
     activeDocument,
     activeId,
-    filteredDocuments,
-    kind,
-    query,
+    selectableDocuments,
     setActiveId,
-    setKind,
-    setQuery,
     tocItems,
   };
 }
-
